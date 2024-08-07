@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    {% if progress1 and progress2 and progress3 %}
+        <h2>Progress 1</h2>
+        <ul>
+            {% for value in progress1 %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Progress 2</h2>
+        <ul>
+            {% for value in progress2 %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Progress 3</h2>
+        <ul>
+            {% for value in progress3 %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No progress data available.</p>
+    {% endif %}
+</body>
+</html>
