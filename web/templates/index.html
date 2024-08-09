@@ -8,6 +8,21 @@
     {% if current_user.is_authenticated %}
 
     <h1>Welcome {{ current_user.username }}</h1>
+        {% if user_progress == None %}
+        <a href="/getting-started">
+            <button>GETTING STARTED</button>
+        </a>
+        {% else %}
+        <a href="/getting-started">
+            <button>Change path</button>
+        </a>
+        <a href="/progress">
+            <button>Progress</button>
+        </a>
+        <a href="/test-select">
+            <button>Select test</button>
+        </a>        
+        {% endif %}
     <a href="{{url_for('logout')}}">Logout</a>
 
     {% else %}

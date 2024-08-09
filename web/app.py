@@ -26,7 +26,7 @@ def create_app():
     app = Flask(__name__)
 
     app.secret_key = 'bo-cua-khoa'
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///user.db"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
     login_manager.init_app(app)

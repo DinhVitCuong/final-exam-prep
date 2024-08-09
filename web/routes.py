@@ -47,9 +47,16 @@ def session_handler():
 
 @app.route("/", methods=("GET", "POST"), strict_slashes=False)
 def index():
-    return render_template("index.html",title="Home")
+    if current_user.is_authenticated == False:
+        return redirect(url_for('login'))
+
+    user_id = current_user.id 
+    user_progress = Progress.query.filter_by(user_id=user_id).first()
+    print(user_progress)
+    return render_template("index.html",title="Home", user_progress = user_progress)
 
 
+# Login route
 @app.route("/login/", methods=("GET", "POST"), strict_slashes=False)
 def login():
     form = login_form()
@@ -120,68 +127,93 @@ def register():
         btn_action="Register account"
         )
 
+
+# Logout route
 @app.route("/logout")
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('login'))
 
+
+# Progress route
 @app.route("/progress", methods=("GET", "POST"), strict_slashes=False)
 def progress():
-    if 'user_id' not in session:
+    if current_user.is_authenticated == False:
         return redirect(url_for('login'))
 
-    user_id = session['user_id']
+    user_id = current_user.id 
     user_progress = Progress.query.filter_by(user_id=user_id).first()
-
-    if user_progress:
-        progress1_values = [int(x) for x in user_progress.progress1.split(';')]
-        progress2_values = [int(x) for x in user_progress.progress2.split(';')]
-        progress3_values = [int(x) for x in user_progress.progress3.split(';')]
+    print(user_progress.progress_1)
+    if user_progress != None:
+        progress1_values = [int(x) for x in user_progress.progress_1.split('_')]
+        progress2_values = [int(x) for x in user_progress.progress_2.split('_')]
+        progress3_values = [int(x) for x in user_progress.progress_3.split('_')]
         return render_template(
             "progress.html",
             title="Tiến trình",
-            progress1=progress1_values,
-            progress2=progress2_values,
-            progress3=progress3_values
+            total_pro_1 = progress1_values[0],
+            progress_1=progress1_values[1:],
+            total_pro_2 = progress2_values[0],
+            progress_2=progress2_values[1:],
+            total_pro_3 = progress3_values[0],
+            progress_3=progress3_values[1:]
         )
     else:
         return render_template("progress.html", title="Tiến trình", progress=None)
 
-@app.route("/getting-started", methods=("GET", "POST"), strict_slashes=False)
-def getting_started():
-    if 'user_id' not in session:
-        return redirect(url_for('login'))
 
+# #Home route
+# @app.route("/home", methods=("GET", "POST"), strict_slashes=False)
+# def home():
+#     if current_user.is_authenticated == False:
+#         return redirect(url_for('login'))
+
+#     user_id = current_user.id 
+#     return render_template("getting_started.html", title="Trang chủ")
+
+
+# Getting-started route
+@app.route("/getting-started", methods=("GET", "POST"), strict_slashes=True)
+def getting_started():
+    if current_user.is_authenticated == False:
+        return redirect(url_for('login'))
+    
     form = getting_started_form()
 
     if form.validate_on_submit():
         value1 = form.value1.data
         value2 = form.value2.data
         value3 = form.value3.data
-        baseprogress = f"{value1};{value2};{value3}"
+        baseprogress = f"{value1}_{value2}_{value3}"
 
-        user_id = session['user_id']
+        user_id = current_user.id 
 
         existing_progress = Progress.query.filter_by(user_id=user_id).first()
-        if existing_progress:
+        if existing_progress != None:
             existing_progress.baseprogress = baseprogress
-            existing_progress.progress1 = baseprogress
-            existing_progress.progress2 = ""
-            existing_progress.progress3 = ""
+            existing_progress.progress1 = "0"
+            existing_progress.progress2 = "0"
+            existing_progress.progress3 = "0"
         else:
             new_progress = Progress(
                 user_id=user_id,
-                baseprogress=baseprogress,
-                progress1=baseprogress,
-                progress2="",
-                progress3=""
+                base_progress=baseprogress,
+                progress_1="0",
+                progress_2="0",
+                progress_3="0"
             )
             db.session.add(new_progress)
 
         db.session.commit()
-        return redirect(url_for('progress'))
 
     return render_template("getting_started.html", form=form)
+
+
+#Multiple_choice_test route
+@app.route("/test-select", methods=("GET", "POST"), strict_slashes=False)
+def test_select():
+    
+    return render_template("test_select.html")
 if __name__ == "__main__":
     app.run(debug=True)

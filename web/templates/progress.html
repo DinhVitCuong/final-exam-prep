@@ -6,22 +6,31 @@
 </head>
 <body>
     <h1>{{ title }}</h1>
-    {% if progress1 and progress2 and progress3 %}
+    {% if progress_1 and progress_2 and progress_3 %}
         <h2>Progress 1</h2>
+        <ul>Total
+            <li>{{total_pro_1}}</li>
+        </ul>
         <ul>
-            {% for value in progress1 %}
-                <li>{{ value }}</li>
+            {% for value in progress_1 %}
+                <li>{{ value }} - </li>
             {% endfor %}
         </ul>
         <h2>Progress 2</h2>
+        <ul>Total
+            <li>{{total_pro_2}}</li>
+        </ul>
         <ul>
-            {% for value in progress2 %}
+            {% for value in progress_2 %}
                 <li>{{ value }}</li>
             {% endfor %}
         </ul>
         <h2>Progress 3</h2>
+        <ul>Total
+            <li>{{total_pro_3}}</li>
+        </ul>
         <ul>
-            {% for value in progress3 %}
+            {% for value in progress_3 %}
                 <li>{{ value }}</li>
             {% endfor %}
         </ul>
