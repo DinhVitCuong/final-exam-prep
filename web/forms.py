@@ -6,7 +6,10 @@ from wtforms import (
     DateField,
     TextAreaField,
     DecimalField,
-    SubmitField
+    SubmitField,
+    RadioField, 
+    SelectMultipleField, 
+    SelectField
 )
 
 from flask_wtf import FlaskForm
@@ -70,4 +73,20 @@ class getting_started_form(FlaskForm):
         'Value 3',
         validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
     )
+    submit = SubmitField('Submit')
+
+class test_selection_form(FlaskForm):
+    subject = SelectField('Subject', choices=[], validators=[InputRequired()])
+    test_type = RadioField('Test Type', choices=[('total', 'Total Test'), ('chapter', 'Chapter Test')], validators=[InputRequired()])
+    total_chapters = SelectMultipleField('Select Chapters for Total Test', choices=[], coerce=str)
+    chapter = SelectField('Select a Chapter for Chapter Test', choices=[], validators=[InputRequired()])
+    submit = SubmitField('Start Test')
+
+class select_univesity_form(FlaskForm):
+    budget = StringField('Budget lower than', validators=[InputRequired(), NumberRange(min=0)])
+    location = SelectMultipleField('Location', choices=[('us', 'United States'), ('uk', 'United Kingdom'), ('eu', 'Europe'), ('asia', 'Asia')])
+    major = SelectMultipleField('Subject Category', choices=[('engineering', 'Engineering'), ('arts', 'Arts'), ('science', 'Science'), ('business', 'Business')])
+    subject_category = SelectField('Major', choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')], validators=[InputRequired()])
+    university = SelectField('University', choices=[])
+    check = SubmitField('Check')
     submit = SubmitField('Submit')

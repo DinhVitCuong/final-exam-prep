@@ -2,10 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test_select</title>
+    <title>Test Selection</title>
 </head>
 <body>
-    <h1>Test_select</h1>
+    <h1>Select Test Type and Subject</h1>
+    
+    <form method="POST" action="{{ url_for('test_select') }}">
+        {{ form.hidden_tag() }}
+
+        <p>{{ form.subject.label }}</p>
+        {{ form.subject() }}
+
+        <p>{{ form.test_type.label }}</p>
+        {{ form.test_type() }}
+
+        <div id="total_test_selection" style="display: none;">
+            <h2>{{ form.total_chapters.label }}</h2>
+            {{ form.total_chapters() }}
+        </div>
+
+        <div id="chapter_test_selection" style="display: none;">
+            <h2>{{ form.chapter.label }}</h2>
+            {{ form.chapter() }}
+        </div>
+
+        <br>
+        {{ form.submit() }}
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const subjectField = document.querySelector('[name="subject"]');
+            const testTypeRadio = document.getElementsByName('test_type');
+            const totalTestSelection = document.getElementById('total_test_selection');
+            const chapterTestSelection = document.getElementById('chapter_test_selection');
+
+            function updateChapters() {
+                const subject = subjectField.value;
+                fetch(`/update-chapters?subject=${subject}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        const totalChaptersField = document.querySelector('[name="total_chapters"]');
+                        const chapterField = document.querySelector('[name="chapter"]');
+                        
+                        totalChaptersField.innerHTML = '';
+                        chapterField.innerHTML = '';
+                        
+                        data.chapters.forEach(chapter => {
+                            totalChaptersField.innerHTML += `<option value="${chapter.value}">${chapter.label}</option>`;
+                            chapterField.innerHTML += `<option value="${chapter.value}">${chapter.label}</option>`;
+                        });
+                    });
+            }
+
+            function toggleSections() {
+                if (testTypeRadio[0].checked) {
+                    totalTestSelection.style.display = 'block';
+                    chapterTestSelection.style.display = 'none';
+                } else if (testTypeRadio[1].checked) {
+                    totalTestSelection.style.display = 'none';
+                    chapterTestSelection.style.display = 'block';
+                }
+            }
+
+            subjectField.addEventListener('change', updateChapters);
+            testTypeRadio.forEach(radio => {
+                radio.addEventListener('change', toggleSections);
+            });
+
+            // Initialize chapters on page load
+            updateChapters();
+            toggleSections();
+        });
+    </script>
 </body>
 </html>
