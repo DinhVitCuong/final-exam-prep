@@ -5,6 +5,7 @@ class TestOrigin:
     def __init__(self, monhoc: str):
         self.monhoc = monhoc
         self.num_ques = None
+        self.timelimit = None
     def create_test(self):
         pass
 
@@ -25,14 +26,18 @@ class TestTotal(TestOrigin):
     def create_test(self, num_chapters):
         questions = []
         if num_chapters <= 2:
-            questions = self.select_questions(20, 60, 30, 10)
+            for i in range(1, num_chapters + 1):
+                chapter_questions = self.select_questions(15, 60, 30, 10, chapter=i)
+                questions.extend(chapter_questions)
+
+            questions = self.shuffle_questions(questions)
         else:
             for i in range(1, num_chapters + 1):
                 chapter_questions = self.select_questions(10, 60, 30, 10, chapter=i)
                 questions.extend(chapter_questions)
 
             questions = self.shuffle_questions(questions)
-            self.num_ques = len(questions)
+        self.num_ques = len(questions)
         return questions
 
     def select_questions(self, num_questions, th_percent, vd_percent, vdc_percent, chapter=None):
