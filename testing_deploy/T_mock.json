@@ -1,8 +1,8 @@
 {
     "QAs": [
         {
-            "ID": "T010100001",
-            "difficulty": "VDC",
+            "ID": "T020100001",
+            "difficulty": "TH",
             "question": "Question 1",
             "images": "",
             "options": [
@@ -11,12 +11,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 1"
         },
         {
             "ID": "T050100002",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 2",
             "images": "",
             "options": [
@@ -25,12 +25,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 2"
         },
         {
             "ID": "T030100003",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 3",
             "images": "",
             "options": [
@@ -39,12 +39,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 3"
         },
         {
-            "ID": "T010100004",
-            "difficulty": "TH",
+            "ID": "T040100004",
+            "difficulty": "VD",
             "question": "Question 4",
             "images": "",
             "options": [
@@ -57,8 +57,8 @@
             "explain": "Explanation 4"
         },
         {
-            "ID": "T020100005",
-            "difficulty": "VD",
+            "ID": "T050100005",
+            "difficulty": "NB",
             "question": "Question 5",
             "images": "",
             "options": [
@@ -67,12 +67,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 5"
         },
         {
-            "ID": "T040100006",
-            "difficulty": "VD",
+            "ID": "T050100006",
+            "difficulty": "TH",
             "question": "Question 6",
             "images": "",
             "options": [
@@ -81,12 +81,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 6"
         },
         {
             "ID": "T050100007",
-            "difficulty": "VD",
+            "difficulty": "NB",
             "question": "Question 7",
             "images": "",
             "options": [
@@ -95,12 +95,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 7"
         },
         {
             "ID": "T010100008",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 8",
             "images": "",
             "options": [
@@ -109,12 +109,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 8"
         },
         {
-            "ID": "T010100009",
-            "difficulty": "TH",
+            "ID": "T050100009",
+            "difficulty": "NB",
             "question": "Question 9",
             "images": "",
             "options": [
@@ -127,8 +127,8 @@
             "explain": "Explanation 9"
         },
         {
-            "ID": "T020100010",
-            "difficulty": "VD",
+            "ID": "T040100010",
+            "difficulty": "NB",
             "question": "Question 10",
             "images": "",
             "options": [
@@ -141,7 +141,7 @@
             "explain": "Explanation 10"
         },
         {
-            "ID": "T010100011",
+            "ID": "T040100011",
             "difficulty": "VD",
             "question": "Question 11",
             "images": "",
@@ -151,11 +151,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 11"
         },
         {
-            "ID": "T020100012",
+            "ID": "T010100012",
             "difficulty": "VDC",
             "question": "Question 12",
             "images": "",
@@ -169,8 +169,8 @@
             "explain": "Explanation 12"
         },
         {
-            "ID": "T040100013",
-            "difficulty": "TH",
+            "ID": "T020100013",
+            "difficulty": "VD",
             "question": "Question 13",
             "images": "",
             "options": [
@@ -179,12 +179,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 13"
         },
         {
-            "ID": "T010100014",
-            "difficulty": "VDC",
+            "ID": "T050100014",
+            "difficulty": "VD",
             "question": "Question 14",
             "images": "",
             "options": [
@@ -193,12 +193,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 14"
         },
         {
-            "ID": "T050100015",
-            "difficulty": "VD",
+            "ID": "T030100015",
+            "difficulty": "VDC",
             "question": "Question 15",
             "images": "",
             "options": [
@@ -207,11 +207,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 15"
         },
         {
-            "ID": "T050100016",
+            "ID": "T020100016",
             "difficulty": "VDC",
             "question": "Question 16",
             "images": "",
@@ -225,7 +225,7 @@
             "explain": "Explanation 16"
         },
         {
-            "ID": "T010100017",
+            "ID": "T050100017",
             "difficulty": "TH",
             "question": "Question 17",
             "images": "",
@@ -239,8 +239,8 @@
             "explain": "Explanation 17"
         },
         {
-            "ID": "T050100018",
-            "difficulty": "TH",
+            "ID": "T010100018",
+            "difficulty": "NB",
             "question": "Question 18",
             "images": "",
             "options": [
@@ -249,12 +249,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 18"
         },
         {
             "ID": "T030100019",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 19",
             "images": "",
             "options": [
@@ -263,12 +263,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 19"
         },
         {
-            "ID": "T010100020",
-            "difficulty": "VD",
+            "ID": "T030100020",
+            "difficulty": "TH",
             "question": "Question 20",
             "images": "",
             "options": [
@@ -277,12 +277,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 20"
         },
         {
-            "ID": "T050100021",
-            "difficulty": "VDC",
+            "ID": "T040100021",
+            "difficulty": "TH",
             "question": "Question 21",
             "images": "",
             "options": [
@@ -291,12 +291,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 21"
         },
         {
-            "ID": "T010100022",
-            "difficulty": "TH",
+            "ID": "T050100022",
+            "difficulty": "VD",
             "question": "Question 22",
             "images": "",
             "options": [
@@ -309,7 +309,7 @@
             "explain": "Explanation 22"
         },
         {
-            "ID": "T050100023",
+            "ID": "T010100023",
             "difficulty": "VD",
             "question": "Question 23",
             "images": "",
@@ -319,12 +319,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 23"
         },
         {
             "ID": "T050100024",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 24",
             "images": "",
             "options": [
@@ -333,12 +333,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 24"
         },
         {
-            "ID": "T050100025",
-            "difficulty": "VD",
+            "ID": "T040100025",
+            "difficulty": "NB",
             "question": "Question 25",
             "images": "",
             "options": [
@@ -351,8 +351,8 @@
             "explain": "Explanation 25"
         },
         {
-            "ID": "T020100026",
-            "difficulty": "VD",
+            "ID": "T050100026",
+            "difficulty": "VDC",
             "question": "Question 26",
             "images": "",
             "options": [
@@ -361,12 +361,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 26"
         },
         {
-            "ID": "T030100027",
-            "difficulty": "VDC",
+            "ID": "T020100027",
+            "difficulty": "TH",
             "question": "Question 27",
             "images": "",
             "options": [
@@ -375,12 +375,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 27"
         },
         {
-            "ID": "T010100028",
-            "difficulty": "VD",
+            "ID": "T050100028",
+            "difficulty": "TH",
             "question": "Question 28",
             "images": "",
             "options": [
@@ -389,12 +389,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 28"
         },
         {
-            "ID": "T020100029",
-            "difficulty": "VDC",
+            "ID": "T010100029",
+            "difficulty": "TH",
             "question": "Question 29",
             "images": "",
             "options": [
@@ -403,12 +403,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 29"
         },
         {
-            "ID": "T010100030",
-            "difficulty": "TH",
+            "ID": "T040100030",
+            "difficulty": "VD",
             "question": "Question 30",
             "images": "",
             "options": [
@@ -417,12 +417,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 30"
         },
         {
-            "ID": "T020100031",
-            "difficulty": "TH",
+            "ID": "T040100031",
+            "difficulty": "VDC",
             "question": "Question 31",
             "images": "",
             "options": [
@@ -431,11 +431,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 31"
         },
         {
-            "ID": "T050100032",
+            "ID": "T010100032",
             "difficulty": "TH",
             "question": "Question 32",
             "images": "",
@@ -445,12 +445,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 32"
         },
         {
-            "ID": "T030100033",
-            "difficulty": "TH",
+            "ID": "T010100033",
+            "difficulty": "VDC",
             "question": "Question 33",
             "images": "",
             "options": [
@@ -459,11 +459,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 33"
         },
         {
-            "ID": "T050100034",
+            "ID": "T020100034",
             "difficulty": "VDC",
             "question": "Question 34",
             "images": "",
@@ -473,12 +473,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 34"
         },
         {
-            "ID": "T020100035",
-            "difficulty": "VD",
+            "ID": "T040100035",
+            "difficulty": "VDC",
             "question": "Question 35",
             "images": "",
             "options": [
@@ -487,12 +487,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 35"
         },
         {
-            "ID": "T020100036",
-            "difficulty": "VD",
+            "ID": "T030100036",
+            "difficulty": "NB",
             "question": "Question 36",
             "images": "",
             "options": [
@@ -501,12 +501,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 36"
         },
         {
-            "ID": "T050100037",
-            "difficulty": "VD",
+            "ID": "T030100037",
+            "difficulty": "VDC",
             "question": "Question 37",
             "images": "",
             "options": [
@@ -515,12 +515,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 37"
         },
         {
-            "ID": "T030100038",
-            "difficulty": "TH",
+            "ID": "T050100038",
+            "difficulty": "VD",
             "question": "Question 38",
             "images": "",
             "options": [
@@ -529,7 +529,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 38"
         },
         {
@@ -543,11 +543,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 39"
         },
         {
-            "ID": "T030100040",
+            "ID": "T010100040",
             "difficulty": "TH",
             "question": "Question 40",
             "images": "",
@@ -585,12 +585,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 42"
         },
         {
-            "ID": "T040100043",
-            "difficulty": "VDC",
+            "ID": "T050100043",
+            "difficulty": "TH",
             "question": "Question 43",
             "images": "",
             "options": [
@@ -599,12 +599,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 43"
         },
         {
             "ID": "T010100044",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 44",
             "images": "",
             "options": [
@@ -613,12 +613,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 44"
         },
         {
-            "ID": "T030100045",
-            "difficulty": "VDC",
+            "ID": "T050100045",
+            "difficulty": "VD",
             "question": "Question 45",
             "images": "",
             "options": [
@@ -627,12 +627,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 45"
         },
         {
-            "ID": "T050100046",
-            "difficulty": "TH",
+            "ID": "T030100046",
+            "difficulty": "VD",
             "question": "Question 46",
             "images": "",
             "options": [
@@ -641,11 +641,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 46"
         },
         {
-            "ID": "T020100047",
+            "ID": "T030100047",
             "difficulty": "VDC",
             "question": "Question 47",
             "images": "",
@@ -655,12 +655,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 47"
         },
         {
-            "ID": "T030100048",
-            "difficulty": "VDC",
+            "ID": "T020100048",
+            "difficulty": "VD",
             "question": "Question 48",
             "images": "",
             "options": [
@@ -669,12 +669,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 48"
         },
         {
             "ID": "T020100049",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 49",
             "images": "",
             "options": [
@@ -683,12 +683,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 49"
         },
         {
-            "ID": "T050100050",
-            "difficulty": "VD",
+            "ID": "T030100050",
+            "difficulty": "TH",
             "question": "Question 50",
             "images": "",
             "options": [
@@ -701,8 +701,8 @@
             "explain": "Explanation 50"
         },
         {
-            "ID": "T010100051",
-            "difficulty": "VD",
+            "ID": "T050100051",
+            "difficulty": "NB",
             "question": "Question 51",
             "images": "",
             "options": [
@@ -711,12 +711,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 51"
         },
         {
             "ID": "T010100052",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 52",
             "images": "",
             "options": [
@@ -725,12 +725,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 52"
         },
         {
-            "ID": "T020100053",
-            "difficulty": "VD",
+            "ID": "T040100053",
+            "difficulty": "VDC",
             "question": "Question 53",
             "images": "",
             "options": [
@@ -739,12 +739,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 53"
         },
         {
             "ID": "T050100054",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 54",
             "images": "",
             "options": [
@@ -753,12 +753,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 54"
         },
         {
-            "ID": "T030100055",
-            "difficulty": "VDC",
+            "ID": "T050100055",
+            "difficulty": "NB",
             "question": "Question 55",
             "images": "",
             "options": [
@@ -767,12 +767,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 55"
         },
         {
             "ID": "T050100056",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 56",
             "images": "",
             "options": [
@@ -781,12 +781,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 56"
         },
         {
-            "ID": "T020100057",
-            "difficulty": "VDC",
+            "ID": "T040100057",
+            "difficulty": "TH",
             "question": "Question 57",
             "images": "",
             "options": [
@@ -795,11 +795,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 57"
         },
         {
-            "ID": "T030100058",
+            "ID": "T020100058",
             "difficulty": "VD",
             "question": "Question 58",
             "images": "",
@@ -809,12 +809,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 58"
         },
         {
-            "ID": "T050100059",
-            "difficulty": "TH",
+            "ID": "T030100059",
+            "difficulty": "VDC",
             "question": "Question 59",
             "images": "",
             "options": [
@@ -823,12 +823,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 59"
         },
         {
-            "ID": "T020100060",
-            "difficulty": "VDC",
+            "ID": "T040100060",
+            "difficulty": "NB",
             "question": "Question 60",
             "images": "",
             "options": [
@@ -837,12 +837,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 60"
         },
         {
-            "ID": "T010100061",
-            "difficulty": "VDC",
+            "ID": "T020100061",
+            "difficulty": "VD",
             "question": "Question 61",
             "images": "",
             "options": [
@@ -851,12 +851,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 61"
         },
         {
-            "ID": "T010100062",
-            "difficulty": "VD",
+            "ID": "T050100062",
+            "difficulty": "NB",
             "question": "Question 62",
             "images": "",
             "options": [
@@ -869,8 +869,8 @@
             "explain": "Explanation 62"
         },
         {
-            "ID": "T020100063",
-            "difficulty": "TH",
+            "ID": "T030100063",
+            "difficulty": "VD",
             "question": "Question 63",
             "images": "",
             "options": [
@@ -879,11 +879,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 63"
         },
         {
-            "ID": "T040100064",
+            "ID": "T020100064",
             "difficulty": "VD",
             "question": "Question 64",
             "images": "",
@@ -893,12 +893,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 64"
         },
         {
-            "ID": "T050100065",
-            "difficulty": "VD",
+            "ID": "T010100065",
+            "difficulty": "NB",
             "question": "Question 65",
             "images": "",
             "options": [
@@ -907,12 +907,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 65"
         },
         {
             "ID": "T030100066",
-            "difficulty": "VD",
+            "difficulty": "NB",
             "question": "Question 66",
             "images": "",
             "options": [
@@ -925,8 +925,8 @@
             "explain": "Explanation 66"
         },
         {
-            "ID": "T020100067",
-            "difficulty": "TH",
+            "ID": "T030100067",
+            "difficulty": "VD",
             "question": "Question 67",
             "images": "",
             "options": [
@@ -940,7 +940,7 @@
         },
         {
             "ID": "T030100068",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 68",
             "images": "",
             "options": [
@@ -953,7 +953,7 @@
             "explain": "Explanation 68"
         },
         {
-            "ID": "T010100069",
+            "ID": "T030100069",
             "difficulty": "TH",
             "question": "Question 69",
             "images": "",
@@ -967,7 +967,7 @@
             "explain": "Explanation 69"
         },
         {
-            "ID": "T040100070",
+            "ID": "T030100070",
             "difficulty": "VD",
             "question": "Question 70",
             "images": "",
@@ -981,8 +981,8 @@
             "explain": "Explanation 70"
         },
         {
-            "ID": "T020100071",
-            "difficulty": "TH",
+            "ID": "T050100071",
+            "difficulty": "VD",
             "question": "Question 71",
             "images": "",
             "options": [
@@ -995,8 +995,8 @@
             "explain": "Explanation 71"
         },
         {
-            "ID": "T030100072",
-            "difficulty": "VD",
+            "ID": "T040100072",
+            "difficulty": "NB",
             "question": "Question 72",
             "images": "",
             "options": [
@@ -1009,8 +1009,8 @@
             "explain": "Explanation 72"
         },
         {
-            "ID": "T030100073",
-            "difficulty": "VD",
+            "ID": "T050100073",
+            "difficulty": "TH",
             "question": "Question 73",
             "images": "",
             "options": [
@@ -1019,11 +1019,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 73"
         },
         {
-            "ID": "T050100074",
+            "ID": "T020100074",
             "difficulty": "VD",
             "question": "Question 74",
             "images": "",
@@ -1033,12 +1033,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 74"
         },
         {
-            "ID": "T050100075",
-            "difficulty": "VDC",
+            "ID": "T040100075",
+            "difficulty": "TH",
             "question": "Question 75",
             "images": "",
             "options": [
@@ -1047,12 +1047,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 75"
         },
         {
-            "ID": "T040100076",
-            "difficulty": "VDC",
+            "ID": "T050100076",
+            "difficulty": "VD",
             "question": "Question 76",
             "images": "",
             "options": [
@@ -1061,12 +1061,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 76"
         },
         {
-            "ID": "T020100077",
-            "difficulty": "VD",
+            "ID": "T010100077",
+            "difficulty": "NB",
             "question": "Question 77",
             "images": "",
             "options": [
@@ -1075,12 +1075,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 77"
         },
         {
-            "ID": "T030100078",
-            "difficulty": "VD",
+            "ID": "T040100078",
+            "difficulty": "TH",
             "question": "Question 78",
             "images": "",
             "options": [
@@ -1093,8 +1093,8 @@
             "explain": "Explanation 78"
         },
         {
-            "ID": "T040100079",
-            "difficulty": "VDC",
+            "ID": "T020100079",
+            "difficulty": "TH",
             "question": "Question 79",
             "images": "",
             "options": [
@@ -1107,8 +1107,8 @@
             "explain": "Explanation 79"
         },
         {
-            "ID": "T010100080",
-            "difficulty": "TH",
+            "ID": "T020100080",
+            "difficulty": "NB",
             "question": "Question 80",
             "images": "",
             "options": [
@@ -1117,12 +1117,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 80"
         },
         {
-            "ID": "T010100081",
-            "difficulty": "TH",
+            "ID": "T030100081",
+            "difficulty": "VDC",
             "question": "Question 81",
             "images": "",
             "options": [
@@ -1131,12 +1131,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 81"
         },
         {
-            "ID": "T040100082",
-            "difficulty": "VDC",
+            "ID": "T050100082",
+            "difficulty": "VD",
             "question": "Question 82",
             "images": "",
             "options": [
@@ -1145,7 +1145,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 82"
         },
         {
@@ -1159,11 +1159,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 83"
         },
         {
-            "ID": "T050100084",
+            "ID": "T020100084",
             "difficulty": "TH",
             "question": "Question 84",
             "images": "",
@@ -1178,7 +1178,7 @@
         },
         {
             "ID": "T050100085",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 85",
             "images": "",
             "options": [
@@ -1187,12 +1187,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 85"
         },
         {
-            "ID": "T040100086",
-            "difficulty": "VDC",
+            "ID": "T050100086",
+            "difficulty": "NB",
             "question": "Question 86",
             "images": "",
             "options": [
@@ -1206,7 +1206,7 @@
         },
         {
             "ID": "T010100087",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 87",
             "images": "",
             "options": [
@@ -1219,8 +1219,8 @@
             "explain": "Explanation 87"
         },
         {
-            "ID": "T050100088",
-            "difficulty": "VD",
+            "ID": "T040100088",
+            "difficulty": "VDC",
             "question": "Question 88",
             "images": "",
             "options": [
@@ -1229,12 +1229,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 88"
         },
         {
-            "ID": "T050100089",
-            "difficulty": "TH",
+            "ID": "T020100089",
+            "difficulty": "VDC",
             "question": "Question 89",
             "images": "",
             "options": [
@@ -1243,11 +1243,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 89"
         },
         {
-            "ID": "T010100090",
+            "ID": "T020100090",
             "difficulty": "VDC",
             "question": "Question 90",
             "images": "",
@@ -1257,12 +1257,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 90"
         },
         {
             "ID": "T010100091",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 91",
             "images": "",
             "options": [
@@ -1271,11 +1271,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 91"
         },
         {
-            "ID": "T030100092",
+            "ID": "T040100092",
             "difficulty": "VD",
             "question": "Question 92",
             "images": "",
@@ -1285,12 +1285,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 92"
         },
         {
-            "ID": "T010100093",
-            "difficulty": "TH",
+            "ID": "T050100093",
+            "difficulty": "VD",
             "question": "Question 93",
             "images": "",
             "options": [
@@ -1303,7 +1303,7 @@
             "explain": "Explanation 93"
         },
         {
-            "ID": "T050100094",
+            "ID": "T040100094",
             "difficulty": "VDC",
             "question": "Question 94",
             "images": "",
@@ -1313,12 +1313,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 94"
         },
         {
-            "ID": "T050100095",
-            "difficulty": "VDC",
+            "ID": "T030100095",
+            "difficulty": "TH",
             "question": "Question 95",
             "images": "",
             "options": [
@@ -1327,12 +1327,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 95"
         },
         {
-            "ID": "T020100096",
-            "difficulty": "TH",
+            "ID": "T040100096",
+            "difficulty": "NB",
             "question": "Question 96",
             "images": "",
             "options": [
@@ -1345,8 +1345,8 @@
             "explain": "Explanation 96"
         },
         {
-            "ID": "T020100097",
-            "difficulty": "TH",
+            "ID": "T010100097",
+            "difficulty": "NB",
             "question": "Question 97",
             "images": "",
             "options": [
@@ -1355,11 +1355,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 97"
         },
         {
-            "ID": "T050100098",
+            "ID": "T010100098",
             "difficulty": "VDC",
             "question": "Question 98",
             "images": "",
@@ -1369,11 +1369,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 98"
         },
         {
-            "ID": "T050100099",
+            "ID": "T030100099",
             "difficulty": "VDC",
             "question": "Question 99",
             "images": "",
@@ -1397,11 +1397,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 100"
         },
         {
-            "ID": "T050200001",
+            "ID": "T020200001",
             "difficulty": "TH",
             "question": "Question 101",
             "images": "",
@@ -1411,12 +1411,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 101"
         },
         {
-            "ID": "T030200002",
-            "difficulty": "VD",
+            "ID": "T010200002",
+            "difficulty": "TH",
             "question": "Question 102",
             "images": "",
             "options": [
@@ -1425,12 +1425,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 102"
         },
         {
             "ID": "T040200003",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 103",
             "images": "",
             "options": [
@@ -1439,12 +1439,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 103"
         },
         {
-            "ID": "T030200004",
-            "difficulty": "VD",
+            "ID": "T040200004",
+            "difficulty": "TH",
             "question": "Question 104",
             "images": "",
             "options": [
@@ -1453,11 +1453,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 104"
         },
         {
-            "ID": "T040200005",
+            "ID": "T020200005",
             "difficulty": "VDC",
             "question": "Question 105",
             "images": "",
@@ -1467,12 +1467,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 105"
         },
         {
-            "ID": "T030200006",
-            "difficulty": "TH",
+            "ID": "T050200006",
+            "difficulty": "VD",
             "question": "Question 106",
             "images": "",
             "options": [
@@ -1481,11 +1481,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 106"
         },
         {
-            "ID": "T050200007",
+            "ID": "T010200007",
             "difficulty": "VDC",
             "question": "Question 107",
             "images": "",
@@ -1495,12 +1495,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 107"
         },
         {
             "ID": "T050200008",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 108",
             "images": "",
             "options": [
@@ -1509,11 +1509,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 108"
         },
         {
-            "ID": "T030200009",
+            "ID": "T050200009",
             "difficulty": "VD",
             "question": "Question 109",
             "images": "",
@@ -1523,12 +1523,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 109"
         },
         {
             "ID": "T040200010",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 110",
             "images": "",
             "options": [
@@ -1537,11 +1537,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 110"
         },
         {
-            "ID": "T020200011",
+            "ID": "T010200011",
             "difficulty": "VD",
             "question": "Question 111",
             "images": "",
@@ -1555,8 +1555,8 @@
             "explain": "Explanation 111"
         },
         {
-            "ID": "T050200012",
-            "difficulty": "VD",
+            "ID": "T010200012",
+            "difficulty": "VDC",
             "question": "Question 112",
             "images": "",
             "options": [
@@ -1569,8 +1569,8 @@
             "explain": "Explanation 112"
         },
         {
-            "ID": "T050200013",
-            "difficulty": "TH",
+            "ID": "T040200013",
+            "difficulty": "VDC",
             "question": "Question 113",
             "images": "",
             "options": [
@@ -1579,12 +1579,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 113"
         },
         {
-            "ID": "T020200014",
-            "difficulty": "TH",
+            "ID": "T040200014",
+            "difficulty": "VD",
             "question": "Question 114",
             "images": "",
             "options": [
@@ -1593,12 +1593,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 114"
         },
         {
-            "ID": "T040200015",
-            "difficulty": "VDC",
+            "ID": "T010200015",
+            "difficulty": "VD",
             "question": "Question 115",
             "images": "",
             "options": [
@@ -1611,8 +1611,8 @@
             "explain": "Explanation 115"
         },
         {
-            "ID": "T050200016",
-            "difficulty": "TH",
+            "ID": "T030200016",
+            "difficulty": "VD",
             "question": "Question 116",
             "images": "",
             "options": [
@@ -1621,12 +1621,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 116"
         },
         {
-            "ID": "T040200017",
-            "difficulty": "VDC",
+            "ID": "T020200017",
+            "difficulty": "NB",
             "question": "Question 117",
             "images": "",
             "options": [
@@ -1639,8 +1639,8 @@
             "explain": "Explanation 117"
         },
         {
-            "ID": "T030200018",
-            "difficulty": "VDC",
+            "ID": "T010200018",
+            "difficulty": "TH",
             "question": "Question 118",
             "images": "",
             "options": [
@@ -1649,12 +1649,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 118"
         },
         {
-            "ID": "T050200019",
-            "difficulty": "VD",
+            "ID": "T010200019",
+            "difficulty": "TH",
             "question": "Question 119",
             "images": "",
             "options": [
@@ -1663,12 +1663,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 119"
         },
         {
-            "ID": "T030200020",
-            "difficulty": "TH",
+            "ID": "T050200020",
+            "difficulty": "VDC",
             "question": "Question 120",
             "images": "",
             "options": [
@@ -1677,12 +1677,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 120"
         },
         {
-            "ID": "T030200021",
-            "difficulty": "TH",
+            "ID": "T010200021",
+            "difficulty": "VDC",
             "question": "Question 121",
             "images": "",
             "options": [
@@ -1691,12 +1691,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 121"
         },
         {
-            "ID": "T020200022",
-            "difficulty": "VD",
+            "ID": "T050200022",
+            "difficulty": "VDC",
             "question": "Question 122",
             "images": "",
             "options": [
@@ -1705,12 +1705,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 122"
         },
         {
-            "ID": "T040200023",
-            "difficulty": "VD",
+            "ID": "T030200023",
+            "difficulty": "NB",
             "question": "Question 123",
             "images": "",
             "options": [
@@ -1719,11 +1719,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 123"
         },
         {
-            "ID": "T020200024",
+            "ID": "T050200024",
             "difficulty": "VDC",
             "question": "Question 124",
             "images": "",
@@ -1737,8 +1737,8 @@
             "explain": "Explanation 124"
         },
         {
-            "ID": "T040200025",
-            "difficulty": "VD",
+            "ID": "T010200025",
+            "difficulty": "VDC",
             "question": "Question 125",
             "images": "",
             "options": [
@@ -1747,12 +1747,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 125"
         },
         {
-            "ID": "T010200026",
-            "difficulty": "VD",
+            "ID": "T030200026",
+            "difficulty": "NB",
             "question": "Question 126",
             "images": "",
             "options": [
@@ -1765,7 +1765,7 @@
             "explain": "Explanation 126"
         },
         {
-            "ID": "T050200027",
+            "ID": "T020200027",
             "difficulty": "TH",
             "question": "Question 127",
             "images": "",
@@ -1779,8 +1779,8 @@
             "explain": "Explanation 127"
         },
         {
-            "ID": "T030200028",
-            "difficulty": "TH",
+            "ID": "T050200028",
+            "difficulty": "NB",
             "question": "Question 128",
             "images": "",
             "options": [
@@ -1807,8 +1807,8 @@
             "explain": "Explanation 129"
         },
         {
-            "ID": "T030200030",
-            "difficulty": "VDC",
+            "ID": "T010200030",
+            "difficulty": "NB",
             "question": "Question 130",
             "images": "",
             "options": [
@@ -1817,12 +1817,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 130"
         },
         {
             "ID": "T040200031",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 131",
             "images": "",
             "options": [
@@ -1835,8 +1835,8 @@
             "explain": "Explanation 131"
         },
         {
-            "ID": "T030200032",
-            "difficulty": "TH",
+            "ID": "T020200032",
+            "difficulty": "NB",
             "question": "Question 132",
             "images": "",
             "options": [
@@ -1845,12 +1845,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 132"
         },
         {
             "ID": "T020200033",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 133",
             "images": "",
             "options": [
@@ -1859,12 +1859,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 133"
         },
         {
             "ID": "T030200034",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 134",
             "images": "",
             "options": [
@@ -1873,12 +1873,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 134"
         },
         {
-            "ID": "T020200035",
-            "difficulty": "VD",
+            "ID": "T040200035",
+            "difficulty": "NB",
             "question": "Question 135",
             "images": "",
             "options": [
@@ -1887,11 +1887,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 135"
         },
         {
-            "ID": "T020200036",
+            "ID": "T040200036",
             "difficulty": "TH",
             "question": "Question 136",
             "images": "",
@@ -1901,12 +1901,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 136"
         },
         {
-            "ID": "T030200037",
-            "difficulty": "VDC",
+            "ID": "T050200037",
+            "difficulty": "VD",
             "question": "Question 137",
             "images": "",
             "options": [
@@ -1915,12 +1915,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 137"
         },
         {
-            "ID": "T050200038",
-            "difficulty": "VDC",
+            "ID": "T040200038",
+            "difficulty": "NB",
             "question": "Question 138",
             "images": "",
             "options": [
@@ -1929,12 +1929,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 138"
         },
         {
             "ID": "T050200039",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 139",
             "images": "",
             "options": [
@@ -1943,12 +1943,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 139"
         },
         {
             "ID": "T010200040",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 140",
             "images": "",
             "options": [
@@ -1961,8 +1961,8 @@
             "explain": "Explanation 140"
         },
         {
-            "ID": "T030200041",
-            "difficulty": "TH",
+            "ID": "T010200041",
+            "difficulty": "VDC",
             "question": "Question 141",
             "images": "",
             "options": [
@@ -1971,12 +1971,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 141"
         },
         {
             "ID": "T010200042",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 142",
             "images": "",
             "options": [
@@ -1989,8 +1989,8 @@
             "explain": "Explanation 142"
         },
         {
-            "ID": "T040200043",
-            "difficulty": "VD",
+            "ID": "T050200043",
+            "difficulty": "NB",
             "question": "Question 143",
             "images": "",
             "options": [
@@ -2003,7 +2003,7 @@
             "explain": "Explanation 143"
         },
         {
-            "ID": "T030200044",
+            "ID": "T040200044",
             "difficulty": "VDC",
             "question": "Question 144",
             "images": "",
@@ -2013,7 +2013,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 144"
         },
         {
@@ -2027,12 +2027,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 145"
         },
         {
             "ID": "T030200046",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 146",
             "images": "",
             "options": [
@@ -2055,12 +2055,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 147"
         },
         {
-            "ID": "T030200048",
-            "difficulty": "VD",
+            "ID": "T050200048",
+            "difficulty": "VDC",
             "question": "Question 148",
             "images": "",
             "options": [
@@ -2069,12 +2069,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 148"
         },
         {
-            "ID": "T030200049",
-            "difficulty": "VD",
+            "ID": "T010200049",
+            "difficulty": "VDC",
             "question": "Question 149",
             "images": "",
             "options": [
@@ -2083,11 +2083,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 149"
         },
         {
-            "ID": "T020200050",
+            "ID": "T030200050",
             "difficulty": "VDC",
             "question": "Question 150",
             "images": "",
@@ -2102,7 +2102,7 @@
         },
         {
             "ID": "T030200051",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 151",
             "images": "",
             "options": [
@@ -2111,12 +2111,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 151"
         },
         {
-            "ID": "T040200052",
-            "difficulty": "VDC",
+            "ID": "T030200052",
+            "difficulty": "TH",
             "question": "Question 152",
             "images": "",
             "options": [
@@ -2125,12 +2125,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 152"
         },
         {
-            "ID": "T050200053",
-            "difficulty": "VD",
+            "ID": "T010200053",
+            "difficulty": "TH",
             "question": "Question 153",
             "images": "",
             "options": [
@@ -2139,12 +2139,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 153"
         },
         {
             "ID": "T050200054",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 154",
             "images": "",
             "options": [
@@ -2153,7 +2153,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 154"
         },
         {
@@ -2167,11 +2167,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 155"
         },
         {
-            "ID": "T010200056",
+            "ID": "T030200056",
             "difficulty": "TH",
             "question": "Question 156",
             "images": "",
@@ -2185,7 +2185,7 @@
             "explain": "Explanation 156"
         },
         {
-            "ID": "T030200057",
+            "ID": "T050200057",
             "difficulty": "VDC",
             "question": "Question 157",
             "images": "",
@@ -2195,11 +2195,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 157"
         },
         {
-            "ID": "T020200058",
+            "ID": "T010200058",
             "difficulty": "VDC",
             "question": "Question 158",
             "images": "",
@@ -2209,12 +2209,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 158"
         },
         {
-            "ID": "T020200059",
-            "difficulty": "TH",
+            "ID": "T010200059",
+            "difficulty": "VD",
             "question": "Question 159",
             "images": "",
             "options": [
@@ -2227,7 +2227,7 @@
             "explain": "Explanation 159"
         },
         {
-            "ID": "T040200060",
+            "ID": "T050200060",
             "difficulty": "TH",
             "question": "Question 160",
             "images": "",
@@ -2241,8 +2241,8 @@
             "explain": "Explanation 160"
         },
         {
-            "ID": "T020200061",
-            "difficulty": "VD",
+            "ID": "T040200061",
+            "difficulty": "TH",
             "question": "Question 161",
             "images": "",
             "options": [
@@ -2251,11 +2251,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 161"
         },
         {
-            "ID": "T010200062",
+            "ID": "T050200062",
             "difficulty": "VD",
             "question": "Question 162",
             "images": "",
@@ -2265,11 +2265,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 162"
         },
         {
-            "ID": "T030200063",
+            "ID": "T050200063",
             "difficulty": "VDC",
             "question": "Question 163",
             "images": "",
@@ -2283,8 +2283,8 @@
             "explain": "Explanation 163"
         },
         {
-            "ID": "T010200064",
-            "difficulty": "VDC",
+            "ID": "T030200064",
+            "difficulty": "TH",
             "question": "Question 164",
             "images": "",
             "options": [
@@ -2297,7 +2297,7 @@
             "explain": "Explanation 164"
         },
         {
-            "ID": "T010200065",
+            "ID": "T030200065",
             "difficulty": "VD",
             "question": "Question 165",
             "images": "",
@@ -2307,11 +2307,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 165"
         },
         {
-            "ID": "T040200066",
+            "ID": "T020200066",
             "difficulty": "VD",
             "question": "Question 166",
             "images": "",
@@ -2325,7 +2325,7 @@
             "explain": "Explanation 166"
         },
         {
-            "ID": "T040200067",
+            "ID": "T010200067",
             "difficulty": "TH",
             "question": "Question 167",
             "images": "",
@@ -2349,12 +2349,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 168"
         },
         {
-            "ID": "T020200069",
-            "difficulty": "TH",
+            "ID": "T040200069",
+            "difficulty": "VD",
             "question": "Question 169",
             "images": "",
             "options": [
@@ -2363,12 +2363,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 169"
         },
         {
-            "ID": "T040200070",
-            "difficulty": "TH",
+            "ID": "T030200070",
+            "difficulty": "VDC",
             "question": "Question 170",
             "images": "",
             "options": [
@@ -2377,7 +2377,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 170"
         },
         {
@@ -2391,12 +2391,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 171"
         },
         {
             "ID": "T050200072",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 172",
             "images": "",
             "options": [
@@ -2409,7 +2409,7 @@
             "explain": "Explanation 172"
         },
         {
-            "ID": "T020200073",
+            "ID": "T010200073",
             "difficulty": "VD",
             "question": "Question 173",
             "images": "",
@@ -2419,12 +2419,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 173"
         },
         {
-            "ID": "T040200074",
-            "difficulty": "VDC",
+            "ID": "T020200074",
+            "difficulty": "VD",
             "question": "Question 174",
             "images": "",
             "options": [
@@ -2433,7 +2433,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 174"
         },
         {
@@ -2447,11 +2447,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 175"
         },
         {
-            "ID": "T010200076",
+            "ID": "T030200076",
             "difficulty": "VD",
             "question": "Question 176",
             "images": "",
@@ -2461,12 +2461,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 176"
         },
         {
-            "ID": "T030200077",
-            "difficulty": "TH",
+            "ID": "T040200077",
+            "difficulty": "VDC",
             "question": "Question 177",
             "images": "",
             "options": [
@@ -2475,11 +2475,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 177"
         },
         {
-            "ID": "T050200078",
+            "ID": "T010200078",
             "difficulty": "VDC",
             "question": "Question 178",
             "images": "",
@@ -2493,7 +2493,7 @@
             "explain": "Explanation 178"
         },
         {
-            "ID": "T050200079",
+            "ID": "T010200079",
             "difficulty": "TH",
             "question": "Question 179",
             "images": "",
@@ -2503,12 +2503,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 179"
         },
         {
-            "ID": "T020200080",
-            "difficulty": "VD",
+            "ID": "T040200080",
+            "difficulty": "TH",
             "question": "Question 180",
             "images": "",
             "options": [
@@ -2521,8 +2521,8 @@
             "explain": "Explanation 180"
         },
         {
-            "ID": "T030200081",
-            "difficulty": "VDC",
+            "ID": "T010200081",
+            "difficulty": "NB",
             "question": "Question 181",
             "images": "",
             "options": [
@@ -2531,12 +2531,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 181"
         },
         {
-            "ID": "T020200082",
-            "difficulty": "VDC",
+            "ID": "T010200082",
+            "difficulty": "VD",
             "question": "Question 182",
             "images": "",
             "options": [
@@ -2549,8 +2549,8 @@
             "explain": "Explanation 182"
         },
         {
-            "ID": "T050200083",
-            "difficulty": "VDC",
+            "ID": "T040200083",
+            "difficulty": "NB",
             "question": "Question 183",
             "images": "",
             "options": [
@@ -2564,7 +2564,7 @@
         },
         {
             "ID": "T040200084",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 184",
             "images": "",
             "options": [
@@ -2573,12 +2573,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 184"
         },
         {
-            "ID": "T030200085",
-            "difficulty": "TH",
+            "ID": "T010200085",
+            "difficulty": "VDC",
             "question": "Question 185",
             "images": "",
             "options": [
@@ -2587,12 +2587,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 185"
         },
         {
-            "ID": "T020200086",
-            "difficulty": "VDC",
+            "ID": "T050200086",
+            "difficulty": "VD",
             "question": "Question 186",
             "images": "",
             "options": [
@@ -2601,12 +2601,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 186"
         },
         {
-            "ID": "T020200087",
-            "difficulty": "VD",
+            "ID": "T050200087",
+            "difficulty": "NB",
             "question": "Question 187",
             "images": "",
             "options": [
@@ -2615,12 +2615,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 187"
         },
         {
             "ID": "T050200088",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 188",
             "images": "",
             "options": [
@@ -2629,12 +2629,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 188"
         },
         {
-            "ID": "T020200089",
-            "difficulty": "VDC",
+            "ID": "T050200089",
+            "difficulty": "VD",
             "question": "Question 189",
             "images": "",
             "options": [
@@ -2643,12 +2643,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 189"
         },
         {
-            "ID": "T050200090",
-            "difficulty": "TH",
+            "ID": "T040200090",
+            "difficulty": "VDC",
             "question": "Question 190",
             "images": "",
             "options": [
@@ -2657,12 +2657,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 190"
         },
         {
-            "ID": "T020200091",
-            "difficulty": "TH",
+            "ID": "T030200091",
+            "difficulty": "NB",
             "question": "Question 191",
             "images": "",
             "options": [
@@ -2671,12 +2671,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 191"
         },
         {
-            "ID": "T050200092",
-            "difficulty": "VDC",
+            "ID": "T010200092",
+            "difficulty": "NB",
             "question": "Question 192",
             "images": "",
             "options": [
@@ -2685,12 +2685,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 192"
         },
         {
-            "ID": "T030200093",
-            "difficulty": "TH",
+            "ID": "T050200093",
+            "difficulty": "VD",
             "question": "Question 193",
             "images": "",
             "options": [
@@ -2699,12 +2699,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 193"
         },
         {
-            "ID": "T040200094",
-            "difficulty": "TH",
+            "ID": "T020200094",
+            "difficulty": "VDC",
             "question": "Question 194",
             "images": "",
             "options": [
@@ -2713,12 +2713,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 194"
         },
         {
-            "ID": "T010200095",
-            "difficulty": "VDC",
+            "ID": "T050200095",
+            "difficulty": "TH",
             "question": "Question 195",
             "images": "",
             "options": [
@@ -2731,8 +2731,8 @@
             "explain": "Explanation 195"
         },
         {
-            "ID": "T040200096",
-            "difficulty": "VDC",
+            "ID": "T010200096",
+            "difficulty": "NB",
             "question": "Question 196",
             "images": "",
             "options": [
@@ -2741,12 +2741,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 196"
         },
         {
-            "ID": "T030200097",
-            "difficulty": "VD",
+            "ID": "T010200097",
+            "difficulty": "NB",
             "question": "Question 197",
             "images": "",
             "options": [
@@ -2755,12 +2755,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 197"
         },
         {
-            "ID": "T030200098",
-            "difficulty": "VDC",
+            "ID": "T020200098",
+            "difficulty": "VD",
             "question": "Question 198",
             "images": "",
             "options": [
@@ -2773,8 +2773,8 @@
             "explain": "Explanation 198"
         },
         {
-            "ID": "T020200099",
-            "difficulty": "TH",
+            "ID": "T010200099",
+            "difficulty": "VD",
             "question": "Question 199",
             "images": "",
             "options": [
@@ -2783,12 +2783,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 199"
         },
         {
-            "ID": "T030300000",
-            "difficulty": "VDC",
+            "ID": "T020300000",
+            "difficulty": "TH",
             "question": "Question 200",
             "images": "",
             "options": [
@@ -2797,7 +2797,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 200"
         },
         {
@@ -2816,7 +2816,7 @@
         },
         {
             "ID": "T030300002",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 202",
             "images": "",
             "options": [
@@ -2829,8 +2829,8 @@
             "explain": "Explanation 202"
         },
         {
-            "ID": "T010300003",
-            "difficulty": "VDC",
+            "ID": "T040300003",
+            "difficulty": "VD",
             "question": "Question 203",
             "images": "",
             "options": [
@@ -2839,12 +2839,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 203"
         },
         {
-            "ID": "T040300004",
-            "difficulty": "VD",
+            "ID": "T050300004",
+            "difficulty": "NB",
             "question": "Question 204",
             "images": "",
             "options": [
@@ -2853,12 +2853,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 204"
         },
         {
             "ID": "T010300005",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 205",
             "images": "",
             "options": [
@@ -2867,11 +2867,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 205"
         },
         {
-            "ID": "T010300006",
+            "ID": "T050300006",
             "difficulty": "VD",
             "question": "Question 206",
             "images": "",
@@ -2881,12 +2881,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 206"
         },
         {
-            "ID": "T040300007",
-            "difficulty": "VD",
+            "ID": "T030300007",
+            "difficulty": "NB",
             "question": "Question 207",
             "images": "",
             "options": [
@@ -2899,8 +2899,8 @@
             "explain": "Explanation 207"
         },
         {
-            "ID": "T050300008",
-            "difficulty": "TH",
+            "ID": "T030300008",
+            "difficulty": "NB",
             "question": "Question 208",
             "images": "",
             "options": [
@@ -2913,7 +2913,7 @@
             "explain": "Explanation 208"
         },
         {
-            "ID": "T010300009",
+            "ID": "T020300009",
             "difficulty": "VDC",
             "question": "Question 209",
             "images": "",
@@ -2923,12 +2923,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 209"
         },
         {
             "ID": "T020300010",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 210",
             "images": "",
             "options": [
@@ -2937,12 +2937,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 210"
         },
         {
-            "ID": "T020300011",
-            "difficulty": "VDC",
+            "ID": "T040300011",
+            "difficulty": "VD",
             "question": "Question 211",
             "images": "",
             "options": [
@@ -2951,12 +2951,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 211"
         },
         {
-            "ID": "T050300012",
-            "difficulty": "TH",
+            "ID": "T020300012",
+            "difficulty": "NB",
             "question": "Question 212",
             "images": "",
             "options": [
@@ -2965,12 +2965,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 212"
         },
         {
-            "ID": "T030300013",
-            "difficulty": "TH",
+            "ID": "T010300013",
+            "difficulty": "NB",
             "question": "Question 213",
             "images": "",
             "options": [
@@ -2979,12 +2979,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 213"
         },
         {
-            "ID": "T050300014",
-            "difficulty": "VDC",
+            "ID": "T010300014",
+            "difficulty": "VD",
             "question": "Question 214",
             "images": "",
             "options": [
@@ -2993,12 +2993,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 214"
         },
         {
-            "ID": "T020300015",
-            "difficulty": "VDC",
+            "ID": "T050300015",
+            "difficulty": "TH",
             "question": "Question 215",
             "images": "",
             "options": [
@@ -3011,8 +3011,8 @@
             "explain": "Explanation 215"
         },
         {
-            "ID": "T050300016",
-            "difficulty": "VD",
+            "ID": "T020300016",
+            "difficulty": "NB",
             "question": "Question 216",
             "images": "",
             "options": [
@@ -3021,12 +3021,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 216"
         },
         {
-            "ID": "T020300017",
-            "difficulty": "TH",
+            "ID": "T030300017",
+            "difficulty": "NB",
             "question": "Question 217",
             "images": "",
             "options": [
@@ -3035,12 +3035,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 217"
         },
         {
             "ID": "T050300018",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 218",
             "images": "",
             "options": [
@@ -3049,11 +3049,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 218"
         },
         {
-            "ID": "T050300019",
+            "ID": "T030300019",
             "difficulty": "TH",
             "question": "Question 219",
             "images": "",
@@ -3063,12 +3063,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 219"
         },
         {
-            "ID": "T050300020",
-            "difficulty": "TH",
+            "ID": "T010300020",
+            "difficulty": "NB",
             "question": "Question 220",
             "images": "",
             "options": [
@@ -3081,7 +3081,7 @@
             "explain": "Explanation 220"
         },
         {
-            "ID": "T040300021",
+            "ID": "T010300021",
             "difficulty": "VDC",
             "question": "Question 221",
             "images": "",
@@ -3091,11 +3091,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 221"
         },
         {
-            "ID": "T050300022",
+            "ID": "T030300022",
             "difficulty": "VD",
             "question": "Question 222",
             "images": "",
@@ -3105,12 +3105,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 222"
         },
         {
-            "ID": "T030300023",
-            "difficulty": "VDC",
+            "ID": "T010300023",
+            "difficulty": "NB",
             "question": "Question 223",
             "images": "",
             "options": [
@@ -3133,11 +3133,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 224"
         },
         {
-            "ID": "T020300025",
+            "ID": "T030300025",
             "difficulty": "TH",
             "question": "Question 225",
             "images": "",
@@ -3151,7 +3151,7 @@
             "explain": "Explanation 225"
         },
         {
-            "ID": "T050300026",
+            "ID": "T020300026",
             "difficulty": "TH",
             "question": "Question 226",
             "images": "",
@@ -3161,7 +3161,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 226"
         },
         {
@@ -3175,12 +3175,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 227"
         },
         {
-            "ID": "T020300028",
-            "difficulty": "TH",
+            "ID": "T010300028",
+            "difficulty": "NB",
             "question": "Question 228",
             "images": "",
             "options": [
@@ -3189,12 +3189,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 228"
         },
         {
-            "ID": "T020300029",
-            "difficulty": "TH",
+            "ID": "T040300029",
+            "difficulty": "VD",
             "question": "Question 229",
             "images": "",
             "options": [
@@ -3207,8 +3207,8 @@
             "explain": "Explanation 229"
         },
         {
-            "ID": "T020300030",
-            "difficulty": "VD",
+            "ID": "T010300030",
+            "difficulty": "TH",
             "question": "Question 230",
             "images": "",
             "options": [
@@ -3217,12 +3217,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 230"
         },
         {
-            "ID": "T050300031",
-            "difficulty": "TH",
+            "ID": "T040300031",
+            "difficulty": "NB",
             "question": "Question 231",
             "images": "",
             "options": [
@@ -3236,7 +3236,7 @@
         },
         {
             "ID": "T050300032",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 232",
             "images": "",
             "options": [
@@ -3245,12 +3245,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 232"
         },
         {
-            "ID": "T050300033",
-            "difficulty": "VDC",
+            "ID": "T040300033",
+            "difficulty": "VD",
             "question": "Question 233",
             "images": "",
             "options": [
@@ -3259,12 +3259,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 233"
         },
         {
-            "ID": "T020300034",
-            "difficulty": "VD",
+            "ID": "T040300034",
+            "difficulty": "VDC",
             "question": "Question 234",
             "images": "",
             "options": [
@@ -3277,7 +3277,7 @@
             "explain": "Explanation 234"
         },
         {
-            "ID": "T030300035",
+            "ID": "T020300035",
             "difficulty": "VD",
             "question": "Question 235",
             "images": "",
@@ -3287,12 +3287,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 235"
         },
         {
-            "ID": "T050300036",
-            "difficulty": "VD",
+            "ID": "T030300036",
+            "difficulty": "TH",
             "question": "Question 236",
             "images": "",
             "options": [
@@ -3301,12 +3301,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 236"
         },
         {
             "ID": "T030300037",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 237",
             "images": "",
             "options": [
@@ -3315,12 +3315,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 237"
         },
         {
             "ID": "T040300038",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 238",
             "images": "",
             "options": [
@@ -3329,12 +3329,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 238"
         },
         {
-            "ID": "T020300039",
-            "difficulty": "TH",
+            "ID": "T030300039",
+            "difficulty": "VD",
             "question": "Question 239",
             "images": "",
             "options": [
@@ -3343,12 +3343,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 239"
         },
         {
-            "ID": "T030300040",
-            "difficulty": "VDC",
+            "ID": "T040300040",
+            "difficulty": "TH",
             "question": "Question 240",
             "images": "",
             "options": [
@@ -3357,12 +3357,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 240"
         },
         {
-            "ID": "T050300041",
-            "difficulty": "VD",
+            "ID": "T020300041",
+            "difficulty": "TH",
             "question": "Question 241",
             "images": "",
             "options": [
@@ -3375,8 +3375,8 @@
             "explain": "Explanation 241"
         },
         {
-            "ID": "T020300042",
-            "difficulty": "VDC",
+            "ID": "T050300042",
+            "difficulty": "NB",
             "question": "Question 242",
             "images": "",
             "options": [
@@ -3389,8 +3389,8 @@
             "explain": "Explanation 242"
         },
         {
-            "ID": "T050300043",
-            "difficulty": "TH",
+            "ID": "T020300043",
+            "difficulty": "VDC",
             "question": "Question 243",
             "images": "",
             "options": [
@@ -3399,12 +3399,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 243"
         },
         {
-            "ID": "T040300044",
-            "difficulty": "VD",
+            "ID": "T020300044",
+            "difficulty": "NB",
             "question": "Question 244",
             "images": "",
             "options": [
@@ -3417,8 +3417,8 @@
             "explain": "Explanation 244"
         },
         {
-            "ID": "T040300045",
-            "difficulty": "VDC",
+            "ID": "T020300045",
+            "difficulty": "VD",
             "question": "Question 245",
             "images": "",
             "options": [
@@ -3431,7 +3431,7 @@
             "explain": "Explanation 245"
         },
         {
-            "ID": "T030300046",
+            "ID": "T050300046",
             "difficulty": "VD",
             "question": "Question 246",
             "images": "",
@@ -3441,11 +3441,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 246"
         },
         {
-            "ID": "T010300047",
+            "ID": "T020300047",
             "difficulty": "TH",
             "question": "Question 247",
             "images": "",
@@ -3455,12 +3455,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 247"
         },
         {
-            "ID": "T020300048",
-            "difficulty": "TH",
+            "ID": "T030300048",
+            "difficulty": "VD",
             "question": "Question 248",
             "images": "",
             "options": [
@@ -3473,8 +3473,8 @@
             "explain": "Explanation 248"
         },
         {
-            "ID": "T050300049",
-            "difficulty": "VDC",
+            "ID": "T030300049",
+            "difficulty": "TH",
             "question": "Question 249",
             "images": "",
             "options": [
@@ -3487,8 +3487,8 @@
             "explain": "Explanation 249"
         },
         {
-            "ID": "T050300050",
-            "difficulty": "VD",
+            "ID": "T020300050",
+            "difficulty": "TH",
             "question": "Question 250",
             "images": "",
             "options": [
@@ -3497,11 +3497,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 250"
         },
         {
-            "ID": "T050300051",
+            "ID": "T040300051",
             "difficulty": "VD",
             "question": "Question 251",
             "images": "",
@@ -3511,12 +3511,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 251"
         },
         {
             "ID": "T020300052",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 252",
             "images": "",
             "options": [
@@ -3529,8 +3529,8 @@
             "explain": "Explanation 252"
         },
         {
-            "ID": "T040300053",
-            "difficulty": "VDC",
+            "ID": "T020300053",
+            "difficulty": "TH",
             "question": "Question 253",
             "images": "",
             "options": [
@@ -3539,12 +3539,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 253"
         },
         {
-            "ID": "T050300054",
-            "difficulty": "VDC",
+            "ID": "T040300054",
+            "difficulty": "NB",
             "question": "Question 254",
             "images": "",
             "options": [
@@ -3567,12 +3567,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 255"
         },
         {
             "ID": "T050300056",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 256",
             "images": "",
             "options": [
@@ -3581,12 +3581,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 256"
         },
         {
-            "ID": "T040300057",
-            "difficulty": "VD",
+            "ID": "T020300057",
+            "difficulty": "NB",
             "question": "Question 257",
             "images": "",
             "options": [
@@ -3595,12 +3595,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 257"
         },
         {
             "ID": "T030300058",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 258",
             "images": "",
             "options": [
@@ -3609,12 +3609,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 258"
         },
         {
-            "ID": "T010300059",
-            "difficulty": "TH",
+            "ID": "T050300059",
+            "difficulty": "NB",
             "question": "Question 259",
             "images": "",
             "options": [
@@ -3623,12 +3623,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 259"
         },
         {
-            "ID": "T030300060",
-            "difficulty": "TH",
+            "ID": "T040300060",
+            "difficulty": "NB",
             "question": "Question 260",
             "images": "",
             "options": [
@@ -3637,12 +3637,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 260"
         },
         {
-            "ID": "T030300061",
-            "difficulty": "VD",
+            "ID": "T020300061",
+            "difficulty": "NB",
             "question": "Question 261",
             "images": "",
             "options": [
@@ -3655,8 +3655,8 @@
             "explain": "Explanation 261"
         },
         {
-            "ID": "T050300062",
-            "difficulty": "VD",
+            "ID": "T030300062",
+            "difficulty": "VDC",
             "question": "Question 262",
             "images": "",
             "options": [
@@ -3665,12 +3665,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 262"
         },
         {
-            "ID": "T020300063",
-            "difficulty": "TH",
+            "ID": "T010300063",
+            "difficulty": "VD",
             "question": "Question 263",
             "images": "",
             "options": [
@@ -3679,12 +3679,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 263"
         },
         {
-            "ID": "T020300064",
-            "difficulty": "VDC",
+            "ID": "T050300064",
+            "difficulty": "NB",
             "question": "Question 264",
             "images": "",
             "options": [
@@ -3693,12 +3693,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 264"
         },
         {
-            "ID": "T020300065",
-            "difficulty": "VD",
+            "ID": "T030300065",
+            "difficulty": "NB",
             "question": "Question 265",
             "images": "",
             "options": [
@@ -3711,8 +3711,8 @@
             "explain": "Explanation 265"
         },
         {
-            "ID": "T020300066",
-            "difficulty": "VD",
+            "ID": "T010300066",
+            "difficulty": "VDC",
             "question": "Question 266",
             "images": "",
             "options": [
@@ -3721,12 +3721,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 266"
         },
         {
             "ID": "T020300067",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 267",
             "images": "",
             "options": [
@@ -3739,8 +3739,8 @@
             "explain": "Explanation 267"
         },
         {
-            "ID": "T020300068",
-            "difficulty": "VD",
+            "ID": "T050300068",
+            "difficulty": "NB",
             "question": "Question 268",
             "images": "",
             "options": [
@@ -3749,12 +3749,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 268"
         },
         {
-            "ID": "T050300069",
-            "difficulty": "VD",
+            "ID": "T040300069",
+            "difficulty": "NB",
             "question": "Question 269",
             "images": "",
             "options": [
@@ -3763,12 +3763,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 269"
         },
         {
             "ID": "T050300070",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 270",
             "images": "",
             "options": [
@@ -3777,11 +3777,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 270"
         },
         {
-            "ID": "T050300071",
+            "ID": "T040300071",
             "difficulty": "VDC",
             "question": "Question 271",
             "images": "",
@@ -3791,12 +3791,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 271"
         },
         {
-            "ID": "T010300072",
-            "difficulty": "TH",
+            "ID": "T040300072",
+            "difficulty": "VD",
             "question": "Question 272",
             "images": "",
             "options": [
@@ -3809,8 +3809,8 @@
             "explain": "Explanation 272"
         },
         {
-            "ID": "T020300073",
-            "difficulty": "VDC",
+            "ID": "T010300073",
+            "difficulty": "VD",
             "question": "Question 273",
             "images": "",
             "options": [
@@ -3819,12 +3819,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 273"
         },
         {
-            "ID": "T050300074",
-            "difficulty": "VD",
+            "ID": "T040300074",
+            "difficulty": "NB",
             "question": "Question 274",
             "images": "",
             "options": [
@@ -3837,8 +3837,8 @@
             "explain": "Explanation 274"
         },
         {
-            "ID": "T030300075",
-            "difficulty": "VD",
+            "ID": "T010300075",
+            "difficulty": "VDC",
             "question": "Question 275",
             "images": "",
             "options": [
@@ -3851,8 +3851,8 @@
             "explain": "Explanation 275"
         },
         {
-            "ID": "T050300076",
-            "difficulty": "TH",
+            "ID": "T020300076",
+            "difficulty": "VD",
             "question": "Question 276",
             "images": "",
             "options": [
@@ -3861,12 +3861,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 276"
         },
         {
-            "ID": "T020300077",
-            "difficulty": "VDC",
+            "ID": "T030300077",
+            "difficulty": "NB",
             "question": "Question 277",
             "images": "",
             "options": [
@@ -3875,12 +3875,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 277"
         },
         {
-            "ID": "T020300078",
-            "difficulty": "VDC",
+            "ID": "T030300078",
+            "difficulty": "TH",
             "question": "Question 278",
             "images": "",
             "options": [
@@ -3893,8 +3893,8 @@
             "explain": "Explanation 278"
         },
         {
-            "ID": "T030300079",
-            "difficulty": "VD",
+            "ID": "T040300079",
+            "difficulty": "VDC",
             "question": "Question 279",
             "images": "",
             "options": [
@@ -3903,12 +3903,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 279"
         },
         {
-            "ID": "T030300080",
-            "difficulty": "TH",
+            "ID": "T040300080",
+            "difficulty": "VDC",
             "question": "Question 280",
             "images": "",
             "options": [
@@ -3917,12 +3917,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 280"
         },
         {
-            "ID": "T050300081",
-            "difficulty": "VD",
+            "ID": "T030300081",
+            "difficulty": "NB",
             "question": "Question 281",
             "images": "",
             "options": [
@@ -3935,8 +3935,8 @@
             "explain": "Explanation 281"
         },
         {
-            "ID": "T010300082",
-            "difficulty": "VDC",
+            "ID": "T040300082",
+            "difficulty": "VD",
             "question": "Question 282",
             "images": "",
             "options": [
@@ -3945,12 +3945,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 282"
         },
         {
-            "ID": "T010300083",
-            "difficulty": "TH",
+            "ID": "T040300083",
+            "difficulty": "VDC",
             "question": "Question 283",
             "images": "",
             "options": [
@@ -3959,12 +3959,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 283"
         },
         {
-            "ID": "T020300084",
-            "difficulty": "VD",
+            "ID": "T040300084",
+            "difficulty": "NB",
             "question": "Question 284",
             "images": "",
             "options": [
@@ -3977,8 +3977,8 @@
             "explain": "Explanation 284"
         },
         {
-            "ID": "T020300085",
-            "difficulty": "TH",
+            "ID": "T010300085",
+            "difficulty": "VDC",
             "question": "Question 285",
             "images": "",
             "options": [
@@ -3987,12 +3987,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 285"
         },
         {
-            "ID": "T050300086",
-            "difficulty": "VD",
+            "ID": "T020300086",
+            "difficulty": "VDC",
             "question": "Question 286",
             "images": "",
             "options": [
@@ -4005,7 +4005,7 @@
             "explain": "Explanation 286"
         },
         {
-            "ID": "T050300087",
+            "ID": "T010300087",
             "difficulty": "VDC",
             "question": "Question 287",
             "images": "",
@@ -4015,12 +4015,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 287"
         },
         {
-            "ID": "T010300088",
-            "difficulty": "VD",
+            "ID": "T030300088",
+            "difficulty": "NB",
             "question": "Question 288",
             "images": "",
             "options": [
@@ -4029,11 +4029,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 288"
         },
         {
-            "ID": "T040300089",
+            "ID": "T050300089",
             "difficulty": "TH",
             "question": "Question 289",
             "images": "",
@@ -4043,12 +4043,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 289"
         },
         {
             "ID": "T020300090",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 290",
             "images": "",
             "options": [
@@ -4057,11 +4057,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 290"
         },
         {
-            "ID": "T010300091",
+            "ID": "T030300091",
             "difficulty": "VD",
             "question": "Question 291",
             "images": "",
@@ -4071,12 +4071,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 291"
         },
         {
-            "ID": "T020300092",
-            "difficulty": "VD",
+            "ID": "T010300092",
+            "difficulty": "VDC",
             "question": "Question 292",
             "images": "",
             "options": [
@@ -4085,12 +4085,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 292"
         },
         {
-            "ID": "T050300093",
-            "difficulty": "TH",
+            "ID": "T040300093",
+            "difficulty": "NB",
             "question": "Question 293",
             "images": "",
             "options": [
@@ -4099,11 +4099,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 293"
         },
         {
-            "ID": "T020300094",
+            "ID": "T010300094",
             "difficulty": "VD",
             "question": "Question 294",
             "images": "",
@@ -4113,12 +4113,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 294"
         },
         {
-            "ID": "T040300095",
-            "difficulty": "VD",
+            "ID": "T030300095",
+            "difficulty": "TH",
             "question": "Question 295",
             "images": "",
             "options": [
@@ -4127,12 +4127,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 295"
         },
         {
-            "ID": "T050300096",
-            "difficulty": "TH",
+            "ID": "T030300096",
+            "difficulty": "VD",
             "question": "Question 296",
             "images": "",
             "options": [
@@ -4141,12 +4141,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 296"
         },
         {
-            "ID": "T050300097",
-            "difficulty": "TH",
+            "ID": "T040300097",
+            "difficulty": "VDC",
             "question": "Question 297",
             "images": "",
             "options": [
@@ -4155,12 +4155,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 297"
         },
         {
-            "ID": "T010300098",
-            "difficulty": "VDC",
+            "ID": "T020300098",
+            "difficulty": "TH",
             "question": "Question 298",
             "images": "",
             "options": [
@@ -4169,12 +4169,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 298"
         },
         {
-            "ID": "T020300099",
-            "difficulty": "TH",
+            "ID": "T050300099",
+            "difficulty": "VD",
             "question": "Question 299",
             "images": "",
             "options": [
@@ -4183,12 +4183,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 299"
         },
         {
-            "ID": "T040400000",
-            "difficulty": "TH",
+            "ID": "T050400000",
+            "difficulty": "NB",
             "question": "Question 300",
             "images": "",
             "options": [
@@ -4197,12 +4197,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 300"
         },
         {
-            "ID": "T030400001",
-            "difficulty": "VDC",
+            "ID": "T050400001",
+            "difficulty": "TH",
             "question": "Question 301",
             "images": "",
             "options": [
@@ -4211,12 +4211,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 301"
         },
         {
             "ID": "T040400002",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 302",
             "images": "",
             "options": [
@@ -4225,11 +4225,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 302"
         },
         {
-            "ID": "T040400003",
+            "ID": "T030400003",
             "difficulty": "VDC",
             "question": "Question 303",
             "images": "",
@@ -4239,11 +4239,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 303"
         },
         {
-            "ID": "T050400004",
+            "ID": "T020400004",
             "difficulty": "TH",
             "question": "Question 304",
             "images": "",
@@ -4257,8 +4257,8 @@
             "explain": "Explanation 304"
         },
         {
-            "ID": "T050400005",
-            "difficulty": "VDC",
+            "ID": "T020400005",
+            "difficulty": "VD",
             "question": "Question 305",
             "images": "",
             "options": [
@@ -4272,7 +4272,7 @@
         },
         {
             "ID": "T040400006",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 306",
             "images": "",
             "options": [
@@ -4281,12 +4281,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 306"
         },
         {
-            "ID": "T030400007",
-            "difficulty": "VD",
+            "ID": "T050400007",
+            "difficulty": "VDC",
             "question": "Question 307",
             "images": "",
             "options": [
@@ -4295,12 +4295,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 307"
         },
         {
-            "ID": "T040400008",
-            "difficulty": "VDC",
+            "ID": "T010400008",
+            "difficulty": "VD",
             "question": "Question 308",
             "images": "",
             "options": [
@@ -4314,7 +4314,7 @@
         },
         {
             "ID": "T030400009",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 309",
             "images": "",
             "options": [
@@ -4323,11 +4323,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 309"
         },
         {
-            "ID": "T020400010",
+            "ID": "T010400010",
             "difficulty": "TH",
             "question": "Question 310",
             "images": "",
@@ -4337,12 +4337,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 310"
         },
         {
             "ID": "T040400011",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 311",
             "images": "",
             "options": [
@@ -4351,12 +4351,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 311"
         },
         {
-            "ID": "T050400012",
-            "difficulty": "VD",
+            "ID": "T010400012",
+            "difficulty": "NB",
             "question": "Question 312",
             "images": "",
             "options": [
@@ -4365,12 +4365,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 312"
         },
         {
-            "ID": "T050400013",
-            "difficulty": "VD",
+            "ID": "T020400013",
+            "difficulty": "TH",
             "question": "Question 313",
             "images": "",
             "options": [
@@ -4379,12 +4379,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 313"
         },
         {
-            "ID": "T050400014",
-            "difficulty": "VD",
+            "ID": "T020400014",
+            "difficulty": "NB",
             "question": "Question 314",
             "images": "",
             "options": [
@@ -4407,12 +4407,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 315"
         },
         {
-            "ID": "T020400016",
-            "difficulty": "VDC",
+            "ID": "T050400016",
+            "difficulty": "NB",
             "question": "Question 316",
             "images": "",
             "options": [
@@ -4425,8 +4425,8 @@
             "explain": "Explanation 316"
         },
         {
-            "ID": "T030400017",
-            "difficulty": "TH",
+            "ID": "T010400017",
+            "difficulty": "NB",
             "question": "Question 317",
             "images": "",
             "options": [
@@ -4439,8 +4439,8 @@
             "explain": "Explanation 317"
         },
         {
-            "ID": "T010400018",
-            "difficulty": "VD",
+            "ID": "T040400018",
+            "difficulty": "TH",
             "question": "Question 318",
             "images": "",
             "options": [
@@ -4449,12 +4449,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 318"
         },
         {
             "ID": "T010400019",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 319",
             "images": "",
             "options": [
@@ -4467,8 +4467,8 @@
             "explain": "Explanation 319"
         },
         {
-            "ID": "T020400020",
-            "difficulty": "VDC",
+            "ID": "T050400020",
+            "difficulty": "TH",
             "question": "Question 320",
             "images": "",
             "options": [
@@ -4481,8 +4481,8 @@
             "explain": "Explanation 320"
         },
         {
-            "ID": "T040400021",
-            "difficulty": "VDC",
+            "ID": "T010400021",
+            "difficulty": "TH",
             "question": "Question 321",
             "images": "",
             "options": [
@@ -4491,12 +4491,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 321"
         },
         {
-            "ID": "T040400022",
-            "difficulty": "VD",
+            "ID": "T030400022",
+            "difficulty": "VDC",
             "question": "Question 322",
             "images": "",
             "options": [
@@ -4510,7 +4510,7 @@
         },
         {
             "ID": "T010400023",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 323",
             "images": "",
             "options": [
@@ -4523,8 +4523,8 @@
             "explain": "Explanation 323"
         },
         {
-            "ID": "T050400024",
-            "difficulty": "VDC",
+            "ID": "T030400024",
+            "difficulty": "TH",
             "question": "Question 324",
             "images": "",
             "options": [
@@ -4533,7 +4533,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 324"
         },
         {
@@ -4547,12 +4547,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 325"
         },
         {
             "ID": "T020400026",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 326",
             "images": "",
             "options": [
@@ -4561,12 +4561,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 326"
         },
         {
-            "ID": "T030400027",
-            "difficulty": "VD",
+            "ID": "T050400027",
+            "difficulty": "TH",
             "question": "Question 327",
             "images": "",
             "options": [
@@ -4580,7 +4580,7 @@
         },
         {
             "ID": "T040400028",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 328",
             "images": "",
             "options": [
@@ -4589,12 +4589,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 328"
         },
         {
-            "ID": "T010400029",
-            "difficulty": "VD",
+            "ID": "T020400029",
+            "difficulty": "NB",
             "question": "Question 329",
             "images": "",
             "options": [
@@ -4603,12 +4603,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 329"
         },
         {
             "ID": "T010400030",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 330",
             "images": "",
             "options": [
@@ -4617,11 +4617,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 330"
         },
         {
-            "ID": "T040400031",
+            "ID": "T010400031",
             "difficulty": "VDC",
             "question": "Question 331",
             "images": "",
@@ -4631,12 +4631,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 331"
         },
         {
             "ID": "T010400032",
-            "difficulty": "VD",
+            "difficulty": "NB",
             "question": "Question 332",
             "images": "",
             "options": [
@@ -4650,7 +4650,7 @@
         },
         {
             "ID": "T030400033",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 333",
             "images": "",
             "options": [
@@ -4663,8 +4663,8 @@
             "explain": "Explanation 333"
         },
         {
-            "ID": "T010400034",
-            "difficulty": "VD",
+            "ID": "T030400034",
+            "difficulty": "VDC",
             "question": "Question 334",
             "images": "",
             "options": [
@@ -4677,8 +4677,8 @@
             "explain": "Explanation 334"
         },
         {
-            "ID": "T050400035",
-            "difficulty": "TH",
+            "ID": "T030400035",
+            "difficulty": "NB",
             "question": "Question 335",
             "images": "",
             "options": [
@@ -4687,11 +4687,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 335"
         },
         {
-            "ID": "T040400036",
+            "ID": "T010400036",
             "difficulty": "VD",
             "question": "Question 336",
             "images": "",
@@ -4701,12 +4701,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 336"
         },
         {
-            "ID": "T020400037",
-            "difficulty": "VD",
+            "ID": "T050400037",
+            "difficulty": "VDC",
             "question": "Question 337",
             "images": "",
             "options": [
@@ -4715,12 +4715,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 337"
         },
         {
-            "ID": "T050400038",
-            "difficulty": "TH",
+            "ID": "T040400038",
+            "difficulty": "NB",
             "question": "Question 338",
             "images": "",
             "options": [
@@ -4729,12 +4729,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 338"
         },
         {
             "ID": "T020400039",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 339",
             "images": "",
             "options": [
@@ -4743,12 +4743,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 339"
         },
         {
             "ID": "T010400040",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 340",
             "images": "",
             "options": [
@@ -4757,12 +4757,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 340"
         },
         {
-            "ID": "T010400041",
-            "difficulty": "TH",
+            "ID": "T050400041",
+            "difficulty": "VDC",
             "question": "Question 341",
             "images": "",
             "options": [
@@ -4771,12 +4771,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 341"
         },
         {
-            "ID": "T040400042",
-            "difficulty": "VDC",
+            "ID": "T020400042",
+            "difficulty": "NB",
             "question": "Question 342",
             "images": "",
             "options": [
@@ -4785,12 +4785,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 342"
         },
         {
-            "ID": "T030400043",
-            "difficulty": "VD",
+            "ID": "T050400043",
+            "difficulty": "NB",
             "question": "Question 343",
             "images": "",
             "options": [
@@ -4799,12 +4799,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 343"
         },
         {
-            "ID": "T030400044",
-            "difficulty": "VD",
+            "ID": "T040400044",
+            "difficulty": "TH",
             "question": "Question 344",
             "images": "",
             "options": [
@@ -4813,7 +4813,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 344"
         },
         {
@@ -4827,11 +4827,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 345"
         },
         {
-            "ID": "T040400046",
+            "ID": "T020400046",
             "difficulty": "VDC",
             "question": "Question 346",
             "images": "",
@@ -4841,12 +4841,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 346"
         },
         {
-            "ID": "T030400047",
-            "difficulty": "VDC",
+            "ID": "T020400047",
+            "difficulty": "TH",
             "question": "Question 347",
             "images": "",
             "options": [
@@ -4859,7 +4859,7 @@
             "explain": "Explanation 347"
         },
         {
-            "ID": "T050400048",
+            "ID": "T040400048",
             "difficulty": "TH",
             "question": "Question 348",
             "images": "",
@@ -4869,11 +4869,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 348"
         },
         {
-            "ID": "T050400049",
+            "ID": "T010400049",
             "difficulty": "TH",
             "question": "Question 349",
             "images": "",
@@ -4883,12 +4883,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 349"
         },
         {
-            "ID": "T050400050",
-            "difficulty": "TH",
+            "ID": "T020400050",
+            "difficulty": "NB",
             "question": "Question 350",
             "images": "",
             "options": [
@@ -4901,7 +4901,7 @@
             "explain": "Explanation 350"
         },
         {
-            "ID": "T040400051",
+            "ID": "T010400051",
             "difficulty": "VD",
             "question": "Question 351",
             "images": "",
@@ -4911,11 +4911,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 351"
         },
         {
-            "ID": "T030400052",
+            "ID": "T010400052",
             "difficulty": "VD",
             "question": "Question 352",
             "images": "",
@@ -4925,12 +4925,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 352"
         },
         {
-            "ID": "T030400053",
-            "difficulty": "VDC",
+            "ID": "T020400053",
+            "difficulty": "NB",
             "question": "Question 353",
             "images": "",
             "options": [
@@ -4943,8 +4943,8 @@
             "explain": "Explanation 353"
         },
         {
-            "ID": "T010400054",
-            "difficulty": "VD",
+            "ID": "T040400054",
+            "difficulty": "VDC",
             "question": "Question 354",
             "images": "",
             "options": [
@@ -4953,12 +4953,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 354"
         },
         {
-            "ID": "T050400055",
-            "difficulty": "TH",
+            "ID": "T040400055",
+            "difficulty": "VDC",
             "question": "Question 355",
             "images": "",
             "options": [
@@ -4967,11 +4967,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 355"
         },
         {
-            "ID": "T020400056",
+            "ID": "T010400056",
             "difficulty": "TH",
             "question": "Question 356",
             "images": "",
@@ -4985,7 +4985,7 @@
             "explain": "Explanation 356"
         },
         {
-            "ID": "T010400057",
+            "ID": "T030400057",
             "difficulty": "VD",
             "question": "Question 357",
             "images": "",
@@ -4995,11 +4995,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 357"
         },
         {
-            "ID": "T030400058",
+            "ID": "T020400058",
             "difficulty": "VDC",
             "question": "Question 358",
             "images": "",
@@ -5009,12 +5009,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 358"
         },
         {
-            "ID": "T040400059",
-            "difficulty": "VDC",
+            "ID": "T010400059",
+            "difficulty": "VD",
             "question": "Question 359",
             "images": "",
             "options": [
@@ -5023,12 +5023,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 359"
         },
         {
             "ID": "T010400060",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 360",
             "images": "",
             "options": [
@@ -5037,12 +5037,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 360"
         },
         {
             "ID": "T050400061",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 361",
             "images": "",
             "options": [
@@ -5051,12 +5051,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 361"
         },
         {
             "ID": "T020400062",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 362",
             "images": "",
             "options": [
@@ -5069,8 +5069,8 @@
             "explain": "Explanation 362"
         },
         {
-            "ID": "T010400063",
-            "difficulty": "TH",
+            "ID": "T050400063",
+            "difficulty": "VDC",
             "question": "Question 363",
             "images": "",
             "options": [
@@ -5079,12 +5079,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 363"
         },
         {
-            "ID": "T050400064",
-            "difficulty": "VDC",
+            "ID": "T020400064",
+            "difficulty": "TH",
             "question": "Question 364",
             "images": "",
             "options": [
@@ -5093,12 +5093,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 364"
         },
         {
             "ID": "T010400065",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 365",
             "images": "",
             "options": [
@@ -5107,12 +5107,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 365"
         },
         {
-            "ID": "T040400066",
-            "difficulty": "TH",
+            "ID": "T050400066",
+            "difficulty": "VD",
             "question": "Question 366",
             "images": "",
             "options": [
@@ -5121,11 +5121,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 366"
         },
         {
-            "ID": "T040400067",
+            "ID": "T050400067",
             "difficulty": "VDC",
             "question": "Question 367",
             "images": "",
@@ -5135,12 +5135,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 367"
         },
         {
-            "ID": "T020400068",
-            "difficulty": "TH",
+            "ID": "T030400068",
+            "difficulty": "VD",
             "question": "Question 368",
             "images": "",
             "options": [
@@ -5149,12 +5149,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 368"
         },
         {
             "ID": "T050400069",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 369",
             "images": "",
             "options": [
@@ -5177,12 +5177,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 370"
         },
         {
-            "ID": "T010400071",
-            "difficulty": "TH",
+            "ID": "T020400071",
+            "difficulty": "VDC",
             "question": "Question 371",
             "images": "",
             "options": [
@@ -5191,11 +5191,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 371"
         },
         {
-            "ID": "T030400072",
+            "ID": "T050400072",
             "difficulty": "TH",
             "question": "Question 372",
             "images": "",
@@ -5205,12 +5205,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 372"
         },
         {
-            "ID": "T040400073",
-            "difficulty": "VD",
+            "ID": "T010400073",
+            "difficulty": "VDC",
             "question": "Question 373",
             "images": "",
             "options": [
@@ -5219,11 +5219,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 373"
         },
         {
-            "ID": "T020400074",
+            "ID": "T010400074",
             "difficulty": "VDC",
             "question": "Question 374",
             "images": "",
@@ -5233,12 +5233,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 374"
         },
         {
-            "ID": "T030400075",
-            "difficulty": "VDC",
+            "ID": "T010400075",
+            "difficulty": "TH",
             "question": "Question 375",
             "images": "",
             "options": [
@@ -5247,11 +5247,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 375"
         },
         {
-            "ID": "T020400076",
+            "ID": "T050400076",
             "difficulty": "VDC",
             "question": "Question 376",
             "images": "",
@@ -5265,8 +5265,8 @@
             "explain": "Explanation 376"
         },
         {
-            "ID": "T050400077",
-            "difficulty": "VD",
+            "ID": "T020400077",
+            "difficulty": "NB",
             "question": "Question 377",
             "images": "",
             "options": [
@@ -5275,11 +5275,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 377"
         },
         {
-            "ID": "T040400078",
+            "ID": "T010400078",
             "difficulty": "VDC",
             "question": "Question 378",
             "images": "",
@@ -5289,12 +5289,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 378"
         },
         {
             "ID": "T010400079",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 379",
             "images": "",
             "options": [
@@ -5303,11 +5303,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 379"
         },
         {
-            "ID": "T020400080",
+            "ID": "T030400080",
             "difficulty": "VD",
             "question": "Question 380",
             "images": "",
@@ -5317,12 +5317,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 380"
         },
         {
-            "ID": "T050400081",
-            "difficulty": "VDC",
+            "ID": "T010400081",
+            "difficulty": "VD",
             "question": "Question 381",
             "images": "",
             "options": [
@@ -5331,12 +5331,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 381"
         },
         {
-            "ID": "T030400082",
-            "difficulty": "VDC",
+            "ID": "T040400082",
+            "difficulty": "NB",
             "question": "Question 382",
             "images": "",
             "options": [
@@ -5345,11 +5345,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 382"
         },
         {
-            "ID": "T050400083",
+            "ID": "T030400083",
             "difficulty": "TH",
             "question": "Question 383",
             "images": "",
@@ -5359,12 +5359,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 383"
         },
         {
             "ID": "T040400084",
-            "difficulty": "VDC",
+            "difficulty": "TH",
             "question": "Question 384",
             "images": "",
             "options": [
@@ -5373,12 +5373,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 384"
         },
         {
-            "ID": "T040400085",
-            "difficulty": "VD",
+            "ID": "T030400085",
+            "difficulty": "VDC",
             "question": "Question 385",
             "images": "",
             "options": [
@@ -5391,7 +5391,7 @@
             "explain": "Explanation 385"
         },
         {
-            "ID": "T040400086",
+            "ID": "T030400086",
             "difficulty": "TH",
             "question": "Question 386",
             "images": "",
@@ -5401,12 +5401,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 386"
         },
         {
-            "ID": "T020400087",
-            "difficulty": "VD",
+            "ID": "T030400087",
+            "difficulty": "TH",
             "question": "Question 387",
             "images": "",
             "options": [
@@ -5415,12 +5415,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 387"
         },
         {
             "ID": "T050400088",
-            "difficulty": "TH",
+            "difficulty": "NB",
             "question": "Question 388",
             "images": "",
             "options": [
@@ -5429,12 +5429,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 388"
         },
         {
-            "ID": "T050400089",
-            "difficulty": "TH",
+            "ID": "T040400089",
+            "difficulty": "VD",
             "question": "Question 389",
             "images": "",
             "options": [
@@ -5443,12 +5443,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 389"
         },
         {
             "ID": "T010400090",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 390",
             "images": "",
             "options": [
@@ -5457,12 +5457,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 390"
         },
         {
-            "ID": "T040400091",
-            "difficulty": "VD",
+            "ID": "T030400091",
+            "difficulty": "VDC",
             "question": "Question 391",
             "images": "",
             "options": [
@@ -5476,7 +5476,7 @@
         },
         {
             "ID": "T050400092",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 392",
             "images": "",
             "options": [
@@ -5485,12 +5485,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 392"
         },
         {
-            "ID": "T030400093",
-            "difficulty": "VDC",
+            "ID": "T010400093",
+            "difficulty": "VD",
             "question": "Question 393",
             "images": "",
             "options": [
@@ -5499,12 +5499,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 393"
         },
         {
             "ID": "T020400094",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 394",
             "images": "",
             "options": [
@@ -5517,8 +5517,8 @@
             "explain": "Explanation 394"
         },
         {
-            "ID": "T020400095",
-            "difficulty": "VD",
+            "ID": "T040400095",
+            "difficulty": "TH",
             "question": "Question 395",
             "images": "",
             "options": [
@@ -5527,11 +5527,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 395"
         },
         {
-            "ID": "T030400096",
+            "ID": "T040400096",
             "difficulty": "TH",
             "question": "Question 396",
             "images": "",
@@ -5541,12 +5541,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 396"
         },
         {
             "ID": "T020400097",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 397",
             "images": "",
             "options": [
@@ -5555,11 +5555,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 397"
         },
         {
-            "ID": "T030400098",
+            "ID": "T010400098",
             "difficulty": "VDC",
             "question": "Question 398",
             "images": "",
@@ -5573,8 +5573,8 @@
             "explain": "Explanation 398"
         },
         {
-            "ID": "T040400099",
-            "difficulty": "TH",
+            "ID": "T010400099",
+            "difficulty": "NB",
             "question": "Question 399",
             "images": "",
             "options": [
@@ -5583,12 +5583,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 399"
         },
         {
-            "ID": "T050500000",
-            "difficulty": "TH",
+            "ID": "T010500000",
+            "difficulty": "VD",
             "question": "Question 400",
             "images": "",
             "options": [
@@ -5597,12 +5597,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 400"
         },
         {
-            "ID": "T020500001",
-            "difficulty": "VD",
+            "ID": "T010500001",
+            "difficulty": "TH",
             "question": "Question 401",
             "images": "",
             "options": [
@@ -5611,11 +5611,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 401"
         },
         {
-            "ID": "T010500002",
+            "ID": "T050500002",
             "difficulty": "TH",
             "question": "Question 402",
             "images": "",
@@ -5625,11 +5625,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 402"
         },
         {
-            "ID": "T050500003",
+            "ID": "T040500003",
             "difficulty": "VDC",
             "question": "Question 403",
             "images": "",
@@ -5639,12 +5639,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 403"
         },
         {
-            "ID": "T010500004",
-            "difficulty": "VDC",
+            "ID": "T040500004",
+            "difficulty": "VD",
             "question": "Question 404",
             "images": "",
             "options": [
@@ -5653,11 +5653,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 404"
         },
         {
-            "ID": "T040500005",
+            "ID": "T010500005",
             "difficulty": "VDC",
             "question": "Question 405",
             "images": "",
@@ -5667,12 +5667,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 405"
         },
         {
             "ID": "T010500006",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 406",
             "images": "",
             "options": [
@@ -5681,12 +5681,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 406"
         },
         {
-            "ID": "T020500007",
-            "difficulty": "VDC",
+            "ID": "T040500007",
+            "difficulty": "TH",
             "question": "Question 407",
             "images": "",
             "options": [
@@ -5695,12 +5695,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 407"
         },
         {
-            "ID": "T010500008",
-            "difficulty": "VDC",
+            "ID": "T050500008",
+            "difficulty": "VD",
             "question": "Question 408",
             "images": "",
             "options": [
@@ -5713,8 +5713,8 @@
             "explain": "Explanation 408"
         },
         {
-            "ID": "T050500009",
-            "difficulty": "VDC",
+            "ID": "T030500009",
+            "difficulty": "VD",
             "question": "Question 409",
             "images": "",
             "options": [
@@ -5723,12 +5723,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 409"
         },
         {
-            "ID": "T050500010",
-            "difficulty": "VD",
+            "ID": "T040500010",
+            "difficulty": "NB",
             "question": "Question 410",
             "images": "",
             "options": [
@@ -5737,12 +5737,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 410"
         },
         {
-            "ID": "T010500011",
-            "difficulty": "VDC",
+            "ID": "T030500011",
+            "difficulty": "NB",
             "question": "Question 411",
             "images": "",
             "options": [
@@ -5751,12 +5751,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 411"
         },
         {
-            "ID": "T030500012",
-            "difficulty": "TH",
+            "ID": "T020500012",
+            "difficulty": "VD",
             "question": "Question 412",
             "images": "",
             "options": [
@@ -5765,11 +5765,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 412"
         },
         {
-            "ID": "T030500013",
+            "ID": "T040500013",
             "difficulty": "VDC",
             "question": "Question 413",
             "images": "",
@@ -5783,7 +5783,7 @@
             "explain": "Explanation 413"
         },
         {
-            "ID": "T030500014",
+            "ID": "T050500014",
             "difficulty": "VD",
             "question": "Question 414",
             "images": "",
@@ -5793,12 +5793,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 414"
         },
         {
-            "ID": "T010500015",
-            "difficulty": "VD",
+            "ID": "T020500015",
+            "difficulty": "NB",
             "question": "Question 415",
             "images": "",
             "options": [
@@ -5807,12 +5807,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 415"
         },
         {
             "ID": "T030500016",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 416",
             "images": "",
             "options": [
@@ -5821,12 +5821,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 416"
         },
         {
-            "ID": "T010500017",
-            "difficulty": "TH",
+            "ID": "T040500017",
+            "difficulty": "VD",
             "question": "Question 417",
             "images": "",
             "options": [
@@ -5839,8 +5839,8 @@
             "explain": "Explanation 417"
         },
         {
-            "ID": "T020500018",
-            "difficulty": "VD",
+            "ID": "T010500018",
+            "difficulty": "NB",
             "question": "Question 418",
             "images": "",
             "options": [
@@ -5854,7 +5854,7 @@
         },
         {
             "ID": "T010500019",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 419",
             "images": "",
             "options": [
@@ -5867,8 +5867,8 @@
             "explain": "Explanation 419"
         },
         {
-            "ID": "T050500020",
-            "difficulty": "VDC",
+            "ID": "T020500020",
+            "difficulty": "TH",
             "question": "Question 420",
             "images": "",
             "options": [
@@ -5881,8 +5881,8 @@
             "explain": "Explanation 420"
         },
         {
-            "ID": "T050500021",
-            "difficulty": "VD",
+            "ID": "T010500021",
+            "difficulty": "TH",
             "question": "Question 421",
             "images": "",
             "options": [
@@ -5895,8 +5895,8 @@
             "explain": "Explanation 421"
         },
         {
-            "ID": "T040500022",
-            "difficulty": "TH",
+            "ID": "T010500022",
+            "difficulty": "VDC",
             "question": "Question 422",
             "images": "",
             "options": [
@@ -5905,12 +5905,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 422"
         },
         {
-            "ID": "T050500023",
-            "difficulty": "TH",
+            "ID": "T030500023",
+            "difficulty": "VD",
             "question": "Question 423",
             "images": "",
             "options": [
@@ -5919,11 +5919,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 423"
         },
         {
-            "ID": "T030500024",
+            "ID": "T010500024",
             "difficulty": "TH",
             "question": "Question 424",
             "images": "",
@@ -5933,7 +5933,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 424"
         },
         {
@@ -5952,7 +5952,7 @@
         },
         {
             "ID": "T050500026",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 426",
             "images": "",
             "options": [
@@ -5961,12 +5961,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 426"
         },
         {
-            "ID": "T020500027",
-            "difficulty": "VDC",
+            "ID": "T040500027",
+            "difficulty": "TH",
             "question": "Question 427",
             "images": "",
             "options": [
@@ -5975,12 +5975,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 427"
         },
         {
             "ID": "T010500028",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 428",
             "images": "",
             "options": [
@@ -5993,8 +5993,8 @@
             "explain": "Explanation 428"
         },
         {
-            "ID": "T010500029",
-            "difficulty": "TH",
+            "ID": "T040500029",
+            "difficulty": "VD",
             "question": "Question 429",
             "images": "",
             "options": [
@@ -6003,12 +6003,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 429"
         },
         {
-            "ID": "T040500030",
-            "difficulty": "VD",
+            "ID": "T050500030",
+            "difficulty": "VDC",
             "question": "Question 430",
             "images": "",
             "options": [
@@ -6021,8 +6021,8 @@
             "explain": "Explanation 430"
         },
         {
-            "ID": "T050500031",
-            "difficulty": "VD",
+            "ID": "T020500031",
+            "difficulty": "VDC",
             "question": "Question 431",
             "images": "",
             "options": [
@@ -6031,12 +6031,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 431"
         },
         {
-            "ID": "T010500032",
-            "difficulty": "TH",
+            "ID": "T050500032",
+            "difficulty": "VD",
             "question": "Question 432",
             "images": "",
             "options": [
@@ -6049,7 +6049,7 @@
             "explain": "Explanation 432"
         },
         {
-            "ID": "T010500033",
+            "ID": "T050500033",
             "difficulty": "VDC",
             "question": "Question 433",
             "images": "",
@@ -6059,11 +6059,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 433"
         },
         {
-            "ID": "T020500034",
+            "ID": "T040500034",
             "difficulty": "VDC",
             "question": "Question 434",
             "images": "",
@@ -6073,12 +6073,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 434"
         },
         {
-            "ID": "T030500035",
-            "difficulty": "VD",
+            "ID": "T050500035",
+            "difficulty": "NB",
             "question": "Question 435",
             "images": "",
             "options": [
@@ -6087,12 +6087,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 435"
         },
         {
-            "ID": "T030500036",
-            "difficulty": "TH",
+            "ID": "T050500036",
+            "difficulty": "NB",
             "question": "Question 436",
             "images": "",
             "options": [
@@ -6101,12 +6101,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 436"
         },
         {
-            "ID": "T030500037",
-            "difficulty": "TH",
+            "ID": "T010500037",
+            "difficulty": "VD",
             "question": "Question 437",
             "images": "",
             "options": [
@@ -6115,12 +6115,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 437"
         },
         {
-            "ID": "T050500038",
-            "difficulty": "VD",
+            "ID": "T030500038",
+            "difficulty": "NB",
             "question": "Question 438",
             "images": "",
             "options": [
@@ -6129,7 +6129,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 438"
         },
         {
@@ -6157,7 +6157,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 440"
         },
         {
@@ -6171,12 +6171,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 441"
         },
         {
-            "ID": "T050500042",
-            "difficulty": "VDC",
+            "ID": "T030500042",
+            "difficulty": "TH",
             "question": "Question 442",
             "images": "",
             "options": [
@@ -6185,12 +6185,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 442"
         },
         {
-            "ID": "T020500043",
-            "difficulty": "VDC",
+            "ID": "T030500043",
+            "difficulty": "TH",
             "question": "Question 443",
             "images": "",
             "options": [
@@ -6203,7 +6203,7 @@
             "explain": "Explanation 443"
         },
         {
-            "ID": "T030500044",
+            "ID": "T050500044",
             "difficulty": "TH",
             "question": "Question 444",
             "images": "",
@@ -6227,12 +6227,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 445"
         },
         {
-            "ID": "T050500046",
-            "difficulty": "VD",
+            "ID": "T020500046",
+            "difficulty": "VDC",
             "question": "Question 446",
             "images": "",
             "options": [
@@ -6245,8 +6245,8 @@
             "explain": "Explanation 446"
         },
         {
-            "ID": "T020500047",
-            "difficulty": "VD",
+            "ID": "T010500047",
+            "difficulty": "TH",
             "question": "Question 447",
             "images": "",
             "options": [
@@ -6259,8 +6259,8 @@
             "explain": "Explanation 447"
         },
         {
-            "ID": "T010500048",
-            "difficulty": "VD",
+            "ID": "T040500048",
+            "difficulty": "NB",
             "question": "Question 448",
             "images": "",
             "options": [
@@ -6269,12 +6269,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 448"
         },
         {
-            "ID": "T050500049",
-            "difficulty": "VDC",
+            "ID": "T030500049",
+            "difficulty": "NB",
             "question": "Question 449",
             "images": "",
             "options": [
@@ -6283,12 +6283,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 449"
         },
         {
-            "ID": "T010500050",
-            "difficulty": "VD",
+            "ID": "T050500050",
+            "difficulty": "VDC",
             "question": "Question 450",
             "images": "",
             "options": [
@@ -6297,7 +6297,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 450"
         },
         {
@@ -6311,12 +6311,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 451"
         },
         {
-            "ID": "T050500052",
-            "difficulty": "TH",
+            "ID": "T020500052",
+            "difficulty": "VDC",
             "question": "Question 452",
             "images": "",
             "options": [
@@ -6325,12 +6325,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 452"
         },
         {
-            "ID": "T050500053",
-            "difficulty": "TH",
+            "ID": "T030500053",
+            "difficulty": "NB",
             "question": "Question 453",
             "images": "",
             "options": [
@@ -6344,7 +6344,7 @@
         },
         {
             "ID": "T030500054",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 454",
             "images": "",
             "options": [
@@ -6353,11 +6353,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 454"
         },
         {
-            "ID": "T050500055",
+            "ID": "T010500055",
             "difficulty": "TH",
             "question": "Question 455",
             "images": "",
@@ -6371,8 +6371,8 @@
             "explain": "Explanation 455"
         },
         {
-            "ID": "T020500056",
-            "difficulty": "TH",
+            "ID": "T050500056",
+            "difficulty": "VD",
             "question": "Question 456",
             "images": "",
             "options": [
@@ -6381,11 +6381,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 456"
         },
         {
-            "ID": "T030500057",
+            "ID": "T020500057",
             "difficulty": "TH",
             "question": "Question 457",
             "images": "",
@@ -6395,11 +6395,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 457"
         },
         {
-            "ID": "T050500058",
+            "ID": "T020500058",
             "difficulty": "VDC",
             "question": "Question 458",
             "images": "",
@@ -6413,8 +6413,8 @@
             "explain": "Explanation 458"
         },
         {
-            "ID": "T030500059",
-            "difficulty": "VDC",
+            "ID": "T010500059",
+            "difficulty": "NB",
             "question": "Question 459",
             "images": "",
             "options": [
@@ -6423,7 +6423,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 459"
         },
         {
@@ -6441,8 +6441,8 @@
             "explain": "Explanation 460"
         },
         {
-            "ID": "T040500061",
-            "difficulty": "TH",
+            "ID": "T020500061",
+            "difficulty": "NB",
             "question": "Question 461",
             "images": "",
             "options": [
@@ -6456,7 +6456,7 @@
         },
         {
             "ID": "T050500062",
-            "difficulty": "VD",
+            "difficulty": "VDC",
             "question": "Question 462",
             "images": "",
             "options": [
@@ -6469,8 +6469,8 @@
             "explain": "Explanation 462"
         },
         {
-            "ID": "T020500063",
-            "difficulty": "TH",
+            "ID": "T010500063",
+            "difficulty": "NB",
             "question": "Question 463",
             "images": "",
             "options": [
@@ -6479,12 +6479,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 463"
         },
         {
-            "ID": "T040500064",
-            "difficulty": "VDC",
+            "ID": "T020500064",
+            "difficulty": "NB",
             "question": "Question 464",
             "images": "",
             "options": [
@@ -6493,12 +6493,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 464"
         },
         {
             "ID": "T010500065",
-            "difficulty": "VDC",
+            "difficulty": "VD",
             "question": "Question 465",
             "images": "",
             "options": [
@@ -6511,8 +6511,8 @@
             "explain": "Explanation 465"
         },
         {
-            "ID": "T040500066",
-            "difficulty": "TH",
+            "ID": "T020500066",
+            "difficulty": "VD",
             "question": "Question 466",
             "images": "",
             "options": [
@@ -6521,12 +6521,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 466"
         },
         {
             "ID": "T030500067",
-            "difficulty": "VD",
+            "difficulty": "TH",
             "question": "Question 467",
             "images": "",
             "options": [
@@ -6535,11 +6535,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 467"
         },
         {
-            "ID": "T050500068",
+            "ID": "T030500068",
             "difficulty": "VD",
             "question": "Question 468",
             "images": "",
@@ -6549,12 +6549,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 468"
         },
         {
-            "ID": "T010500069",
-            "difficulty": "TH",
+            "ID": "T020500069",
+            "difficulty": "VDC",
             "question": "Question 469",
             "images": "",
             "options": [
@@ -6563,12 +6563,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 469"
         },
         {
             "ID": "T010500070",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 470",
             "images": "",
             "options": [
@@ -6581,8 +6581,8 @@
             "explain": "Explanation 470"
         },
         {
-            "ID": "T050500071",
-            "difficulty": "VD",
+            "ID": "T040500071",
+            "difficulty": "NB",
             "question": "Question 471",
             "images": "",
             "options": [
@@ -6595,8 +6595,8 @@
             "explain": "Explanation 471"
         },
         {
-            "ID": "T010500072",
-            "difficulty": "TH",
+            "ID": "T020500072",
+            "difficulty": "VDC",
             "question": "Question 472",
             "images": "",
             "options": [
@@ -6605,12 +6605,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 472"
         },
         {
-            "ID": "T020500073",
-            "difficulty": "TH",
+            "ID": "T040500073",
+            "difficulty": "NB",
             "question": "Question 473",
             "images": "",
             "options": [
@@ -6619,12 +6619,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 473"
         },
         {
-            "ID": "T010500074",
-            "difficulty": "TH",
+            "ID": "T050500074",
+            "difficulty": "VDC",
             "question": "Question 474",
             "images": "",
             "options": [
@@ -6637,8 +6637,8 @@
             "explain": "Explanation 474"
         },
         {
-            "ID": "T050500075",
-            "difficulty": "VD",
+            "ID": "T040500075",
+            "difficulty": "VDC",
             "question": "Question 475",
             "images": "",
             "options": [
@@ -6652,7 +6652,7 @@
         },
         {
             "ID": "T050500076",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 476",
             "images": "",
             "options": [
@@ -6661,7 +6661,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "A",
             "explain": "Explanation 476"
         },
         {
@@ -6675,12 +6675,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 477"
         },
         {
-            "ID": "T010500078",
-            "difficulty": "TH",
+            "ID": "T050500078",
+            "difficulty": "VD",
             "question": "Question 478",
             "images": "",
             "options": [
@@ -6689,12 +6689,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 478"
         },
         {
-            "ID": "T010500079",
-            "difficulty": "TH",
+            "ID": "T050500079",
+            "difficulty": "VDC",
             "question": "Question 479",
             "images": "",
             "options": [
@@ -6703,12 +6703,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 479"
         },
         {
-            "ID": "T020500080",
-            "difficulty": "VDC",
+            "ID": "T050500080",
+            "difficulty": "NB",
             "question": "Question 480",
             "images": "",
             "options": [
@@ -6721,7 +6721,7 @@
             "explain": "Explanation 480"
         },
         {
-            "ID": "T020500081",
+            "ID": "T040500081",
             "difficulty": "VDC",
             "question": "Question 481",
             "images": "",
@@ -6731,11 +6731,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "D",
             "explain": "Explanation 481"
         },
         {
-            "ID": "T030500082",
+            "ID": "T010500082",
             "difficulty": "TH",
             "question": "Question 482",
             "images": "",
@@ -6745,11 +6745,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 482"
         },
         {
-            "ID": "T040500083",
+            "ID": "T010500083",
             "difficulty": "TH",
             "question": "Question 483",
             "images": "",
@@ -6759,12 +6759,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 483"
         },
         {
-            "ID": "T020500084",
-            "difficulty": "VD",
+            "ID": "T010500084",
+            "difficulty": "VDC",
             "question": "Question 484",
             "images": "",
             "options": [
@@ -6773,12 +6773,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 484"
         },
         {
-            "ID": "T020500085",
-            "difficulty": "TH",
+            "ID": "T030500085",
+            "difficulty": "NB",
             "question": "Question 485",
             "images": "",
             "options": [
@@ -6787,12 +6787,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 485"
         },
         {
-            "ID": "T050500086",
-            "difficulty": "VD",
+            "ID": "T010500086",
+            "difficulty": "TH",
             "question": "Question 486",
             "images": "",
             "options": [
@@ -6801,12 +6801,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 486"
         },
         {
             "ID": "T010500087",
-            "difficulty": "TH",
+            "difficulty": "VDC",
             "question": "Question 487",
             "images": "",
             "options": [
@@ -6815,12 +6815,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 487"
         },
         {
-            "ID": "T020500088",
-            "difficulty": "VDC",
+            "ID": "T040500088",
+            "difficulty": "VD",
             "question": "Question 488",
             "images": "",
             "options": [
@@ -6829,12 +6829,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 488"
         },
         {
-            "ID": "T030500089",
-            "difficulty": "VDC",
+            "ID": "T010500089",
+            "difficulty": "TH",
             "question": "Question 489",
             "images": "",
             "options": [
@@ -6843,12 +6843,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 489"
         },
         {
-            "ID": "T030500090",
-            "difficulty": "TH",
+            "ID": "T050500090",
+            "difficulty": "VDC",
             "question": "Question 490",
             "images": "",
             "options": [
@@ -6857,11 +6857,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "A",
             "explain": "Explanation 490"
         },
         {
-            "ID": "T020500091",
+            "ID": "T010500091",
             "difficulty": "TH",
             "question": "Question 491",
             "images": "",
@@ -6871,12 +6871,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "C",
             "explain": "Explanation 491"
         },
         {
-            "ID": "T040500092",
-            "difficulty": "VDC",
+            "ID": "T030500092",
+            "difficulty": "VD",
             "question": "Question 492",
             "images": "",
             "options": [
@@ -6885,12 +6885,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "D",
+            "answer": "B",
             "explain": "Explanation 492"
         },
         {
-            "ID": "T010500093",
-            "difficulty": "TH",
+            "ID": "T040500093",
+            "difficulty": "VDC",
             "question": "Question 493",
             "images": "",
             "options": [
@@ -6899,12 +6899,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 493"
         },
         {
-            "ID": "T010500094",
-            "difficulty": "VD",
+            "ID": "T050500094",
+            "difficulty": "NB",
             "question": "Question 494",
             "images": "",
             "options": [
@@ -6913,12 +6913,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "B",
             "explain": "Explanation 494"
         },
         {
             "ID": "T010500095",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 495",
             "images": "",
             "options": [
@@ -6927,12 +6927,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "C",
             "explain": "Explanation 495"
         },
         {
             "ID": "T010500096",
-            "difficulty": "TH",
+            "difficulty": "VD",
             "question": "Question 496",
             "images": "",
             "options": [
@@ -6941,12 +6941,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "D",
             "explain": "Explanation 496"
         },
         {
-            "ID": "T050500097",
-            "difficulty": "TH",
+            "ID": "T010500097",
+            "difficulty": "VDC",
             "question": "Question 497",
             "images": "",
             "options": [
@@ -6955,11 +6955,11 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "B",
+            "answer": "C",
             "explain": "Explanation 497"
         },
         {
-            "ID": "T010500098",
+            "ID": "T020500098",
             "difficulty": "VDC",
             "question": "Question 498",
             "images": "",
@@ -6969,12 +6969,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "A",
             "explain": "Explanation 498"
         },
         {
             "ID": "T040500099",
-            "difficulty": "VDC",
+            "difficulty": "NB",
             "question": "Question 499",
             "images": "",
             "options": [
@@ -6983,12 +6983,12 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "C",
+            "answer": "B",
             "explain": "Explanation 499"
         },
         {
-            "ID": "T010600000",
-            "difficulty": "TH",
+            "ID": "T040600000",
+            "difficulty": "NB",
             "question": "Question 500",
             "images": "",
             "options": [
@@ -6997,7 +6997,7 @@
                 "Option C",
                 "Option D"
             ],
-            "answer": "A",
+            "answer": "D",
             "explain": "Explanation 500"
         }
     ]

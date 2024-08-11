@@ -8,21 +8,22 @@ app.secret_key = 'your_secret_key'  # Necessary to use sessions
 
 
 class TestingDeploy:
-    def __init__(self, threshold, test_type, subject_name, num_chapters=0):
+    def __init__(self, threshold, test_type, subject_name, num_chapters=0, rate=None):
         self.threshold = threshold
         self.test_type = test_type
         self.subject_name = subject_name
         self.num_chapters = num_chapters
         self.result = None
         self.num_ques = None
+        self.rate = rate
 
     def create_test_total(self, num_chapters):
-        test_total = TestTotal(self.subject_name)
-        questions = test_total.create_test(num_chapters)
+        test_total = TestTotal(self.subject_name, self.rate, self.num_chapters)
+        questions = test_total.create_test()
         return questions
 
     def create_test_chapter(self, chapter):
-        test_chap = TestChap(self.subject_name, chapter)
+        test_chap = TestChap(self.subject_name, self.rate, self.num_chapters)
         questions = test_chap.create_test()
         return questions
 
@@ -31,7 +32,7 @@ class TestingDeploy:
             questions = self.create_test_total(self.num_chapters)
         elif self.test_type == "chapter":
             questions = self.create_test_chapter(self.num_chapters)
-
+        
         # Save questions to JSON file
         with open(f'{self.subject_name}_test.json', 'w') as f:
             json.dump(questions, f)
@@ -140,7 +141,8 @@ def before_request():
 # doi voi test tong neu num_chapters <= 2 thi lay 15 cau moi chapter, neu num_chapters > 2 thi lay 10 cau moi chapter
 
 if __name__ == '__main__':
-    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="total", subject_name="T", num_chapters=3)
+    rate = [40, 20, 30 ,10]
+    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="total", subject_name="T", num_chapters=3, rate=rate)
     deploy.create_test()
     app.run(debug=True)
     webbrowser.open('http://localhost:5000/')

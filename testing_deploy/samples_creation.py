@@ -4,7 +4,7 @@ import random
 # Generate 200 questions with chapter numbers from 1 to 5
 # Generate 200 questions with chapter numbers from 1 to 5 in positions 2 and 3
 questions = []
-difficulty_levels = ["TH", "VD", "VDC"]
+difficulty_levels = ["NB","TH", "VD", "VDC"]
 
 for i in range(1, 501):
     chapter = str(random.randint(1, 5)).zfill(2)

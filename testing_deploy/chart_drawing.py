@@ -3,13 +3,14 @@ import json
 class DrawChartBase:
     def __init__(self, subject_name, num_chap, test_type) -> None:
         self.subject_name = subject_name
-        self.num_chap = num_chap
+        self.num_chap = None
         self.test_type = test_type
-    
+        self.load_data()
     def load_data(self):
         try:
             with open(f'{self.subject_name}_{self.test_type}_results.json', 'r') as f:
                 data = json.load(f)[-1]
+                self.num_chap = int(data["chapter"])
                 return data
         except FileNotFoundError:
             print(f"Warning: The file '{f'{self.subject_name}_{self.test_type}_results.json'}' was not found.")
@@ -126,7 +127,7 @@ class DrawTotal(DrawChartBase):
         
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
-                chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100
+                chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 * self.num_chap
         
         return chap_difficulty_percentile
 
@@ -143,11 +144,23 @@ class DrawChap(DrawChartBase):
         
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
-                chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100
+                chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 * self.num_chap
         
         return chap_difficulty_percentile
     # This class can use methods directly from DrawChartBase
-    pass
+    def previous_chap_results(self):
+        results = []
+        durations = []
+        with open(f'{self.subject_name}_{self.test_type}_results.json', 'r') as f:
+            data = json.load(f)
+        for a in data:
+            duration = 0
+            if a['chapter'] == self.num_chap:
+                results.append(a['score'])
+                for time in a['time_spent_per_question'].values():
+                    duration += time
+                durations.append(duration)
+        return results, durations
 
 # For total analysis
 # draw_total = DrawTotal("T", 3, "total")
@@ -158,5 +171,6 @@ class DrawChap(DrawChartBase):
 # # For chapter-specific analysis
 draw_chap = DrawChap("T", 3, "chapter")
 # print(draw_chap.cal_accu_diff())
-print(draw_chap.lessons_id_to_review())
+# print(draw_chap.lessons_id_to_review())
 # print(draw_chap.difficult_percentile_per_chap())
+print(draw_chap.previous_chap_results())
