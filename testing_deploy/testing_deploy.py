@@ -16,6 +16,7 @@ class TestingDeploy:
         self.result = None
         self.num_ques = None
         self.rate = rate
+        self.time_limit = 90 if self.test_type == 'total' else 45
 
     def create_test_total(self, num_chapters):
         test_total = TestTotal(self.subject_name, self.rate, self.num_chapters)
@@ -32,7 +33,7 @@ class TestingDeploy:
             questions = self.create_test_total(self.num_chapters)
         elif self.test_type == "chapter":
             questions = self.create_test_chapter(self.num_chapters)
-        
+
         # Save questions to JSON file
         with open(f'{self.subject_name}_test.json', 'w') as f:
             json.dump(questions, f)
@@ -53,6 +54,8 @@ class TestingDeploy:
         for qa_id, user_data in user_answers.items():
             user_answer = user_data.get('selectedOption')
             time_spent = user_data.get('timeSpent', 0)  # Default to 0 if not provided
+            if user_answer is None:
+                continue
             print(user_answer.split())
             print(correct_answers[qa_id])
 
@@ -109,27 +112,43 @@ from flask import jsonify
 
 @app.route('/question/<int:question_number>', methods=['GET', 'POST'])
 def question(question_number):
-    # Load questions from your JSON file or database
     with open(f'{session["subject_name"]}_test.json', 'r') as f:
         questions = json.load(f)
 
-    # Get the current question based on the question_number
     current_question = questions[question_number - 1]
-
-    # If the questions object contains non-serializable data, clean it
     questions_serializable = jsonify(questions).json
 
-    return render_template('question.html', question=current_question, question_number=question_number, total_questions=len(questions), questions=questions_serializable)
+    return render_template(
+        'question.html', 
+        question=current_question, 
+        question_number=question_number, 
+        total_questions=len(questions), 
+        questions=questions_serializable,
+        time_limit=deploy.time_limit  # Pass the time limit to the template
+    )
 
 
 
 @app.route('/submit', methods=['POST', 'GET'])
 def submit():
-    # Get all answers from the session
-    selections = json.loads(request.form['selections'])
-    print(selections)
-    score, wrong_answers = deploy.check_correct_answers(selections)
+    # Check if 'selections' is in the form data
+    if 'selections' not in request.form:
+        # Handle the case where no selections were submitted (e.g., time expired)
+        print("No selections were made. Time might have expired.")
+        selections = {}
+    else:
+        # Get all answers from the form data
+        selections = json.loads(request.form['selections'])
 
+    print(selections)
+    
+    # If selections is empty, you may want to handle it differently
+    if not selections:
+        score = 0
+        wrong_answers = []
+    else:
+        score, wrong_answers = deploy.check_correct_answers(selections)
+    
     return render_template('results.html', score=score, wrong_answers=wrong_answers, total=deploy.num_ques)
 
 
@@ -142,7 +161,7 @@ def before_request():
 
 if __name__ == '__main__':
     rate = [40, 20, 30 ,10]
-    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="total", subject_name="T", num_chapters=3, rate=rate)
+    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="chapter", subject_name="T", num_chapters=3, rate=rate)
     deploy.create_test()
     app.run(debug=True)
     webbrowser.open('http://localhost:5000/')

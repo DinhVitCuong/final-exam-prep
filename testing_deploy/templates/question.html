@@ -14,12 +14,30 @@
         .options { list-style-type: none; padding: 0; }
         .options li { margin: 5px 0; }
         .submit-container { margin-top: auto; } /* Pushes the submit button to the bottom */
+        #timer { font-size: 24px; color: red; text-align: right; margin-bottom: 20px; }
     </style>
     <script>
         let currentQuestion = 1;
         let questions = {{ questions|tojson }};
         let selections = JSON.parse(localStorage.getItem('selections')) || {};
         let startTime = Date.now();
+        let timeLimit = {{ time_limit }} * 60;  // Time limit in seconds
+
+        function startTimer() {
+            const timerElement = document.getElementById('timer');
+            const interval = setInterval(() => {
+                const minutes = Math.floor(timeLimit / 60);
+                const seconds = timeLimit % 60;
+                timerElement.textContent = `${minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
+                timeLimit--;
+
+                if (timeLimit < 0) {
+                    clearInterval(interval);
+                    alert('Time is up! Submitting your answers.');
+                    document.getElementById('testForm').submit();  // Auto-submit the form
+                }
+            }, 1000);
+        }
 
         function selectQuestion(questionNumber) {
             // Calculate and save time spent on the current question
@@ -71,29 +89,32 @@
                 alert("You haven't selected any answers.");
                 return;
             }
+            else {
+                // Create a hidden form input to store all selections
+                let form = document.getElementById('testForm');
+                let hiddenInput = document.createElement('input');
+                hiddenInput.type = 'hidden';
+                hiddenInput.name = 'selections';
+                hiddenInput.value = JSON.stringify(selections);
+                form.appendChild(hiddenInput);
+                
+                // Clear localStorage (optional, depending on your needs)
+                localStorage.removeItem('selections');
 
-            // Create a hidden form input to store all selections
-            let form = document.getElementById('testForm');
-            let hiddenInput = document.createElement('input');
-            hiddenInput.type = 'hidden';
-            hiddenInput.name = 'selections';
-            hiddenInput.value = JSON.stringify(selections);
-            form.appendChild(hiddenInput);
-            
-            // Clear localStorage (optional, depending on your needs)
-            localStorage.removeItem('selections');
-
-            // Submit the form
-            form.submit();
+                // Submit the form
+                form.submit();
+            }
         }
 
         window.onload = function () {
             selectQuestion(1); // Select the first question by default
+            startTimer();  // Start the countdown timer
         };
     </script>
 </head>
 <body>
     <div id="question-container">
+        <div id="timer">45:00</div> <!-- Timer display -->
         <h2 id="question-text"></h2>
         <form id="testForm" action="/submit" method="post">
             <ul class="options" id="options-list"></ul>
