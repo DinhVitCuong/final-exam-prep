@@ -121,12 +121,13 @@ def register():
         except BuildError:
             db.session.rollback()
             flash(f"An error occured !", "danger")
+        return redirect(url_for("select-uni"))
     return render_template("auth.html",
         form=form,
         text="Create account",
         title="Register",
         btn_action="Register account"
-        ), redirect(url_for("select-uni"))
+        )
 
 
 # Logout route
@@ -235,7 +236,6 @@ def getting_started():
                 progress_3="0"
             )
             db.session.add(new_progress)
-
         db.session.commit()
         return redirect(url_for('index'))
 
