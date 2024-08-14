@@ -163,14 +163,17 @@ class DrawChap(DrawChartBase):
         return results, durations
 
 # For total analysis
-# draw_total = DrawTotal("T", 3, "total")
+draw_total = DrawTotal("T", 3, "total")
+print(draw_total.lessons_id_to_review())
+draw_chap = DrawChap("T", 3, "chapter")
+print(draw_chap.lessons_id_to_review())
 # print(draw_total.short_total_analysis())
 # print(draw_total.find_most_wrong_chap())
 # print(draw_total.difficult_percentile_per_chap())
 
 # # For chapter-specific analysis
-draw_chap = DrawChap("T", 3, "chapter")
+# draw_chap = DrawChap("T", 3, "chapter")
 # print(draw_chap.cal_accu_diff())
 # print(draw_chap.lessons_id_to_review())
 # print(draw_chap.difficult_percentile_per_chap())
-print(draw_chap.previous_chap_results())
+# print(draw_chap.previous_chap_results())

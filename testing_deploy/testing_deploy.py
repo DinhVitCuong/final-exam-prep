@@ -2,7 +2,7 @@ import json
 import webbrowser
 from flask import Flask, request, render_template, session, redirect, url_for, g
 from testing_classes import TestTotal, TestChap
-
+from pr_br_rcmd import pr_br_rcmd
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Necessary to use sessions
 
@@ -27,13 +27,18 @@ class TestingDeploy:
         test_chap = TestChap(self.subject_name, self.rate, self.num_chapters)
         questions = test_chap.create_test()
         return questions
+    def create_test_practice(self):
+        test_practice = pr_br_rcmd(self.subject_name, 5, 1)
+        questions = test_practice.question_prep()
+        return questions
 
     def create_test(self):
         if self.test_type == "total":
             questions = self.create_test_total(self.num_chapters)
         elif self.test_type == "chapter":
             questions = self.create_test_chapter(self.num_chapters)
-
+        else:
+            questions = self.create_test_practice()
         # Save questions to JSON file
         with open(f'{self.subject_name}_test.json', 'w') as f:
             json.dump(questions, f)
@@ -161,7 +166,7 @@ def before_request():
 
 if __name__ == '__main__':
     rate = [40, 20, 30 ,10]
-    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="chapter", subject_name="T", num_chapters=3, rate=rate)
+    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="practice", subject_name="T", num_chapters=3, rate=rate)
     deploy.create_test()
     app.run(debug=True)
     webbrowser.open('http://localhost:5000/')
