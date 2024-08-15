@@ -29,10 +29,10 @@ class TestOrigin:
             
         th_percent, nb_percent, vd_percent, vdc_percent = self.rate
 
-        th_questions = [q for q in selected_questions if q["difficulty"] == "TH"]
-        nb_questions = [q for q in selected_questions if q["difficulty"] == "NB"]
-        vd_questions = [q for q in selected_questions if q["difficulty"] == "VD"]
-        vdc_questions = [q for q in selected_questions if q["difficulty"] == "VDC"]
+        th_questions = [q for q in selected_questions if q["difficulty"] == 1]
+        nb_questions = [q for q in selected_questions if q["difficulty"] == 2]
+        vd_questions = [q for q in selected_questions if q["difficulty"] == 3]
+        vdc_questions = [q for q in selected_questions if q["difficulty"] == 4]
         
         num_th = int(num_questions * th_percent / 100)
         num_nb = int(num_questions * nb_percent / 100)
@@ -44,10 +44,10 @@ class TestOrigin:
         return questions
     
     def shuffle_questions(self, questions):
-        th_questions = [q for q in questions if q["difficulty"] == "TH"]
-        nb_questions = [q for q in questions if q["difficulty"] == "NB"]
-        vd_questions = [q for q in questions if q["difficulty"] == "VD"]
-        vdc_questions = [q for q in questions if q["difficulty"] == "VDC"]
+        th_questions = [q for q in questions if q["difficulty"] == 1]
+        nb_questions = [q for q in questions if q["difficulty"] == 2]
+        vd_questions = [q for q in questions if q["difficulty"] == 3]
+        vdc_questions = [q for q in questions if q["difficulty"] == 4]
         
         random.shuffle(th_questions)
         random.shuffle(vd_questions)

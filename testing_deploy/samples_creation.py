@@ -4,12 +4,13 @@ import random
 # Generate 200 questions with chapter numbers from 1 to 5
 # Generate 200 questions with chapter numbers from 1 to 5 in positions 2 and 3
 questions = []
-difficulty_levels = ["NB","TH", "VD", "VDC"]
+difficulty_levels = [1,2,3,4]
 
 for i in range(1, 501):
     chapter = str(random.randint(1, 5)).zfill(2)
-    question_id = f"T{chapter}{str(i // 100 + 1).zfill(2)}{str(i % 100).zfill(5)}"
     difficulty = random.choice(difficulty_levels)
+    question_id = f"T{chapter}{str(i // 100 + 1).zfill(2)}{str(i % 100).zfill(5)}"+str(difficulty)
+    
     question = f"Question {i}"
     options = [f"Option A", f"Option B", f"Option C", f"Option D"]
     answer = random.choice(["A", "B", "C", "D"])
