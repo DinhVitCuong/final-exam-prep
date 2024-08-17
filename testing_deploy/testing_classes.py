@@ -43,17 +43,7 @@ class TestOrigin:
         
         return questions
     
-    def shuffle_questions(self, questions):
-        th_questions = [q for q in questions if q["difficulty"] == 1]
-        nb_questions = [q for q in questions if q["difficulty"] == 2]
-        vd_questions = [q for q in questions if q["difficulty"] == 3]
-        vdc_questions = [q for q in questions if q["difficulty"] == 4]
-        
-        random.shuffle(th_questions)
-        random.shuffle(vd_questions)
-        random.shuffle(vdc_questions)
-        
-        return th_questions + nb_questions + vd_questions + vdc_questions
+
     
 class TestTotal(TestOrigin):
 
@@ -64,13 +54,11 @@ class TestTotal(TestOrigin):
                 chapter_questions = self.select_questions(15, chapter=i)
                 questions.extend(chapter_questions)
 
-            questions = self.shuffle_questions(questions)
+        
         else:
             for i in range(1, self.chapter + 1):
                 chapter_questions = self.select_questions(10, chapter=i)
                 questions.extend(chapter_questions)
-
-            questions = self.shuffle_questions(questions)
         self.num_ques = len(questions)
         return questions
 

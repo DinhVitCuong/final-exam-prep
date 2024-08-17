@@ -1,10 +1,11 @@
 import json
-
+# chủ yếu lấy ra từng vòng lặp 
 class DrawChartBase:
-    def __init__(self, subject_name, num_chap, test_type) -> None:
+    def __init__(self, subject_name, num_chap, test_type, num) -> None:
         self.subject_name = subject_name
         self.num_chap = None
         self.test_type = test_type
+        self.num = num
         self.load_data()
     def load_data(self):
         try:
@@ -25,9 +26,9 @@ class DrawChartBase:
         with open(f"{self.subject_name}_mock.json", 'r') as file:
             mock_db = json.load(file)["QAs"]
         
-        with open(f"{self.subject_name}_test.json", 'r') as file:
-            mock_test = json.load(file)
         
+        mock_test = data.get("right_answers", []) + data.get("wrong_answers", []) + data.get("unchecked_answers", [])
+
         if data is not None:
             for id in data.get("right_answers", []):
                 matching_question = next((qa for qa in mock_db if qa["ID"] == id), None)
@@ -42,20 +43,24 @@ class DrawChartBase:
                     else:
                         dic_ques[diff] = [id]
         
-        for question in mock_test:
-            diff = question["difficulty"]
+        for id in mock_test:
+            diff = int(id[-1])
             if diff in dic_total:
                 dic_total[diff] += 1
             else:
                 dic_total[diff] = 1
-        
         accu_diff = {}
         for diff in dic_total:
             accu_diff[diff] = dic_right.get(diff, 0) / dic_total[diff] * 100
         
-        return accu_diff, dic_ques, dic_total
-    
-    def lessons_id_to_review(self):
+        return accu_diff, dic_ques, dic_total # accuracy per diff (để vẽ accuracy giữa các độ khó), list right ID per diff , total number of question per diff
+
+
+
+
+
+
+    def lessons_id_to_review(self): # dev lại cái này
         data = self.load_data()
         lessons_review_dict = {}
         if data is not None:
@@ -96,7 +101,7 @@ class DrawTotal(DrawChartBase):
             return time
         return None
     
-    def short_total_analysis(self):
+    def short_total_analysis(self): # dev lại cái này
         accu_chaps = []
         for chap in range(1, self.num_chap + 1):
             accu_chap = self.cal_accu_chap(chap)
@@ -110,15 +115,15 @@ class DrawTotal(DrawChartBase):
                 time_chaps.append(time_chap)
         return accu_chaps, time_chaps
     
-    def find_most_wrong_chap(self):
+    def find_most_wrong_chap(self): # dev lại cái này
         accu_chaps, _ = self.short_total_analysis()
         if accu_chaps:
             return accu_chaps.index(min(accu_chaps)) + 1
     
-    def difficult_percentile_per_chap(self):
+    def difficult_percentile_per_chap(self): #dev lại cái này
         _, diff_ids, diff_nums = self.cal_accu_diff()
-        chap_difficulty_count = {chap: {"TH": 0, "VD": 0, "VDC": 0} for chap in range(1, self.num_chap + 1)}
-        chap_difficulty_percentile = {chap: {"TH": 0, "VD": 0, "VDC": 0} for chap in range(1, self.num_chap + 1)}
+        chap_difficulty_count = {chap: {1: 0, 2: 0, 3: 0, 4:0} for chap in range(1, self.num_chap + 1)}
+        chap_difficulty_percentile = {chap: {1: 0, 2: 0, 3: 0, 4:0} for chap in range(1, self.num_chap + 1)}
         
         for diff, ids in diff_ids.items():
             for id in ids:
@@ -130,12 +135,24 @@ class DrawTotal(DrawChartBase):
                 chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 * self.num_chap
         
         return chap_difficulty_percentile
+    def previous_result(self,n): 
+        results = []
+        durations = []
+        with open(f'{self.subject_name}_{self.test_type}_results.json', 'r') as f:
+            data = json.load(f)[-n:]
+        for a in data:
+            duration = 0
+            results.append(a['score'])
+            for time in a['time_spent_per_question'].values():
+                duration += time
+            durations.append(duration)
+        return results, durations
 
 class DrawChap(DrawChartBase):
     def difficult_percentile_per_chap(self):
         _, diff_ids, diff_nums = self.cal_accu_diff()
-        chap_difficulty_count = {self.num_chap: {"TH": 0, "VD": 0, "VDC": 0}}
-        chap_difficulty_percentile = {self.num_chap: {"TH": 0, "VD": 0, "VDC": 0}}
+        chap_difficulty_count = {self.num_chap: {1: 0, 2: 0, 3: 0, 4:0}}
+        chap_difficulty_percentile = {self.num_chap: {1: 0, 2: 0, 3: 0, 4:0}}
         
         for diff, ids in diff_ids.items():
             for id in ids:
@@ -161,15 +178,14 @@ class DrawChap(DrawChartBase):
                     duration += time
                 durations.append(duration)
         return results, durations
-
+    
 # For total analysis
-draw_total = DrawTotal("T", 3, "total")
-print(draw_total.lessons_id_to_review())
-draw_chap = DrawChap("T", 3, "chapter")
-print(draw_chap.lessons_id_to_review())
+draw_total = DrawTotal("T", 3, "total",3)
+print(draw_total.cal_accu_diff())
+# print(draw_total.lessons_id_to_review())
 # print(draw_total.short_total_analysis())
 # print(draw_total.find_most_wrong_chap())
-# print(draw_total.difficult_percentile_per_chap())
+print(draw_total.difficult_percentile_per_chap())
 
 # # For chapter-specific analysis
 # draw_chap = DrawChap("T", 3, "chapter")
