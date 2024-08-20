@@ -22,6 +22,12 @@ class Universities(db.Model):
     location = db.Column(db.String(2), nullable=False)
     pass_score = db.Column(db.String(100), nullable=False)
 
+class Subject(db.Model):
+    __tablename__="subject"
+
+    id=db.Column(db.String, primary_key=True) # format: A = chu cai dau mon học
+    rate = db.Column(db.String, nullable=True) # format: - ngăn cách giữa các độ khó, "_" ngăn cách giữa các chương
+
 class QAs(db.Model):
     __tablename__ = "question-answer"
 
@@ -44,6 +50,7 @@ class Progress(db.Model):
     progress_1 = db.Column(db.String(300), nullable=True)
     progress_2 = db.Column(db.String(300), nullable=True)
     progress_3 = db.Column(db.String(300), nullable=True)
+    wrong_answer = db.Column(db.String, nullable=True)
 
 
 class Test(db.Model):
@@ -51,9 +58,10 @@ class Test(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
-    test_type = db.Column(db.Boolean, nullable=False) #1 = Total, 0 = Chapter
+    test_type = db.Column(db.Integer, nullable=False) #1 = Total, 0 = Chapter, 3 = practice
+    time = db.Column(db.Date,nullable=False) #Thoi gian lam test
     knowledge = db.Column(db.String(100),nullable=False) #Chapter in test
-    questions = db.Column(db.String(1100), nullable=True)
-    wrong_answer = db.Column(db.String(1000), nullable=True) #ID wrong test
-    result = db.Column(db.String(300), nullable=True)
-    time_result = db.Column(db.String(1000), nullable=True) #Time spent each question, 0 = not do
+    questions = db.Column(db.String, nullable=True) #ID all question in test, Format: ID1_ID2_ID3_...
+    wrong_answer = db.Column(db.String, nullable=True) #ID wrong test, Format: ID1_ID2_ID3_...
+    result = db.Column(db.String(300), nullable=True) # 0 = false, 1 = true, Format: 0_1_0_...
+    time_result = db.Column(db.String, nullable=True) #Time spent each question, 0 = not do, Format: time1_time2_time3_...
