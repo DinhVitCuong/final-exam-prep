@@ -1,22 +1,40 @@
 import json
 import random
-link = "T_chapter_results.json"
-with open(link, 'r') as file:
-    data = json.load(file)
-def append_random_to_ids(id_list):
-    return [f"{id}{random.randint(1, 4)}" for id in id_list]
 
-# Process each entry in the data
-for entry in data:
-    if 'wrong_answers' in entry:
-        entry['wrong_answers'] = append_random_to_ids(entry['wrong_answers'])
-    if 'right_answers' in entry:
-        entry['right_answers'] = append_random_to_ids(entry['right_answers'])
-    if 'unchecked_answers' in entry:
-        entry['unchecked_answers'] = append_random_to_ids(entry['unchecked_answers'])
-    if 'time_spent_per_question' in entry:
-        entry['time_spent_per_question'] = {f"{key}{random.randint(1, 4)}": value for key, value in entry['time_spent_per_question'].items()}
+hm = {
+    "Thông hiểu" : 1,
+    "Nhận biết" : 2,
+    "Vận dụng" : 3,
+    "Vận dụng cao" : 4
+}
 
-# Save the updated data
-with open(link, 'w') as f:
-    json.dump(data, f, indent=4)
+for i in range(1, 8):
+    with open(f'data/final_math/Math_C{i}.json', 'r', encoding='utf-8') as f:
+        datas = json.load(f)
+        for data in datas:
+            if data['difficulty'] not in hm.values():
+                try:
+                    data['difficulty'] = hm[data['difficulty']]
+                    data['id'] = data['id'] + str(data['difficulty'])
+                except KeyError:
+                    print("Math")
+                    print(i)
+    # Save updated JSON file
+    with open(f'data/final_math/Math_C{i}.json', 'w', encoding='utf-8') as f:
+        json.dump(datas, f, ensure_ascii=False, indent=4)
+
+# Update Physics JSON files
+for i in range(1, 8):
+    with open(f'data/Physics/Physics_C{i}.json', 'r', encoding='utf-8') as f:
+        datas = json.load(f)
+        for data in datas:
+            if data['difficulty'] not in hm.values():
+                try:
+                    data['difficulty'] = hm[data['difficulty']]
+                    data['id'] = data['id'] + str(data['difficulty'])
+                except KeyError:
+                    print("Physics")
+                    print(i)
+    # Save updated JSON file
+    with open(f'data/Physics/Physics_C{i}.json', 'w', encoding='utf-8') as f:
+        json.dump(datas, f, ensure_ascii=False, indent=4)

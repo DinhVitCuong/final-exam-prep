@@ -56,7 +56,8 @@
         "time_spent_per_question": {
             "T0305000574": 6.995,
             "T0301000401": 5.665
-        }
+        },
+        "completion_time": "2023-12-18"
     },
     {
         "score": 12,
@@ -114,7 +115,8 @@
             "T0302000852": 12.321,
             "T0302000283": 0
         },
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-01-18"
     },
     {
         "score": 0,
@@ -157,7 +159,8 @@
         "time_spent_per_question": {
             "T0303000954": 0.026
         },
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-02-18"
     },
     {
         "score": 0,
@@ -197,7 +200,8 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-03-18"
     },
     {
         "score": 0,
@@ -237,7 +241,8 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-04-18"
     },
     {
         "score": 0,
@@ -277,7 +282,8 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-05-18"
     },
     {
         "score": 0,
@@ -317,7 +323,8 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-06-18"
     },
     {
         "score": 0,
@@ -357,7 +364,8 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
+        "total_questions": 30,
+        "completion_time": "2024-07-18"
     },
     {
         "score": 0,
@@ -397,45 +405,7 @@
         ],
         "chapter": 3,
         "time_spent_per_question": {},
-        "total_questions": 30
-    },
-    {
-        "score": 0,
-        "right_answers": [],
-        "wrong_answers": [
-            "T0301000463",
-            "T0101000972",
-            "T0203000531",
-            "T0305000683"
-        ],
-        "unchecked_answers": [
-            "T0301000194",
-            "T0301000632",
-            "T0301000371",
-            "T0101000184",
-            "T0101000121",
-            "T0101000403",
-            "T0303000624",
-            "T0303000494",
-            "T0303000964",
-            "T0203000761",
-            "T0203000442",
-            "T0104000211",
-            "T0104000322",
-            "T0104000561",
-            "T0305000161",
-            "T0305000674",
-            "T0304000224",
-            "T0304000801",
-            "T0301000682"
-        ],
-        "chapter": 3,
-        "time_spent_per_question": {
-            "T0301000464": 1.703,
-            "T0101000973": 1.418,
-            "T0203000532": 1.855,
-            "T0305000683": 0
-        },
-        "total_questions": 24
+        "total_questions": 30,
+        "completion_time": "2024-08-18"
     }
 ]

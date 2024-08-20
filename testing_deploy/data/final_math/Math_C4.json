@@ -1,0 +1,2578 @@
+[
+    {
+        "id": "M04010012",
+        "question": "Số phức z = a + b i có phần thực là: A. a B. b C. i D. z",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a",
+            "B. b",
+            "C. i",
+            "D. z"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phần thực của số phức z là a . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010022",
+        "question": "Số phức z = √ 2 i − 1 có phần thực là: A. − 1 B. 2 C. 1 D. √ 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. − 1",
+            "B. 2",
+            "C. 1",
+            "D. √ 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức z = √ 2 i − 1 = − 1 + √ 2 i có phần thực là − 1 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010032",
+        "question": "Hai số phức z = a + b i , z ′ = a + b ′ i bằng nhau nếu: A. a = b ′ B. a = b C. b = b ′ D. a = − b",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a = b ′",
+            "B. a = b",
+            "C. b = b ′",
+            "D. a = − b"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hai số phức z = a + b i , z ′ = a + b ′ i bằng nhau nếu b = b ′ Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010042",
+        "question": "Cho hai số phức z = ( 2 x + 3 ) + ( 3 y − 1 ) i và z ′ = 3 x + ( y + 1 ) i . Khi z = z ′ , chọn khẳng định đúng trong các khẳng định sau: A. x = − 5 3 ; y = 0 . B. x = − 5 3 ; y = 4 3 . C. x = 3 ; y = 1 . D. x = 1 ; y = 3 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. x = − 5 3 ; y = 0 .",
+            "B. x = − 5 3 ; y = 4 3 .",
+            "C. x = 3 ; y = 1 .",
+            "D. x = 1 ; y = 3 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = z ′ ⇔ ( 2 x + 3 ) + ( 3 y − 1 ) i = 3 x + ( y + 1 ) i ⇔ { 2 x + 3 = 3 x 3 y − 1 = y + 1 ⇔ { x = 3 y = 1 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010052",
+        "question": "Biết rằng có duy nhất một cặp số thực ( x ; y ) thỏa mãn ( x + y ) + ( x − y ) i = 5 + 3 i . Tính S = x + y . A. S = 5. B. S = 3 . C. S = 4 . D. S = 6 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. S = 5.",
+            "B. S = 3 .",
+            "C. S = 4 .",
+            "D. S = 6 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có ( x + y ) + ( x − y ) i = 5 + 3 i ⇔ ( x + y − 5 ) + ( x − y − 3 ) i = 0 ⇔ { x + y − 5 = 0 x − y − 3 = 0 ⇔ { x = 4 y = 1 ⇒ S = x + y = 4 + 1 = 5. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010062",
+        "question": "Số phức liên hợp của số phức z = a − b i là: A. a − b i B. a + b i C. b − a i D. b + a i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a − b i",
+            "B. a + b i",
+            "C. b − a i",
+            "D. b + a i"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức z = a − b i là ¯¯¯ z = a + b i . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010072",
+        "question": "Cho số phức z = 3 + 2 i . Tìm phần thực và phần ảo của số phức ¯ z . A. Phần thực bằng − 3 và phần ảo bằng − 2 i . B. Phần thực bằng 3 và phần ảo bằng − 2. C. Phần thực bằng 3 và phần ảo bằng 2 i . D. Phần thực bằng 3 và phần ảo bằng 2 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Phần thực bằng − 3 và phần ảo bằng − 2 i .",
+            "B. Phần thực bằng 3 và phần ảo bằng − 2.",
+            "C. Phần thực bằng 3 và phần ảo bằng 2 i .",
+            "D. Phần thực bằng 3 và phần ảo bằng 2 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ z = 3 + 2 i , suy ra ¯ z = 3 − 2 i . Vậy phần thực bằng 3 và phần ảo bằng − 2 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010082",
+        "question": "Số phức liên hợp của số phức z = 3 i + 2 là: A. ¯¯¯ z = 3 i − 2 B. ¯¯¯ z = − 3 i − 2 C. ¯¯¯ z = 2 + 3 i D. ¯¯¯ z = 2 − 3 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ¯¯¯ z = 3 i − 2",
+            "B. ¯¯¯ z = − 3 i − 2",
+            "C. ¯¯¯ z = 2 + 3 i",
+            "D. ¯¯¯ z = 2 − 3 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức z = 2 + 3 i là ¯¯¯ z = 2 − 3 i . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04010092",
+        "question": "Chọn mệnh đề đúng: A. ¯¯¯ z = z B. ∣ ∣ ¯¯¯ z ∣ ∣ = | z | C. | z | + ∣ ∣ ¯¯¯ z ∣ ∣ = 0 D. ∣ ∣ ¯¯¯ z . z ∣ ∣ = 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ¯¯¯ z = z",
+            "B. ∣ ∣ ¯¯¯ z ∣ ∣ = | z |",
+            "C. | z | + ∣ ∣ ¯¯¯ z ∣ ∣ = 0",
+            "D. ∣ ∣ ¯¯¯ z . z ∣ ∣ = 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z | = ∣ ∣ ¯¯¯ z ∣ ∣ nên B đúng. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010102",
+        "question": "Cho số phức z . Mệnh đề nào sau đây là đúng? A. ∣ ∣ z 2 ∣ ∣ = 2 | z | . B. ∣ ∣ z 2 ∣ ∣ = | z | 2 . C. ∣ ∣ z 2 ∣ ∣ = 2 | z | 2 . D. ∣ ∣ z 2 ∣ ∣ = √ | z | 2 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ∣ ∣ z 2 ∣ ∣ = 2 | z | .",
+            "B. ∣ ∣ z 2 ∣ ∣ = | z | 2 .",
+            "C. ∣ ∣ z 2 ∣ ∣ = 2 | z | 2 .",
+            "D. ∣ ∣ z 2 ∣ ∣ = √ | z | 2 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i ( a ; b ∈ R ) ⇒ z 2 = a 2 − b 2 + 2 a b i ⇒ ∣ ∣ z 2 ∣ ∣ = √ ( a 2 − b 2 ) 2 + 4 a 2 b 2 = √ ( a 2 + b 2 ) 2 = a 2 + b 2 Lại có | z | = √ a 2 + b 2 ⇒ | z | 2 = a 2 + b 2 . Do đó ∣ ∣ z 2 ∣ ∣ = | z | 2 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010111",
+        "question": "Gọi M , N lần lượt là các điểm biểu diễn số phức z = a + b i và z ′ = a ′ + b ′ i . Chọn câu đúng: A. M ( a ; a ′ ) B. N ( b ; b ′ ) C. M ( a ; b ) D. N ( b ′ ; a ′ )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M ( a ; a ′ )",
+            "B. N ( b ; b ′ )",
+            "C. M ( a ; b )",
+            "D. N ( b ′ ; a ′ )"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M biểu diễn số phức z = a + b i nên M ( a ; b ) Điểm N biểu diễn số phức z ′ = a ′ + b ′ i nên N ( a ′ ; b ′ ) Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010121",
+        "question": "Điểm M ( 3 ; − 1 ) là điểm biểu diễn của số phức nào sau đây? A. z = 1 − 3 i B. z = − 3 + i C. z = 3 − i D. z = − 1 + 3 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = 1 − 3 i",
+            "B. z = − 3 + i",
+            "C. z = 3 − i",
+            "D. z = − 1 + 3 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M ( 3 ; − 1 ) là điểm biểu diễn số phức z = 3 − i . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010131",
+        "question": "Điểm biểu diễn số phức z = 2 − 3 i có tọa độ là: A. ( 2 ; 3 ) . B. ( − 2 ; − 3 ) . C. ( 2 ; − 3 ) . D. ( − 2 ; 3 ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ( 2 ; 3 ) .",
+            "B. ( − 2 ; − 3 ) .",
+            "C. ( 2 ; − 3 ) .",
+            "D. ( − 2 ; 3 ) ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi A là điểm biểu diễn số phức, suy ra { x A = 2 y A = − 3 . Vậy A ( 2 ; − 3 ) . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010141",
+        "question": "Cho hai số phức z = a + b i , z ′ = a ′ + b ′ i . Chọn công thức đúng: A. z + z ′ = ( a + b ) + ( a ′ + b ′ ) i B. z − z ′ = ( a + a ′ ) − ( b + b ′ ) i C. z . z ′ = ( a a ′ − b b ′ ) + ( a b ′ + a ′ b ) i D. z . z ′ = ( a a ′ + b b ′ ) − ( a b ′ + a ′ b ) i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z + z ′ = ( a + b ) + ( a ′ + b ′ ) i",
+            "B. z − z ′ = ( a + a ′ ) − ( b + b ′ ) i",
+            "C. z . z ′ = ( a a ′ − b b ′ ) + ( a b ′ + a ′ b ) i",
+            "D. z . z ′ = ( a a ′ + b b ′ ) − ( a b ′ + a ′ b ) i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z + z ′ = ( a + b i ) + ( a ′ + b ′ i ) = ( a + a ′ ) + ( b + b ′ ) i z − z ′ = ( a + b i ) − ( a ′ + b ′ i ) = ( a − a ′ ) + ( b − b ′ ) i z . z ′ = ( a + b i ) ( a ′ + b ′ i ) = ( a a ′ − b b ′ ) + ( a b ′ + a ′ b ) i Vậy C đúng. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010151",
+        "question": "Cho hai số phức z 1 = 1 + 2 i và z 2 = 2 − 3 i . Xác định phần ảo a của số phức z = 3 z 1 − 2 z 2 . A. a = 11 . B. a = 12 . C. a = − 1 . D. a = − 12 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. a = 11 .",
+            "B. a = 12 .",
+            "C. a = − 1 .",
+            "D. a = − 12 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = 3 z 1 − 2 z 2 = 3 ( 1 + 2 i ) − 2 ( 2 − 3 i ) = ( 3 + 6 i ) + ( − 4 + 6 i ) = ( 3 − 4 ) + ( 6 + 6 ) i = − 1 + 12 i . Vậy z = 3 z 1 − 2 z 2 có phần ảo bằng a = 12 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010161",
+        "question": "Tìm số phức w = z 1 − 2 z 2 , biết rằng z 1 = 1 + 2 i và z 2 = 2 − 3 i . A. w = − 3 − 4 i . B. w = − 3 + 8 i . C. w = 3 − i . D. w = 5 + 8 i .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. w = − 3 − 4 i .",
+            "B. w = − 3 + 8 i .",
+            "C. w = 3 − i .",
+            "D. w = 5 + 8 i ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có w = z 1 − 2 z 2 = 1 + 2 i − 2 ( 2 − 3 i ) = ( 1 + 2 i ) + ( − 4 + 6 i ) = ( 1 − 4 ) + ( 2 + 6 ) i = − 3 + 8 i . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04010171",
+        "question": "Cho số phức z = a + b i và ¯¯¯ z là số phức liên hợp của z . Chọn kết luận đúng: A. z + ¯¯¯ z = 2 a B. z . ¯¯¯ z = 1 C. z − ¯¯¯ z = 2 b D. z . ¯¯¯ z = z 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z + ¯¯¯ z = 2 a",
+            "B. z . ¯¯¯ z = 1",
+            "C. z − ¯¯¯ z = 2 b",
+            "D. z . ¯¯¯ z = z 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = a + b i ⇒ ¯¯¯ z = a − b i ⇒ z + ¯¯¯ z = 2 a ; z − ¯¯¯ z = 2 b i ; z . ¯¯¯ z = a 2 + b 2 Do đó A đúng. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010182",
+        "question": "Kí hiệu a , b lần lượt là phần thực và phần ảo của số phức 3 − 2 √ 2 i . Tìm a , b . A. a = 3 , b = 2. B. a = 3 , b = 2 √ 2 . C. a = 3 , b = √ 2 . D. a = 3 , b = − 2 √ 2 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a = 3 , b = 2.",
+            "B. a = 3 , b = 2 √ 2 .",
+            "C. a = 3 , b = √ 2 .",
+            "D. a = 3 , b = − 2 √ 2 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức 3 − 2 √ 2 i có phần thực bằng 3 phần ảo bằng − 2 √ 2 hay { a = 3 b = − 2 √ 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04010192",
+        "question": "Tính tổng T của phần thực và phần ảo của số phức z = ( √ 2 + 3 i ) 2 . A. T = 11 . B. T = 11 + 6 √ 2 . C. T = − 7 + 6 √ 2 . D. T = − 7 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. T = 11 .",
+            "B. T = 11 + 6 √ 2 .",
+            "C. T = − 7 + 6 √ 2 .",
+            "D. T = − 7 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = ( √ 2 + 3 i ) 2 = ( √ 2 ) 2 + 2. √ 2 .3 i + ( 3 i ) 2 = 2 + 6 √ 2 i − 9 = − 7 + 6 √ 2 i . Suy ra T = − 7 + 6 √ 2 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010202",
+        "question": "Đề thi THPT QG - 2021 - mã 102 Phần thực của số phức z = 6 − 2 i bằng A. − 2 B. 2 C. 6 D. − 6",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. − 2",
+            "B. 2",
+            "C. 6",
+            "D. − 6"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phần thực của số phức z = 6 − 2 i bằng 6 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010211",
+        "question": "Tìm số phức có phần thực bằng 12 và mô đun bằng 13 : A. 5 ± 12 i B. 12 + 5 i C. 12 ± 5 i D. 12 ± i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 5 ± 12 i",
+            "B. 12 + 5 i",
+            "C. 12 ± 5 i",
+            "D. 12 ± i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | z | 2 = a 2 + b 2 ⇔ b 2 = | z | 2 − a 2 ⇔ b = ± √ | z | 2 − a 2 Vậy phần ảo của số phức đó là b = ± √ 13 2 − 12 2 = ± 5 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010221",
+        "question": "Tính môđun của số phức z , biết z thỏa mãn i z = 3 + 4 i . A. | z | = 5. B. | z | = 3. C. | z | = 4. D. | z | = 5 √ 2 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. | z | = 5.",
+            "B. | z | = 3.",
+            "C. | z | = 4.",
+            "D. | z | = 5 √ 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Lấy mô đun hai vế, ta được | i z | = | 3 + 4 i | ⇔ | i | . | z | = 5 ⇔ 1. | z | = 5 ⇔ | z | = 5. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010232",
+        "question": "Cho số phức z = 3 − 2 i . Tìm phần thực và phần ảo của số phức ¯¯¯ z A. Phần thực bằng − 3 và Phần ảo bằng − 2 i B. Phần thực bằng − 3 và Phần ảo bằng − 2 C. Phần thực bằng 3 và Phần ảo bằng 2 i D. Phần thực bằng 3 và Phần ảo bằng 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Phần thực bằng − 3 và Phần ảo bằng − 2 i",
+            "B. Phần thực bằng − 3 và Phần ảo bằng − 2",
+            "C. Phần thực bằng 3 và Phần ảo bằng 2 i",
+            "D. Phần thực bằng 3 và Phần ảo bằng 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của z là 3 + 2 i , phần thực 3 , phần ảo 2 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04010242",
+        "question": "Số phức liên hợp của z = 5 + 4 i là: A. ¯¯¯ z = − 5 − 4 i B. ¯¯¯ z = 4 − 5 i C. ¯¯¯ z = 5 − 4 i D. ¯¯¯ z = 4 + 5 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ¯¯¯ z = − 5 − 4 i",
+            "B. ¯¯¯ z = 4 − 5 i",
+            "C. ¯¯¯ z = 5 − 4 i",
+            "D. ¯¯¯ z = 4 + 5 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức z = 5 + 4 i là: ¯¯¯ z = 5 − 4 i . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010252",
+        "question": "Tìm phần thực và phần ảo của số phức z = 4 − 3 i + ( 1 − i ) 3 . A. Phần thực bằng 2 và phần ảo bằng − 5 i . B. Phần thực bằng 2 và phần ảo bằng − 7 i . C. Phần thực bằng 2 và phần ảo bằng − 5 . D. Phần thực bằng − 2 và phần ảo bằng − 5 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Phần thực bằng 2 và phần ảo bằng − 5 i .",
+            "B. Phần thực bằng 2 và phần ảo bằng − 7 i .",
+            "C. Phần thực bằng 2 và phần ảo bằng − 5 .",
+            "D. Phần thực bằng − 2 và phần ảo bằng − 5 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = 4 − 3 i + ( 1 − 3 i + 3 i 2 − i 3 ) = 4 − 3 i + ( 1 − 3 i − 3 + i ) = 2 − 5 i . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010261",
+        "question": "Cho hai số phức z 1 = 1 + i và z 2 = 2 − 3 i . Tính môđun của số phức z 1 + z 2 . A. | z 1 + z 2 | = √ 13 B. | z 1 + z 2 | = √ 5 C. | z 1 + z 2 | = 1 D. | z 1 + z 2 | = 5 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. | z 1 + z 2 | = √ 13",
+            "B. | z 1 + z 2 | = √ 5",
+            "C. | z 1 + z 2 | = 1",
+            "D. | z 1 + z 2 | = 5 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com z 1 + z 2 = 3 − 2 i ⇒ | z 1 + z 2 | = √ 3 2 + ( − 2 ) 2 = √ 13 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010271",
+        "question": "Cho số phức z = 1 + √ 3 i . Khi đó A. 1 z = 1 2 − √ 3 2 i B. 1 z = 1 2 + √ 3 2 i C. 1 z = 1 4 + √ 3 4 i . D. 1 z = 1 4 − √ 3 4 i .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1 z = 1 2 − √ 3 2 i",
+            "B. 1 z = 1 2 + √ 3 2 i",
+            "C. 1 z = 1 4 + √ 3 4 i .",
+            "D. 1 z = 1 4 − √ 3 4 i ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = 1 + √ 3 i ⇒ 1 z = 1 1 + √ 3 i = 1 − √ 3 i ( 1 − √ 3 i ) ( 1 + √ 3 i ) = 1 − √ 3 i 1 2 − ( √ 3 i ) 2 = 1 − √ 3 i 4 = 1 4 − √ 3 4 i Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04010281",
+        "question": "Tìm số phức liên hợp ¯ z của số phức z = 2 1 + i √ 3 . A. ¯ z = 1 2 + i √ 3 2 . B. ¯ z = 1 + i √ 3 . C. ¯ z = 1 − i √ 3 . D. ¯ z = 1 2 − i √ 3 2 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ¯ z = 1 2 + i √ 3 2 .",
+            "B. ¯ z = 1 + i √ 3 .",
+            "C. ¯ z = 1 − i √ 3 .",
+            "D. ¯ z = 1 2 − i √ 3 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = 2 1 + i √ 3 = 2 ( 1 − i √ 3 ) ( 1 + i √ 3 ) ( 1 − i √ 3 ) = 2 − 2 i √ 3 4 = 1 2 − i √ 3 2 . Suy ra ¯ z = 1 2 + i √ 3 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04010291",
+        "question": "Cho số phức z = 7 − 11 i 2 − i . Tìm phần thực và phần ảo của ¯¯¯ z . A. Phần thực bằng 5 và phần ảo bằng − 3 B. Phần thực bằng − 5 và phần ảo bằng 3 C. Phần thực bằng 5 và phần ảo bằng 3 D. Phần thực bằng 5 và phần ảo bằng 3 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Phần thực bằng 5 và phần ảo bằng − 3",
+            "B. Phần thực bằng − 5 và phần ảo bằng 3",
+            "C. Phần thực bằng 5 và phần ảo bằng 3",
+            "D. Phần thực bằng 5 và phần ảo bằng 3 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com z = 7 − 11 i 2 − i = ( 7 − 11 i ) ( 2 + i ) 2 2 + 1 2 = 14 + 11 + 7 i − 22 i 5 = 25 − 15 i 5 = 5 − 3 i ⇒ ¯¯¯ z = 5 + 3 i Vậy phần thực và phần ảo của ¯¯¯ z là 5 và 3 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04010301",
+        "question": "Cho số phức z = ( 2 i − 1 ) 2 − ( 3 + i ) 2 . Tổng phần thực và phần ảo và phần ảo của z là A. 1 B. − 1 C. − 21 D. 21",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. − 1",
+            "C. − 21",
+            "D. 21"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = ( 2 i − 1 ) 2 − ( 3 + i ) 2 = 4 i 2 − 4 i + 1 − ( 9 + 6 i + i 2 ) = − 4 − 4 i + 1 − 9 − 6 i − ( − 1 ) = − 11 − 10 i ⇒ z = − 11 − 10 i nên phần thực của z bằng − 11 và phần ảo bằng − 10 . Tổng phần thực và phần ảo là ( − 11 ) + ( − 10 ) = − 21 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020012",
+        "question": "Số phức w là căn bậc hai của số phức z nếu: A. z 2 = w B. w 2 = z C. √ w = z D. z = ± √ w",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 2 = w",
+            "B. w 2 = z",
+            "C. √ w = z",
+            "D. z = ± √ w"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức w = x + y i ( x , y ∈ R ) là căn bậc hai của số phức z = a + b i nếu w 2 = z . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020022",
+        "question": "Cho z = 1 − 3 i là một căn bậc hai của w = − 8 − 6 i . Chọn kết luận đúng: A. ( 1 − 3 i ) 2 = − 8 − 6 i B. ( 1 − 3 i ) 2 = − 8 + 6 i C. ( 1 − 3 i ) 2 = 8 + 6 i D. ( − 8 − 6 i ) 2 = 1 − 3 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ( 1 − 3 i ) 2 = − 8 − 6 i",
+            "B. ( 1 − 3 i ) 2 = − 8 + 6 i",
+            "C. ( 1 − 3 i ) 2 = 8 + 6 i",
+            "D. ( − 8 − 6 i ) 2 = 1 − 3 i"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do z = 1 − 3 i là một căn bậc hai của w = − 8 − 6 i nên ( 1 − 3 i ) 2 = − 8 − 6 i . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020031",
+        "question": "Căn bậc hai của số phức khác 0 là: A. hai số phức liên hợp B. hai số phức bằng nhau C. hai số phức có cùng phần ảo D. hai số phức đối nhau",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. hai số phức liên hợp",
+            "B. hai số phức bằng nhau",
+            "C. hai số phức có cùng phần ảo",
+            "D. hai số phức đối nhau"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Căn bậc hai của số phức khác 0 là hai số đối nhau. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020041",
+        "question": "Biết số phức z = 2 + 3 i là một căn bậc hai của số phức w = − 5 + 12 i . Một căn bậc hai khác của w = − 5 + 12 i là: A. 2 − 3 i B. 3 + 2 i C. 3 − 2 i D. − 2 − 3 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 − 3 i",
+            "B. 3 + 2 i",
+            "C. 3 − 2 i",
+            "D. − 2 − 3 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì z = 2 + 3 i là một căn bậc hai của số phức w = − 5 + 12 i nên căn bậc hai còn lại là số đối của z chính là − 2 − 3 i . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020051",
+        "question": "Căn bậc hai của số a = − 3 là: A. 3 i và − 3 i B. 3 √ i và − 3 √ i C. i √ 3 và − i √ 3 D. √ 3 i và − √ 3 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 3 i và − 3 i",
+            "B. 3 √ i và − 3 √ i",
+            "C. i √ 3 và − i √ 3",
+            "D. √ 3 i và − √ 3 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Căn bậc hai của số a = − 3 là i √ 3 và − i √ 3 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020061",
+        "question": "Chọn kết luận đúng: A. Số phức − 3 chỉ có một căn bậc hai là − √ 3 . B. Số phức − 3 có hai căn bậc hai là ± i √ 3 . C. Số phức − 3 chỉ có một căn bậc hai là 3 i . D. Số phức − 3 có hai căn bậc hai là ± 3 i .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Số phức − 3 chỉ có một căn bậc hai là − √ 3 .",
+            "B. Số phức − 3 có hai căn bậc hai là ± i √ 3 .",
+            "C. Số phức − 3 chỉ có một căn bậc hai là 3 i .",
+            "D. Số phức − 3 có hai căn bậc hai là ± 3 i ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức − 3 có hai căn bậc hai là ± i √ 3 vì ( ± i √ 3 ) 2 = − 3 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020072",
+        "question": "Cho phương trình bậc hai A z 2 + B z + C = 0 ( A ≠ 0 ) . Biệt thức Δ của phương trình được tính bởi: A. B 2 − 4 A C B. A 2 − 4 B C C. C 2 − 4 B A D. B 2 − A C",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. B 2 − 4 A C",
+            "B. A 2 − 4 B C",
+            "C. C 2 − 4 B A",
+            "D. B 2 − A C"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai A z 2 + B z + C = 0 ( A ≠ 0 ) có biệt thức Δ = B 2 − 4 A C . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020081",
+        "question": "Cho phương trình 2 z 2 − 3 i z + i = 0 . Chọn mệnh đề đúng: A. Δ = − 5 i B. Δ = − 3 − 8 i C. Δ = 9 − 8 i D. Δ = − 9 − 8 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Δ = − 5 i",
+            "B. Δ = − 3 − 8 i",
+            "C. Δ = 9 − 8 i",
+            "D. Δ = − 9 − 8 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Δ = ( − 3 i ) 2 − 4.2. i = 9 i 2 − 8 i = − 9 − 8 i Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020091",
+        "question": "Nghiệm của phương trình: z 2 + ( 1 − i ) z − 18 + 13 i = 0 là: A. z = 4 − i ; z = − 5 + 2 i B. z = 4 − i ; z = − 5 − 2 i C. z = 4 + i ; z = − 5 − 2 i D. z = 4 + i ; z = − 5 + 2 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = 4 − i ; z = − 5 + 2 i",
+            "B. z = 4 − i ; z = − 5 − 2 i",
+            "C. z = 4 + i ; z = − 5 − 2 i",
+            "D. z = 4 + i ; z = − 5 + 2 i"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: z 2 + ( 1 − i ) z − 18 + 13 i = 0 Có: Δ = ( 1 − i ) 2 − 4 ( − 18 + 13 i ) = 1 − 2 i + i 2 + 72 − 52 i = 72 − 54 i = 81 − 2.9.3 i + 9 i 2 = ( 9 − 3 i ) 2 ⇒ δ = 9 − 3 i là một căn bậc hai của Δ . ⇒ Phương trình có 2 nghiệm là: z 1 = − 1 + i + 9 − 3 i 2 = 4 − i ; z 2 = − 1 + i − 9 + 3 i 2 = − 5 + 2 i Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020101",
+        "question": "Phương trình bậc hai trên tập số phức có thể có mấy nghiệm? A. 1 B. 2 C. 0 D. Cả A và B đều đúng",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 0",
+            "D. Cả A và B đều đúng"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai có thể có 1 nghiệm nếu Δ = 0 hoặc 2 nghiệm nếu Δ ≠ 0 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020111",
+        "question": "Chọn kết luận đúng về phương trình bậc hai (hệ số thực) trên tập số phức: A. luôn có 2 nghiệm phân biệt. B. vô nghiệm nếu Δ < 0 . C. luôn có ít nhất 1 nghiệm. D. luôn có hai nghiệm thực phân biệt",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. luôn có 2 nghiệm phân biệt.",
+            "B. vô nghiệm nếu Δ < 0 .",
+            "C. luôn có ít nhất 1 nghiệm.",
+            "D. luôn có hai nghiệm thực phân biệt"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai trên tập số phức luôn có ít nhất 1 nghiệm nên C đúng. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020121",
+        "question": "Trong C , cho phương trình a z 2 + b z + c = 0 ( a ≠ 0 ) ( ∗ ) , a , b , c ∈ R . Gọi Δ = b 2 − 4 a c , ta xét các mệnh đề sau: 1) Nếu Δ là số thực âm thì phương trình (*) vô nghiệm 2) Nếu Δ ≠ 0 thì phương trình (*) có 2 nghiệm phân biệt 3) Nếu Δ = 0 thì phương trình (*) có nghiệm kép Trong các mệnh đề trên A. Không có mệnh đề nào đúng B. Có 1 mệnh đề đúng C. Có 2 mệnh đề đúng D. Cả 3 mệnh đề đều đúng",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Không có mệnh đề nào đúng",
+            "B. Có 1 mệnh đề đúng",
+            "C. Có 2 mệnh đề đúng",
+            "D. Cả 3 mệnh đề đều đúng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com 1) Sai vì nếu Δ < 0 thì phương trình có 2 nghiệm phức 2) Đúng 3) Đúng Vậy có 2 mệnh đề đúng Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020132",
+        "question": "Cho z 1 , z 2 là hai nghiệm của phương trình z 2 + 2 i z + i = 0 . Chọn mệnh đề đúng: A. z 1 + z 2 = 2 i B. z 1 z 2 = − 2 i C. z 1 z 2 = 2 i D. z 1 + z 2 = − 2 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 1 + z 2 = 2 i",
+            "B. z 1 z 2 = − 2 i",
+            "C. z 1 z 2 = 2 i",
+            "D. z 1 + z 2 = − 2 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: ⎧ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎩ z 1 + z 2 = − B A = − 2 i 1 = − 2 i z 1 z 2 = C A = i 1 = i Vậy z 1 + z 2 = − 2 i . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020142",
+        "question": "Các nghiệm z 1 = − 1 − 5 i √ 5 3 ; z 2 = − 1 + 5 i √ 5 3 là nghiệm của phương trình nào sau đây: A. z 2 − 2 z + 9 = 0 B. 3 z 2 + 2 z + 42 = 0 C. z 2 + 2 z + 27 = 0 D. 2 z 2 + 3 z + 4 = 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 2 − 2 z + 9 = 0",
+            "B. 3 z 2 + 2 z + 42 = 0",
+            "C. z 2 + 2 z + 27 = 0",
+            "D. 2 z 2 + 3 z + 4 = 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 1 + z 2 = − 1 − 5 i √ 5 3 + − 1 + 5 i √ 5 3 = − 2 3 z 1 . z 2 = − 1 − 5 i √ 5 3 . − 1 + 5 i √ 5 3 = 126 9 = 42 3 ⇒ z 1 ; z 2 là các nghiệm của phương trình: z 2 + 2 3 z + 42 3 = 0 ⇔ 3 z 2 + 2 z + 42 = 0 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020151",
+        "question": "Gọi z 1 ; z 2 là hai nghiệm phức của phương trình z 2 + 2 z + 5 = 0 . Tính | z 1 | + | z 2 | . A. | z 1 | + | z 2 | = 4 . B. | z 1 | + | z 2 | = 2 √ 5 . C. | z 1 | + | z 2 | = 10 . D. | z 1 | + | z 2 | = √ 5 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. | z 1 | + | z 2 | = 4 .",
+            "B. | z 1 | + | z 2 | = 2 √ 5 .",
+            "C. | z 1 | + | z 2 | = 10 .",
+            "D. | z 1 | + | z 2 | = √ 5 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Δ ′ = 1 − 5 = − 4 ⇒ [ z 1 = − 1 + 2 i z 2 = − 1 − 2 i ⇒ T = | z 1 | + | z 2 | = √ ( − 1 ) 2 + 2 2 + √ ( − 1 ) 2 + ( − 2 ) 2 = 2 √ 5 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020161",
+        "question": "Gọi z 1 , z 2 là các nghiệm của phương trình z 2 + 2 z + 5 = 0 . Giá trị của ∣ ∣ z 2 1 ∣ ∣ + ∣ ∣ z 2 2 ∣ ∣ bằng: A. 10 B. 12 C. 2 √ 34 D. 4 √ 5",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 10",
+            "B. 12",
+            "C. 2 √ 34",
+            "D. 4 √ 5"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 2 + 2 z + 5 = 0 ⇔ [ z 1 = − 1 + 2 i z 2 = − 1 − 2 i . Khi đó ta có: ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ z 2 1 = − 3 − 4 i ⇒ ∣ ∣ z 2 1 ∣ ∣ = √ ( − 3 ) 2 + ( − 4 ) 2 = 5 z 2 2 = − 3 + 4 i ⇒ ∣ ∣ z 2 2 ∣ ∣ = √ ( − 3 ) 2 + 4 2 = 5 . Vậy ∣ ∣ z 2 1 ∣ ∣ + ∣ ∣ z 2 2 ∣ ∣ = 5 + 5 = 10 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020173",
+        "question": "Gọi z 1 , z 2 là các nghiệm phức của phương trình z 2 + 4 z + 5 = 0 . Đặt w = ( 1 + z 1 ) 100 + ( 1 + z 2 ) 100 , khi đó A. w = 2 50 i B. w = − 2 51 C. w = 2 51 . D. w = − 2 50 i .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. w = 2 50 i",
+            "B. w = − 2 51",
+            "C. w = 2 51 .",
+            "D. w = − 2 50 i ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 2 + 4 z + 5 = 0 ⇔ ( z + 2 ) 2 = − 1 ⇔ ( z + 2 ) 2 = i 2 ⇔ { z 1 = − 2 + i z 2 = − 2 − i ⇒ { z 1 + 1 = i − 1 z 2 + 1 = − i − 1 Khi đó ta có: { ( z 1 + 1 ) 2 = ( i − 1 ) 2 = − 2 i ( z 2 + 1 ) 2 = ( − i − 1 ) 2 = 2 i ⇒ { ( z 1 + 1 ) 4 = − 4 ( z 2 + 1 ) 4 = − 4 ⇒ ( z 1 + 1 ) 100 + ( z 2 + 1 ) 100 = ( − 4 ) 25 + ( − 4 ) 25 = 2. ( − 2 2 ) 25 = − 2 51 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020183",
+        "question": "Cho z 1 , z 2 là hai số phức thỏa mãn z 2 − 4 z + 5 = 0 . Tính giá trị biểu thức P = ( z 1 − 1 ) 2017 + ( z 2 − 1 ) 2017 . A. P = 0 . B. P = 2 1008 . C. P = 2 1009 . D. P = 2 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P = 0 .",
+            "B. P = 2 1008 .",
+            "C. P = 2 1009 .",
+            "D. P = 2 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Biệt số Δ = 16 − 20 = − 4 = ( 2 i ) 2 . Do đó phương trình có hai nghiệm phức: z 1 = 4 − 2 i 2 = 2 − i và z 2 = 4 + 2 i 2 = 2 + i . Suy ra P = ( 1 − i ) 2017 + ( 1 + i ) 2017 = ( 1 − i ) . [ ( 1 − i ) 2 ] 1008 + ( 1 + i ) [ ( 1 + i ) 2 ] 1008 = ( 1 − i ) . ( − 2 i ) 1008 + ( 1 + i ) ( 2 i ) 1008 = ( 1 − i ) .2 1008 + ( 1 + i ) .2 1008 = 2 1009 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020193",
+        "question": "Gọi z 1 , z 2 là hai nghiệm phức của phương trình z 2 − 2 z + 2 = 0 . Tính giá trị biểu thức P = z 2016 1 + z 2016 2 . A. P = 2 1009 . B. P = 2 1008 . C. P = 2 . D. P = 0 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P = 2 1009 .",
+            "B. P = 2 1008 .",
+            "C. P = 2 .",
+            "D. P = 0 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Biệt số Δ = 4 − 8 = − 4 = ( 2 i ) 2 . Do đó phương trình có hai nghiệm phức: z 1 = 2 − 2 i 2 = 1 − i và z 2 = 2 + 2 i 2 = 1 + i . Suy ra z 2016 1 = ( 1 − i ) 2016 = [ ( 1 − i ) 2 ] 1008 = ( − 2 i ) 1008 = ( − 2 ) 1008 . i 1008 = 2 1008 .1 = 2 1008 ; z 2016 2 = ( 1 + i ) 2016 = [ ( 1 + i ) 2 ] 1008 = ( 2 i ) 1008 = 2 1008 . i 1008 = 2 1008 .1 = 2 1008 . Vậy P = z 2016 1 + z 2016 2 = 2 1008 + 2 1008 = 2 1009 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020202",
+        "question": "Cho phương trình z 2 − 2 z + 2 = 0 . Mệnh đề nào sau đây là sai? A. Phương trình đã cho không có nghiệm nào là số thuần ảo B. Phương trình đã cho có 2 nghiệm phức C. Phương trình đã cho không có nghiệm phức D. Phương trình đã cho không có nghiệm thực",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Phương trình đã cho không có nghiệm nào là số thuần ảo",
+            "B. Phương trình đã cho có 2 nghiệm phức",
+            "C. Phương trình đã cho không có nghiệm phức",
+            "D. Phương trình đã cho không có nghiệm thực"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Δ ′ = 1 − 2 = − 1 < 0 ⇒ phương trình có hai nghiệm là z = 1 + i và z = 1 − i . Vậy phương trình có hai nghiệm phức. Do đó các đáp án A, B, D đều đúng Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020212",
+        "question": "Kí hiệu z 1 , z 2 là hai số phức của phương trình z 2 − 3 z + 5 = 0 . Giá trị của | z 1 | + | z 2 | bằng: A. 2 √ 5 B. √ 5 C. 3 D. 10",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 √ 5",
+            "B. √ 5",
+            "C. 3",
+            "D. 10"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 2 − 3 z + 5 = 0 ⇔ ⎡ ⎢ ⎢ ⎢ ⎣ z 1 = 3 2 + √ 11 2 i z 2 = 3 2 − √ 11 2 i ⇒ ⎡ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎣ | z 1 | =    ⎷ ( 3 2 ) 2 + ( √ 11 2 ) 2 = √ 5 | z 2 | =    ⎷ ( 3 2 ) 2 + ( √ 11 2 ) 2 = √ 5 ⇒ | z 1 | + | z 2 | = 2 √ 5 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020221",
+        "question": "Biết rằng phương trình z 2 + b z + c = 0 ( b ; c ∈ R ) có một nghiệm phức là z 1 = 1 + 2 i . Khi đó: A. b + c = 0 B. b + c = 3 C. b + c = 2 D. b + c = 7",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. b + c = 0",
+            "B. b + c = 3",
+            "C. b + c = 2",
+            "D. b + c = 7"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z = 1 + 2 i là nghiệm của phương trình nên ta có: ( 1 + 2 i ) 2 + b ( 1 + 2 i ) + c = 0 ⇔ − 3 + 4 i + b + 2 b i + c = 0 ⇔ ( − 3 + b + c ) + ( 4 + 2 b ) i = 0 ⇔ { − 3 + b + c = 0 4 + 2 b = 0 ⇔ b + c = 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020231",
+        "question": "Phương trình z 2 + a z + b = 0 ( a , b ∈ R ) có một nghiệm phức z = 1 − 3 i . Khi đó 2 a 3 + 2 b 3 + 3 bằng A. 2035 B. 1987 C. 2019 D. 2020",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2035",
+            "B. 1987",
+            "C. 2019",
+            "D. 2020"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình z 2 + a z + b = 0 có 1 nghiệm phức z 1 = 1 − 3 i ⇒ z 2 = 1 + 3 i Áp dụng định lý Vi-et ta có { z 1 + z 2 = − a z 1 . z 2 = b ⇒ { a = − 2 b = 10 Khi đó T = 2 a 3 + 2 b 3 + 3 = 1987 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020241",
+        "question": "Cho phương trình z 2 + b z + c = 0 ẩn z và b, c là tham số thuộc tập số thực. Biết phương trình nhận z = 1 + i là một nghiệm. Tính T = b + c . A. T = 0 B. T = − 1 C. T = − 2 D. T = 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. T = 0",
+            "B. T = − 1",
+            "C. T = − 2",
+            "D. T = 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì z = 1 + i là một nghiệm của phương trình z 2 + b z + c = 0 nên ta có: ( 1 + i ) 2 + b ( 1 + i ) + c = 0 ⇔ 2 i + b + b i + c = 0 ⇔ b + c + ( b + 2 ) i = 0 ⇔ { b + c = 0 b + 2 = 0 Vậy T = b + c = 0 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020251",
+        "question": "Gọi z 0 là nghiệm phức có phần ảo âm của phương trình 2 z 2 − 6 z + 5 = 0 . Điểm nào dưới đây biểu diễn số phức i z 0 ? A. M ( − 1 2 ; 3 2 ) . B. M ( 1 2 ; 3 2 ) . C. M ( 3 2 ; − 1 2 ) . D. M ( 3 2 ; 1 2 ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M ( − 1 2 ; 3 2 ) .",
+            "B. M ( 1 2 ; 3 2 ) .",
+            "C. M ( 3 2 ; − 1 2 ) .",
+            "D. M ( 3 2 ; 1 2 ) ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com 2 z 2 − 6 z + 5 = 0 ⇔ ⎡ ⎢ ⎢ ⎣ z = 3 2 + 1 2 i z = 3 2 − 1 2 i ⇒ z 0 = 3 2 − 1 2 i ( vì có phần ảo âm) ⇒ i z 0 = i ( 3 2 − 1 2 i ) = 1 2 + 3 2 i ⇒ M ( 1 2 ; 3 2 ) . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020261",
+        "question": "Giả sử z 1 ; z 2 là hai nghiệm phức của phương trình: z 2 − 2 z + 5 = 0 và A , B là các điểm biểu diễn của z 1 ; z 2 . Tọa độ trung điểm của đoạn thẳng A B là A. ( 0 ; 1 ) B. ( 0 ; − 1 ) C. ( 1 ; 1 ) D. ( 1 ; 0 )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ( 0 ; 1 )",
+            "B. ( 0 ; − 1 )",
+            "C. ( 1 ; 1 )",
+            "D. ( 1 ; 0 )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: z 2 − 2 z + 5 = 0 Có: Δ ′ = 1 − 5 = − 4 = 4 i 2 ⇒ √ Δ ′ = √ 4 i 2 = 2 i ⇒ Phương trình có 2 nghiệm là: z 1 = 1 + 2 i ; z 2 = 1 − 2 i Khi đó: A ( 1 ; 2 ) , B ( 1 ; − 2 ) Tọa độ trung điểm đoạn thẳng A B là: ( 1 ; 0 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M04020271",
+        "question": "Gọi z 0 là nghiệm phức có phần ảo dương của của phương trình z 2 − 2 z + 10 = 0 . Trên mặt phẳng tọa độ, điểm nào sau đây là điểm biểu diễn số phức w = i z 0 . A. N ( 1 ; 3 ) . B. M ( − 3 ; 1 ) . C. P ( 3 ; − 1 ) . D. Q ( − 3 ; − 1 ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. N ( 1 ; 3 ) .",
+            "B. M ( − 3 ; 1 ) .",
+            "C. P ( 3 ; − 1 ) .",
+            "D. Q ( − 3 ; − 1 ) ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 2 − 2 z + 10 = 0 ⇔ [ z = 1 + 3 i z = 1 − 3 i . Vì z 0 là nghiệm phức có phần ảo dương của của phương trình trên ⇒ z 0 = 1 + 3 i . Khi đó ta có: w = i z 0 = i ( 1 + 3 i ) = − 3 + i . Vậy điểm biểu diễn của số phức w là: M ( − 3 ; 1 ) . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M04020282",
+        "question": "Cho số phức z = a + b i với a , b là hai số thực khác 0 . Một phương trình bậc hai với hệ số thực nhận ¯ z làm nghiệm với mọi a , b là: A. z 2 = a 2 − b 2 + 2 a b i B. z 2 = a 2 + b 2 C. z 2 − 2 a z + a 2 + b 2 = 0 D. z 2 + 2 a z + a 2 − b 2 = 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 2 = a 2 − b 2 + 2 a b i",
+            "B. z 2 = a 2 + b 2",
+            "C. z 2 − 2 a z + a 2 + b 2 = 0",
+            "D. z 2 + 2 a z + a 2 − b 2 = 0"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A: z = a + b i hoặc z = − a − b i (loại) Đáp án B: z = ± √ a 2 + b 2 (loại) Đáp án C: Giải phương trình bậc hai ẩn z có nghiệm z = a + b i ; z = a − b i (thỏa mãn) Đáp án D: Giải phương trình ta được hai nghiệm a ± b nên loại. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M04020292",
+        "question": "Cho z = 2 + 3 i là một số phức. Hãy tìm một phương trình bậc 2 với hệ số thực nhận z và ¯¯¯ z làm nghiệm A. z 2 − 4 z + 13 = 0 B. z 2 + 4 z + 13 = 0 C. z 2 − 4 z − 13 = 0 D. z 2 + 4 z − 13 = 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 2 − 4 z + 13 = 0",
+            "B. z 2 + 4 z + 13 = 0",
+            "C. z 2 − 4 z − 13 = 0",
+            "D. z 2 + 4 z − 13 = 0"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = 2 + 3 i ; ¯¯¯ z = 2 − 3 i Nếu z và ¯¯¯ z là 2 nghiệm của một phương trình thì: [ z − ( 2 + 3 i ) ] [ z − ( 2 − 3 i ) ] = 0 ⇔ z 2 − ( 2 − 3 i ) z − ( 2 + 3 i ) z + ( 2 + 3 i ) ( 2 − 3 i ) = 0 ⇔ z 2 − 4 z + 13 = 0 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M04020303",
+        "question": "Cho số phức w và hai số thực a , b . Biết z 1 = w + 2 i và z 2 = 2 w − 3 là 2 nghiệm phức của phương trình z 2 + a z + b = 0 . Tính T = | z 1 | + | z 2 | . A. T = 2 √ 13 . B. T = 2 √ 97 3 . C. T = 2 √ 85 3 . D. T = 4 √ 13 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. T = 2 √ 13 .",
+            "B. T = 2 √ 97 3 .",
+            "C. T = 2 √ 85 3 .",
+            "D. T = 4 √ 13 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt w = x + y i . Khi đó: z 1 = x + y i + 2 i = x + ( y + 2 ) i ; z 2 = 2 ( x + y i ) − 3 = ( 2 x − 3 ) + 2 y i ⇒ z 2 = ( 2 x − 3 ) − 2 y i z 1 = ¯¯¯¯¯ z 2 ⇔ { x = 2 x − 3 y + 2 = − 2 y ⇔ ⎧ ⎨ ⎩ x = 3 y = − 2 3 ⇒ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ z 1 = 3 + 4 3 i z 2 = 3 − 4 3 i ⇒ T = | z 1 | + | z 2 | = √ 3 2 + ( 4 3 ) 2 + √ 3 2 + ( − 4 3 ) 2 = 2 √ 97 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0012",
+        "question": "Tìm điểm M biểu diễn số phức z = i − 2 A. M ( 1 ; − 2 ) B. M ( 2 ; − 1 ) C. M ( − 2 ; 1 ) D. M ( 2 ; 1 )",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. M ( 1 ; − 2 )",
+            "B. M ( 2 ; − 1 )",
+            "C. M ( − 2 ; 1 )",
+            "D. M ( 2 ; 1 )"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com z = i − 2 = − 2 + i nên điểm biểu diễn là M ( − 2 ; 1 ) Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0022",
+        "question": "Với hai số phức bất kì z 1 , z 2 , khẳng định nào sau đây đúng: A. | z 1 + z 2 | ≤ | z 1 | + | z 2 | B. | z 1 + z 2 | = | z 1 | + | z 2 | C. | z 1 + z 2 | ≥ | z 1 | + | z 2 | D. | z 1 + z 2 | = | z 1 | + | z 2 | + | z 1 − z 2 |",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. | z 1 + z 2 | ≤ | z 1 | + | z 2 |",
+            "B. | z 1 + z 2 | = | z 1 | + | z 2 |",
+            "C. | z 1 + z 2 | ≥ | z 1 | + | z 2 |",
+            "D. | z 1 + z 2 | = | z 1 | + | z 2 | + | z 1 − z 2 |"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | | z 1 | − | z 2 | | ≤ | z 1 ± z 2 | ≤ | z 1 | + | z 2 | nên A đúng. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0032",
+        "question": "Cho số phức z thỏa mãn điều kiện | z − 2 + 2 i | = 1 . Tìm giá trị lớn nhất của | z | A. max | z | = 2 √ 2 + 1 B. max | z | = 2 √ 2 C. max | z | = 2 √ 2 + 2 D. max | z | = 2 √ 2 − 1",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. max | z | = 2 √ 2 + 1",
+            "B. max | z | = 2 √ 2",
+            "C. max | z | = 2 √ 2 + 2",
+            "D. max | z | = 2 √ 2 − 1"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có: 1 = | z − 2 + 2 i | = | z − ( 2 − 2 i ) | ≥ | z | − | 2 − 2 i | = | z | − 2 √ 2 ⇒ | z | ≤ 1 + 2 √ 2 Vậy max | z | = 1 + 2 √ 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0042",
+        "question": "Cho số phức z thỏa mãn | z − 2 − 2 i | = 1 . Số phức z − i có mô đun nhỏ nhất là: A. √ 5 − 1 B. 1 − √ 5 C. √ 5 + 1 D. √ 5 + 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. √ 5 − 1",
+            "B. 1 − √ 5",
+            "C. √ 5 + 1",
+            "D. √ 5 + 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | z − i | = | ( z − 2 − 2 i ) + ( i + 2 ) | ≥ | | z − 2 − 2 i | − | i + 2 | | = ∣ ∣ 1 − √ 5 ∣ ∣ = √ 5 − 1 Vậy | z − i | ≥ √ 5 − 1 nên min | z − i | = √ 5 − 1 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0052",
+        "question": "Xác định số phức z thỏa mãn | z − 2 − 2 i | = √ 2 mà | z | đạt giá trị lớn nhất. A. z = 1 + i B. z = 3 + i C. z = 3 + 3 i D. z = 1 + 3 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z = 1 + i",
+            "B. z = 3 + i",
+            "C. z = 3 + 3 i",
+            "D. z = 1 + 3 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Sử dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có: √ 2 = | z − 2 − 2 i | ≥ | z | − | − 2 − 2 i | = | z | − 2 √ 2 ⇒ | z | ≤ 3 √ 2 Suy ra max | z | = 3 √ 2 . Kiểm tra các đáp án đã cho chỉ có đáp án C thỏa mãn. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0062",
+        "question": "Trong các số phức z thỏa mãn | z − 2 − 4 i | = | z − 2 i | . Tìm số phức z có mô đun nhỏ nhất. A. z = 2 − 2 i B. z = 1 + i C. z = 2 + 2 i D. z = 1 − i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z = 2 − 2 i",
+            "B. z = 1 + i",
+            "C. z = 2 + 2 i",
+            "D. z = 1 − i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i , ta có | a + b i − 2 − 4 i | = | a + b i − 2 i | ⇔ ( a − 2 ) 2 + ( b − 4 ) 2 = a 2 + ( b − 2 ) 2 ⇔ − 4 a + 4 − 8 b + 16 = − 4 b + 4 ⇔ − 4 a − 4 b + 16 = 0 ⇔ a + b = 4 ⇒ b = 4 − a Ta có | z | = √ a 2 + b 2 = √ a 2 + ( 4 − a ) 2 = √ 2 a 2 − 8 a + 16 = √ 2 ( a 2 − 4 a + 4 ) + 8 = √ 2 ( a − 2 ) 2 + 8 ≥ 2 √ 2 ⇒ min | z | = 2 √ 2 ⇒ a = 2 , b = 2 ⇒ z = 2 + 2 i . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0072",
+        "question": "Cho số phức z có | z | = 2 thì số phức w = z + 3 i có mô đun nhỏ nhất và lớn nhất lần lượt là A. 2 và 5 B. 1 và 6 C. 2 và 6 D. 1 và 5",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 và 5",
+            "B. 1 và 6",
+            "C. 2 và 6",
+            "D. 1 và 5"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Sử dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có | | z | − | 3 i | | ≤ | z + 3 i | ≤ | | z | + | 3 i | | ⇔ | 2 − 3 | ≤ | w | ≤ | 2 + 3 | ⇔ 1 ≤ | w | ≤ 5 Nhận thấy với z = − 2 i thì | w | = 1 và với z = 2 i thì | w | = 5 nên 1 và 5 là GTNN và GTLN của | w | . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0082",
+        "question": "Cho số phức z thoả | z − 3 + 4 i | = 2 và w = 2 z + 1 − i . Khi đó | w | có giá trị lớn nhất là: A. 16 + √ 74 . B. 2 + √ 130 . C. 4 + √ 74 . D. 4 + √ 130 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 16 + √ 74 .",
+            "B. 2 + √ 130 .",
+            "C. 4 + √ 74 .",
+            "D. 4 + √ 130 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z − 3 + 4 i | = 2 ⇔ | 2 z − 6 + 8 i | = 4. Theo bất đẳng thức chứa dấu giá trị tuyệt đối có 4 = | 2 z − 6 + 8 i | = | ( 2 z + 1 − i ) − ( 7 − 9 i ) | ≥ | 2 z + 1 − i | − | 7 − 9 i | = | w | − √ 130 ⇒ | w | − √ 130 ≤ 4 ⇒ | w | ≤ 4 + √ 130 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0092",
+        "question": "Cho số phức z thỏa mãn | z 2 − i | = 1 . Tìm giá trị lớn nhất của | ¯ z | . A. 2 B. √ 5 C. 2 √ 2 D. √ 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2",
+            "B. √ 5",
+            "C. 2 √ 2",
+            "D. √ 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bất đẳng thức chứa dấu giá trị tuyệt đối ta có 1 = ∣ ∣ z 2 − i ∣ ∣ ≥ ∣ ∣ z 2 ∣ ∣ − | i | = | z | 2 − 1 ⇒ | z | 2 ≤ 2 ⇒ | z | = ∣ ∣ ¯¯¯ z ∣ ∣ ≤ √ 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0101",
+        "question": "Cho số phức z thỏa mãn | z − 1 − 2 i | = 4 . Gọi M , m lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của | z + 2 + i | . Tính S = M 2 + m 2 . A. S = 34 B. S = 82 C. S = 68 D. S = 36",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S = 34",
+            "B. S = 82",
+            "C. S = 68",
+            "D. S = 36"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bất đẳng thức chứa dấu giá trị tuyệt đối ta có | z + 2 + i | = | ( z − 1 − 2 i ) + ( 3 + 3 i ) | ≥ | | z − 1 − 2 i | − | 3 + 3 i | | = | 4 − 3 √ 2 | = 3 √ 2 − 4 = m | z + 2 + i | = | ( z − 1 − 2 i ) + ( 3 + 3 i ) | ≤ | z − 1 − 2 i | + | 3 + 3 i | = 4 + 3 √ 2 = M Suy ra M 2 + m 2 = ( 3 √ 2 − 4 ) 2 + ( 4 + 3 √ 2 ) 2 = 2 ( 4 2 + ( 3 √ 2 ) 2 ) = 68 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0111",
+        "question": "Cho số phức z có điểm biểu diễn nằm trên đường thẳng 3 x − 4 y − 3 = 0 , | z | nhỏ nhất bằng. A. 1 5 . B. 3 5 . C. 4 5 . D. 2 5 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1 5 .",
+            "B. 3 5 .",
+            "C. 4 5 .",
+            "D. 2 5 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = x + y i , ta có 3 x − 4 y − 3 = 0 , suy ra y = 3 4 ( x − 1 ) Ta có | z | = √ x 2 + y 2 = √ x 2 + 9 16 ( x − 1 ) 2 = 1 4 √ 16 x 2 + 9 ( x − 1 ) 2 = 1 4 √ 25 x 2 − 18 x + 9 = 1 4 √ ( 5 x − 9 5 ) 2 + 144 25 ≥ 1 4 . 12 5 = 3 5 Dấu “=” xảy ra khi x = 9 25 và y = − 12 25 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0121",
+        "question": "Biết số phức z = x + y i ( x ; y ∈ R ) thỏa mãn điều kiện | z − 2 − 4 i | = | z − 2 i | đồng thời có môđun nhỏ nhất. Tính giá trị biểu thức M = x 2 + y 2 . A. M = 8 . B. M = 10 . C. M = 16 . D. M = 26 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M = 8 .",
+            "B. M = 10 .",
+            "C. M = 16 .",
+            "D. M = 26 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z − 2 − 4 i | = | z − 2 i | ⇒ √ ( x − 2 ) 2 + ( y − 4 ) 2 = √ x 2 + ( y − 2 ) 2 ⇔ x 2 + y 2 − 4 x − 8 y + 20 = x 2 + y 2 − 4 y + 4 ⇒ y = 4 − x . Khi đó | z | = √ x 2 + y 2 = √ x 2 + ( 4 − x ) 2 = √ 2 x 2 − 8 x + 16 = √ 2 ( x − 2 ) 2 + 8 ≥ 2 √ 2 . Vậy môđun nhỏ nhất của z là 2 √ 2 . Xảy ra ⇔ x = y = 2 ⇒ M = 8. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0131",
+        "question": "Cho số phức z thỏa mãn | z + 3 | + | z − 3 | = 10 . Giá trị nhỏ nhất của | z | là: A. 3 B. 4 C. 5 D. 6",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 3",
+            "B. 4",
+            "C. 5",
+            "D. 6"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i , theo giả thiết ta có | a + b i + 3 | + | a + b i − 3 | = 10 ⇔ √ ( a + 3 ) 2 + b 2 + √ ( a − 3 ) 2 + b 2 = 10 Áp dụng bất đẳng thức Bunhiacopxki ta có 10 = √ ( a + 3 ) 2 + b 2 + √ ( a − 3 ) 2 + b 2 ≤ √ ( 1 2 + 1 2 ) [ ( a + 3 ) 2 + b 2 + ( a − 3 ) 2 + b 2 ] = √ 2. [ 2 a 2 + 2 b 2 + 18 ] = 2 √ a 2 + b 2 + 9 Suy ra √ a 2 + b 2 + 9 ≥ 5 ⇔ a 2 + b 2 + 9 ≥ 25 ⇔ a 2 + b 2 ≥ 16 Do đó | z | = √ a 2 + b 2 ≥ 4 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0141",
+        "question": "Cho các số phức z , w thỏa mãn | z + 2 − 2 i | = | z − 4 i | và w = i z + 1 . Giá trị nhỏ nhất của biểu thức P = | w | là: A. P min = √ 2 2 . B. P min = 2 √ 2 . C. P min = 2. D. P min = 3 √ 2 2 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. P min = √ 2 2 .",
+            "B. P min = 2 √ 2 .",
+            "C. P min = 2.",
+            "D. P min = 3 √ 2 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = x + y i ( x ; y ∈ R ) . Ta có | z + 2 − 2 i | = | z − 4 i | ⇒ √ ( x + 2 ) 2 + ( y − 2 ) 2 = √ x 2 + ( y − 4 ) 2 ⇔ ( x + 2 ) 2 + ( y − 2 ) 2 = x 2 + ( y − 4 ) 2 ⇒ y = 2 − x . Khi đó w = i z + 1 = i ( x + y i ) + 1 = i x − y + 1 = i x − ( 2 − x ) + 1 = ( x − 1 ) + x i . Suy ra | w | = √ ( x − 1 ) 2 + x 2 = √ 2 ( x − 1 2 ) 2 + 1 2 ≥ √ 2 2 . Dấu “=” xảy ra khi x = 1 2 ⇒ y = 3 2 ⇒ z = 1 2 + 3 2 i . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0153",
+        "question": "Cho z 1 , z 2 thỏa mãn | z 1 − z 2 | = 1 và | z 1 + z 2 | = 3 . Tính max T = | z 1 | + | z 2 | A. 8 B. 10 C. 4 D. √ 10",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 8",
+            "B. 10",
+            "C. 4",
+            "D. √ 10"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z 1 = x 1 + y 1 i , z 2 = x 2 + y 2 i . Theo giả thiết | z 1 − z 2 | = 1 có ( x 1 − x 2 ) 2 + ( y 1 − y 2 ) 2 = 1 ⇔ x 2 1 + x 2 2 − 2 x 1 x 2 + y 2 1 + y 2 2 − 2 y 1 y 2 = 1 (1) Theo giả thiết | z 1 + z 2 | = 3 có ( x 1 + x 2 ) 2 + ( y 1 + y 2 ) 2 = 9 ⇔ x 2 1 + x 2 2 + 2 x 1 x 2 + y 2 1 + y 2 2 + 2 y 1 y 2 = 9 (2) Cộng vế với vế của (1) và (2) ta có x 2 1 + x 2 2 + y 2 1 + y 2 2 = 5 Ta có T = √ x 2 1 + y 2 1 + √ x 2 2 + y 2 2 Theo bất đẳng thức Bunhiacopxki ta có T ≤ √ 2. ( x 2 1 + x 2 2 + y 2 1 + y 2 2 ) = √ 10 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0163",
+        "question": "Cho số phức z thỏa mãn ∣ ∣ z 2 − 2 z + 5 ∣ ∣ = | ( z − 1 + 2 i ) ( z + 3 i − 1 ) | . Tìm giá trị nhỏ nhất của P = | w | , với w = z − 2 + 2 i . A. P min = 3 2 . B. P min = 2. C. P min = 1. D. P min = 1 2 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P min = 3 2 .",
+            "B. P min = 2.",
+            "C. P min = 1.",
+            "D. P min = 1 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có ∣ ∣ z 2 − 2 z + 5 ∣ ∣ = | ( z − 1 + 2 i ) ( z + 3 i − 1 ) | ⇔ ∣ ∣ ( z − 1 ) 2 + 4 ∣ ∣ = | ( z − 1 + 2 i ) | | ( z + 3 i − 1 ) | ⇔ ∣ ∣ ( z − 1 ) 2 − ( 2 i ) 2 ∣ ∣ = | ( z − 1 + 2 i ) | | ( z + 3 i − 1 ) ⇔ | ( z − 1 + 2 i ) ( z − 1 − 2 i ) | = | ( z − 1 + 2 i ) | | ( z + 3 i − 1 ) | ⇔ [ z − 1 + 2 i = 0 ( 1 ) | ( z − 1 − 2 i ) | = | ( z + 3 i − 1 ) | ( 2 Từ ( 1 ) ⇒ z = 1 − 2 i ⇒ w = − 1 ⇒ P = | w | = 1. Xét ( 2 ) . Gọi z = x + y i ( x ; y ∈ R ) . Ta có | ( z − 1 − 2 i ) | = | ( z + 3 i − 1 ) | ⇔ ( x − 1 ) 2 + ( y − 2 ) 2 = ( x − 1 ) 2 + ( y + 3 ) 2 ⇔ y = − 1 2 . Khi đó w = x − 1 2 i − 2 + 2 i = ( x − 2 ) + 3 2 i ⇒ P = | w | = √ ( x − 2 ) 2 + ( 3 2 ) 2 ≥ 3 2 Vậy P min = 3 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0173",
+        "question": "Tìm giá trị nhỏ nhất của | z | , biết rằng z thỏa mãn điều kiện | 4 + 2 i 1 − i z − 1 | = 1 . A. √ 2 B. 0 C. − 1 D. √ 3 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. √ 2",
+            "B. 0",
+            "C. − 1",
+            "D. √ 3 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Có 4 + 2 i 1 − i = 1 + 3 i . Đặt z = x + y i thì 4 + 2 i 1 − i z − 1 = ( 1 + 3 i ) ( x + y i ) − 1 = ( x − 3 y − 1 ) + ( 3 x + y ) i Điều kiện đã cho trong bài được viết lại thành ( x − 3 y − 1 ) 2 + ( 3 x + y ) 2 = 1 ⇔ ( x − 3 y ) 2 − 2 ( x − 3 y ) + 1 + ( 3 x + y ) 2 = 1 ⇔ 10 x 2 + 10 y 2 − 2 x + 6 y = 0 ⇔ ( x 2 − 1 5 x ) + ( y 2 + 3 5 y ) = 0 ⇔ ( x − 1 10 ) 2 + ( y + 3 10 ) 2 = 1 10 (*) Điểm biểu diễn M ( x , y ) của z chạy trên đường tròn (*). Cần tìm điểm M ( x , y ) thuộc đường tròn này để O M nhỏ nhất. Vì đường tròn này qua O nên min O M = 0 khi M ≡ O hay M ( 0 , 0 ) , do đó z = 0 hay m i n | z | = 0 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0183",
+        "question": "Cho số phức z thỏa mãn | z + 1 − i | = | z − 3 i | . Tính môđun lớn nhất | w | max của số phức w = 1 z . A. | w | max = 7 √ 5 10 . B. | w | max = 2 √ 5 7 . C. | w | max = 4 √ 5 7 . D. | w | max = 9 √ 5 10 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. | w | max = 7 √ 5 10 .",
+            "B. | w | max = 2 √ 5 7 .",
+            "C. | w | max = 4 √ 5 7 .",
+            "D. | w | max = 9 √ 5 10 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ( x ; y ∈ R ) . Ta có | z + 1 − i | = | z − 3 i | , suy ra √ ( x + 1 ) 2 + ( y − 1 ) 2 = √ x 2 + ( y − 3 ) 2 ⇔ 2 x + 4 y − 7 = 0 Suy ra tập hợp điểm biểu diễn các số phức z là đường thẳng Δ : 2 x + 4 y − 7 = 0. Ta có | z | min = d ( O ; Δ ) = | − 7 | √ 2 2 + 4 2 = 7 √ 5 10 ⇒ | w | max = 1 | z | min = 2 √ 5 7 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0193",
+        "question": "Xét các số phức z , w thỏa mãn | w − i | = 2 , z + 2 = i w . Gọi z 1 , z 2 lần lượt là các số phức mà tại đó | z | đạt giá trị nhỏ nhất và giá trị lớn nhất. Môđun | z 1 + z 2 | bằng: A. 3 √ 2 B. 3 C. 6 D. 6 √ 2",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 3 √ 2",
+            "B. 3",
+            "C. 6",
+            "D. 6 √ 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có: z + 2 = i w ⇒ w = z + 2 i | w − i | = 2 ⇒ ∣ ∣ ∣ z + 2 i − i ∣ ∣ ∣ = 2 ⇔ | z + 2 + 1 | = 2 ⇔ | z + 3 | = 2 ⇒ Tập hợp các điểm biểu diễn số phức z là đường tròn I ( − 3 ; 0 ) bán kính R = 2 . Gọi M là điểm biểu diễn số phức z , dựa vào hình vẽ ta có: { | z | min ⇔ O M min ⇔ M ( − 1 ; 0 ) ⇒ z 1 = − 1 | z | max ⇔ O M max ⇔ M ( − 5 ; 0 ) ⇒ z 2 = − 5 ⇒ | z 1 + z 2 | = 6 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0203",
+        "question": "Tìm giá trị lớn nhất của | z | , biết rằng z thỏa mãn điều kiện | − 2 − 3 i 3 − 2 i z + 1 | = 1 . A. √ 2 B. 1 C. 2 D. 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. √ 2",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Có − 2 − 3 i 3 − 2 i = − i . Đặt z = x + y i thì − 2 − 3 i 3 − 2 i z + 1 = − i ( x + y i ) + 1 = ( y + 1 ) − x i Điều kiện đã cho trong bài được viết lại thành ( y + 1 ) 2 + x 2 = 1 Điểm biểu diễn M ( x , y ) của z chạy trên đường tròn (*) có tâm I ( 0 , − 1 ) , bán kính bằng 1 . Cần tìm điểm M ( x , y ) thuộc đường tròn này để O M lớn nhất. Vì O nằm trên đường tròn nên O M lớn nhất khi O M là đường kính của (*) ⇔ I là trung điểm của O M ⇔ { x = 2 x I y = 2 y I ⇔ { x = 0 y = − 2 ⇔ M ( 0 , − 2 ) . Suy ra z = − 2 i ⇔ | z | = 2 Vậy max | z | = 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0213",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 − 2 i | = 3 và | z 2 + 2 + 2 i | = | z 2 + 2 + 4 i | . Giá trị nhỏ nhất của biểu thức P = | z 1 − z 2 | bằng: A. P = 1 . B. P = 2 . C. P = 3. D. P = 4.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P = 1 .",
+            "B. P = 2 .",
+            "C. P = 3.",
+            "D. P = 4."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z 1 = x 1 + y 1 i và z 2 = x 2 + y 2 i với x 1 , x 2 , y 1 , y 2 ∈ R . | z 1 − 2 i | = 3 → x 1 2 + ( y 1 − 2 ) 2 = 9 suy ra tập hợp các số phức z 1 là đường tròn ( C ) : x 2 + ( y − 2 ) 2 = 9 . | z 2 + 2 + 2 i | = | z 2 + 2 + 4 i | → ( x 2 + 2 ) 2 + ( y 2 + 2 ) 2 = ( x 2 + 2 ) 2 + ( y 2 + 4 ) 2 ⇔ y 2 + 3 = 0 suy ra tập hợp các số phức z 2 là đường thẳng d : y = − 3 . Ta có P = | z 1 − z 2 | = √ ( x 2 − x 1 ) 2 + ( y 2 − y 1 ) 2 . Đây chính là khoảng cách từ điểm B ( x 2 ; y 2 ) ∈ d đến điểm A ( x 1 ; y 1 ) ∈ ( C ) . Do đó | z 2 − z 1 | min ⇔ A B min . Dựa vào hình vẽ ta tìm được A B min = 2 khi A ( 0 ; − 1 ) , B ( 0 ; − 3 ) . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0223",
+        "question": "Cho số phức z thỏa mãn 2 | z | = ∣ ∣ z 2 + 4 ∣ ∣ . Tìm giá trị lớn nhất của | z | . A. 1 + √ 5 . B. 1 + 3 √ 5 . C. 3 + √ 5 . D. √ 6 + √ 13 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 1 + √ 5 .",
+            "B. 1 + 3 √ 5 .",
+            "C. 3 + √ 5 .",
+            "D. √ 6 + √ 13 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: ∣ ∣ z 2 + 4 ∣ ∣ ≥ ∣ ∣ z 2 ∣ ∣ − | 4 | = | z | 2 − 4 ⇒ 2 | z | ≥ | z | 2 − 4 ⇔ | z | 2 − 2 | z | − 4 ≤ 0 ⇔ 1 − √ 5 ≤ | z | ≤ 1 + √ ⇒ | z | max = 1 + √ 5 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0233",
+        "question": "Trong số các số phức z thỏa mãn điều kiện | z − 4 + 3 i | = 3 , gọi z 0 là số phức có mô đun lớn nhất. Khi đó | z 0 | là A. 3 B. 4 C. 5 D. 8",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 3",
+            "B. 4",
+            "C. 5",
+            "D. 8"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ; Khi đó z − 4 + 3 i = ( x − 4 ) + ( y + 3 ) i ⇒ | z − 4 + 3 i | = | ( x − 4 ) + ( y + 3 ) i | = 3 ⇒ ( x − 4 ) 2 + ( y + 3 ) 2 = 9 Vậy quỹ tích các điểm M biểu diễn số phức z thuộc đường tròn tâm I ( 4 ; − 3 ) ; R = 3 . Đặt { x = 3 sin t + 4 y = 3 cos t − 3 ⇒ x 2 + y 2 = ( 3 sin t + 4 ) 2 + ( 3 cos t − 3 ) 2 = 9 sin 2 t + 9 cos 2 t + 24 sin t − 18 cos t + 25 = 24 sin t − 18 cos t + 34 Mà 24 sin t − 18 cos t ≤ √ ( 24 2 + 18 2 ) ( sin 2 t + cos 2 t ) = 30 (theo bunhiacopxki) ⇒ x 2 + y 2 ≤ 30 + 34 = 64 ⇒ √ x 2 + y 2 ≤ 8 ⇒ | z | ≤ 8 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0243",
+        "question": "Cho số phức z 1 thỏa mãn | z 1 − 2 | 2 − | z 1 + i | 2 = 1 và số phức z 2 thỏa mãn | z 2 − 4 − i | = √ 5 . Tìm giá trị nhỏ nhất của P = | z 1 − z 2 | . A. P min = 2 √ 5 5 . B. P min = √ 5 . C. P min = 2 √ 5 . D. P min = 3 √ 5 5 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P min = 2 √ 5 5 .",
+            "B. P min = √ 5 .",
+            "C. P min = 2 √ 5 .",
+            "D. P min = 3 √ 5 5 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ( x ; y ∈ R ) . Ta có | z − 2 | 2 − | z + i | 2 = 1 → ( x − 2 ) 2 + y 2 − x 2 − ( y + 1 ) 2 = 1 → 2 x + y − 1 = 0 . Suy ra tập hợp các số phức z 1 là đường thẳng Δ : 2 x + y − 1 = 0. | z − 4 − i | = √ 5 → | ( x − 4 ) + ( y − 1 ) i | = √ 5 ⇔ ( x − 4 ) 2 + ( y − 1 ) 2 = 5 Suy ra tập hợp các số phức z 2 là đường tròn ( C ) : ( x − 4 ) 2 + ( y − 1 ) 2 = 5 có tâm I ( 4 ; 1 ) và bán kính R = √ 5 . Khi đó biểu thức P = | z 1 − z 2 | là khoảng cách từ một điểm thuộc Δ đến một điểm thuộc ( C ) . Từ đó suy ra P min = M N = | d [ I , Δ ] − R | = ∣ ∣ ∣ 8 √ 5 − √ 5 ∣ ∣ ∣ = 3 √ 5 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0253",
+        "question": "Trong các số phức z thỏa mãn | z + 3 + 4 i | = 2 , gọi z 0 là số phức có mô đun nhỏ nhất. Khi đó: A. Không tồn tại số phức B. | z 0 | = 2 C. | z 0 | = 7 D. | z 0 | = 3.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. Không tồn tại số phức",
+            "B. | z 0 | = 2",
+            "C. | z 0 | = 7",
+            "D. | z 0 | = 3."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i ( a , b ∈ R ) ta có: | z + 3 + 4 i | = 2 ⇔ | ( a + 3 ) + ( b + 4 ) i | = 2 ⇔ ( a + 3 ) 2 + ( b + 4 ) 2 = 4 Do đó tập hợp điểm biểu diễn số phức z thuộc đường tròn tâm I ( − 3 ; − 4 ) và bán kính r = 2 Từ hình vẽ ta thấy số phức z 0 có mô đun nhỏ nhất nếu z 0 có điểm biểu diễn là M . Ta có: −→ O I = ( − 3 ; − 4 ) nên đường thẳng đi qua O và I là O I : { x = 3 t y = 4 t ⇒ M ( 3 t ; 4 t ) Mặt khác M ∈ ( C ) nên: ( 3 t + 3 ) 2 + ( 4 t + 4 ) 2 = 4 ⇔ 25 t 2 + 50 t + 21 = 0 ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ t = − 3 5 t = − 7 5 M ( − 9 5 ; − 12 5 ) hoặc M ( − 21 5 ; − 28 5 ) M ( − 9 5 ; − 12 5 ) thuộc ( C ) và gần O nhất. ⇒ z = − 9 5 − 12 5 i ⇒ | z | = 3 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0263",
+        "question": "Biết số phức z = x + y i ( x ; y ∈ R ) thỏa mãn đồng thời các điều kiện | z − ( 3 + 4 i ) | = √ 5 và biểu thức P = | z + 2 | 2 − | z − i | 2 đạt giá trị lớn nhất. Tính | z | . A. | z | = √ 33 . B. | z | = 50 . C. | z | = √ 10 . D. | z | = 5 √ 2 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. | z | = √ 33 .",
+            "B. | z | = 50 .",
+            "C. | z | = √ 10 .",
+            "D. | z | = 5 √ 2 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì | z − ( 3 + 4 i ) | = √ 5 ⇒ ( x − 3 ) 2 + ( y − 4 ) 2 = 5. Suy ra tập hợp các điểm biểu diễn số phức z là đường tròn ( C ) có tâm I ( 3 ; 4 ) và bán kính R = √ 5 . Ta có P = | ( x + 2 ) + y i | 2 − | x + ( y − 1 ) i | 2 = ( x + 2 ) 2 + y 2 − [ x 2 + ( y − 1 ) 2 ] . = 4 x + 2 y + 3 ⇔ 4 x + 2 y + 3 − P = 0. Ta tìm P sao cho đường thẳng Δ : 4 x + 2 y + 3 − P = 0 và đường tròn ( C ) có điểm chung ⇔ d [ I , Δ ] ≤ R ⇔ | 12 + 8 + 3 − P | √ 20 ≤ √ 5 ⇔ | 23 − P | ≤ 10 ⇔ 13 ≤ P ≤ 33. Do đó P max = 33 . Dấu ′′ = ′′ xảy ra ⇔ { 4 x + 2 y − 30 = 0 ( x − 3 ) 2 + ( y − 4 ) 2 = 5 ⇔ { x = 5 y = 5 . Vậy | z | = √ 5 2 + ( − 5 ) 2 = 5 √ 2 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0274",
+        "question": "Xét các số phức z , w thỏa mãn | z | = 2 , | i w − 2 + 5 i | = 1 . Giá trị nhỏ nhất của ∣ ∣ z 2 − w z − 4 ∣ ∣ bằng: A. 4 B. 2 ( √ 29 − 3 ) C. 8 D. 2 ( √ 29 − 5 )",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4",
+            "B. 2 ( √ 29 − 3 )",
+            "C. 8",
+            "D. 2 ( √ 29 − 5 )"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có : +) | z | = 2 ⇒ Tập hợp các điểm biểu diễn số phức z là đường tròn tâm I 1 ( 0 ; 0 ) bán kính R 1 = 2 . | i | ∣ ∣ ∣ w − 2 − 5 i i ∣ ∣ ∣ = 1 ⇔ | w − ( − 5 − 2 i ) | = 1 ⇒ Tập hợp các điểm biểu diễn số phức w là đường tròn tâm I 2 ( − 5 ; − 2 ) bán kính R 2 = 1 . Đặt T = ∣ ∣ z 2 − w z − 4 ∣ ∣ = ∣ ∣ z 2 − w z − z . ¯¯¯ z ∣ ∣ = | z | ∣ ∣ z − w − ¯¯¯ z ∣ ∣ = 2 ∣ ∣ z − w − ¯¯¯ z ∣ ∣ Đặt z = a + b i ( a , b ∈ R ) ⇒ ¯¯¯ z = a − b i ⇒ z − ¯¯¯ z = 2 b i . ⇒ T = 2 | 2 b i − w | . Gọi M ( 0 ; 2 b ) là điểm biểu diễn số phức 2 b i , N là điểm biểu diễn số phức w . ⇒ T = 2 M N min ⇔ M N min . Do | z | = 2 ⇒ a 2 + b 2 = 4 ⇔ − 2 ≤ b ≤ 2 ⇔ − 4 ≤ 2 b ≤ 4 . ⇒ Tập hợp các điểm M là đoạn A B với A ( 0 ; − 4 ) , B ( 0 ; 4 ) . Dựa vào hình vẽ ta thấy M N min = 4 ⇔ N ( − 4 ; − 2 ) , M ( 0 ; − 2 ) . Vậy T min = 2.4 = 8 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0284",
+        "question": "Đề thi THPT QG - 2021 - mã 101 Xét các số phức z , w thỏa mãn | z | = 1 và | w | = 2. Khi ∣ ∣ z + i ¯¯¯¯ w − 6 − 8 i ∣ ∣ đạt giá trị nhỏ nhất, | z − w | bằng? A. √ 221 5 . B. √ 5 C. 3 . D. √ 29 5 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 221 5 .",
+            "B. √ 5",
+            "C. 3 .",
+            "D. √ 29 5 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Cách 1: Dùng phương pháp hình học → Kỹ năng dồn số phức. * P = ∣ ∣ z + i ¯¯¯¯ w − 6 − 8 i ∣ ∣ = ∣ ∣ ( z − 6 − 8 i ) − ( − i ¯¯¯¯ w ) ∣ ∣ = | u − v | . Trong đó: { u = z − 6 − 8 i v = − i ¯¯¯¯ w , u có điểm biểu diễn là A , v có điểm biểu diễn là B . ⇒ P = | u − v | = A B ⇒ Cần đạt Min. * | z | = 1 ⇔ | ( z − 6 − 8 i ) + 6 + 8 i | = 1 ⇔ | u + 6 + 8 i | = 1 . ⇒ Tập hợp điểm A biểu diễn số phức u là đường tròn: ( C 1 ) : { I ( − 6 ; − 8 ) R 1 = 1 . * | w | = 2 ⇔ ∣ ∣ ¯¯¯¯ w ∣ ∣ = 2 ⇔ | − i | . ∣ ∣ ¯¯¯¯ w ∣ ∣ = | − i | .2 ⇒ ∣ ∣ − i ¯¯¯¯ w ∣ ∣ = 2 ⇔ | v | = 2 . ⇒ Tập hợp điểm B biểu diễn số phức v là đường tròn ( C 2 ) : { O ( 0 ; 0 ) R 2 = 2 . Có ⎧ ⎪ ⎨ ⎪ ⎩ I A = R 1 = 1 O B = R 2 = 2 O I = 10 ⇒ A B min = I O − R 1 − R 2 = 10 − 1 − 2 = 7 . Min đạt được khi: ⎧ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎩ −−→ O A = 9 10 −→ O I ⇒ A ( − 27 5 ; − 36 5 ) ⇒ u = − 27 5 − 36 5 i −−→ O B = 1 5 −→ O I ⇒ B ( − 6 5 ; − 8 5 ) ⇒ v = − 6 5 − 8 5 i . ⇒ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ z = u + 6 + 8 i = 3 5 + 4 5 i − i ¯¯¯¯ w = v ⇒ ¯¯¯¯ w = v − i = − 6 5 − 8 5 i − i = 8 5 − 6 5 i ⇒ w = 8 5 + 6 5 i ⇒ | z − w | = ∣ ∣ ∣ ( 3 5 + 4 5 i ) − ( 8 5 + 6 5 i ) ∣ ∣ ∣ = √ 29 5 . Cách 2: Phương pháp dùng BĐT vectơ Ta có BĐT cho 3 vectơ → a , → b , → c thì ∣ ∣ ∣ → a + → b + → c ∣ ∣ ∣ ≥ ∣ ∣ → a ∣ ∣ − ∣ ∣ ∣ → b ∣ ∣ ∣ − ∣ ∣ → c ∣ ∣ . Dấu “=” xảy ra ⇔ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ ∣ ∣ → a ∣ ∣ ≥ ∣ ∣ ∣ → b ∣ ∣ ∣ + ∣ ∣ → c ∣ ∣ → a = k → b → a = m → c ( k ; m < 0 ) . * Đặt P = ∣ ∣ z + i ¯¯¯¯ w − 6 − 8 i ∣ ∣ = ∣ ∣ ∣ ∣ ∣ ( − 6 − 8 i )  = → a + z  = → b + i ¯¯¯¯ w  = → c ∣ ∣ ∣ ∣ ∣ Đặt ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ ( − 6 − 8 i ) ⇔ → a ( − 6 ; − 8 ) ⇒ ∣ ∣ → a ∣ ∣ = 10 z ⇔ → b ⇒ ∣ ∣ ∣ → b ∣ ∣ ∣ = 1 i ¯¯¯¯ w ⇔ → c ⇒ ∣ ∣ → c ∣ ∣ = ∣ ∣ i ¯¯¯¯ w ∣ ∣ = | w | = 2 . ⇒ P = ∣ ∣ ∣ → a + → b + → c ∣ ∣ ∣ ≥ ∣ ∣ → a ∣ ∣ − ∣ ∣ ∣ → b ∣ ∣ ∣ − ∣ ∣ → c ∣ ∣ = 10 − 1 − 2 = 7 . ⇒ P min = 7 , đạt Min khi ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ ∣ ∣ → a ∣ ∣ ≥ ∣ ∣ ∣ → b ∣ ∣ ∣ + ∣ ∣ → c ∣ ∣ ( d u n g d o 10 > 1 + 2 ) → a = − 10 → b ⇔ → b = − 1 10 → a = ( 3 5 ; 4 5 ) → a = − 5 → c ⇔ → c = − 1 5 → a = ( 6 5 ; 8 5 ) ⇒ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ z = 3 5 + 4 5 i i ¯¯¯¯ w = 6 5 + 8 5 i ⇔ w = 8 5 + 6 5 i ⇒ | z − w | = ∣ ∣ ∣ ( 3 5 + 4 5 i ) − ( 8 5 + 6 5 i ) ∣ ∣ ∣ = √ 29 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0294",
+        "question": "Đề thi THPT QG - 2021 - mã 102 Xét các số phức z , w thỏa mãn | z | = 1 và | w | = 2. Khi ∣ ∣ z + i ¯¯¯¯ w + 6 − 8 i ∣ ∣ đạt giá trị nhỏ nhất, | z − w | bằng A. √ 5 B. √ 221 5 C. 3 D. √ 29 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 5",
+            "B. √ 221 5",
+            "C. 3",
+            "D. √ 29 5"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi M và N lần lượt là các điểm biểu diễn số phức z + 6 − 8 i và − i ¯¯¯¯ w . Ta có: | z | = 1 ⇔ | ( z + 6 − 8 i ) + ( − 6 + 8 i ) | = 1 ⇔ M I = 1 với I ( 6 ; − 8 ) . Suy ra tập hợp điểm M là đường tròn ( T 1 ) tâm I ( 6 ; − 8 ) và bán kính R 1 = 1 . Ta có: ∣ ∣ − i ¯¯¯¯ w ∣ ∣ = | − i | . ∣ ∣ ¯¯¯¯ w ∣ ∣ = 2. Suy ra tập hợp điểm N là đường tròn ( T 2 ) tâm O và bán kính R 2 = 2 . Ta có: P = ∣ ∣ z + ¯¯¯¯¯¯ i w + 6 − 8 i ∣ ∣ = M N ⇒ min P = O I − R 1 − R 2 = 10 − 1 − 2 = 7 (do ( T 1 ) và ( T 2 ) rời nhau). Ta có: ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ −−→ O M = 9 10 −→ O I −−→ O N = 1 5 −→ O I ⇒ ⎧ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎩ M ( 27 5 ; − 36 5 ) N ( 6 5 ; − 8 5 ) ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ z + 6 − 8 i = 27 5 − 36 5 i − i ¯¯¯¯ w = 6 5 − 8 5 i ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ z = − 3 5 + 4 5 i w = 8 5 − 6 5 i Vậy | z − w | = ∣ ∣ ∣ − 11 5 + 2 i ∣ ∣ ∣ = √ 221 5 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0302",
+        "question": "Số phức z có mô đun r và acgumen φ thì có dạng lượng giác là: A. z = r ( cos φ + i sin φ ) B. z = r ( cos φ − i sin φ ) C. z = r ( sin φ + i cos φ ) D. z = r ( sin φ − i cos φ )",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z = r ( cos φ + i sin φ )",
+            "B. z = r ( cos φ − i sin φ )",
+            "C. z = r ( sin φ + i cos φ )",
+            "D. z = r ( sin φ − i cos φ )"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Số phức z = r ( cos φ + i sin φ ) là dạng lượng giác của z , ở đó: + r là mô đun của số phức. + φ là acgumen của số phức. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0312",
+        "question": "Cho z = r ( cos φ + i sin φ ) . Chọn mệnh đề đúng: A. r là acgumen của z B. r là mô đun của z C. cos φ là acgumen của z D. sin φ là acgumen của z",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. r là acgumen của z",
+            "B. r là mô đun của z",
+            "C. cos φ là acgumen của z",
+            "D. sin φ là acgumen của z"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Số phức z = r ( cos φ + i sin φ ) là dạng lượng giác của z , ở đó: + r là mô đun của số phức. + φ là acgumen của số phức. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0322",
+        "question": "Gọi φ là một acgumen của z , chọn mệnh đề đúng: A. φ + π là một acgumen của z B. φ − π là một acgumen của z C. φ − 2 π là một acgumen của z D. φ − 3 π là một acgumen của z",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. φ + π là một acgumen của z",
+            "B. φ − π là một acgumen của z",
+            "C. φ − 2 π là một acgumen của z",
+            "D. φ − 3 π là một acgumen của z"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Nếu φ là một acgumen của z thì φ + k 2 π cũng là một acgumen của z với mỗi k ∈ Z . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0331",
+        "question": "Cho số phức z = r ( cos π 4 + i sin π 4 ) . Chọn 1 acgumen của z : A. − π 4 B. − 5 π 4 C. 5 π 4 D. 9 π 4",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. − π 4",
+            "B. − 5 π 4",
+            "C. 5 π 4",
+            "D. 9 π 4"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì z = r ( cos π 4 + i sin π 4 ) nên φ = π 4 là 1 acgumen của z . Do đó π 4 + k 2 π cũng là 1 acgumen của z . Ta có: − π 4 − π 4 = − π 2 ≠ k 2 π , ∀ k ∈ Z nên A sai. − 5 π 4 − π 4 = − 3 π 2 ≠ k 2 π , ∀ k ∈ Z nên B sai. 5 π 4 − π 4 = π ≠ k 2 π , ∀ k ∈ Z nên C sai. 9 π 4 − π 4 = 2 π nên D đúng. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0341",
+        "question": "Số phức z có mô đun r = 3 và acgumen φ = − π 3 thì có dạng lượng giác là: A. z = 3 ( cos ( − π 3 ) + i sin ( − π 3 ) ) B. z = 3 ( cos ( − π 3 ) − i sin ( − π 3 ) ) C. z = 3 ( − cos π 3 − i sin π 3 ) D. z = 3 ( cos π 3 + i sin π 3 )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = 3 ( cos ( − π 3 ) + i sin ( − π 3 ) )",
+            "B. z = 3 ( cos ( − π 3 ) − i sin ( − π 3 ) )",
+            "C. z = 3 ( − cos π 3 − i sin π 3 )",
+            "D. z = 3 ( cos π 3 + i sin π 3 )"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức z có mô đun r = 3 và acgumen φ = − π 3 thì có dạng lượng giác là z = 3 ( cos ( − π 3 ) + i sin ( − π 3 ) ) Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0351",
+        "question": "Cho số phức z = − r ( cos φ + i sin φ ) . Tìm một acgumen của z ? A. − φ B. φ + 2 π C. φ − 2 π D. φ + π",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. − φ",
+            "B. φ + 2 π",
+            "C. φ − 2 π",
+            "D. φ + π"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = − r ( cos φ + i sin φ ) = r ( − cos φ − i sin φ ) = z = r ′ ( cos φ ′ + i sin φ ′ ) Suy ra { cos φ ′ = − cos φ sin φ ′ = − sin φ ⇔ { cos φ ′ = cos ( φ + π ) sin φ ′ = sin ( φ + π ) ⇒ φ ′ = φ + π Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0361",
+        "question": "Gọi φ là 1 acgumen của số phức z có điểm biểu diễn là M ( 1 2 ; √ 3 2 ) nằm trên đường tròn đơn vị, số đo nào sau đây có thể là một acgumen của z ? A. π 2 B. π 3 C. π 4 D. π 6",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. π 2",
+            "B. π 3",
+            "C. π 4",
+            "D. π 6"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy ⎧ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎩ sin φ = √ 3 2 cos φ = 1 2 ⇒ φ = π 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0372",
+        "question": "Cho số phức z có dạng đại số và dạng lượng giác lần lượt là z = a + b i và z = r ( cos φ + i sin φ ) , chọn mệnh đề đúng: A. r = √ a 2 + b 2 B. r = a 2 + b 2 C. r 2 = √ a 2 + b 2 D. r = | a + b |",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. r = √ a 2 + b 2",
+            "B. r = a 2 + b 2",
+            "C. r 2 = √ a 2 + b 2",
+            "D. r = | a + b |"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì r là mô đun của số phức nên r = √ a 2 + b 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0381",
+        "question": "Cho số phức z có dạng lượng giác là z = 4 ( cos ( − π 2 ) + i sin ( − π 2 ) ) . Dạng đại số của z là: A. z = 4 B. z = − i C. z = 4 i D. z = − 4 i",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = 4",
+            "B. z = − i",
+            "C. z = 4 i",
+            "D. z = − 4 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = 4 ( cos ( − π 2 ) + i sin ( − π 2 ) ) = 4 ( 0 + i . ( − 1 ) ) = − 4 i Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0393",
+        "question": "Dạng lượng giác của số phức z = i − 1 là: A. z = √ 2 ( cos 3 π 4 − i sin 3 π 4 ) B. z = 2 ( cos 3 π 4 + i sin 3 π 4 ) C. z = √ 2 ( cos − π 4 + i sin − π 4 ) D. z = √ 2 ( cos 3 π 4 + i sin 3 π 4 )",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. z = √ 2 ( cos 3 π 4 − i sin 3 π 4 )",
+            "B. z = 2 ( cos 3 π 4 + i sin 3 π 4 )",
+            "C. z = √ 2 ( cos − π 4 + i sin − π 4 )",
+            "D. z = √ 2 ( cos 3 π 4 + i sin 3 π 4 )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = i − 1 = − 1 + i ⇒ a = − 1 ; b = 1 - Tính r = √ ( − 1 ) 2 + 1 2 = √ 2 . - Tính φ thỏa mãn ⎧ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎩ cos φ = a r = − 1 √ 2 sin φ = b r = 1 √ 2 ⇒ φ = 3 π 4 Vậy z = √ 2 ( cos 3 π 4 + i sin 3 π 4 ) . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0401",
+        "question": "Cho số phức z có acgumen là φ . Tìm một acgumen của số phức ¯¯¯ z . A. π − φ B. π + φ C. φ D. − φ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. π − φ",
+            "B. π + φ",
+            "C. φ",
+            "D. − φ"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức z có điểm biểu diễn là M thì ¯¯¯ z có điểm biểu diễn là M ′ đối xứng với M qua O x . Do đó − φ là một acgumen của ¯¯¯ z . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0411",
+        "question": "Cho số phức z có một acgumen là φ . Tìm một acgumen của số phức 1 z . A. φ − 1 B. π − φ C. − φ D. π + φ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. φ − 1",
+            "B. π − φ",
+            "C. − φ",
+            "D. π + φ"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: 1 z = ¯¯¯ z z . ¯¯¯ z = 1 | z | 2 . ¯¯¯ z . Vì 1 | z | 2 là số thực nên acgumen của 1 z cũng là acgumen của ¯¯¯ z . Mà − φ là một acgumen của ¯¯¯ z nên − φ cũng là một acgumen của 1 z . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0421",
+        "question": "Viết dạng lượng giác của số phức z = − 1 . A. z = cos ( − π ) + i sin ( − π ) B. z = cos 0 + i sin 0 C. z = cos ( 2 π ) + i sin ( 2 π ) D. z = cos π 2 + i sin π 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = cos ( − π ) + i sin ( − π )",
+            "B. z = cos 0 + i sin 0",
+            "C. z = cos ( 2 π ) + i sin ( 2 π )",
+            "D. z = cos π 2 + i sin π 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = − 1 = − 1 + 0 i ⇒ r = √ ( − 1 ) 2 + 0 2 = 1 Acgumen φ thỏa mãn { cos φ = − 1 sin φ = 0 ⇒ φ = π + k 2 π Quan sát các đáp án ta thấy chỉ có đáp án A thỏa mãn. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0432",
+        "question": "Cho hai số phức z 1 = r 1 ( cos φ 1 + i sin φ 1 ) , z 2 = r 2 ( cos φ 2 + i sin φ 2 ) . Khi đó: A. z 1 z 2 = r 1 r 2 [ cos ( φ 1 φ 2 ) + i sin ( φ 1 φ 2 ) ] B. z 1 z 2 = r 1 r 2 [ cos ( φ 1 + φ 2 ) + i sin ( φ 1 + φ 2 ) ] C. z 1 z 2 = r 1 r 2 [ sin ( φ 1 φ 2 ) + i cos ( φ 1 φ 2 ) ] D. z 1 z 2 = r 1 r 2 [ sin ( φ 1 + φ 2 ) + i cos ( φ 1 + φ 2 ) ]",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z 1 z 2 = r 1 r 2 [ cos ( φ 1 φ 2 ) + i sin ( φ 1 φ 2 ) ]",
+            "B. z 1 z 2 = r 1 r 2 [ cos ( φ 1 + φ 2 ) + i sin ( φ 1 + φ 2 ) ]",
+            "C. z 1 z 2 = r 1 r 2 [ sin ( φ 1 φ 2 ) + i cos ( φ 1 φ 2 ) ]",
+            "D. z 1 z 2 = r 1 r 2 [ sin ( φ 1 + φ 2 ) + i cos ( φ 1 + φ 2 ) ]"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cho hai số phức z 1 = r 1 ( cos φ 1 + i sin φ 1 ) , z 2 = r 2 ( cos φ 2 + i sin φ 2 ) . Khi đó z 1 z 2 = r 1 r 2 [ cos ( φ 1 + φ 2 ) + i sin ( φ 1 + φ 2 ) ] Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0441",
+        "question": "Cho hai số phức z 1 = 3 ( cos π 3 + i sin π 3 ) , z 2 = 2 ( cos π 4 + i sin π 4 ) . Dạng lượng giác của số phức z = z 1 z 2 là: A. z = 3 2 ( cos 1 12 + i sin 1 12 ) B. z = 3 2 ( cos − π 12 + i sin − π 12 ) C. z = 3 2 ( cos 7 π 12 + i sin 7 π 12 ) D. z = 3 2 ( cos π 12 + i sin π 12 )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z = 3 2 ( cos 1 12 + i sin 1 12 )",
+            "B. z = 3 2 ( cos − π 12 + i sin − π 12 )",
+            "C. z = 3 2 ( cos 7 π 12 + i sin 7 π 12 )",
+            "D. z = 3 2 ( cos π 12 + i sin π 12 )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 1 = 3 ( cos π 3 + i sin π 3 ) , z 2 = 2 ( cos π 4 + i sin π 4 ) ⇒ z 1 z 2 = 3 2 [ cos ( π 3 − π 4 ) + i sin ( π 3 − π 4 ) ] = 3 2 ( cos π 12 + i sin π 12 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0452",
+        "question": "Cho số phức z = r ( cos φ + i sin φ ) . Chọn mệnh đề đúng: A. z n = r n ( cos n φ + i sin n φ ) B. z n = r n ( cos φ n + i sin φ n ) C. z n = r n ( cos n φ + i sin n φ ) D. z n = r ( cos n φ + i sin n φ )",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z n = r n ( cos n φ + i sin n φ )",
+            "B. z n = r n ( cos φ n + i sin φ n )",
+            "C. z n = r n ( cos n φ + i sin n φ )",
+            "D. z n = r ( cos n φ + i sin n φ )"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cho số phức z = r ( cos φ + i sin φ ) . Khi đó z n = [ r ( cos φ + i sin φ ) ] n = r n ( cos n φ + i sin n φ ) Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0463",
+        "question": "Gọi z 1 và z 2 là hai nghiệm phức của phương trình z 2 + z + 1 = 0 . Tính giá trị của P = z 1 2017 + z 2 2017 A. P = 1 B. P = 0 C. P = − 1 D. P = 2",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. P = 1",
+            "B. P = 0",
+            "C. P = − 1",
+            "D. P = 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình z 2 + z + 1 = 0 có Δ = 1 − 4 = − 3 nên có 2 nghiệm z 1 = − 1 + i √ 3 2 ; z 2 = − 1 − i √ 3 2 z 2017 1 + z 2017 2 = ( − 1 2 + i √ 3 2 ) 2017 + ( − 1 2 − i √ 3 2 ) 2017 = ( cos 2 π 3 + i sin 2 π 3 ) 2017 + [ cos ( − 2 π 3 ) + i sin ( − 2 π 3 ) ] 2017 = cos ( 2017.2 π 3 ) + i sin ( 2017.2 π 3 ) + cos ( − 2017.2 π 3 ) + i sin ( − 2017.2 π 3 ) = 2 cos 4034 π 3 = 2 cos 2 π 3 = − 1 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0473",
+        "question": "Cho z là số phức thỏa mãn z + 1 z = 1 . Tính giá trị của z 2017 + 1 z 2017 A. − 2 B. − 1 C. 1 D. 2",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. − 2",
+            "B. − 1",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy z + 1 z = 1 ⇔ z 2 − z + 1 = 0 ⇒ z = 1 2 + √ 3 2 i Ta chỉ cần lấy 1 nghiệm do z 1 . z 2 = 1 và vai trò của z 1 và z 2 trong biểu thức z 2017 + 1 z 2017 là như nhau. Lại có: z = cos π 3 + i sin π 3 ⇒ z 2017 = cos 2017. π 3 + i sin 2017. π 3 = 1 2 + √ 3 2 i Suy ra 1 z 2017 = 1 2 − √ 3 2 i Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0484",
+        "question": "Giá trị biểu thức C 0 19 − C 2 19 + C 4 19 − . . . + C 16 19 − C 18 19 là: A. 0 B. − 1024 C. 512 D. − 512",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 0",
+            "B. − 1024",
+            "C. 512",
+            "D. − 512"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com ( 1 + i ) 19 = 19 ∑ k = 0 C k 9 i k = C 0 19 i 0 + C 1 19 i 1 + C 2 19 i 2 + C 3 19 i 3 + . . . + C 18 19 i 18 + C 19 19 i 19 = C 0 19 + C 1 19 i − C 2 19 − C 3 19 i + . . . − C 18 19 − C 19 19 i = ( C 0 19 − C 2 19 + C 4 19 − . . . + C 16 19 − C 18 19 ) + i ( C 1 19 − C 3 19 + C 5 19 − . . . + C 17 19 − C 19 19 ) Nên phần thực của ( 1 + i ) 19 là C 0 19 − C 2 19 + C 4 19 − . . . + C 16 19 − C 18 19 Lại có: 1 + i = √ 2 ( cos π 4 + i sin π 4 ) ⇒ ( 1 + i ) 19 = √ 2 19 ( cos 19 π 4 + i sin 19 π 4 ) = √ 2 19 ( − √ 2 2 + i √ 2 2 ) = − √ 2 20 2 + √ 2 20 2 i = − 512 + 512 i Vậy phần thực của ( 1 + i ) 19 là − 512 . Do đó C 0 19 − C 2 19 + C 4 19 − . . . + C 16 19 − C 18 19 = − 512 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0494",
+        "question": "Cho số phức z = − 2 + 2 √ 3 i . Tìm các số nguyên dương n để z n là số thực. A. n = 3 k , k ∈ N B. n = 6 k , k ∈ N ∗ C. n = 2 k , k ∈ N D. n = 3 k , k ∈ N ∗",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. n = 3 k , k ∈ N",
+            "B. n = 6 k , k ∈ N ∗",
+            "C. n = 2 k , k ∈ N",
+            "D. n = 3 k , k ∈ N ∗"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = − 2 + 2 √ 3 i = 4 ( − 1 2 + √ 3 2 i ) = 4 ( cos 2 π 3 + i sin 2 π 3 ) ⇒ z n = 4 n ( cos 2 n π 3 + i sin 2 n π 3 ) z n là số thực ⇔ sin 2 n π 3 = 0 ⇔ 2 n π 3 = k π ⇔ n = 3 k 2 Do n nguyên dương nên 3 k 2 ∈ N ∗ ⇔ k = 2 m , m ∈ N ∗ ⇒ n = 3 k 2 = 3.2 m 2 = 3 m , m ∈ N ∗ Vậy n = 3 m , m ∈ N ∗ . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0504",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 | = 2 , | z 2 | = √ 3 . Gọi M, N là các điểm biểu diễn cho z 1 và i z 2 . Biết ˆ M O N = 30 0 . Tính S = ∣ ∣ z 2 1 + 4 z 2 2 ∣ ∣ ? A. √ 5 B. 4 √ 7 C. 3 √ 3 D. 5 √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 5",
+            "B. 4 √ 7",
+            "C. 3 √ 3",
+            "D. 5 √ 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z 3 = i z 2 ⇒ z 2 3 = − z 2 2 ⇒ S = ∣ ∣ z 2 1 + 4 z 2 2 ∣ ∣ = ∣ ∣ z 2 1 − 4 z 2 3 ∣ ∣ = | z 1 − 2 z 3 | | z 1 + 2 z 3 | M, N là các điểm biểu diễn cho z 1 , z 3 ⇒ O M = 2 , O N = | z 3 | = | i z 2 | = | i | . | z 2 | = √ 3 . Gọi P là điểm biểu diễn cho 2 z 3 và Q là điểm biểu diễn cho − 2 z 3 , ta có N là trung điểm của OP và P, Q đối xứng nhau qua O. Khi đó S = M P . M Q S . Áp dụng định lí Cosin trong Δ O M P có: M P 2 = O P 2 + O M 2 − 2 O P . O M . cos 30 = 12 + 4 − 2.2 √ 3 .2 . √ 3 2 = 4 ⇒ M P = 2 Áp dụng định lí Cosin trong Δ O M Q có: M Q 2 = O M 2 + O Q 2 − 2 O M . O Q . cos 150 0 = 4 + 12 + 2.2.2 √ 3 . √ 3 2 = 2 √ 7 ⇒ S = M P . M Q = 2.2 √ 7 = 4 √ 7 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0514",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 + 1 − i | = 2 và z 2 = i z 1 . Tìm giá trị lớn nhất m của biểu thức | z 1 − z 2 | . A. m = 2 B. m = 2 √ 2 + 2 C. m = 2 √ 2 D. m = √ 2 + 1",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. m = 2",
+            "B. m = 2 √ 2 + 2",
+            "C. m = 2 √ 2",
+            "D. m = √ 2 + 1"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : 2 = | z 1 + 1 − i | = | z 1 + ( 1 − i ) | ≥ | z 1 | − | 1 − i | = | z 1 | − √ 2 ⇒ | z 1 | − √ 2 ≤ 2 ⇒ | z 1 | ≤ 2 + √ 2 Lại có z 2 = i z 1 ⇒ | z 1 − z 2 | = | z 1 − i z 1 | = | ( 1 − i ) z 1 | = √ 2 | z 1 | ≤ √ 2 ( 2 + √ 2 ) = 2 √ 2 + 2 ⇒ max | z 1 − z 2 | = 2 √ 2 + 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0524",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 + 1 − i | = 2 và z 2 = i z 1 . Tìm GTNN m của biểu thức | z 1 − z 2 | ? A. m = √ 2 − 1 . B. m = 2 . C. m = 2 √ 2 − 2 . D. m = 2 √ 2 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. m = √ 2 − 1 .",
+            "B. m = 2 .",
+            "C. m = 2 √ 2 − 2 .",
+            "D. m = 2 √ 2 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com 2 = | z 1 + 1 − i | ≤ | z 1 | + | 1 − i | = | z 1 | + √ 2 ⇒ | z 1 | + √ 2 ≥ 2 ⇒ | z 1 | ≥ 2 − √ 2 ⇒ | z 1 − z 2 | = | z 1 − i z 1 | = | z 1 ( 1 − i ) | = | z 1 | . √ 2 ≥ ( 2 − √ 2 ) . √ 2 = 2 √ 2 − 2 ⇒ | z 1 − z 2 | ≥ 2 √ 2 − 2 ⇒ m = 2 √ 2 − 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0534",
+        "question": "Cho các số phức z 1 , z 2 , z 3 thỏa mãn điều kiện | z 1 | = 4 , | z 2 | = 3 , | z 3 | = 2 và | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = 48 . Giá trị của biểu thức P = | z 1 + z 2 + z 3 | bằng A. 8 B. 6 C. 1 D. 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 8",
+            "B. 6",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = ∣ ∣ z 3 . ¯¯¯¯¯ z 3 . z 1 z 2 + z 1 . ¯¯¯¯¯ z 1 . z 2 z 3 + z 2 . ¯¯¯¯¯ z 2 . z 1 z 3 ∣ ∣ = ∣ ∣ z 1 z 2 z 3 . ( ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ) ∣ ∣ = | z 1 z 2 z 3 | . ∣ ∣ ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ∣ ∣ = | z 1 | . | z 2 | . | z 2 | . ∣ ∣ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ z 1 + z 2 + z 3 ∣ ∣ = 24. | z 1 + z 2 + z 3 | = 48 ⇒ P = | z 1 + z 2 + z 3 | = 48 24 = 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0544",
+        "question": "Có bao nhiêu số phức z thỏa mãn | z | ( z − 5 − i ) + 2 i = ( 6 − i ) z ? A. 1 B. 3 C. 4 D. 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 1",
+            "B. 3",
+            "C. 4",
+            "D. 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | z | ( z − 5 − i ) + 2 i = ( 6 − i ) z ⇔ | z | . z − 5 | z | − | z | i + 2 i = ( 6 − i ) z ⇔ z ( | z | − 6 + i ) = 5 | z | + ( | z | − 2 ) i ( ∗ ) Lấy modul 2 vế của phương trình ( ∗ ) ta được: | z | √ ( | z | − 6 ) 2 + 1 = √ 25 | z 2 | + ( | z | − 2 ) 2 ( 1 ) Đặt x = | z | ( x ≥ 0 ) . Khi đó ta có: ( 1 ) ⇔ x √ ( x − 6 ) 2 + 1 = √ 25 x 2 + ( x − 2 ) 2 ⇔ x 2 ( x 2 − 12 x + 36 + 1 ) = 25 x 2 + x 2 − 4 x + 4 ⇔ x 4 − 12 x 3 + 36 x 2 + x 2 = 26 x 2 − 4 x + 4 ⇔ x 4 − 12 x 3 + 11 x 2 + 4 x − 4 = 0 ⇔ ( x − 1 ) ( x 3 − 11 x 2 + 4 ) = 0 ⇔ [ x − 1 = 0 x 3 − 11 x 2 + 4 = 0 ⇔ ⎡ ⎢ ⎢ ⎢ ⎢ ⎣ x = 1 ( t m ) x ≈ 10 , 97 ( t m ) x ≈ 0 , 62 ( t m ) x ≈ − 0 , 59 ( k t m ) ⇔ ⎡ ⎢ ⎣ | z | = 1 | z | ≈ 10 , 97 | z | ≈ 0 , 62 . Thay các | z | vào phương trình đã cho ta sẽ nhận được 3 số phức z thỏa mãn yêu cầu bài toán. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0554",
+        "question": "Cho z 1 ; z 2 ; z 3 là ba số phức thay đổi thỏa mãn | z 1 | = 2 ; | z 3 | = 1 và z 2 = z 1 z 3 . Trong mặt phẳng phức A, B biểu diễn z 1 ; z 2 . Giả sử O, A, B lập thành tam giác có diện tích là a, chu vi là b. Giá trị lớn nhất của biểu thức T = a + b là: A. 6 + 2 √ 2 B. 6 + 2 √ 3 C. 4 + 2 √ 3 D. 4 + 3 √ 3",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 6 + 2 √ 2",
+            "B. 6 + 2 √ 3",
+            "C. 4 + 2 √ 3",
+            "D. 4 + 3 √ 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z 2 | = | z 1 | | z 3 | = 2 ⇒ O B = O A = 2 . Đặt A B = x ( 0 < x < 4 ) ta có: a = 1 2 . x . √ 4 − x 2 4 = 1 4 x √ 16 − x 2 ; b = 2 + 2 + x = 4 + x ⇒ T = a + b = x √ 16 − x 2 4 + 4 + x Sử dụng MTCT ta tính được T max ≈ 9 , 19 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0564",
+        "question": "Cho các số phức z 1 ; z 2 thỏa mãn | z 1 | = 3 ; | z 2 | = 4 và chúng được biểu diễn trong mặt phẳng phức lần lượt là các điểm M, N. Biết góc giữa vector −−→ O M và −−→ O N bằng 60 0 . Tìm môđun của số phức z = z 1 + z 2 z 1 − z 2 ? A. | z | = √ 3 B. | z | = √ 5 2 C. | z | = √ 481 13 D. | z | = 4 √ 3",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. | z | = √ 3",
+            "B. | z | = √ 5 2",
+            "C. | z | = √ 481 13",
+            "D. | z | = 4 √ 3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có O M = 3 ; O N = 4 ; ˆ ( −−→ O M ; −−→ O N ) = 60 0 ⇒ ˆ ( O M ; O N ) = 60 0 . | z | = | z 1 + z 2 | | z 1 − z 2 | = ∣ ∣ ∣ −−→ O M + −−→ O N ∣ ∣ ∣ ∣ ∣ ∣ −−→ O M − −−→ O N ∣ ∣ ∣ = 2 ∣ ∣ ∣ −→ O I ∣ ∣ ∣ ∣ ∣ ∣ −−−→ M N ∣ ∣ ∣ = 2 O I M N (với I là trung điểm của MN). Áp dụng định lí cosin trong tam giác OMN có M N = √ O M 2 + O N 2 − 2 O M . O N . cos ( O M ; O N ) = √ 13 OI là đường trung tuyến của tam giác OMN ⇒ O I = √ O M 2 + O N 2 2 − M N 2 4 = √ 37 2 Vậy | z | = 2. √ 37 2 √ 13 = √ 481 13 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0574",
+        "question": "Xét số phức z thỏa mãn ( 1 + 2 i ) | z | = √ 10 z − 2 + i . Mệnh đề nào dưới đây đúng? A. 3 2 < | z | < 2 B. | z | > 2 C. | z | < 1 2 D. 1 2 < | z | < 3 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 3 2 < | z | < 2",
+            "B. | z | > 2",
+            "C. | z | < 1 2",
+            "D. 1 2 < | z | < 3 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com ( 1 + 2 i ) | z | = √ 10 z − 2 + i ⇔ ( 1 + 2 i ) | z | + 2 − i = √ 10 z ⇔ ( | z | + 2 ) + ( 2 | z | − 1 ) i = √ 10 z ⇔ ( | z | + 2 ) 2 + ( 2 | z | − 1 ) 2 = 10 | z | 2 ⇔ | z | 2 + 4 | z | + 4 + 4 | z | 2 − 4 | z | + 1 = 10 | z | 2 ⇔ 5 | z | 4 + 5 | z | 2 − 10 = 0 ⇔ | z | = 1 ∈ ( 1 2 ; 3 2 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0584",
+        "question": "Xét các số phức z = a + b i , ( a ; b ∈ R ) thỏa mãn đồng thời hai điều kiện | z | = ∣ ∣ ¯¯¯ z + 4 − 3 i ∣ ∣ và | z + 1 − i | + | z − 2 + 3 i | đạt giá trị nhỏ nhất. Giá trị P = a + 2 b là: A. P = − 61 10 B. P = − 252 50 C. P = − 41 5 D. P = − 18 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. P = − 61 10",
+            "B. P = − 252 50",
+            "C. P = − 41 5",
+            "D. P = − 18 5"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ta có: | x + y i | = | x − y i + 4 − 3 i | ⇔ x 2 + y 2 = ( x + 4 ) 2 + ( y + 3 ) 2 ⇔ 8 x + 6 y = − 25 Gọi điểm M ( x ; y ) là điểm biểu diễn cho số phức z và A ( − 1 ; 1 ) ; B ( 2 ; − 3 ) ta có: | z + 1 − i | + | z − 2 + 3 i | = M A + M B nhỏ nhất. Ta có : M A + M B ≥ 2 √ M A . M B , dấu bằng xảy ra ⇔ M A = M B ⇒ M thuộc trung trực của AB. Gọi I là trung điểm của AB ta có I ( 1 2 ; − 1 ) và −−→ A B = ( 3 ; − 4 ) . Phương trình đường trung trực của AB là 3 ( x − 1 2 ) − 4 ( y + 1 ) = 0 ⇔ 3 x − 4 y − 11 2 = 0 Để ( M A + M B ) min ⇔ Tọa độ điểm M là nghiệm của hệ phương trình ⎧ ⎨ ⎩ 8 x + 6 y = − 25 3 x − 4 y = 11 2 ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ x = − 67 50 y = − 119 50 ⇒ z = − 67 50 − 119 50 i ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ a = − 67 50 b = − 119 50 ⇒ P = a + 2 b = − 61 10 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0594",
+        "question": "Giả sử z 1 , z 2 là hai trong số các số phức z thỏa mãn ∣ ∣ i z + √ 2 − i ∣ ∣ = 1 và | z 1 − z 2 | = 2. Giá trị lớn nhất của | z 1 | + | z 2 | bằng A. 3. B. 2 √ 3 . C. 3 √ 2 . D. 4.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 3.",
+            "B. 2 √ 3 .",
+            "C. 3 √ 2 .",
+            "D. 4."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: ∣ ∣ i z + √ 2 − i ∣ ∣ = 1 ⇔ ∣ ∣ i ( x + y i ) + √ 2 − i ∣ ∣ = 1 (với z = x + y i ( x ; y ∈ R ) ) ⇔ ( x − 1 ) 2 + ( y − √ 2 ) 2 = 1 ⇒ M ( x ; y ) biểu diễn z thuộc đường tròn tâm I ( 1 ; √ 2 ) bán kính R = 1. Giả sử A ( z 1 ) ; B ( z 2 ) do | z 1 − z 2 | = 2 ⇒ A B = 2 = 2 R nên A B là đường kính của đường tròn ( I ; R ) Lại có: | z 1 | + | z 2 | = O A + O B Mặt khác theo công thức trung tuyến ta có: O I 2 = O A 2 + O B 2 2 − A B 2 4 ⇒ O A 2 + O B 2 = 8. Theo BĐT Bunhiascopky ta có: 2 ( O A 2 + O B 2 ) ≥ ( O A + O B ) 2 ⇒ O A + O B ≤ 4. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0604",
+        "question": "Cho các số phức w , z thỏa mãn | w + i | = 3 √ 5 5 và 5 w = ( 2 + i ) ( z − 4 ) . Giá trị lớn nhất của biểu thức P = | z − 1 − 2 i | + | z − 5 − 2 i | bằng A. 4 √ 13 . B. 4 + 2 √ 13 . C. 2 √ 53 . D. 6 √ 7 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 √ 13 .",
+            "B. 4 + 2 √ 13 .",
+            "C. 2 √ 53 .",
+            "D. 6 √ 7 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có 5 w = ( 2 + i ) ( z − 4 ) ⇔ 5 w + 5 i = ( 2 + i ) z − 8 + i ⇔ 5 | w + i | = | ( 2 + i ) z − 8 + i | ⇔ | ( 2 + i ) z − 8 + i | = 3 √ 5 ⇔ | 2 + i | . ∣ ∣ ∣ z − 8 − i 2 + i ∣ ∣ ∣ = 3 √ 5 ⇔ ∣ ∣ ∣ z − 8 − i 2 + i ∣ ∣ ∣ = 3 ⇔ | z − 3 + 2 i | = 3 ⇒ Tập hợp điểm M ( z ) là đường tròn ( C ) : ( x − 3 ) 2 + ( y + 2 ) 2 = 9 , tâm I ( 3 ; − 2 ) , R = 3. Gọi A ( 1 ; 2 ) , B ( 5 ; 2 ) và E ( 3 ; 2 ) là trung điểm của A B suy ra P = M A + M B . Lại có ( M A + M B ) 2 ≤ 2 ( M A 2 + M B 2 ) = 4. M E 2 + A B 2 ⇒ P lớn nhất ⇔ M E lớn nhất. Mà I E = 4 > R = 3 Vậy P max = √ 4. M E 2 + A B 2 = 2 √ 53 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0614",
+        "question": "Có bao nhiêu số phức z thỏa mãn điều kiện z2=|z|2+ ˉ z ? A. \\(4.\\) B. \\(2.\\) C. \\(3.\\) D. \\(1.\\)",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. \\(4.\\)",
+            "B. \\(2.\\)",
+            "C. \\(3.\\)",
+            "D. \\(1.\\)"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = x + y i ( x , y ∈ R ) ⇒ ( x + y i ) 2 = ( x 2 + y 2 ) + ( x − y i ) ⇔ x 2 − y 2 + 2 x y i = x 2 + y 2 + x − y i ⇔ { 2 x y = − y x 2 − y 2 = x 2 + y 2 + x ⇔ ⎧ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎩ ⎡ ⎣ y = 0 x = − 1 2 2 y 2 + x = 0 ⇔ ⎡ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎣ { y = 0 x = 0 ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ x = − 1 2 2 y 2 − 1 2 = 0 ⇔ ⎡ ⎢ ⎢ ⎢ ⎢ ⎢ ⎣ x = y = 0 ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ x = − 1 2 y = ± 1 2 Do đó có 3 số phức z thỏa mãn bài toán. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0624",
+        "question": "Trong các số phức z thỏa mãn ∣ ∣ z 2 + 1 ∣ ∣ = 2 | z | , gọi z1 và z2 lần lượt là các số phức có môđun lớn nhất và nhỏ nhất. Khi đó môđun lớn nhất của số phức w = z 1 + z 2 là: A. | w | = 2 √ 2 B. | w | = 2 C. | w | = √ 2 D. | w | = 1 + √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. | w | = 2 √ 2",
+            "B. | w | = 2",
+            "C. | w | = √ 2",
+            "D. | w | = 1 + √ 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có ∣ ∣ z 2 + 1 ∣ ∣ = 2 | z | ⇔ ∣ ∣ z 2 + 1 ∣ ∣ 2 = 4 | z | 2 ⇔ ( z 2 + 1 ) ( ¯¯¯¯¯¯¯¯¯¯¯¯¯¯ z 2 + 1 ) = 4 z ¯¯¯ z ⇔ ( z 2 + 1 ) ( ¯¯¯ z 2 + 1 ) = 4 z ¯¯¯ z ⇔ ( z ¯¯¯ z ) 2 + z 2 + ¯¯¯ z 2 + 1 − 4 z ¯¯¯ z = 0 ⇔ ( z + ¯¯¯ z ) 2 + ( z ¯¯¯ z ) 2 − 6 z ¯¯¯ z + 1 = 0 ⇔ ( z + ¯¯¯ z ) 2 + | z | 4 − 6 | z | 2 + 1 = 0 ⇔ | z | 4 − 6 | z | 2 + 1 = − ( z + ¯¯¯ z ) 2 ≤ 0 ⇔ 3 − 2 √ 2 ≤ | z | 2 ≤ 3 + 2 √ 2 ⇔ √ 2 − 1 ≤ | z | ≤ √ 2 + 1 ⇒ { | z 1 | = √ 2 − 1 | z 2 | = √ 2 + 1 Dấu = xảy ra ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ | z 1 | = √ 2 − 1 | z 2 | = √ 2 + 1 z + ¯¯¯ z = 0 ⇔ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ ⎡ ⎢ ⎣ z 1 = ( √ 2 − 1 ) i z 1 = ( 1 − √ 2 ) i ⎡ ⎢ ⎣ z 2 = ( √ 2 + 1 ) i z 2 = ( − √ 2 − 1 ) i ⇔ [ | w | = | z 1 + z 2 | = 2 √ 2 | w | = | z 1 + z 2 | = 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0634",
+        "question": "Cho số phức z = a + b i ( a , b ∈ R , a > 0 ) thỏa mãn | z − 1 + 2 i | = 5 và z . ¯ z = 10 . Tính P = a − b A. P = 4. B. P = − 4. C. P = − 2. D. P = 2.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. P = 4.",
+            "B. P = − 4.",
+            "C. P = − 2.",
+            "D. P = 2."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có { | z − 1 + 2 i | = 5 z . ¯ z = 10 ⇔ { | ( a − 1 ) + ( b + 2 ) i | = 5 ( a + b i ) ( a − b i ) = 10 ⇔ { ( a − 1 ) 2 + ( b + 2 ) 2 = 25 a 2 + b 2 = 10 ⇔ { a 2 + b 2 = 10 a 2 + b 2 − 2 a + 4 b = 20 ⇔ { 2 a − 4 b = − 10 a 2 + b 2 = 10 ⇔ { a = 2 b − 5 a 2 + b 2 = 10 ⇒ { a = 2 b − 5 ( 2 b − 5 ) 2 + b 2 = 10 ⇔ ⎧ ⎪ ⎨ ⎪ ⎩ a = 2 b − 5 [ b = 1 b = 3 ⇒ ⎡ ⎢ ⎢ ⎢ ⎢ ⎣ { a = − 3 b = 1 ( k t m ) { a = 1 b = 3 ( t m ) . ⇒ P = a − b = 1 − 3 = − 2. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0644",
+        "question": "Cho số phức z thỏa mãn | z − 1 − i | = 1 , số phức w thỏa mãn | ¯ w − 2 − 3 i | = 2 . Tính giá trị nhỏ nhất của | z − w | . A. √ 13 − 3. B. √ 17 − 3. C. √ 17 + 3. D. √ 13 + 3.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 13 − 3.",
+            "B. √ 17 − 3.",
+            "C. √ 17 + 3.",
+            "D. √ 13 + 3."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có | z − 1 − i | = 1 ⇒ Tập hợp biểu diễn số phức z là đường tròn ( C 1 ) có tâm I 1 ( 1 ; 1 ) và bán kính R 1 = 1 . | ¯ w − 2 − 3 i | = 2 ⇔ | w − 2 + 3 i | = 2 ⇒ Tập hợp biểu diễn số phức w là đường tròn ( C 2 ) có tâm I 2 ( 2 ; − 3 ) và bán kính R 2 = 2. Do I 1 I 2 > R 1 + R 2 nên hai đường tròn không cắt nhau. Khi đó | z − w | = M N ⇒ | z − w | min = M N min = I 1 I 2 − ( R 1 + R 2 ) = √ 17 − 3 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0654",
+        "question": "Cho số phức z thỏa mãn ( 3 + i ) | z | = − 2 + 14 i z + 1 − 3 i . Chọn khẳng định đúng? A. 13 4 < | z | < 5 B. 1 < | z | < 3 2 C. 3 2 < | z | < 2 D. 7 4 < | z | < 11 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 13 4 < | z | < 5",
+            "B. 1 < | z | < 3 2",
+            "C. 3 2 < | z | < 2",
+            "D. 7 4 < | z | < 11 5"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com ( 3 + i ) | z | = − 2 + 14 i z + 1 − 3 i ⇔ ( 3 + i ) | z | − 1 + 3 i = − 2 + 14 i z ⇔ ( 3 | z | − 1 ) + ( | z | + 3 ) i = − 2 + 14 i z Lấy mođun hai vế ta có : √ 9 | z | 2 − 6 | z | + 1 + | z | 2 + 6 | z | + 9 = 10 √ 2 | z | ⇔ 10 | z | 2 + 10 = 200 | z | 2 ⇔ | z | 4 + | z | 2 − 20 = 0 ⇔ | z | 2 = 4 ⇒ | z | = 2 ∈ ( 7 4 ; 11 5 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0664",
+        "question": "Cho số phức z thỏa mãn | z − 3 − 4 i | = √ 5 . Gọi M , m lần lượt là giá trị lớn nhất, nhỏ nhất biểu thức P = | z + 2 | 2 − | z − i | 2 . Mô đun của số phức w = M + m i là: A. 2 √ 314 . B. √ 1258 . C. 3 √ 137 . D. 2 √ 309 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 2 √ 314 .",
+            "B. √ 1258 .",
+            "C. 3 √ 137 .",
+            "D. 2 √ 309 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = x + y i ( x , y ∈ R ) suy ra tập hợp các điểm M ( z ) = ( x ; y ) là đường tròn ( C ) có tâm I ( 3 ; 4 ) và bán kính R = √ 5 . Ta có P = | z + 2 | 2 − | z − i | 2 = | x + 2 + y i | 2 − | x + ( y − 1 ) i | 2 = ( x + 2 ) 2 + y 2 − x 2 − ( y − 1 ) 2 = x 2 + y 2 + 4 x + 4 − x 2 − y 2 + 2 y − 1 = 4 x + 2 y + 3 ⇒ ( Δ ) : 4 x + 2 y + 3 − P = 0. Ta cần tìm P sao cho đường thẳng ( Δ ) và đường tròn ( C ) có điểm chung ⇔ d ( I ; ( Δ ) ) ≤ R . ⇔ | 4.3 + 2.4 + 3 − P | √ 4 2 + 2 2 ≤ √ 5 ⇔ | 23 − P | ≤ 10 ⇔ − 10 ≤ 23 − P ≤ 10 ⇔ 13 ≤ P ≤ 33. Do đó, { max P = 33 min P = 13 ⇒ w = M + m i = 33 + 13 i . Vậy | w | = √ 1258 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0674",
+        "question": "Cho các số phức z 1 = − 2 + i , z 2 = 2 + i và số phức z thỏa mãn | z − z 1 | 2 + | z − z 2 | 2 = 16. Gọi M và m lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của | z | . Giá trị biểu thức M 2 − m 2 bằng A. 15 B. 7 C. 8 D. 11",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 15",
+            "B. 7",
+            "C. 8",
+            "D. 11"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = x + y i ( x , y ∈ R ) , khi đó | z − z 1 | 2 + | z − z 2 | 2 = 16 ⇔ ( x + 2 ) 2 + ( y − 1 ) 2 + ( x − 2 ) 2 + ( y − 1 ) 2 = 16 ⇔ 2 x 2 + 4 + 2 y 2 − 4 y + 2 = 16 ⇔ x 2 + y 2 − 2 y − 3 = 0 ⇔ x 2 + ( y − 1 ) 2 = 4 ⇔ { x = 2 sin t y = 2 cos t + 1 . Khi đó | z | 2 = x 2 + y 2 = 4 sin 2 t + ( 2 cos t + 1 ) 2 = 4 cos t + 5 mà cos t ∈ [ − 1 ; 1 ] ⇒ 4 cos t + 5 ∈ [ 1 ; 9 ] . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0684",
+        "question": "Cho số phức z thỏa mãn điều kiện | z − 1 − i | + | z + 1 + 3 i | = 6 √ 5 . Giá trị lớn nhất của | z − 2 − 3 i | là A. 4 √ 5 . B. 2 √ 5 . C. 6 √ 5 . D. 5 √ 5 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 √ 5 .",
+            "B. 2 √ 5 .",
+            "C. 6 √ 5 .",
+            "D. 5 √ 5 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi I ( 1 ; 1 ) , J ( − 1 ; − 3 ) , A ( 2 ; 3 ) . Xét số phức z = x + y i , ( x , y ∈ R ) , có điểm biểu diễn là M ( x ; y ) . | z − 1 − i | + | z + 1 + 3 i | = 6 √ 5 ⇔ √ ( x − 1 ) 2 + ( y − 1 ) 2 + √ ( x + 1 ) 2 + ( y + 3 ) 2 = 6 √ 5 (1) ⇔ M I + M J = 6 √ 5 ⇒ M di chuyển trên đường elip có tiêu điểm I và J , độ dài trục lớn là 3 √ 5 (như hình vẽ). Tìm giá trị lớn nhất của | z − 2 − 3 i | tức là tìm độ dài lớn nhất của đoạn AM khi M di chuyển trên elip. Ta có: −→ I A = ( 1 ; 2 ) , −→ J A = ( 3 ; 6 ) ⇒ −→ J A = 3 −→ I A , điểm A nằm trên trục lớn của elip. ⇒ A M đạt độ dài lớn nhất khi và chỉ khi M trùng với B, là đỉnh của elip nằm trên trục lớn và khác phía A so với điểm I. Gọi S là trung điểm của IJ ⇒ S ( 0 ; − 1 ) . Độ dài đoạn A B = S A + S B Mà −→ A S = ( − 2 ; − 4 ) ⇒ A S = 2 √ 5 , S B = 6 √ 5 2 = 3 √ 5 ⇒ A B = 5 √ 5 Vậy | z − 2 − 3 i | max = 5 √ 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0694",
+        "question": "Cho các số phức z 1 , z 2 với z 1 ≠ 0 . Tập hợp các điểm biểu diễn số phức w = z 1 z − z 2 là đường tròn tâm là gốc tọa độ và bán kính bằng 1. Tập hợp các điểm biểu diễn số phức z là: A. Đường tròn tâm là điểm biểu diễn số phức z 2 z 1 và bán kính bằng 1 | z 1 | . B. Đường tròn tâm là gốc tạo độ và bán kính bằng | z 1 | . C. Đường tròn tâm là gốc tạo độ và bán kính bằng 1 | z 1 | . D. Đường tròn tâm là điểm biểu diễn số phức − z 2 z 1 và bán kính bằng 1 | z 1 | .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. Đường tròn tâm là điểm biểu diễn số phức z 2 z 1 và bán kính bằng 1 | z 1 | .",
+            "B. Đường tròn tâm là gốc tạo độ và bán kính bằng | z 1 | .",
+            "C. Đường tròn tâm là gốc tạo độ và bán kính bằng 1 | z 1 | .",
+            "D. Đường tròn tâm là điểm biểu diễn số phức − z 2 z 1 và bán kính bằng 1 | z 1 | ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do tập hợp các điểm biểu diễn số phức w = z 1 z − z 2 là đường tròn tâm là gốc tọa độ và bán kính bằng 1 nên | w | = 1 . Ta có: w = z 1 z − z 2 , ( z 1 ≠ 0 ) ⇒ z = w z 1 + z 2 z 1 ⇔ z − z 2 z 1 = w z 1 Lấy mô đun hai vế ta được ∣ ∣ ∣ z − z 2 z 1 ∣ ∣ ∣ = ∣ ∣ ∣ w z 1 ∣ ∣ ∣ = 1 | z 1 | Vậy tập hợp các điểm biểu diễn số phức z là đường tròn tâm là điểm biểu diễn số phức z 2 z 1 và bán kính bằng 1 | z 1 | . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0704",
+        "question": "Cho số phức z thỏa mãn | 2 z − 3 − 4 i | = 10. Gọi M và m lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của | z | . Khi đó M − m bằng: A. 5 B. 15 C. 10 D. 20",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 5",
+            "B. 15",
+            "C. 10",
+            "D. 20"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử điểm M ( x ; y ) biểu diễn số phức z ⇒ z = x + y i ⇒ | z | = √ x 2 + y 2 . Ta có: | 2 z − 3 − 4 i | = 10 ⇔ ∣ ∣ ∣ z − 3 2 − 2 i ∣ ∣ ∣ = 5 ⇔ ( x − 3 2 ) 2 + ( y − 2 ) 2 = 25. ⇒ M thuộc đường tròn tâm I ( 3 2 ; 2 ) và bán kính R = 5. ⇒ | z | = √ x 2 + y 2 = O M . Ta đưa bài toán về tìm min và max của O M . Ta có: O I = √ ( 3 2 ) 2 + 2 2 = 5 2 < R ⇒ I nằm trong đường tròn. ⇒ O M đạt Max và Min khi M ∈ đường thẳng đi qua O , I . ⇒ M = M a x O M = R + O I = 5 + 5 2 = 15 2 m = M i n O M = R − O I = 5 − 5 2 = 5 2 . ⇒ M − m = 15 2 − 5 2 = 5. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0714",
+        "question": "Cho số phức z thay đổi thỏa mãn | z − i | + | z + i | = 6 . Gọi S là đường cong tạo bởi tất cả các điểm biểu diễn số phức ( z − i ) ( i + 1 ) khi z thay đổi. Tính diện tích hình phẳng giới hạn bởi đường cong S. A. 12 π B. 12 π √ 2 C. 9 π √ 2 D. 9 π",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 12 π",
+            "B. 12 π √ 2",
+            "C. 9 π √ 2",
+            "D. 9 π"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt ( z − i ) ( i + 1 ) = x + y i ⇒ ⎡ ⎢ ⎢ ⎢ ⎣ z − i = x + y i i + 1 z + i = x + y i i + 1 + 2 i = x + y i − 2 + 2 i i + 1 = x − 2 + ( y + 2 ) i i + 1 ⇒ ⎡ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎣ | z − i | = √ x 2 + y 2 √ 2 | z + i | = √ ( x − 2 ) 2 + ( y + 2 ) 2 √ 2 ⇒ √ x 2 + y 2 √ 2 + √ ( x − 2 ) 2 + ( y + 2 ) 2 √ 2 = 6 ( ∗ ) Gọi M ( x ; y ) ; I ( 2 ; − 2 ) , từ (*) ta có M O √ 2 + M I √ 2 = 6 ⇔ M O + M I = 6 √ 2 Do đó quỹ tích điểm M là elip nhận O; I là hai tiêu điểm và trục lớn 2 a = 6 √ 2 ⇒ a = 3 √ 2 . 2 c = O I = 2 √ 2 ⇒ c = √ 2 ⇒ b = √ a 2 − c 2 = 4 . Vậy diện tích elip là S = π a b = π .4 .3 √ 2 = 12 π √ 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0724",
+        "question": "Cho các số phức z 1 = − 3 i ; z 2 = 4 + i và z thỏa mãn | z − i | = 2 . Biểu thức T = | z − z 1 | + 2 | z − z 2 | đạt giá trị nhỏ nhất khi z = a + b i ( a ; b ∈ R ) . Hiệu a − b bằng: A. 3 − 6 √ 13 17 B. 6 √ 13 − 3 17 C. 3 + 6 √ 13 17 D. − 3 + 6 √ 13 17",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 3 − 6 √ 13 17",
+            "B. 6 √ 13 − 3 17",
+            "C. 3 + 6 √ 13 17",
+            "D. − 3 + 6 √ 13 17"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Trên mặt phẳng tọa độ Oxy, gọi A ( 0 ; − 3 ) là điểm biểu diễn số phức z 1 ; B ( 4 ; 1 ) là điểm biểu diễn số phức z 2 ; I ( 0 ; 1 ) là điểm biểu diễn số phức i và M là điểm biểu diễn cho số phức z. Theo đề bài ta có | z − i | = 2 ⇒ M I = 2 ⇒ M thuộc đường tròn tâm I bán kính R = 2. T = | z − z 1 | + 2 | z − z 2 | = M A + 2 M B . Ta có IM = 2, IO = 1, IA = 4 ⇒ I M 2 = I A . I O ⇔ I M I A = I O I M . Do đó tam giác IMO đồng dạng với tam giác IAM ⇒ I M I A = O M A M = 1 2 ⇒ M A = 2 M O ⇒ T = M A + 2 M B = 2 M O + 2 M B = 2 ( M O + M B ) ≥ 2 O B . Dấu bằng xảy ra khi và chỉ khi M là giao điểm của OB và (I) ⇔ M ≡ E . O ( 0 ; 0 ) ; B ( 4 ; 1 ) ⇒ Phương trình OB là y = 1 4 x ( d ) ; E ∈ d ⇒ E ( 4 m ; m ) ( m > 0 ) . Vì E ∈ ( I ) ⇒ I E = 2 ⇒ ( 4 m ) 2 + ( m − 1 ) 2 = 4 ⇔ 17 m 2 − 2 m − 3 = 0 ⇔ m = 1 + 2 √ 13 17 ( m > 0 ) Ta có { a = 4 m b = m ⇒ a − b = 3 m = 3 + 6 √ 13 17 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0734",
+        "question": "Cho số phức z thỏa mãn | z | ≤ 2 . GTNN của biểu thức P = 2 | z + 1 | + 2 | z − 1 | + ∣ ∣ z − ¯¯¯ z − 4 i ∣ ∣ bằng A. 4 + 2 √ 3 B. 2 + √ 3 C. 4 + 14 √ 15 . D. 2 + 7 √ 15",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 + 2 √ 3",
+            "B. 2 + √ 3",
+            "C. 4 + 14 √ 15 .",
+            "D. 2 + 7 √ 15"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = x + y i , ( x , y ∈ R ) ⇒ M ( x ; y ) là điểm biểu diễn của z trên mặt phẳng tọa độ Oxy. P = 2 | z + 1 | + 2 | z − 1 | + ∣ ∣ z − ¯¯¯ z − 4 i ∣ ∣ = 2 ( √ ( x + 1 ) 2 + y 2 + √ ( x − 1 ) 2 + y 2 + | y − 2 | ) Đặt A ( − 1 ; 0 ) , B ( 1 ; 0 ) , C ( 0 ; 2 ) và H ( 0 ; y ) là hình chiếu của M lên Oy. Khi đó, P = 2 ( M A + M B + H C ) Ta xác định vị trí của M để P đạt giá trị nhỏ nhất, (M di chuyển trên hình tròn x 2 + y 2 ≤ 4 ) +) Nếu M ∈ ( C 1 ) : x 2 + y 2 ≤ 4 , y < 0 thì ta luôn tìm được điểm M ′ ∈ ( C 2 ) : x 2 + y 2 ≤ 4 , y ≥ 0 đối xứng với M qua Ox. Khi đó P = 2 ( M A + M B + H C ) = 2 ( M ′ A + M ′ B + H ′ C ) > 2 ( M A + M B + H C ) +) Ta xét điểm M ∈ ( C 2 ) : x 2 + y 2 ≤ 4 , y ≥ 0 Với M nằm trong nửa hình tròn ( C 2 ) , thay đổi trên đường thẳng y = m cố định ( 0 ≤ m ≤ 2 ) thì độ dài đoạn HC không đổi, M A + M B ≥ H A + H B = 2 H A P = 2 ( M A + M B + H C ) ≥ 2 ( 2 H A + H C ) Ta có: 2 H A + H C = 2 √ m 2 + 1 + 2 − m = f ( m ) , m ∈ [ 0 ; 2 ] f ′ ( m ) = 2 m √ m 2 + 1 − 1 , f ′ ( m ) = 0 ⇔ m = 1 √ 3 f ( m ) min = f ( 1 √ 3 ) = 2 + √ 3 ⇒ P min = 2 ( 2 + √ 3 ) = 4 + 2 √ 3 khi M ( 0 ; 1 √ 3 ) h a y z = i √ 3 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0744",
+        "question": "Cho số phức z thỏa mãn | z − 1 − i | = 1 , số phức w thỏa mãn | ¯ w − 2 − 3 i | = 2 . Tính giá trị nhỏ nhất của | z − w | . A. √ 13 − 3. B. √ 17 − 3. C. √ 17 + 3. D. √ 13 + 3.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 13 − 3.",
+            "B. √ 17 − 3.",
+            "C. √ 17 + 3.",
+            "D. √ 13 + 3."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có: +) | z − 1 − i | = 1 ⇒ Tập hợp biểu diễn số phức z là đường tròn ( C 1 ) có tâm I 1 ( 1 ; 1 ) và bán kính R 1 = 1 . +) | ¯ w − 2 − 3 i | = 2 ⇔ | w − 2 + 3 i | = 2 ⇒ Tập hợp biểu diễn số phức w là đường tròn ( C 2 ) có tâm I 2 ( 2 ; − 3 ) và bán kính R 2 = 2. Do I 1 I 2 > R 1 + R 2 nên hai đường tròn không cắt nhau. Khi đó | z − w | = M N ⇒ | z − w | min = M N min = I 1 I 2 − ( R 1 + R 2 ) = √ 17 − 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0754",
+        "question": "Xét các số phức z = a + b i ( a , b ∈ R ) thỏa mãn điều kiện | z − 3 − 2 i | = 2 . Tính a + b khi | z + 1 − 2 i | + 2 | z − 2 − 5 i | đạt giá trị nhỏ nhất. A. 4 − √ 3 . B. 2 + √ 3 . C. 3 . D. 4 + √ 3 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 − √ 3 .",
+            "B. 2 + √ 3 .",
+            "C. 3 .",
+            "D. 4 + √ 3 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Cách 1: Đặt z − 3 − 2 i = w với w = x + y i ( x , y ∈ R ) . Theo bài ra ta có | w | = 2 ⇔ x 2 + y 2 = 4 . Ta có P = | z + 1 − 2 i | + 2 | z − 2 − 5 i | = | w + 4 | + 2 | w + 1 − 3 i | = √ ( x + 4 ) 2 + y 2 + 2 √ ( x + 1 ) 2 + ( y − 3 ) 2 = √ 20 + 8 x + 2 √ ( x + 1 ) 2 + ( y − 3 ) 2 = 2 √ 5 + 2 x + 2 √ ( x + 1 ) 2 + ( y − 3 ) 2 = 2 ( √ x 2 + y 2 + 2 x + 1 + √ ( x + 1 ) 2 + ( y − 3 ) 2 ) = 2 ( √ ( x + 1 ) 2 + y 2 + √ ( x + 1 ) 2 + ( y − 3 ) 2 ) ≥ 2 ( | y | + | y − 3 | ) ≥ 2 | y + 3 − y | = 6. Do đó P = 6 ⇔ ⎧ ⎪ ⎨ ⎪ ⎩ x = − 1 y ( 3 − y ) ≥ 0 x 2 + y 2 = 4 ⇔ { x = − 1 y = √ 3 Vậy GTNN của P là bằng 6 đạt được khi z = 2 + ( 2 + √ 3 ) i . ⇒ a + b = 2 + 2 + √ 3 = 4 + √ 3 . Cách 2: Giả thiết | z − 3 − 2 i | = 2 ⇒ M I = 2 ⇒ M ∈ ( I ; 2 ) với I = ( 3 ; 2 ) . P = | z + 1 − 2 i | + 2 | z − 2 − 5 i | = M A + 2 M B với A = ( 1 ; 2 ) , B = ( 2 ; 5 ) . Ta có I M = 2 ; I A = 4 . Chọn K ( 2 ; 2 ) thì I K = 1 . Do đó ta có I A . I K = I M 2 ⇒ I A I M = I M I K ⇒ Δ I A M và Δ I M K đồng dạng với nhau ⇒ A M M K = I M I K = 2 ⇒ A M = 2 M K . Từ đó P = M A + 2 M B = 2 ( M K + M B ) ≥ 2 B K . Dấu bằng xảy ra khi và chỉ khi M , K , B thẳng hàng và M thuộc đoạn thẳng B K . Từ đó tìm được M = ( 2 ; 2 + √ 3 ) . Cách 3: Gọi M ( a ; b ) là điểm biểu diễn số phức z = a + b i . Đặt I = ( 3 ; 2 ) , A ( − 1 ; 2 ) và B ( 2 ; 5 ) . Ta xét bài toán: Tìm điểm M thuộc đường tròn ( C ) có tâm I , bán kính R = 2 sao cho biểu thức P = M A + 2 M B đạt giá trị nhỏ nhất. Trước tiên, ta tìm điểm K ( x ; y ) sao cho M A = 2 M K ∀ M ∈ ( C ) . Ta có M A = 2 M K ⇔ M A 2 = 4 M K 2 ⇔ ( −−→ M I + −→ I A ) 2 = 4 ( −−→ M I + −→ I K ) 2 ⇔ M I 2 + I A 2 + 2 −−→ M I . −→ I A = 4 ( M I 2 + I K 2 + 2 −−→ M I . −→ I K ) ⇔ 2 −−→ M I ( −→ I A − 4 −→ I K ) = 3 R 2 + 4 I K 2 − I A 2 ( ∗ ) . ( ∗ ) luôn đúng ∀ M ∈ ( C ) ⇔ { −→ I A − 4 −→ I K = → 0 3 R 2 + 4 I K 2 − I A 2 = 0 mà −→ I A − 4 −→ I K = → 0 ⇔ { 4 ( x − 3 ) = − 4 4 ( y − 2 ) = 0 ⇔ { x = 2 y = 2 Thử trực tiếp ta thấy K ( 2 ; 2 ) thỏa mãn 3 R 2 + 4 I K 2 − I A 2 = 0 . Vì B I 2 = 1 2 + 3 2 = 10 > R 2 = 4 nên B nằm ngoài ( C ) . Vì K I 2 = 1 < R 2 = 4 nên K nằm trong ( C ) . Ta có M A + 2 M B = 2 M K + 2 M B = 2 ( M K + M B ) ≥ 2 K B . Dấu bằng trong bất đẳng thức trên xảy ra khi và chỉ khi M thuộc đoạn thẳng B K . Do đó M A + 2 M B nhỏ nhất khi và chỉ khi M là giao điểm của ( C ) và đoạn thẳng B K . Phương trình đường thẳng B K : x = 2 . Phương trình đường tròn ( C ) : ( x − 3 ) 2 + ( y − 2 ) 2 = 4 . Tọa độ điểm M là nghiệm của hệ { x = 2 ( x − 3 ) 2 + ( y − 2 ) 2 = 4 ⇔ { x = 2 y = 2 + √ 3 hoặc { x = 2 y = 2 − √ 3 . Thử lại thấy M ( 2 ; 2 + √ 3 ) thuộc đoạn B K . Vậy a = 2 , b = 2 + √ 3 ⇒ a + b = 4 + √ 3 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0764",
+        "question": "Cho các số phức z 1 , z 2 , z 3 thỏa mãn điều kiện | z 1 | = 4 , | z 2 | = 3 , | z 3 | = 2 và | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = 48 . Giá trị của biểu thức P = | z 1 + z 2 + z 3 | bằng A. 8 B. 6 C. 1 D. 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 8",
+            "B. 6",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = ∣ ∣ z 3 . ¯¯¯¯¯ z 3 . z 1 z 2 + z 1 . ¯¯¯¯¯ z 1 . z 2 z 3 + z 2 . ¯¯¯¯¯ z 2 . z 1 z 3 ∣ ∣ = ∣ ∣ z 1 z 2 z 3 . ( ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ) ∣ ∣ = | z 1 z 2 z 3 | . ∣ ∣ ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ∣ ∣ = | z 1 | . | z 2 | . | z 2 | . ∣ ∣ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ z 1 + z 2 + z 3 ∣ ∣ = 24. | z 1 + z 2 + z 3 | = 48 ⇒ P = | z 1 + z 2 + z 3 | = 48 24 = 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0774",
+        "question": "Cho các số phức w , z thỏa mãn | w + i | = 3 √ 5 5 và 5 w = ( 2 + i ) ( z − 4 ) . Giá trị lớn nhất của biểu thức P = | z − 1 − 2 i | + | z − 5 − 2 i | bằng A. 4 √ 13 . B. 4 + 2 √ 13 . C. 2 √ 53 . D. 6 √ 7 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 √ 13 .",
+            "B. 4 + 2 √ 13 .",
+            "C. 2 √ 53 .",
+            "D. 6 √ 7 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có 5 w = ( 2 + i ) ( z − 4 ) ⇔ 5 w + 5 i = ( 2 + i ) z − 8 + i ⇔ 5 | w + i | = | ( 2 + i ) z − 8 + i | ⇔ | ( 2 + i ) z − 8 + i | = 3 √ 5 ⇔ | 2 + i | . ∣ ∣ ∣ z − 8 − i 2 + i ∣ ∣ ∣ = 3 √ 5 ⇔ ∣ ∣ ∣ z − 8 − i 2 + i ∣ ∣ ∣ = 3 ⇔ | z − 3 + 2 i | = 3 ⇒ Tập hợp điểm M ( z ) là đường tròn ( C ) : ( x − 3 ) 2 + ( y + 2 ) 2 = 9 , tâm I ( 3 ; − 2 ) , R = 3. Gọi A ( 1 ; 2 ) , B ( 5 ; 2 ) và E ( 3 ; 2 ) là trung điểm của A B suy ra P = M A + M B . Lại có ( M A + M B ) 2 ≤ 2 ( M A 2 + M B 2 ) = 4. M E 2 + A B 2 ⇒ P lớn nhất ⇔ M E lớn nhất. Mà I E = 4 > R = 3 → M E max = I E + R = 7. Vậy P max = √ 4. M E 2 + A B 2 = 2 √ 53 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0784",
+        "question": "Cho số phức z thỏa điều kiện | z + 2 | = | z + 2 i | . Giá trị nhỏ nhất của biểu thức P = | z − 1 − 2 i | + | z − 3 − 4 i | + | z − 5 − 6 i | được viết dưới dạng a + b √ 17 √ 2 với a, b là các hữu tỉ. Giá trị của a + b là: A. 4 B. 2 C. 7 D. 3",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4",
+            "B. 2",
+            "C. 7",
+            "D. 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ( x , y ∈ R ) . Từ giả thiết | z + 2 | = | z + 2 i | ⇒ | x + y i + 2 | = | x + y i + 2 i | ⇔ ( x + 2 ) 2 + y 2 = x 2 + ( y + 2 ) 2 ⇔ x = y ⇔ z = x + x i ⇒ P = | x + x i − 1 − 2 i | + | x + x i − 3 − 4 i | + | x + x i − 5 − 6 i | = √ ( x − 1 ) 2 + ( x − 2 ) 2 + √ ( x − 3 ) 2 + ( x − 4 ) 2 + √ ( x − 5 ) 2 + ( x − 6 ) 2 Sử dụng BĐT √ a 2 + b 2 + √ c 2 + d 2 ≥ √ ( a + c ) 2 + ( b + d ) 2 . Dấu bằng xảy ra ⇔ a c = b d . Ta có : √ ( x − 1 ) 2 + ( x − 2 ) 2 + √ ( x − 5 ) 2 + ( x − 6 ) 2 = √ ( x − 1 ) 2 + ( x − 2 ) 2 + √ ( 5 − x ) 2 + ( 6 − x ) 2 ≥ √ ( x − 1 + 6 − x ) 2 + ( x − 2 + 5 − x ) 2 = √ 34 Dấu bằng xảy ra ⇔ x − 1 6 − x = x − 2 5 − x ⇔ x = 7 2 . Mặt khác √ ( x − 3 ) 2 + ( x − 4 ) 2 = √ 2 x 2 − 14 x + 25 = √ 2 √ ( x − 7 2 ) 2 + 1 4 ≥ 1 √ 2 Dấu bằng xảy ra ⇔ x = 7 2 . Từ đó ta thấy P min = 1 √ 2 + √ 34 = 1 + 2 √ 17 √ 2 ⇔ a = 1 , b = 2 ⇒ a + b = 3 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0794",
+        "question": "Cho các số phức z , w thỏa mãn | z − 5 + 3 i | = 3 , | i w + 4 + 2 i | = 2 . Tìm giá trị lớn nhất của biểu thức T = | 3 i z + 2 w | . A. √ 554 + 5 B. √ 578 + 13 C. √ 578 + 5 D. √ 554 + 13",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 554 + 5",
+            "B. √ 578 + 13",
+            "C. √ 578 + 5",
+            "D. √ 554 + 13"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt { u = 3 i z v = − 2 w ⇔ ⎧ ⎪ ⎨ ⎪ ⎩ z = u 3 i w = − v 2 suy ra { | z − 5 + 3 i | = 3 | i w + 4 + 2 i | = 2 ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ ∣ ∣ u 3 i − 5 + 3 i ∣ ∣ = 3 ∣ ∣ ∣ − i v 2 + 4 + 2 i ∣ ∣ ∣ = 2 ⇔ ⎧ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎩ ∣ ∣ ∣ u − 9 − 15 i 3 i ∣ ∣ ∣ = 3 ∣ ∣ ∣ i v − 8 − 4 i 2 ∣ ∣ ∣ = 2 ⇔ { | u − 9 − 15 i | = 9 | i v − 8 − 4 i | = 4 ⇔ { | u − 9 − 15 i | = 9 | v − 4 + 8 i | = 4 . Do đó, tập hợp điểm M biểu diễn số phức u thuộc đường tròn ( C 1 ) : ( x − 9 ) 2 + ( y − 15 ) 2 = 81. Tập hợp điểm N biểu diễn số phức v thuộc đường tròn ( C 2 ) : ( x − 4 ) 2 + ( y + 8 ) 2 = 16. Xét ( C 1 ) có tâm I 1 ( 9 ; 15 ) , bán kính R 1 = 9 ; ( C 2 ) có tâm I 2 ( 4 ; − 8 ) , bán kính R 2 = 4. Dễ thấy ( C 1 ) , ( C 2 ) không cắt nhau ⇒ | u − v | = M N lớn nhất ⇔ M N = I 1 I 2 + R 1 + R 2 = √ 554 + 13. Vậy T = | 3 i z + 2 w | đạt giá trị lớn nhất bằng √ 554 + 13. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0804",
+        "question": "Cho hai số phức u , v thỏa mãn 3 | u − 6 i | + 3 | u − 1 − 3 i | = 5 √ 10 , | v − 1 + 2 i | = ∣ ∣ ¯¯¯ v + i ∣ ∣ . GTNN của | u − v | là A. √ 10 3 . B. 2 √ 10 3 . C. √ 10 . D. 5 √ 10 3 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 10 3 .",
+            "B. 2 √ 10 3 .",
+            "C. √ 10 .",
+            "D. 5 √ 10 3 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: 3 | u − 6 i | + 3 | u − 1 − 3 i | = 5 √ 10 ⇔ | u − 6 i | + | u − 1 − 3 i | = 5 √ 10 3 ⇒ Tập hợp điểm biểu diễn của số phức u là đường elip ( E ) có 2 tiêu điểm là F 1 ( 0 ; 6 ) , F 2 ( 1 ; 3 ) và độ dài trục lớn là 5 √ 10 6 . Ta có: | v − 1 + 2 i | = ∣ ∣ ¯¯¯ v + i ∣ ∣ = ∣ ∣ ¯¯¯ v + ( ¯¯¯¯¯¯ − i ) ∣ ∣ = ∣ ∣ ¯¯¯¯¯¯¯¯¯¯¯ v − i ∣ ∣ = | v − i | ⇒ Tập hợp điểm biểu diễn của số phức u là đường trung trực ( d ) của đoạn thẳng AB, trong đó A ( 1 ; − 2 ) , B ( 0 ; 1 ) . Giả sử M ′ , N ′ lần lượt là điểm biểu diễn số phức u , v ⇒ M ′ ∈ ( E ) , N ′ ∈ d Nhận xét: Việc tìm GTNN của | u − v | là tìm độ dài ngắn nhất của đoạn thẳng M ′ N ′ . Dễ dàng kiểm tra được: F 1 F 2 ⊥ d Gọi N = F 1 F 2 ∩ d , M = F 1 F 2 ∩ ( E ) , ( M nằm giữa N và F 2 ). Khi đó với mọi điểm M ′ ∈ ( E ) , N ′ ∈ d thì M N ≤ M ′ N ′ ⇒ | u − v | min = M N Ta tính MN ? +) Viết phương trình đường thẳng d: A ( 1 ; − 2 ) , B ( 0 ; 1 ) ⇒ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ −−→ A B = ( − 1 ; 3 ) I ( 1 2 ; − 1 2 ) (I là trung điểm của AB) ⇒ d : ( x − 1 2 ) − 3 ( y + 1 2 ) = 0 ⇔ x − 3 y − 2 = 0 +) Phương trình đường thẳng F 1 F 2 : −−−→ F 1 F 2 = ( 1 ; − 3 ) E F : 3 ( x − 0 ) + 1 ( y − 6 ) = 0 ⇔ 3 x + y − 6 = 0 +) Tọa độ điểm N là nghiệm của hệ phương trình: { x − 3 y − 2 = 0 3 x + y − 6 = 0 ⇔ { x = 2 y = 0 ⇒ N ( 2 ; 0 ) +) M ∈ F 1 F 2 ⇒ M ( m ; 6 − 3 m ) , 1 < m < 2 Ta có: M A + M B = 2 a ⇔ √ ( m − 1 ) 2 + ( 8 − 3 m ) 2 + √ m 2 + ( 5 − 3 m ) 2 = 5 √ 10 3 ⇔ m = 4 3 ⇒ M ( 4 3 ; 2 ) Suy ra, M N = √ ( 2 3 ) 2 + 2 2 = 2 √ 10 3 ⇒ | u − v | min = M N = 2 √ 10 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0814",
+        "question": "Cho số phức z thay đổi thỏa mãn | z − i | + | z + i | = 6 Gọi S là đường cong tạo bởi tất cả các điểm biểu diễn số phức ( z − i ) ( i + 1 ) khi z thay đổi. Tính diện tích hình phẳng giới hạn bởi đường cong S. A. 12 π B. 12 π √ 2 C. 9 π √ 2 D. 9 π",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 12 π",
+            "B. 12 π √ 2",
+            "C. 9 π √ 2",
+            "D. 9 π"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt ( z − i ) ( i + 1 ) = x + y i ⇒ ⎡ ⎢ ⎢ ⎢ ⎣ z − i = x + y i i + 1 z + i = x + y i i + 1 + 2 i = x + y i − 2 + 2 i i + 1 = x − 2 + ( y + 2 ) i i + 1 ⇒ ⎡ ⎢ ⎢ ⎢ ⎢ ⎢ ⎢ ⎣ | z − i | = √ x 2 + y 2 √ 2 | z + i | = √ ( x − 2 ) 2 + ( y + 2 ) 2 √ 2 ⇒ √ x 2 + y 2 √ 2 + √ ( x − 2 ) 2 + ( y + 2 ) 2 √ 2 = 6 ( ∗ ) Gọi M ( x ; y ) ; I ( 2 ; − 2 ) từ (*) ta có M O √ 2 + M I √ 2 = 6 ⇔ M O + M I = 6 √ 2 Do đó quỹ tích điểm M là elip nhận O; I là hai tiêu điểm và trục lớn 2 a = 6 √ 2 ⇒ a = 3 √ 2 2 c = O I = 2 √ 2 ⇒ c = √ 2 ⇒ b = √ a 2 − c 2 = 4 Vậy diện tích elip là S = π a b = π .4 .3 √ 2 = 12 π √ 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0824",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 + 1 − i | = 2 và z 2 = i z 1 . Tìm GTNN m của biểu thức | z 1 − z 2 | ? A. m = √ 2 − 1 B. m = 2 C. m = 2 √ 2 − 2 D. m = 2 √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. m = √ 2 − 1",
+            "B. m = 2",
+            "C. m = 2 √ 2 − 2",
+            "D. m = 2 √ 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | z 1 − z 2 | = | i z 2 − z 2 | = | z 2 ( 1 − i ) | = √ 2 | z 1 | Mà | z 1 | − | 1 − i | ≤ | z 1 + 1 − i | ≤ | z 1 | + | 1 − i | ⇒ | z 1 | − √ 2 ≤ 2 ≤ | z 1 | + √ 2 ⇒ 2 − √ 2 ≤ | z 1 | ≤ 2 + √ 2 ⇒ √ 2 ( 2 − √ 2 ) ≤ √ 2 | z 1 | ≤ √ 2 ( 2 + √ 2 ) ⇒ 2 √ 2 − 2 ≤ √ 2 | z 1 | ≤ 2 √ 2 + 2 Vậy m = 2 √ 2 − 2 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0834",
+        "question": "Cho z 1 ; z 2 ; z 3 là ba số phức thay đổi thỏa mãn | z 1 | = 2 ; | z 3 | = 1 và z 2 = z 1 z 3 Trong mặt phẳng phức A, B biểu diễn z 1 ; z 2 Giả sử O, A, B lập thành tam giác có diện tích là a, chu vi là b. Giá trị lớn nhất của biểu thức T = a + b là: A. 6 + 2 √ 2 B. 6 + 2 √ 3 C. 4 + 2 √ 3 D. 4 + 3 √ 3",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 6 + 2 √ 2",
+            "B. 6 + 2 √ 3",
+            "C. 4 + 2 √ 3",
+            "D. 4 + 3 √ 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z 2 | = | z 1 | | z 3 | = 2 ⇒ O B = O A = 2 Đặt A B = x ( 0 < x < 4 ) ta có: a = 1 2 . x . √ 4 − x 2 4 = 1 4 x √ 16 − x 2 ; b = 2 + 2 + x = 4 + x ⇒ T = a + b = x √ 16 − x 2 4 + 4 + x Sử dụng MTCT ta tính được T max ≈ 9 , 19 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0844",
+        "question": "Cho các số phức z 1 ; z 2 thỏa mãn | z 1 | = 3 ; | z 2 | = 4 và chúng được biểu diễn trong mặt phẳng phức lần lượt là các điểm M, N. Biết góc giữa vector −−→ O M và −−→ O N bằng 600. Tìm môđun của số phức z = z 1 + z 2 z 1 − z 2 ? A. | z | = √ 3 B. | z | = √ 5 2 C. | z | = √ 481 13 D. | z | = 4 √ 3",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. | z | = √ 3",
+            "B. | z | = √ 5 2",
+            "C. | z | = √ 481 13",
+            "D. | z | = 4 √ 3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có O M = 3 ; O N = 4 ; ˆ ( −−→ O M ; −−→ O N ) = 60 0 ⇒ ˆ ( O M ; O N ) = 60 0 | z | = | z 1 + z 2 | | z 1 − z 2 | = ∣ ∣ ∣ −−→ O M + −−→ O N ∣ ∣ ∣ ∣ ∣ ∣ −−→ O M − −−→ O N ∣ ∣ ∣ = 2 ∣ ∣ ∣ −→ O I ∣ ∣ ∣ ∣ ∣ ∣ −−−→ M N ∣ ∣ ∣ = 2 O I M N (với I là trung điểm của MN). Áp dụng định lí cosin trong tam giác OMN có M N = √ O M 2 + O N 2 − 2 O M . O N . cos ( O M ; O N ) = √ 13 OI là đường trung tuyến của tam giác OMN ⇒ O I = √ O M 2 + O N 2 2 − M N 2 4 = √ 37 2 Vậy | z | = 2. √ 37 2 √ 13 = √ 481 13 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0854",
+        "question": "Cho z ∈ C thỏa mãn ( 2 + i ) | z | = √ 17 z + 1 − 3 i . Biết tập hợp các điểm biểu diễn cho số phức w = ( 3 − 4 i ) z − 1 + 2 i là đường tròn tâm I, bán kính R. Kết quả nào đúng ? A. I ( − 1 ; − 2 ) R = √ 5 B. I ( 1 ; − 2 ) ; R = 5 C. I ( 1 ; 2 ) , R = √ 5 D. I ( − 1 ; 2 ) , R = 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. I ( − 1 ; − 2 ) R = √ 5",
+            "B. I ( 1 ; − 2 ) ; R = 5",
+            "C. I ( 1 ; 2 ) , R = √ 5",
+            "D. I ( − 1 ; 2 ) , R = 5"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com ( 2 + i ) | z | = √ 17 z + 1 − 3 i ⇔ ( 2 + i ) | z | − 1 + 3 i = √ 17 z ⇔ ( 2 | z | − 1 ) + ( | z | + 3 ) i = √ 17 z ⇔ ( 2 | z | − 1 ) 2 + ( | z | + 3 ) 2 = 17 | z | 2 ⇔ 5 | z | 4 + 2 | z | 3 + 10 | z | 2 − 17 = 0 ⇔ ( | z | − 1 ) ( 5 | z | 3 + 7 | z | 2 + 17 | z | + 17 ) = 0 ⇔ [ | z | = 1 5 | z | 3 + 7 | z | 2 + 17 | z | + 17 = 0 Phương trình dưới có một nghiệm âm nên loại. Do đó | z | = 1 Đặt w = x + y i ta có: w = ( 3 − 4 i ) z − 1 + 2 i ⇒ ( 3 − 4 i ) z = w + 1 − 2 i ⇔ 5 | z | = | w + 1 − 2 i | = 5 Vậy tập hợp các điểm biểu diễn cho số phức w = ( 3 − 4 i ) z − 1 + 2 i là đường tròn tâm I ( − 1 ; 2 ) , bán kính R = 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0864",
+        "question": "Cho số phức thỏa mãn | z − 2 i | ≤ | z − 4 i | và | z − 3 − 3 i | = 1. Giá trị lớn nhất của P = | z − 2 | là A. √ 13 + 1. B. √ 10 + 1. C. √ 13 . D. √ 10 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 13 + 1.",
+            "B. √ 10 + 1.",
+            "C. √ 13 .",
+            "D. √ 10 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Lời giải chi tiết.Giả sử số phức thỏa mãn yêu cầu bài toán có dạng z = a + b i , ( a , b ∈ ) . Khi đó ta có ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ | z − 2 i | = | ( a + b i ) − 2 i | = √ a 2 + ( b − 2 ) 2 | z − 4 i | = | ( a + b i ) − 4 i | = √ a 2 + ( b − 4 ) 2 | z − 3 − 3 i | = | ( a + b i ) − 3 − 3 i | = √ ( a − 3 ) 2 + ( b − 3 ) 2 | z − 2 | = | ( a + b i ) − 2 | = √ ( a − 2 ) 2 + b 2 Từ giả thiết ta suy ra ⎧ ⎨ ⎩ √ a 2 + ( b − 2 ) 2 ≤ √ a 2 + ( b − 4 ) 2 ( a − 3 ) 2 + ( b − 3 ) 2 = 1 ⇔ { ( b − 2 ) 2 ≤ ( b − 4 ) 2 ( a − 3 ) 2 + ( b − 3 ) 2 = 1 ⇔ ⎧ ⎪ ⎨ ⎪ ⎩ [ b − 2 ≤ b − 4 ( V N ) b − 2 ≤ − b + 4 ( a − 3 ) 2 + ( b − 3 ) 2 = 1 ⇔ { b ≤ 3 ( a − 3 ) 2 + ( b − 3 ) 2 = 1 . Từ ( a − 3 ) 2 + ( b − 3 ) 2 = 1 ⇒ ( a − 3 ) 2 ≤ 1 ⇒ 2 ≤ a ≤ 4 ⇒ 0 ≤ a − 2 ≤ 2. Do đó P = | z − 2 | = √ ( a − 2 ) 2 + b 2 ≤ √ 2 2 + 3 2 = √ 13 . Đẳng thức xảy ra khi và chỉ khi ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ ( a − 2 ) 2 = 2 2 b = 3 ( a − 3 ) 2 + ( b − 3 ) 2 = 1 ⇔ { a = 4 b = 3 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0874",
+        "question": "Cho số phức z thỏa mãn ∣ ∣ z 2 − 2 z + 5 ∣ ∣ = | ( z − 1 + 2 i ) ( z − 1 + 3 i ) | và w = z − 2 + 2 i giá trị nhỏ nhất của | w | bằng ? A. 3 2 . B. 2. C. 1. D. 11 8 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 3 2 .",
+            "B. 2.",
+            "C. 1.",
+            "D. 11 8 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z 2 − 2 z + 5 = ( z − 1 ) 2 + 4 = ( z − 1 ) 2 − ( 2 i ) 2 = ( z − 1 + 2 i ) ( z − 1 − 2 i ) Do đó ∣ ∣ z 2 − 2 z + 5 ∣ ∣ = | ( z − 1 + 2 i ) ( z + 3 i − 1 ) | ⇔ | ( z − 1 + 2 i ) ( z − 1 − 2 i ) | = | ( z − 1 + 2 i ) ( z + 3 i − 1 ) | ⇔ | z − 1 + 2 i | | z − 1 − 2 i | = | z − 1 + 2 i | | z + 3 i − 1 | ⇔ [ | z − 1 + 2 i | = 0 | z − 1 − 2 i | = | z + 3 i − 1 | TH1: | z − 1 + 2 i | = 0 ⇔ z = 1 − 2 i ⇒ w = 1 − 2 i − 2 + 2 i = − 1 ⇒ | w | = 1 TH2: | z − 1 − 2 i | = | z + 3 i − 1 | ⇔ | x − 1 + ( y − 2 ) i | = | x − 1 + ( y + 3 ) i | với z = x + y i ( x , y ∈ R ) . ⇔ ( x − 1 ) 2 + ( y − 2 ) 2 = ( x − 1 ) 2 + ( y + 3 ) 2 ⇔ y = − 1 2 ⇒ z = x − 1 2 i . Khi đó | w | = | z − 2 + 2 i | = ∣ ∣ ∣ x − 2 + 3 2 i ∣ ∣ ∣ = √ ( x − 2 ) 2 + 9 4 ≥ 3 2 . Vậy min | w | = 1 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0884",
+        "question": "Cho số phức z thỏa mãn điều kiện | z − 1 | = √ 2 . Tìm giá trị lớn nhất của biểu thức T = | z + i | + | z − 2 − i | A. max T = 8 √ 2 B. max T = 8 C. max T = 4 √ 2 D. max T = 4",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. max T = 8 √ 2",
+            "B. max T = 8",
+            "C. max T = 4 √ 2",
+            "D. max T = 4"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tập hợp các điểm z thỏa mãn điều kiện | z − 1 | = √ 2 là đường tròn ( C ) tâm I ( 1 ; 0 ) bán kính R = √ 2 . T = | z + i | + | z − 2 − i | = | z − ( − 1 ) | + | z − ( 2 + i ) | Gọi M là điểm biểu diễn cho số phức z, A ( 0 ; − 1 ) là điểm biểu diễn cho số phức − i , B ( 2 ; 1 ) là điểm biểu diễn cho số phức 2 + i . Dễ thấy A , B ∈ ( C ) và A B = √ 2 2 + 2 2 = 2 √ 2 = 2 R ⇒ A B là đường kính của đường tròn ( C ) ⇒ Δ M A B vuông tại M ⇒ M A 2 + M B 2 = A B 2 = 8 ⇒ M B = √ 8 − M A 2 Ta có: T = ∣ ∣ ∣ −−→ O M − −−→ O A ∣ ∣ ∣ + ∣ ∣ ∣ −−→ O M − −−→ O B ∣ ∣ ∣ = M A + M B = M A + √ 8 − M A 2 Đặt M A = x ( 0 ≤ x ≤ 2 √ 2 ) , xét hàm số f ( x ) = x + √ 8 − x 2 trên [ 0 ; 2 √ 2 ] ta có: f ′ ( x ) = 1 − x √ 8 − x 2 = √ 8 − x 2 − x √ 8 − x 2 = 0 ⇔ √ 8 − x 2 = x ⇔ 8 − x 2 = x 2 ⇔ x = 2 f ( 0 ) = √ 2 , f ( 2 √ 2 ) = 2 √ 2 ; f ( 2 ) = 4 ⇒ max [ 0 ; 2 √ 2 ] f ( x ) = f ( 2 ) = 4 Vậy max T = 4 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0894",
+        "question": "Xét số phức z thỏa mãn ( 1 + 2 i ) | z | = √ 10 z − 2 + i . Mệnh đề nào dưới đây đúng? A. 3 2 < | z | < 2 . B. | z | > 2 C. | z | < 1 2 D. 1 2 < | z | < 3 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 3 2 < | z | < 2 .",
+            "B. | z | > 2",
+            "C. | z | < 1 2",
+            "D. 1 2 < | z | < 3 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com ( 1 + 2 i ) | z | = √ 10 z − 2 + i ⇔ ( 1 + 2 i ) | z | + 2 − i = √ 10 z ⇔ ( | z | + 2 ) + ( 2 | z | − 1 ) i = √ 10 z ⇔ ( | z | + 2 ) 2 + ( 2 | z | − 1 ) 2 = 10 | z | 2 ⇔ | z | 2 + 4 | z | + 4 + 4 | z | 2 − 4 | z | + 1 = 10 | z | 2 ⇔ 5 | z | 4 + 5 | z | 2 − 10 = 0 ⇔ | z | = 1 ∈ ( 1 2 ; 3 2 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0904",
+        "question": "Cho số phức z thỏa mãn | z − 2 + 3 i | + | z + 2 + i | = 4 √ 5 . Tính GTLN của P = | z − 4 + 4 i | A. max P = 4 √ 5 . B. max P = 7 √ 5 . C. max P = 5 √ 5 . D. max P = 6 √ 5 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. max P = 4 √ 5 .",
+            "B. max P = 7 √ 5 .",
+            "C. max P = 5 √ 5 .",
+            "D. max P = 6 √ 5 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Cho số phức z = x + y i , ( x , y ∈ R ) , S ( x ; y ) là điểm biểu diễn của z trên hệ trục tọa độ Oxy. | z − 2 + 3 i | + | z + 2 + i | = 4 √ 5 ⇔ √ ( x − 2 ) 2 + ( y + 3 ) 2 + √ ( x + 2 ) 2 + ( y + 1 ) 2 = 4 √ 5 (1) Lấy các điểm A ( 2 ; − 3 ) , B ( − 2 ; − 1 ) . Phương trình (1) ⇔ S A + S B = 4 √ 5 ⇒ Tập hợp các điểm S là đường elip (E) có tiêu điểm A ( 2 ; − 3 ) , B ( − 2 ; − 1 ) và có độ dài trục lớn là 2 a = 4 √ 5 ⇒ a = 2 √ 5 . Lấy M ( 4 ; − 4 ) . Dễ dàng kiểm tra được { −−→ A B = 2 −−→ M A M A + M B = 4 √ 5 = 2 a Suy ra, M là một đỉnh và nằm trên trục lớn của elip (E). Gọi I là trung điểm AB ⇒ I ( 0 ; − 2 ) , N là điểm đối xứng của M qua I. Khi đó, với mọi điểm S ∈ ( E ) : S M ≤ M N = 2 a = 4 √ 5 S M max = 4 √ 5 khi và chỉ khi S trùng N ⇔ P max = 4 √ 5 khi và chỉ khi S ≡ N ( − 4 ; 0 ) ⇔ z = − 4 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0914",
+        "question": "Xét các số phức z = a + b i , ( a ; b ∈ R ) thỏa mãn đồng thời hai điều kiện | z | = ∣ ∣ ¯¯¯ z + 4 − 3 i ∣ ∣ và | z + 1 − i | + | z − 2 + 3 i | đạt giá trị nhỏ nhất. Giá trị P = a + 2 b là: A. P = − 61 10 B. P = − 252 50 C. P = − 41 5 D. P = − 18 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. P = − 61 10",
+            "B. P = − 252 50",
+            "C. P = − 41 5",
+            "D. P = − 18 5"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ta có: | x + y i | = | x − y i + 4 − 3 i | ⇔ x 2 + y 2 = ( x + 4 ) 2 + ( y + 3 ) 2 ⇔ 8 x + 6 y = − 25 Gọi điểm M ( x ; y ) là điểm biểu diễn cho số phức z và A ( − 1 ; 1 ) ; B ( 2 ; − 3 ) ta có: | z + 1 − i | + | z − 2 + 3 i | = M A + M B nhỏ nhất. Ta có : M A + M B ≥ 2 √ M A . M B , dấu bằng xảy ra ⇔ M A = M B ⇒ M thuộc trung trực của AB. Gọi I là trung điểm của AB ta có I ( 1 2 ; − 1 ) và −−→ A B = ( 3 ; − 4 ) Phương trình đường trung trực của AB là 3 ( x − 1 2 ) − 4 ( y + 1 ) = 0 ⇔ 3 x − 4 y − 11 2 = 0 Để ( M A + M B ) min ⇔ Tọa độ điểm M là nghiệm của hệ phương trình ⎧ ⎨ ⎩ 8 x + 6 y = − 25 3 x − 4 y = 11 2 ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ x = − 67 50 y = − 119 50 ⇒ z = − 67 50 − 119 50 i ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ a = − 67 50 b = − 119 50 ⇒ P = a + 2 b = − 61 10 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0924",
+        "question": "Cho số phức z thỏa mãn | z − 3 − 4 i | = √ 5 . Gọi M , m lần lượt là giá trị lớn nhất, nhỏ nhất biểu thức P = | z + 2 | 2 − | z − i | 2 . A. 2 √ 314 . B. √ 1258 . C. 3 √ 137 . D. 2 √ 309 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 2 √ 314 .",
+            "B. √ 1258 .",
+            "C. 3 √ 137 .",
+            "D. 2 √ 309 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = x + y i ( x , y ∈ R ) suy ra tập hợp các điểm M ( z ) = ( x ; y ) là đường tròn ( C ) có tâm I ( 3 ; 4 ) và bán kính R = √ 5 . Ta có P = | z + 2 | 2 − | z − i | 2 = | x + 2 + y i | 2 − | x + ( y − 1 ) i | 2 = ( x + 2 ) 2 + y 2 − x 2 − ( y − 1 ) 2 = x 2 + y 2 + 4 x + 4 − x 2 − y 2 + 2 y − 1 = 4 x + 2 y + 3 → ( Δ ) : 4 x + 2 y + 3 − P = 0. Ta cần tìm P sao cho đường thẳng ( Δ ) và đường tròn ( C ) có điểm chung ⇔ d ( I ; ( Δ ) ) ≤ R . ⇔ | 4.3 + 2.4 + 3 − P | √ 4 2 + 2 2 ≤ √ 5 ⇔ | 23 − P | ≤ 10 ⇔ − 10 ≤ 23 − P ≤ 10 ⇔ 13 ≤ P ≤ 33. Do đó, { max P = 33 min P = 13 ⇒ w = M + m i = 33 + 13 i . Vậy | w | = √ 1258 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0934",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 | = 2 , | z 2 | = √ 3 . Gọi M, N là các điểm biểu diễn cho z 1 và i z 2 . Biết ˆ M O N = 30 0 . Tính S = ∣ ∣ z 2 1 + 4 z 2 2 ∣ ∣ ? A. √ 5 B. 4 √ 7 C. 3 √ 3 D. 5 √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 5",
+            "B. 4 √ 7",
+            "C. 3 √ 3",
+            "D. 5 √ 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z 3 = i z 2 ⇒ z 2 3 = − z 2 2 ⇒ S = ∣ ∣ z 2 1 + 4 z 2 2 ∣ ∣ = ∣ ∣ z 2 1 − 4 z 2 3 ∣ ∣ = | z 1 − 2 z 3 | | z 1 + 2 z 3 | M, N là các điểm biểu diễn cho z 1 , z 3 ⇒ O M = 2 , O N = | z 3 | = | i z 2 | = | i | . | z 2 | = √ 3 .Gọi P là điểm biểu diễn cho 2 z 3 và Q là điểm biểu diễn cho − 2 z 3 , ta có N là trung điểm của OP và P, Q đối xứng nhau qua O. Khi đó S = M P . M Q . Áp dụng định lí Cosin trong Δ O M P có: M P 2 = O P 2 + O M 2 − 2 O P . O M . cos 30 = 12 + 4 − 2.2 √ 3 .2 . √ 3 2 = 4 ⇒ M P = 2 Áp dụng định lí Cosin trong Δ O M Q có: M Q 2 = O M 2 + O Q 2 − 2 O M . O Q . cos 150 0 = 4 + 12 + 2.2.2 √ 3 . √ 3 2 = 2 √ 7 ⇒ S = M P . M Q = 2.2 √ 7 = 4 √ 7 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0944",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 + 1 − i | = 2 và z 2 = i z 1 . Tìm giá trị lớn nhất m của biểu thức | z 1 − z 2 | . A. m = 2 B. m = 2 √ 2 + 2 C. m = 2 √ 2 D. m = √ 2 + 1",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. m = 2",
+            "B. m = 2 √ 2 + 2",
+            "C. m = 2 √ 2",
+            "D. m = √ 2 + 1"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | z 1 − z 2 | = | i z 2 − z 2 | = | z 2 ( 1 − i ) | = √ 2 | z 1 | Mà | z 1 | − | 1 − i | ≤ | z 1 + 1 − i | ≤ | z 1 | + | 1 − i | ⇒ | z 1 | − √ 2 ≤ 2 ≤ | z 1 | + √ 2 ⇒ 2 − √ 2 ≤ | z 1 | ≤ 2 + √ 2 ⇒ √ 2 ( 2 − √ 2 ) ≤ √ 2 | z 1 | ≤ √ 2 ( 2 + √ 2 ) ⇒ 2 √ 2 − 2 ≤ √ 2 | z 1 | ≤ 2 √ 2 + 2 Vậy M = 2 √ 2 + 2 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0954",
+        "question": "Cho số phức z thỏa mãn điều kiện | z − 1 − i | + | z + 1 + 3 i | = 6 √ 5 . Giá trị lớn nhất của | z − 2 − 3 i | là A. 4 √ 5 B. 2 √ 5 C. 6 √ 5 D. 5 √ 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 4 √ 5",
+            "B. 2 √ 5",
+            "C. 6 √ 5",
+            "D. 5 √ 5"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi I ( 1 ; 1 ) , J ( − 1 ; − 3 ) , A ( 2 ; 3 ) . Xét số phức z = x + y i , ( x , y ∈ R ) , có điểm biểu diễn là M ( x ; y ) . | z − 1 − i | + | z + 1 + 3 i | = 6 √ 5 ⇔ √ ( x − 1 ) 2 + ( y − 1 ) 2 + √ ( x + 1 ) 2 + ( y + 3 ) 2 = 6 √ 5 (1) ⇔ M I + M J = 6 √ 5 ⇒ M di chuyển trên đường elip có tiêu điểm I và J , độ dài trục lớn là 3 √ 5 (như hình vẽ). Tìm giá trị lớn nhất của | z − 2 − 3 i | tức là tìm độ dài lớn nhất của đoạn AM khi M di chuyển trên elip. Ta có: −→ I A = ( 1 ; 2 ) , −→ J A = ( 3 ; 6 ) ⇒ −→ J A = 3 −→ I A , điểm A nằm trên trục lớn của elip. ⇒ A M đạt độ dài lớn nhất khi và chỉ khi M trùng với B, là đỉnh của elip nằm trên trục lớn và khác phía A so với điểm I. Gọi S là trung điểm của IJ ⇒ S ( 0 ; − 1 ) . Độ dài đoạn A B = S A + S B Mà −→ A S = ( − 2 ; − 4 ) ⇒ A S = 2 √ 5 , S B = 6 √ 5 2 = 3 √ 5 ⇒ A B = 5 √ 5 Vậy | z − 2 − 3 i | max = 5 √ 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R0964",
+        "question": "Biết số phức z thỏa mãn | z − 3 − 4 i | = √ 5 và biểu thức T = | z + 2 | 2 − | z − i | 2 đạt giá trị lớn nhất. Tính | z | ? A. | z | = 50 B. | z | = 5 √ 2 C. | z | = √ 10 D. | z | = √ 33",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. | z | = 50",
+            "B. | z | = 5 √ 2",
+            "C. | z | = √ 10",
+            "D. | z | = √ 33"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z = x + y i ⇒ ( x − 3 ) 2 + ( y − 4 ) 2 = 5 ( 1 ) T = | x + y i + 2 | 2 − | x + y i − i | 2 = ( x + 2 ) 2 + y 2 − x 2 − ( y − 1 ) 2 = 4 x + 2 y + 3 = 4 ( x − 3 ) + 2 ( y − 4 ) + 23 Ta có: [ 4 ( x − 3 ) + 2 ( y − 4 ) ] 2 ≤ ( 4 2 + 2 2 ) [ ( x − 3 ) 2 + ( y − 4 ) 2 ] = 180 ⇔ 4 ( x − 3 ) + 2 ( y − 4 ) ≤ 6 √ 5 Dấu bằng xảy ra ⇔ x − 3 4 = y − 4 2 ⇔ x − 3 = 2 y − 8 ⇔ x = 2 y − 5 Thay vào (1) ta có: ( 2 y − 8 ) 2 + ( y − 4 ) 2 = 5 ⇔ 5 ( y − 4 ) 2 = 5 ⇔ [ y − 4 = 1 y − 4 = − 1 ⇔ [ y = 5 y = 3 ⇔ ⎡ ⎢ ⎢ ⎢ ⎢ ⎣ { x = 5 y = 5 { x = 1 y = 3 ⇒ [ z = 5 + 5 i z = 1 + 3 i z = 5 + 5 i ⇒ T = 33 ( T M ) z = 1 + 3 i ⇒ T = 13 < 33 ( K T M ) => z = 5 + 5 i => | z | = 5 √ 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R0974",
+        "question": "Cho hai số phức z, w thỏa mãn { | z − 3 − 2 i | ≤ 1 | w + 1 + 2 i | ≤ | w − 2 − i | . Tìm GTNN P min của biểu thức P = | z − w | . A. P min = 2 √ 2 + 1 2 . B. P min = 3 √ 2 − 2 2 . C. P min = 5 √ 2 − 2 2 . D. P min = √ 2 + 1 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. P min = 2 √ 2 + 1 2 .",
+            "B. P min = 3 √ 2 − 2 2 .",
+            "C. P min = 5 √ 2 − 2 2 .",
+            "D. P min = √ 2 + 1 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt A ( 3 ; 2 ) , B ( − 1 ; − 2 ) , C ( 2 ; 1 ) . Gọi M, N lần lượt là điểm biểu diến của z, w. Vì | z − 3 − 2 i | ≤ 1 nên tập hợp điểm biểu diễn của z trên hệ trục Oxy là hình tròn tâm A bán kính 1. Vì | w + 1 + 2 i | ≤ | w − 2 − i | nên tập hợp điểm biểu diễn của w trên hệ trục Oxy là nửa mặt phẳng bờ d chứa B và đường thẳng d. Trong đó d là trung trực của đoạn thẳng BC. P = | z − w | = M N , P min = M N min . Dễ dàng kiểm tra được A, B, C thẳng hàng và MN ngắn nhất khi MN trùng với M 0 N 0 . Trong đó, N 0 : trung điểm của BC, M 0 : giao của AB và đường tròn ( A ; 1 ) . Độ dài đoạn M 0 N 0 = d ( A ; d ) − R = d ( A ; d ) − 1 *) Phương trình đường thẳng d: N 0 là trung điểm BC ⇒ N 0 ( 1 2 ; − 1 2 ) −−→ B C = ( 3 ; 3 ) ⇒ d có 1 VTPT là ( 1 ; 1 ) Phương trình đường thẳng d: 1 ( x − 1 2 ) + 1 ( y − − 1 2 ) = 0 ⇔ x + y = 0 d ( A ; d ) = | 3 + 2 | √ 1 2 + 1 2 = 5 √ 2 ⇒ M o N 0 = 5 √ 2 − 1 = 5 √ 2 − 2 2 Vậy, P min = 5 √ 2 − 2 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R0984",
+        "question": "Trong các số phức z thỏa mãn ∣ ∣ z 2 + 1 ∣ ∣ = 2 | z | , gọi z 1 và z 2 lần lượt là các số phức có môđun lớn nhất và nhỏ nhất. Khi đó môđun lớn nhất của số phức w = z 1 + z 2 là: A. | w | = 2 √ 2 B. | w | = 2 C. | w | = √ 2 D. | w | = 1 + √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. | w | = 2 √ 2",
+            "B. | w | = 2",
+            "C. | w | = √ 2",
+            "D. | w | = 1 + √ 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có ∣ ∣ z 2 + 1 ∣ ∣ = 2 | z | ⇔ ∣ ∣ z 2 + 1 ∣ ∣ 2 = 4 | z | 2 ⇔ ( z 2 + 1 ) ( ¯¯¯¯¯¯¯¯¯¯¯¯¯¯ z 2 + 1 ) = 4 z ¯¯¯ z ⇔ ( z 2 + 1 ) ( ¯¯¯ z 2 + 1 ) = 4 z ¯¯¯ z ⇔ ( z ¯¯¯ z ) 2 + z 2 + ¯¯¯ z 2 + 1 − 4 z ¯¯¯ z = 0 ⇔ ( z + ¯¯¯ z ) 2 + ( z ¯¯¯ z ) 2 − 6 z ¯¯¯ z + 1 = 0 ⇔ ( z + ¯¯¯ z ) 2 + | z | 4 − 6 | z | 2 + 1 = 0 ⇔ | z | 4 − 6 | z | 2 + 1 = − ( z + ¯¯¯ z ) 2 ≤ 0 ⇔ 3 − 2 √ 2 ≤ | z | 2 ≤ 3 + 2 √ 2 ⇔ √ 2 − 1 ≤ | z | ≤ √ 2 + 1 ⇒ { | z 1 | = √ 2 − 1 | z 2 | = √ 2 + 1 Dấu = xảy ra ⇔ ⎧ ⎪ ⎪ ⎨ ⎪ ⎪ ⎩ | z 1 | = √ 2 − 1 | z 2 | = √ 2 + 1 z + ¯¯¯ z = 0 ⇔ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ ⎡ ⎢ ⎣ z 1 = ( √ 2 − 1 ) i z 1 = ( 1 − √ 2 ) i ⎡ ⎢ ⎣ z 2 = ( √ 2 + 1 ) i z 2 = ( − √ 2 − 1 ) i ⇔ [ | w | = | z 1 + z 2 | = 2 √ 2 | w | = | z 1 + z 2 | = 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R0994",
+        "question": "Cho hai số phức z 1 ; z 2 thỏa mãn điều kiện 2 ∣ ∣ ¯¯¯¯¯ z 1 + i ∣ ∣ = ∣ ∣ ¯¯¯¯¯ z 1 − z 1 − 2 i ∣ ∣ và | z 2 − i − 10 | = 1 . Tìm giá trị nhỏ nhất của biểu thức | z 1 − z 2 | ? A. √ 10 + 1 B. 3 √ 5 − 1 C. √ √ 101 + 1 D. √ √ 101 − 1",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 10 + 1",
+            "B. 3 √ 5 − 1",
+            "C. √ √ 101 + 1",
+            "D. √ √ 101 − 1"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi z 1 = x + y i ta có: 2 | x − y i + i | = | x − y i − x − y i − 2 i | ⇔ 2 | x − y i + i | = 2 | y i + i | ⇔ x 2 + ( y − 1 ) 2 = ( y + 1 ) 2 ⇔ x 2 + y 2 − 2 y + 1 = y 2 + 2 y + 1 ⇔ x 2 = 4 y ⇔ y = x 2 4 ⇒ Tập hợp các điểm biểu diễn cho số phức z 1 là parabol y = x 2 4 . Tập hợp các điểm biểu diễn cho số phức z 2 là là đường tròn ( C ) tâm I ( 10 ; 1 ) bán kính R = 1 . ⇒ ( C ) : ( x − 10 ) 2 + ( y − 1 ) 2 = 1 . Gọi M, N lần lượt là điểm biểu diễn cho số phức z 1 , z 2 ⇒ | z 1 − z 2 | = ∣ ∣ ∣ −−→ O M − −−→ O N ∣ ∣ ∣ = M N ⇒ | z 1 − z 2 | min ⇔ M N min . Dựa vào hình vẽ ta thấy M N min ⇔ M N ⊥ tiếp tuyến tại M của parabol y = x 2 4 và đi qua I. Ta có y ′ = x 2 . Gọi M ( m ; m 2 4 ) ( m > 0 ) ⇒ y ′ ( m ) = m 2 ⇒ p t t t : y = ( x − m ) + m 2 4 = m 2 x − m 2 4 ( d ) ⇒ M N ≥ d ( I ; d ) − 1 ⇒ M N min ⇔ d ( I ; d ) = I M ⇔ ∣ ∣ ∣ 5 m − 1 − m 2 4 ∣ ∣ ∣ √ 1 + m 2 4 = √ ( m − 10 ) 2 + ( m 2 4 − 1 ) 2 ⇔ ( 5 m − 1 − m 2 4 ) 2 1 + m 2 4 = ( m − 10 ) 2 + ( m 2 4 − 1 ) 2 Giải phương trình trên ra tìm được m = 4 , khi đó I M = 3 √ 5 ⇒ M N min = 3 √ 5 − 1 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R1004",
+        "question": "Cho hai số phức z 1 , z 2 thỏa mãn | z 1 − 3 i + 5 | = 2 và | i z 2 − 1 + 2 i | = 4. Tìm giá trị lớn nhất của biểu thức T = | 2 i z 1 + 3 z 2 | . A. √ 313 + 16. B. √ 313 . C. √ 313 + 8. D. √ 313 + 2 √ 5 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 313 + 16.",
+            "B. √ 313 .",
+            "C. √ 313 + 8.",
+            "D. √ 313 + 2 √ 5 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có | z 1 − 3 i + 5 | = 2 ⇔ | 2 i ( z 1 − 3 i + 5 ) | = 2. | 2 i | ⇔ | 2 i z 1 + 6 + 10 i | = 4. Và | i z 2 − 1 + 2 i | = 4 ⇔ ∣ ∣ z 2 − 1 − 2 i i ∣ ∣ = 4 ⇔ | z 2 + 2 + i | = 4 ⇔ | − 3 z 2 − 6 − 3 i | = 12. Đặt { u = 2 i z 1 v = − 3 z 2 ⇒ { | u + 6 + 10 i | = 4 | v − 6 − 3 i | = 12 và T = | 2 i z 1 + 3 z 2 | = | 2 i z 1 − ( − 3 z 2 ) | = | u − v | . Tập hợp điểm M biểu diễn số phức u là đường tròn ( x + 6 ) 2 + ( y + 10 ) 2 = 16 tâm I 1 ( − 6 ; − 10 ) , R 1 = 4. Tập hợp điểm N biểu diễn số phức v là đường tròn ( x − 6 ) 2 + ( y − 3 ) 2 = 144 tâm I 2 ( 6 ; 3 ) , R 2 = 12. Khi đó T = M N max ⇔ M N = I 1 I 2 + R 1 + R 2 = √ 12 2 + 13 2 + 4 + 12 = √ 313 + 16. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1012",
+        "question": "Thu gọn z = ( √ 2 + 3 i ) 2 ta được: A. z = 11 − 6 i B. z = − 1 − i C. z = 4 + 3 i D. z = − 7 + 6 √ 2 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z = 11 − 6 i",
+            "B. z = − 1 − i",
+            "C. z = 4 + 3 i",
+            "D. z = − 7 + 6 √ 2 i"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z = ( √ 2 + 3 i ) 2 = 2 + 6 √ 2 i + 9 i 2 = − 7 + 6 √ 2 i Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1021",
+        "question": "Phần thực của số phức z thỏa mãn: ( 1 + i ) 2 ( 2 − i ) z = 8 + i + ( 1 + 2 i ) z là: A. − 6 B. − 3 C. 2 D. − 1",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. − 6",
+            "B. − 3",
+            "C. 2",
+            "D. − 1"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: ( 1 + i ) 2 ( 2 − i ) z = 8 + i + ( 1 + 2 i ) z ⇔ ( 1 + 2 i + i 2 ) ( 2 − i ) z = 8 + i + ( 1 + 2 i ) z ⇔ ( 2 + 4 i ) z = 8 + i + ( 1 + 2 i ) z ⇔ ( 1 + 2 i ) z = 8 + i ⇒ z = 8 + i 1 + 2 i = ( 8 + i ) ( 1 − 2 i ) ( 1 + 2 i ) ( 1 − 2 i ) = 10 − 15 i 1 2 + 2 2 = 2 − 3 i Phần thực của số phức z là 2 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1031",
+        "question": "Trong các kết luận sau, kết luận nào sai: A. z + ¯¯¯ z là một số thực B. z − ¯¯¯ z là một số ảo C. z . ¯¯¯ z là một số thực D. z 2 + ¯¯¯ z 2 là một số ảo",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z + ¯¯¯ z là một số thực",
+            "B. z − ¯¯¯ z là một số ảo",
+            "C. z . ¯¯¯ z là một số thực",
+            "D. z 2 + ¯¯¯ z 2 là một số ảo"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i ( a , b ∈ R ) ⇒ ¯¯¯ z = a − b i Ta có: z + ¯¯¯ z = a + b i + a − b i = 2 a là một số thực ⇒ A đúng z − ¯¯¯ z = a + b i − a + b i = 2 b i là một số ảo ⇒ B đúng z . ¯¯¯ z = ( a + b i ) . ( a − b i ) = a 2 + b 2 là một số thực ⇒ C đúng z 2 + ¯¯¯ z 2 = ( a + b i ) 2 + ( a − b i ) 2 = 2 a 2 − 2 b 2 là một số thực ⇒ D sai Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1041",
+        "question": "Cho hai số phức z 1 = 1 + 2 i ; z 2 = 2 − 3 i . Xác định phần ảo của số phức 3 z 1 − 2 z 2 A. 11 B. 12 C. 10 D. 13",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 11",
+            "B. 12",
+            "C. 10",
+            "D. 13"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 1 = 1 + 2 i ; z 2 = 2 − 3 i ⇒ 3 z 1 − − 2 z 2 = 3 ( 1 + 2 i ) − 2 ( 2 − 3 i ) = 3 + 6 i − 4 + 6 i = − 1 + 12 i Vậy phần ảo của số phức đó là 12 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R1052",
+        "question": "Điểm biểu diễn của số phức z là M ( 1 ; 2 ) . Tọa độ của điểm biểu diễn số phức w = z − 2 ¯¯¯ z là A. (2; -3). B. (2; 1). C. (-1; 6). D. (2; 3).",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. (2; -3).",
+            "B. (2; 1).",
+            "C. (-1; 6).",
+            "D. (2; 3)."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm biểu diễn của số phức z là M ( 1 ; 2 ) ⇒ z = 1 + 2 i w = z − 2 ¯¯¯ z = ( 1 + 2 i ) − 2 ( 1 − 2 i ) = − 1 + 6 i ⇒ Điểm biểu diễn của số phức w = z − 2 ¯¯¯ z là ( − 1 ; 6 ) . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1061",
+        "question": "Gọi z 1 , z 2 lần lượt là hai nghiệm của phương trình z 2 − 4 z + 5 = 0 với z 1 có phần ảo dương. Giá trị của biểu thức P = ( z 1 − 2 z 2 ) . ¯¯¯¯¯ z 2 − 4 z 1 bằng A. − 15 B. − 10 C. − 5 D. 10",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. − 15",
+            "B. − 10",
+            "C. − 5",
+            "D. 10"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com z 2 − 4 z + 5 = 0 ⇔ z 1 , 2 = 2 ± i ⇒ | z 1 | 2 = | z 2 | 2 = 2 2 + 1 2 = 5 P = ( z 1 − 2 z 2 ) . ¯¯¯¯¯ z 2 − 4 z 1 P = ( 2 + i − 2 ( 2 − i ) ) . ( 2 + i ) − 4 ( 2 + i ) P = ( − 2 + 3 i ) ( 2 + i ) − 4 ( 2 + i ) P = − 7 + 4 i − 8 − 4 i = − 15 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1072",
+        "question": "Tìm số phức liên hợp của số phức z = 3 + 2 i . A. ¯¯¯ z = 3 − 2 i . B. ¯¯¯ z = − 3 − 2 i . C. ¯¯¯ z = 2 − 3 i . D. ¯¯¯ z = − 2 − 3 i .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ¯¯¯ z = 3 − 2 i .",
+            "B. ¯¯¯ z = − 3 − 2 i .",
+            "C. ¯¯¯ z = 2 − 3 i .",
+            "D. ¯¯¯ z = − 2 − 3 i ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức z = 3 + 2 i là ¯¯¯ z = 3 − 2 i . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1081",
+        "question": "Cho số phức z thỏa mãn | z + 3 − 4 i | = 5 . Biết rằng tập hợp điểm trong mặt phẳng tọa độ biểu diễn các số phức z là một đường tròn. Tìm tọa độ tâm I và bán kính R của đường tròn đó. A. I ( 3 ; − 4 ) , R = √ 5 . B. I ( − 3 ; 4 ) , R = √ 5 . C. I ( 3 ; − 4 ) , R = 5 . D. I ( − 3 ; 4 ) , R = 5 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. I ( 3 ; − 4 ) , R = √ 5 .",
+            "B. I ( − 3 ; 4 ) , R = √ 5 .",
+            "C. I ( 3 ; − 4 ) , R = 5 .",
+            "D. I ( − 3 ; 4 ) , R = 5 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = x + y i , ( x , y ∈ R ) Theo đề bài ta có: | z + 3 − 4 i | = 5 ⇔ √ ( x + 3 ) 2 + ( y − 4 ) 2 = 5 ⇔ ( x + 3 ) 2 + ( y − 4 ) 2 = 25 Vậy, tập hợp điểm trong mặt phẳng tọa độ biểu diễn các số phức z là đường tròn tâm I ( − 3 ; 4 ) , R = 5 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1091",
+        "question": "Tổng phần thực và phần ảo của số phức z thỏa mãn i z + ( 1 − i ) ¯¯¯ z = − 2 i bằng A. 2 B. − 2 C. 6 D. − 6",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2",
+            "B. − 2",
+            "C. 6",
+            "D. − 6"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = a + b i , ( a , b ∈ R ) . i z + ( 1 − i ) ¯¯¯ z = − 2 i ⇔ i ( a + b i ) + ( 1 − i ) ( a − b i ) = − 2 i ⇔ a i − b + a − b i − a i − b = − 2 i ⇔ − b i + a − 2 b = − 2 i ⇔ { − b = − 2 a − 2 b = 0 ⇔ { b = 2 a = 4 ⇒ a + b = 6 Tổng của phần thực và phần ảo là 6. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1102",
+        "question": "Trong hình vẽ bên, điểm M biểu diễn số phức z . Số phức ¯¯¯ z là: A. 2 − i B. 1 + 2 i C. 1 − 2 i D. 2 + i",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538644718639_14.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. 2 − i",
+            "B. 1 + 2 i",
+            "C. 1 − 2 i",
+            "D. 2 + i"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có M ( 2 ; 1 ) biểu diễn số phức z ⇒ z = 2 + i ⇒ ¯¯¯ z = 2 − i . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1111",
+        "question": "Phương trình bậc hai nào sau đây có nghiệm là 1 + 2 i ? A. z 2 − 2 z + 3 = 0. B. z 2 + 2 z + 5 = 0. C. z 2 − 2 z + 5 = 0. D. z 2 + 2 z + 3 = 0.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z 2 − 2 z + 3 = 0.",
+            "B. z 2 + 2 z + 5 = 0.",
+            "C. z 2 − 2 z + 5 = 0.",
+            "D. z 2 + 2 z + 3 = 0."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com +) Xét phương trình: z 2 − 2 z + 3 = 0 ⇔ z 2 − 2 z + 1 + 2 = 0 ⇔ ( z − 1 ) 2 = − 2 ⇔ ( z − 1 ) 2 = 2 i 2 ⇔ | z − 1 | = √ 2 i ⇔ [ z − 1 = √ 2 i z − 1 = − √ 2 i ⇔ [ z = 1 + √ 2 i z = 1 − √ 2 i ⇒ loại đáp án A. +) Xét phương trình: z 2 + 2 z + 5 = 0 ⇔ z 2 + 2 z + 4 + 1 = 0 ⇔ ( z + 2 ) 2 = − 1 = i 2 ⇔ | z + 2 | = i ⇔ [ z + 2 = i z + 2 = − i ⇔ [ z = − 2 + i z = − 2 − i ⇒ loại đáp án B. +) Xét phương trình: z 2 − 2 z + 5 = 0 ⇔ z 2 − 2 z + 1 + 4 = 0 ⇔ ( z − 1 ) 2 = − 4 = − 4 i 2 ⇔ | z − 1 | = 2 i ⇔ [ z − 1 = 2 i z − 1 = − 2 i ⇔ [ z = 1 + 2 i z = 1 − 2 i ⇒ chọn đáp án C. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1121",
+        "question": "Có bao nhiêu số phức z thỏa mãn ( 1 + i ) z + ( 2 − i ) ¯¯¯ z = 13 + 2 i ? A. 4 B. 3 C. 2 D. 1",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 4",
+            "B. 3",
+            "C. 2",
+            "D. 1"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt z = a + b i ( a ; b ∈ R ) ⇒ ¯¯¯ z = a − b i , khi đó ta có: ( 1 + i ) ( a + b i ) + ( 2 − i ) ( a − b i ) = 13 + 2 i ⇔ a − b + ( a + b ) i + 2 a − b − ( a + 2 b ) i = 13 + 2 i ⇔ 3 a − 2 b − b i = 13 + 2 i ⇔ { 3 a − 2 b = 13 − b = 2 ⇔ { a = 3 b = − 2 ⇒ z = 3 − 2 i Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1132",
+        "question": "Cho số phức z thỏa mãn z ( 1 + i ) = 3 − 5 i . Tính môđun của z . A. | z | = √ 17 . B. | z | = 16 . C. | z | = 17 . D. | z | = 4 .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. | z | = √ 17 .",
+            "B. | z | = 16 .",
+            "C. | z | = 17 .",
+            "D. | z | = 4 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có z ( 1 + i ) = 3 − 5 i ⇔ z = 3 − 5 i 1 + i = ( 3 − 5 i ) ( 1 − i ) 1 − i 2 = − 1 − 4 i ⇒ | z | = √ ( − 1 ) 2 + ( − 4 ) 2 = √ 17 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1142",
+        "question": "Điểm M trong hình vẽ bên là điểm biểu diễn của số phức z . Tìm phần thực và phần ảo cú số phức z . A. Phần thực bằng 4 và phần ảo bằng 3 . B. Phần thực bằng 4 và phần ảo bằng 3 i . C. Phần thực bằng 3 và phần ảo bằng 4 . D. Phần thực bằng 3 và phần ảo bằng 4 i .",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538644946386_15.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. Phần thực bằng 4 và phần ảo bằng 3 .",
+            "B. Phần thực bằng 4 và phần ảo bằng 3 i .",
+            "C. Phần thực bằng 3 và phần ảo bằng 4 .",
+            "D. Phần thực bằng 3 và phần ảo bằng 4 i ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Từ hình vẽ, ta có M ( 3 ; 4 ) nên z = 3 + 4 i . Vậy phần thực bằng 3 và phần ảo bằng 4 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1152",
+        "question": "Phương trình: 8 z 2 − 4 z + 1 = 0 có nghiệm là: A. z = 1 4 + 1 4 i ; z = 5 4 − 1 4 i B. z = 1 4 + 1 4 i ; z = 1 4 − 3 4 i C. z = 1 4 + 1 4 i ; z = 1 4 − 1 4 i D. z = 2 4 + 1 4 i ; z = 1 4 − 1 4 i",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. z = 1 4 + 1 4 i ; z = 5 4 − 1 4 i",
+            "B. z = 1 4 + 1 4 i ; z = 1 4 − 3 4 i",
+            "C. z = 1 4 + 1 4 i ; z = 1 4 − 1 4 i",
+            "D. z = 2 4 + 1 4 i ; z = 1 4 − 1 4 i"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: 8 z 2 − 4 z + 1 = 0 Có: Δ ′ = 4 − 8 = − 4 = 4 i 2 ⇒ Phương trình có 2 nghiệm là: z 1 = 2 + 2 i 8 = 1 4 + 1 4 i ; z 2 = 2 − 2 i 8 = 1 4 − 1 4 i Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1161",
+        "question": "Các nghiệm z 1 = − 1 − 5 i √ 5 3 ; z 2 = − 1 + 5 i √ 5 3 là nghiệm của phương trình nào sau đây: A. z 2 − 2 z + 9 = 0 B. 3 z 2 + 2 z + 42 = 0 C. z 2 + 2 z + 27 = 0 D. 2 z 2 + 3 z + 4 = 0",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. z 2 − 2 z + 9 = 0",
+            "B. 3 z 2 + 2 z + 42 = 0",
+            "C. z 2 + 2 z + 27 = 0",
+            "D. 2 z 2 + 3 z + 4 = 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: z 1 + z 2 = − 1 − 5 i √ 5 3 + − 1 + 5 i √ 5 3 = − 2 3 z 1 . z 2 = − 1 − 5 i √ 5 3 . − 1 + 5 i √ 5 3 = 126 9 = 42 3 ⇒ z 1 ; z 2 là các nghiệm của phương trình: z 2 + 2 3 z + 42 3 = 0 ⇔ 3 z 2 + 2 z + 42 = 0 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R1172",
+        "question": "Trong C , cho phương trình a z 2 + b z + c = 0 ( a ≠ 0 ) ( ∗ ) . Gọi Δ = b 2 − 4 a c , ta xét các mệnh đề sau: 1) Nếu Δ là số thực âm thì phương trình (*) vô nghiệm 2) Nếu Δ ≠ 0 thì phương trình (*) có 2 nghiệm phân biệt 3) Nếu Δ = 0 thì phương trình (*) có 1 nghiệm kép Trong các mệnh đề trên A. Không có mệnh đề nào đúng B. Có 1 mệnh đề đúng C. Có 2 mệnh đề đúng D. Cả 3 mệnh đề đều đúng",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Không có mệnh đề nào đúng",
+            "B. Có 1 mệnh đề đúng",
+            "C. Có 2 mệnh đề đúng",
+            "D. Cả 3 mệnh đề đều đúng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com ) Sai vì nếu Δ < 0 thì √ Δ = ± i √ | Δ | do đó phương trình có 2 nghiệm phức 2) Đúng 3) Đúng Vậy có 2 mệnh đề đúng Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1183",
+        "question": "Giả sử z 1 ; z 2 là hai nghiệm phức của phương trình: z 2 − 2 z + 5 = 0 và A , B là các điểm biểu diễn của z 1 ; z 2 . Tọa độ trung điểm của đoạn thẳng A B là: A. ( 0 ; 1 ) B. ( 0 ; − 1 ) C. ( 1 ; 1 ) D. ( 1 ; 0 )",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. ( 0 ; 1 )",
+            "B. ( 0 ; − 1 )",
+            "C. ( 1 ; 1 )",
+            "D. ( 1 ; 0 )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: z 2 − 2 z + 5 = 0 Có: Δ ′ = 1 − 5 = − 4 = 4 i 2 ⇒ √ Δ ′ = √ 4 i 2 = 2 i ⇒ Phương trình có 2 nghiệm là: z 1 = 1 + 2 i ; z 2 = 1 − 2 i Khi đó: A ( 1 ; 2 ) , B ( 1 ; − 2 ) Tọa độ trung điểm đoạn thẳng A B là: ( 1 ; 0 ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1192",
+        "question": "Có bao nhiêu số phức z thỏa mãn đồng thời các điều kiện | z | = 5 và z = ¯ z . A. 1 B. 2 C. 3 D. 4",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử số phức cần tìm là z = a + b i . Từ điều kiện z = ¯ z ta có a + b i = a − b i ⇔ b = 0 Từ điều kiện | z | = 5 ⇒ a = ± 5 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R1202",
+        "question": "Tìm số điểm biểu diễn cho số phức z thỏa mãn đồng thời các điều kiện: | z + 4 | = 3 | z | và z là thuần ảo? A. 1 B. 0 C. 3 D. 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 0",
+            "C. 3",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì z là thuần ảo nên a = 0 ⇒ z = b i . Từ điều kiện | z + 4 | = 3 | z | có | b i + 4 | = 3 | b i | ⇔ b 2 + 4 2 = 9 b 2 ⇔ 8 b 2 = 16 ⇔ b 2 = 2 ⇔ b = ± √ 2 Mỗi một số phức z chỉ có 1 điểm biểu diễn trên mặt phẳng phức. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M040R1211",
+        "question": "Số phức z thỏa mãn đồng thời các điều kiện | z | = √ 2 và z 2 là số thuần ảo là: A. 1 B. 4 C. 0 D. 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 4",
+            "C. 0",
+            "D. 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử z = a + b i ( a , b ∈ R ) , ta có z 2 = a 2 − b 2 + 2 a b i . Vì z 2 là số thuần ảo nên ta có a 2 − b 2 = 0 (1) Từ điều kiện | z | = √ 2 có a 2 + b 2 = 2 (2) Ta có { a 2 − b 2 = 0 a 2 + b 2 = 2 ⇔ a 2 = b 2 = 1 . Có 4 bộ số ( a , b ) là ( 1 , 1 ) , ( 1 , − 1 ) , ( − 1 , − 1 ) , ( − 1 , 1 ) . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M040R1223",
+        "question": "Số phức z = x + y i thỏa mãn | z − 2 − 4 i | = | z − 2 i | đồng thời có mô đun nhỏ nhất là: A. z = 2 + 2 i B. z = 2 − 2 i C. z = 1 + i D. z = 1 − i",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. z = 2 + 2 i",
+            "B. z = 2 − 2 i",
+            "C. z = 1 + i",
+            "D. z = 1 − i"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Từ điều kiện | z − 2 − 4 i | = | z − 2 i | ta có | x + y i − 2 − 4 i | = | x + y i − 2 i | ⇔ ( x − 2 ) 2 + ( y − 4 ) 2 = x 2 + ( y − 2 ) 2 ⇔ − 4 x + 4 − 8 y + 16 = − 4 y + 4 ⇔ − 4 x − 4 y + 16 = 0 ⇔ x + y = 4 ⇔ x = 4 − y Ta có | z | = √ x 2 + y 2 = √ ( 4 − y ) 2 + y 2 = √ 2 y 2 − 8 y + 16 = √ 2 ( y − 2 ) 2 + 8 ≥ 2 √ 2 Vậy min | z | = 2 √ 2 khi y − 2 = 0 hay y = 2 ⇒ x = 2 ⇒ z = 2 + 2 i . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M040R1232",
+        "question": "Trong mặt phẳng tọa độ O x y , tập hợp các điểm biểu diễn số phức z thỏa mãn z ( 1 + i ) là số thực là: A. Đường tròn bán kính bằng 1 . B. Trục O x . C. Đường thẳng y = − x . D. Đường thẳng y = x .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Đường tròn bán kính bằng 1 .",
+            "B. Trục O x .",
+            "C. Đường thẳng y = − x .",
+            "D. Đường thẳng y = x ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử ta có số phức z = x + y i . Ta có z ( 1 + i ) = ( x + y i ) ( 1 + i ) = ( x − y ) + ( x + y ) i z ( 1 + i ) là số thực khi x + y = 0 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M040R1244",
+        "question": "Cho các số phức z 1 , z 2 , z 3 thỏa mãn điều kiện | z 1 | = 4 , | z 2 | = 3 , | z 3 | = 2 và | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = 48 . Giá trị của biểu thức P = | z 1 + z 2 + z 3 | bằng A. 8 B. 6 C. 1 D. 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 8",
+            "B. 6",
+            "C. 1",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: | 4 z 1 z 2 + 16 z 2 z 3 + 9 z 1 z 3 | = ∣ ∣ z 3 . ¯¯¯¯¯ z 3 . z 1 z 2 + z 1 . ¯¯¯¯¯ z 1 . z 2 z 3 + z 2 . ¯¯¯¯¯ z 2 . z 1 z 3 ∣ ∣ = ∣ ∣ z 1 z 2 z 3 . ( ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ) ∣ ∣ = | z 1 z 2 z 3 | . ∣ ∣ ¯¯¯¯¯ z 1 + ¯¯¯¯¯ z 2 + ¯¯¯¯¯ z 3 ∣ ∣ = | z 1 | . | z 2 | . | z 2 | . ∣ ∣ ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ z 1 + z 2 + z 3 ∣ ∣ = 24. | z 1 + z 2 + z 3 | = 48 ⇒ P = | z 1 + z 2 + z 3 | = 48 24 = 2 Đáp án cần chọn là: D"
+    }
+]

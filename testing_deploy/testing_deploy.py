@@ -3,6 +3,7 @@ import webbrowser
 from flask import Flask, request, render_template, session, redirect, url_for, g
 from testing_classes import TestTotal, TestChap
 from pr_br_rcmd import pr_br_rcmd
+from datetime import datetime
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Necessary to use sessions
 
@@ -10,7 +11,7 @@ app.secret_key = 'your_secret_key'  # Necessary to use sessions
 class TestingDeploy:
     def __init__(self, threshold, test_type, subject_name, num_chapters=0, rate=None):
         self.threshold = threshold
-        self.test_type = test_type
+        self.test_type = test_type if test_type in ['total', 'chapter', 'practice'] else None # left a warning
         self.subject_name = subject_name
         self.num_chapters = num_chapters
         self.result = None
@@ -80,6 +81,7 @@ class TestingDeploy:
         return score, wrong_answers
 
     def save_test_result(self, score, right_answers, wrong_answers,unchecked_answers, time_spent_per_question):
+        completion_time = datetime.now().strftime("%Y-%m-%d")
         result = {
                 'score': score,
                 'right_answers': right_answers,
@@ -87,12 +89,11 @@ class TestingDeploy:
                 'unchecked_answers': unchecked_answers,
                 'chapter': self.num_chapters,
                 'time_spent_per_question': time_spent_per_question,
-                'total_questions': self.num_ques
+                'total_questions': self.num_ques,
+                'completion_time': completion_time
             }
-        if self.test_type == 'total':
-            filename = f'{self.subject_name}_total_results.json'
-        else:
-            filename = f'{self.subject_name}_chapter_results.json'
+        
+        filename = f'{self.subject_name}_{self.test_type}_results.json'
 
         try:
             with open(filename, 'r') as f:
@@ -166,7 +167,7 @@ def before_request():
 
 if __name__ == '__main__':
     rate = [40, 20, 30 ,10]
-    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="practice", subject_name="T", num_chapters=3, rate=rate)
+    deploy = TestingDeploy(threshold=[60, 30, 10], test_type="total", subject_name="T", num_chapters=3, rate=rate)
     deploy.create_test()
     app.run(debug=True)
     webbrowser.open('http://localhost:5000/')

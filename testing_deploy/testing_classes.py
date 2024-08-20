@@ -70,7 +70,6 @@ class TestChap(TestOrigin):
 
     def create_test(self):
         questions = self.select_questions(30, self.chapter)
-        questions = self.shuffle_questions(questions)
         self.num_ques = len(questions)
         return questions
     
@@ -85,9 +84,9 @@ class TestChap(TestOrigin):
 # Example usage
 # "T" is the subject code for "Toan"
 rate = [40,20,30,10]
-test_total = TestTotal("T",rate, 3)
-questions_total = test_total.create_test() # 3 là số chương đã học
-print("Total Test Questions:", questions_total)
+# test_total = TestTotal("T",rate, 3)
+# questions_total = test_total.create_test() # 3 là số chương đã học
+# print("Total Test Questions:", questions_total)
 
 test_chap = TestChap("T", rate, 3)
 questions_chap = test_chap.create_test()

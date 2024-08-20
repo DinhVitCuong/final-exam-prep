@@ -1,0 +1,2326 @@
+[
+    {
+        "id": "M06010012",
+        "question": "Trục đường tròn là đường thẳng đi qua tâm và: A. vuông góc với một bán kính đường tròn B. vuông góc với một đường kính đường tròn C. vuông góc với mặt phẳng chứa đường tròn D. vuông góc với mặt phẳng chứa một đường kính",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. vuông góc với một bán kính đường tròn",
+            "B. vuông góc với một đường kính đường tròn",
+            "C. vuông góc với mặt phẳng chứa đường tròn",
+            "D. vuông góc với mặt phẳng chứa một đường kính"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Trục của đường tròn: là đường thẳng vuông góc với mặt phẳng chứa đường tròn tại tâm của nó. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010022",
+        "question": "Đường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là: A. trục đường tròn B. đường kính đường tròn C. bán kính đường tròn D. không xác định được",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. trục đường tròn",
+            "B. đường kính đường tròn",
+            "C. bán kính đường tròn",
+            "D. không xác định được"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là trục đường tròn. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010031",
+        "question": "Cho điểm M , đường tròn ( C M ) trục Δ và các điểm N ∈ ( C M ) , A ∈ Δ . Chọn mệnh đề sai: A. M N là đường kính B. d ( M , Δ ) = d ( N , Δ ) C. M N ⊥ Δ D. A M = A N",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M N là đường kính",
+            "B. d ( M , Δ ) = d ( N , Δ )",
+            "C. M N ⊥ Δ",
+            "D. A M = A N"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đường tròn ( C M ) là đường tròn đi qua điểm M . Vì N ∈ ( C M ) nhưng M N chưa chắc là đường kính nên A sai. Ngoài ra d ( M , Δ ) = M O = N O = d ( N , Δ ) Δ vuông góc với mp chứa ( C M ) nên vuông góc với mọi đường thẳng thuộc mp này. Do đó Δ ⊥ M N Tam giác vuông AOM = AON (hai cạnh góc vuông) nên A M = A N Vậy các đáp án còn lại đều đúng. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010041",
+        "question": "Cho hai điểm M , N và đường thẳng Δ . Chỉ cần điều kiện nào sau đây là đủ để tồn tại một đường tròn duy nhất đi qua cả M , N và nhận Δ làm trục? A. M N ⊥ Δ B. d ( M , Δ ) = d ( N , Δ ) C. M N ∩ Δ = { O } D. M N ⊥ Δ và d ( M , Δ ) = d ( N , Δ )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M N ⊥ Δ",
+            "B. d ( M , Δ ) = d ( N , Δ )",
+            "C. M N ∩ Δ = { O }",
+            "D. M N ⊥ Δ và d ( M , Δ ) = d ( N , Δ )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A sai vì nếu d ( M , Δ ) ≠ d ( N , Δ ) thì điểm M ∉ ( C N ) và N ∉ ( C M ) nên không có đường tròn thỏa mãn. Đáp án B sai vì nếu d ( M , Δ ) = d ( N , Δ ) nhưng M N không vuông góc Δ thì M N không thuộc đường tròn nhận Δ làm trục. Đáp án C sai vì chưa chắc M N có vuông góc Δ hay không, hoặc d ( M , Δ ) và d ( N , Δ ) có bằng nhau hay không. Đáp án D đúng vì gọi ( C M ) là đường tròn qua M và nhận Δ làm trục; gọi ( P ) là mặt phẳng đi qua M và vuông góc với Δ thì ( C M ) ⊂ ( P ) Nếu M N ⊥ Δ thì ( P ) đi qua N . Mặt khác d ( M , Δ ) = d ( N , Δ ) nên N nằm trên đường tròn ( C M ) . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010051",
+        "question": "Cho hai điểm M , N cố định và đường thẳng Δ cố định thỏa mãn M N ⊥ Δ , d ( M , Δ ) = d ( N , Δ ) . Có bao nhiêu đường tròn đi qua M , N và nhận Δ làm trục? A. 1 B. 2 C. 0 D. vô số",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 0",
+            "D. vô số"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi ( P ) là mặt phẳng chứa M N và vuông góc Δ , O = ( P ) ∩ Δ . Khi đó M O = N O nên M , N nằm trên đường tròn tâm O bán kính O M . Do M , N , Δ cố định nên ( P ) , O cố định và ( O , O M ) cố định và duy nhất. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010062",
+        "question": "Mặt tròn xoay không thể có được nếu quay hình nào quanh một đường thẳng? A. đường thẳng B. Parabol C. Elip D. Điểm",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đường thẳng",
+            "B. Parabol",
+            "C. Elip",
+            "D. Điểm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Dựa vào định nghĩa ta thấy các đáp án A, B, C đều là các đường nên khi quay chúng quanh đường thẳng ta được mặt tròn xoay. Đáp án D là một điểm nên khi quay ta chỉ được một đường tròn, do đó nó không là mặt tròn xoay. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010072",
+        "question": "Cho các hình sau đây: điểm, đường thẳng, đường tròn. Số hình khi quay quanh một trục cố định ta được mặt tròn xoay là: A. 1 B. 2 C. 3 D. 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi quay đường thẳng, đường tròn quanh một trục cố định thì ta được mặt tròn xoay. Khi quay một điểm quanh trục cố định ta chỉ được một đường tròn. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010082",
+        "question": "Quay đường cong nào sau đây quanh trục đối xứng của nó ta sẽ được một mặt cầu? A. elip B. parabol C. đường tròn D. nửa đường tròn",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. elip",
+            "B. parabol",
+            "C. đường tròn",
+            "D. nửa đường tròn"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A: Quay elip quanh trục đối xứng của nó ta được mặt tròn xoay nhưng không phải mặt cầu. Đáp án B: Quay parabol quanh trục đối xứng của nó ta được mặt tròn xoay mà không phải mặt cầu. Đáp án C: Quay đường tròn quanh đường kính của nó ta được mặt cầu. Đáp án D: Quay nửa đường tròn quanh trục đối xứng của nó ta chỉ được nửa mặt cầu. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010092",
+        "question": "Cho nửa đường tròn tâm O đường kính A B . Khi quay nửa đường tròn quanh A B ta được: A. nửa mặt cầu B. mặt cầu C. đường tròn D. hình tròn",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. nửa mặt cầu",
+            "B. mặt cầu",
+            "C. đường tròn",
+            "D. hình tròn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi quay nửa đường tròn đường kính A B quanh trục A B ta được mặt cầu đường kính A B . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010102",
+        "question": "Cho hai đường thẳng d và d ′ cắt nhau tại điểm O và góc giữa hai đường thẳng là α . Quay đường thẳng d ′ quanh d thì số đo α bằng bao nhiêu để mặt tròn xoay nhận được là mặt nón tròn xoay? A. α = 0 0 B. α = 50 0 C. α = 90 0 D. α = 180 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. α = 0 0",
+            "B. α = 50 0",
+            "C. α = 90 0",
+            "D. α = 180 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Trong mặt phẳng ( P ) cho hai đường thẳng d , d ′ cắt nhau tại O và tạo thành góc α ( 0 0 < α < 90 0 ) . Khi quay mặt phẳng ( P ) xung quanh d thì đường thẳng d ′ sinh ra một mặt được gọi là mặt nón tròn xoay (gọi tắt mặt nón). Do đó điều kiện để có được mặt nón tròn xoay là góc 0 0 < α < 90 0 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010112",
+        "question": "Quay tam giác A B C vuông tại A quanh trục A B ta được: A. hình nón B. hình trụ C. hình cầu D. hình tam giác",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. hình nón",
+            "B. hình trụ",
+            "C. hình cầu",
+            "D. hình tam giác"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quay hình tam giác vuông A B C quanh trục A B ta được hình nón đỉnh B . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010122",
+        "question": "Cho hai đường thẳng d và d ′ cắt nhau tại điểm O và góc giữa hai đường thẳng là α ( 0 0 < α < 90 0 ) . Quay đường thẳng d ′ quanh d thì ta được mặt nón có góc ở đỉnh bằng: A. 2 α B. α C. α 2 D. 4 α",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 α",
+            "B. α",
+            "C. α 2",
+            "D. 4 α"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com α là góc giữa hai đường thẳng d , d ′ thì góc 2 α là góc ở đỉnh của mặt nón. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010132",
+        "question": "Cho tam giác A O B vuông tại O . Quay tam giác quanh cạnh O A ta được hình nón có đường sinh và đường cao lần lượt là: A. A B , O A B. A B , O B C. O A , O B D. O B , O A",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. A B , O A",
+            "B. A B , O B",
+            "C. O A , O B",
+            "D. O B , O A"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy đường sinh là A B và đường cao A O . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010141",
+        "question": "Cho tam giác A B C vuông tại A , A H là đường cao. Khi quay các cạnh của tam giác A B C quanh cạnh B C thì số hình nón được tạo thành là mấy hình? A. 1 B. 0 C. 3 D. 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 0",
+            "C. 3",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Quay tam giác vuông A B C quanh cạnh huyền B C ta được hai hình nón. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010151",
+        "question": "Quay hình vuông A B C D quanh trục A C ta được: A. 2 hình nón B. 1 hình trụ C. 2 hình trụ D. 1 hình cầu",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 hình nón",
+            "B. 1 hình trụ",
+            "C. 2 hình trụ",
+            "D. 1 hình cầu"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy khi quay hình vuông A B C D quanh trục A C ta được 2 hình nón. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010161",
+        "question": "Hình A B C D khi quay quanh B C thì tạo ra: A. Một hình trụ B. Một hình nón C. Một hình nón cụt D. Hai hình nón",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1558947889651_2019-05-27_160349.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Một hình trụ",
+            "B. Một hình nón",
+            "C. Một hình nón cụt",
+            "D. Hai hình nón"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi O là giao điểm của A D và B C . - Quay tam giác vuông A B O quanh B O ta được một hình nón. - Quay tam giác vuông D C O quanh C O ta được một hình nón. Vậy có tất cả hai hình nón được tạo thành. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010171",
+        "question": "Số hình nón có được khi quay hình sau quanh trục B C là: A. 1 B. 2 C. 3 D. 4",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1547604797803_25.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vé ta thấy, có 4 hình nón được tạo thành. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010182",
+        "question": "Trục đường tròn là đường thẳng đi qua tâm và: A. vuông góc với một bán kính đường tròn B. vuông góc với một đường kính đường tròn C. vuông góc với mặt phẳng chứa đường tròn D. vuông góc với mặt phẳng chứa một đường kính",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. vuông góc với một bán kính đường tròn",
+            "B. vuông góc với một đường kính đường tròn",
+            "C. vuông góc với mặt phẳng chứa đường tròn",
+            "D. vuông góc với mặt phẳng chứa một đường kính"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Trục của đường tròn: là đường thẳng vuông góc với mặt phẳng chứa đường tròn tại tâm của nó. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010192",
+        "question": "Đường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là: A. trục đường tròn B. đường kính đường tròn C. bán kính đường tròn D. không xác định được",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. trục đường tròn",
+            "B. đường kính đường tròn",
+            "C. bán kính đường tròn",
+            "D. không xác định được"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là trục đường tròn. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010201",
+        "question": "Cho điểm M , đường tròn ( C M ) trục Δ và các điểm N ∈ ( C M ) , A ∈ Δ . Chọn mệnh đề sai: A. M N là đường kính B. d ( M , Δ ) = d ( N , Δ ) C. M N ⊥ Δ D. A M = A N",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M N là đường kính",
+            "B. d ( M , Δ ) = d ( N , Δ )",
+            "C. M N ⊥ Δ",
+            "D. A M = A N"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đường tròn ( C M ) là đường tròn đi qua điểm M . Vì N ∈ ( C M ) nhưng M N chưa chắc là đường kính nên A sai. Ngoài ra d ( M , Δ ) = M O = N O = d ( N , Δ ) Δ vuông góc với mp chứa ( C M ) nên vuông góc với mọi đường thẳng thuộc mp này. Do đó Δ ⊥ M N Tam giác vuông AOM = AON (hai cạnh góc vuông) nên A M = A N Vậy các đáp án còn lại đều đúng. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010211",
+        "question": "Cho hai điểm M , N và đường thẳng Δ . Chỉ cần điều kiện nào sau đây là đủ để tồn tại một đường tròn duy nhất đi qua cả M , N và nhận Δ làm trục? A. M N ⊥ Δ B. d ( M , Δ ) = d ( N , Δ ) C. M N ∩ Δ = { O } D. M N ⊥ Δ và d ( M , Δ ) = d ( N , Δ )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. M N ⊥ Δ",
+            "B. d ( M , Δ ) = d ( N , Δ )",
+            "C. M N ∩ Δ = { O }",
+            "D. M N ⊥ Δ và d ( M , Δ ) = d ( N , Δ )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A sai vì nếu d ( M , Δ ) ≠ d ( N , Δ ) thì điểm M ∉ ( C N ) và N ∉ ( C M ) nên không có đường tròn thỏa mãn. Đáp án B sai vì nếu d ( M , Δ ) = d ( N , Δ ) nhưng M N không vuông góc Δ thì M N không thuộc đường tròn nhận Δ làm trục. Đáp án C sai vì chưa chắc M N có vuông góc Δ hay không, hoặc d ( M , Δ ) và d ( N , Δ ) có bằng nhau hay không. Đáp án D đúng vì gọi ( C M ) là đường tròn qua M và nhận Δ làm trục; gọi ( P ) là mặt phẳng đi qua M và vuông góc với Δ thì ( C M ) ⊂ ( P ) Nếu M N ⊥ Δ thì ( P ) đi qua N . Mặt khác d ( M , Δ ) = d ( N , Δ ) nên N nằm trên đường tròn ( C M ) . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010221",
+        "question": "Cho hai điểm M , N cố định và đường thẳng Δ cố định thỏa mãn M N ⊥ Δ , d ( M , Δ ) = d ( N , Δ ) . Có bao nhiêu đường tròn đi qua M , N và nhận Δ làm trục? A. 1 B. 2 C. 0 D. vô số",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 0",
+            "D. vô số"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi ( P ) là mặt phẳng chứa M N và vuông góc Δ , O = ( P ) ∩ Δ . Khi đó M O = N O nên M , N nằm trên đường tròn tâm O bán kính O M . Do M , N , Δ cố định nên ( P ) , O cố định và ( O , O M ) cố định và duy nhất. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010232",
+        "question": "Mặt tròn xoay không thể có được nếu quay hình nào quanh một đường thẳng? A. đường thẳng B. Parabol C. Elip D. Điểm",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đường thẳng",
+            "B. Parabol",
+            "C. Elip",
+            "D. Điểm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Dựa vào định nghĩa ta thấy các đáp án A, B, C đều là các đường nên khi quay chúng quanh đường thẳng ta được mặt tròn xoay. Đáp án D là một điểm nên khi quay ta chỉ được một đường tròn, do đó nó không là mặt tròn xoay. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010242",
+        "question": "Cho các hình sau đây: điểm, đường thẳng, đường tròn. Số hình khi quay quanh một trục cố định ta được mặt tròn xoay là: A. 1 B. 2 C. 3 D. 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi quay đường thẳng, đường tròn quanh một trục cố định thì ta được mặt tròn xoay. Khi quay một điểm quanh trục cố định ta chỉ được một đường tròn. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010252",
+        "question": "Quay đường cong nào sau đây quanh trục đối xứng của nó ta sẽ được một mặt cầu? A. elip B. parabol C. đường tròn D. nửa đường tròn",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. elip",
+            "B. parabol",
+            "C. đường tròn",
+            "D. nửa đường tròn"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A: Quay elip quanh trục đối xứng của nó ta được mặt tròn xoay nhưng không phải mặt cầu. Đáp án B: Quay parabol quanh trục đối xứng của nó ta được mặt tròn xoay mà không phải mặt cầu. Đáp án C: Quay đường tròn quanh đường kính của nó ta được mặt cầu. Đáp án D: Quay nửa đường tròn quanh trục đối xứng của nó ta chỉ được nửa mặt cầu. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010262",
+        "question": "Cho nửa đường tròn tâm O đường kính A B . Khi quay nửa đường tròn quanh A B ta được: A. nửa mặt cầu B. mặt cầu C. đường tròn D. hình tròn",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. nửa mặt cầu",
+            "B. mặt cầu",
+            "C. đường tròn",
+            "D. hình tròn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi quay nửa đường tròn đường kính A B quanh trục A B ta được mặt cầu đường kính A B . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010272",
+        "question": "Cho hai đường thẳng d và d ′ cắt nhau tại điểm O và góc giữa hai đường thẳng là α . Quay đường thẳng d ′ quanh d thì số đo α bằng bao nhiêu để mặt tròn xoay nhận được là mặt nón tròn xoay? A. α = 0 0 B. α = 50 0 C. α = 90 0 D. α = 180 0",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. α = 0 0",
+            "B. α = 50 0",
+            "C. α = 90 0",
+            "D. α = 180 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Trong mặt phẳng ( P ) cho hai đường thẳng d , d ′ cắt nhau tại O và tạo thành góc α ( 0 0 < α < 90 0 ) . Khi quay mặt phẳng ( P ) xung quanh d thì đường thẳng d ′ sinh ra một mặt được gọi là mặt nón tròn xoay (gọi tắt mặt nón). Do đó điều kiện để có được mặt nón tròn xoay là góc 0 0 < α < 90 0 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010282",
+        "question": "Quay tam giác A B C vuông tại A quanh trục A B ta được: A. hình nón B. hình trụ C. hình cầu D. hình tam giác",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. hình nón",
+            "B. hình trụ",
+            "C. hình cầu",
+            "D. hình tam giác"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quay hình tam giác vuông A B C quanh trục A B ta được hình nón đỉnh B . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010292",
+        "question": "Cho hai đường thẳng d và d ′ cắt nhau tại điểm O và góc giữa hai đường thẳng là α ( 0 0 < α < 90 0 ) . Quay đường thẳng d ′ quanh d thì ta được mặt nón có góc ở đỉnh bằng: A. 2 α B. α C. α 2 D. 4 α",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 α",
+            "B. α",
+            "C. α 2",
+            "D. 4 α"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com α là góc giữa hai đường thẳng d , d ′ thì góc 2 α là góc ở đỉnh của mặt nón. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010302",
+        "question": "Cho tam giác A O B vuông tại O . Quay tam giác quanh cạnh O A ta được hình nón có đường sinh và đường cao lần lượt là: A. A B , O A B. A B , O B C. O A , O B D. O B , O A",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. A B , O A",
+            "B. A B , O B",
+            "C. O A , O B",
+            "D. O B , O A"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy đường sinh là A B và đường cao A O . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010311",
+        "question": "Cho tam giác A B C vuông tại A , A H là đường cao. Khi quay các cạnh của tam giác A B C quanh cạnh B C thì số hình nón được tạo thành là mấy hình? A. 1 B. 0 C. 3 D. 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 0",
+            "C. 3",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Quay tam giác vuông A B C quanh cạnh huyền B C ta được hai hình nón. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010321",
+        "question": "Quay hình vuông A B C D quanh trục A C ta được: A. 2 hình nón B. 1 hình trụ C. 2 hình trụ D. 1 hình cầu",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 hình nón",
+            "B. 1 hình trụ",
+            "C. 2 hình trụ",
+            "D. 1 hình cầu"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy khi quay hình vuông A B C D quanh trục A C ta được 2 hình nón. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010331",
+        "question": "Hình A B C D khi quay quanh B C thì tạo ra: A. Một hình trụ B. Một hình nón C. Một hình nón cụt D. Hai hình nón",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1558947889651_2019-05-27_160349.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Một hình trụ",
+            "B. Một hình nón",
+            "C. Một hình nón cụt",
+            "D. Hai hình nón"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi O là giao điểm của A D và B C . - Quay tam giác vuông A B O quanh B O ta được một hình nón. - Quay tam giác vuông D C O quanh C O ta được một hình nón. Vậy có tất cả hai hình nón được tạo thành. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010341",
+        "question": "Số hình nón có được khi quay hình sau quanh trục B C là: A. 1 B. 2 C. 3 D. 4",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1547604797803_25.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vé ta thấy, có 4 hình nón được tạo thành. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010352",
+        "question": "Công thức tính diện tích xung quanh hình trụ có bán kính đáy r và chiều cao h là: A. S x q = π r 2 h B. S x q = π r h C. S x q = 2 π r h D. S x q = 1 3 π r 2 h",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. S x q = π r 2 h",
+            "B. S x q = π r h",
+            "C. S x q = 2 π r h",
+            "D. S x q = 1 3 π r 2 h"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính diện tích xung quanh hình trụ: S x q = 2 π r h . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010362",
+        "question": "Cho hình trụ có diện tích xung quanh S x q và bán kính đáy r . Công thức tính chiều cao hình trụ là: A. h = S x q π r B. h = S x q π r 2 C. h = S x q 2 π r D. h = 2 S x q π r",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. h = S x q π r",
+            "B. h = S x q π r 2",
+            "C. h = S x q 2 π r",
+            "D. h = 2 S x q π r"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: S x q = 2 π r h ⇔ h = S x q 2 π r Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010371",
+        "question": "Hình trụ có bán kính đáy r = 2 c m và chiều cao h = 5 c m có diện tích xung quanh: A. 10 π c m 2 B. 5 π c m 2 C. 40 π c m 2 D. 20 π c m 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 10 π c m 2",
+            "B. 5 π c m 2",
+            "C. 40 π c m 2",
+            "D. 20 π c m 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: S x q = 2 π r h = 2 π .2 .5 = 20 π c m 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010381",
+        "question": "Cho hình trụ có bán kính đáy r = 2 và chiều cao h = 3 . Diện tích xung quanh của hình trụ này bằng A. 24 π . B. 12 π . C. 6 π . D. 20 π .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 24 π .",
+            "B. 12 π .",
+            "C. 6 π .",
+            "D. 20 π ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Diện tích xung quanh của hình trụ này bằng S x q = 2 π r h = 2 π .2 .3 = 12 π . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010392",
+        "question": "Công thức tính diện tích toàn phần hình trụ có bán kính r và chiều cao h là: A. S t p = 2 π r h + 2 π r 2 B. S t p = 2 π r h C. S t p = 2 π r 2 D. S t p = 2 π r h + π r 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. S t p = 2 π r h + 2 π r 2",
+            "B. S t p = 2 π r h",
+            "C. S t p = 2 π r 2",
+            "D. S t p = 2 π r h + π r 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính diện tích toàn phần hình trụ là: S t p = 2 π r h + 2 π r 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010401",
+        "question": "Công thức nào sau đây không đúng khi tính diện tích toàn phần hình trụ? A. S t p = 2 π r h + 2 π r 2 B. S t p = S x q + 2 S d C. S t p = C d ( r + h ) D. S t p = 2 C d ( r + h )",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S t p = 2 π r h + 2 π r 2",
+            "B. S t p = S x q + 2 S d",
+            "C. S t p = C d ( r + h )",
+            "D. S t p = 2 C d ( r + h )"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: S t p = S x q + 2 S d = 2 π r h + 2 π r 2 = 2 π r ( h + r ) = C d . ( h + r ) Dó đó công thức ở đáp án D là sai. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010411",
+        "question": "Hình trụ có bán kính r = 5 c m và chiều cao h = 3 c m có diện tích toàn phần gần với số nào sau đây? A. 251 , 3 c m 2 B. 141 , 3 c m 2 C. 172 , 8 c m 2 D. 125 , 7 c m 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 251 , 3 c m 2",
+            "B. 141 , 3 c m 2",
+            "C. 172 , 8 c m 2",
+            "D. 125 , 7 c m 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: S t p = 2 π r h + 2 π r 2 = 2 π .5 .3 + 2 π .5 2 ≈ 251 , 3 c m 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010422",
+        "question": "Công thức tính thể tích khối trụ có bán kính r và chiều cao h là: A. V = 1 3 π r 2 h B. V = π r 2 h C. V = 2 π r 2 h D. V = π h 2 r",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. V = 1 3 π r 2 h",
+            "B. V = π r 2 h",
+            "C. V = 2 π r 2 h",
+            "D. V = π h 2 r"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính thể tích khối trụ là V = π r 2 h Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010432",
+        "question": "Chiều cao khối trụ có thể tích V và diện tích đáy S d là: A. h = V 2 S d B. h = V S d C. h = 2 V S d D. h = V π S d",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. h = V 2 S d",
+            "B. h = V S d",
+            "C. h = 2 V S d",
+            "D. h = V π S d"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: V = π r 2 h = S d . h ⇒ h = V S d Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010441",
+        "question": "Thể tích khối trụ có bán kính r = 4 c m và chiều cao h = 5 c m là: A. 40 π c m 3 B. 80 π c m 3 C. 60 π c m 3 D. 100 π c m 3",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 40 π c m 3",
+            "B. 80 π c m 3",
+            "C. 60 π c m 3",
+            "D. 100 π c m 3"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: V = π r 2 h = π .4 2 .5 = 80 π c m 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010451",
+        "question": "Một khối trụ có bán kính đáy bằng 2 , chiều cao bằng 3 . Tính thể tích V của khối trụ. A. V = 12 π B. V = 18 π C. V = 6 π D. V = 4 π",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. V = 12 π",
+            "B. V = 18 π",
+            "C. V = 6 π",
+            "D. V = 4 π"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: V = π R 2 h = π .2 2 .3 = 12 π . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010461",
+        "question": "Cho hình chữ nhật A B C D có A B = 3 , B C = 4 . Gọi V 1 , V 2 lần lượt là thể tích của các khối trụ sinh ra khi quay hình chữ nhật quanh trục A B và B C . Khi đó tỉ số V 1 V 2 bằng: A. 4 3 . B. 3 4 . C. 9 16 . D. 16 9 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 4 3 .",
+            "B. 3 4 .",
+            "C. 9 16 .",
+            "D. 16 9 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Có V 1 = π B C 2 . A B ; V 2 = π . A B 2 . B C ⇒ V 1 V 2 = B C A B = 4 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010473",
+        "question": "Khi sản xuất vỏ lon sữa bò hình trụ, các nhà thiết kế luôn đặt mục tiêu sao cho chi phí nguyên liệu làm vỏ lon là ít nhất, tức là diện tích toàn phần của hình trụ là nhỏ nhất. Muốn thể tích khối trụ đó bằng V và diện tích toàn phần phần hình trụ nhỏ nhất thì bán kính đáy R bằng: A. R = 3 √ V 2 π . B. R = 3 √ V π . C. R = √ V 2 π . D. R = √ V π .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = 3 √ V 2 π .",
+            "B. R = 3 √ V π .",
+            "C. R = √ V 2 π .",
+            "D. R = √ V π ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình trụ đó có chiều cao h = V π R 2 và diện tích toàn phần S t p = 2 π R 2 + 2 π R h = 2 π R 2 + 2 V R = 2 π R 2 + V R + V R ≥ 3 3 √ 2 π R 2 . V R . V R = 3 3 √ 2 π V 2 Dấu “=” xảy ra ⇔ 2 π R 2 = V R ⇔ R 3 = V 2 π ⇔ R = 3 √ V 2 π Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010483",
+        "question": "Từ một tấm tôn hình chữ nhật kích thước 50 c m × 240 c m , người ta làm các thùng đựng nước hình trụ có chiều cao bằng 50 c m , theo hai cách sau (xem hình minh họa dưới đây): - Cách 1: Gò tấm tôn ban đầu thành mặt xung quanh của thùng. - Cách 2: Cắt tấm tôn ban đầu thành hai tấm bằng nhau, rồi gò mỗi tấm đó thành mặt xung quanh của một thùng. Kí hiệu V 1 là thể tích của thùng gò được theo cách 1 và V 2 là tổng thể tích của hai thùng gò được theo cách 2. Tính tỉ số V 1 V 2 . A. V 1 V 2 = 1 2 B. V 1 V 2 = 1 C. V 1 V 2 = 2 D. V 1 V 2 = 4",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0330/cau-172.png",
+        "difficulty": 3,
+        "options": [
+            "A. V 1 V 2 = 1 2",
+            "B. V 1 V 2 = 1",
+            "C. V 1 V 2 = 2",
+            "D. V 1 V 2 = 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cách 1: Chu vi đáy là 240 c m ⇒ 2 π R 1 = 240 ⇔ R 1 = 120 π ⇒ V 1 = π R 2 1 h = π ( 120 π ) 2 h = 120 2 .50 π Cách 2: Chu vi đáy mỗi hình trụ nhỏ là: 240 : 2 = 120 c m ⇒ 2 π R = 120 ⇒ R = 60 π ⇒ V = π R 2 h = π ( 60 π ) 2 .50 = 60 2 .50 π ⇒ V 2 = 2 V = 2.60 2 .50 π Vậy V 1 V 2 = 120 2 .50 π : 2.60 2 .50 π = 2 Một đường tròn có bán kính r thì có chu vi và diện tích lần lượt là C = 2 π r ; S = π r 2 ⇒ S = C 2 4 π Gọi chiều dài tấm tôn là a thì tổng diện tích đáy của thùng theo 2 cách lần lượt là S 1 = a 2 4 π ; S 2 = 2. ( a 2 ) 2 4 π = a 2 8 π ⇒ S 1 S 2 = 2 ⇒ V 1 V 2 = 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010491",
+        "question": "Trong không gian, cho hình chữ nhật A B C D có A B = 1 và A D = 2 . Gọi M , N lần lượt là trung điểm của A D và B C . Quay hình chữ nhật đó xung quanh trục M N , ta được một hình trụ. Tính diện tích toàn phần S t p của hình trụ đó. A. S t p = 4 π B. S t p = 12 π C. S t p = 6 π D. S t p = 10 π",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S t p = 4 π",
+            "B. S t p = 12 π",
+            "C. S t p = 6 π",
+            "D. S t p = 10 π"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình trụ có bán kính đáy r = 1 , chiều cao h = 1 nên có S t p = 2 π r 2 + 2 π r h = 4 π . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010503",
+        "question": "Cho một cái bể nước hình hộp chữ nhật có ba kích thước 2 m , 3 m , 2 m lần lượt là chiều dài, chiều rộng, chiều cao của lòng trong đựng nước của bể. Hàng ngày nước ở trong bể được lấy ra bởi một cái gáo nước hình trụ có chiều cao là 5 c m và bán kính đường tròn đáy là 4 c m . Trung bình một ngày được múc ra 170 gáo nước để sử dụng (Biết mỗi lần múc là múc đầy gáo). Hỏi sau bao nhiêu ngày thì bể hết nước biết rằng ban đầu bể đầy nước? A. 280 ngày B. 281 ngày C. 282 ngày D. 882 ngày",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 280 ngày",
+            "B. 281 ngày",
+            "C. 282 ngày",
+            "D. 882 ngày"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích gáo V 1 = π R 2 . h = π .0 , 04 2 .0 , 05 = 8 π .10 − 5 ( m 3 ) Số nước múc ra trong một ngày V 2 = 170 V 1 = 170.8. π .10 − 5 = 0 , 0136 π ( m 3 ) Số ngày dùng hết nước là 2.3.2 V 2 = 12 0 , 0136 π ≈ 281 (ngày) Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010512",
+        "question": "Một cái cốc hình trụ cao 15 c m đựng được 0 , 5 lít nước. Hỏi bán kính đường tròn đáy đáy của cốc xấp xỉ bằng bao nhiêu (làm tròn đến hàng thập phân thứ hai)? A. 3 , 26 c m B. 3 , 27 c m C. 3 , 25 c m D. 3 , 28 c m",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 3 , 26 c m",
+            "B. 3 , 27 c m",
+            "C. 3 , 25 c m",
+            "D. 3 , 28 c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com V = S h = π R 2 . h ⇒ R = √ V π h = √ 0 , 5.10 − 3 π .0 , 15 = 0 , 0326 ( m ) = 3 , 26 ( c m ) Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010523",
+        "question": "Một đội xây dựng cần hoàn thiện một hệ thống cột tròn của một cửa hàng kinh doanh gồm 17 chiếc. Trước khi hoàn thiện mỗi chiếc cột là một khối bê tông cốt thép hình lăng trụ lục giác đều có cạnh 14 c m ; sau khi hoàn thiện (bằng cách trát thêm vữa tổng hợp vào xung quanh) mỗi cột là một khối trụ có đường kính đáy bằng 30 c m . Biết chiều cao của mỗi cột trước và sau khi hoàn thiện là 390 c m . Tỉnh lượng vữa hỗn hợp cần dùng (tính theo đơn vị m 3 , làm tròn đến 1 chữ số thập phân sau dấu phầy). Ta có kết quả: A. 1 , 3 m 3 B. 2 , 0 m 3 C. 1 , 2 m 3 D. 1 , 9 m 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 1 , 3 m 3",
+            "B. 2 , 0 m 3",
+            "C. 1 , 2 m 3",
+            "D. 1 , 9 m 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Với cột bê tông hình lăng trụ: Đáy của mỗi cột là hình lục giác đều có diện tích bằng 6 tam giác đều cạnh 14 c m , mỗi tam giác có diện tích là 14 2 √ 3 4 ( c m 2 ) - Với cột bê tông đã trát vữa hình trụ: Đáy của mỗi cột là hình tròn bán kính 15 c m nên có diện tích là 15 2 π ( c m 2 ) Số lượng vữa cần trát thêm vào tất cả 17 cột, mỗi cột cao 390 c m là: 17.390 ( 15 2 π − 6. 14 2 √ 3 4 ) = 1 , 31.10 6 c m 3 = 1 , 31 m 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010533",
+        "question": "Cho hình vuông A B C D có cạnh bằng a . Gọi M , N lần lượt là trung điểm của A B và C D . Khi quay hình vuông A B C D quanh M N tạo thành một hình trụ. Gọi ( S ) là mặt cầu có diện tích bằng diện tích toàn phần của hình trụ, ta có bán kính của mặt cầu ( S ) là: A. a √ 6 3 B. a √ 6 2 C. a √ 6 4 D. a √ 6",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. a √ 6 3",
+            "B. a √ 6 2",
+            "C. a √ 6 4",
+            "D. a √ 6"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt trụ tạo bởi hình vuông A B C D khi quay quanh M N có chiều cao h = a và bán kính đáy r = a 2 nên có diện tích toàn phần: S t p = 2 π r ( r + h ) = 2 π . a 2 ( a 2 + a ) = 3 a 2 π 2 Mặt cầu ( S ) có diện tích bằng S t p của mặt trụ thì có bán kính R với: 4 π R 2 = 3 a 2 π 2 ⇔ R = a √ 6 4 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010543",
+        "question": "Có một miếng bìa hình chữ nhật A B C D với A B = 3 và A D = 6 . Trên cạnh A D lấy điểm E sao cho A E = 2 , trên cạnh B C lấy điểm F là trung điểm của B C . Cuốn miếng bìa lại sao cho A B trùng D C để tạo thành mặt xung quanh của một hình trụ. Khi đó tính thể tích V của tứ diện A B E F . A. V = π 3 . B. V = 9 √ 3 2 π 2 . C. V = 3 π 3 2 . D. V = 2 3 π 2 .",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1560243277569_57.PNG",
+        "difficulty": 3,
+        "options": [
+            "A. V = π 3 .",
+            "B. V = 9 √ 3 2 π 2 .",
+            "C. V = 3 π 3 2 .",
+            "D. V = 2 3 π 2 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Dựng hình lăng trụ (như hình vẽ). V A B E F = 1 2 V F . A E M B = 1 2 ( V A E N . B M F − V F . A E N ) = 1 2 . ( V A E N . B M F − 1 3 V A E N . B M F ) = 1 2 . 2 3 V A E N . B M F = 1 3 V A E N . B M F Δ A E N vuông tại E có A N = 2 R = A D π = 6 π Số đo góc ˆ A N E = 1 2 . 1 3 .360 0 = 60 0 (do ) ⇒ Δ A E N là một nửa tam giác đều cạnh 6 π ⇒ S Δ A E N = 1 2 . ( 6 π ) 2 √ 3 4 = 9 √ 3 2 π 2 ⇒ V A E N . B M F = 3. 9 √ 3 2 π 2 = 27 √ 3 2 π 2 ⇒ V A B E F = 9 √ 3 2 π 2 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010552",
+        "question": "Một hình trụ có chiều cao bằng 3 , chu vi đáy bằng 4 π . Thể tích của khối trụ là: A. 24 π B. 40 π C. 18 π D. 12 π",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 24 π",
+            "B. 40 π",
+            "C. 18 π",
+            "D. 12 π"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Bán kính đáy: r = C 2 π = 4 π 2 π = 2 Thể tích của khối trụ: V = π r 2 h = π .2 2 .3 = 12 π . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010562",
+        "question": "Đề thi THPT QG - 2021 - mã 103 Cho khối trụ có bán kính đáy r = 2 và chiều cao h = 3 . Thể tích của khối trụ đã cho bằng: A. 12 π B. 18 π C. 6 π D. 4 π",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 12 π",
+            "B. 18 π",
+            "C. 6 π",
+            "D. 4 π"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com V = π r 2 h = π .2 2 .3 = 12 π . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010572",
+        "question": "Tính thể tích V của khối trụ ngoại tiếp hình lập phương có cạnh bằng a . A. V = 3 π a 3 4 B. V = π a 3 C. V = π a 3 6 D. V = π a 3 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. V = 3 π a 3 4",
+            "B. V = π a 3",
+            "C. V = π a 3 6",
+            "D. V = π a 3 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khối trụ ngoại tiếp hình lập phương có cạnh bằng a thì bán kính đáy r = a √ 2 2 và chiều cao h = a . Suy ra V = π r 2 h = π a 3 2 Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06010582",
+        "question": "Cho hình lập phương A B C D . A ′ B ′ C ′ D ′ có cạnh bằng a . Diện tích xung quanh của hình trụ có đáy là hai hình tròn ngoại tiếp hai hình vuông A B C D và A ′ B ′ C ′ D ′ là: A. √ 2 π a 2 B. 2 π a 2 C. π a 2 D. 2 √ 2 π a 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. √ 2 π a 2",
+            "B. 2 π a 2",
+            "C. π a 2",
+            "D. 2 √ 2 π a 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có hình hộp A B C D . A ′ B ′ C ′ D ′ có các cạnh bằng a ⇒ A A ′ = a là đường sinh của hình trụ. Bán kính đáy của hình trụ là R = A C 2 = a √ 2 2 . ⇒ Diện tích xung quanh của hình trụ là: S x q = 2 π R l = 2 π . a √ 2 2 . a = √ 2 π a 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010591",
+        "question": "Cho hình trụ có bán kính đáy bằng a . Cắt hình trụ bởi một mặt phẳng song song với trục của hình trụ và cách trục của hình trụ một khoảng bằng a 2 ta được thiết diện là một hình vuông. Tính thể tích khối trụ. A. π a 3 √ 3 B. π a 3 C. π a 3 √ 3 4 D. 3 π a 3",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. π a 3 √ 3",
+            "B. π a 3",
+            "C. π a 3 √ 3 4",
+            "D. 3 π a 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi ( O ) là một đường tròn đáy của hình trụ Mặt phẳng đã cho cắt ( O ) tại A và B , gọi H là trung điểm A B . Vì thiết diện thu được là hình vuông nên chiều cao hình trụ bằng h = A B = 2 A H = 2 √ O A 2 − O H 2 = a √ 3 Thể tích khối trụ là V = π R 2 h = π a 2 . a √ 3 = π a 3 √ 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010603",
+        "question": "Xét hình trụ T có thiết diện qua trục của hình trụ là hình vuông cạnh a . Tính diện tích toàn phần S của hình trụ. A. S = 3 π a 2 2 B. S = π a 2 2 C. S = 4 π a 2 D. S = 5 π a 2 4",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. S = 3 π a 2 2",
+            "B. S = π a 2 2",
+            "C. S = 4 π a 2",
+            "D. S = 5 π a 2 4"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: r = O A = A B 2 = a 2 ; h = A A ′ = a nên S t p = 2 π r h + 2 π r 2 = 2 π . a 2 . a + 2 π . ( a 2 ) 2 = π a 2 + π a 2 2 = 3 π a 2 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010613",
+        "question": "Cho hình trụ có các đáy là hình tròn tâm O và tâm O ′ , bán kính đáy bằng chiều cao và bằng 4 c m . Trên đường tròn đáy tâm O lấy điểm A , trên đường tròn đáy tâm O ′ lấy điểm B sao cho A B = 4 √ 3 c m . Thể tích khối tứ diện A O O ′ B là: A. 32 3 c m 3 B. 32 c m 3 C. 64 3 c m 3 D. 64 c m 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 32 3 c m 3",
+            "B. 32 c m 3",
+            "C. 64 3 c m 3",
+            "D. 64 c m 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tam giác O A O ′ vuông tại O nên: O ′ A = √ O A 2 + O ′ O 2 = √ 4 2 + 4 2 = 4 √ 2 Tam giác A O ′ B có: O ′ A 2 + O ′ B 2 = A B 2 nên tam giác A O ′ B vuông tại O ′ Ta có { O ′ B ⊥ O O ′ O ′ B ⊥ A O ′ ⇒ O ′ B ⊥ ( A O O ′ ) S Δ A O O ′ = 1 2 O A . O O = 1 2 .4 .4 = 8 ⇒ V A O O ′ B = 1 3 S Δ A O O ′ . O ′ B = 1 3 .8 .4 = 32 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06010623",
+        "question": "Một khối đồ chơi gồm hai khối trụ ( H 1 ) , ( H 2 ) xếp chồng lên nhau, lần lượt có bán kính đáy và chiều cao tương ứng là r 1 , h 1 , r 2 , h 2 thỏa mãn r 2 = 1 2 r 1 , h 2 = 2 h 1 (tham khảo hình vẽ). Biết rằng thể tích của toàn bộ khối đồ chơi bằng 30 c m 3 . Tính thể tích khối trụ ( H 1 ) bằng: A. 24 c m 3 B. 15 c m 3 C. 20 c m 3 D. 10 c m 3",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1559017681302_khoi_tru.png",
+        "difficulty": 3,
+        "options": [
+            "A. 24 c m 3",
+            "B. 15 c m 3",
+            "C. 20 c m 3",
+            "D. 10 c m 3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích của toàn bộ khối đồ chơi là: V = π r 2 1 h 1 + π r 2 2 h 2 = π r 2 1 h 1 + π 1 4 r 2 1 .2 h 1 = 3 2 π r 2 1 h 1 = 30 ⇒ π r 2 1 h 1 = 20 Vậy thể tích khối trụ (H1) là 20 cm3. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06010633",
+        "question": "Người ta xếp hai quả cầu có cùng bán kính r vào một chiếc hộp hình trụ sao cho các quả cầu đều tiếp xúc với hai đáy, đồng thời hai quả cầu tiếp xúc với nhau và mỗi quả cầu đều tiếp xúc với đường sinh của hình trụ (tham khảo hình vẽ). Biết thể tích khối trụ là 120 c m 3 , thể tích của mỗi khối cầu bằng A. 10 c m 3 B. 20 c m 3 C. 30 c m 3 D. 40 c m 3",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1561024609027_74.PNG",
+        "difficulty": 3,
+        "options": [
+            "A. 10 c m 3",
+            "B. 20 c m 3",
+            "C. 30 c m 3",
+            "D. 40 c m 3"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Dựa vào dữ kiện bài toán và hình vẽ ⇒ Hình trụ có chiều cao h = 2 r và bán kính đáy R = 2 r . ⇒ Thể tích khối trụ là V = π ( 2 r ) 2 2 r = 8 π r 3 = 120 ⇔ r 3 = 120 8 π = 15 π . Vậy thể tích mỗi khối cầu là V c = 4 3 π r 3 = 4 3 π . 15 π = 20 ( c m 3 ) . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06010643",
+        "question": "Cho hình trụ bán kính đường tròn đáy bằng 1. Hai điểm A và B lần lượt thuộc hai đường tròn đáy sao cho A B = √ 6 , khoảng cách giữa hai đường thẳng A B và trục của hình trụ bằng 1 2 . Thể tích khối trụ được giới hạn bởi hình trụ đó bằng: A. 6 π B. π √ 6 C. π √ 3 D. 3 π",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 6 π",
+            "B. π √ 6",
+            "C. π √ 3",
+            "D. 3 π"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi O , O ′ lần lượt là tâm đường tròn đáy chứa A , B . Gọi A ′ là hình chiếu của A lên đường tròn đáy chứa điểm B . Ta có A A ′ ∥ O O ′ ⇒ O O ′ ∥ ( A A ′ B ) ⊃ A B ⇒ d ( O O ′ ; A B ) = d ( O O ′ ; ( A A ′ B ) ) = d ( O ′ ; ( A A ′ B ) ) . Gọi H là trung điểm của A ′ B , ta có O ′ H ⊥ A ′ B (quan hệ vuông góc giữa đường kính và dây cung). Khi đó ta có: { O ′ H ⊥ A ′ B O ′ H ⊥ A A ′ ⇒ O ′ H ⊥ ( A A ′ B ) ⇒ d ( O O ′ ; A B ) = O H = 1 2 . Áp dụng định lí Pytago trong tam giác vuông O ′ H B có H B = √ O ′ B 2 − O ′ H 2 = √ 1 2 − ( 1 2 ) 2 = √ 3 2 . ⇒ A ′ B = 2 H B = √ 3 . Áp dụng định lí Pytago trong tam giác vuông có: A A ′ = √ A B 2 − A ′ B 2 = √ 6 − 3 = √ 3 . Vậy thể tích khối trụ là V = π r 2 h = π .1 2 . √ 3 = π √ 3 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020012",
+        "question": "Điểm M thuộc mặt cầu tâm O bán kính R nếu: A. O M = R B. O M ≤ R C. O M < R D. O M > R",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. O M = R",
+            "B. O M ≤ R",
+            "C. O M < R",
+            "D. O M > R"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M thuộc mặt cầu tâm O bán kính R nếu O M = R . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020022",
+        "question": "Điểm M thuộc khối cầu tâm O bán kính R nếu: A. O M > R B. O M = R C. O M < R D. O M ≤ R",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. O M > R",
+            "B. O M = R",
+            "C. O M < R",
+            "D. O M ≤ R"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M thuộc khối cầu tâm O bán kính R nếu O M ≤ R . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020031",
+        "question": "Chọn mệnh đề đúng: A. Điểm thuộc mặt cầu thì thuộc khối cầu. B. Điểm thuộc khối cầu thì thuộc mặt cầu C. Điểm nằm ngoài mặt cầu thì thuộc khối cầu D. Điểm nằm ngoài khối cầu thì thuộc mặt cầu",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Điểm thuộc mặt cầu thì thuộc khối cầu.",
+            "B. Điểm thuộc khối cầu thì thuộc mặt cầu",
+            "C. Điểm nằm ngoài mặt cầu thì thuộc khối cầu",
+            "D. Điểm nằm ngoài khối cầu thì thuộc mặt cầu"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M thuộc mặt cầu tâm O bán kính R thì O M = R . Điểm M thuộc khối cầu tâm O bán kính R thì O M ≤ R . Do đó điểm thuộc mặt cầu sẽ thuộc khối cầu. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020041",
+        "question": "Chọn mệnh đề sai: A. Điểm không thuộc khối cầu thì không thuộc mặt cầu. B. Điểm nằm ngoài mặt cầu thì không thuộc khối cầu. C. Điểm không thuộc mặt cầu thì không thuộc khối cầu. D. Điểm nằm trong mặt cầu thì thuộc khối cầu.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Điểm không thuộc khối cầu thì không thuộc mặt cầu.",
+            "B. Điểm nằm ngoài mặt cầu thì không thuộc khối cầu.",
+            "C. Điểm không thuộc mặt cầu thì không thuộc khối cầu.",
+            "D. Điểm nằm trong mặt cầu thì thuộc khối cầu."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm không thuộc mặt cầu thì có thể nằm ngoài hoặc nằm trong mặt cầu nên các điểm nằm trong mặt cầu vẫn thuộc khối cầu. Do đó C sai. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020052",
+        "question": "Cho mặt cầu ( S ) tâm O , bán kính R và mặt phẳng ( P ) , gọi H là hình chiếu của O trên ( P ) . Nếu R > O H thì: A. ( P ) cắt ( S ) B. ( P ) tiếp xúc ( S ) C. ( P ) và ( S ) không có điểm chung D. ( P ) cắt ( S ) tại hai điểm phân biệt",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ( P ) cắt ( S )",
+            "B. ( P ) tiếp xúc ( S )",
+            "C. ( P ) và ( S ) không có điểm chung",
+            "D. ( P ) cắt ( S ) tại hai điểm phân biệt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu O H < R thì ( P ) cắt ( S ) theo giao tuyến là một đường tròn. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020062",
+        "question": "Cho mặt cầu ( S ) và mặt phẳng ( P ) cắt nhau tại nhiều hơn một điểm. Giao tuyến của chúng là: A. mặt phẳng B. đường tròn C. đoạn thẳng D. hình tròn",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. mặt phẳng",
+            "B. đường tròn",
+            "C. đoạn thẳng",
+            "D. hình tròn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu mặt phẳng cắt mặt cầu tại nhiều hơn 1 điểm thì giao tuyến của chúng là một đường tròn nằm trên mặt cầu. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020071",
+        "question": "Cho mặt cầu ( S ) . Nếu ( P ) là mặt phẳng kính của mặt cầu ( S ) thì: A. ( P ) tiếp xúc ( S ) B. ( P ) không cắt ( S ) C. ( P ) không đi qua tâm mặt cầu. D. ( P ) đi qua tâm mặt cầu.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ( P ) tiếp xúc ( S )",
+            "B. ( P ) không cắt ( S )",
+            "C. ( P ) không đi qua tâm mặt cầu.",
+            "D. ( P ) đi qua tâm mặt cầu."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu ( P ) là mặt phẳng kính thì O H = 0 ( H ≡ O ) hay ( P ) đi qua O là tâm mặt cầu. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020081",
+        "question": "Chọn mệnh đề đúng: A. Mặt phẳng cắt mặt cầu là mặt phẳng kính. B. Mặt phẳng chứa đường kính của mặt cầu là mặt phẳng kính. C. Mặt phẳng tiếp xúc mặt cầu là mặt phẳng kính. D. Mặt phẳng không đi qua điểm nào thuộc mặt cầu là mặt phẳng kính.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Mặt phẳng cắt mặt cầu là mặt phẳng kính.",
+            "B. Mặt phẳng chứa đường kính của mặt cầu là mặt phẳng kính.",
+            "C. Mặt phẳng tiếp xúc mặt cầu là mặt phẳng kính.",
+            "D. Mặt phẳng không đi qua điểm nào thuộc mặt cầu là mặt phẳng kính."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu ( P ) là mặt phẳng kính thì O H = 0 ( H ≡ O ) hay ( P ) đi qua O là tâm mặt cầu, do đó ( P ) đi qua đường kính của mặt cầu. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020091",
+        "question": "Có bao nhiêu mặt phẳng kính của mặt cầu? A. Vô số B. 1 C. 2 D. 0",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Vô số",
+            "B. 1",
+            "C. 2",
+            "D. 0"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mọi mặt phẳng đi qua tâm mặt cầu đều là mặt phẳng kính của mặt cầu. Do đó có vô số mặt phẳng đi qua tâm thì sẽ có vô số mặt phẳng kính. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020101",
+        "question": "Chọn mệnh đề đúng: A. Mọi đường tròn lớn của một mặt cầu đều có chung tâm. B. Mọi mặt phẳng kính của mặt cầu đều cùng đi qua một đường kính. C. Mọi đường tròn lớn của một mặt cầu đều có bán kính nhỏ hơn bán kính mặt cầu. D. Cả A, B, C đều đúng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Mọi đường tròn lớn của một mặt cầu đều có chung tâm.",
+            "B. Mọi mặt phẳng kính của mặt cầu đều cùng đi qua một đường kính.",
+            "C. Mọi đường tròn lớn của một mặt cầu đều có bán kính nhỏ hơn bán kính mặt cầu.",
+            "D. Cả A, B, C đều đúng."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Mọi đường tròn lớn của một mặt cầu đều có tâm là tâm mặt cầu nên A đúng. - Mọi mặt phẳng kính của mặt cầu đều cùng đi qua một điểm (đó là tâm mặt cầu) chứ không phải cùng một đường kính mặt cầu nên B và D đều sai. - Mọi đường tròn lớn của một mặt cầu đều có bán kính bằng bán kính mặt cầu nên C sai. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020112",
+        "question": "Cho mặt cầu ( S ) có tâm O bán kính R và đường thẳng d . Nếu d và ( S ) không có điểm chung thì: A. d ( O ; d ) > R B. d ( O ; d ) < R C. d ( O ; d ) = R D. d ( O ; d ) ≤ R",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. d ( O ; d ) > R",
+            "B. d ( O ; d ) < R",
+            "C. d ( O ; d ) = R",
+            "D. d ( O ; d ) ≤ R"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt cầu ( S ) và đường thẳng d không có điểm chung nếu d ( O ; d ) > R . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020122",
+        "question": "Số giao điểm của đường thẳng và mặt cầu tối đa có thể có là: A. 0 B. 1 C. 2 D. Vô số",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. Vô số"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đường thẳng và mặt cầu chỉ có thể có số giao điểm là 0 ; 1 ; 2 nên số giao điểm lớn nhất có thể có là 2 giao điểm. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020132",
+        "question": "Số tiếp tuyến vẽ được từ một điểm nằm trong mặt cầu là: A. 1 B. 2 C. 0 D. Vô số",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 2",
+            "C. 0",
+            "D. Vô số"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Qua một điểm nằm trong mặt cầu ta không vẽ được tiếp tuyến nào. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020142",
+        "question": "Số mặt phẳng tiếp diện của mặt cầu tại một điểm thuộc mặt cầu là: A. 0 B. 1 C. 2 D. Vô số",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. Vô số"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Qua một điểm nằm trên mặt cầu ta vẽ được duy nhất 1 mặt phẳng tiếp diện với mặt cầu tại điểm đó. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020151",
+        "question": "Các tiếp tuyến tại cùng một điểm nằm trên mặt cầu có tính chất: A. trùng nhau B. song song C. cùng thuộc mặt phẳng D. vuông góc với nhau",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. trùng nhau",
+            "B. song song",
+            "C. cùng thuộc mặt phẳng",
+            "D. vuông góc với nhau"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Các tiếp tuyến của mặt cầu tại cùng một điểm thì cùng thuộc mặt phẳng tiếp diện của mặt cầu tại điểm đó. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020161",
+        "question": "Cho mặt cầu ( S ) và điểm A ∈ ( S ) , ( P ) là tiếp diện của ( S ) tại A . Chọn mệnh đề sai: A. Mọi đường thẳng đi qua A và nằm trong ( P ) đều là tiếp tuyến của ( S ) . B. Mọi đường thẳng nằm trong ( P ) đều tiếp xúc với ( S ) . C. Các đường thẳng nằm trong ( P ) không thể có với ( S ) hai điểm chung. D. Đường thẳng O A vuông góc với ( P ) tại A .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Mọi đường thẳng đi qua A và nằm trong ( P ) đều là tiếp tuyến của ( S ) .",
+            "B. Mọi đường thẳng nằm trong ( P ) đều tiếp xúc với ( S ) .",
+            "C. Các đường thẳng nằm trong ( P ) không thể có với ( S ) hai điểm chung.",
+            "D. Đường thẳng O A vuông góc với ( P ) tại A ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A: Mọi đường thẳng đi qua A và nằm trong ( P ) đều là tiếp tuyến của ( S ) (đúng). Đáp án B: Mọi đường thẳng nằm trong ( P ) đều tiếp xúc với ( S ) (sai vì chỉ những đường thẳng đi qua A và nằm trong ( P ) mới tiếp xúc với ( S ) ) Đáp án C: Các đường thẳng nằm trong ( P ) không thể có với ( S ) hai điểm chung (đúng, chỉ có thể không có hoặc có duy nhất một điểm chúng). Đáp án D: Đường thẳng O A vuông góc với ( P ) tại A (đúng vì A là tiếp điểm). Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020171",
+        "question": "Cho mặt cầu ( S ) và điểm A nằm ngoài mặt cầu, các điểm B , C , D , E lần lượt là các tiếp điểm của các tiếp tuyến kẻ từ A đến mặt cầu. Chọn mệnh đề đúng: A. Bốn điểm B , C , D , E thẳng hàng. B. Bốn điểm B , C , D , E cùng thuộc một đường tròn. C. Bốn điểm B , C , D , E là bốn đỉnh của một hình chữ nhật. D. Bốn điểm B , C , D , E là bốn đỉnh của một hình vuông.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Bốn điểm B , C , D , E thẳng hàng.",
+            "B. Bốn điểm B , C , D , E cùng thuộc một đường tròn.",
+            "C. Bốn điểm B , C , D , E là bốn đỉnh của một hình chữ nhật.",
+            "D. Bốn điểm B , C , D , E là bốn đỉnh của một hình vuông."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Qua một điểm nằm ngoài mặt cầu vẽ được vô số tiếp tuyến với mặt cầu. Tập hợp các tiếp điểm với mặt cầu là đường tròn nằm trên mặt cầu. Do đó bốn điểm B , C , D , E cùng thuộc một đường tròn. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020181",
+        "question": "Cho mặt cầu ( S ) cố định và điểm A di nguyển trong không gian, vị trí của A để tập hợp các tiếp điểm của tiếp tuyến với mặt cầu kẻ từ A là đường tròn lớn là: A. O A = R B. không có A C. O A = 2 R D. O A = 0",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. O A = R",
+            "B. không có A",
+            "C. O A = 2 R",
+            "D. O A = 0"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com + Nếu điểm A nằm trong mặt cầu thì không vẽ được tiếp tuyến nên loại đáp án D. + Nếu điểm A nằm trên mặt cầu thì vẽ được các tiếp tuyến thuộc mặt phẳng tiếp diện nên (hay nó chỉ tiếp xúc với mặt cầu) loại đáp án A. + Nếu điểm A nằm ngoài mặt cầu thì vẽ được vô số tiếp tuyến với mặt cầu đi qua A nhưng các tiếp tuyến đều đồng quy tại A . Trong khi đó, tiếp tuyến với mặt cầu tại các điểm thuộc đường tròn lớn thì song song với nhau nên không có trường hợp nào thỏa mãn. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020191",
+        "question": "Cho mặt cầu ( S ) có đường kính 10 cm và mặt phẳng ( P ) cách tâm mặt cầu một khoảng 4 cm. Khẳng định nào sau đây sai? A. ( P ) và ( S ) có vô số điểm chung. B. ( P ) và ( S ) theo một đường tròn bán kính 3 cm. C. ( P ) tiếp xúc với ( S ) . D. ( P ) cắt ( S ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ( P ) và ( S ) có vô số điểm chung.",
+            "B. ( P ) và ( S ) theo một đường tròn bán kính 3 cm.",
+            "C. ( P ) tiếp xúc với ( S ) .",
+            "D. ( P ) cắt ( S ) ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt cầu ( S ) có đường kính là 10cm bán kính R = 5 c m . Mà khoảng cách từ tâm của mặt cầu và mặt phẳng ( P ) là d = 4 c m < R . Do đó mặt phẳng ( P ) cắt ( S ) theo một đường tròn có bán kính r = √ R 2 − d 2 = 3 ( c m ) . Vậy trong 4 đáp án chỉ có đáp án C sai. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020201",
+        "question": "Cho mặt cầu S ( I ; R ) và mặt phẳng ( P ) cách I một khoảng bằng R 2 . Khi đó giao của ( P ) và ( S ) là đường tròn có chu vi bằng: A. 2 π R . B. 2 π R √ 3 . C. π R √ 3 . D. π R .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 π R .",
+            "B. 2 π R √ 3 .",
+            "C. π R √ 3 .",
+            "D. π R ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy d ( I ; ( P ) ) = R 2 ⇒ r = √ R 2 − d 2 ( I ; ( p ) ) = R √ 3 2 . Khi đó chu vi đường tròn bằng S = 2 π r = R √ 3 π Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020212",
+        "question": "Mặt cầu ngoại tiếp hình đa diện nếu nó: A. đi qua các đỉnh của đa diện B. tiếp xúc với các mặt của đa diện C. tiếp xúc với các cạnh của đa diện D. đi qua trung điểm các cạnh của đa diện",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đi qua các đỉnh của đa diện",
+            "B. tiếp xúc với các mặt của đa diện",
+            "C. tiếp xúc với các cạnh của đa diện",
+            "D. đi qua trung điểm các cạnh của đa diện"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt cầu ngoại tiếp hình đa diện nếu nó đi qua mọi đỉnh của đa diện. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020222",
+        "question": "Trục đa giác đáy là đường thẳng vuông góc với mặt phẳng đáy tại: A. đỉnh đa giác đáy B. trực tâm đa giác đáy C. trọng tâm đa giác đáy D. tâm đường tròn đáy",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đỉnh đa giác đáy",
+            "B. trực tâm đa giác đáy",
+            "C. trọng tâm đa giác đáy",
+            "D. tâm đường tròn đáy"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Trục đa giác đáy: là đường thẳng đi qua tâm đường tròn ngoại tiếp đa giác đáy và vuông góc với mặt phẳng chứa đa giác đáy. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020232",
+        "question": "Hình chóp tứ giác đều có trục đa giác đáy là đường thẳng A. đi qua tâm đáy B. đi qua đỉnh C. đi qua đỉnh và song song đáy D. đi qua đỉnh và tâm đáy",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đi qua tâm đáy",
+            "B. đi qua đỉnh",
+            "C. đi qua đỉnh và song song đáy",
+            "D. đi qua đỉnh và tâm đáy"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình chóp tứ giác đều có trục đa giác đáy chính là đường thẳng vuông góc với đáy tại tâm hình vuông. Mọi điểm thuộc đường thẳng này đều cách đều bốn đỉnh hình vuông nên đỉnh hình chóp cũng thuộc đường thẳng này. Do đó trục đa giác đáy của hình chóp tứ giác đều là đường thẳng đi qua đỉnh và tâm đáy. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020242",
+        "question": "Tập hợp các điểm cách đều hai đầu mút của đoạn thẳng là: A. đường trung trực của đoạn thẳng B. trung điểm của đoạn thẳng C. mặt phẳng trung trực của đoạn thẳng D. đường tròn đường kính là đoạn thẳng đó",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đường trung trực của đoạn thẳng",
+            "B. trung điểm của đoạn thẳng",
+            "C. mặt phẳng trung trực của đoạn thẳng",
+            "D. đường tròn đường kính là đoạn thẳng đó"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mọi điểm nằm trên mặt phẳng trung trực của đoạn thẳng thì cách đều hai đầu mút của đoạn thẳng và ngược lại. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020252",
+        "question": "Cho ( P ) là mặt phẳng trung trực của đoạn thẳng A B , M ∈ ( P ) . Chọn kết luận đúng” A. M ∈ A B B. M là trung điểm của A B C. M A = M B D. M A + M B = A B",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. M ∈ A B",
+            "B. M là trung điểm của A B",
+            "C. M A = M B",
+            "D. M A + M B = A B"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Do M ∈ ( P ) là mặt phẳng trung trực của A B nên M A = M B . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020262",
+        "question": "Hình nào sau đây không có mặt cầu ngoại tiếp? A. hình hộp chữ nhật B. hình lập phương C. hình lăng trụ đứng có đáy là tam giác đều D. hình chóp có đáy là hình thoi",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. hình hộp chữ nhật",
+            "B. hình lập phương",
+            "C. hình lăng trụ đứng có đáy là tam giác đều",
+            "D. hình chóp có đáy là hình thoi"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com - Hình hộp chữ nhật và hình lập phương đều có mặt cầu ngoại tiếp nên A và B đúng. - Hình lăng trụ đứng có đáy là đa giác nội tiếp được đường tròn thì có mặt cầu ngoại tiếp nên C đúng. - Hình chóp có đáy là đa giác nội tiếp được đường tròn thì có mặt cầu ngoại tiếp nên D sai vì hình thoi không nội tiếp được đường tròn. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020272",
+        "question": "Số mặt cầu ngoại tiếp tứ diện là: A. 0 B. 1 C. 2 D. 4",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0",
+            "B. 1",
+            "C. 2",
+            "D. 4"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Vì tứ diện là hình chóp tam giác nên nó luôn có mặt cầu ngoại tiếp, ngoài ra nó chỉ có duy nhất một mặt cầu ngoại tiếp. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020282",
+        "question": "Hình chóp nào sau đây luôn nội tiếp được mặt cầu? A. hình chóp tam giác B. hình chóp tứ giác C. hình chóp ngũ giác D. hình chóp lục giác",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. hình chóp tam giác",
+            "B. hình chóp tứ giác",
+            "C. hình chóp ngũ giác",
+            "D. hình chóp lục giác"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong các hình chóp tam giác, tứ giác, ngũ giác, lục giác thì chỉ có tam giác luôn nội tiếp được đường tròn nên hình chóp tam giác luôn nội tiếp được mặt cầu. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020291",
+        "question": "Cho hình chóp tam giác S . A B C có ˆ S A C = ˆ S B C = 90 0 . Khi đó tâm mặt cầu ngoại tiếp hình chóp nằm trên đường thẳng nào? A. S A B. S B C. S C D. A C",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S A",
+            "B. S B",
+            "C. S C",
+            "D. A C"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy: ˆ S A C = ˆ S B C = 90 0 nên các đỉnh A , B luôn nhìn cạnh S C một góc 90 0 . Do đó tâm mặt cầu ngoại tiếp hình chóp là trung điểm S C . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020301",
+        "question": "Cho hình chóp S.ABC có đáy ABC là tam giác vuông tại A, AB = 2a, AC = a. Mặt bên (SAB), (SCA) lần lượt là các tam giác vuông tại B và C. Biết rằng thể tích khối chóp S.ABC bằng 2 3 a 3 . Bán kính mặt cầu ngoại tiếp hình chóp S.ABC là: A. R = √ 3 a 2 B. R = a √ 2 C. R = a D. R = 3 a 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. R = √ 3 a 2",
+            "B. R = a √ 2",
+            "C. R = a",
+            "D. R = 3 a 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi I là trung điểm của SA. Vì tam giác SAB vuông tại B nên IA = IB = IS Vì tam giác SAC vuông tại C nên IA = IS = IC. Do đó IA = IB = IC = IS nên I là tâm mặt cầu ngoại tiếp khối chóp S.ABC Gọi D là trung điểm của BC ta có D là tâm đường tròn ngoại tiếp tam giác ABC ⇒ I D ⊥ ( A B C ) ⇒ V S . A B C = 2 V I . A B C = 2 3 I D . S A B C ⇒ I D = 3 V S . A B C 2 S A B C = 2 a 3 2 a 2 = a A D = 1 2 B C = a √ 5 2 ⇒ A I = √ A D 2 + I D 2 = 3 a 2 = R Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020312",
+        "question": "Tâm mặt cầu ngoại tiếp hình chóp tam giác đều nằm ở đâu? A. trung điểm đoạn nối đỉnh với tâm đáy B. tâm đáy C. điểm nằm trên đoạn nối đỉnh với tâm đáy D. đỉnh hình chóp",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. trung điểm đoạn nối đỉnh với tâm đáy",
+            "B. tâm đáy",
+            "C. điểm nằm trên đoạn nối đỉnh với tâm đáy",
+            "D. đỉnh hình chóp"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Tâm mặt cầu ngoại tiếp hình chóp tam giác đều nằm trên đoạn nối đỉnh với tâm đáy. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020321",
+        "question": "Cho hình chóp đều S . A B C D có cạnh đáy bằng a , cạnh bên b . Công thức tính bán kính mặt cầu ngoại tiếp khối chóp là: A. b 2 2 √ b 2 − a 2 2 B. b 2 √ b 2 − a 2 2 C. b 2 2 √ b 2 − a 2 4 D. 2 b 2 √ b 2 − a 2 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. b 2 2 √ b 2 − a 2 2",
+            "B. b 2 √ b 2 − a 2 2",
+            "C. b 2 2 √ b 2 − a 2 4",
+            "D. 2 b 2 √ b 2 − a 2 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: A B C D là hình vuông cạnh a nên A C = a √ 2 ⇒ O A = A C 2 = a √ 2 2 Tam giác S O C vuông tại O nên S C 2 = S O 2 + O C 2 ⇒ h = S O = √ S C 2 − O C 2 = √ b 2 − a 2 2 Vậy R = b 2 2 h = b 2 2 √ b 2 − a 2 2 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020332",
+        "question": "Công thức tính bán kính mặt cầu ngoại tiếp hình chóp có cạnh bên vuông góc với đáy là: A. R = √ r 2 + h 2 4 B. R = √ r 2 + h 2 2 C. R = √ r 2 − h 2 4 D. R = r 2 + h 2 4",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. R = √ r 2 + h 2 4",
+            "B. R = √ r 2 + h 2 2",
+            "C. R = √ r 2 − h 2 4",
+            "D. R = r 2 + h 2 4"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình chóp có cạnh bên vuông góc với đáy nội tiếp mặt cầu có bán kính R = √ r 2 + h 2 4 , với r là bán kính đường tròn đáy, h là chiều cao hình chóp (độ dài cạnh bên vuông góc với đáy). Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020342",
+        "question": "Công thức tính diện tích mặt cầu là: A. S = π R 2 B. S = 4 π R 2 C. S = 2 π R 2 D. 4 3 π R 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. S = π R 2",
+            "B. S = 4 π R 2",
+            "C. S = 2 π R 2",
+            "D. 4 3 π R 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính diện tích mặt cầu S = 4 π R 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020352",
+        "question": "Diện tích của mặt cầu bán kính R = 3 bằng A. 36 π . B. 18 π . C. 12 π . D. 6 π .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 36 π .",
+            "B. 18 π .",
+            "C. 12 π .",
+            "D. 6 π ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Diện tích của mặt cầu bán kính R = 3 bằng S = 4 π .3 2 = 36 π . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020362",
+        "question": "Khối cầu thể tích V thì bán kính là: A. R = 3 V 4 π B. R = √ 3 V 4 π C. R = 1 2 . 3 √ 3 V π D. R = 3 √ 3 V 4 π",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. R = 3 V 4 π",
+            "B. R = √ 3 V 4 π",
+            "C. R = 1 2 . 3 √ 3 V π",
+            "D. R = 3 √ 3 V 4 π"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: thể tích khối cầu V = 4 3 π R 3 ⇒ R = 3 √ 3 V 4 π Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M06020372",
+        "question": "Thể tích của khối cầu bán kính a bằng A. 4 π a 3 3 B. 4 π a 3 C. π a 3 3 D. 2 π a 3",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4 π a 3 3",
+            "B. 4 π a 3",
+            "C. π a 3 3",
+            "D. 2 π a 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích khối cầu bán kính R = a là V = 4 3 π a 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020381",
+        "question": "Ba đoạn thẳng S A , S B , S C đôi một vuông góc tạo với nhau thành một tứ diện S A B C với S A = a , S B = 2 a , S C = 3 a . Tính bán kính mặt cầu ngoại tiếp hình tứ diện đó là A. a √ 6 2 B. a √ 3 6 C. a √ 14 2 D. a √ 14 4",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. a √ 6 2",
+            "B. a √ 3 6",
+            "C. a √ 14 2",
+            "D. a √ 14 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bán kính mặt cầu ngoại tiếp tứ diện vuông S . A B C được tính theo công thức R = √ S A 2 + S B 2 + S C 2 4 = √ a 2 + ( 2 a ) 2 + ( 3 a ) 2 2 = a √ 14 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020391",
+        "question": "Hình chóp S . A B C có đáy A B C là tam giác vuông tại A có S A vuông góc với mặt phẳng ( A B C ) và có S A = a , A B = b , A C = c . Mặt cầu đi qua các đỉnh A , B , C , S có bán kính r bằng : A. 2 ( a + b + c ) 3 B. 2 √ a 2 + b 2 + c 2 C. 1 2 √ a 2 + b 2 + c 2 D. √ a 2 + b 2 + c 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 ( a + b + c ) 3",
+            "B. 2 √ a 2 + b 2 + c 2",
+            "C. 1 2 √ a 2 + b 2 + c 2",
+            "D. √ a 2 + b 2 + c 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vì S A ⊥ ( A B C ) ⇒ { S A ⊥ A B S A ⊥ A C . Mà A B ⊥ A C nên hình chóp S . A B C là tứ diện vuông. Áp dụng công thức tính bán kính mặt cầu ngoại tiếp tứ diện vuông ta được R = √ a 2 + b 2 + c 2 4 = √ a 2 + b 2 + c 2 2 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020403",
+        "question": "Cho hình chóp S . A B C có đáy A B C là tam giác đều cạnh bằng 1 , mặt bên S A B là tam giác đều và nằm trong mặt phẳng vuông góc với mặt phẳng đáy. Tính thể tích V của khối cầu ngoại tiếp hình chóp đã cho. A. V = 5 √ 15 π 18 B. V = 5 √ 15 π 54 C. V = 4 √ 3 π 27 D. V = 5 π 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. V = 5 √ 15 π 18",
+            "B. V = 5 √ 15 π 54",
+            "C. V = 4 √ 3 π 27",
+            "D. V = 5 π 3"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi M , N , P , Q lần lượt là trung điểm A B , tâm đường tròn ngoại tiếp Δ S A B , tâm mặt cầu ngoại tiếp hình chóp và tâm đường tròn ngoại tiếp Δ A B C ⇒ M N P Q là hình vuông suy ra P N = M Q = 1 3 . √ 3 2 = √ 3 6 ; N B = 2 3 . √ 3 2 = √ 3 3 Bán kính mặt cầu ngoại tiếp chóp là R = P B = √ P N 2 + N B 2 = √ 15 6 Thể tích V = 4 3 π R 3 = 5 √ 15 π 54 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020413",
+        "question": "Cho hình chóp tam giác đều S . A B C có đáy A B C là tam giác đều cạnh a , cạnh S A = 2 a √ 3 3 . Gọi D là điểm đối xứng của B qua C . Tính bán kính R của mặt cầu ngoại tiếp hình chóp S . A B D A. R = a √ 39 7 B. R = a √ 35 7 C. R = a √ 37 6 D. R = a √ 13 7",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = a √ 39 7",
+            "B. R = a √ 35 7",
+            "C. R = a √ 37 6",
+            "D. R = a √ 13 7"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Do D đối xứng với C qua B nên có B C = D C = A C suy ra tam giác A B D là tam giác vuông tại A . Kẻ đường thẳng d qua C vuông góc với đáy, đường thẳng này là trục đường tròn ngoại tiếp tam giác đáy A B D . Tam giác S A B cân tại S , gọi M là trung điểm A B , H là tâm đường tròn ngoại tiếp tam giác S A B ⇒ H ∈ S M ; S M = √ S A 2 − A M 2 = a √ 13 2 √ 3 S H = A B . S A . S B 4. S S A B = ( 2 a √ 3 ) 2 . a 4. 1 2 . a . A M = 4 a √ 39 Trong ( S A C ) dựng H I ⊥ S M ( I ∈ d ) ( 1 ) . Mà { A B ⊥ S M A B ⊥ M C ⇒ A B ⊥ ( S M C ) ⇒ A B ⊥ H I ( 2 ) Từ (1), (2) suy ra H I ⊥ ( S A B ) , suy ra I là tâm đường tròn ngoại tiếp hình chóp S . A B D Gọi Q = M S ∩ C I , xét tam giác S C M có S M Q M = M G M C = 1 3 ⇒ Q M = 3 S M = 3. a √ 13 2 √ 3 = a √ 39 2 ⇒ Q H = Q M − M S + H S = a √ 39 2 − a √ 13 2 √ 3 + 4 a √ 39 = 17 a √ 39 Q C = √ Q M 2 − M C 2 = 3 a Xét: Δ Q H I ∼ Δ Q C M ⇒ H I C M = H Q Q C ⇒ H I = H Q . C M Q C = 17 a 6 √ 13 ⇒ R = S I = √ H I 2 + H S 2 =    ⎷ ( a √ 17 6 √ 13 ) 2 + ( 4 a √ 39 ) 2 = a √ 37 6 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020421",
+        "question": "Cho tứ diện đều A B C D có cạnh a . Một mặt cầu tiếp xúc với các mặt của tứ diện có bán kính là: A. a √ 6 12 B. a √ 6 6 C. a √ 6 3 D. a √ 6 8",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. a √ 6 12",
+            "B. a √ 6 6",
+            "C. a √ 6 3",
+            "D. a √ 6 8"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi H là tâm tam giác đều B C D , E là trung điểm C D Ta có A H ⊥ ( B C D ) Gọi I , r là tâm và bán kính mặt cầu tiếp xúc với các mặt của tứ diện A B C D thì I là giao của A H và phân giác góc A E B của Δ A E B . Ta có A E = B E = a √ 3 2 ; H E = B E 3 = a √ 3 6 A H = √ A E 2 − H E 2 = a √ 6 3 Áp dụng tính chất đường phân giác: I H I A = E H E A ⇒ I H I H + I A = E H E H + E A ⇒ r = I H = E H . A H E H + E A = a √ 6 12 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020433",
+        "question": "Cho hình chóp S . A B C D có đáy A B C D là hình chữ nhật, A B = a , A D = 2 a , S A ⊥ ( A B C D ) và S A = 2 a . Tính thể tích khối cầu ngoại tiếp hình chóp S . A B C D . A. 9 π a 3 B. 9 π a 3 2 C. 9 π a 3 8 D. 36 π a 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 9 π a 3",
+            "B. 9 π a 3 2",
+            "C. 9 π a 3 8",
+            "D. 36 π a 3"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi O là tâm hình chữ nhật A B C D , M và I lần lượt là trung điểm S A , S C ⇒ A O I M là hình chữ nhật. Ta có O là tâm đường tròn ngoại tiếp hình chữ nhật A B C D , O I ⊥ ( A B C D ) nên O I là trục đường tròn ngoại tiếp hình chữ nhật A B C D I M ⊥ S A ⇒ I M là trung trực S A trong mặt phẳng ( S A C ) ⇒ I là tâm mặt cầu ngoại tiếp hình chóp. Có O I = A M = S A 2 = a ; O C = A C 2 = 1 2 √ A B 2 + A D 2 = a √ 5 2 Bán kính và thể tích mặt cầu lần lượt là R = I C = √ I O 2 + O C 2 = 3 a 2 V = 4 3 π R 3 = 9 π a 3 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020443",
+        "question": "Cho hình chóp S . A B C có đáy A B C là tam giác vuông tại A , S A vuông góc với mặt phẳng ( A B C ) và A B = 2 , A C = 4 , S A = √ 5 . Mặt cầu đi qua các đỉnh của hình chóp S . A B C có bán kính là A. R = 5 2 . B. R = 5 . C. R = 10 3 . D. R = 25 2 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = 5 2 .",
+            "B. R = 5 .",
+            "C. R = 10 3 .",
+            "D. R = 25 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Xét tam giác vuông A B C ta có B C = √ A B 2 + A C 2 = √ 2 2 + 4 2 = 2 √ 5 . Tam giác A B C vuông tại A nên nội tiếp đường tròn đường kính B C . Gọi R d a y là bán kính đường tròn ngoại tiếp tam giác A B C ⇒ R d a y = B C 2 = √ 5 . Sử dụng công thức tính nhanh bán kính mặt cầu ngoại tiếp chóp S . A B C có S A ⊥ ( A B C ) : R = √ S A 2 4 + R 2 d a y = √ 5 4 + 5 = 5 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020451",
+        "question": "Cho lăng trụ đứng A B C . A ′ B ′ C ′ có đáy là tam giác vuông cân đỉnh A , A B = A C = a , A A ′ = a √ 2 . Diện tích mặt cầu ngoại tiếp tứ diện C A ′ B ′ C ′ là: A. 4 π a 2 3 B. 4 π a 2 C. 12 π a 2 D. 4 √ 3 π a 2",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 4 π a 2 3",
+            "B. 4 π a 2",
+            "C. 12 π a 2",
+            "D. 4 √ 3 π a 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: A ′ B ′ = A B = a B ′ C ′ = √ A ′ B ′ 2 + A ′ C ′ 2 = √ a 2 + a 2 = a √ 2 B ′ C = √ B ′ C ′ 2 + C ′ C 2 = √ 2 a 2 + 2 a 2 = 2 a A ′ C = √ A ′ C ′ 2 + C ′ C 2 = √ a 2 + 2 a 2 = a √ 3 ⇒ A ′ B ′ 2 + A ′ C 2 = a 2 + 3 a 2 = 4 a 2 = B ′ C 2 ⇒ Δ A ′ B ′ C vuông tại A ′ . Gọi I là trung điểm của B ′ C thì I B ′ = I C = I A ′ Mà Δ C C ′ B ′ vuông tại C ′ nên I B ′ = I C = I C ′ Vậy I là tâm mặt cầu ngoại tiếp tứ diện C A ′ B ′ C ′ và bán kính R = 1 2 B ′ C = a . ⇒ S = 4 π R 2 = 4 π a 2 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020461",
+        "question": "Cho hình lăng trụ đứng A B C . A ′ B ′ C ′ có đáy A B C là tam giác vuông tại A , A B = a √ 3 , B C = 2 a , đường thẳng A C ′ tạo với mặt phẳng ( B C C ′ B ′ ) một góc 30 ∘ . Diện tích của mặt cầu ngoại tiếp hình lăng trụ đã cho bằng A. 6 π a 2 . B. 3 π a 2 . C. 4 π a 2 . D. 24 π a 2 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 6 π a 2 .",
+            "B. 3 π a 2 .",
+            "C. 4 π a 2 .",
+            "D. 24 π a 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong mặt phẳng ( A B C ) kẻ A H ⊥ B C ( H ∈ B C ) . Lại có A H ⊥ B B ′ (do B B ⊥ ( A B C ) suy ra A H ⊥ ( B C C ′ B ′ ) . Suy ra ˆ ( A C ′ , ( B C C ′ B ′ ) ) = ˆ A C ′ H = 30 0 . Ta có: A C = √ B C 2 − A B 2 = a , A H = A B . A C B C = a √ 3 2 A C ′ = A H sin ˆ A C ′ H = a √ 3 ⇒ C C ′ = √ A C ′ 2 − A C 2 = a √ 2 . Gọi R là bán kính mặt cầu ngoại tiếp lăng trụ, khi đó R = √ r 2 + h 2 4 với r = B C 2 = a là bán kính đường tròn ngoại tiếp tam giác vuông A B C và h = C C ′ = a √ 2 Do đó R = √ a 2 + a 2 2 = a √ 6 2 ⇒ S = 4 π R 2 = 4 π . 6 a 2 4 = 6 π a 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M06020473",
+        "question": "Cho hình chóp S . A B C có S A ⊥ ( A B C ) ; A C = b , A B = c , ˆ B A C = α . Gọi B ′ , C ′ lần lượt là hình chiếu vuông góc của A lên S B , S C . Tính bán kính mặt cầu ngoại tiếp khối chóp A . B C C ′ B ′ theo b , c , α A. R = 2 √ b 2 + c 2 − 2 b c cos α B. R = √ b 2 + c 2 − 2 b c cos α sin 2 α C. R = √ b 2 + c 2 − 2 b c cos α 2 sin α D. R = 2 √ b 2 + c 2 − 2 b c cos α sin α",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = 2 √ b 2 + c 2 − 2 b c cos α",
+            "B. R = √ b 2 + c 2 − 2 b c cos α sin 2 α",
+            "C. R = √ b 2 + c 2 − 2 b c cos α 2 sin α",
+            "D. R = 2 √ b 2 + c 2 − 2 b c cos α sin α"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi A A ′ là đường kính của đường tròn ngoại tiếp tam giác A B C A C ⊥ A ′ C ; A B ⊥ A ′ B Ta chứng minh A C ′ ⊥ A ′ C ′ S A ⊥ A ′ C ; A C ⊥ A ′ C ⇒ A ′ C ⊥ A C ′ Mà A C ′ ⊥ S C ⇒ A C ′ ⊥ A ′ C ′ Tương tự A B ′ ⊥ A ′ B ′ Như vậy B , C , C ′ , B ′ cùng nhìn A A ′ bằng 1 góc vuông nên A , B , C , B ′ , C ′ cùng thuộc 1 mặt cầu có đường kính là A A ′ và cũng đồng thời là đường kính của đường tròn ngoại tiếp tam giác A B C . Tính B C = √ b 2 + c 2 − 2 b cos α Trong tam giác A B C : B C sin A = 2 R ⇒ R = √ b 2 + c 2 − 2 b c cos α 2 sin α Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M06020483",
+        "question": "Cho hình chóp có S A ⊥ ( A B C ) , A B = 3 , A C = 2 , ∠ B A C = 60 ∘ . Gọi M, N lần lượt là hình chiếu của A trên SB, SC. Tính bán kính R của mặt cầu ngoại tiếp chóp ABCNM. A. R = √ 2 B. R = √ 21 3 C. R = 4 √ 3 D. R = 1",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = √ 2",
+            "B. R = √ 21 3",
+            "C. R = 4 √ 3",
+            "D. R = 1"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi I là tâm đường tròn ngoại tiếp tam giác ABC. Kẻ đường kính AD của đường tròn tâm I. Khi đó { C ∈ ( I ; r ) ⇒ A C ⊥ C D S A ⊥ C D ⇒ C D ⊥ ( S A C ) ⇒ C D ⊥ A N ; A N ⊥ S C ⇒ A N ⊥ ( S C D ) ⇒ A N ⊥ D N ⇒ ∠ A N D = 90 ∘ Nên N thuộc đường tròn ( I ; r ) Tương tự ta có M thuộc đường tròn ( I ; r ) Vậy mặt cầu ngoại tiếp ABCNM là mặt cầu ( I ; r ) ⇒ r = I A . Ta có 2 r = B C sin B A C = √ 7 sin 60 ∘ ⇒ r = √ 21 3 . Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020491",
+        "question": "Một hình hộp chữ nhật có độ dài ba cạnh lần lượt là 2 ; 2 ; 1 . Tìm bán kính R của mặt cầu ngoại tiếp hình hộp chữ nhật trên. A. R = 3 B. R = 3 2 C. 9 2 D. R = 9",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. R = 3",
+            "B. R = 3 2",
+            "C. 9 2",
+            "D. R = 9"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng công thức trên có R = 3 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M06020501",
+        "question": "Hình lập phương có độ dài cạnh a = 6 thì đường kính mặt cầu ngoại tiếp là: A. 6 B. 6 √ 2 C. 6 √ 3 D. 6 √ 6",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 6",
+            "B. 6 √ 2",
+            "C. 6 √ 3",
+            "D. 6 √ 6"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đường kính mặt cầu ngoại tiếp hình lập phương cạnh a là D = 2 R = a √ 3 = 6 √ 3 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0014",
+        "question": "Một hình nón đỉnh S có bán kính đáy bằng 2 a √ 3 , góc ở đỉnh là 120 ∘ . Thiết diện qua đỉnh của hình nón là một tam giác. Diện tích lớn nhất S max của thiết diện đó là bao nhiêu? A. S max = 8 a 2 . B. S max = 4 a 2 √ 2 . C. S max = 4 a 2 . D. S max = 16 a 2 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. S max = 8 a 2 .",
+            "B. S max = 4 a 2 √ 2 .",
+            "C. S max = 4 a 2 .",
+            "D. S max = 16 a 2 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử O là tâm đáy và A B là một đường kính của đường tròn đáy hình nón. Thiết diện qua đỉnh của hình nón là tam giác cân S A M . Theo giả thiết hình nón có bán kính đáy R = O A = 2 a √ 3 , ˆ A S B = 120 ∘ nên ˆ A S O = 60 ∘ . Xét tam giác S O A vông tại O , ta có sin 60 ∘ = O A S A ⇒ S A = O A sin 60 ∘ = 4 a . Diện tích thiết diện là S S A M = 1 2 S A . S M . sin ˆ A S M = 1 2 .4 a .4 a . sin ˆ A S M = 8 a 2 . sin ˆ A S M Do 0 < sin ˆ A S M ≤ 1 nên S S A M lớn nhất khi và chỉ khi sin ˆ A S M = 1 hay khi tam giác A S M vuông cân đỉnh S (vì ˆ A S B = 120 ∘ > 90 ∘ nên tồn tại tam giác A S M thoả mãn). Vậy diện tích thiết diện lớn nhất là S max = 8 a 2 (đvdt). Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0024",
+        "question": "Cho khối trụ có hai đáy là hình tròn (O;R) và (O′;R) , OO′=4R . Trên đường tròn tâm O lấy (O) lấy hai điểm A,B sao cho AB=R √ 3 . Mặt phẳng (P) đi qua A,B cắt OO′ và tạo với đáy một góc bằng 600 . (P) cắt khối trụ theo thiết diện là một phần của elip. Diện tích thiết diện đó bằng: A. \\(\\left( {\\dfrac{{4\\pi }},{3} - \\dfrac{{\\sqrt 3 }},{2}} \\right){R^2}\\) B. \\(\\left( {\\dfrac{{2\\pi }},{3} + \\dfrac{{\\sqrt 3 }},{4}} \\right){R^2}\\) C. \\(\\left( {\\dfrac{{4\\pi }},{3} + \\dfrac{{\\sqrt 3 }},{2}} \\right){R^2}\\) D. \\(\\left( {\\dfrac{{2\\pi }},{3} - \\dfrac{{\\sqrt 3 }},{4}} \\right){R^2}\\)",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. \\(\\left( {\\dfrac{{4\\pi }},{3} - \\dfrac{{\\sqrt 3 }},{2}} \\right){R^2}\\)",
+            "B. \\(\\left( {\\dfrac{{2\\pi }},{3} + \\dfrac{{\\sqrt 3 }},{4}} \\right){R^2}\\)",
+            "C. \\(\\left( {\\dfrac{{4\\pi }},{3} + \\dfrac{{\\sqrt 3 }},{2}} \\right){R^2}\\)",
+            "D. \\(\\left( {\\dfrac{{2\\pi }},{3} - \\dfrac{{\\sqrt 3 }},{4}} \\right){R^2}\\)"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $M $ là trung điểm của $AB$ ta có: \\(OM = \\sqrt {O{A^2} - {{\\left( {\\dfrac{{AB}},{2}} \\right)}^2}} = \\sqrt {{R^2} - \\dfrac{{3{R^2}}},{4}} = \\dfrac{R},{2}\\) Giả sử mặt phẳng (P) cắt trục OO’ tại I. Ta có : IA = IB nên \\(\\Delta IAB\\) cân tại I, do đó \\(MI \\bot AB\\) Do đó góc giữa (P) và mặt đáy bằng \\(\\widehat {IMO} = {60^0}\\) Xét tam giác vuông IMO có : \\(OI = OM.\\tan 60 = \\dfrac{{R\\sqrt 3 }},{2} < \\dfrac{{OO'}},{2} = 2R\\) \\( \\Rightarrow I\\) nằm giữa O và O’. Do đó (P) không cắt đáy còn lại.Vậy hình chiếu của (P) trên \\(\\left( {O;R'} \\right)\\) là phần diện tích của hình quạt cung lớn AB và \\(\\Delta OAB\\)(phần gạch chéo). Áp dụng định lí Cosin trong tam giác OAB có : \\(\\cos \\widehat {AOB} = \\dfrac{{O{A^2} + O{B^2} - A{B^2}}},{{2.OA.OB}} = \\dfrac{{{R^2} + {R^2} - 3{R^2}}},{{2{R^2}}} = - \\dfrac{1},{2} \\Rightarrow \\widehat {AOB} = {120^0}\\) \\( \\Rightarrow {S_{\\Delta OAB}} = \\dfrac{1},{2}OA.OB.\\sin 120 = \\dfrac{1},{2},{R^2}\\dfrac{{\\sqrt 3 }},{2} = {R^2}\\dfrac{{\\sqrt 3 }},{4}\\) Gọi ${{S}_{\\overset\\frown{OAB}}}$ là diện tích hình quạt $\\Rightarrow {{S}_{\\overset\\frown{OAB}}}=\\dfrac{\\dfrac{4\\pi },{3}},{2\\pi }.\\pi {{R}^{2}}=\\dfrac{2},{3}\\pi {{R}^{2}}$ $\\Rightarrow {{S}_{hc}}={{S}_{\\overset\\frown{OAB}}}+{{S}_{\\Delta OAB}}=\\dfrac{2},{3}\\pi {{R}^{2}}+{{R}^{2}}\\dfrac{\\sqrt{3}},{4}$ Vậy diện tích phần thiết diện cần tìm là : ${S_{hc}} = S.\\cos 60 \\Rightarrow S = \\dfrac{{{S_{hc}}}},{{\\cos 60}} = 2\\left( {\\dfrac{2},{3}\\pi {R^2} + {R^2}\\dfrac{{\\sqrt 3 }},{4}} \\right) = \\left( {\\dfrac{4},{3}\\pi {R^2} + \\dfrac{{\\sqrt 3 }},{2},{R^2}} \\right) = \\left( {\\dfrac{4},{3}\\pi + \\dfrac{{\\sqrt 3 }},{2}} \\right){R^2}$ Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0034",
+        "question": "Một cái phễu có dạng hình nón có chiều cao $15(cm).$ Người ta đổ một lượng nước vào phễu sao cho chiều cao của lượng nước trong phễu bằng \\(\\dfrac{1},{3}\\) chiều cao ban đầu của cái phễu (hình 1). Hỏi nếu bịt kín miệng phễu rồi lộn ngược phễu lên (hình 2) thì chiều cao của nước xấp xỉ bằng bao nhiêu (làm tròn đến hàng phần nghìn). A. $0,577 (cm)$ B. $0,216 (cm) $ C. $0,325 (cm) $ D. $0,188 (cm)$",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537879224327_45.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. $0,577 (cm)$",
+            "B. $0,216 (cm) $",
+            "C. $0,325 (cm) $",
+            "D. $0,188 (cm)$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $r_1$ là bán kính đáy phễu, $r_2$ là bán kính đáy phần nước, $h_1$ và $h_2$ là chiều cao phễu và chiều cao cột nước ta có \\(\\dfrac{{{r_2}}},{{{r_1}}} = \\dfrac{{{h_2}}},{{{h_1}}} = \\dfrac{5},{{15}} = \\dfrac{1},{3} \\Rightarrow {r_2} = \\dfrac{1},{3},{r_1}\\) Khi úp phễu xuống thì thể tích của phần nón không chứa nước là: \\(\\dfrac{1},{3}\\pi r_1^2{h_1} - \\dfrac{1},{3}\\pi r_2^2{h_2} = 5\\pi r_1^2 - \\dfrac{5},{3}\\pi {\\left( {\\dfrac{{{r_1}}},{3}} \\right)^2} = \\dfrac{{130}},{{27}}\\pi r_1^2 = \\dfrac{1},{3}\\pi {r^2}h\\) với $r, h$ là bán kính và chiều cao của hình nón không chứa nước \\( \\Rightarrow {r^2}h = \\dfrac{{130}},{9}r_1^2\\) Ta có \\(\\dfrac{r},{{{r_1}}} = \\dfrac{h},{{{h_1}}} \\Rightarrow r = \\dfrac{{{r_1}h}},{{15}} \\Rightarrow \\dfrac{{r_1^2{h^3}}},{{225}} = \\dfrac{{130}},{9}r_1^2 \\Leftrightarrow h = 14,812\\,\\left( {cm} \\right)\\) Vậy chiều cao của nước sau khi úp phếu xuống là $15 – 14,812 = 0,188 (cm)$ Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0044",
+        "question": "Một cái phễu có dạng hình nón. Chiều cao của phễu là 20 cm. Người ta đổ một lượng nước vào phễu sao cho chiều cao của cột nước trong phễu bằng $10 cm$. Nếu bịt kín miệng phễu rồi lật ngược phễu lên thì chiều cao của cột nước trong phễu gần bằng với giá trị nào sau đây? A. \\(\\left( {20\\sqrt[3]{7} - 10} \\right)cm\\) B. \\(10\\sqrt[3]{7}cm\\) C. \\(\\left( {20 - 10\\sqrt[3]{7}} \\right)cm\\) D. \\(20\\sqrt[3]{7}cm\\)",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538009498427_1.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. \\(\\left( {20\\sqrt[3]{7} - 10} \\right)cm\\)",
+            "B. \\(10\\sqrt[3]{7}cm\\)",
+            "C. \\(\\left( {20 - 10\\sqrt[3]{7}} \\right)cm\\)",
+            "D. \\(20\\sqrt[3]{7}cm\\)"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi thể tích của phễu là $V,$ bán kính đáy phễu là $R,$ bán kính của cột nước có dạng khối nón trong H1 là $R_1$ Ta có: \\(\\dfrac{{10}},{{20}} = \\dfrac{{{R_1}}},{R} = \\dfrac{1},{2}\\) Gọi $V_1$ là thể tích của nước ta có: \\(\\dfrac{{{V_1}}},{V} = \\dfrac{{\\dfrac{1},{3}\\pi R_1^2.10}},{{\\dfrac{1},{3}\\pi{R^2}.20}} = \\dfrac{1},{2},{\\left( {\\dfrac{{{R_1}}},{R}} \\right)^2}= \\dfrac{1},{8} \\Rightarrow {V_1} = \\dfrac{1},{8}V\\) Sau khi úp ngược phễu lên, thể tích của phần không có nước có dạng khối nón có thể tích là \\({V_2} = V - {V_1} = \\dfrac{7},{8}V\\) Gọi $h, R_2$ là chiều cao và bán kính đáy của khối nón không chứa nước ở H2 ta có \\(\\dfrac{{{R_2}}},{R} = \\dfrac{h},{{20}}\\) và : \\(\\dfrac{{{V_2}}},{V}= \\dfrac{{\\dfrac{1},{3}\\pi R_2^2h}},{{\\dfrac{1},{3}\\pi {R^2}.20}} = \\dfrac{7},{8} \\Rightarrow {\\left( {\\dfrac{{{R_2}}},{R}} \\right)^2}.\\dfrac{h},{{20}} =\\dfrac{7},{8} \\Leftrightarrow \\dfrac{{{h^3}}},{{{{20}^3}}} = \\dfrac{7},{8} \\Rightarrow h = 10\\sqrt[3]{7}\\) \\( \\Rightarrow \\) Chiều cao của cột nước trong H2 là \\(20 - 10\\sqrt[3]{7}cm\\) . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0054",
+        "question": "Một khối đồ chơi có dạng khối nón, chiều cao bằng \\(20cm\\), trong đó có chứa một lượng nước. Nếu đặt khối đồ chơi theo hình H1 thì chiều cao của lượng nước bằng \\(\\dfrac{2},{3}\\) chiều cao của khối nón. Hỏi nếu đặt khối đồ chơi theo hình H2 thì chiều cao \\(h\\) của lượng nước trong khối đó gần với giá trị nào sau đây? A. \\(2,21\\left( {cm} \\right)\\) B. \\(5,09\\left( {cm} \\right)\\) C. \\(6,67\\left( {cm} \\right)\\) D. \\(5,93\\left( {cm} \\right)\\)",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1561017610209_54.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. \\(2,21\\left( {cm} \\right)\\)",
+            "B. \\(5,09\\left( {cm} \\right)\\)",
+            "C. \\(6,67\\left( {cm} \\right)\\)",
+            "D. \\(5,93\\left( {cm} \\right)\\)"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi thể tích khối nón là \\(V\\) thì thể tích khối nước trong hình H1 là \\({V_n} = {\\left( {\\dfrac{2},{3}} \\right)^3}V\\) Thể tích phần rỗng trong hình H1 là \\({V_r} = V - {V_n} = V - \\dfrac{8},{{27}}V = \\dfrac{{19}},{{27}}V\\). Xét hình H2, chiều cao của phần nón rỗng không có nước là \\(20 - h\\) (cm). Khi đó \\({V_r} = \\dfrac{{19}},{{27}}V \\Rightarrow {\\left( {\\dfrac{{20 - h}},{{20}}} \\right)^3} = \\dfrac{{19}},{{27}} \\Leftrightarrow \\dfrac{{20 - h}},{{20}} = \\sqrt[3]{{\\dfrac{{19}},{{27}}}} \\Leftrightarrow h = 20 - 20\\sqrt[3]{{\\dfrac{{19}},{{27}}}} \\approx 2,21\\left( {cm} \\right)\\). Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0064",
+        "question": "Cho hình tứ diện $ABCD$ có $AD \\bot (ABC)$, $ABC$ là tam giác vuông tại $B.$ Biết $BC = a,$ $AB = a\\sqrt 3 $, $AD = 3a.$ Quay các tam giác $ABC$ và $ABD$ (bao gồm cả điểm bên trong 2 tam giác) xung quanh đường thẳng $AB$ ta được 2 khối tròn xoay. Thể tích phần chung của 2 khối tròn xoay đó bằng A. $\\dfrac{{8\\sqrt 3 \\pi {a^3}}},{3}.$ B. $\\dfrac{{3\\sqrt 3 \\pi {a^3}}},{{16}}.$ C. $\\dfrac{{5\\sqrt 3 \\pi {a^3}}},{{16}}.$ D. $\\dfrac{{4\\sqrt 3 \\pi {a^3}}},{{16}}.$",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538009807121_4.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. $\\dfrac{{8\\sqrt 3 \\pi {a^3}}},{3}.$",
+            "B. $\\dfrac{{3\\sqrt 3 \\pi {a^3}}},{{16}}.$",
+            "C. $\\dfrac{{5\\sqrt 3 \\pi {a^3}}},{{16}}.$",
+            "D. $\\dfrac{{4\\sqrt 3 \\pi {a^3}}},{{16}}.$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com * Xét mặt phẳng (ABD): Gọi C’ là điểm ở trong (ABD) sao cho: C’B vuông góc AB và C’B = BC = a. Gọi $K = AC' \\cap BD,\\,\\,IK \\bot AB\\,\\,(I \\in AB)$ Theo Ta – lét ta có: $\\dfrac{{IK}},{{BC'}} = \\dfrac{{IA}},{{AB}} = 1 - \\dfrac{{IB}},{{AB}} = 1 - \\dfrac{{KI}},{{3BC'}} \\Leftrightarrow \\dfrac{4},{3}\\dfrac{{KI}},{{BC'}} = 1 \\Leftrightarrow \\dfrac{{KI}},{{BC'}} = \\dfrac{3},{4} \\Rightarrow IK = \\dfrac{3},{4}a$ Thể tích của phần chung là: $V = \\dfrac{1},{3}\\pi I{K^2}.IA + \\dfrac{1},{3}\\pi I{K^2}.IB = \\dfrac{1},{3}\\pi I{K^2}.AB = \\dfrac{1},{3}\\pi .{\\left( {\\dfrac{{3a}},{4}} \\right)^2}.a\\sqrt 3 = \\dfrac{{3\\sqrt 3 \\pi {a^3}}},{{16}}$ Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0074",
+        "question": "Có 4 viên bi hình cầu bán kính bằng 1cm. Người ta đặt 3 viên bi tiếp xúc nhau và cùng tiếp xúc với mặt bàn. Sau đó đai 3 viên bi đó lại và đặt 1 viên bi thứ 4 tiếp xúc vởi cả 3 viên bi trên như hình vẽ bên dưới. Gọi O là điểm thuộc bề mặt của viên bi thứ 4 có khoảng cách đến mặt bàn là lớn nhất. Khoảng cách từ O đến mặt bàn bằng A. $\\dfrac{7},{2}.$ B. $\\dfrac{{6 + 2\\sqrt 6 }},{3}.$ C. $\\dfrac{{3 + 2\\sqrt 6 }},{3}.$ D. $\\dfrac{{4\\sqrt 6 }},{3}.$",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538009859980_5.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. $\\dfrac{7},{2}.$",
+            "B. $\\dfrac{{6 + 2\\sqrt 6 }},{3}.$",
+            "C. $\\dfrac{{3 + 2\\sqrt 6 }},{3}.$",
+            "D. $\\dfrac{{4\\sqrt 6 }},{3}.$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện đều $ABCD$ có cạnh đều bằng $2$ (do $BC = BM + MC = 1 + 1 = 2$). Tam giác $ACD$ đều, cạnh bằng $2$ => Chiều cao $AN = 2.\\dfrac{{\\sqrt 3 }},{2} = \\sqrt 3 $ Tam giác $BCD $ đều, cạnh bằng $2$, $I$ là trọng tâm => $IN = \\dfrac{1},{3}BN = \\dfrac{1},{3}.\\sqrt 3 = \\dfrac{{\\sqrt 3 }},{3}$ Tam giác $AIN$ vuông tại $I,$ theo Pytago ta có: $AI = \\sqrt {A{N^2} - I{N^2}} = \\sqrt {{{\\left( {\\sqrt 3 } \\right)}^2} - {{\\left( {\\dfrac{{\\sqrt 3 }},{3}} \\right)}^2}} = \\sqrt {\\dfrac{8},{3}} = \\dfrac{{\\sqrt {24} }},{3} = \\dfrac{{2\\sqrt 6 }},{3}$ Vậy, khoảng cách từ $O $ đến mặt bàn bằng $OJ = OA + AI + IJ = 1 + $ $\\dfrac{{2\\sqrt 6 }},{3}$ $+ 1 = $ $\\dfrac{{6 + 2\\sqrt 6 }},{3}$ Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0084",
+        "question": "Cho hình chóp $S.ABCD$ có $\\widehat {ABC} = \\widehat {ADC} = {90^0}$, cạnh bên $SA$ vuông góc với $(ABCD)$, góc tạo bởi $SC$ và đáy $ABCD$ bằng ${60^0}$, $CD = a$ và tam giác $ADC $ có diện tích bằng $\\dfrac{{{a^2}\\sqrt 3 }},{2}$. Diện tích mặt cầu ngoại tiếp hình chóp $S.ABCD$ là: A. ${S_{mc}} = 16\\pi {a^2}.$ B. ${S_{mc}} = 4\\pi {a^2}.$ C. ${S_{mc}} = 32\\pi {a^2}.$ D. ${S_{mc}} = 8\\pi {a^2}.$",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. ${S_{mc}} = 16\\pi {a^2}.$",
+            "B. ${S_{mc}} = 4\\pi {a^2}.$",
+            "C. ${S_{mc}} = 32\\pi {a^2}.$",
+            "D. ${S_{mc}} = 8\\pi {a^2}.$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do $\\left\\{ \\begin{array},{l}SC \\cap (ABCD) = C\\\\\\left( {\\widehat {SC,(ABCD)}} \\right) = {60^0}\\end{array} \\right. \\Rightarrow \\widehat {SCA} = {60^0}$. Tam giác ABC và tam giác ADC vuông lần lượt tại B, D, gọi O là trung điểm của AC => O là tâm đường tròn ngoại tiếp tứ giác ABCD (1) IO là đường trung bình của tam giác SAC => IO // SA. Mà $SA \\bot (ABCD) \\Rightarrow IO \\bot (ABCD)$ (2) Từ (1), (2) suy ra IA = IB = IC = ID. (3) Do tam giác SAC vuông tại A, I là trung điểm SC $ \\Rightarrow IS = IC = IA$ (4) Từ (3), (4) suy ra I là tâm đường trong ngoại tiếp hình chóp S.ABCD. Ta có ${S_{ACD}} = \\dfrac{1},{2}AD.CD = \\dfrac{1},{2}AD.a = \\dfrac{{{a^2}\\sqrt 3 }},{2} \\Rightarrow CD = a\\sqrt 3 $ Áp dụng định lý Pytago: $A{C^2} = A{D^2} + C{D^2} = {\\left( {a\\sqrt 3 } \\right)^2} + {a^2} = 4{a^2} \\Rightarrow AC = 2a.$ Tam giác SAC vuông tại A, $\\widehat {SCA} = {60^0}$ $ \\Rightarrow SC = \\dfrac{{AC}},{{\\cos C}} = \\dfrac{{2a}},{{\\cos {{60}^0}}} = \\dfrac{{2a}},{{\\dfrac{1},{2}}} = 4a$ Diện tích mặt cầu: ${S_{mc}} = 4\\pi {R^2} = 4\\pi {\\left( {\\dfrac{{SC}},{2}} \\right)^2} = 4\\pi {(2a)^2} = 16\\pi {a^2}$ Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0094",
+        "question": "Cho hình nón ${N_1}$ có chiều cao bằng $40cm$. Người ta cắt hình nón ${N_1}$ bằng một mặt phẳng song song với đáy của có để được một hình nón nhỏ ${N_2}$ có thể tích bằng $\\dfrac{1},{8}$thể tích ${N_1}$. Tính chiều cao h của hình nón ${N_2}$? A. $20 cm.$ B. $10 cm.$ C. $5 cm$ D. $40 cm.$",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. $20 cm.$",
+            "B. $10 cm.$",
+            "C. $5 cm$",
+            "D. $40 cm.$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com (Quan sát kí hiệu trên hình vẽ) Áp dụng định lí Ta lét ta có: $\\dfrac{{O'B'}},{{OB}} = \\dfrac{{O'A}},{{OA}} = \\dfrac{{h'}},{h} = \\dfrac{{h'}},{{40}}$ $(OA = h, O’A = h’< 40cm)$ Tỉ số thể tích giữa 2 khối nón: $\\begin{array},{l}\\dfrac{{V'}},{V} = \\dfrac{{\\dfrac{1},{3}\\pi .O'B{'^2}.O'A}},{{\\dfrac{1},{3}\\pi .O{B^2}.OA}} = \\dfrac{{O'B{'^2}.O'A}},{{O{B^2}.OA}} = {\\left( {\\dfrac{{O'B'}},{{OB}}} \\right)^2}.\\dfrac{{O'A}},{{OA}} = {\\left( {\\dfrac{{h'}},{{40}}} \\right)^2}.\\dfrac{{h'}},{{40}} = \\dfrac{1},{8}\\\\ \\Rightarrow h{'^3} = \\dfrac{{{{40}^3}}},{8} = {20^3} \\Rightarrow h' = 20\\,\\,(cm)\\end{array}$ Vậy chiều cao $h$ của hình nón ${N_2}$ là: $20cm.$ Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0104",
+        "question": "Cho hình chóp $S.ABC$ có đáy là tam giác $ABC$ đều, đường cao $SH$ với $H$ nằm trong tam giác $ABC$ và $2SH = BC$, $(SBC)$ tạo với mặt phẳng $(ABC)$ một góc ${60^0}$. Biết có một điểm $O$ nằm trên đường cao $SH$ sao cho $d(O;AB) = d(O;AC) = 2d(O;(SBC)) = 1$. Tính thể tích khối cầu ngoại tiếp hình chóp đã cho. A. $\\dfrac{{500\\pi }},{{81}}$. B. $\\dfrac{{343\\pi }},{{48}}$. C. $\\dfrac{{256\\pi }},{{81}}$. D. $\\dfrac{{125\\pi }},{{162}}$.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. $\\dfrac{{500\\pi }},{{81}}$.",
+            "B. $\\dfrac{{343\\pi }},{{48}}$.",
+            "C. $\\dfrac{{256\\pi }},{{81}}$.",
+            "D. $\\dfrac{{125\\pi }},{{162}}$."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi I là trung điểm của BC. Kẻ : $\\begin{array},{l}HJ \\bot BC,\\,\\,(J \\in BC);\\,\\,OM \\bot AC,\\,\\,\\left( {M \\in AC} \\right);\\,\\,\\\\ON \\bot AB,\\,\\left( {N \\in AB} \\right)\\,\\,;\\,\\,OK \\bot SJ,\\,\\left( {K \\in SJ} \\right)\\end{array}$ Ta có: $\\left\\{ \\begin{array},{l}HJ \\bot BC\\\\SH \\bot BC\\end{array} \\right. \\Leftrightarrow BC \\bot (SHJ) \\Rightarrow BC \\bot OK$ Mà $OK \\bot SJ \\Rightarrow OK \\bot (SBC) \\Rightarrow d(O,(SBC) = OK$. Theo đề bài, ta có: $OM = ON = 2OK = 1$. Dễ dàng chứng minh được: $\\Delta OMH = \\Delta ONH\\,\\,(ch - cgv) \\Rightarrow HM = HN$ $\\Delta AHM = \\Delta AHN\\,\\,(ch - cgv) \\Rightarrow \\widehat {MAH} = \\widehat {NAH} \\Rightarrow AH$ là phân giác góc $A.$ Do $I$ là trung điểm của $BC$, tam giác $ABC$ đều $ \\Rightarrow AI$ là phân giác góc $A.$ Suy ra $A, H, I$ thẳng hàng $H \\in $ đoạn thẳng $AI$ (do $H$ nằm trong tam giác $ABC$) Ta có: $\\begin{array},{l}\\left\\{ \\begin{array},{l}AI \\bot BC\\\\SH \\bot BC\\end{array} \\right. \\Rightarrow BC \\bot (SAI)\\\\ \\Rightarrow \\left( {\\widehat {(SBC),(ABC)}} \\right) = \\left( {\\widehat {SI,AI}} \\right) = \\widehat {SIA} = {60^0}\\end{array}$ Tam giác $SHI$ vuông tại $H$ $ \\Rightarrow \\dfrac{{SH}},{{HI}} = \\tan {60^0} \\Rightarrow SH = \\sqrt 3 HI$ Tam giác AIC vuông tại I $ \\Rightarrow \\dfrac{{AI}},{{IC}} = \\tan {60^0} \\Rightarrow AI = \\sqrt 3 IC = \\sqrt 3 .\\dfrac{{BC}},{2} = \\sqrt 3 SH$ $ \\Rightarrow AI = 3HI \\Rightarrow H$là trọng tâm tam giác đều ABC \\( \\Rightarrow M,N\\) lần lượt là trung điểm của AC, AB. $ \\Rightarrow S.ABC$ là hình chóp đều. Mà $O \\in SH$$ \\Rightarrow OM = ON = OI = 1$ Tam giác $IOK$ vuông tại $K$: $\\dfrac{{OK}},{{OI}} = \\dfrac{{\\dfrac{1},{2}}},{1} = \\dfrac{1},{2} = \\sin \\widehat {KIO} \\Rightarrow \\widehat {KIO} = {30^0} \\Rightarrow \\widehat {HIO} = {60^0} - {30^0} = {30^0}$ Tam giác $HIO$ vuông tại $H$: $HI = OI.\\cos {30^0} = \\dfrac{{\\sqrt 3 }},{2}$ Tam giác $SHI $ vuông tại $H$: $SH = HI.\\tan {60^0} = \\dfrac{{\\sqrt 3 }},{2}.\\sqrt 3 = \\dfrac{3},{2} = h,\\,\\,\\,SI = \\dfrac{{HI}},{{\\cos {{60}^0}}} = \\dfrac{{\\dfrac{{\\sqrt 3 }},{2}}},{{\\dfrac{1},{2}}} = \\sqrt 3 $ Tam giác SCI vuông tại I: $SC = \\sqrt {S{I^2} + I{C^2}} = \\sqrt {S{I^2} + S{H^2}} = \\sqrt {{{\\left( {\\sqrt 3 } \\right)}^2} + {{\\left( {\\dfrac{3},{2}} \\right)}^2}} = \\dfrac{{\\sqrt {21} }},{2} = a$ Bán kính mặt cầu ngoại tiếp khối chóp $S.ABC$ là: $R = \\dfrac{{{a^2}}},{{2h}} = \\dfrac{{{{\\left( {\\dfrac{{\\sqrt {21} }},{2}} \\right)}^2}}},{{2.\\dfrac{3},{2}}} = \\dfrac{{\\dfrac{{21}},{4}}},{3} = \\dfrac{7},{4}$ Thể tích mặt cầu ngoại tiếp khối chóp $S.ABC$ là: $V = \\dfrac{4},{3}\\pi {R^3} = \\dfrac{4},{3}\\pi .{\\left( {\\dfrac{7},{4}} \\right)^3} = \\dfrac{{343\\pi }},{{48}}$. Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0114",
+        "question": "Cho hình trụ có chiều cao \\(h = a\\sqrt 3 \\), bán kính đáy \\(r = a\\). Gọi \\(O,O'\\) lần lượt là tâm của hai đường tròn đáy. Trên hai đường tròn đáy lần lượt lấy hai điểm $A, B$ sao cho hai dường thẳng $AB$ và $OO’$ chéo nhau và góc giữa hai đường thẳng $AB$ với $OO’ $ bằng $30^0$. Khoảng cách giữa hai đường thẳng $AB$ và $OO’$ bằng : A. \\(a\\sqrt 6 \\) B. \\(\\dfrac{{a\\sqrt 6 }},{2}\\) C. \\(a\\sqrt 3 \\) D. \\(\\dfrac{{a\\sqrt 3 }},{2}\\)",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. \\(a\\sqrt 6 \\)",
+            "B. \\(\\dfrac{{a\\sqrt 6 }},{2}\\)",
+            "C. \\(a\\sqrt 3 \\)",
+            "D. \\(\\dfrac{{a\\sqrt 3 }},{2}\\)"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Dựng $AA'//OO'$ ta có : \\(\\widehat {\\left( {OO';AB} \\right)} = \\widehat {\\left( {AA';AB} \\right)} = \\widehat {A'AB} = {30^0}\\) Gọi $M$ là trung điểm của $A’B$ ta có: \\(\\left\\{ \\begin{array},{l}O'M \\bot A'B\\\\O'M \\bot AA'\\end{array} \\right. \\Rightarrow O'M \\bot \\left( {ABA'} \\right) \\Rightarrow O'M = d\\left( {O';\\left( {ABA'} \\right)} \\right)\\) \\(\\begin{array},{l}OO'//AA' \\Rightarrow OO'//\\left( {ABA'} \\right) \\supset AB \\Rightarrow d\\left( {OO';AB} \\right) = d\\left( {OO';\\left( {ABA'} \\right)} \\right)\\\\ = d\\left( {O'\\left( {ABA'} \\right)} \\right) = O'M\\end{array}\\) Xét tam giác vuông $ABA’$ có \\(A'B = AA'.\\tan 30 = a\\sqrt 3 .\\dfrac{1},{{\\sqrt 3 }} = a\\) \\( \\Rightarrow MB = \\dfrac{a},{2}\\) Xét tam giác vuông $O’MB$ có \\(O'M = \\sqrt {O'{B^2} - M{B^2}} = \\dfrac{{a\\sqrt 3 }},{2}\\) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0124",
+        "question": "Hai quả bóng hình cầu có kích thước khác nhau được đặt ở hai góc của một căn nhà hình hộp chữ nhật sao cho mỗi quả bóng đều tiếp xúc với hai bức tường và nền của nhà đó. Biết rằng trên bề mặt của quả bóng đều tồn tại một điểm có khoảng cách đến hai bức tường và nền nhà mà nó tiếp xúc bằng $1, 2, 4.$ Tổng độ dài đường kính của hai quả bóng đó. A. $6$ B. $14$ C. $12$ D. $10$",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. $6$",
+            "B. $14$",
+            "C. $12$",
+            "D. $10$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Xét quả bóng tiếp xúc với các bức tường và chọn hệ trục $Oxyz$ như hình vẽ bên (tương tự với góc tường còn lại). Gọi $I\\left( {a;a;a} \\right)$ là tâm của mặt cầu (tâm quả bóng) và $R = a.$ $ \\Rightarrow $ phương trình mặt cầu của quả bóng là $\\left( S \\right):{\\left( {x - a} \\right)^2} + {\\left( {y - a} \\right)^2} + {\\left( {z - a} \\right)^2} = {a^2}\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( 1 \\right).$ Giả sử $M\\left( {x;y;z} \\right)$ nằm trên mặt cầu (bề mặt của quả bóng) sao cho $d\\left( {M;\\left( {Oxy} \\right)} \\right) = 1,\\,\\,d\\left( {M;\\left( {Oyz} \\right)} \\right) = 2,\\,\\,d\\left( {M;\\left( {Oxz} \\right)} \\right) = 3$ Khi đó $z = 1;\\,\\,x = 2;\\,\\,y = 3\\,\\, \\Rightarrow \\,\\,M\\left( {2;3;1} \\right) \\in \\left( S \\right)\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( 2 \\right).$ Từ $\\left( 1 \\right),\\left( 2 \\right)$ suy ra ${\\left( {1 - a} \\right)^2} + {\\left( {2 - a} \\right)^2} + {\\left( {4 - a} \\right)^2} = {a^2}$ $ \\Rightarrow \\,\\,\\left\\{ \\begin{array},{l},{R_1} = {a_1} = \\dfrac{{7 - \\sqrt 7 }},{2}\\\\{R_2} = {a_2} = \\dfrac{{7 + \\sqrt 7 }},{2}\\end{array} \\right. \\Rightarrow \\,\\,{d_1} + {d_2} = 2\\left( {{R_1} + {R_2}} \\right) = 14.$ Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0131",
+        "question": "Tháp nước Hàng Đậu là một di tích kiến trúc cổ của Thủ đô Hà Nội, được xây dựng vào cuối thế kỉ XIX. Tháp được thiết kế gồm thân tháp có dạng hình trụ và phần mái phía trên dạng hình nón. Không gian bên trong toàn bộ tháp được minh họa theo hình vẽ với đường kính đáy hình trụ và đường kính đáy của hình nón đều bằng 19 m, chiều cao hình trụ 20 m, chiều cao hình nón là 5 m. Thể tích của toàn bộ không gian bên trong tháp nước Hàng Đậu gần nhất với giá trị nào sau đây? A. \\(5667{m^3}\\) B. \\(3070{m^3}\\) C. \\(6140{m^3}\\) D. \\(7084{m^3}\\)",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223292472931639972654282-mceclip0.png",
+        "difficulty": 1,
+        "options": [
+            "A. \\(5667{m^3}\\)",
+            "B. \\(3070{m^3}\\)",
+            "C. \\(6140{m^3}\\)",
+            "D. \\(7084{m^3}\\)"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bán kính đáy của hình trụ và hình nón là \\(R = \\dfrac{{19}},{2}\\,\\,\\left( m \\right)\\). Thể tích khối nón là \\({V_1} = \\dfrac{1},{3}\\pi {R^2}.{h_1} = \\dfrac{1},{3}\\pi .{\\left( {\\dfrac{{19}},{2}} \\right)^2}.5\\)\\( = \\dfrac{{1805}},{{12}}\\,\\,\\left( {{m^3}} \\right)\\) Thể tích khối trụ là \\({V_2} = \\pi {R^2},{h_2} = \\pi .{\\left( {\\dfrac{{19}},{2}} \\right)^2}.20 \\)\\(= 1805\\pi \\,\\,\\left( {{m^3}} \\right)\\) Vậy thể tích toàn bộ không gian bên trong tháp nước Hàng Đậu là \\(V = {V_1} + {V_2} = \\dfrac{{23465}},{{12}}\\pi \\approx 6143\\,{m^3}\\). Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0144",
+        "question": "Người ta thả một viên billiards snooker có dạng hình cầu với bán kính nhỏ hơn 4 , 5 c m vào một chiếc cốc hình trụ đang chứa nước thì viên billiards đó tiếp xúc với đáy cốc và tiếp xúc với mặt nước sau khi dâng (tham khảo hình vẽ bên). Biết rằng bán kính của phần trong đáy cốc bằng 5 , 4 c m và chiều cao của mực nước ban đầu trong cốc bằng 4 , 5 c m . Bán kính của viên billiards đó bằng A. 4 , 2 c m . B. 3 , 6 c m . C. 2 , 6 c m . D. 2 , 7 c m .",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1547103412665_Capture.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. 4 , 2 c m .",
+            "B. 3 , 6 c m .",
+            "C. 2 , 6 c m .",
+            "D. 2 , 7 c m ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích mực nước ban đầu là: V 1 = π r 2 1 h 1 = π .5 , 4 2 .4 , 5 Gọi R là bán kính của viên bi ta có sau khi thả viên bi vào cốc, chiều cao của mực nước bằng 2 R , do đó tổng thể tích của nước và bi sau khi thả viên bi vào trong cốc là: V = π r 2 1 . ( 2 R ) = π .5 , 4 2 .2 R Thể tích của quả cầu là: V ( C ) = 4 3 π R 3 Ta có: V = V 1 + V 2 ⇔ 5 , 4 2 .4 , 5 + 4 3 R 3 = 5 , 4 2 .2 R Giải phương trình trên với điều kiện R < 4 , 5 ⇒ R = 2 , 7 c m . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0154",
+        "question": "Cho hình lăng trụ đứng A B C . A ′ B ′ C ′ có đáy A B C là tam giác vuông tại A , A B = a √ 3 , B C = 2 a , đường thẳng A C ′ tạo với mặt phẳng ( B C C ′ B ′ ) một góc 30 0 . Diện tích mặt cầu ngoại tiếp lăng trụ đã cho bằng: A. 24 π a 2 B. 6 π a 2 C. 4 π a 2 D. 3 π a 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 24 π a 2",
+            "B. 6 π a 2",
+            "C. 4 π a 2",
+            "D. 3 π a 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi H , H ′ lần lượt là trung điểm của B C và B ′ C ′ ⇒ H H ′ ⊥ ( A B C ) và H H ′ ⊥ ( A ′ B ′ C ′ ) . Gọi I là trung điểm của H H ′ . Mặt khác Δ A B C vuông tại A , I ∈ H H ′ ⇒ { I A = I B = I C I A ′ = I B ′ = I C ′ Dễ dàng chứng minh được Δ B H I = Δ B ′ H ′ I ( c . g . c ) ⇒ I B = I B ′ ⇒ I A = I B = I C = I A ′ = I B ′ = I C ′ hay I là tâm mặt cầu ngoại tiếp lăng trụ A B C . A ′ B ′ C ′ . Kẻ A K ⊥ B C ta có A K ⊥ ( B C C ′ B ′ ) ⇒ ˆ ( A C ′ ; ( B C C ′ B ′ ) ) = ˆ ( A C ′ ; K C ′ ) = ˆ A C ′ K = 30 0 . Có A C = A ′ C ′ = √ 4 a 2 − 3 a 2 = a Ta có A K = A C . A B B C = a . a √ 3 2 a = a √ 3 2 ⇒ A C ′ = A K sin 30 = a √ 3 ⇒ A A ′ = √ A C ′ 2 − A ′ C ′ 2 = √ 3 a 2 − a 2 = a √ 2 = H H ′ ⇒ H I = 1 2 H H ′ = a √ 2 ⇒ B I = √ a 2 + a 2 2 = a √ 6 2 = R ⇒ S m a t c a u = 4 π ( a √ 6 2 ) 2 = 6 π a 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0164",
+        "question": "Cho hình chóp tam giác đều S . A B C . Hình nón có đỉnh S và có đường tròn đáy là đường tròn tam giác A B C gọi là hình nón nội tiếp hình chóp S . A B C , hình nón có đỉnh S và có đường tròn đáy là đường tròn ngoại tiếp tam giác A B C gọi là hình nón ngoại tiếp hình chóp S . A B C . Tỉ số thể tích của hình nón nội tiếp và hình nón ngoại tiếp hình chóp đã cho là A. 1 4 . B. 1 2 . C. 2 3 . D. 1 3 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 1 4 .",
+            "B. 1 2 .",
+            "C. 2 3 .",
+            "D. 1 3 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi h , x lần lượt là chiều cao, độ dài cạnh đáy của hình chóp tam giác đều S . A B C . Bán kính đường tròn nội tiếp Δ A B C là Thể tích khối nón nội tiếp là V 1 = 1 3 π r 2 h . Bán kính đường tròn ngoại tiếp Δ A B C là Thể tích khối nón nội tiếp là V 2 = 1 3 π R 2 h . Vậy tỉ số V 1 V 2 = r 2 R 2 = ( x √ 3 6 ) 2 : ( x √ 3 3 ) 2 = 1 4 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0174",
+        "question": "Cần đẽo thanh gỗ hình hộp có đáy là hình vuông thành hình trụ có cùng chiều cao. Tỉ lệ thể tích gỗ cần phải đẽo đi ít nhất (tính gần đúng) là A. 30 % . B. 50 % . C. 21 % . D. 11 % .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 30 % .",
+            "B. 50 % .",
+            "C. 21 % .",
+            "D. 11 % ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Để thể tích gỗ cần phải đẽo đi là ít nhất thì thể tích hình trụ là lớn nhất. Hay hình trụ là hình trụ nội tiếp hình hộp và có thể tích là V 1 = π R 2 h = π x 2 h 4 . Với x là độ dài cạnh đáy hình hộp ⇒ Thể tích hình hộp là V = x 2 h . Suy ra thể tích cần phải đẽo là V 2 = V − V 2 = ( 1 − π 4 ) x 2 h . Vậy tỉ lệ thể tích gỗ cần phải đẽo là V 2 V .100 % = ( 1 − π 4 ) .100 % ≈ 21 , 5 % . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0184",
+        "question": "Cho hình lăng trụ đứng A B C . A ′ B ′ C ′ có đáy là tam giác vuông cân tại A , A B = A C = a và A A ′ = a √ 2 . Thể tích khối cầu ngoại tiếp hình tứ diện A B ′ A ′ C là A. π a 3 3 . B. π a 3 . C. 4 π a 3 3 . D. 4 π a 3 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. π a 3 3 .",
+            "B. π a 3 .",
+            "C. 4 π a 3 3 .",
+            "D. 4 π a 3 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khối cầu ngoại tiếp tứ diện A B ′ A ′ C là khối cầu ngoại tiếp lăng trụ A B C . A ′ B ′ C ′ . Bán kính khối cầu ngoại tiếp lăng trụ A B C . A ′ B ′ C ′ là R = √ R 2 Δ A B C + A ′ A 2 4 = a . Vậy thể tích khối cầu cần tính là V = 4 3 π R 3 = 4 3 π a 3 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0194",
+        "question": "Một hộp đựng phấn hình hộp chữ nhật có chiều dài 30 c m , chiều rộng 5 c m và chiều cao 6 c m . Người ta xếp thẳng đứng vào đó các viên phấn giống nhau, mỗi viên phấn là khối trụ có chiều cao h = 6 c m và bán kính đáy r = 1 2 c m . Hỏi có thể xếp được tối đa bao nhiêu viên phấn. A. 150 viên B. 151 viên C. 153 viên. D. 154 viên.",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 150 viên",
+            "B. 151 viên",
+            "C. 153 viên.",
+            "D. 154 viên."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đường kính đường tròn đáy của một viên phấn là d = 2 r = 2. 1 2 = 1 ( c m ) . Chiều rộng của hộp là 5 c m ⇒ Xếp được tối đa 5 viên phấn theo chiều rộng. Chiều dài của hộp là 30 c m ⇒ Xếp được tối đa 30 viên phấn theo chiều dài. Như vây, có thể xếp được tối đa 5 × 30 = 150 viên phấn vào hộp. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0204",
+        "question": "Cho hình trụ có chiều cao bằng 6 √ 2 c m . Biết rằng một mặt phẳng không vuông góc với đáy và cắt hai mặt đáy theo hai dây cung song song A B , C D mà A B = C D = 6 c m , diện tích tứ giác A B C D bằng 60 c m 2 . Tính bán kính đáy của hình trụ. A. 5 c m . B. 3 √ 2 c m . C. 5 √ 2 c m . D. 4 c m .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 5 c m .",
+            "B. 3 √ 2 c m .",
+            "C. 5 √ 2 c m .",
+            "D. 4 c m ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì A B = C D ; A B // C D ⇒ A B C D là hình chữ nhật ⇒ A D = 10 c m . Xét hình chữ nhật A B C D có A D không song song và không vuông góc với trục O O ′ của hình trụ. Dựng đường sinh A A ′ , ta có { C D ⊥ A A ′ C D ⊥ A D ⇒ C D ⊥ ( A A ′ D ) ⇒ C D ⊥ A ′ D Suy ra A ′ C là đường kính đáy nên A ′ C = 2 R Xét tam giác vuông A A ′ C , có A ′ C = √ A C 2 − A A ′ 2 = √ ( 2 √ 34 ) 2 − ( 6 √ 2 ) 2 = 8. Suy ra độ dài bán kính đáy của hình trụ là 2 R = 8 ⇔ R = 4 c m . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0214",
+        "question": "Cho hình nón tròn xoay đỉnh S , đáy là hình tròn tâm O . Trên đường tròn đó lấy hai điểm A và M . Biết góc ˆ A O M = 60 0 , góc tạo bởi hai mặt phẳng ( S A M ) và ( O A M ) có số đo bằng 30 0 và khoảng cách từ O đến ( S A M ) bằng 2. Khi đó thể tích khối nón là: A. 32 √ 3 27 π . B. 256 √ 3 9 π . C. 256 √ 3 27 π . D. 32 √ 3 9 π .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. 32 √ 3 27 π .",
+            "B. 256 √ 3 9 π .",
+            "C. 256 √ 3 27 π .",
+            "D. 32 √ 3 9 π ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Kẻ O H ⊥ A M , H ∈ A M , O K ⊥ S H , K ∈ S H Vì { A M ⊥ S O A M ⊥ O H ⇒ A M ⊥ ( S O H ) ⇒ A M ⊥ O K Mà O K ⊥ S H ⇒ O K ⊥ ( S A M ) ⇒ d ( O , ( S A M ) ) = O K = 2 Ta có: { ( S A M ) ∩ ( O A M ) = A M A M ⊥ ( S O H ) (vì A M ⊥ O H , A M ⊥ S O ) Mà ( S O H ) ∩ ( O A M ) = O H , ( S O H ) ∩ ( S A M ) = S H ⇒ ( ˆ ( S A M ) , ( O A M ) ) = ( ˆ S H , O H ) = ˆ S H O = 30 0 Tam giác OHK vuông tại K ⇒ O H = O K sin ˆ H = 2 sin 30 0 = 4 Tam giác SOH vuông tại O ⇒ S O = O H . tan ˆ H = 4. tan 30 0 = 4 √ 3 Tam giác OAM cân tại O, ˆ A O M = 60 0 , O H ⊥ A M ⇒ ˆ H O M = ˆ A O M 2 = 60 0 2 = 30 0 Tam giác OHM vuông tại H ⇒ O M = O H cos ˆ H O M = 4 cos 30 0 = 4 √ 3 2 = 8 √ 3 Thể tích khối nón: V = 1 3 π R 2 h = 1 3 π . O M 2 . S O = 1 3 π ( 8 √ 3 ) 2 . 4 √ 3 = 256 √ 3 π 27 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0224",
+        "question": "Cho hình trụ ( T ) có ( C ) , ( C ′ ) là hai đường tròn đáy nội tiếp hai mặt đối diện của một hình lập phương. Biết rằng, trong tam giác cong tạo bởi đường tròn ( C ) và hình vuông ngoại tiếp của ( C ) có một hình chữ nhật kích thước 1 × 2 (như hình vẽ dưới đây). Thể tích của khối trụ ( T ) là A. 250 π . B. 100 π . C. 100 π 3 . D. 250 π 3 .",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538025126460_18.PNG",
+        "difficulty": 4,
+        "options": [
+            "A. 250 π .",
+            "B. 100 π .",
+            "C. 100 π 3 .",
+            "D. 250 π 3 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gắn hệ trục tọa độ trong mặt phẳng chứa đường tròn ( C ) như hình vẽ. Phương trình đường tròn ( C ) : ( x − R ) 2 + ( y − R ) 2 = R 2 , ( R > 2 ) Điểm ( 1 ; 2 ) thuộc (C) ⇒ ( 1 − R ) 2 + ( 2 − R ) 2 = R 2 ⇔ R 2 − 6 R + 5 = 0 ⇔ [ R = 1 ( L ) R = 5 ⇔ R = 5 ⇒ Chiều cao của khối trụ h = 2 R = 10 Thể tích khối trụ là: V = π R 2 h = π .5 2 .10 = 250 π . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0234",
+        "question": "Cho tam giác nhọn A B C . Khi quay A B C quanh các cạnh B C , C A , A B ta được các hình tròn xoay có thể tích lần lượt là 3136 π 5 , 9408 π 13 , 672 π . Tính diện tích tam giác A B C ? A. S = 84 B. S = 336 C. S = 91 D. S = 1295",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. S = 84",
+            "B. S = 336",
+            "C. S = 91",
+            "D. S = 1295"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vẽ A H ⊥ B C tại H , D đối xứng với A qua H Thể tích khối tròn xoay thu được khi quay Δ A B C quanh cạnh B C bằng tổng thể tích hai khối nón có chung đường tròn đáy bán kính A H . Ta có: 3136 π 5 = V a = 1 3 π A H 2 . B H + 1 3 π A H 2 . C H = 1 3 π A H 2 . B C = 1 3 π . a . h 2 a ⇒ a V a = 1 3 π a 2 h 2 a = 1 3 π ( 2 S ) 2 = 4 π 3 S 2 với S = S A B C . Tương tự ta có 9408 π 13 = V b = 1 3 π . b . h 2 b ⇒ b V b = 4 π 3 S 2 672 π = V c = 1 3 π . c . h 2 c ⇒ c V c = 4 π 3 S 2 ⇒ a . V a = b . V b = c . V c = 4 π 3 S 2 ( ∗ ) ⇒ a : b : c = 1 V a : 1 V b : 1 V c = 15 : 13 : 14 Đặt a = 15 k ; b = 13 k ; c = 14 k . Theo công thức Hêrông, ta có S A B C = √ p ( p − a ) ( p − b ) ( p − c ) = √ 7056 k 2 = 84 k với p = a + b + c 2 = 21 k Từ (*) suy ra 3 V a π = ( 2 S A B C ) 2 a ⇒ 9408 5 = ( 168 k ) 2 15 k ⇒ k = 1 ⇒ S A B C = 84 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0244",
+        "question": "Cho tam giác A B C vuông cân tại A có A B = A C = 12 . Lấy một điểm M thuộc cạnh huyền B C và gọi H là hình chiếu của M lên cạnh góc vuông A B . Quay tam giác A M H quanh trục là đường thẳng A B tạo thành mặt nón tròn xoay ( N ) , hỏi thế tích V của khối nón tròn xoay ( N ) lớn nhất là bao nhiêu? A. V = 128 π 3 B. V = 256 π C. V = 256 π 3 D. V = 72 π",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. V = 128 π 3",
+            "B. V = 256 π",
+            "C. V = 256 π 3",
+            "D. V = 72 π"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Quay tam giác vuông A M H quanh trục A B ta được khối nón có đỉnh A , bán kính đát H M và đường cao A H , khi đó ta có thể tích của khối nón tròn xoay ( N ) là V = 1 3 π H M 2 . A H Đặt H M = x , ( 0 ≤ x ≤ 12 √ 2 ) ta có Δ B H M vuông cân tại H nên B H = H M = x ⇒ A H = A B − B H = 12 − x Khi đó V = 1 3 π x 2 ( 12 − x ) Xét hàm số f ( x ) = x 2 ( 12 − x ) với x ∈ [ 0 ; 12 √ 2 ] f ′ ( x ) = 2 x ( 12 − x ) − x 2 = − 3 x 2 + 24 x = 0 ⇔ [ x = 0 x = 8 ⎧ ⎪ ⎨ ⎪ ⎩ f ( 0 ) = 0 f ( 12 ) = 0 f ( 8 ) = 256 ⇒ max [ 0 ; 12 √ 2 ] f ( x ) = 256 ⇒ V m a x = 1 3 π .256 = 256 π 3 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0254",
+        "question": "Tứ diện A B C D có A B = 2 , C D = 2 √ 2 , ˆ A B C = ˆ D A B = 90 0 và góc giữa A D , B C bằng 45 0 . Khi đó, bán kính mặt cầu ngoại tiếp tứ diện là: A. √ 2 B. √ 3 C. 2 √ 3 D. √ 5",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 2",
+            "B. √ 3",
+            "C. 2 √ 3",
+            "D. √ 5"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Dựng hình chữ nhật ABED. Ta có mặt cầu tâm I ngoại tiếp tứ diện ABCD cũng phải đi qua điểm E Do đó I là tâm mặt cầu ngoại tiếp tứ diện BCDE Ta có AB ⊥ BE; AB ⊥ BC ⇒ AB ⊥ (BCE) Vì DE // AB nên DE ⊥ (BCE) Dựng tam giác vuông cân COE trong mặt phẳng (BCE) sao cho B và O nằm cùng phía với CE Ta chứng minh được O là tâm đường tròn ngoại tiếp ∆ BCE. Dựng hình chữ nhật MEOI với M là trung điểm DE thì I là giao của mặt phẳng trung trực của DE với trục của đường tròn ngoại tiếp ∆ BCE nên I là tâm mặt cầu ngoại tiếp tứ diện B C D E Ta có: M E = D E 2 = A B 2 = 1 O E = C E √ 2 = √ C D 2 − D E 2 √ 2 = √ C D 2 − A B 2 √ 2 = √ 2 ⇒ I M = O E = √ 2 (vì ∆ CED vuông tại E) ⇒ R = I E = √ I M 2 + M E 2 = √ 3 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0264",
+        "question": "Cho hình chóp S . A B C có S A vuông góc với đáy và S A = a √ 2 ; ˆ B A C = 45 0 . Biết bán kính mặt cầu ngoại tiếp hình chóp S . A B C bằng a . Tính độ dài cạnh B C . A. B C = a B. B C = 2 a C. B C = a √ 2 D. B C = a √ 2",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. B C = a",
+            "B. B C = 2 a",
+            "C. B C = a √ 2",
+            "D. B C = a √ 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi H là tâm đường tròn ngoại tiếp tam giác A B C , qua H kẻ đường thẳng d / / S A ⇒ d ⊥ ( A B C ) Gọi K là trung điểm của S A , qua K kẻ đường thẳng song song với A H cắt d tại I ⇒ I là tăm mặt cầu ngoại tiếp tam giác A B C Xét tam giác vuông A H I có A H = √ A I 2 − I H 2 = √ A I 2 − ( S A 2 ) 2 = a √ 2 = R Ta có S Δ A B C = 1 2 A B . A C . sin 45 0 = A B . A C . B C 4 R ⇒ B C = 2 R . sin 45 0 = 2 a √ 2 . 1 √ 2 = a Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0272",
+        "question": "Cho mặt cầu ( S ) tâm O , bán kính R và mặt phẳng ( P ) , gọi H là hình chiếu của O trên ( P ) . Nếu R > O H thì: A. ( P ) cắt ( S ) B. ( P ) tiếp xúc ( S ) C. ( P ) và ( S ) không có điểm chung D. ( P ) cắt ( S ) tại hai điểm phân biệt",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ( P ) cắt ( S )",
+            "B. ( P ) tiếp xúc ( S )",
+            "C. ( P ) và ( S ) không có điểm chung",
+            "D. ( P ) cắt ( S ) tại hai điểm phân biệt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu O H < R thì ( P ) cắt ( S ) theo giao tuyến là một đường tròn. Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0283",
+        "question": "Cho khối nón tròn xoay có đường cao h = 15 c m và đường sinh l = 25 c m . Thể tích V của khối nón là: A. V = 2000 π ( c m 3 ) . B. V = 240 π ( c m 3 ) . C. V = 500 π ( c m 3 ) . D. V = 1500 π ( c m 3 ) .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. V = 2000 π ( c m 3 ) .",
+            "B. V = 240 π ( c m 3 ) .",
+            "C. V = 500 π ( c m 3 ) .",
+            "D. V = 1500 π ( c m 3 ) ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Bán kính đáy của hình nón là r = √ l 2 − h 2 = √ 25 2 − 15 2 = 20 Thể tích khối nón là V = 1 3 π r 2 h = 1 3 . π .20 2 .15 = 2000 π ( c m 3 ) Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0292",
+        "question": "Cho mặt cầu ( S ) . Nếu ( P ) là mặt phẳng kính của mặt cầu ( S ) thì: A. ( P ) tiếp xúc ( S ) B. ( P ) không cắt ( S ) C. ( P ) không đi qua tâm mặt cầu. D. ( P ) đi qua tâm mặt cầu.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. ( P ) tiếp xúc ( S )",
+            "B. ( P ) không cắt ( S )",
+            "C. ( P ) không đi qua tâm mặt cầu.",
+            "D. ( P ) đi qua tâm mặt cầu."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu ( P ) là mặt phẳng kính thì O H = 0 ( H ≡ O ) hay ( P ) đi qua O là tâm mặt cầu. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0302",
+        "question": "Cho mặt cầu ( S ) có tâm O bán kính R và đường thẳng d . Nếu d và ( S ) không có điểm chung thì: A. d ( O ; d ) > R B. d ( O ; d ) < R C. d ( O ; d ) = R D. d ( O ; d ) ≤ R",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. d ( O ; d ) > R",
+            "B. d ( O ; d ) < R",
+            "C. d ( O ; d ) = R",
+            "D. d ( O ; d ) ≤ R"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt cầu ( S ) và đường thẳng d không có điểm chung nếu d ( O ; d ) > R . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0313",
+        "question": "Cho một hình nón có bán kính đáy bằng a và góc ở đỉnh bằng 60 ∘ . Tính diện tích xung quanh của hình nón đó. A. S x q = 4 π a 2 B. S x q = 2 √ 3 π a 2 3 C. S x q = 4 √ 3 π a 2 3 D. S x q = 2 π a 2",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. S x q = 4 π a 2",
+            "B. S x q = 2 √ 3 π a 2 3",
+            "C. S x q = 4 √ 3 π a 2 3",
+            "D. S x q = 2 π a 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử thiết diện của mặt phẳng đi qua trục của hình nón với hình nón là tam giác A B C , theo giả thiết bài toán, ta có A B C là tam giác đều cạnh 2 a . Do đó hình nón có: Bán kính đáy R = a . Độ dài đường sinh l = A C = 2 a . Diện tích xung quanh cần tìm S x q = π R l = π . a .2 a = 2 π a 2 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0323",
+        "question": "Cho khối ( N ) có bán kính đáy bằng 3 và diện tích xung quanh bằng 15 π . Tính thể tích V của khối nón ( N ) A. V = 12 π . B. V = 20 π . C. V = 36 π . D. V = 60 π .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. V = 12 π .",
+            "B. V = 20 π .",
+            "C. V = 36 π .",
+            "D. V = 60 π ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi l là đường sinh của hình nón, ta có l = √ R 2 + h 2 . Diện tích xung quanh của hình nón là 15 π , suy ra 15 π = π R l ⇔ 15 = 3. √ 3 2 + h 2 ⇔ h = 4 Thể tích khối nón là V = 1 3 π R 2 h = 1 3 π .3 2 .4 = 12 π (đvtt). Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0332",
+        "question": "Trục đa giác đáy là đường thẳng vuông góc với mặt phẳng đáy tại: A. đỉnh đa giác đáy B. trực tâm đa giác đáy C. trọng tâm đa giác đáy D. tâm đường tròn đáy",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đỉnh đa giác đáy",
+            "B. trực tâm đa giác đáy",
+            "C. trọng tâm đa giác đáy",
+            "D. tâm đường tròn đáy"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Trục đa giác đáy: là đường thẳng đi qua tâm đường tròn ngoại tiếp đa giác đáy và vuông góc với mặt phẳng chứa đa giác đáy. Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0343",
+        "question": "Cho hình nón tròn xoay có đường cao h = 40 c m , bán kính đáy r = 50 c m . Một thiết diện đi qua đỉnh của hình nón có khoảng cách từ tâm của đáy đến mặt phẳng chứa thiết diện là 24 c m . Tính diện tích của thiết diện. A. S = 800 ( c m 2 ) . B. S = 1200 ( c m 2 ) . C. S = 1600 ( c m 2 ) . D. S = 2000 ( c m 2 ) .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. S = 800 ( c m 2 ) .",
+            "B. S = 1200 ( c m 2 ) .",
+            "C. S = 1600 ( c m 2 ) .",
+            "D. S = 2000 ( c m 2 ) ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi J là trung điểm của A B . Có : { A B ⊥ I J A B ⊥ S I ⇒ A B ⊥ ( S J I ) Nên : ⎧ ⎪ ⎨ ⎪ ⎩ ( S A B ) ⊥ ( S I J ) ( S A B ) ∩ ( S I J ) = S J I H ⊥ S J ⇒ d ( I , ( S A B ) ) = I H = 24 1 I H 2 = 1 S I 2 + 1 I J 2 ⇔ 1 I J 2 = − 1 40 2 + 1 24 2 ⇔ J I = 30 Nên : B J = √ 50 2 − 30 2 = 40 Và S J = √ 40 2 + 30 2 = 50 Vậy : S Δ S A B = 1 2 S J . A B = 1 2 50.80 = 2000 ( c m 2 ) . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0352",
+        "question": "Trong không gian, tập hợp các điểm cách đều hai đầu mút của đoạn thẳng là: A. đường trung trực của đoạn thẳng B. trung điểm của đoạn thẳng C. mặt phẳng trung trực của đoạn thẳng D. đường tròn đường kính là đoạn thẳng đó",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đường trung trực của đoạn thẳng",
+            "B. trung điểm của đoạn thẳng",
+            "C. mặt phẳng trung trực của đoạn thẳng",
+            "D. đường tròn đường kính là đoạn thẳng đó"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mọi điểm nằm trên mặt phẳng trung trực của đoạn thẳng thì cách đều hai đầu mút của đoạn thẳng và ngược lại. Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0363",
+        "question": "Tính thể tích của vật thể tròn xoay khi quay mô hình (như hình vẽ) quanh trục D F A. 10 π a 3 9 . B. 10 π a 3 7 . C. 5 π a 3 2 . D. π a 3 3 .",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1540112801260_00.PNG",
+        "difficulty": 3,
+        "options": [
+            "A. 10 π a 3 9 .",
+            "B. 10 π a 3 7 .",
+            "C. 5 π a 3 2 .",
+            "D. π a 3 3 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có E F = A F . tan β = a . tan 30 ∘ = a √ 3 3 Khi quay quanh trục D F , tam giác A E F tạo ra một hình nón có thể tích V 1 = 1 3 π . E F 2 . A F = 1 3 π . ( a √ 3 3 ) 2 . a = π a 3 9 Khi quay quanh trục D F , hình vuông A B C D tạo ra một hình trụ có thể tích V 2 = π . D C 2 . B C = π . a 2 . a = π a 3 Thể tích của vật thể tròn xoay khi quay mô hình (như hình vẽ) quanh trục D F là V = V 1 + V 2 = π a 3 9 + π a 3 = 10 9 π a 3 Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0371",
+        "question": "Cho một khối trụ có độ dài đường sinh là l và bán kính đường tròn đáy là r . Diện tích toàn phần của hình trụ là A. S t p = π r ( l + r ) . B. S t p = 2 π r ( l + 2 r ) . C. S t p = π r ( 2 l + r ) . D. S t p = 2 π r ( l + r ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S t p = π r ( l + r ) .",
+            "B. S t p = 2 π r ( l + 2 r ) .",
+            "C. S t p = π r ( 2 l + r ) .",
+            "D. S t p = 2 π r ( l + r ) ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com S t p = 2 S d + S x q = l .2 π r + 2 π . r 2 = 2 π r ( l + r ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0383",
+        "question": "Cho hình trụ có bán kính đáy 5 c m chiều cao 4 c m . Diện tích toàn phần của hình trụ này là A. 96 π ( c m 2 ) . B. 92 π ( c m 2 ) C. 40 π ( c m 2 ) . D. 90 π ( c m 2 ) .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 96 π ( c m 2 ) .",
+            "B. 92 π ( c m 2 )",
+            "C. 40 π ( c m 2 ) .",
+            "D. 90 π ( c m 2 ) ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình trụ có bán kính đáy R = 5 ( c m ) và chiều cao h = 4 ( c m ) . Diện tích toàn phần của hình trụ này là: S t p = 2 π R 2 + 2 π R h = 2 π .25 + 2 π .5 .4 = 90 π ( c m 2 ) . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0393",
+        "question": "Cho một khối trụ có chiều cao bằng 8 c m , bán kính đường tròn đáy bằng 6 c m . Cắt khối trụ bởi một mặt phẳng song song với trục và cách trục 4 c m . Diện tích của thiết diện được tạo thành là : A. 32 √ 3 ( c m 2 ) . B. 16 √ 3 ( c m 2 ) . C. 32 √ 5 ( c m 2 ) . D. 16 √ 5 ( c m 2 ) .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 32 √ 3 ( c m 2 ) .",
+            "B. 16 √ 3 ( c m 2 ) .",
+            "C. 32 √ 5 ( c m 2 ) .",
+            "D. 16 √ 5 ( c m 2 ) ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có mặt phẳng ( A ′ A B ) / / O ′ O Kẻ A ′ B ′ / / A B ⇒ thiết diện tạo thành là hình chữ nhật A B B ′ A ′ Kẻ O H ⊥ A B , O H ⊥ A ′ A ⇒ O H ⊥ ( A ′ A B ) ⇒ d ( O ′ O , ( A ′ A B ) ) = d ( O , ( A ′ A B B ′ ) ) = O H = 4 Mà A H = √ O A 2 − O H 2 = 2 √ 5 ⇒ A B = 4 √ 5 ⇒ S A B B ′ A ′ = 32 √ 5 Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0403",
+        "question": "Cho hình lăng trụ đứng có đáy là tam giác với độ dài cạnh đáy lần lượt 5 c m , 13 c m , 12 c m . Một hình trụ có chiều cao bằng 8 c m ngoại tiếp lăng trụ đã cho có thể tích bằng A. V = 338 π c m 3 B. V = 386 π c m 3 C. V = 507 π c m 3 D. V = 338 c m 3",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. V = 338 π c m 3",
+            "B. V = 386 π c m 3",
+            "C. V = 507 π c m 3",
+            "D. V = 338 c m 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đáy là tam giác với độ dài cạnh đáy lần lượt là 5 c m ; 12 c m ; 13 c m nên đáy là tam giác vuông với độ dài cạnh huyền là 13 c m . Suy ra hình trụ ngoại tiếp hình lăng trụ đứng có đáy là đường tròn bán kính là 13 2 c m . Vậy thể tích hình trụ đó là V = π ( 13 2 ) 2 .8 = 338 π ( c m 3 ) Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0411",
+        "question": "Cho mặt cầu có diện tích là 72 π ( c m 2 ) . Bán kính R của khối cầu là: A. R = √ 6 ( c m ) . B. R = 6 ( c m ) C. R = 3 ( c m ) . D. R = 3 √ 2 ( c m ) .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. R = √ 6 ( c m ) .",
+            "B. R = 6 ( c m )",
+            "C. R = 3 ( c m ) .",
+            "D. R = 3 √ 2 ( c m ) ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Có S = 4 π R 2 = 72 π ⇒ R = √ 72 π 4 π = √ 18 = 3 √ 2 ( c m ) Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0421",
+        "question": "Một hình hộp chữ nhật có độ dài 3 cạnh lần lượt là 2 , 2 , 1 . Tính bán kính R mặt cầu ngoại tiếp hình hộp nói trên. A. R = 3 . B. R = 9 . C. R = 3 2 . D. R = 9 2 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. R = 3 .",
+            "B. R = 9 .",
+            "C. R = 3 2 .",
+            "D. R = 9 2 ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có đường chéo hình hộp d = √ 1 2 + 2 2 + 2 2 = 3 . ⇒ R = d 2 = 3 2 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0433",
+        "question": "Cho hình hộp chữ nhật A B C D . A ′ B ′ C ′ D ′ có A B = a , A D = 2 a và A A ′ = 2 a . Tính bán kính R của mặt cầu ngoại tiếp tứ diện A B B ′ C ′ . A. R = 3 a . B. R = 3 a 4 . C. R = 3 a 2 . D. R = 2 a .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. R = 3 a .",
+            "B. R = 3 a 4 .",
+            "C. R = 3 a 2 .",
+            "D. R = 2 a ."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt cầu ngoại tiếp tứ diện A B B ′ C ′ cũng là mặt cầu ngoại tiếp hình hộp chữ nhật A B C D . A ′ B ′ C ′ D ′ Do đó bán kính là R = 1 2 √ a 2 + ( 2 a ) 2 + ( 2 a ) 2 = 3 a 2 . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0443",
+        "question": "Cho hình chóp S . A B C có S A ⊥ ( A B C ) ; S A = a đáy A B C là tam giác vuông tại B , ˆ B A C = 60 ∘ và A B = a 2 . Gọi ( S ) là mặt cầu ngoại tiếp hình chóp S . A B C . Tìm mệnh đề sai. A. Diện tích của ( S ) là 2 π a 2 3 . B. Tâm của ( S ) là trung điểm S C . C. ( S ) có bán kính a √ 2 2 . D. Thể tích khối cầu là √ 2 π a 3 3 .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. Diện tích của ( S ) là 2 π a 2 3 .",
+            "B. Tâm của ( S ) là trung điểm S C .",
+            "C. ( S ) có bán kính a √ 2 2 .",
+            "D. Thể tích khối cầu là √ 2 π a 3 3 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi N , M lần lượt là trung điểm của A C ; S C . A B C là tam giác vuông tại B , ˆ B A C = 60 o và A B = a 2 nên N A = N B = N C ; A C = a ⇒ S C = a √ 2 ⇒ M C = a √ 2 2 . N M là đường trung bình của tam giác S A C nên N M / / S A ⇒ N M ⊥ ( A B C ) ⇒ M S = M C = M A = M B ⇒ M là tâm của ( S ) có bán kính M C = a √ 2 2 . ⇒ V ( S ) = 4 3 π ( a √ 2 2 ) 3 = √ 2 π a 3 3 . Diện tích của ( S ) : S = 4 π r 2 = 4 π ( a √ 2 2 ) 2 = 2 π a 2 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0453",
+        "question": "Cho hình lăng trụ đứng A B C . A ′ B ′ C ′ có đáy là tam giác vuông tại A , A B = 2 a √ 3 . Đường chéo B C ′ tạo với mặt phẳng ( A A ′ C ′ C ) một góc bằng 60 ∘ . Gọi ( S ) là mặt cầu ngoại tiếp hình lăng trụ đã cho. Bán kính của mặt cầu ( S ) bằng A. a 2 . B. a . C. 3 a . D. 2 a .",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. a 2 .",
+            "B. a .",
+            "C. 3 a .",
+            "D. 2 a ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi M là trung điểm B C , I là trung điểm B C ′ . Khi đó, I M là trục của đường tròn ngoại tiếp tam giác A B C . Mặt khác, I B = I C = I B ′ = I C ′ = I A ′ . Do đó, I là tâm mặt cầu ngoại tiếp lăng trụ A B C . A ′ B ′ C ′ . Bán kính R = 1 2 ⋅ B C ′ = 1 2 ⋅ A B sin 60 ∘ = 4 a 2 = 2 a . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0461",
+        "question": "Một hình nón có thiết diện qua trục là tam giác đều cạnh a . Tính bán kính mặt cầu ngoại tiếp hình nón theo a . A. 2 a √ 3 . B. a 3 √ 3 . C. 2 a 3 √ 3 . D. a √ 3 .",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 a √ 3 .",
+            "B. a 3 √ 3 .",
+            "C. 2 a 3 √ 3 .",
+            "D. a √ 3 ."
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có đường cao hình nón h = a √ 3 2 ⇒ R = 2 3 h = a √ 3 3 . Đáp án cần chọn là: D"
+    },
+    {
+        "id": "M060R0471",
+        "question": "Cho hình chóp tam giác S . A B C có ˆ S A C = ˆ S B C = 90 0 . Khi đó tâm mặt cầu ngoại tiếp hình chóp nằm trên đường thẳng nào? A. S A B. S B C. S C D. A C",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. S A",
+            "B. S B",
+            "C. S C",
+            "D. A C"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy: ˆ S A C = ˆ S B C = 90 0 nên các đỉnh A , B luôn nhìn cạnh S C một góc 90 0 . Do đó tâm mặt cầu ngoại tiếp hình chóp là trung điểm S C . Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0482",
+        "question": "Công thức tính diện tích mặt cầu là: A. S = π R 2 B. S = 4 π R 2 C. S = 2 π R 2 D. S = 4 3 π R 2",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. S = π R 2",
+            "B. S = 4 π R 2",
+            "C. S = 2 π R 2",
+            "D. S = 4 3 π R 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính diện tích mặt cầu S = 4 π R 2 Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0494",
+        "question": "Cho hình lăng trụ tam giác đều A B C . A ′ B ′ C ′ có độ dài cạnh đáy bằng a và chiều cao bằng h . Tính thể tích V của khối trụ ngoại tiếp lăng trụ đã cho. A. V = π a 2 h 9 . B. V = π a 2 h 3 . C. V = 3 π a 2 h . D. V = π a 2 h 27 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. V = π a 2 h 9 .",
+            "B. V = π a 2 h 3 .",
+            "C. V = 3 π a 2 h .",
+            "D. V = π a 2 h 27 ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khối trụ ngoại tiếp lăng trụ tam giác đều có hình tròn đáy là hình tròn ngoại tiếp tam giác đáy của lăng trụ, và chiều cao bằng chiều cao lăng trụ. Tam giác đều cạnh a có bán kính đường tròn ngoại tiếp bằng √ 3 a 3 . Vậy thể tích của khối trụ cần tìm là V = h . S = h . π . ( √ 3 a 3 ) 2 = π a 2 h 3 (đvtt). Đáp án cần chọn là: B"
+    },
+    {
+        "id": "M060R0504",
+        "question": "Cho hình chóp S . A B C D có đáy A B C D là hình thoi cạnh a , ˆ A B C = 120 0 , tam giác S A B đều và nằm trong mặt phẳng vuông góc với đáy. Tính bán kính mặt cầu ngoại tiếp hình chóp S . A B C . A. √ 41 6 a . B. √ 37 6 a . C. √ 39 6 a . D. √ 35 6 a",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. √ 41 6 a .",
+            "B. √ 37 6 a .",
+            "C. √ 39 6 a .",
+            "D. √ 35 6 a"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Do ˆ A B C = 120 ∘ ⇒ ˆ B A D = 60 ∘ suy ra Δ A B D đều ⇒ D A = D B = D C = a nên D là tâm đường tròn ngoại tiếp Δ A B C . Gọi M là trung điểm của A B , G là trọng tâm của Δ S A B . Qua D kẻ d ⊥ ( A B C D ) , và qua G kẻ d ′ ⊥ ( S A B ) Gọi I = d ∩ d ′ . Ta có I A = I B = I C = I D Khi đó I là tâm của mặt cầu ngoại tiếp hình chóp S . A B C có bán kính R = I A = √ A D 2 + M G 2 =    ⎷ a 2 + ( a √ 3 6 ) 2 = √ 39 6 a Đáp án cần chọn là: C"
+    },
+    {
+        "id": "M060R0514",
+        "question": "Cho hình hộp chữ nhật A B C D . A ′ B ′ C ′ D ′ có đáy là hình vuông cạnh a và cạnh bên bằng 2 a . Diện tích xung quanh S x q của hình nón có đỉnh là tâm O của hình vuông A ′ B ′ C ′ D ′ và đáy là hình tròn nội tiếp hình vuông A B C D là: A. S x q = π a 2 √ 17 4 . B. S x q = π a 2 C. S x q = π a 2 √ 17 2 . D. S x q = π a 2 √ 17 .",
+        "image_source": null,
+        "difficulty": 4,
+        "options": [
+            "A. S x q = π a 2 √ 17 4 .",
+            "B. S x q = π a 2",
+            "C. S x q = π a 2 √ 17 2 .",
+            "D. S x q = π a 2 √ 17 ."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Dựa vào giả thiết ta có bán kính đáy hình nón là bán kính đường tròn nội tiếp hình vuông nên r = a 2 . Chiều cao hình nón là khoảng cách từ O đến mặt phẳng ( A B C D ) nên h = 2 a Độ dài đường sinh hình nón là l = √ h 2 + r 2 = √ 4 a 2 + a 2 4 = a √ 17 2 Diện tích xung quanh của hình nón là S x q = π r l = π a 2 . a √ 17 2 = π a 2 √ 17 4 . Đáp án cần chọn là: A"
+    },
+    {
+        "id": "M060R0523",
+        "question": "Một cái cột có hình dạng như hình bên (gồm một khối nón và một khối trụ ghép lại). Chiều cao đo được ghi trên hình, chu vi đáy là 20 √ 3 π cm. Thể tích của cột bằng: A. 13 000 π ( c m 3 ) B. 5000 π ( c m 3 ) C. 15 000 π ( c m 3 ) D. 52000 π ( c m 3 )",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223293299601639626495401-mceclip0.png",
+        "difficulty": 3,
+        "options": [
+            "A. 13 000 π ( c m 3 )",
+            "B. 5000 π ( c m 3 )",
+            "C. 15 000 π ( c m 3 )",
+            "D. 52000 π ( c m 3 )"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi r là bán kính đường tròn đáy của hình trụ và hình nón. Theo bài ra ta có: Chu vi đáy là C = 2 π r = 20 √ 3 π ⇒ r = 10 √ 3 ( c m ) Thể tích khối nón là V 1 = 1 3 π r 2 . h 1 = 1 3 π . ( 10 √ 3 ) 2 .10 = 1000 π ( c m 3 ) Thể tích khối trụ là V 2 = π r 2 . h 2 = π . ( 10 √ 3 ) 2 .40 = 12000 π ( c m 3 ) Thể tích của cột là V = V 1 + V 2 = 13000 π ( c m 3 ) . Đáp án cần chọn là: A"
+    }
+]

@@ -1,18 +1,35 @@
 import json
+import os
+import google.generativeai as genai
 # chủ yếu lấy ra từng vòng lặp 
 class DrawChartBase:
     def __init__(self, subject_name, num_chap, test_type, num) -> None:
         self.subject_name = subject_name
-        self.num_chap = None
+        self.num_chap = num_chap
         self.test_type = test_type
         self.num = num
+        self.time_to_do_test = None
         self.load_data()
     def load_data(self):
         try:
             with open(f'{self.subject_name}_{self.test_type}_results.json', 'r') as f:
-                data = json.load(f)[-self.num:]
-                self.num_chap = max(int(data2["chapter"]) for data2 in data)
+                if self.test_type == "total":
+                    data = json.load(f)[-self.num:]
+                    self.num_chap = max(int(data2["chapter"]) for data2 in data)
+                    self.time_to_do_test = 1
+                    return data
+                elif self.test_type == "chapter":
+                    all_tests = json.load(f)
+                    chapter_tests = [test for test in all_tests if int(test["chapter"]) == self.num_chap]
+                    
+                    num_tests_to_return = min(len(chapter_tests), self.num)
+                    self.time_to_do_test = 0.5
+                    return chapter_tests[-num_tests_to_return:]
+                else:
+                    self.time_to_do_test = 0
+                        
                 return data
+            
         except FileNotFoundError:
             print(f"Warning: The file '{f'{self.subject_name}_{self.test_type}_results.json'}' was not found.")
             return None
@@ -95,14 +112,19 @@ class DrawChartBase:
     def previous_results(self): 
         results = []
         durations = []
+        exact_time = []
+        num_quess = []
         datas = self.load_data()
         for a in datas:
+            num_ques = a["total_questions"]
+            num_quess.append(num_ques)
             duration = 0
             results.append(a['score'])
             for time in a['time_spent_per_question'].values():
                 duration += time
             durations.append(duration)
-        return results, durations
+            exact_time.append(a["completion_time"])
+        return results, durations, exact_time,  num_quess# list of scores, list of durations, list of exact time
 
 class DrawTotal(DrawChartBase):
     def cal_accu_chap(self, chap):
@@ -184,6 +206,7 @@ class DrawTotal(DrawChartBase):
             return most_wrong_chap
         return None
 
+
 class DrawChap(DrawChartBase):
     def difficult_percentile_per_chap(self):
         _, diff_ids, diff_nums = self.cal_accu_diff()
@@ -201,20 +224,72 @@ class DrawChap(DrawChartBase):
         
         return chap_difficulty_percentile
 
+# bay h, predict het accuracy cua tung type cau hoi tung chap ra, store vao 1 
 
 
 
-draw_total = DrawTotal("T", 3, "total",5)
-print(draw_total.cal_accu_diff())
-print(draw_total.lessons_id_to_review())
-print(draw_total.short_total_analysis())
-print(draw_total.find_most_wrong_chap())
-print(draw_total.difficult_percentile_per_chap())
-print(draw_total.previous_results())
+
+
+# for i in range(1,8):
+#     path = f"data/final_math/Math_C{i}.json"
+#     test = createThreshold(9, "T", path)
+#     calc = test.percent_each_diff()
+#     print(path)
+#     print(sum(calc[:3]))
+#     print(sum(calc[3:]))
+#     print(calc)
+
+
+# for i in range(1,8):
+#     path = f"data/Physics/Physics_C{i}.json"
+#     test = createThreshold(9, "T", path)
+#     calc = test.percent_each_diff()
+#     print(path)
+#     print(sum(calc[:3]))
+#     print(sum(calc[3:]))
+#     print(calc)
+    
+
+# threshold có thể predict bằng 
+# độ khó của chương (chia theo nhiều cấp độ (nhiều NB, TH), % (NB, TH se cao ap dao)
+# (nhiều TH, VD), % NB, TH, VD se cao ap dao
+# (Nhiều VD, VDC)) 
+# aim diem cua hoc sinh
+# chắc khuyến nghị thì sẽ 100% 3 cái đầu tiên, cái cuối cùng trừ ra
+# 1 chuong lay ra trong test tong thi se gom 10 cau
+# 1 chuong lay ra trong test chuong thi se gom 30 cau
+# 1 chương có nb+th+vd > 0.8 => chương dễ, 2 phần này nên cao tùy vào aim
+# còn lại thì tương đối khó, chắc sẽ recommend nó đúng hết 3 phần đầu tùy vào aim
+# đụ má hay là mình tính ra, xong kêu chương này có từng mức độ khó như nào đấy, xong call api vào kêu gemini dự đoán ra ta 
+
+
+
+
+# for i in range(1,8):
+#     path = f"data/final_math/Math_C{i}.json"
+#     test = createThreshold(9, "T", path)
+#     print(path)
+#     print(test.calculate())
+
+# for i in range(1,8):
+#     path = f"data/Physics/Physics_C{i}.json"
+#     test = createThreshold(9, "L", path)
+#     print(path)
+#     print(test.calculate())
+
+# draw_total = DrawTotal("T", 3, "total",5)
+# print(draw_total.cal_accu_diff())
+# print(draw_total.lessons_id_to_review())
+# print(draw_total.short_total_analysis())
+# print(draw_total.find_most_wrong_chap())
+# print(draw_total.difficult_percentile_per_chap())
+# print(draw_total.previous_results())
 # # For chapter-specific analysis
-draw_chap = DrawChap("T", 3, "chapter",5)
-print(draw_chap.cal_accu_diff())
-print(draw_chap.lessons_id_to_review())
-print(draw_chap.difficult_percentile_per_chap())
-print(draw_chap.previous_results())
+# draw_chap = DrawChap("T", 3, "chapter",5)
+# print(draw_chap.difficult_percentile_per_chap())
+# print(draw_chap.lessons_id_to_review())
+# print(draw_chap.difficult_percentile_per_chap())
+# print(draw_chap.previous_results())
+
+
 
