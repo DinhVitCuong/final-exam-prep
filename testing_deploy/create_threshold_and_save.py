@@ -27,6 +27,15 @@ class createThreshold:
             elif entry["difficulty"] == 4:
                 self.thres_vdc += 1
         return self.thres_nb/length, self.thres_th/length, self.thres_vd/length, self.thres_vdc/length
+    def difficult_analysis_chap(self):
+        th, nb, vd, vdc = self.percent_each_diff()
+        if th+nb+vd>0.9:
+            return "Chương chủ yếu là các câu hỏi ở mức Nhận biết, Thông hiểu và vận dụng"
+        elif th+nb+vd>0.8:
+            return "Chương chủ yếu là các câu hỏi ở mức Nhận biết và Thông hiểu và vận dụng, chỉ có một số ít câu hỏi ở mức vận dụng cao"
+        elif th+nb+vd<0.8:
+            return "Chương chủ yếu là các câu hỏi ở mức Nhận biết và Thông hiểu, có kha khá câu hỏi ở mức vận dụng cao"
+        # dùng để recommend safe spot cho user
     def recommend_threshold(self):
         th, nb, vd, vdc = self.percent_each_diff()
         prompt = (f"Đối với môn học {self.subject} và chương {self.chapter} có các phân bổ câu hỏi như sau: \n"
@@ -49,21 +58,27 @@ class createThreshold:
 
 # file luu threshold nen la 1 file json
 # math = {}
-# for i in range(1, 8):
-#     path = f"data/final_math/Math_C{i}.json"
-#     test = createThreshold(9, "T", path)
-#     time.sleep(10)
-#     math[i] = test.recommend_threshold()
+for i in range(1, 8):
+    path = f"data/final_math/Math_C{i}.json"
+    test = createThreshold(9, "T", path)
+    calc = test.percent_each_diff()
+    print(sum(calc[:3]))
+    print(calc)
+    # time.sleep(10)
+    # math[i] = test.recommend_threshold()
 # with open("threshold_math.json", "w", encoding = 'utf-8') as file:
 #     json.dump(math, file, ensure_ascii = False)
 
 
 # physics = {}
-# for i in range(1, 8):
-#     path = f"data/Physics/Physics_C{i}.json"
-#     test = createThreshold(9, "L", path)
-#     physics[i] = test.recommend_threshold()
-#     time.sleep(10)
+for i in range(1, 8):
+    path = f"data/Physics/Physics_C{i}.json"
+    test = createThreshold(9, "L", path)
+    calc = test.percent_each_diff()
+    print(sum(calc[:3]))
+    print(calc)
+    # physics[i] = test.recommend_threshold()
+    # time.sleep(10)
 # with open("threshold_physics.json", "w", encoding = 'utf-8') as file:
 #     json.dump(physics, file, ensure_ascii = False)
 
@@ -72,3 +87,4 @@ class createThreshold:
 # path = f"data/final_math/Math_C4.json"
 # test = createThreshold(9, "T", path)
 # print(test.recommend_threshold())
+

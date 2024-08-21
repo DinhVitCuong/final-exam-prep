@@ -182,7 +182,7 @@ class DrawTotal(DrawChartBase):
             time_chaps[chap] = sum(time_chaps[chap]) / len(time_chaps[chap]) if time_chaps[chap] else 0
 
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
-
+    
     def difficult_percentile_per_chap(self): #dev lại cái này
         _, diff_ids, diff_nums = self.cal_accu_diff()
         chap_difficulty_count = {chap: {1: 0, 2: 0, 3: 0, 4:0} for chap in range(1, self.num_chap + 1)}
@@ -277,7 +277,7 @@ class DrawChap(DrawChartBase):
 #     print(path)
 #     print(test.calculate())
 
-# draw_total = DrawTotal("T", 3, "total",5)
+draw_total = DrawTotal("T", 3, "total",5)
 # print(draw_total.cal_accu_diff())
 # print(draw_total.lessons_id_to_review())
 # print(draw_total.short_total_analysis())
