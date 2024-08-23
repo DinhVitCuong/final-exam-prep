@@ -1,65 +1,18 @@
-to do list từ phân tích test tổng: ## Kế hoạch cải thiện điểm số chi tiết:
-
-**Từ 22/08/2024 đến 28/08/2024:**
-
-* **Mỗi ngày:** 
-    * Dành 1 tiếng ôn tập lại lý thuyết chương 1 và 2, tập trung vào các khái niệm cơ bản. 
-    * Sử dụng chức năng "search được các câu đã sai" trong app để xem lại các lỗi sai thường gặp ở các chương này, đặc biệt chú ý vào câu hỏi loại 1 và 3.
-    * Làm 20 câu hỏi luyện tập cho mỗi chương trên app, kết hợp cả 4 loại câu hỏi. 
-
-* **24/08/2024 & 26/08/2024:**
-    * Dành 30 phút sử dụng chức năng "làm bài kiểm tra các loại câu đã sai" cho chương 1 và 2. 
-    * Sau khi làm xong, dành thêm 15 phút xem lại "phân tích" để hiểu rõ nguyên nhân dẫn đến lỗi sai.
-
-**Từ 29/08/2024 đến 04/09/2024:**
-
-* **Mỗi ngày:**
-    * Dành 1 tiếng ôn tập lý thuyết chương 3, chú trọng vào các dạng bài tập vận dụng.
-    * Làm 20 câu hỏi luyện tập cho chương 3, tập trung vào câu hỏi loại 1 và 3.
-    * Dành 30 phút xem lại lý thuyết và bài tập đã làm của chương 1 & 2.
-
-* **31/08/2024 & 02/09/2024:**
-    * Dành 30 phút sử dụng chức năng "làm bài kiểm tra các loại câu đã sai" cho chương 3. 
-    * Sau đó, dành 15 phút xem "phân tích" để rút kinh nghiệm.
-
-**Từ 05/09/2024 đến 07/09/2024:**
-
-* **Mỗi ngày:** Ôn tập tổng hợp cả 3 chương, mỗi chương 1 tiếng.
-* **Làm thêm 1 bài test total** trên app để đánh giá lại kiến thức sau quá trình ôn tập.
-
-**Lưu ý:**
-
-* Kế hoạch này được xây dựng dựa trên giả định bạn có thể dành khoảng 2 tiếng mỗi ngày cho việc học Toán. Hãy điều chỉnh thời gian học cho phù hợp với lịch trình của bạn.
-* Việc kiên trì thực hiện kế hoạch và nghiêm túc trong quá trình ôn tập là yếu tố quan trọng nhất để cải thiện điểm số. 
-to do list từ phân tích test chương: ## Kế hoạch cải thiện điểm Toán chương 3:
-
-Dựa trên kết quả hiện tại, em cần tập trung cải thiện toàn bộ các loại câu hỏi của chương 3. Dưới đây là kế hoạch chi tiết, em hãy cố gắng bám sát nhé:
-
-**23/08/2024:**
-* Xem lại bài giảng và ghi chú chương 3 để nắm chắc kiến thức cơ bản.
-* Sử dụng chức năng "search các câu đã sai" trong app để xem lại các lỗi sai thường gặp ở các lần test trước. 
-* Làm 1 bài test chương 3 trên app, tập trung vào các câu hỏi loại 1 và 2 (Thông hiểu và Nhận biết).
-* Sau khi làm xong, sử dụng chức năng "review lại phân tích" để hiểu rõ nguyên nhân dẫn đến lỗi sai.
-
-**24/08/2024:**
-* Ôn tập lại những phần kiến thức đã ôn ngày hôm qua.
-* Làm 1 bài test chương 3 trên app, tập trung vào câu hỏi loại 3 (Vận dụng).
-* Tiếp tục sử dụng chức năng "review lại phân tích" sau khi làm bài.
-
-**25/08/2024:**
-* Ôn tập lại những phần kiến thức đã ôn trong 2 ngày qua.
-* Làm 1 bài test chương 3 trên app, tập trung vào câu hỏi loại 4 (Vận dụng cao).
-* Sử dụng chức năng "review lại phân tích" sau khi làm bài.
-
-**26/08/2024:**
-* Làm lại 1 bài test chương 3 tổng hợp tất cả các loại câu hỏi để đánh giá sự tiến bộ. 
-* Dành thời gian xem lại những câu sai và ôn tập kỹ những phần kiến thức còn yếu.
-
-**Từ 27/08/2024:**
-* Duy trì thói quen ôn tập và làm bài tập đều đặn mỗi ngày để củng cố kiến thức. 
-* Tập trung vào các dạng bài em còn gặp khó khăn.
-
-**Lưu ý:**
-* Hãy cố gắng bám sát kế hoạch và dành đủ thời gian cho việc học.
-* Đừng ngại đặt câu hỏi cho giáo viên hoặc gia sư nếu gặp khó khăn trong quá trình học tập. 
-* Quan trọng nhất là em cần kiên trì và nỗ lực, chắc chắn kết quả học tập của em sẽ được cải thiện. 
+24/08/2024 : Xem lại bài test chapter 3 vừa rồi, ghi chú lại những lỗi sai thường gặp.
+24/08/2024 : Sử dụng chức năng "Wrong question searching" để xem lại tất cả các câu hỏi sai trong 8 bài test trước đó của chương 3.
+24/08/2024 : Phân tích nguyên nhân dẫn đến sai lầm (lỗi kiến thức, đọc hiểu đề bài, tính toán,...).
+24/08/2024 : Ôn tập Chương 3: Sử dụng chức năng "Wrong question searching" để xem lại các câu hỏi sai ở Chương 3 trong các bài Total Test trước.
+24/08/2024 : Luyện tập Chương 3: Sử dụng chức năng "Practice test recommendation" để làm bài tập về các kiến thức Chương 3 còn yếu.
+25/08/2024 - 17/09/2024 : Ôn tập Chương 1 & 2:  Mỗi ngày ôn tập 1 chương, tập trung vào các loại câu hỏi cấp độ Nhận biết và Thông hiểu. Sử dụng "Wrong question searching" để ôn tập hiệu quả.
+25/08/2024 - 17/09/2024 : Luyện tập theo chương:  Sau khi ôn tập, sử dụng "Practice test recommendation" để luyện tập các kiến thức của từng chương.
+29/08/2024 : Sử dụng chức năng "Practice test recommendation" để ôn tập những kiến thức đã sai.
+29/08/2024 : Tập trung vào các loại câu hỏi có tỉ lệ đúng thấp (cả 4 loại câu hỏi đều cần được ôn tập kỹ lưỡng).
+08/09/2024 : Sử dụng chức năng "Analytic review" để phân tích điểm mạnh, điểm yếu trong 8 bài test trước.
+08/09/2024 : Ghi chú lại những điểm cần lưu ý cho các lần làm bài sau. 
+13/09/2024 : Ôn tập lại toàn bộ kiến thức chương 3. 
+13/09/2024 : Làm một bài test chương 3 mới để đánh giá sự tiến bộ.
+18/09/2024 : Làm bài Total Test tháng 9.
+19/09/2024 : Phân tích kết quả: Sử dụng chức năng "Analytic review" để phân tích bài Total Test vừa làm, xác định điểm mạnh, điểm yếu và các chương cần ôn tập thêm.
+20/09/2024 - 17/10/2024 : Tập trung vào điểm yếu: Dựa vào phân tích ở bước trên, tập trung ôn tập các chương và loại câu hỏi còn yếu.
+20/09/2024 - 17/10/2024 : Luyện tập nâng cao:  Tăng cường luyện tập các câu hỏi Vận dụng và Vận dụng cao.
+18/10/2024 : Làm bài Total Test tháng 10. 

@@ -1,9 +1,10 @@
 import json
 import os
 import google.generativeai as genai
+import pandas as pd
 # chủ yếu lấy ra từng vòng lặp 
 class DrawChartBase:
-    def __init__(self, subject_name, num_chap, test_type, num, load_type = None) -> None:
+    def __init__(self, subject_name, num_chap, test_type, num, load_type = None, ) -> None:
         self.subject_name = subject_name
         self.num_chap = num_chap
         self.test_type = test_type
@@ -11,6 +12,7 @@ class DrawChartBase:
         self.load_type = load_type if load_type in ["specific", "average"] else None
         self.time_to_do_test = None
         self.load_data()
+        self.date_and_time_calc("2024-08-23", "2025-09-27", 9)
     def load_data(self):
         try:
             if self.load_type == None or self.load_type == "average":
@@ -142,6 +144,22 @@ class DrawChartBase:
             durations.append(duration)
             exact_time.append(a["completion_time"])
         return results, durations, exact_time,  num_quess# list of scores, list of durations, list of exact time
+    def date_and_time_calc(self,start_date, final_date, aim):
+        # 7 chapter
+        final_date = pd.to_datetime(final_date)
+        start_date = pd.to_datetime(start_date)
+        if aim >= 9:
+            prep_time = 5 # months
+        elif aim >= 8:
+            prep_time = 3
+        else:
+            prep_time = 1
+        get_date_prep = final_date - pd.DateOffset(months=prep_time)
+        if self.test_type == "total":
+            self.time_to_do_test = (get_date_prep - start_date)/7
+        elif self.test_type == "chapter":
+            self.time_to_do_test = (get_date_prep - start_date)/14
+        return get_date_prep
 
 class DrawTotal(DrawChartBase):
     def cal_accu_chap(self, chap):

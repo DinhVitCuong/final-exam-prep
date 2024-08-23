@@ -26,7 +26,7 @@ class promptCreation:
         f"phần nào cần được cải thiện, so sánh với các kết quả trước để khen thưởng, nhắc nhở\n"
         f"Đưa ra lời khuyên cụ thể cho user để cải thiện kết quả hơn\n")
         # Correctly instantiate the data object based on type_test
-        
+        self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (làm bài tập những kiến thức đã sai), Analytic review (review phần analysis của {self.num_test} bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
     def return_subject_name(self):
         name = {
             "T": "Toán",
@@ -143,8 +143,8 @@ class promptTotal(promptCreation):
         plan_prompt = self.fast_analysis() + self.deep_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += "Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng"
-        plan_prompt += f"Biết rằng app có 1 số chức năng như: làm bài kiểm tra các loại câu đã sai, review lại phân tích, search được các câu đã sai\n"
+        plan_prompt += f"Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng biết rằng cứ {self.data.time_to_do_test} tháng làm 1 bài test\n"
+        plan_prompt += self.functions_prompt
         plan_prompt += f"và điểm hiện tại là {formatted_date} và {self.date_time_test()}, không cần phân tích và hãy đưa ra kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
         return plan_prompt
 
@@ -177,8 +177,8 @@ class promptChap(promptCreation):
         data_prompt = self.chap_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        data_prompt += "Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng"
-        data_prompt += f"Biết rằng app có 1 số chức năng như: làm bài kiểm tra các loại câu đã sai, review lại phân tích, search được các câu đã sai\n"
+        data_prompt += f"Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng biết rằng cứ {self.data.time_to_do_test} tháng làm 1 bài test\n"
+        data_prompt += self.functions_prompt
         data_prompt += f"và thời điểm hiện tại là {formatted_date} và {self.date_time_test()}, không cần phân tích và hãy đưa ra kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
         # Đưa ra kế hoạch cụ thể để cải thiện kết quả trong chương
         # Đưa ra thời gian cụ thể thực hiện kế hoạch
@@ -188,13 +188,13 @@ class promptChap(promptCreation):
 class generateAnalysis:
     def __init__(self,subject,num_chap):
         self.configuration = {
-            "temperature" : 0.7,
+            "temperature" : 0.6,
             "top_p" : 0.8,
-            "top_k" : 200,
+            "top_k" : 100,
             "max_output_tokens" : 4096
         }
         self.model_name = 'gemini-1.5-pro-latest'
-        self.gg_api_key = 'AIzaSyBBkrD1o2ZMfXDp-pM-3sBTkCUKj6bwmsA'
+        self.gg_api_key = 'AIzaSyB2sumqMslldVmYJlWIAQjrqf-d8g7rnxg'
         genai.configure(api_key=self.gg_api_key)
         self.model = genai.GenerativeModel(self.model_name, generation_config=self.configuration)
         self.num_test = 8
@@ -225,25 +225,29 @@ class generateAnalysis:
         response = self.model.generate_content(prompt)
         return response.text
     def detail_plan_and_timeline(self):
-
-        prompt = ("Hãy gộp lại thành 1 to do list hoàn thiện từ 2 to do list sau, nhấn mạnh là không cần ghi phân tích, \n"
-        "hãy viết theo format sau: \n"
-            "'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n",
-            "ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó, v.v '\n",)
         # Start building the prompt string
+
         prompt = "to do list từ phân tích test tổng: "
         prompt += self.total_plan()
         
         prompt += "to do list từ phân tích test chương: "
         time.sleep(5)
         prompt += self.chap_plan()
+        prompt += (
+            "Hãy gộp lại thành 1 to do list hoàn thiện từ prompt trên, tập trung vào việc ôn lại kiến thức và làm bài tập, chỉ cần ghi kế hoạch chi tiết, không cần ghi tiêu đề \n"
+            "tập trung viết theo format sau: \n"
+            "'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n")
         
-        
+        response = self.model.generate_content(prompt)
+        return response.text
+    # def format_data(self):
+    #     data = self.detail_plan_and_timeline()
+    #     prompt = f"Từ '{data}' hãy loại bỏ lưu ý, đánh giá hay phân tích, mà chỉ ghi tập trung viết theo format sau: 'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n"
+    #     return 
         # co 2 huong, lay phan tich cua test chap voi test total de dua ra kế hoạch cụ thể
         # lay chung chung ke hoahc cu the cua test total va test chuong
 
         # them attribute la : day dang la tuan thu may on thi ... , vv
-        return prompt
 # test = generateAnalysis("T")
 # # print(test.analyze_progress())
 # print(test.analyze_fast())
