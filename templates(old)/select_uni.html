@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select University</title>
+</head>
+<body>
+    <h1>Select University Based on Your Preferences</h1>
+    
+    <form method="POST" action="{{ url_for('select_uni') }}">
+        {{ form.hidden_tag() }}
+
+        <p>{{ form.budget.label }} {{ form.budget() }}</p>
+
+        <p>{{ form.location.label }} {{ form.location(multiple=True) }}</p>
+
+        <p>{{ form.major.label }} {{ form.major(multiple=True) }}</p>
+
+        {% if form.university.choices %}
+        <p>{{ form.university.label }} {{ form.university() }}</p>
+        {% endif %}
+        
+        <p>{{ form.check() }}</p>
+
+        {% if form.university.data %}
+        <p>{{ form.submit() }}</p>
+        {% endif %}
+    </form>
+</body>
+</html>

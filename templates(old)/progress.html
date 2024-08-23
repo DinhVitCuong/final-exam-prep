@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    {% if progress_1 and progress_2 and progress_3 %}
+        <h2>Progress 1</h2>
+        <ul>Total
+            <li>{{total_pro_1}}</li>
+        </ul>
+        <ul>
+            {% for value in progress_1 %}
+                <li>{{ value }} - </li>
+            {% endfor %}
+        </ul>
+        <h2>Progress 2</h2>
+        <ul>Total
+            <li>{{total_pro_2}}</li>
+        </ul>
+        <ul>
+            {% for value in progress_2 %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Progress 3</h2>
+        <ul>Total
+            <li>{{total_pro_3}}</li>
+        </ul>
+        <ul>
+            {% for value in progress_3 %}
+                <li>{{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No progress data available.</p>
+    {% endif %}
+</body>
+</html>

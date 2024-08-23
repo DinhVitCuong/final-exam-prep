@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Display</title>
+</head>
+<body>
+    <h1>Questions List</h1>
+    
+    <form action="/submit" method="POST">
+        {% for question in questions %}
+            <div>
+                <h2>Question ID: {{ question.ID }}</h2>
+                <p>{{ question.question }}</p>
+                
+                {% for option in question.options %}
+                    <div>
+                        <input type="radio" name="question_{{ question.ID }}" value="{{ option }}" required>
+                        <label>{{ option }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+            <hr>
+        {% endfor %}
+        
+        <button type="submit">Submit Test</button>
+    </form>
+</body>
+</html>
