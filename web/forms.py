@@ -14,6 +14,7 @@ from wtforms import (
 
 from flask_wtf import FlaskForm
 from wtforms.validators import InputRequired, Length, EqualTo, Email, Regexp ,Optional, NumberRange
+from models import User, Progress, Test, Universities, QAs, Subject
 import email_validator
 from flask_login import current_user
 from wtforms import ValidationError,validators
@@ -21,19 +22,17 @@ from models import User
 
 
 class login_form(FlaskForm):
-    email = StringField(validators=[InputRequired(), Email(), Length(1, 64)])
+    identifier = StringField('Username or Email', validators=[InputRequired()])
     pwd = PasswordField(validators=[InputRequired(), Length(min=8, max=72)])
-    # Placeholder labels to enable form rendering
-    username = StringField(
-        validators=[Optional()]
-    )
+    remember = BooleanField('Remember Me')
+    submit = SubmitField('Login')
 
 
 class register_form(FlaskForm):
     username = StringField(
         validators=[
             InputRequired(),
-            Length(3, 20, message="Please provide a valid name"),
+            Length(3, 30, message="Please provide a valid name"),
             Regexp(
                 "^[A-Za-z][A-Za-z0-9_.]*$",
                 0,
@@ -41,6 +40,7 @@ class register_form(FlaskForm):
             ),
         ]
     )
+    name = StringField(validators=[InputRequired()])
     email = StringField(validators=[InputRequired(), Email(), Length(1, 64)])
     pwd = PasswordField(validators=[InputRequired(), Length(8, 72)])
     cpwd = PasswordField(
@@ -50,7 +50,7 @@ class register_form(FlaskForm):
             EqualTo("pwd", message="Passwords must match !"),
         ]
     )
-
+    submit = SubmitField('Sign up')
 
     def validate_email(self, email):
         if User.query.filter_by(email=email.data).first():
@@ -60,20 +60,50 @@ class register_form(FlaskForm):
         if User.query.filter_by(username=username.data).first():
             raise ValidationError("Username already taken!")
     
-class getting_started_form(FlaskForm):
-    value1 = DecimalField(
-        'Value 1',
-        validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
-    )
-    value2 = DecimalField(
-        'Value 2',
-        validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
-    )
-    value3 = DecimalField(
-        'Value 3',
-        validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
-    )
+# class getting_started_form(FlaskForm):
+#     value1 = DecimalField(
+#         'Value 1',
+#         validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
+#     )
+#     value2 = DecimalField(
+#         'Value 2',
+#         validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
+#     )
+#     value3 = DecimalField(
+#         'Value 3',
+#         validators=[InputRequired(), NumberRange(min=0, max=10, message='Hãy nói đúng sự thật nào! bạn có ấn nhầm số không')]
+#     )
+#     submit = SubmitField('Submit')
+
+class select_univesity_form(FlaskForm):
+    subject_category = SelectField('Subject Category', choices=[], validators=[InputRequired()])
+    location = SelectField('Location', choices=[(None, 'Không rõ'), ('Hà Nội', 'Hà Nội'), ('Đà Nẵng', 'Đà Nẵng'), ('Hồ Chí Minh', 'Hồ Chí Minh')]
+                           ,validators=[Optional()]
+                           ,default=None)
+    major = SelectField('Major', choices=[],validators=[Optional()])
+    budget = StringField('Budget lower than',validators=[Optional()])
+    university = SelectField('University', choices=[],validators=[Optional()])
+    current_slide = StringField('Current Slide',validators=[Optional()],default=0)
     submit = SubmitField('Submit')
+    
+    def get_unique_subject_categories(self):
+        # Query all subject categories
+        categories = Universities.query.with_entities(Universities.subject_category).all()
+        unique_categories = set()
+        
+        # Split and collect unique categories
+        for category_string in categories:
+            category_list = category_string[0].split(';')  # Split on semicolons
+            unique_categories.update(category_list)
+        
+        # Return sorted list of unique categories as choices
+        return [(category.strip(), category.strip()) for category in sorted(unique_categories)]
+
+    def __init__(self, *args, **kwargs):
+        super(select_univesity_form, self).__init__(*args, **kwargs)
+        
+        # Populate subject categories from the database
+        self.subject_category.choices = self.get_unique_subject_categories()
 
 class test_selection_form(FlaskForm):
     subject = SelectField('Subject', choices=[], validators=[InputRequired()])
@@ -81,12 +111,3 @@ class test_selection_form(FlaskForm):
     total_chapters = SelectMultipleField('Select Chapters for Total Test', choices=[], coerce=str)
     chapter = SelectField('Select a Chapter for Chapter Test', choices=[], validators=[InputRequired()])
     submit = SubmitField('Start Test')
-
-class select_univesity_form(FlaskForm):
-    budget = StringField('Budget lower than', validators=[InputRequired(), NumberRange(min=0)])
-    location = SelectMultipleField('Location', choices=[('us', 'United States'), ('uk', 'United Kingdom'), ('eu', 'Europe'), ('asia', 'Asia')])
-    major = SelectMultipleField('Subject Category', choices=[('engineering', 'Engineering'), ('arts', 'Arts'), ('science', 'Science'), ('business', 'Business')])
-    subject_category = SelectField('Major', choices=[('A', 'A'), ('B', 'B'), ('C', 'C'), ('D', 'D')], validators=[InputRequired()])
-    university = SelectField('University', choices=[])
-    check = SubmitField('Check')
-    submit = SubmitField('Submit')

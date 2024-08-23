@@ -6,21 +6,25 @@ class User(UserMixin, db.Model):
     
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
+    name = db.Column(db.String, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
     pwd = db.Column(db.String(300), nullable=False, unique=True)
-
+    uni_select = db.Column(db.Integer,nullable=False) #0 = not select uni yet, 1 = selected uni
     def __repr__(self):
         return '<User %r>' % self.username
 
 class Universities(db.Model):
-    __tablename__="univesity"
+    __tablename__="university"
     
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(300), nullable=False)
-    major = db.Column(db.String(300), nullable=False)
-    budget = db.Column(db.String(300), nullable=False)
+    name = db.Column(db.String, nullable=False)
+    uni_code = db.Column(db.String, nullable=False)
+    subject_category = db.Column(db.String, nullable=False)
+    major_name = db.Column(db.String, nullable=False)
+    major_code = db.Column(db.String,nullable=False)
+    budget = db.Column(db.String, nullable=False)
     location = db.Column(db.String(2), nullable=False)
-    pass_score = db.Column(db.String(100), nullable=False)
+    pass_score = db.Column(db.String, nullable=False)
 
 class Subject(db.Model):
     __tablename__="subject"
@@ -45,6 +49,7 @@ class Progress(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
     user_subject_cat = db.Column(db.String(5), nullable=True)
+    user_major_uni = db.Column(db.Integer, db.ForeignKey('university.id'), nullable=False)
     target_progress = db.Column(db.String(10), nullable=True)
     base_progress = db.Column(db.String(10), nullable=True)
     progress_1 = db.Column(db.String(300), nullable=True)

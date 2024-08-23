@@ -231,12 +231,12 @@ class pr_br_rcmd:
         return QAs_list
 
 
-# Example usage:
-rate = [40, 20, 30, 10]
-test_total = TestTotal("T", rate, 3)
-questions_total = test_total.create_test()
-print("Total Test Questions:", questions_total)
+# # Example usage:
+# rate = [40, 20, 30, 10]
+# test_total = TestTotal("T", rate, 3)
+# questions_total = test_total.create_test()
+# print("Total Test Questions:", questions_total)
 
-test_chap = TestChap("T", rate, 3)
-questions_chap = test_chap.create_test()
-print("Chapter Test Questions:", questions_chap)
+# test_chap = TestChap("T", rate, 3)
+# questions_chap = test_chap.create_test()
+# print("Chapter Test Questions:", questions_chap)
