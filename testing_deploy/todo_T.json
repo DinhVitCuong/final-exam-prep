@@ -1,0 +1,142 @@
+[
+    {
+        "date": "24/08/2024",
+        "action": "Đọc lại toàn bộ lý thuyết chương 1, ghi chú các công thức quan trọng và những điểm dễ nhầm lẫn.",
+        "done": false
+    },
+    {
+        "date": "24/08/2024",
+        "action": "Làm 20 câu hỏi trắc nghiệm ngẫu nhiên chương 1 trên ứng dụng. Sử dụng chức năng 'Wrong question searching', ghi chú lỗi sai và lý do sai vào vở.",
+        "done": false
+    },
+    {
+        "date": "24/08/2024",
+        "action": "Đọc lại toàn bộ lý thuyết chương 2, ghi chú các công thức quan trọng và những điểm dễ nhầm lẫn.",
+        "done": false
+    },
+    {
+        "date": "25/08/2024",
+        "action": "Làm 20 câu hỏi trắc nghiệm ngẫu nhiên chương 2 trên ứng dụng. Sử dụng chức năng 'Wrong question searching', ghi chú lỗi sai và lý do sai vào vở.",
+        "done": false
+    },
+    {
+        "date": "25/08/2024",
+        "action": "Đọc lại toàn bộ lý thuyết chương 3, tập trung vào các phần bạn cảm thấy khó hiểu.",
+        "done": false
+    },
+    {
+        "date": "25/08/2024",
+        "action": "Làm 10 câu hỏi trắc nghiệm loại 1 (Nhận biết) và 10 câu loại 2 (Thông hiểu) chương 3 trên ứng dụng. Ghi chú những kiến thức cần ôn thêm.",
+        "done": false
+    },
+    {
+        "date": "26/08/2024",
+        "action": "Ôn tập lại những kiến thức chương 3 đã ghi chú hôm qua.",
+        "done": false
+    },
+    {
+        "date": "26/08/2024",
+        "action": "Làm 10 câu hỏi trắc nghiệm loại 3 (Vận dụng) và 10 câu loại 4 (Vận dụng cao) chương 3 trên ứng dụng.",
+        "done": false
+    },
+    {
+        "date": "26/08/2024",
+        "action": "Sử dụng chức năng 'Wrong question searching' xem lại tất cả các câu hỏi chương 3 đã làm sai, phân tích lỗi sai và ghi chú cẩn thận.",
+        "done": false
+    },
+    {
+        "date": "27/08/2024",
+        "action": "Làm 1 bài 'Practice test recommendation' trên ứng dụng, tập trung vào các chương 1, 2, 3.",
+        "done": false
+    },
+    {
+        "date": "27/08/2024",
+        "action": "Dành ít nhất 30 phút để xem lại phần 'Analytic review' của bài 'Practice test recommendation', ghi chú lại những điểm cần cải thiện.",
+        "done": false
+    },
+    {
+        "date": "27/08/2024",
+        "action": "Ôn tập lại những kiến thức chương 1, 2, 3 dựa trên phân tích 'Analytic review'.",
+        "done": false
+    },
+    {
+        "date": "28/08/2024",
+        "action": "Làm 20 câu hỏi trắc nghiệm ngẫu nhiên từ cả 3 chương trên ứng dụng.",
+        "done": false
+    },
+    {
+        "date": "28/08/2024",
+        "action": "Ôn tập lại những kiến thức còn yếu của cả 3 chương.",
+        "done": false
+    },
+    {
+        "date": "28/08/2024",
+        "action": "Nghỉ ngơi, thư giãn, chuẩn bị tinh thần cho bài test chương 3 vào ngày mai.",
+        "done": false
+    },
+    {
+        "date": "29/08/2024",
+        "action": "Xem lại các ghi chú, công thức quan trọng của chương 3.",
+        "done": false
+    },
+    {
+        "date": "29/08/2024",
+        "action": "Làm bài test chương 3 trên ứng dụng. Tập trung, bình tĩnh, đọc kỹ đề bài trước khi trả lời.",
+        "done": false
+    },
+    {
+        "date": "29/08/2024",
+        "action": "Nghỉ ngơi sau khi thi.",
+        "done": false
+    },
+    {
+        "date": "30/08/2024",
+        "action": "Dành 1 tiếng ôn tập lại kiến thức lý thuyết của 1 chương (lặp lại chu trình cho 3 chương).",
+        "done": false
+    },
+    {
+        "date": "30/08/2024",
+        "action": "Làm 20 câu hỏi trắc nghiệm ngẫu nhiên từ cả 3 chương trên ứng dụng.",
+        "done": false
+    },
+    {
+        "date": "30/08/2024",
+        "action": "Sử dụng chức năng 'Wrong question searching' để xem lại các câu hỏi đã làm sai trong ngày và ghi chú lại những lỗi thường gặp.",
+        "done": false
+    },
+    {
+        "date": "01/09/2024",
+        "action": "Dành 1.5 tiếng để làm 1 bài 'practice test recommendation' trên ứng dụng.",
+        "done": false
+    },
+    {
+        "date": "01/09/2024",
+        "action": "Sau khi hoàn thành bài test, dành 30 phút để xem lại phần 'Analytic review' và ghi chú lại những điểm cần cải thiện.",
+        "done": false
+    },
+    {
+        "date": "08/09/2024",
+        "action": "Dành 1.5 tiếng để làm 1 bài 'practice test recommendation' trên ứng dụng.",
+        "done": false
+    },
+    {
+        "date": "08/09/2024",
+        "action": "Sau khi hoàn thành bài test, dành 30 phút để xem lại phần 'Analytic review' và ghi chú lại những điểm cần cải thiện.",
+        "done": false
+    },
+    {
+        "date": "09/09/2024",
+        "action": "Xem lại tất cả các ghi chú, công thức quan trọng của 3 chương.",
+        "done": false
+    },
+    {
+        "date": "09/09/2024",
+        "action": "Ôn tập lại những kiến thức quan trọng và những lỗi thường gặp.",
+        "done": false
+    },
+    {
+        "date": "09/09/2024",
+        "action": "Làm bài kiểm tra tổng hợp trên ứng dụng.  Giữ tâm lý thoải mái, tự tin khi làm bài.",
+        "done": false
+    }
+]

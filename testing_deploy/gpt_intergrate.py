@@ -9,6 +9,9 @@ from predict_threshold import prepThreshold, predictThreshold
 import csv
 from datetime import datetime
 import time 
+import pandas as pd
+from dateutil.relativedelta import relativedelta
+from datetime import timedelta
 # prompt creation
 class promptCreation:
     def __init__(self, type_test, num_test, subject, num_chap = None):
@@ -26,7 +29,8 @@ class promptCreation:
         f"phần nào cần được cải thiện, so sánh với các kết quả trước để khen thưởng, nhắc nhở\n"
         f"Đưa ra lời khuyên cụ thể cho user để cải thiện kết quả hơn\n")
         # Correctly instantiate the data object based on type_test
-        self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (làm bài tập những kiến thức đã sai), Analytic review (review phần analysis của {self.num_test} bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
+        self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (đây là 1 bài test gồm những kiến thức đã sai từ {self.num_chap} chương trước), Analytic review (review phần analysis của {self.num_test} bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
+
     def return_subject_name(self):
         name = {
             "T": "Toán",
@@ -49,7 +53,7 @@ class promptCreation:
         data_prompt += (
             f"{self.prompt}, Đây là kết quả môn {self.subject}, từ đó hãy Phân tích kết quả kiểm tra {self.prompt_score} và thời gian thực hiện chúng. "
             f"Từ đó cho ra nhận xét nó có kịp tiến độ hay không, "
-            f"biết rằng thời gian tối ưu 2 bài test cách là {self.data.time_to_do_test} tháng, "
+            f"biết rằng thời gian tối ưu 2 bài test cách là {self.data.time_to_do_test} ngày, "
             f"với aim điểm là {self.aim_score} thì user có kịp tiến độ ko, với "
             f"dữ liệu được đưa vào như sau:\n"
         )
@@ -59,7 +63,7 @@ class promptCreation:
         data_prompt += self.analyze_only_prompt
         return data_prompt
     def diff_prompt(self):
-        return "\nChú thích cho loại câu hỏi: 1 là Thông hiểu, 2 là nhận biết, 3 là vận dụng, 4 là vận dụng cao\n" 
+        return "\nChú thích cho loại câu hỏi: 1 là Nhận biết, 2 là Thông hiểu, 3 là vận dụng, 4 là vận dụng cao\n" 
     def date_time_test(self):
         if self.type_test == "total":
             with open(f"{self.subject}_{self.type_test}_results.json", "r", encoding="utf-8") as file:
@@ -71,6 +75,16 @@ class promptCreation:
                 date = data[-1]['completion_time']
 
         return f"Thời điểm làm bài test {self.type_test} cuối cùng là {date}"
+    def next_test_date(self):
+        # Load the completion time from the JSON file
+        with open(f"{self.subject}_{self.type_test}_results.json", "r", encoding="utf-8") as file:
+            data = json.load(file)
+            date = data[-1]['completion_time']
+        
+        date = pd.to_datetime(date)  # Convert to datetime object
+        print(self.data.time_to_do_test)
+        return date + self.data.time_to_do_test
+
 
 class promptTotal(promptCreation):
     def __init__(self, type_test, num_test, subject):
@@ -143,9 +157,9 @@ class promptTotal(promptCreation):
         plan_prompt = self.fast_analysis() + self.deep_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += f"Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng biết rằng cứ {self.data.time_to_do_test} tháng làm 1 bài test\n"
+        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập cho cả {self.num_chap} chương\n"
         plan_prompt += self.functions_prompt
-        plan_prompt += f"và điểm hiện tại là {formatted_date} và {self.date_time_test()}, không cần phân tích và hãy đưa ra kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
+        plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test total tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
         return plan_prompt
 
 
@@ -153,7 +167,7 @@ class promptChap(promptCreation):
     def __init__(self, type_test,num_test,subject,num_chap):
         super().__init__(type_test, num_test,subject,num_chap)
     def chap_analysis(self):
-        data_prompt = data_prompt = (f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó\n")
+        data_prompt = (f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó\n")
         # Phân tích trung bình điểm số, thời gian, thời điểm so với các lần làm chương trước đó
         data_prompt += "Sau đây là tỉ lệ % đúng và thời gian làm bài của từng attempt trước đó, biết rằng dòng data cuối là thời điểm vừa thực hiện\n"
         results, durations, exact_time, nums = self.data.previous_results()
@@ -174,32 +188,42 @@ class promptChap(promptCreation):
         data_prompt += self.detail_analyze_prompt
         return data_prompt
     def chap_plan(self):
-        data_prompt = self.chap_analysis()
+        plan_prompt = self.chap_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        data_prompt += f"Chỉ cần đưa ra kế hoạch chi tiết để cải thiện và thời gian cụ thể thực hiện chúng biết rằng cứ {self.data.time_to_do_test} tháng làm 1 bài test\n"
-        data_prompt += self.functions_prompt
-        data_prompt += f"và thời điểm hiện tại là {formatted_date} và {self.date_time_test()}, không cần phân tích và hãy đưa ra kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
-        # Đưa ra kế hoạch cụ thể để cải thiện kết quả trong chương
-        # Đưa ra thời gian cụ thể thực hiện kế hoạch
-        return data_prompt
+        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập cho cả {self.num_chap} chương\n"
+        plan_prompt += self.functions_prompt
+        plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test chương tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
+        return plan_prompt
 
 
 class generateAnalysis:
     def __init__(self,subject,num_chap):
         self.configuration = {
-            "temperature" : 0.6,
+            "temperature" : 0.9,
             "top_p" : 0.8,
             "top_k" : 100,
-            "max_output_tokens" : 4096
+            "max_output_tokens" : 5000
         }
         self.model_name = 'gemini-1.5-pro-latest'
-        self.gg_api_key = 'AIzaSyB2sumqMslldVmYJlWIAQjrqf-d8g7rnxg'
+        self.gg_api_key = 'AIzaSyAjU_uasMqiunf3bp6m6t7dqhHiriCFiMs'
         genai.configure(api_key=self.gg_api_key)
         self.model = genai.GenerativeModel(self.model_name, generation_config=self.configuration)
         self.num_test = 8
         self.subject = subject
         self.num_chap = num_chap
+        self.next_test_date = promptTotal("total",self.num_test,self.subject).next_test_date()
+    def return_subject_name(self):
+        name = {
+            "T": "Toán",
+            "L": "Lý",
+            "H": "Hóa",
+            "S": "Sinh",
+            "V": "Văn",
+            "A": "Anh",
+        }
+        return name.get(self.subject, "Unknown Subject")
+
     def analyze_progress(self):
         prompt = promptTotal("total",self.num_test,self.subject).track_progress()
         response = self.model.generate_content(prompt)
@@ -226,7 +250,9 @@ class generateAnalysis:
         return response.text
     def detail_plan_and_timeline(self):
         # Start building the prompt string
-
+        date = promptCreation("total",self.num_test, self.subject, self.num_chap).next_test_date()
+        diff = promptCreation("total",self.num_test, self.subject, self.num_chap).diff_prompt()
+        date2 = datetime.now()
         prompt = "to do list từ phân tích test tổng: "
         prompt += self.total_plan()
         
@@ -234,20 +260,24 @@ class generateAnalysis:
         time.sleep(5)
         prompt += self.chap_plan()
         prompt += (
-            "Hãy gộp lại thành 1 to do list hoàn thiện từ prompt trên, tập trung vào việc ôn lại kiến thức và làm bài tập, chỉ cần ghi kế hoạch chi tiết, không cần ghi tiêu đề \n"
-            "tập trung viết theo format sau: \n"
-            "'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n")
+            f"Hãy gộp lại thành 1 to do list hoàn thiện từ prompt trên, tập trung vào việc ôn lại kiến thức, phân tích lỗi sai biết rằng ({diff}), sử dụng các chức năng để làm bài tập, ghi chú lại những điểm cần lưu ý, nhắc nhở học sinh làm các loại test khi đến hạn, lập kế hoạch cho việc ôn tập các kiến thức trải dài từ {date2} đến {date} \n"
+            f"tập trung viết theo format sau, đặc biệt là ghi từng ngày riêng biệt ra: \n"
+            f"'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n")
         
         response = self.model.generate_content(prompt)
         return response.text
-    # def format_data(self):
-    #     data = self.detail_plan_and_timeline()
-    #     prompt = f"Từ '{data}' hãy loại bỏ lưu ý, đánh giá hay phân tích, mà chỉ ghi tập trung viết theo format sau: 'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n"
-    #     return 
-        # co 2 huong, lay phan tich cua test chap voi test total de dua ra kế hoạch cụ thể
-        # lay chung chung ke hoahc cu the cua test total va test chuong
-
-        # them attribute la : day dang la tuan thu may on thi ... , vv
-# test = generateAnalysis("T")
-# # print(test.analyze_progress())
-# print(test.analyze_fast())
+    
+    def format_data(self):
+        data = self.detail_plan_and_timeline()
+        prompt = (
+            f"Từ {data} hãy format lại thành 1 file JSON với các mục sau cho mỗi nhiệm vụ:\n"
+            f"- 'date': Ngày tháng cụ thể của nhiệm vụ (ví dụ: '24/08/2024')\n"
+            f"- 'action': Mô tả nhiệm vụ cần làm (ví dụ: 'Phân tích kết quả bài test')\n"
+            f"- 'done': Trạng thái của nhiệm vụ, luôn là 'false' khi chưa hoàn thành\n"
+            f"Ví dụ:\n"
+            f"[{{'date': '24/08/2024', 'action': 'Phân tích kết quả bài test', 'done': 'false'}}]\n"
+            f"Đây là dữ liệu cần format lại:\n"
+            f"'{data}'\n"
+        )
+        response = self.model.generate_content(prompt)
+        return response.text

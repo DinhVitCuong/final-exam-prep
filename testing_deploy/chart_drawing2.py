@@ -1,7 +1,7 @@
 import json
 import os
 import google.generativeai as genai
-import pandas as pd
+import pandas as pd 
 # chủ yếu lấy ra từng vòng lặp 
 class DrawChartBase:
     def __init__(self, subject_name, num_chap, test_type, num, load_type = None, ) -> None:
@@ -12,7 +12,7 @@ class DrawChartBase:
         self.load_type = load_type if load_type in ["specific", "average"] else None
         self.time_to_do_test = None
         self.load_data()
-        self.date_and_time_calc("2024-08-23", "2025-09-27", 9)
+        self.date_and_time_calc("2024-08-23", "2025-06-27", 9)
     def load_data(self):
         try:
             if self.load_type == None or self.load_type == "average":
@@ -20,17 +20,13 @@ class DrawChartBase:
                     if self.test_type == "total":
                         data = json.load(f)[-self.num:]
                         self.num_chap = max(int(data2["chapter"]) for data2 in data)
-                        self.time_to_do_test = 1
                         return data
                     elif self.test_type == "chapter":
                         all_tests = json.load(f)
                         chapter_tests = [test for test in all_tests if int(test["chapter"]) == self.num_chap]
                         
                         num_tests_to_return = min(len(chapter_tests), self.num)
-                        self.time_to_do_test = 0.5
                         return chapter_tests[-num_tests_to_return:]
-                    else:
-                        self.time_to_do_test = 0
                 return data
             else:
                 with open(f'{self.subject_name}_{self.test_type}_results.json', 'r') as f:

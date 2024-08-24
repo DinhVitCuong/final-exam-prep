@@ -1,0 +1,152 @@
+[
+  {
+    "date": "24/08/2024",
+    "action": "Sáng: Ôn tập lại toàn bộ lý thuyết chương 1, tập trung vào các loại câu hỏi còn yếu.",
+    "done": false
+  },
+  {
+    "date": "24/08/2024",
+    "action": "Chiều: Làm Practice test recommendation cho 3 chương, tập trung vào những phần đã sai.",
+    "done": false
+  },
+  {
+    "date": "24/08/2024",
+    "action": "Tối: Sử dụng Wrong question searching để xem lại các câu hỏi sai trong các bài test trước, ghi chú lại những lỗi sai thường gặp.",
+    "done": false
+  },
+  {
+    "date": "25/08/2024",
+    "action": "Sáng: Ôn tập lại toàn bộ lý thuyết chương 2, tập trung vào các loại câu hỏi còn yếu.",
+    "done": false
+  },
+  {
+    "date": "25/08/2024",
+    "action": "Chiều: Luyện tập các bài tập mức độ Nhận biết và Thông hiểu trong chương 1 & 2.",
+    "done": false
+  },
+  {
+    "date": "25/08/2024",
+    "action": "Tối: Sử dụng Analytic review để phân tích 8 bài test trước,  tìm ra điểm yếu cần cải thiện.",
+    "done": false
+  },
+  {
+    "date": "26/08/2024",
+    "action": "Sáng: Ôn tập lại toàn bộ lý thuyết chương 3, tập trung vào các loại câu hỏi còn yếu.",
+    "done": false
+  },
+  {
+    "date": "26/08/2024",
+    "action": "Chiều: Luyện tập các bài tập mức độ Vận dụng và Vận dụng cao trong chương 1, 2 & 3.",
+    "done": false
+  },
+  {
+    "date": "26/08/2024",
+    "action": "Tối: Làm một bài test tổng hợp chương 1 & 2 để tự đánh giá năng lực.",
+    "done": false
+  },
+  {
+    "date": "27/08/2024",
+    "action": "Sáng: Xem lại bài test tổng hợp chương 1 & 2, ghi chú những lỗi sai và tìm cách khắc phục.",
+    "done": false
+  },
+  {
+    "date": "27/08/2024",
+    "action": "Chiều: Làm Practice test recommendation cho chương 3, tập trung vào những phần đã sai.",
+    "done": false
+  },
+  {
+    "date": "27/08/2024",
+    "action": "Tối: Sử dụng Wrong question searching xem lại các câu hỏi sai ở chương 3, ghi chú lỗi sai thường gặp.",
+    "done": false
+  },
+  {
+    "date": "28/08/2024",
+    "action": "Sáng: Luyện tập các bài tập mức độ Nhận biết và Thông hiểu trong chương 3.",
+    "done": false
+  },
+  {
+    "date": "28/08/2024",
+    "action": "Chiều: Luyện tập các bài tập mức độ Vận dụng trong chương 3.",
+    "done": false
+  },
+  {
+    "date": "28/08/2024",
+    "action": "Tối:  Ôn tập nhẹ nhàng toàn bộ kiến thức 3 chương.",
+    "done": false
+  },
+  {
+    "date": "29/08/2024",
+    "action": "Sáng: Luyện tập các bài tập mức độ Vận dụng cao trong chương 3.",
+    "done": false
+  },
+  {
+    "date": "29/08/2024",
+    "action": "Chiều: Làm một bài test tổng hợp chương 3 để tự đánh giá năng lực.",
+    "done": false
+  },
+  {
+    "date": "29/08/2024",
+    "action": "Tối: Xem lại bài test chương 3, ghi chú những lỗi sai và tìm cách khắc phục.",
+    "done": false
+  },
+  {
+    "date": "30/08/2024",
+    "action": "Cả ngày: Luyện tập giải đề tổng hợp, sử dụng chức năng \"Practice test recommendation\" để làm bài kiểm tra dựa trên những kiến thức đã sai trước đó.",
+    "done": false
+  },
+  {
+    "date": "31/08/2024",
+    "action": "Cả ngày: Luyện tập giải đề tổng hợp, sử dụng chức năng \"Practice test recommendation\" để làm bài kiểm tra dựa trên những kiến thức đã sai trước đó.",
+    "done": false
+  },
+  {
+    "date": "01/09/2024",
+    "action": "Cả ngày: Luyện tập giải đề tổng hợp, sử dụng chức năng \"Practice test recommendation\" để làm bài kiểm tra dựa trên những kiến thức đã sai trước đó.",
+    "done": false
+  },
+  {
+    "date": "02/09/2024",
+    "action": "Cả ngày: Xem lại toàn bộ kiến thức đã ôn tập, tập trung vào những phần còn yếu.",
+    "done": false
+  },
+  {
+    "date": "03/09/2024",
+    "action": "Cả ngày: Xem lại toàn bộ kiến thức đã ôn tập, tập trung vào những phần còn yếu.",
+    "done": false
+  },
+  {
+    "date": "04/09/2024",
+    "action": "Cả ngày: Xem lại toàn bộ kiến thức đã ôn tập, tập trung vào những phần còn yếu.",
+    "done": false
+  },
+  {
+    "date": "05/09/2024",
+    "action": "Cả ngày: Sử dụng chức năng \"Analytic review\" để phân tích 8 bài kiểm tra trước đó và rút kinh nghiệm.",
+    "done": false
+  },
+  {
+    "date": "06/09/2024",
+    "action": "Cả ngày: Sử dụng chức năng \"Analytic review\" để phân tích 8 bài kiểm tra trước đó và rút kinh nghiệm.",
+    "done": false
+  },
+  {
+    "date": "07/09/2024",
+    "action": "Cả ngày: Sử dụng chức năng \"Analytic review\" để phân tích 8 bài kiểm tra trước đó và rút kinh nghiệm.",
+    "done": false
+  },
+  {
+    "date": "08/09/2024",
+    "action": "Cả ngày: Ôn tập nhẹ nhàng, hệ thống lại toàn bộ kiến thức, đặc biệt chú ý những phần đã ghi chú là sai hoặc yếu.",
+    "done": false
+  },
+  {
+    "date": "09/09/2024",
+    "action": "Sáng: Xem lại những ghi chú quan trọng, những công thức, định lý cần nhớ.",
+    "done": false
+  },
+  {
+    "date": "09/09/2024",
+    "action": "Trước khi làm bài kiểm tra: Giữ tinh thần thoải mái, tự tin và tập trung cao độ.",
+    "done": false
+  }
+]

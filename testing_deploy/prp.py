@@ -2,8 +2,8 @@ import json
 import random
 
 hm = {
-    "Thông hiểu" : 1,
-    "Nhận biết" : 2,
+    "Thông hiểu" : 2,
+    "Nhận biết" : 1,
     "Vận dụng" : 3,
     "Vận dụng cao" : 4
 }
