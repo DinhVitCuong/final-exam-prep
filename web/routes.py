@@ -28,7 +28,7 @@ from flask_login import (
 )
 
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory
 from forms import login_form,register_form, test_selection_form, select_univesity_form
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 
@@ -141,6 +141,10 @@ def logout():
     logout_user()
     return redirect(url_for('login'))
 
+@app.route("/settings")
+def settings():
+    return render_template('settings.html', title="Cài đặt")
+
 
 #Home route
 @app.route("/home", methods=("GET", "POST"), strict_slashes=False)
@@ -150,8 +154,8 @@ def home():
     if current_user.uni_select == 0:
         return redirect(url_for('select_uni'))
     progress = Progress.query.filter(Progress.user_id==current_user.id).first()
-    progress
-    return render_template("home.html", title="Trang chủ", progress = progress)
+    university = Universities.query.filter(Universities.id==progress.user_major_uni).first()
+    return render_template("home.html", title="Trang chủ", university=university)
 
 
 
@@ -235,13 +239,19 @@ def select_uni():
                 part_1 = round((pass_score / 3) *4)/4
                 part_2 = round((pass_score - 2*part_1 )*4)/4
                 target_progress = f"{part_1}_{part_1}_{part_2}"
-                new_progress = Progress(
-                    user_id = current_user.id,
-                    user_major_uni = selected_university.id,
-                    user_subject_cat = form.subject_category.data,
-                    target_progress = target_progress
-                )
-                db.session.add(new_progress)
+                existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+                if existing_progress is not None:
+                    existing_progress.user_major_uni = selected_university.id
+                    existing_progress.user_subject_cat = form.subject_category.data
+                    existing_progress.target_progress = target_progress
+                else:
+                    new_progress = Progress(
+                        user_id = current_user.id,
+                        user_major_uni = selected_university.id,
+                        user_subject_cat = form.subject_category.data,
+                        target_progress = target_progress
+                    )
+                    db.session.add(new_progress)
                 current_user.uni_select = 1
                 db.session.commit()
             print("check clicked")
@@ -254,71 +264,17 @@ def select_uni():
     return render_template("select_uni.html", form=form,current_slide=0)
 
 
-# # Getting-started route
-# @app.route("/getting-started", methods=("GET", "POST"), strict_slashes=True)
-# def getting_started():
-#     if current_user.is_authenticated == False:
-#         return redirect(url_for('login'))
+app.route('/subject/<subject_name>')
+def subject(subject_id):
+    subject = 0
+    if subject_id == 'S1':
+        subject = 1
+    elif subject_id == 'S2':
+        subject = 2
+    elif subject_id == 'S3':
+        subject = 3
     
-#     form = getting_started_form()
-
-#     if form.validate_on_submit():
-#         value1 = form.value1.data
-#         value2 = form.value2.data
-#         value3 = form.value3.data
-#         baseprogress = f"{value1}_{value2}_{value3}"
-
-#         user_id = current_user.id 
-
-#         existing_progress = Progress.query.filter_by(user_id=user_id).first()
-#         if existing_progress != None:
-#             existing_progress.baseprogress = baseprogress
-#             existing_progress.progress1 = "0"
-#             existing_progress.progress2 = "0"
-#             existing_progress.progress3 = "0"
-#         else:
-#             new_progress = Progress(
-#                 user_id=user_id,
-#                 base_progress=baseprogress,
-#                 progress_1="0",
-#                 progress_2="0",
-#                 progress_3="0"
-#             )
-#             db.session.add(new_progress)
-#         db.session.commit()
-#         return redirect(url_for('index'))
-
-#     return render_template("getting_started.html", form=form)
-
-
-
-# Progress route
-@app.route("/progress", methods=("GET", "POST"), strict_slashes=False)
-def progress():
-    if current_user.is_authenticated == False:
-        return redirect(url_for('login'))
-
-    user_id = current_user.id 
-    user_progress = Progress.query.filter_by(user_id=user_id).first()
-    print(user_progress.progress_1)
-    if user_progress != None:
-        progress1_values = [int(x) for x in user_progress.progress_1.split('_')]
-        progress2_values = [int(x) for x in user_progress.progress_2.split('_')]
-        progress3_values = [int(x) for x in user_progress.progress_3.split('_')]
-        return render_template(
-            "progress.html",
-            title="Tiến trình",
-            total_pro_1 = progress1_values[0],
-            progress_1=progress1_values[1:],
-            total_pro_2 = progress2_values[0],
-            progress_2=progress2_values[1:],
-            total_pro_3 = progress3_values[0],
-            progress_3=progress3_values[1:]
-        )
-    else:
-        return render_template("progress.html", title="Tiến trình", progress=None)
-    
-
+    return render_template('subject.html', subject=subject)
 
 #Multiple_choice_test route
 @app.route("/test-select", methods=("GET", "POST"), strict_slashes=False)
@@ -380,6 +336,71 @@ def test_select():
 #     chapters = request.args.get("chapters")
 #     # Process total test with selected chapters
 #     return f"Starting Total Test with chapters: {chapters}"
+
+
+# # Getting-started route
+# @app.route("/getting-started", methods=("GET", "POST"), strict_slashes=True)
+# def getting_started():
+#     if current_user.is_authenticated == False:
+#         return redirect(url_for('login'))
+    
+#     form = getting_started_form()
+
+#     if form.validate_on_submit():
+#         value1 = form.value1.data
+#         value2 = form.value2.data
+#         value3 = form.value3.data
+#         baseprogress = f"{value1}_{value2}_{value3}"
+
+#         user_id = current_user.id 
+
+#         existing_progress = Progress.query.filter_by(user_id=user_id).first()
+#         if existing_progress != None:
+#             existing_progress.baseprogress = baseprogress
+#             existing_progress.progress1 = "0"
+#             existing_progress.progress2 = "0"
+#             existing_progress.progress3 = "0"
+#         else:
+#             new_progress = Progress(
+#                 user_id=user_id,
+#                 base_progress=baseprogress,
+#                 progress_1="0",
+#                 progress_2="0",
+#                 progress_3="0"
+#             )
+#             db.session.add(new_progress)
+#         db.session.commit()
+#         return redirect(url_for('index'))
+
+#     return render_template("getting_started.html", form=form)
+
+
+# # Progress route
+# @app.route("/progress", methods=("GET", "POST"), strict_slashes=False)
+# def progress():
+#     if current_user.is_authenticated == False:
+#         return redirect(url_for('login'))
+
+#     user_id = current_user.id 
+#     user_progress = Progress.query.filter_by(user_id=user_id).first()
+#     print(user_progress.progress_1)
+#     if user_progress != None:
+#         progress1_values = [int(x) for x in user_progress.progress_1.split('_')]
+#         progress2_values = [int(x) for x in user_progress.progress_2.split('_')]
+#         progress3_values = [int(x) for x in user_progress.progress_3.split('_')]
+#         return render_template(
+#             "progress.html",
+#             title="Tiến trình",
+#             total_pro_1 = progress1_values[0],
+#             progress_1=progress1_values[1:],
+#             total_pro_2 = progress2_values[0],
+#             progress_2=progress2_values[1:],
+#             total_pro_3 = progress3_values[0],
+#             progress_3=progress3_values[1:]
+#         )
+#     else:
+#         return render_template("progress.html", title="Tiến trình", progress=None)
+    
 
 if __name__ == "__main__":
     app.run(debug=True)

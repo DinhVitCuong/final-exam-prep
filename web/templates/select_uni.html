@@ -7,6 +7,24 @@
     <style>
       * {
         box-sizing: border-box;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
+      }
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Darker color when hovering */
       }
       body,
       html {
@@ -67,6 +85,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        padding-right: 15px;
         border-radius: 24px;
         border: 2px solid #2642a5;
         box-shadow: 2px 2px 1px 2px #2642a5;
@@ -75,6 +94,7 @@
       .university-selection-page__goal-input-container {
         background-color: #cccdee;
         width: 91.666667%;
+        display: flex;
       }
       .university-selection-page__icon {
         width: 24px;
@@ -82,8 +102,7 @@
         position: absolute;
         right: 12px;
       }
-      .university-selection-page__input,
-      .university-selection-page__goal-input {
+      .university-selection-page__input{
         padding-left: 12px;
         padding-right: 32px;
         border: none;
@@ -99,11 +118,16 @@
       .university-selection-page__goal-input {
         height: 56px;
         font-size: 1.5rem;
-        flex: 1;  
+        flex: 1; 
+        
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        height: 32px;
+        appearance: none; 
       }
       .university-selection-page__label {
-        position: absolute;
-        left: 16px;
+        margin-left: 20px;
         font-size: 1.5rem;
         white-space: nowrap;
         margin-right: 8px; 
@@ -129,15 +153,19 @@
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-radius: 24px;
         gap: 8px;
-        margin-top: 32px;
-        max-height: 300px;  
+        max-height: 250px;  
         overflow-y: auto;  
-        padding-right: 10px; 
+        background-color: rgb(255, 255, 255);
         .option{
           text-align: left;
           background-color: white;
           border: 1px solid #1a3081;
+          width: 100%;
           font-size: 1em;
           padding: 0.4rem 0.6rem;
           border-radius: 16px;

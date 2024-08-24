@@ -12,8 +12,26 @@
     <style>
       * {
         box-sizing: border-box;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
         margin: 0;
         padding: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Darker color when hovering */
       }
       body,
       html {
@@ -96,11 +114,13 @@
         background-color: white;
         padding: 0.8rem 1rem;
         display: flex;
+        border-radius: 20px;
         flex-direction: column;
         gap: 0.5rem;
       }
       .panel__target__header,
       .panel__to-do__header {
+        border-radius: 25px;
         display: flex;
         gap: 0.5rem;
       }
@@ -340,8 +360,12 @@
       />
       <div class="panel">
         <div class="panel__button-group">
-          <button><img src="../static/assets/signout.svg" alt="sign-out" /></button>
-          <button><img src="../static/assets/settings.svg" alt="settings" /></button>
+          <a href="{{ url_for('logout') }}">
+            <img src="../static/assets/signout.svg" alt="signout">
+          </a>
+          <a href="{{ url_for('settings') }}">
+            <img src="../static/assets/settings.svg" alt="settings">
+          </a>
         </div>
         <div class="panel__user">
           <img
@@ -361,15 +385,15 @@
               <label for="university" class="panel__target__label"
                 >Trường:</label
               >
-              <input type="text" id="university" class="panel__target__input" />
+              <input type="text" id="university_name" class="panel__target__input" value="{{university.name}}" readonly />
             </div>
             <div class="panel__target__input-container">
               <label for="major" class="panel__target__label">Ngành:</label>
-              <input type="text" id="major" class="panel__target__input" />
+              <input type="text" id="major" class="panel__target__input" value="{{university.major_name}}" readonly/>
             </div>
             <div class="panel__target__input-container">
               <label for="score" class="panel__target__label">Điểm:</label>
-              <input type="text" id="score" class="panel__target__input" />
+              <input type="text" id="score" class="panel__target__input" value="{{university.pass_score}}" />
             </div>
           </div>
         </div>
@@ -441,16 +465,22 @@
         </div>
         <div class="subjects">
           <div class="subject-item">
-            <p class="subject-item__name">Toán</p>
-            <div class="circular-progress-bar--math"></div>
+            <a href="{{ url_for('subject', subject_id='S1') }}">
+              <p class="subject-item__name">{{subject.name_sub1}}</p>
+              <div class="circular-progress-bar--math"></div>
+            </a>
           </div>
           <div class="subject-item">
-            <p class="subject-item__name">Lý</p>
-            <div class="circular-progress-bar--physics"></div>
+            <a href="{{ url_for('subject', subject_id='S2') }}">
+              <p class="subject-item__name">{{subject.name_sub2}}</p>
+              <div class="circular-progress-bar--math"></div>
+            </a>
           </div>
           <div class="subject-item">
-            <p class="subject-item__name">Hóa</p>
-            <div class="circular-progress-bar--chemistry"></div>
+            <a href="{{ url_for('subject', subject_id='S3') }}">
+              <p class="subject-item__name">{{subject.name_sub3}}</p>
+              <div class="circular-progress-bar--math"></div>
+            </a>
           </div>
         </div>
         <div class="charts-container">

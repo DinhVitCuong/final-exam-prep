@@ -37,7 +37,7 @@ class QAs(db.Model):
 
     id = db.Column(db.String(10), primary_key=True)
     difficulty = db.Column(db.Integer, nullable=True) #0: nhan biet, 1: thong hieu, 2: van dung, 3: van dung cao
-    image = db.Column(db.String(100), nullable=True)
+    image = db.Column(db.String, nullable=True)
     question = db.Column(db.String, nullable=True)
     options = db.Column(db.String, nullable=True)
     answer = db.Column(db.Integer, nullable=True)
@@ -48,13 +48,13 @@ class Progress(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
-    user_subject_cat = db.Column(db.String(5), nullable=True)
+    user_subject_cat = db.Column(db.String, nullable=True)
     user_major_uni = db.Column(db.Integer, db.ForeignKey('university.id'), nullable=False)
-    target_progress = db.Column(db.String(10), nullable=True)
-    base_progress = db.Column(db.String(10), nullable=True)
-    progress_1 = db.Column(db.String(300), nullable=True)
-    progress_2 = db.Column(db.String(300), nullable=True)
-    progress_3 = db.Column(db.String(300), nullable=True)
+    target_progress = db.Column(db.String, nullable=True)
+    base_progress = db.Column(db.String, nullable=True)
+    progress_1 = db.Column(db.String, nullable=True)
+    progress_2 = db.Column(db.String, nullable=True)
+    progress_3 = db.Column(db.String, nullable=True)
     wrong_answer = db.Column(db.String, nullable=True)
 
 
@@ -70,3 +70,20 @@ class Test(db.Model):
     wrong_answer = db.Column(db.String, nullable=True) #ID wrong test, Format: ID1_ID2_ID3_...
     result = db.Column(db.String(300), nullable=True) # 0 = false, 1 = true, Format: 0_1_0_...
     time_result = db.Column(db.String, nullable=True) #Time spent each question, 0 = not do, Format: time1_time2_time3_...
+
+class TodoList(db.Model):
+    __tablename__= "todo-list"
+
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
+    date = db.Column(db.String, nullable=False) #12/4/2021_31/12/2021_3/2/2022
+    action = db.Column(db.String, nullable=False) #do 1_do 2_do 3
+    status = db.Column(db.String, nullable=False) #1_0_1_0 1: done, 0 = not done
+
+class SubjectCategory(db.Model):
+    __tablename__="subject-category"
+
+    id = db.Column(db.String, primary_key=True)
+    subject1 = db.Column(db.String, nullable=False)
+    subject2 = db.Column(db.String, nullable=False)
+    subject3 = db.Column(db.String, nullable=False)
