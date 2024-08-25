@@ -10,22 +10,6 @@
     />
 
     <style>
-      ::-webkit-scrollbar {
-        width: 8px; /* Width of the scrollbar */
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; /* Background of the scrollbar track */
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #888; /* Color of the scrollbar thumb */
-        border-radius: 10px; /* Rounded corners for the thumb */
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; /* Darker color when hovering */
-      }
       * {
         font-family:"poppins", sans-serif;
         box-sizing: border-box;
@@ -372,91 +356,88 @@
   <body>
     <div class="home-page">
       <img
-        src="../static/assets/background.svg"
+        src="./assets/background.svg"
         alt="background"
         class="background-image"
       />
+
       <div class="panel">
         <div class="panel__button-group">
-          <a href="{{ url_for('logout') }}">
-            <img src="../static/assets/signout.svg" alt="signout">
-          </a>
-          <a href="{{ url_for('settings') }}">
-            <img src="../static/assets/settings.svg" alt="settings">
-          </a>
+          <button><img src="./assets/signout.svg" alt="sign-out" /></button>
+          <button><img src="./assets/settings.svg" alt="settings" /></button>
         </div>
         <div class="panel__user">
           <img
-            src="../static/assets/user-avt.png"
+            src="./assets/user-avt.png"
             alt="user"
             class="panel__user__image"
           />
-          <p class="panel__user__content">Xin chào {{ current_user.username }}</p>
+          <p class="panel__user__content">Hello user</p>
         </div>
         <div class="panel__target">
           <div class="panel__target__container">
             <div class="panel__target__header">
-              <img src="../static/assets/target.svg" alt="target" />
+              <img src="./assets/target.svg" alt="target" />
               <h1 class="panel__target__title">Target</h1>
             </div>
             <div class="panel__target__input-container">
               <label for="university" class="panel__target__label"
                 >Trường:</label
               >
-              <input type="text" id="university_name" class="panel__target__input" value="{{university.name}}" readonly />
+              <input type="text" id="university" class="panel__target__input" />
             </div>
             <div class="panel__target__input-container">
               <label for="major" class="panel__target__label">Ngành:</label>
-              <input type="text" id="major" class="panel__target__input" value="{{university.major_name}}" readonly/>
+              <input type="text" id="major" class="panel__target__input" />
             </div>
             <div class="panel__target__input-container">
               <label for="score" class="panel__target__label">Điểm:</label>
-              <input type="text" id="score" class="panel__target__input" value="{{university.pass_score}}" />
+              <input type="text" id="score" class="panel__target__input" />
             </div>
           </div>
         </div>
         <div class="panel__to-do">
           <div class="panel__to-do__container">
             <div class="panel__to-do__header">
-              <img src="../static/assets/to-do.svg" alt="to-do" />
+              <img src="./assets/to-do.svg" alt="to-do" />
               <h1 class="panel__to-do__title">To do list</h1>
             </div>
             <div class="panel__to-do__tasks-container">
               <!-- todoList.map() ->  -->
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input" />
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1"class="panel__to-do__task__input" />
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1" class="panel__to-do__task__input"/>
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
               <div class="panel__to-do__task">
-                <input type="checkbox" id="task1" />
+                <input type="checkbox" id="task1"class="panel__to-do__task__input" />
                 <label for="task1">Học lại bài 2 chương 2 đi thằng ngu</label>
               </div>
             </div>
@@ -471,11 +452,11 @@
         </div>
         <div class="calendar">
           <button class="calendar-button-prev">
-            <img src="../static/assets/prev-button-calendar.svg" alt="<" />
+            <img src="./assets/prev-button-calendar.svg" alt="<" />
           </button>
           <div class="calendar-days"></div>
           <button class="calendar-button-next">
-            <img src="../static/assets/next-button-calendar.svg" alt=">" />
+            <img src="./assets/next-button-calendar.svg" alt=">" />
           </button>
         </div>
         <div class="calendar-review-container">
@@ -483,22 +464,16 @@
         </div>
         <div class="subjects">
           <div class="subject-item">
-            <a href="{{ url_for('subject', subject_id='S1') }}">
-              <p class="subject-item__name">{{subject.name_sub1}}</p>
-              <div class="circular-progress-bar--math"></div>
-            </a>
+            <p class="subject-item__name">Toán</p>
+            <div class="circular-progress-bar--math"></div>
           </div>
           <div class="subject-item">
-            <a href="{{ url_for('subject', subject_id='S2') }}">
-              <p class="subject-item__name">{{subject.name_sub2}}</p>
-              <div class="circular-progress-bar--math"></div>
-            </a>
+            <p class="subject-item__name">Lý</p>
+            <div class="circular-progress-bar--physics"></div>
           </div>
           <div class="subject-item">
-            <a href="{{ url_for('subject', subject_id='S3') }}">
-              <p class="subject-item__name">{{subject.name_sub3}}</p>
-              <div class="circular-progress-bar--math"></div>
-            </a>
+            <p class="subject-item__name">Hóa</p>
+            <div class="circular-progress-bar--chemistry"></div>
           </div>
         </div>
         <div class="charts-container">
@@ -517,6 +492,17 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelectorAll(".panel__to-do__task__input")
+          .forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+              if (checkbox.checked) {
+                checkbox.parentElement.classList.add("checked");
+              } else {
+                checkbox.parentElement.classList.remove("checked");
+              }
+            });
+          });
         const calendarDaysContainer = document.querySelector(".calendar-days");
         const prevButton = document.querySelector(".calendar-button-prev");
         const nextButton = document.querySelector(".calendar-button-next");
@@ -560,8 +546,8 @@
             const img = document.createElement("img");
             img.alt = didStudy(startDate) ? "Studied" : "Not Studied";
             img.src = didStudy(startDate)
-              ? "../static/assets/checked.svg"
-              : "../static/assets/x-icon.svg";
+              ? "./assets/checked.svg"
+              : "./assets/x-icon.svg";
 
             dayDiv.appendChild(dateP);
             dayDiv.appendChild(img);
@@ -601,7 +587,7 @@
             subject.color = "#eb4d4b";
           } else if (subject.percent < 50) {
             subject.color = "#f0932b";
-          } else if (subject.percent < 75) {
+          } else if (subject.percent < 80) {
             subject.color = "#f9ca24";
           } else {
             subject.color = "#78e08f";

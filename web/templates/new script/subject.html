@@ -6,27 +6,10 @@
     <title>Document</title>
     <style>
       * {
-        font-family: "Kanit", sans-serif;
-        font-style: normal;
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-      }
-      ::-webkit-scrollbar {
-        width: 8px; /* Width of the scrollbar */
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; /* Background of the scrollbar track */
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #888; /* Color of the scrollbar thumb */
-        border-radius: 10px; /* Rounded corners for the thumb */
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; /* Darker color when hovering */
+        font-family: "pupping", sans-serif;
       }
       body,
       html {
@@ -219,17 +202,17 @@
   <body>
     <div class="chapter-page">
       <img
-        src="../static/assets/background.svg"
+        src="./assets/background.svg"
         alt="background"
         class="background-image"
       />
       <div class="header">
         <button class="button--back">
-          <img src="../static/assets/left-arrow-slider.svg" />
+          <img src="./assets/left-arrow-slider.svg" />
         </button>
         <div class="button button__analytics">
           <p>Đánh giá</p>
-          <img src="../static/assets/analytics-icon.svg" alt="analytics" />
+          <img src="./assets/analytics-icon.svg" alt="analytics" />
         </div>
         <div class="button button__progress">
           <p class="header__subject">Toán</p>
@@ -237,14 +220,14 @@
           <div class="circular-progress-bar--subject"></div>
         </div>
         <div class="button button__review">
-          <p>Analytics</p>
-          <img src="../static/assets/question-icon.svg" alt="review" />
+          <p>Review</p>
+          <img src="./assets/question-icon.svg" alt="review" />
         </div>
       </div>
       <div class="information">
         <!-- progress bar -->
         <div class="encouragement">
-          <img src="../static/assets/encouragement-icon.svg" alt="encouragement" />
+          <img src="./assets/encouragement-icon.svg" alt="encouragement" />
           <p>Hãy làm bài kiểm tra tổng kết để xác nhận bạn có trình</p>
         </div>
         <h2 class="chapters-container__title">Bài kiểm tra chương</h2>
@@ -278,9 +261,8 @@
         </div>
       </div>
       <div class="buttons-container">
-        <a href="{{ url_for('practice-test') }}" class="practice-button">Luyện tập</a>
-        <a href="{{ url_for('test-total-test') }}" class="test-total-button">Làm bài kiểm tra tổng</a>
-        <a href="{{ url_for('test-chap-test') }}" class="test-chap-button">Làm bài kiểm tra chương</a>
+        <button class="practice-button">Sợ thì luyện thêm</button>
+        <button class="test-button">Test Trình đi</button>
       </div>
     </div>
   </body>

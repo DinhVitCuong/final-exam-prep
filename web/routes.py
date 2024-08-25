@@ -264,7 +264,7 @@ def select_uni():
     return render_template("select_uni.html", form=form,current_slide=0)
 
 
-app.route('/subject/<subject_name>')
+app.route('/subject/<subject_id>')
 def subject(subject_id):
     subject = 0
     if subject_id == 'S1':
@@ -276,66 +276,67 @@ def subject(subject_id):
     
     return render_template('subject.html', subject=subject)
 
-#Multiple_choice_test route
-@app.route("/test-select", methods=("GET", "POST"), strict_slashes=False)
-def test_select():
-    subjects_and_chapters = {
-        "Math": [("chapter1", "Algebra"), ("chapter2", "Geometry"), ("chapter3", "Calculus")],
-        "Science": [("chapter1", "Physics"), ("chapter2", "Chemistry"), ("chapter3", "Biology")],
-        "History": [("chapter1", "Ancient"), ("chapter2", "Medieval"), ("chapter3", "Modern")]
-    }
+# #Multiple_choice_test route
+# @app.route("/test-select", methods=("GET", "POST"), strict_slashes=False)
+# def test_select():
+#     subjects_and_chapters = {
+#         "Math": [("chapter1", "Algebra"), ("chapter2", "Geometry"), ("chapter3", "Calculus")],
+#         "Science": [("chapter1", "Physics"), ("chapter2", "Chemistry"), ("chapter3", "Biology")],
+#         "History": [("chapter1", "Ancient"), ("chapter2", "Medieval"), ("chapter3", "Modern")]
+#     }
     
-    form = test_selection_form()
-    form.subject.choices = [(subject, subject) for subject in subjects_and_chapters.keys()]
+#     form = test_selection_form()
+#     form.subject.choices = [(subject, subject) for subject in subjects_and_chapters.keys()]
 
-    if form.validate_on_submit():
-        test_type = form.test_type.data
-        selected_subject = form.subject.data
-        chapters = subjects_and_chapters.get(selected_subject, [])
+#     if form.validate_on_submit():
+#         test_type = form.test_type.data
+#         selected_subject = form.subject.data
+#         chapters = subjects_and_chapters.get(selected_subject, [])
 
-        if test_type == "total":
-            selected_chapters = form.total_chapters.data
-            if len(selected_chapters) >= 2:
-                return redirect(url_for('total_test', chapters=",".join(selected_chapters)))
-            else:
-                return "Please select at least two chapters for the Total Test.", 400
+#         if test_type == "total":
+#             selected_chapters = form.total_chapters.data
+#             if len(selected_chapters) >= 2:
+#                 return redirect(url_for('total_test', chapters=",".join(selected_chapters)))
+#             else:
+#                 return "Please select at least two chapters for the Total Test.", 400
 
-        elif test_type == "chapter":
-            selected_chapter = form.chapter.data
-            return redirect(url_for('chapter_test', chapter=selected_chapter))
+#         elif test_type == "chapter":
+#             selected_chapter = form.chapter.data
+#             return redirect(url_for('chapter_test', chapter=selected_chapter))
         
-        elif test_type == "practice":
-            selected_chapter = form.chapter.data
-            return redirect(url_for('practice_test', chapter=selected_chapter))
+#         elif test_type == "practice":
+#             selected_chapter = form.chapter.data
+#             return redirect(url_for('practice_test', chapter=selected_chapter))
 
-    # Set chapters based on the subject selected (if any)
-    selected_subject = form.subject.data
-    chapters = subjects_and_chapters.get(selected_subject, [])
-    form.total_chapters.choices = chapters
-    form.chapter.choices = chapters
+#     # Set chapters based on the subject selected (if any)
+#     selected_subject = form.subject.data
+#     chapters = subjects_and_chapters.get(selected_subject, [])
+#     form.total_chapters.choices = chapters
+#     form.chapter.choices = chapters
 
-    return render_template("test_select.html", form=form)
+#     return render_template("test_select.html", form=form)
 
 
 
-# #haven't debug yet
-# @app.route("/total-test")
-# def total_test():
-#     chapters = request.args.get("chapters")
-#     # Process total test with selected chapters
-#     return f"Starting Total Test with chapters: {chapters}"
+#haven't debug yet
 
-# @app.route("/chapter-test")
-# def chapter_test():
-#     chapter = request.args.get("chapter")
-#     # Process chapter test with selected chapter
-#     return f"Starting Chapter Test with chapter: {chapter}" 
+@app.route("/chapter-test")
+def chapter_test():
+    chapter = request.args.get("chapter")
+    # Process chapter test with selected chapter
+    return f"Starting Chapter Test with chapter: {chapter}" 
 
-# @app.route("/practice-test")
-# def total_test():
-#     chapters = request.args.get("chapters")
-#     # Process total test with selected chapters
-#     return f"Starting Total Test with chapters: {chapters}"
+@app.route("/practice-test")
+def total_test():
+    chapters = request.args.get("chapters")
+    # Process total test with selected chapters
+    return f"Starting Total Test with chapters: {chapters}"
+
+@app.route("/total-test")
+def total_test():
+    chapters = request.args.get("chapters")
+    # Process total test with selected chapters
+    return f"Starting Total Test with chapters: {chapters}"
 
 
 # # Getting-started route
