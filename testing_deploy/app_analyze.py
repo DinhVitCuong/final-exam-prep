@@ -28,10 +28,7 @@ end_pos = json_string.find(']')
 json_string = json_string[start_pos:end_pos+1]
 # json_data = json.loads(json_string)
 # print(json_data[0])
-# json_string = json_string[start_pos:end_pos+1]
 
-# with open("todo_T.txt", "w", encoding="utf-8") as f:
-#     f.write(json_string)
 json_data = json.loads(json_string)
 # Ghi dữ liệu vào file JSON
 with open("todo_T.json", "w", encoding="utf-8") as f:

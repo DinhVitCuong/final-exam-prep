@@ -29,7 +29,7 @@ class promptCreation:
         f"phần nào cần được cải thiện, so sánh với các kết quả trước để khen thưởng, nhắc nhở\n"
         f"Đưa ra lời khuyên cụ thể cho user để cải thiện kết quả hơn\n")
         # Correctly instantiate the data object based on type_test
-        self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (đây là 1 bài test gồm những kiến thức đã sai từ {self.num_chap} chương trước), Analytic review (review phần analysis của {self.num_test} bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
+        self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (đây là 1 bài test gồm những kiến thức đã sai từ {self.num_chap} chương trước), Analytic review (review phần analysis của {self.num_test} bài test, tìm ra được điểm mạnh yếu trong kiến thức và đánh giá chung bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
 
     def return_subject_name(self):
         name = {
@@ -96,68 +96,73 @@ class promptTotal(promptCreation):
         data_prompt = self.test_intro
         data_prompt += (
             f"{self.prompt} {self.subject_intro} và với lượng dữ liệu được đưa vào như sau ({self.prompt_score} và thời gian thực hiện chúng), "
-            f"hãy phân tích và đánh giá kết quả vừa thực hiện với các lần làm test total trước đó, "
-            f"biết rằng data cuối cùng là kết quả vừa thực hiện và các data trước đó là kết quả đã thực hiện trước đó. "
+            f"hãy phân tích và đánh giá kết quả của bài test vừa thực hiện so với các lần làm test total trước đó, "
+            f"để xác định các xu hướng học tập và đánh giá sự tiến bộ của học sinh theo thời gian. "
             f"Dữ liệu được đưa vào như sau:\n"
         )
 
         results, durations, exact_time, nums = self.data.previous_results()
         for i in range(len(results)):
             data_prompt += f"Điểm: {results[i]/nums[i]*10} Thời gian thực hiện: {durations[i]} giây, Thời điểm thực hiện: {exact_time[i]}\n"
+
+        data_prompt += (
+            "Vui lòng so sánh các kết quả này để xác định sự tiến bộ của học sinh qua thời gian. "
+            "Những lần nào học sinh có sự cải thiện về điểm số và thời gian làm bài, và những lần nào không? "
+            "Những yếu tố nào có thể đã ảnh hưởng đến kết quả, chẳng hạn như thời gian làm bài, số lượng bài tập ôn luyện, hoặc các yếu tố bên ngoài? "
+        )
         data_prompt += self.analyze_only_prompt
-        data_prompt += "Đánh giá vừa đủ lượng dữ liệu được cho"
+        data_prompt += "Đánh giá tổng quan về hiệu quả học tập và đưa ra các khuyến nghị cụ thể cho học sinh."
         return data_prompt
 
     def deep_analysis(self):
-        data_prompt = (f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n")
-        # tỉ lệ thể hiện % đúng của từng chương + thời gian
-        data_prompt += (f"Sau đây là tỉ lệ % đúng và thời gian làm bài của từng chương\n")
+        data_prompt = (
+            f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
+            "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
+        )
         acuc_chaps, time_chaps = self.data.short_total_analysis()
         for key, value in acuc_chaps.items():
             data_prompt += f"Chương {key}: {value}% - {time_chaps[key]} giây\n"
-        # thể hiện % đúng của từng loại câu hỏi TH, NB, VD ,VDC
+
         data_prompt += self.diff_prompt()
-        data_prompt += "Sau đây là % đúng của từng loại câu hỏi\n"
+        data_prompt += "Tỉ lệ % đúng của từng loại câu hỏi:\n"
         accu_diff, dic_ques, dic_total = self.data.cal_accu_diff()
         for type1, accu in accu_diff.items():
             data_prompt += f"Loại câu hỏi {type1}: {accu}%\n"
 
-        # Chương nào sai nhiều nhất,% đúng của TH,NB,  VD , VDC từng chương 
-        data_prompt += "Sau đây là % đúng của các loại câu hỏi từng chương\n"
+        data_prompt += "Tỉ lệ % đúng của các loại câu hỏi từng chương:\n"
         chap_difficulty_percentile = self.data.difficult_percentile_per_chap()
         for chap, dic_diff in chap_difficulty_percentile.items():
-            data_prompt += f"Đối với chương {chap}"
+            data_prompt += f"Chương {chap}:\n"
             for type1, acuc in dic_diff.items():
-                data_prompt += f"Loại câu hỏi {type1}: {acuc}%\n"
-        
+                data_prompt += f"- Loại câu hỏi {type1}: {acuc}%\n"
 
-        # so sánh với threshold
-        data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương: \n"
-        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding = 'utf-8') as file:
+        data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương:\n"
+        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
             data = csv.reader(file)
             for row in data:
-                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[2]}\n"
+                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[2]}%\n"
 
-
-        # trung bình các bài hay sai của các chương
-        data_prompt += "Sau đây là trung bình các bài hay sai của các chương\n"
+        data_prompt += "Dưới đây là trung bình các bài hay sai của các chương:\n"
         lessons_review_dict = self.data.lessons_id_to_review()
-        for chap, value in lessons_review_dict.items(): # bi loi o day
-            for lesson in value['lesson'].keys():
-                data_prompt += f"Chương {chap}: {lesson} bài\n"
-        data_prompt += self.detail_analyze_prompt
-        
-        # tong ket
-        #⇒ Nhận xét: Mạnh phần nào/ yếu phần nào
-        # ⇒ khen thưởng, nhắc nhở 
-        #⇒ đưa ra lời khuyên
+        for chap, value in lessons_review_dict.items():
+            data_prompt += f"Chương {chap}:"
+            for lesson, count in value['lesson'].items():
+                data_prompt += f" {lesson} bài,"
+
+        data_prompt += (
+            "\nVui lòng so sánh kỹ lưỡng các giá trị trên để tìm ra điểm mạnh và điểm yếu của học sinh. "
+            "Điểm số và thời gian làm bài có xu hướng cải thiện hay giảm sút? "
+            "So sánh các kết quả với aim score để đánh giá liệu học sinh có đạt được mục tiêu học tập hay không. "
+            "Đưa ra các nhận xét cụ thể về các phần học sinh làm tốt, các phần cần cải thiện, và những gì học sinh cần tập trung hơn để cải thiện kết quả. "
+            "Hãy đề xuất các chiến lược học tập, bao gồm cả việc sử dụng các chức năng của ứng dụng, để học sinh có thể cải thiện điểm số trong các bài kiểm tra tiếp theo."
+        )
         return data_prompt
 
     def detail_plan_and_timeline(self):
         plan_prompt = self.fast_analysis() + self.deep_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập cho cả {self.num_chap} chương\n"
+        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập những kiến thức yếu cho cả {self.num_chap} chương\n"
         plan_prompt += self.functions_prompt
         plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test total tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
         return plan_prompt
@@ -167,31 +172,46 @@ class promptChap(promptCreation):
     def __init__(self, type_test,num_test,subject,num_chap):
         super().__init__(type_test, num_test,subject,num_chap)
     def chap_analysis(self):
-        data_prompt = (f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó\n")
-        # Phân tích trung bình điểm số, thời gian, thời điểm so với các lần làm chương trước đó
-        data_prompt += "Sau đây là tỉ lệ % đúng và thời gian làm bài của từng attempt trước đó, biết rằng dòng data cuối là thời điểm vừa thực hiện\n"
+        data_prompt = (
+            f"{self.test_intro} {self.prompt} {self.subject_intro}. "
+            f"Tất cả các dữ liệu dưới đây được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó.\n"
+            "Dưới đây là tỷ lệ % đúng và thời gian làm bài của từng lần làm bài trước đó. Dòng dữ liệu cuối cùng là kết quả của lần thực hiện gần đây nhất:\n"
+        )
+
         results, durations, exact_time, nums = self.data.previous_results()
         for i in range(len(results)):
-            data_prompt += f"Điểm: {results[i]/nums[i]*10} Thời gian thực hiện: {durations[i]} giây, Thời điểm thực hiện: {exact_time[i]}\n"
-        # Phân tích trung bình % đúng trong các câu TH, NB, VD , VDC trong chương
-        data_prompt += (f"Sau đây là trung bình tỉ lệ % đúng của từng loại câu hỏi trong chương\n")
+            data_prompt += f"- Điểm: {results[i]/nums[i]*10} | Thời gian thực hiện: {durations[i]} giây | Thời điểm thực hiện: {exact_time[i]}\n"
+
+        data_prompt += "\nPhân tích tỉ lệ % đúng của từng loại câu hỏi trong chương:\n"
         data_prompt += self.diff_prompt()
         accu_diff, dic_ques, dic_total = self.data.cal_accu_diff()
         for type1, accu in accu_diff.items():
-            data_prompt += f"Loại câu hỏi {type1}: {accu}%\n"
-        # So sánh trung bình accuracy các loại câu hỏi trong chương với threshold định sẵn
-        data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi trong chương: \n"
-        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding = 'utf-8') as file:
+            data_prompt += f"- Loại câu hỏi {type1}: {accu}%\n"
+
+        data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
+        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
             data = csv.reader(file)
             for row in data:
-                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[2]}\n"
+                data_prompt += f"- Chương {row[0]} | Loại câu hỏi {row[1]}: Kỳ vọng {row[2]}%\n"
+
+        data_prompt += (
+            "\nVui lòng phân tích kỹ lưỡng những điểm mạnh và điểm yếu của học sinh dựa trên các kết quả này. "
+            "So sánh kết quả với kỳ vọng để xác định các lĩnh vực học sinh đã vượt qua hoặc chưa đạt được. "
+            "Đưa ra các nhận xét cụ thể về các kỹ năng học sinh đã nắm vững và các kỹ năng còn cần phải cải thiện.\n"
+        )
+
+        data_prompt += (
+            "Dựa trên các phân tích trên, hãy đưa ra lời khuyên cụ thể cho học sinh về cách cải thiện kết quả trong các lần làm bài sau. "
+            "Đề xuất các chiến lược học tập, như tập trung vào các loại câu hỏi còn yếu, hoặc sử dụng các chức năng của ứng dụng để ôn luyện.\n"
+        )
+
         data_prompt += self.detail_analyze_prompt
         return data_prompt
     def chap_plan(self):
         plan_prompt = self.chap_analysis()
         current_datetime = datetime.now()
         formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập cho cả {self.num_chap} chương\n"
+        plan_prompt += f"\nĐa dạng hóa kế hoạch chi tiết ôn tập những điểm yếu cho bài test chương {self.num_chap}\n"
         plan_prompt += self.functions_prompt
         plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test chương tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
         return plan_prompt
@@ -200,13 +220,13 @@ class promptChap(promptCreation):
 class generateAnalysis:
     def __init__(self,subject,num_chap):
         self.configuration = {
-            "temperature" : 0.9,
-            "top_p" : 0.8,
-            "top_k" : 100,
+            "temperature" : 0.7,
+            "top_p" : 0.9,
+            "top_k" : 80,
             "max_output_tokens" : 5000
         }
         self.model_name = 'gemini-1.5-pro-latest'
-        self.gg_api_key = 'AIzaSyAjU_uasMqiunf3bp6m6t7dqhHiriCFiMs'
+        self.gg_api_key = 'AIzaSyCPWag7mBUXOMmFTcmyi0vhz1sdYdTvMZA'
         genai.configure(api_key=self.gg_api_key)
         self.model = genai.GenerativeModel(self.model_name, generation_config=self.configuration)
         self.num_test = 8
@@ -249,24 +269,38 @@ class generateAnalysis:
         response = self.model.generate_content(prompt)
         return response.text
     def detail_plan_and_timeline(self):
-        # Start building the prompt string
-        date = promptCreation("total",self.num_test, self.subject, self.num_chap).next_test_date()
-        diff = promptCreation("total",self.num_test, self.subject, self.num_chap).diff_prompt()
-        date2 = datetime.now()
-        prompt = "to do list từ phân tích test tổng: "
-        prompt += self.total_plan()
+        # Xác định ngày tiếp theo cho test tổng và test chương
+        date_total = promptCreation("total", self.num_test, self.subject, self.num_chap).next_test_date()
+        date_chap = promptCreation("chapter", self.num_test, self.subject, self.num_chap).next_test_date()
+        diff = promptCreation("total", self.num_test, self.subject, self.num_chap).diff_prompt()
+        current_date = datetime.now()
+        functions = promptCreation("total", self.num_test, self.subject, self.num_chap).functions_prompt
         
-        prompt += "to do list từ phân tích test chương: "
-        time.sleep(5)
-        prompt += self.chap_plan()
+        # Bắt đầu xây dựng chuỗi prompt
+        prompt = "1. **từ phân tích test tổng:**\n"
+        prompt += self.analyze_deep()
+
+        time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
+        prompt += "\n2. **từ phân tích test chương:**\n"
+        prompt += self.analyze_chapter()
+
+        # Gợi ý lập kế hoạch học tập chi tiết
         prompt += (
-            f"Hãy gộp lại thành 1 to do list hoàn thiện từ prompt trên, tập trung vào việc ôn lại kiến thức, phân tích lỗi sai biết rằng ({diff}), sử dụng các chức năng để làm bài tập, ghi chú lại những điểm cần lưu ý, nhắc nhở học sinh làm các loại test khi đến hạn, lập kế hoạch cho việc ôn tập các kiến thức trải dài từ {date2} đến {date} \n"
-            f"tập trung viết theo format sau, đặc biệt là ghi từng ngày riêng biệt ra: \n"
-            f"'ngày xx /tháng xx /năm xxxx : làm 1 cái gì đó'\n")
-        
+            f"1. Ôn lại kiến thức cũ, đặc biệt là những phần còn yếu.\n"
+            f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
+            f"3. Tập trung cải thiện điểm yếu đã chỉ ra ({diff}), sử dụng các chức năng của ứng dụng ({functions}).\n"
+            f"4. Ghi chú lỗi sai và nhắc học sinh chuẩn bị cho bài test chương {self.num_chap + 1} vào ngày {date_chap}.\n"
+            f"5. Lập lịch ôn tập để chuẩn bị cho bài test tổng vào ngày {date_total}, bắt đầu từ {current_date.strftime('%d/%m/%Y')}.\n"
+            f"6. Mỗi ngày có nhiệm vụ rõ ràng, đảm bảo ôn tập hiệu quả.\n"
+        )
+        prompt += (
+        "Hãy viết theo format sau, mỗi nhiệm vụ riêng biệt cho từng ngày:\n"
+        "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n")
+        # Yêu cầu format cụ thể cho kế hoạch học tập
+
         response = self.model.generate_content(prompt)
         return response.text
-    
+
     def format_data(self):
         data = self.detail_plan_and_timeline()
         prompt = (
