@@ -148,24 +148,20 @@ class promptTotal(promptCreation):
             data_prompt += f"Chương {chap}:"
             for lesson, count in value['lesson'].items():
                 data_prompt += f" {lesson} bài,"
-
+        # tìm ra điểm mạnh điểm yếu
+        # Điểm số, tgian làm bài cải thiện hay giảm, so sánh với aim score để đánh giá
+        # nhận xét về phần làm tốt, phần cần cải thiện
+        # nhắc nhở học sinh ôn các bài hay sai trong chương, xem lại các chương sai nhiều
+        # đề xuất chiến lược học tập, sử dụng các functions của ứng dụng
         data_prompt += (
-            "\nVui lòng so sánh kỹ lưỡng các giá trị trên để tìm ra điểm mạnh và điểm yếu của học sinh. "
-            "Điểm số và thời gian làm bài có xu hướng cải thiện hay giảm sút? "
-            "So sánh các kết quả với aim score để đánh giá liệu học sinh có đạt được mục tiêu học tập hay không. "
-            "Đưa ra các nhận xét cụ thể về các phần học sinh làm tốt, các phần cần cải thiện, và những gì học sinh cần tập trung hơn để cải thiện kết quả. "
-            "Hãy đề xuất các chiến lược học tập, bao gồm cả việc sử dụng các chức năng của ứng dụng, để học sinh có thể cải thiện điểm số trong các bài kiểm tra tiếp theo."
+            "\nHãy phân tích kỹ lưỡng để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
+            "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
+            "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
+            "- Nhắc nhở học sinh ôn tập lại các bài thường hay sai, đặc biệt chú ý những chương có tỉ lệ sai cao.\n"
+            "- Đề xuất chiến lược học tập để cải thiện các điểm yếu, bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
         )
         return data_prompt
 
-    def detail_plan_and_timeline(self):
-        plan_prompt = self.fast_analysis() + self.deep_analysis()
-        current_datetime = datetime.now()
-        formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += f"Đa dạng hóa kế hoạch chi tiết ôn tập những kiến thức yếu cho cả {self.num_chap} chương\n"
-        plan_prompt += self.functions_prompt
-        plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test total tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
-        return plan_prompt
 
 
 class promptChap(promptCreation):
@@ -195,34 +191,30 @@ class promptChap(promptCreation):
                 data_prompt += f"- Chương {row[0]} | Loại câu hỏi {row[1]}: Kỳ vọng {row[2]}%\n"
 
         data_prompt += (
-            "\nVui lòng phân tích kỹ lưỡng những điểm mạnh và điểm yếu của học sinh dựa trên các kết quả này. "
-            "So sánh kết quả với kỳ vọng để xác định các lĩnh vực học sinh đã vượt qua hoặc chưa đạt được. "
-            "Đưa ra các nhận xét cụ thể về các kỹ năng học sinh đã nắm vững và các kỹ năng còn cần phải cải thiện.\n"
+            "\nPhân tích kết quả trên để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
+            "- Xác định các phần kiến thức mà học sinh đã nắm vững (điểm số cao, thời gian ngắn).\n"
+            "- Nhận diện các phần cần cải thiện (điểm số thấp, thời gian dài).\n"
+            "- So sánh kết quả với kỳ vọng để xác định liệu học sinh có đạt được mục tiêu đã đề ra không.\n"
+            "- Chú ý đến những chương hoặc loại câu hỏi có tỉ lệ sai cao để tập trung ôn tập.\n"
         )
 
         data_prompt += (
-            "Dựa trên các phân tích trên, hãy đưa ra lời khuyên cụ thể cho học sinh về cách cải thiện kết quả trong các lần làm bài sau. "
-            "Đề xuất các chiến lược học tập, như tập trung vào các loại câu hỏi còn yếu, hoặc sử dụng các chức năng của ứng dụng để ôn luyện.\n"
+            "Đưa ra các nhận xét và lời khuyên cụ thể cho học sinh:\n"
+            "- Tập trung ôn lại các loại câu hỏi có tỉ lệ đúng thấp.\n"
+            "- Chuẩn bị kỹ lưỡng cho bài kiểm tra tiếp theo bằng cách ôn tập các chương có tỉ lệ sai cao.\n"
+            "- Đặt mục tiêu cụ thể cho mỗi buổi học, ví dụ: cải thiện điểm số trong các câu hỏi 'Nhận biết' và 'Thông hiểu'.\n"
         )
 
         data_prompt += self.detail_analyze_prompt
         return data_prompt
-    def chap_plan(self):
-        plan_prompt = self.chap_analysis()
-        current_datetime = datetime.now()
-        formatted_date = current_datetime.strftime("%Y-%m-%d")
-        plan_prompt += f"\nĐa dạng hóa kế hoạch chi tiết ôn tập những điểm yếu cho bài test chương {self.num_chap}\n"
-        plan_prompt += self.functions_prompt
-        plan_prompt += f"và điểm hiện tại là {formatted_date} và thời điểm làm bài test chương tiếp theo là {self.next_test_date()}, đa dạng hóa kế hoạch theo format sau: 'ngày/tháng/năm : kế hoạch cụ thể'\n"
-        return plan_prompt
 
 
 class generateAnalysis:
     def __init__(self,subject,num_chap):
         self.configuration = {
-            "temperature" : 0.7,
+            "temperature" : 0.8,
             "top_p" : 0.9,
-            "top_k" : 80,
+            "top_k" : 120,
             "max_output_tokens" : 5000
         }
         self.model_name = 'gemini-1.5-pro-latest'
@@ -256,16 +248,8 @@ class generateAnalysis:
         prompt = promptTotal("total",self.num_test,self.subject).deep_analysis()
         response = self.model.generate_content(prompt)
         return response.text
-    def total_plan(self):
-        prompt = promptTotal("total",self.num_test,self.subject).detail_plan_and_timeline()
-        response = self.model.generate_content(prompt)
-        return response.text
     def analyze_chapter(self):
         prompt = promptChap("chapter",self.num_test,self.subject,self.num_chap).chap_analysis()
-        response = self.model.generate_content(prompt)
-        return response.text
-    def chap_plan(self):
-        prompt = promptChap("chapter",self.num_test,self.subject,self.num_chap).chap_plan()
         response = self.model.generate_content(prompt)
         return response.text
     def detail_plan_and_timeline(self):
