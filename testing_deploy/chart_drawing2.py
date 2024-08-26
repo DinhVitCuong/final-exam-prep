@@ -139,7 +139,7 @@ class DrawChartBase:
                 duration += time
             durations.append(duration)
             exact_time.append(a["completion_time"])
-        return results, durations, exact_time,  num_quess# list of scores, list of durations, list of exact time
+        return results, durations, exact_time,  num_quess # list of scores, list of durations, list of exact time
     def date_and_time_calc(self,start_date, final_date, aim):
         # 7 chapter
         final_date = pd.to_datetime(final_date)
@@ -214,7 +214,7 @@ class DrawTotal(DrawChartBase):
 
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
     
-    def difficult_percentile_per_chap(self): #dev lại cái này
+    def difficult_percentile_per_chap(self):
         _, diff_ids, diff_nums = self.cal_accu_diff()
         chap_difficulty_count = {chap: {1: 0, 2: 0, 3: 0, 4:0} for chap in range(1, self.num_chap + 1)}
         chap_difficulty_percentile = {chap: {1: 0, 2: 0, 3: 0, 4:0} for chap in range(1, self.num_chap + 1)}
@@ -256,64 +256,11 @@ class DrawChap(DrawChartBase):
         
         return chap_difficulty_percentile
 
-# bay h, predict het accuracy cua tung type cau hoi tung chap ra, store vao 1 
-
-
-
-
-
-# for i in range(1,8):
-#     path = f"data/final_math/Math_C{i}.json"
-#     test = createThreshold(9, "T", path)
-#     calc = test.percent_each_diff()
-#     print(path)
-#     print(sum(calc[:3]))
-#     print(sum(calc[3:]))
-#     print(calc)
-
-
-# for i in range(1,8):
-#     path = f"data/Physics/Physics_C{i}.json"
-#     test = createThreshold(9, "T", path)
-#     calc = test.percent_each_diff()
-#     print(path)
-#     print(sum(calc[:3]))
-#     print(sum(calc[3:]))
-#     print(calc)
-    
-
-# threshold có thể predict bằng 
-# độ khó của chương (chia theo nhiều cấp độ (nhiều NB, TH), % (NB, TH se cao ap dao)
-# (nhiều TH, VD), % NB, TH, VD se cao ap dao
-# (Nhiều VD, VDC)) 
-# aim diem cua hoc sinh
-# chắc khuyến nghị thì sẽ 100% 3 cái đầu tiên, cái cuối cùng trừ ra
-# 1 chuong lay ra trong test tong thi se gom 10 cau
-# 1 chuong lay ra trong test chuong thi se gom 30 cau
-# 1 chương có nb+th+vd > 0.8 => chương dễ, 2 phần này nên cao tùy vào aim
-# còn lại thì tương đối khó, chắc sẽ recommend nó đúng hết 3 phần đầu tùy vào aim
-# đụ má hay là mình tính ra, xong kêu chương này có từng mức độ khó như nào đấy, xong call api vào kêu gemini dự đoán ra ta 
-
-
-
-
-# for i in range(1,8):
-#     path = f"data/final_math/Math_C{i}.json"
-#     test = createThreshold(9, "T", path)
-#     print(path)
-#     print(test.calculate())
-
-# for i in range(1,8):
-#     path = f"data/Physics/Physics_C{i}.json"
-#     test = createThreshold(9, "L", path)
-#     print(path)
-#     print(test.calculate())
-
 # draw_total = DrawTotal("T", 3, "total",5, "specific")
-# print(draw_total.cal_accu_diff())
-# print(draw_total.lessons_id_to_review())
+# # print(draw_total.cal_accu_diff())
+# # print(draw_total.lessons_id_to_review())
 # print(draw_total.short_total_analysis())
-# print(draw_total.find_most_wrong_chap())
+# print(draw_total.find_most_wrong_chap())  
 # print(draw_total.difficult_percentile_per_chap())
 # print(draw_total.previous_results())
 # # For chapter-specific analysis

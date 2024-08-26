@@ -1,4 +1,5 @@
-import openai
+from openai import OpenAI
+from dotenv import load_dotenv 
 import json
 import requests
 import os
@@ -12,6 +13,8 @@ import time
 import pandas as pd
 from dateutil.relativedelta import relativedelta
 from datetime import timedelta
+
+load_dotenv()
 # prompt creation
 class promptCreation:
     def __init__(self, type_test, num_test, subject, num_chap = None):
@@ -90,7 +93,7 @@ class promptTotal(promptCreation):
     def __init__(self, type_test, num_test, subject):
         super().__init__(type_test, num_test, subject)
         self.prompt_score = "(cho biết kết quả ở hệ số 10)"
-        self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị"
+        self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
     def fast_analysis(self):
         data_prompt = self.test_intro
@@ -111,10 +114,10 @@ class promptTotal(promptCreation):
             "Những yếu tố nào có thể đã ảnh hưởng đến kết quả, chẳng hạn như thời gian làm bài, số lượng bài tập ôn luyện, hoặc các yếu tố bên ngoài? "
         )
         data_prompt += self.analyze_only_prompt
-        data_prompt += "Đánh giá tổng quan về hiệu quả học tập và đưa ra các khuyến nghị cụ thể cho học sinh."
         return data_prompt
 
     def deep_analysis(self):
+
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
             "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
@@ -139,15 +142,16 @@ class promptTotal(promptCreation):
         data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương:\n"
         with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
             data = csv.reader(file)
+            next(data)
             for row in data:
-                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[2]}%\n"
+                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[5]}%\n"
 
         data_prompt += "Dưới đây là trung bình các bài hay sai của các chương:\n"
         lessons_review_dict = self.data.lessons_id_to_review()
         for chap, value in lessons_review_dict.items():
             data_prompt += f"Chương {chap}:"
             for lesson, count in value['lesson'].items():
-                data_prompt += f" {lesson} bài,"
+                data_prompt += f" {lesson} bài, "
         # tìm ra điểm mạnh điểm yếu
         # Điểm số, tgian làm bài cải thiện hay giảm, so sánh với aim score để đánh giá
         # nhận xét về phần làm tốt, phần cần cải thiện
@@ -158,7 +162,7 @@ class promptTotal(promptCreation):
             "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
             "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
             "- Nhắc nhở học sinh ôn tập lại các bài thường hay sai, đặc biệt chú ý những chương có tỉ lệ sai cao.\n"
-            "- Đề xuất chiến lược học tập để cải thiện các điểm yếu, bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
+            "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
         )
         return data_prompt
 
@@ -187,11 +191,12 @@ class promptChap(promptCreation):
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
         with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
             data = csv.reader(file)
+            next(data)
             for row in data:
-                data_prompt += f"- Chương {row[0]} | Loại câu hỏi {row[1]}: Kỳ vọng {row[2]}%\n"
+                data_prompt += f"- Chương {row[0]} | Loại câu hỏi {row[1]}: Kỳ vọng {row[5]}%\n"
 
         data_prompt += (
-            "\nPhân tích kết quả trên để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
+            "\nPhân tích chi tiết kết quả trên để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
             "- Xác định các phần kiến thức mà học sinh đã nắm vững (điểm số cao, thời gian ngắn).\n"
             "- Nhận diện các phần cần cải thiện (điểm số thấp, thời gian dài).\n"
             "- So sánh kết quả với kỳ vọng để xác định liệu học sinh có đạt được mục tiêu đã đề ra không.\n"
@@ -202,7 +207,7 @@ class promptChap(promptCreation):
             "Đưa ra các nhận xét và lời khuyên cụ thể cho học sinh:\n"
             "- Tập trung ôn lại các loại câu hỏi có tỉ lệ đúng thấp.\n"
             "- Chuẩn bị kỹ lưỡng cho bài kiểm tra tiếp theo bằng cách ôn tập các chương có tỉ lệ sai cao.\n"
-            "- Đặt mục tiêu cụ thể cho mỗi buổi học, ví dụ: cải thiện điểm số trong các câu hỏi 'Nhận biết' và 'Thông hiểu'.\n"
+            "- Đặt mục tiêu cụ thể cho mỗi buổi học, ví dụ: cải thiện điểm số trong các câu hỏi 'Nhận biết' và 'Thông hiểu'. (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể)\n"
         )
 
         data_prompt += self.detail_analyze_prompt
@@ -210,21 +215,19 @@ class promptChap(promptCreation):
 
 
 class generateAnalysis:
-    def __init__(self,subject,num_chap):
+    def __init__(self, subject, num_chap):
         self.configuration = {
-            "temperature" : 0.8,
-            "top_p" : 0.9,
-            "top_k" : 120,
-            "max_output_tokens" : 5000
+            "temperature": 0.8,
+            "max_tokens": 5000,
+            "top_p": 0.8,
         }
-        self.model_name = 'gemini-1.5-pro-latest'
-        self.gg_api_key = 'AIzaSyCPWag7mBUXOMmFTcmyi0vhz1sdYdTvMZA'
-        genai.configure(api_key=self.gg_api_key)
-        self.model = genai.GenerativeModel(self.model_name, generation_config=self.configuration)
+        self.api_key = os.getenv('OPENAI_API_KEY')
+        self.client = OpenAI(api_key=self.api_key)
         self.num_test = 8
         self.subject = subject
         self.num_chap = num_chap
-        self.next_test_date = promptTotal("total",self.num_test,self.subject).next_test_date()
+        self.next_test_date = promptTotal("total", self.num_test, self.subject).next_test_date()
+
     def return_subject_name(self):
         name = {
             "T": "Toán",
@@ -236,22 +239,39 @@ class generateAnalysis:
         }
         return name.get(self.subject, "Unknown Subject")
 
-    def analyze_progress(self):
-        prompt = promptTotal("total",self.num_test,self.subject).track_progress()
-        response = self.model.generate_content(prompt)
-        return response.text
-    def analyze_fast(self):
-        prompt = promptTotal("total",self.num_test,self.subject).fast_analysis()
-        response = self.model.generate_content(prompt)
-        return response.text
-    def analyze_deep(self):
-        prompt = promptTotal("total",self.num_test,self.subject).deep_analysis()
-        response = self.model.generate_content(prompt)
-        return response.text
-    def analyze_chapter(self):
-        prompt = promptChap("chapter",self.num_test,self.subject,self.num_chap).chap_analysis()
-        response = self.model.generate_content(prompt)
-        return response.text
+    def return_prompt(self, analyze_type):
+        if analyze_type == "fast":
+            prompt = promptTotal("total", self.num_test, self.subject).fast_analysis()
+        elif analyze_type == "deep":
+            prompt = promptTotal("total", self.num_test, self.subject).deep_analysis()
+        elif analyze_type == "progress":
+            prompt = promptTotal("total", self.num_test, self.subject).track_progress()
+        elif analyze_type == "chapter":
+            prompt = promptChap("chapter", self.num_test, self.subject, self.num_chap).chap_analysis()
+        else:
+            return "Invalid analyze type. Please choose between 'fast', 'deep', 'progress', or 'chapter'."
+        return prompt
+
+    def call_gpt(self, prompt):
+        response = self.client.chat.completions.create(
+            model="gpt-4o-mini",  # Replace with the correct model name, such as 'gpt-4' or other supported models
+            messages=[
+                {"role": "system", "content": "bạn là 1 gia sư, bạn giỏi trong việc đánh giá những số liệu của X bài test total (bài test tổng hợp khi user học đến chương N) hoặc số liệu của X bài test chương (bài test chương N của user), biết N và X là số dương bất kỳ. Nhiệm vụ của bạn là theo prompt được hướng dẫn, bạn hãy generate các phân tích cũng như đánh giá. Và khi cần sẽ là 1 kế hoạch rõ ràng dựa vào đánh giá được cho, kế hoạch này sẽ như 1 to do list và từng ngày sẽ có từng tác vụ cụ thể được hướng dẫn trong prompt. Nếu đang phân tích thì chỉ tập trung phân tích, đừng ghi kế hoạch cụ thể."},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=self.configuration['temperature'],
+            max_tokens=self.configuration['max_tokens'],
+            top_p=self.configuration['top_p'],
+            frequency_penalty=0,
+            presence_penalty=0
+        )
+        return response.choices[0].message.content
+
+    def analyze(self, analyze_type):
+        prompt = self.return_prompt(analyze_type)
+        response = self.call_gpt(prompt)
+        return response
+
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
         date_total = promptCreation("total", self.num_test, self.subject, self.num_chap).next_test_date()
@@ -262,18 +282,19 @@ class generateAnalysis:
         
         # Bắt đầu xây dựng chuỗi prompt
         prompt = "1. **từ phân tích test tổng:**\n"
-        prompt += self.analyze_deep()
+        prompt += self.analyze("deep")
 
         time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
         prompt += "\n2. **từ phân tích test chương:**\n"
-        prompt += self.analyze_chapter()
+        prompt += self.analyze("chapter")
 
         # Gợi ý lập kế hoạch học tập chi tiết
         prompt += (
+            f"\n Ôn tập theo những thành phần được nêu sau:\n"
             f"1. Ôn lại kiến thức cũ, đặc biệt là những phần còn yếu.\n"
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
             f"3. Tập trung cải thiện điểm yếu đã chỉ ra ({diff}), sử dụng các chức năng của ứng dụng ({functions}).\n"
-            f"4. Ghi chú lỗi sai và nhắc học sinh chuẩn bị cho bài test chương {self.num_chap + 1} vào ngày {date_chap}.\n"
+            f"4. Đặc biệt nhắc học sinh chuẩn bị cho bài test chương {self.num_chap + 1} vào ngày {date_chap}.\n"
             f"5. Lập lịch ôn tập để chuẩn bị cho bài test tổng vào ngày {date_total}, bắt đầu từ {current_date.strftime('%d/%m/%Y')}.\n"
             f"6. Mỗi ngày có nhiệm vụ rõ ràng, đảm bảo ôn tập hiệu quả.\n"
         )
@@ -282,8 +303,8 @@ class generateAnalysis:
         "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n")
         # Yêu cầu format cụ thể cho kế hoạch học tập
 
-        response = self.model.generate_content(prompt)
-        return response.text
+        response = self.call_gpt(prompt)
+        return response
 
     def format_data(self):
         data = self.detail_plan_and_timeline()
@@ -297,5 +318,5 @@ class generateAnalysis:
             f"Đây là dữ liệu cần format lại:\n"
             f"'{data}'\n"
         )
-        response = self.model.generate_content(prompt)
-        return response.text
+        response = self.call_gpt(prompt)
+        return response
