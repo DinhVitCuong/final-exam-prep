@@ -4,34 +4,7 @@ from sqlalchemy.orm import sessionmaker, relationship
 import random
 import math
 from models import Subject, QAs, Test, Progress
-
-#-------------------------------------------------------------
-Base = declarative_base()
-
-# Define the Question model
-class Question(Base):
-    __tablename__ = 'questions'
-    id = Column(Integer, primary_key=True)
-    question_id = Column(String, unique=True, nullable=False)
-    chapter = Column(Integer, nullable=False)
-    difficulty = Column(Integer, nullable=False)
-    content = Column(String, nullable=False)
-
-# Define the Result model
-class Result(Base):
-    __tablename__ = 'results'
-    id = Column(Integer, primary_key=True)
-    type = Column(String, nullable=False)  # 'total' or 'chapter'
-    wrong_answers = Column(String)  # You can adjust to store lists of IDs
-    unchecked_answers = Column(String)
-
-# Set up the database
-engine = create_engine('sqlite:///test.db')
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
-#-------------------------------------------------------------
-
+from app import db
 
 def parse_rate_string(rate_string):
     # Split the string by underscores to separate each group
@@ -70,16 +43,16 @@ class TestOrigin:
 
     def select_questions(self, rate, num_questions, chapter=None):
         # Query the database for questions
-        query = session.query(Question)
+        query = db.session.query(QAs)
         if chapter is not None:
             query = query.filter_by(chapter=chapter)
         selected_questions = query.all()
 
         # Separate questions by difficulty
-        th_questions = [q for q in selected_questions if q.difficulty == 1]
-        nb_questions = [q for q in selected_questions if q.difficulty == 2]
-        vd_questions = [q for q in selected_questions if q.difficulty == 3]
-        vdc_questions = [q for q in selected_questions if q.difficulty == 4]
+        th_questions = [q for q in selected_questions if q.difficulty == 'Nhận biết']
+        nb_questions = [q for q in selected_questions if q.difficulty == 'Thông hiểu']
+        vd_questions = [q for q in selected_questions if q.difficulty == 'Vận dụng']
+        vdc_questions = [q for q in selected_questions if q.difficulty == 'Vận dụng cao']
 
         # Calculate the number of questions to select for each difficulty level
         th_percent, nb_percent, vd_percent, vdc_percent = rate
@@ -98,15 +71,15 @@ class TestOrigin:
 
 
 class TestTotal(TestOrigin):
-    def create_test(self):
+    def create_test(self, rate):
         questions = []
         if self.chapter <= 2:
             for i in range(1, self.chapter + 1):
-                chapter_questions = self.select_questions(15, chapter=i)
+                chapter_questions = self.select_questions(rate, 15, chapter=i)
                 questions.extend(chapter_questions)
         else:
             for i in range(1, self.chapter + 1):
-                chapter_questions = self.select_questions(10, chapter=i)
+                chapter_questions = self.select_questions(rate, 10, chapter=i)
                 questions.extend(chapter_questions)
 
         self.num_ques = len(questions)
@@ -117,8 +90,8 @@ class TestTotal(TestOrigin):
 
 
 class TestChap(TestOrigin):
-    def create_test(self):
-        questions = self.select_questions(30, self.chapter)
+    def create_test(self,rate):
+        questions = self.select_questions(rate, 30, self.chapter)
         self.num_ques = len(questions)
         return questions
 
@@ -137,7 +110,7 @@ class pr_br_rcmd:
     def load_data(self):
         try:
             # Load total test results
-            total_results = session.query(Test).filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
+            total_results = db.session.query(Test).filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
             total_q = []
             count_t = {}
 
@@ -166,7 +139,7 @@ class pr_br_rcmd:
             self.top_t = [(key, math.ceil((value / total_sum_all) * 15)) for key, value in self.top_t]
 
             # Load chapter test results
-            chapter_results = session.query(Test).filter_by(test_type=0).order_by(Test.id.desc()).limit(self.n_chap).all()
+            chapter_results = db.session.query(Test).filter_by(test_type=0).order_by(Test.id.desc()).limit(self.n_chap).all()
             chap_q = []
             count_c = {}
 
@@ -196,10 +169,10 @@ class pr_br_rcmd:
             print(f"Error loading data: {str(e)}")
 
     def containter_type(self, id):  # Return a list of questions for each id
-        return session.query(QAs).filter(QAs.id.like(f'{id[0][0]}%'), QAs.difficulty == id[0][1]).all()
+        return db.session.query(QAs).filter(QAs.id.like(f'{id[0][0]}%'), QAs.difficulty == id[0][1]).all()
 
     def find_vdc(self, id_chap):  # Return a list of VDC questions
-        return session.query(QAs).filter_by(id=id_chap, difficulty=4).all()
+        return db.session.query(QAs).filter_by(id=id_chap, difficulty=4).all()
 
     def question_prep(self):  # Return a test with questions
         QAs_list = []
@@ -233,10 +206,10 @@ class pr_br_rcmd:
 
 # # Example usage:
 # rate = [40, 20, 30, 10]
-# test_total = TestTotal("T", rate, 3)
-# questions_total = test_total.create_test()
+# test_total = TestTotal("T", 3)
+# questions_total = test_total.create_test(rate)
 # print("Total Test Questions:", questions_total)
 
-# test_chap = TestChap("T", rate, 3)
-# questions_chap = test_chap.create_test()
+# test_chap = TestChap("T", 3)
+# questions_chap = test_chap.create_test(rate)
 # print("Chapter Test Questions:", questions_chap)
