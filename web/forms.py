@@ -9,7 +9,8 @@ from wtforms import (
     SubmitField,
     RadioField, 
     SelectMultipleField, 
-    SelectField
+    SelectField,
+    HiddenField
 )
 
 from flask_wtf import FlaskForm
@@ -111,3 +112,7 @@ class test_selection_form(FlaskForm):
     total_chapters = SelectMultipleField('Select Chapters for Total Test', choices=[], coerce=str)
     chapter = SelectField('Select a Chapter for Chapter Test', choices=[], validators=[InputRequired()])
     submit = SubmitField('Start Test')
+
+class QuizForm(FlaskForm):
+    timeSpent = HiddenField('Time Spent', validators=[InputRequired()])
+    answers = HiddenField('Answers', validators=[InputRequired()])

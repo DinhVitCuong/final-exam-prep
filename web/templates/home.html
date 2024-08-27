@@ -482,24 +482,55 @@
           <p class="calendar-review-content">Bạn đang học không liên tục</p>
         </div>
         <div class="subjects">
+          {%if subject.subject1 != "" 
+          and subject.subject1!= "Khoa học tự nhiên"
+          and subject.subject1!= "Năng khiếu mẫu giáo"
+          and subject.subject1!= "Năng khiếu báo chí"
+          and subject.subject1!= "Năng khiếu thể dục thể thao"
+          and subject.subject1!= "Biểu diễn nhạc cụ"
+          and subject.subject1!= "hai môn năng khiếu sân khấu."
+          and subject.subject1!= "hai môn Năng khiếu Âm nhạc"
+          %}
           <div class="subject-item">
             <a href="{{ url_for('subject', subject_id='S1') }}">
-              <p class="subject-item__name">{{subject.name_sub1}}</p>
-              <div class="circular-progress-bar--math"></div>
+              <p class="subject-item__name">{{subject.subject1}}</p>
             </a>
+            <div class="circular-progress-bar--math"></div>
           </div>
+          {%endif%}
+          {%if subject.subject1 != "" 
+          and subject.subject1!= "Khoa học tự nhiên"
+          and subject.subject1!= "Năng khiếu mẫu giáo"
+          and subject.subject1!= "Năng khiếu báo chí"
+          and subject.subject1!= "Năng khiếu thể dục thể thao"
+          and subject.subject1!= "Biểu diễn nhạc cụ"
+          and subject.subject1!= "hai môn năng khiếu sân khấu."
+          and subject.subject1!= "hai môn Năng khiếu Âm nhạc"
+          %}
           <div class="subject-item">
             <a href="{{ url_for('subject', subject_id='S2') }}">
-              <p class="subject-item__name">{{subject.name_sub2}}</p>
-              <div class="circular-progress-bar--math"></div>
+              <p class="subject-item__name">{{subject.subject2}}</p>
             </a>
+            <div class="circular-progress-bar--physics"></div>
           </div>
+          {%endif%}
+          {%if subject.subject1 != "" 
+          and subject.subject1!= "Khoa học tự nhiên"
+          and subject.subject1!= "Năng khiếu mẫu giáo"
+          and subject.subject1!= "Năng khiếu báo chí"
+          and subject.subject1!= "Năng khiếu thể dục thể thao"
+          and subject.subject1!= "Biểu diễn nhạc cụ"
+          and subject.subject1!= "hai môn năng khiếu sân khấu."
+          and subject.subject1!= "hai môn Năng khiếu Âm nhạc"
+          %}
           <div class="subject-item">
             <a href="{{ url_for('subject', subject_id='S3') }}">
-              <p class="subject-item__name">{{subject.name_sub3}}</p>
-              <div class="circular-progress-bar--math"></div>
+              <p class="subject-item__name">{{subject.subject3}}</p>
+              
             </a>
+            <div class="circular-progress-bar--chemistry"></div>
           </div>
+          {%endif%}
         </div>
         <div class="charts-container">
           <div class="chart--general">

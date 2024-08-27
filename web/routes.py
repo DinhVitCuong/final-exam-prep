@@ -26,10 +26,10 @@ from flask_login import (
     logout_user,
     login_required,
 )
-
+import json
 from app import create_app, db, login_manager, bcrypt
 from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory
-from forms import login_form,register_form, test_selection_form, select_univesity_form
+from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 
 
@@ -155,7 +155,8 @@ def home():
         return redirect(url_for('select_uni'))
     progress = Progress.query.filter(Progress.user_id==current_user.id).first()
     university = Universities.query.filter(Universities.id==progress.user_major_uni).first()
-    return render_template("home.html", title="Trang chủ", university=university)
+    subject = SubjectCategory.query.filter(SubjectCategory.id==progress.user_subject_cat).first()
+    return render_template("home.html", title="Trang chủ", university=university, subject=subject)
 
 
 
@@ -264,67 +265,61 @@ def select_uni():
     return render_template("select_uni.html", form=form,current_slide=0)
 
 
-app.route('/subject/<subject_id>')
+app.route('/subject/<subject_id>', methods=["GET", "POST"])
 def subject(subject_id):
-    subject = 0
-    if subject_id == 'S1':
-        subject = 1
-    elif subject_id == 'S2':
-        subject = 2
-    elif subject_id == 'S3':
-        subject = 3
+    subject_id = 0
+    subject_name = ''
+    if subject_id == 'S1': #Toan
+        subject_name = 'Toán'
+        subject = 'M'
+    elif subject_id == 'S2': #Li
+        subject_name = 'Lí'
+        subject = 'L'
+    elif subject_id == 'S3': #Hoa
+        subject_name = 'Hóa'
+        subject = 'H'
+    if subject == 0:
+        return url_for('home')
+    chapter_numbers = (
+    QAs.query
+    .filter(QAs.id.like(f'{subject}%'))
+    .with_entities(db.func.substr(QAs.id, 2, 2))
+    .distinct()
+    .all()
+    )
     
-    return render_template('subject.html', subject=subject)
+    # Convert the results to a list of chapter numbers
+    chapter_numbers_list = [f"{int(row.chapter_number):02}" for row in chapter_numbers]
 
-# #Multiple_choice_test route
-# @app.route("/test-select", methods=("GET", "POST"), strict_slashes=False)
-# def test_select():
-#     subjects_and_chapters = {
-#         "Math": [("chapter1", "Algebra"), ("chapter2", "Geometry"), ("chapter3", "Calculus")],
-#         "Science": [("chapter1", "Physics"), ("chapter2", "Chemistry"), ("chapter3", "Biology")],
-#         "History": [("chapter1", "Ancient"), ("chapter2", "Medieval"), ("chapter3", "Modern")]
-#     }
-    
-#     form = test_selection_form()
-#     form.subject.choices = [(subject, subject) for subject in subjects_and_chapters.keys()]
+    return render_template('subject.html', subject_name = subject_name, subject=subject, chapter_list = chapter_numbers_list)
 
-#     if form.validate_on_submit():
-#         test_type = form.test_type.data
-#         selected_subject = form.subject.data
-#         chapters = subjects_and_chapters.get(selected_subject, [])
+@app.route("/chapter-test/<chap_id>")
+def chapter_test(chap_id):
+    subject = request.args.get('subject')
+    time_limit = 45 #Minute
+    form = QuizForm()
+    rate = [40, 20, 30, 10]
+    test_chap = TestChap(subject, chap_id)
+    questions= test_chap.create_test(rate)
+    if request.method == "POST":
+        time_spent = request.form.get('timeSpent')
+        answers = request.form.get('answers')
 
-#         if test_type == "total":
-#             selected_chapters = form.total_chapters.data
-#             if len(selected_chapters) >= 2:
-#                 return redirect(url_for('total_test', chapters=",".join(selected_chapters)))
-#             else:
-#                 return "Please select at least two chapters for the Total Test.", 400
+        # Convert from JSON string back to Python lists
+        import json
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
 
-#         elif test_type == "chapter":
-#             selected_chapter = form.chapter.data
-#             return redirect(url_for('chapter_test', chapter=selected_chapter))
-        
-#         elif test_type == "practice":
-#             selected_chapter = form.chapter.data
-#             return redirect(url_for('practice_test', chapter=selected_chapter))
+        # Here you can process the time spent and answers
+        # For example, you might save them to a database or use them in some calculations
+        print(f"Time Spent: {time_spent}")
+        print(f"Answers: {answers}")
 
-#     # Set chapters based on the subject selected (if any)
-#     selected_subject = form.subject.data
-#     chapters = subjects_and_chapters.get(selected_subject, [])
-#     form.total_chapters.choices = chapters
-#     form.chapter.choices = chapters
-
-#     return render_template("test_select.html", form=form)
+        # Redirect to another page or render a results template
+        return render_template('results.html', subject=subject, time_spent=time_spent, answers=answers)
 
 
-
-#haven't debug yet
-
-@app.route("/chapter-test")
-def chapter_test():
-    chapter = request.args.get("chapter")
-    # Process chapter test with selected chapter
-    return f"Starting Chapter Test with chapter: {chapter}" 
+    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 @app.route("/practice-test")
 def total_test():

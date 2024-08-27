@@ -232,7 +232,7 @@
           <img src="../static/assets/analytics-icon.svg" alt="analytics" />
         </div>
         <div class="button button__progress">
-          <p class="header__subject">Toán</p>
+          <p class="header__subject">{{subject_name}}</p>
           <!-- circular progress -->
           <div class="circular-progress-bar--subject"></div>
         </div>
@@ -251,7 +251,17 @@
 
         <div class="chapters-container">
           <!-- chapterList.map... o day ne, moi chapter la mot div.chapter -->
-          <div class="chapter">
+           {{%for chapter in chapter_numbers_list%}}
+           <div class="chapter">
+            <div class="chapter__button">
+              <a href="{{ url_for('chapter-test', subject=subject, chapter_id=chapter) }}">
+              <p>Chương {{chapter}}</p>
+              </a>
+            </div>
+            <div class="circular-progress-bar--chapter1"></div>
+          </div>
+           {{%endfor%}}
+          <!-- <div class="chapter">
             <div class="chapter__button">
               <p>Chương 1</p>
             </div>
@@ -274,7 +284,7 @@
               <p>Chương 4</p>
             </div>
             <div class="circular-progress-bar--chapter4"></div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="buttons-container">
