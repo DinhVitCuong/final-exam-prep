@@ -30,7 +30,7 @@ class Subject(db.Model):
     __tablename__="subject"
 
     id=db.Column(db.String, primary_key=True) # format: A = chu cai dau mon học
-    rate = db.Column(db.String, nullable=True) # format: - ngăn cách giữa các độ khó, "_" ngăn cách giữa các chương
+    rate = db.Column(db.String, nullable=True) # format: "_" ngăn cách giữa các độ khó, ";" ngăn cách giữa các chương
 
 class QAs(db.Model):
     __tablename__ = "question-answer"
@@ -48,13 +48,16 @@ class Progress(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
-    user_subject_cat = db.Column(db.String, nullable=True)
+    user_subject_cat = db.Column(db.String, nullable=True) #example: A00 ??
     user_major_uni = db.Column(db.Integer, db.ForeignKey('university.id'), nullable=False)
-    target_progress = db.Column(db.String, nullable=True)
-    base_progress = db.Column(db.String, nullable=True)
-    progress_1 = db.Column(db.String, nullable=True)
+    target_progress = db.Column(db.String, nullable=True) #format: subject1_subject2_subject3
+    base_progress = db.Column(db.String, nullable=True) #format: subject1_subject2_subject3
+    progress_1 = db.Column(db.String, nullable=True) #format: "_" ngăn cách giữa các độ khó, ";" ngăn cách giữa các chương. example: 1_2_3_4;3_1_6_4;...
+    threadhold_1 = db.Column(db.String, nullable=True) #format: thread1_thread2_thread3_...
     progress_2 = db.Column(db.String, nullable=True)
+    threadhold_1 = db.Column(db.String, nullable=True)
     progress_3 = db.Column(db.String, nullable=True)
+    threadhold_1 = db.Column(db.String, nullable=True)
     wrong_answer = db.Column(db.String, nullable=True)
 
 
