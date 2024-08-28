@@ -265,7 +265,7 @@ def select_uni():
     return render_template("select_uni.html", form=form,current_slide=0)
 
 
-app.route('/subject/<subject_id>', methods=["GET", "POST"])
+@app.route('/subject/<subject_id>', methods=["GET", "POST"])
 def subject(subject_id):
     subject_id = 0
     subject_name = ''
@@ -322,7 +322,7 @@ def chapter_test(chap_id):
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 @app.route("/practice-test")
-def total_test():
+def practice_test():
     chapters = request.args.get("chapters")
     # Process total test with selected chapters
     return f"Starting Total Test with chapters: {chapters}"
