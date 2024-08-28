@@ -45,14 +45,17 @@ class TestOrigin:
         # Query the database for questions
         query = db.session.query(QAs)
         if chapter is not None:
-            query = query.filter_by(chapter=chapter)
+            query = query.filter(
+                QAs.id.like(f"{self.monhoc}%"),  # Filter by the subject character at the start
+                QAs.id.like(f"_{str(chapter).zfill(2)}%")  # Filter by the two-digit chapter number
+            )
         selected_questions = query.all()
-
+        # print(selected_questions)
         # Separate questions by difficulty
-        th_questions = [q for q in selected_questions if q.difficulty == 'Nhận biết']
-        nb_questions = [q for q in selected_questions if q.difficulty == 'Thông hiểu']
-        vd_questions = [q for q in selected_questions if q.difficulty == 'Vận dụng']
-        vdc_questions = [q for q in selected_questions if q.difficulty == 'Vận dụng cao']
+        th_questions = [q for q in selected_questions if q.difficulty == 0]
+        nb_questions = [q for q in selected_questions if q.difficulty == 1]
+        vd_questions = [q for q in selected_questions if q.difficulty == 2]
+        vdc_questions = [q for q in selected_questions if q.difficulty == 3]
 
         # Calculate the number of questions to select for each difficulty level
         th_percent, nb_percent, vd_percent, vdc_percent = rate
@@ -60,7 +63,7 @@ class TestOrigin:
         num_nb = int(num_questions * nb_percent / 100)
         num_vd = int(num_questions * vd_percent / 100)
         num_vdc = int(num_questions * vdc_percent / 100)
-
+        
         # Randomly select questions for each difficulty level
         questions = random.sample(th_questions, num_th) + \
                     random.sample(nb_questions, num_nb) + \
@@ -202,13 +205,18 @@ class pr_br_rcmd:
             QAs_list += random.sample(self.find_vdc(self.chap_freq[0][0]), 1)
 
         return QAs_list
-
+    
+from app import create_app, db, login_manager, bcrypt
 
 # # Example usage:
 # rate = [40, 20, 30, 10]
-# test_total = TestTotal("T", 3)
-# questions_total = test_total.create_test(rate)
-# print("Total Test Questions:", questions_total)
+# test_total = TestTotal("L", 2)
+# app = create_app()
+# with app.app_context():
+#     # Your database operations here
+#     # For example, querying the Test model
+#     questions_total = test_total.create_test(rate)
+#     print("Total Test Questions:", questions_total)
 
 # test_chap = TestChap("T", 3)
 # questions_chap = test_chap.create_test(rate)
