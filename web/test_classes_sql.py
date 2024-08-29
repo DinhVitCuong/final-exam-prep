@@ -71,7 +71,18 @@ class TestOrigin:
                     random.sample(vdc_questions, num_vdc)
         
         return questions
-
+    def shuffle_questions(self, questions):
+        th_questions = [q for q in questions if q.difficulty == 0]
+        nb_questions = [q for q in questions if q.difficulty == 1]
+        vd_questions = [q for q in questions if q.difficulty == 2]
+        vdc_questions = [q for q in questions if q.difficulty == 3]
+        
+        random.shuffle(th_questions)
+        random.shuffle(vd_questions)
+        
+        random.shuffle(vdc_questions)
+        
+        return th_questions + nb_questions + vd_questions + vdc_questions
 
 class TestTotal(TestOrigin):
     def create_test(self, rate):
@@ -209,14 +220,14 @@ class pr_br_rcmd:
 from app import create_app, db, login_manager, bcrypt
 
 # # Example usage:
-# rate = [40, 20, 30, 10]
-# test_total = TestTotal("L", 2)
-# app = create_app()
-# with app.app_context():
-#     # Your database operations here
-#     # For example, querying the Test model
-#     questions_total = test_total.create_test(rate)
-#     print("Total Test Questions:", questions_total)
+rate = [40, 20, 30, 10]
+test_total = TestTotal("L", 2)
+app = create_app()
+with app.app_context():
+    # Your database operations here
+    # For example, querying the Test model
+    questions_total = test_total.create_test(rate)
+    print("Total Test Questions:", questions_total)
 
 # test_chap = TestChap("T", 3)
 # questions_chap = test_chap.create_test(rate)
