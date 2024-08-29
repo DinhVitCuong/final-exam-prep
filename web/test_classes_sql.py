@@ -91,11 +91,12 @@ class TestTotal(TestOrigin):
             for i in range(1, self.chapter + 1):
                 chapter_questions = self.select_questions(rate, 15, chapter=i)
                 questions.extend(chapter_questions)
+            questions = self.shuffle_questions(questions)
         else:
             for i in range(1, self.chapter + 1):
                 chapter_questions = self.select_questions(rate, 10, chapter=i)
                 questions.extend(chapter_questions)
-
+            questions = self.shuffle_questions(questions)
         self.num_ques = len(questions)
         return questions
 
@@ -221,7 +222,7 @@ from app import create_app, db, login_manager, bcrypt
 
 # # Example usage:
 rate = [40, 20, 30, 10]
-test_total = TestTotal("L", 2)
+test_total = TestTotal("L", 3)
 app = create_app()
 with app.app_context():
     # Your database operations here
