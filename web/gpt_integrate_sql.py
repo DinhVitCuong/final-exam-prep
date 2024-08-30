@@ -4,14 +4,17 @@ import json
 import requests
 import os
 from chart_drawing_sql import DrawTotal, DrawChap
-from predict_threshold_sql import prepThreshold, predictThreshold
+from predict_threshold_sql import PrepThreshold, PredictThreshold
 import csv
 from datetime import datetime
 import time 
 import pandas as pd
-
+from app import create_app, db, login_manager, bcrypt
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
 
 load_dotenv()
+
+
 # prompt creation
 class promptCreation:
     def __init__(self, type_test, num_test, subject, num_chap = None):
@@ -22,7 +25,7 @@ class promptCreation:
         self.final_exam_date = "2025-06-27"
         self.subject = subject
         self.aim_score = 9
-        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test) if self.type_test == "total" else DrawChap(self.subject, self.num_chap, self.type_test, self.num_test)
+        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, self.type_test, self.num_test)
         self.test_intro = self.get_test_intro()
         self.subject_intro = f"Đây là kết quả môn {self.return_subject_name()}"
         self.detail_analyze_prompt = (f"Lưu ý là thêm số liệu cụ thể để phân tích cho kĩ lưỡng nha, Từ đó đưa ra nhận xét về kết quả vừa thực hiện (mạnh phần nào, yếu phần nào, "
@@ -30,7 +33,7 @@ class promptCreation:
         f"Đưa ra lời khuyên cụ thể cho user để cải thiện kết quả hơn\n")
         # Correctly instantiate the data object based on type_test
         self.functions_prompt = f"Biết rằng app có 1 số chức năng như: practice test recommendation (đây là 1 bài test gồm những kiến thức đã sai từ {self.num_chap} chương trước), Analytic review (review phần analysis của {self.num_test} bài test, tìm ra được điểm mạnh yếu trong kiến thức và đánh giá chung bài test), Wrong question searching (chức năng xem lại tất cả các bài đã sai)\n"
-
+        self.prompt_score = "(cho biết kết quả ở hệ số 10)"
     def return_subject_name(self):
         name = {
             "T": "Toán",
@@ -43,10 +46,10 @@ class promptCreation:
         return name.get(self.subject, "Unknown Subject")
 
     def get_test_intro(self):
-        if self.type_test == "total":
-            return f"Đây là kết quả {self.type_test} test, là bài test tất cả các chương đã học tính đến hiện tại là {self.data.num_chap}."
-        elif self.type_test == "chapter":
-            return f"Đây là kết quả {self.type_test} test, là bài test chương {self.data.num_chap}."
+        if self.type_test == 1:
+            return f"Đây là kết quả của total test, là bài test tất cả các chương đã học tính đến hiện tại là {self.data.num_chap}."
+        elif self.type_test == 0:
+            return f"Đây là kết quả của test chương, là bài test chương {self.data.num_chap}."
 
     def previous_result(self):
         data_prompt = self.test_intro
@@ -63,25 +66,22 @@ class promptCreation:
         data_prompt += self.analyze_only_prompt
         return data_prompt
     def diff_prompt(self):
-        return "\nChú thích cho loại câu hỏi: 1 là Nhận biết, 2 là Thông hiểu, 3 là vận dụng, 4 là vận dụng cao\n" 
+        return "\nChú thích cho loại câu hỏi: 0 là Nhận biết, 1 là Thông hiểu, 2 là vận dụng, 3 là vận dụng cao\n" 
     def date_time_test(self):
-        if self.type_test == "total":
-            with open(f"{self.subject}_{self.type_test}_results.json", "r", encoding="utf-8") as file:
-                data = json.load(file)
-                date = data[-1]['completion_time']
+        query = db.session.query(Test).filter_by(test_type=self.type_test).all()
+        date = query[-1].time
+        if self.type_test == 1:
+            test_name = "total"
         else:
-            with open(f"{self.subject}_{self.type_test}_results.json", "r", encoding="utf-8") as file:
-                data = json.load(file)
-                date = data[-1]['completion_time']
-
-        return f"Thời điểm làm bài test {self.type_test} cuối cùng là {date}"
-    def next_test_date(self):
-        # Load the completion time from the JSON file
-        with open(f"{self.subject}_{self.type_test}_results.json", "r", encoding="utf-8") as file:
-            data = json.load(file)
-            date = data[-1]['completion_time']
+            test_name = "chương"
         
-        date = pd.to_datetime(date)  # Convert to datetime object
+        return f"Thời điểm làm bài test {test_name} cuối cùng là {date}"
+    
+    def next_test_date(self):
+        query = db.session.query(Test).filter_by(test_type=self.type_test).all()
+        date = query[-1].time
+        
+        date = pd.to_datetime(date)  
         print(self.data.time_to_do_test)
         return date + self.data.time_to_do_test
 
@@ -89,7 +89,6 @@ class promptCreation:
 class promptTotal(promptCreation):
     def __init__(self, type_test, num_test, subject):
         super().__init__(type_test, num_test, subject)
-        self.prompt_score = "(cho biết kết quả ở hệ số 10)"
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
     def fast_analysis(self):
@@ -137,12 +136,12 @@ class promptTotal(promptCreation):
                 data_prompt += f"- Loại câu hỏi {type1}: {acuc}%\n"
 
         data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương:\n"
-        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
-            data = csv.reader(file)
-            next(data)
-            for row in data:
-                data_prompt += f"Chương {row[0]} có loại câu hỏi {row[1]} với kì vọng là {row[5]}%\n"
-
+        predict = PredictThreshold(self.type_test, self.subject)
+        data = predict.predicted_data()
+        for row in data.itertuples(index=False):
+            # Access columns using row indices (chapter, difficulty, accuracy)
+            data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
+            
         data_prompt += "Dưới đây là trung bình các bài hay sai của các chương:\n"
         lessons_review_dict = self.data.lessons_id_to_review()
         for chap, value in lessons_review_dict.items():
@@ -186,11 +185,11 @@ class promptChap(promptCreation):
             data_prompt += f"- Loại câu hỏi {type1}: {accu}%\n"
 
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
-        with open(f"{self.subject}_{self.type_test}_threshold.csv", "r", encoding='utf-8') as file:
-            data = csv.reader(file)
-            next(data)
-            for row in data:
-                data_prompt += f"- Chương {row[0]} | Loại câu hỏi {row[1]}: Kỳ vọng {row[5]}%\n"
+        predict = PredictThreshold(self.type_test, self.subject)
+        data = predict.predicted_data()
+        for row in data.itertuples(index=False):
+            # Access columns using row indices (chapter, difficulty, accuracy)
+            data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
 
         data_prompt += (
             "\nPhân tích chi tiết kết quả trên để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
@@ -223,11 +222,11 @@ class generateAnalysis:
         self.num_test = 8
         self.subject = subject
         self.num_chap = num_chap
-        self.next_test_date = promptTotal("total", self.num_test, self.subject).next_test_date()
+        self.next_test_date = promptTotal(1, self.num_test, self.subject).next_test_date()
 
     def return_subject_name(self):
         name = {
-            "T": "Toán",
+            "M": "Toán",
             "L": "Lý",
             "H": "Hóa",
             "S": "Sinh",
@@ -238,13 +237,13 @@ class generateAnalysis:
 
     def return_prompt(self, analyze_type):
         if analyze_type == "fast":
-            prompt = promptTotal("total", self.num_test, self.subject).fast_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject).fast_analysis()
         elif analyze_type == "deep":
-            prompt = promptTotal("total", self.num_test, self.subject).deep_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject).deep_analysis()
         elif analyze_type == "progress":
-            prompt = promptTotal("total", self.num_test, self.subject).track_progress()
+            prompt = promptTotal(1, self.num_test, self.subject).previous_result()
         elif analyze_type == "chapter":
-            prompt = promptChap("chapter", self.num_test, self.subject, self.num_chap).chap_analysis()
+            prompt = promptChap(0, self.num_test, self.subject, self.num_chap).chap_analysis()
         else:
             return "Invalid analyze type. Please choose between 'fast', 'deep', 'progress', or 'chapter'."
         return prompt
@@ -271,11 +270,11 @@ class generateAnalysis:
 
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
-        date_total = promptCreation("total", self.num_test, self.subject, self.num_chap).next_test_date()
-        date_chap = promptCreation("chapter", self.num_test, self.subject, self.num_chap).next_test_date()
-        diff = promptCreation("total", self.num_test, self.subject, self.num_chap).diff_prompt()
+        date_total = promptCreation(1, self.num_test, self.subject, self.num_chap).next_test_date()
+        date_chap = promptCreation(0, self.num_test, self.subject, self.num_chap).next_test_date()
+        diff = promptCreation(1, self.num_test, self.subject, self.num_chap).diff_prompt()
         current_date = datetime.now()
-        functions = promptCreation("total", self.num_test, self.subject, self.num_chap).functions_prompt
+        functions = promptCreation(1, self.num_test, self.subject, self.num_chap).functions_prompt
         
         # Bắt đầu xây dựng chuỗi prompt
         prompt = "1. **từ phân tích test tổng:**\n"
@@ -317,3 +316,11 @@ class generateAnalysis:
         )
         response = self.call_gpt(prompt)
         return response
+
+
+app = create_app()
+with app.app_context():
+    test = generateAnalysis("L",3)
+    # "deep", "fast", "progress", "chapter"
+    print(test.return_prompt("deep"))
+    # print(test.analyze("deep"))
