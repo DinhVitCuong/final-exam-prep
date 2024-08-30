@@ -3,16 +3,13 @@ from dotenv import load_dotenv
 import json
 import requests
 import os
-import google.generativeai as genai
-from pathlib import Path
 from chart_drawing_sql import DrawTotal, DrawChap
 from predict_threshold_sql import prepThreshold, predictThreshold
 import csv
 from datetime import datetime
 import time 
 import pandas as pd
-from dateutil.relativedelta import relativedelta
-from datetime import timedelta
+
 
 load_dotenv()
 # prompt creation
