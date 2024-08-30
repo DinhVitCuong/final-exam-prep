@@ -15,6 +15,7 @@ class DrawChartBase:
         self.time_to_do_test = None
         self.data = None
         self.date_and_time_calc("2024-08-23", "2025-06-27", 9)
+        self.rate = [40,20,30,10]
     def load_data(self):
         try:
             self.data = db.session.query(Test).filter(
@@ -214,7 +215,7 @@ class DrawTotal(DrawChartBase):
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
     
     def difficult_percentile_per_chap(self):
-        _, diff_ids, diff_nums = self.cal_accu_diff()
+        _, diff_ids, _ = self.cal_accu_diff()
         chap_difficulty_count = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
         chap_difficulty_percentile = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
         
@@ -222,11 +223,14 @@ class DrawTotal(DrawChartBase):
             for id in ids:
                 chap = int(id[1:3])
                 chap_difficulty_count[chap][diff] += 1
-        
+
+        diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
+        for rate in self.rate:
+            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num_chap
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
                 if diff_nums[diff] != 0:
-                    chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 * self.num_chap
+                    chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 # so loai cau trong chap do
         
         return chap_difficulty_percentile # ti le % dung cua moi do kho moi chuong, cac chuong con lai mac dinh la ko co cau dung
     def find_most_wrong_chap(self):
@@ -252,6 +256,9 @@ class DrawChap(DrawChartBase):
             for id in ids:
                 chap = int(id[1:3])
                 chap_difficulty_count[chap][diff] += 1
+        diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
+        for rate in self.rate:
+            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num_chap
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
                 if diff_nums[diff] != 0:
@@ -267,7 +274,7 @@ with app.app_context():     #chap  #test_type    #self.num
     # print(test.lessons_id_to_review())
     # print(test.previous_results())
     # print(test.short_total_analysis())
-    # print(test.difficult_percentile_per_chap())
+    print(test.difficult_percentile_per_chap())
     # print(test.find_most_wrong_chap())
     # test = DrawChap("L", 3 , None, 3, "average")
     # print(test.difficult_percentile_per_chap())
