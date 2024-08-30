@@ -57,7 +57,7 @@ with app.app_context():
     rate = [40, 20, 30, 10]
     
     # Create multiple test records and push them to the database
-    for i in range(1, 12):
+    for i in range(1, 30):
         if i > 7:
             j = i % 7 + 1
         else:

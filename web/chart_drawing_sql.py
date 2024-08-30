@@ -226,7 +226,8 @@ class DrawTotal(DrawChartBase):
 
         diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
         for rate in self.rate:
-            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num_chap
+            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num
+
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
                 if diff_nums[diff] != 0:
@@ -241,7 +242,7 @@ class DrawTotal(DrawChartBase):
             return most_wrong_chap
         return None
 
-
+        
 class DrawChap(DrawChartBase):
     def __init__(self, subject_name, num_chap, test_type, num, load_type=None) -> None:
         super().__init__(subject_name, num_chap, test_type, num, load_type)
@@ -258,7 +259,8 @@ class DrawChap(DrawChartBase):
                 chap_difficulty_count[chap][diff] += 1
         diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
         for rate in self.rate:
-            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num_chap
+            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num
+        
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
                 if diff_nums[diff] != 0:

@@ -144,6 +144,10 @@ class PredictThreshold:
     def predicted_data(self):
         # Concatenate predictions with X_test
         self.X_test['accuracy'] = self.y_pred
+        
+        # Ensure that the values are capped at 100
+        self.X_test['accuracy'] = self.X_test['accuracy'].apply(lambda x: min(x, 100))
+        
         return self.X_test
 
 # Initialize and run prediction
