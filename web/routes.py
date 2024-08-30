@@ -278,7 +278,7 @@ def subject(subject_id):
     elif subject_id == 'S3': #Hoa
         subject_name = 'Hóa'
         subject = 'H'
-    if subject == 0:
+    elif subject_id == 0:
         return url_for('home')
     chapter_numbers = (
     QAs.query

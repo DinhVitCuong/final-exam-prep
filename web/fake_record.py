@@ -54,12 +54,12 @@ def create_test_record(qa_list, knowledge, type):
     return test_record
 
 with app.app_context():
-    rate = [45, 20, 30, 5]
+    rate = [40, 20, 30, 10]
     
     # Create multiple test records and push them to the database
-    for i in range(11, 20):
+    for i in range(1, 12):
         if i > 7:
-            j = i % 7
+            j = i % 7 + 1
         else:
             j = i
         test_total = TestTotal("L", j)

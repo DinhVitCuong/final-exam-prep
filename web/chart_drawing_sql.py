@@ -26,11 +26,13 @@ class DrawChartBase:
                         test_type = self.test_type,
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     self.num_chap = max([int(test.knowledge) for test in self.data])
+
                 elif self.test_type == 0:
                     self.data = db.session.query(Test).filter_by(
                         test_type = self.test_type,
                         knowledge = str(self.num_chap).zfill(2)
                     ).order_by(Test.id.desc()).limit(self.num).all()
+                    
             else:
                 query = db.session.query(Test).filter_by(
                     test_type = self.test_type
