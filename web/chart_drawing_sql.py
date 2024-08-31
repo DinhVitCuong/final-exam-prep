@@ -264,7 +264,7 @@ class DrawChap(DrawChartBase):
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
                 if diff_nums[diff] != 0:
-                    chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 * self.num_chap
+                    chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100
         
         return chap_difficulty_percentile
     
