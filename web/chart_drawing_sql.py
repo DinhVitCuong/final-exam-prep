@@ -150,6 +150,8 @@ class DrawChartBase:
         elif self.test_type == 0:
             self.time_to_do_test = (get_date_prep - start_date)/14
         return get_date_prep
+    def return_max_chap(self):
+        return self.num_chap
 
 class DrawTotal(DrawChartBase):
     def __init__(self, subject_name, num_chap, test_type, num, load_type=None) -> None:
@@ -269,6 +271,7 @@ class DrawChap(DrawChartBase):
         return chap_difficulty_percentile
     
 
+
 with app.app_context():     #chap  #test_type    #self.num
     test = DrawTotal("L", None , None, 10, "average")
     # print(test.data)
@@ -276,7 +279,7 @@ with app.app_context():     #chap  #test_type    #self.num
     # print(test.lessons_id_to_review())
     # print(test.previous_results())
     # print(test.short_total_analysis())
-    print(test.difficult_percentile_per_chap())
+    
     # print(test.find_most_wrong_chap())
     # test = DrawChap("L", 3 , None, 3, "average")
     # print(test.difficult_percentile_per_chap())

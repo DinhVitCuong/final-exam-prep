@@ -161,7 +161,8 @@ class promptTotal(promptCreation):
             "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
         )
         return data_prompt
-
+    def return_max_chap(self):
+        return self.data.return_max_chap()
 
 
 class promptChap(promptCreation):
@@ -270,6 +271,7 @@ class generateAnalysis:
 
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
+        self.num_chap = promptTotal(1, self.num_test, self.subject).return_max_chap()
         date_total = promptCreation(1, self.num_test, self.subject, self.num_chap).next_test_date()
         date_chap = promptCreation(0, self.num_test, self.subject, self.num_chap).next_test_date()
         diff = promptCreation(1, self.num_test, self.subject, self.num_chap).diff_prompt()
@@ -280,9 +282,9 @@ class generateAnalysis:
         prompt = "1. **từ phân tích test tổng:**\n"
         prompt += self.analyze("deep")
 
-        time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
-        prompt += "\n2. **từ phân tích test chương:**\n"
-        prompt += self.analyze("chapter")
+        # time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
+        # prompt += "\n2. **từ phân tích test chương:**\n"
+        # prompt += self.analyze("chapter")
 
         # Gợi ý lập kế hoạch học tập chi tiết
         prompt += (
@@ -317,10 +319,23 @@ class generateAnalysis:
         response = self.call_gpt(prompt)
         return response
 
+def turning_into_json(json_string):
+    start_pos = json_string.find("[")
+    end_pos = json_string.find("]")
+    json_string = json_string[start_pos:end_pos+1]
+    json_data = json.loads(json_string)
+    return json_data
 
 app = create_app()
 with app.app_context():
     test = generateAnalysis("L",3)
     # "deep", "fast", "progress", "chapter"
-    print(test.return_prompt("deep"))
+    abc = test.format_data()
+    # with open("todo_T.txt", "w", encoding="utf-8") as f:
+    #     f.write(abc)
+    json_str = turning_into_json(abc)
+    with open("todo_T.json", "w", encoding="utf-8") as f:
+        json.dump(json_str, f, ensure_ascii=False, indent=4)
+    
+
     # print(test.analyze("deep"))
