@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import json
 import requests
 import os
-from chart_drawing_sql import DrawTotal, DrawChap
+from data_retriever_sql import DrawTotal, DrawChap
 from predict_threshold_sql import PrepThreshold, PredictThreshold
 import csv
 from datetime import datetime
