@@ -288,9 +288,8 @@
         </div>
       </div>
       <div class="buttons-container">
-        <a href="{{ url_for('practice-test') }}" class="practice-button">Luyện tập</a>
-        <a href="{{ url_for('test-total-test') }}" class="test-total-button">Làm bài kiểm tra tổng</a>
-        <a href="{{ url_for('test-chap-test') }}" class="test-chap-button">Làm bài kiểm tra chương</a>
+        <a href="{{ url_for('practice-test', subject=subject) }}" class="practice-button">Luyện tập</a>
+        <a href="{{ url_for('test-total-test', subject=subject) }}" class="test-total-button">Làm bài kiểm tra tổng</a>
       </div>
     </div>
   </body>
