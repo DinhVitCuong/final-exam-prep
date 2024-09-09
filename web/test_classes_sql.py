@@ -104,9 +104,8 @@ class TestChap(TestOrigin):
         self.num_ques = len(questions)
         return questions
 
-
 class pr_br_rcmd:
-    def __init__(self, subject_name, n_total=0, n_chap=[0]):
+    def __init__(self, subject_name, n_total=1, n_chap = 1):
         self.subject_name = subject_name
         self.n_total = n_total
         self.n_chap = n_chap
