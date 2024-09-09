@@ -45,7 +45,7 @@ class DrawChartBase:
             print(f"Error: cai gi do roi")
             return None
 
-    def cal_accu_diff(self):
+    def cal_accu_diff(self): # accuracy per diff (để vẽ accuracy giữa các độ khó), list right ID per diff , total number of question per diff
         dic_right = {}
         dic_total = {}
         dic_ques = {}
@@ -85,7 +85,7 @@ class DrawChartBase:
             if i not in accu_diff:
                 accu_diff[i] = 0
         return accu_diff, dic_ques, dic_total # accuracy per diff (để vẽ accuracy giữa các độ khó), list right ID per diff , total number of question per diff
-    def lessons_id_to_review(self): # lấy ra các bài học cần ôn tập
+    def lessons_id_to_review(self): # trả về số lần sai trung bình của các bài học sau self.num lần thi
         datas = self.data
         lessons_review_dict = {}
         for data in datas:
@@ -116,7 +116,7 @@ class DrawChartBase:
         # R0 : bài ôn tập
         return lessons_review_dict
 
-    def previous_results(self): 
+    def previous_results(self): # trả về list result, list tổng duration, list thời gian thi, list số câu hỏi
         results = []
         durations = []
         exact_time = []
@@ -127,14 +127,14 @@ class DrawChartBase:
             num_quess.append(num_ques)
             duration = 0
             score = len([id for id in a.result.split('_') if id == '1']) / num_ques 
-            results.append(score)
+            results.append(score*10)
             for time in a.time_result.split('_'):
                 duration += int(time)
             durations.append(duration)
             exact_time.append(a.time)
         return results, durations, exact_time,  num_quess # list of scores, list of durations, list of exact time
     
-    def date_and_time_calc(self,start_date, final_date, aim):
+    def date_and_time_calc(self,start_date, final_date, aim): # tìm ra khoảng cách thời gian giữa các lần thi (total, chapter)
         # 7 chapter
         final_date = pd.to_datetime(final_date)
         start_date = pd.to_datetime(start_date)
@@ -158,7 +158,7 @@ class DrawTotal(DrawChartBase):
         super().__init__(subject_name, num_chap, test_type, num, load_type)
         self.test_type = 1
         self.load_data()
-    def cal_accu_chap(self, chap):
+    def cal_accu_chap(self, chap): # accuracy từng chapter
         datas = self.data
         scores = []
         for data in datas:
@@ -175,7 +175,7 @@ class DrawTotal(DrawChartBase):
             scores.append(score / num_ques * 100)
         return sum(scores) / self.num
     
-    def cal_time_chap(self, chap):
+    def cal_time_chap(self, chap): # thời gian làm bài từng chap
         datas = self.data
         times = []
         for data in datas:
@@ -188,7 +188,7 @@ class DrawTotal(DrawChartBase):
             times.append(time)
         return sum(times) / self.num
     
-    def short_total_analysis(self):
+    def short_total_analysis(self): # trả về accuracy và thời gian làm bài trung bình từng chương
         accu_chaps = {}
         time_chaps = {}
         
@@ -216,7 +216,7 @@ class DrawTotal(DrawChartBase):
 
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
     
-    def difficult_percentile_per_chap(self):
+    def difficult_percentile_per_chap(self): # trả về ti le % dung cua moi do kho moi chuong, cac chuong con lai mac dinh la ko co cau dung
         _, diff_ids, _ = self.cal_accu_diff()
         chap_difficulty_count = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
         chap_difficulty_percentile = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
@@ -235,13 +235,17 @@ class DrawTotal(DrawChartBase):
                 if diff_nums[diff] != 0:
                     chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 # so loai cau trong chap do
         
-        return chap_difficulty_percentile # ti le % dung cua moi do kho moi chuong, cac chuong con lai mac dinh la ko co cau dung
-    def find_most_wrong_chap(self):
+        return chap_difficulty_percentile 
+    def find_most_wrong_chap(self): # Tìm chương sai nhiều nhất (trả về 1 list nếu nhiều hơn 1 chương)
         accu_chaps, _ = self.short_total_analysis()
         if accu_chaps:
             # Find the chapter with the minimum average accuracy
+            res = []
             most_wrong_chap = min(accu_chaps, key=accu_chaps.get)
-            return most_wrong_chap
+            for i in accu_chaps:
+                if accu_chaps[i] == accu_chaps[most_wrong_chap]:
+                    res.append(i)
+            return res
         return None
 
         
@@ -250,7 +254,7 @@ class DrawChap(DrawChartBase):
         super().__init__(subject_name, num_chap, test_type, num, load_type)
         self.test_type = 0
         self.load_data()
-    def difficult_percentile_per_chap(self):
+    def difficult_percentile_per_chap(self): # trả về tỉ lệ % các độ khó trong chương
         _, diff_ids, diff_nums = self.cal_accu_diff()
         chap_difficulty_count = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         chap_difficulty_percentile = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
@@ -275,9 +279,9 @@ class DrawChap(DrawChartBase):
 with app.app_context():     #chap  #test_type    #self.num
     test = DrawTotal("L", None , None, 10, "average")
     # print(test.data)
-    # print(test.cal_accu_diff())
-    # print(test.lessons_id_to_review())
-    # print(test.previous_results())
+    print(test.cal_accu_diff())
+    #print(test.lessons_id_to_review())
+    print(test.previous_results())
     # print(test.short_total_analysis())
     
     # print(test.find_most_wrong_chap())
