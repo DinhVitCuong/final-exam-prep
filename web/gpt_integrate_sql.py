@@ -18,9 +18,9 @@ load_dotenv()
 # prompt creation
 class promptCreation:
     def __init__(self, type_test, num_test, subject, num_chap = None):
-        self.type_test = type_test
-        self.num_test = num_test
-        self.num_chap = num_chap
+        self.type_test = type_test # '0' : test chap, '1' : test total
+        self.num_test = num_test # số bài test
+        self.num_chap = num_chap # số chương là mấy
         self.prompt = "Bạn là một gia sư dạy kèm"
         self.final_exam_date = "2025-06-27"
         self.subject = subject
@@ -91,7 +91,7 @@ class promptTotal(promptCreation):
         super().__init__(type_test, num_test, subject)
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
-    def fast_analysis(self):
+    def fast_analysis(self): # lấy sau khi làm test total
         data_prompt = self.test_intro
         data_prompt += (
             f"{self.prompt} {self.subject_intro} và với lượng dữ liệu được đưa vào như sau ({self.prompt_score} và thời gian thực hiện chúng), "
@@ -112,8 +112,8 @@ class promptTotal(promptCreation):
         data_prompt += self.analyze_only_prompt
         return data_prompt
 
-    def deep_analysis(self):
-
+    def deep_analysis(self):  #  khi mà người dùng nhấn vô nút đánh giá, lấy phần generate của fast_analysis với deep analysis
+        
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
             "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
