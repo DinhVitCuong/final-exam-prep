@@ -255,7 +255,6 @@ def select_uni():
                     db.session.add(new_progress)
                 current_user.uni_select = 1
                 db.session.commit()
-            print("check clicked")
             return render_template("select_uni.html", form=form, uni_name= uni_name, score= majors_score, current_slide=current_slide)
 
     # Initialize with an empty list if no submission
@@ -278,7 +277,7 @@ def subject(subject_id):
     elif subject_id == 'S3': #Hoa
         subject_name = 'Hóa'
         subject = 'H'
-    if subject == 0:
+    elif subject_id == 0:
         return url_for('home')
     chapter_numbers = (
     QAs.query
@@ -297,41 +296,178 @@ def subject(subject_id):
 def chapter_test(chap_id):
     subject = request.args.get('subject')
     time_limit = 45 #Minute
-    form = QuizForm()
-    rate = [40, 20, 30, 10]
+    rate = [40, 30, 20, 10]
     test_chap = TestChap(subject, chap_id)
     questions= test_chap.create_test(rate)
     if request.method == "POST":
+        
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date_input = request.form.get('date')
+        date = request.form.get('date')
         # Convert from JSON string back to Python lists
-        import json
+        
         time_spent = json.loads(time_spent)
         answers = json.loads(answers)
+        time_string = ""
+        questions_ID_string = ""
+        wrong_answer_string = ""
+        result = []
+        wrong_answers = []
+        for i, question in enumerate(questions):
+            questions_ID_string += f"{question.ID}_"
+            result.append(str(answers[i]))
+            time_string += f"{time_spent[i]}_"
+            
+            if answers[i] == 0:
+                wrong_answers.append(str(question.ID))
 
-        # Here you can process the time spent and answers
-        # For example, you might save them to a database or use them in some calculations
-        print(f"Time Spent: {time_spent}")
-        print(f"Answers: {answers}")
+        # Remove trailing underscores from strings
+        questions_ID_string = questions_ID_string.rstrip("_")
+        time_string = time_string.rstrip("_")
+        wrong_answer_string = "_".join(wrong_answers)
 
-        # Redirect to another page or render a results template
-        return render_template('results.html', subject=subject, time_spent=time_spent, answers=answers)
+        # Create a new Test record
+        new_test_record = Test(
+            user_id=current_user.id,
+            test_type=0,  # 0 for Chapter test
+            time=date,
+            knowledge=chap_id,
+            questions=questions_ID_string,
+            wrong_answer=wrong_answer_string,
+            result="_".join(result),  # Format 0_1_0...
+            time_result=time_string  # Format time1_time2_time3...
+        )
+        db.session.add(new_test_record)
+        db.session.commit()
+        # Redirect to another page or render a home template
+        return render_template('home.html')
 
 
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
-@app.route("/practice-test")
-def practice_test():
-    chapters = request.args.get("chapters")
-    # Process total test with selected chapters
-    return f"Starting Total Test with chapters: {chapters}"
+@app.route("/practice-test/<subject>")
+def practice_test(subject):
+    if subject == "M":
+        chapter = 7
+    elif subject == "L":
+        chapter = 7
+    else:
+        chapter = 8
+    time_limit = 90 #Minute
+    rate = [40, 30, 20, 10]
+    test_prac = pr_br_rcmd(subject, 5, 1)
+    questions = test_prac.question_prep
+    if request.method == "POST":
+        
+        time_spent = request.form.get('timeSpent')
+        answers = request.form.get('answers')
+        date = request.form.get('date')
+        # Convert from JSON string back to Python lists
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
+        time_string = ""
+        questions_ID_string = ""
+        wrong_answer_string = ""
+        chapters = ""
+        result = []
+        wrong_answers = []
+        for i in range(chapter):
+            chapters += f"{i+1}_"
+        for i, question in enumerate(questions):
+            questions_ID_string += f"{question.ID}_"
+            result.append(str(answers[i]))
+            time_string += f"{time_spent[i]}_"
+            
+            if answers[i] == 0:
+                wrong_answers.append(str(question.ID))
 
-@app.route("/total-test")
-def total_test():
-    chapters = request.args.get("chapters")
-    # Process total test with selected chapters
-    return f"Starting Total Test with chapters: {chapters}"
+        # Remove trailing underscores from strings
+        questions_ID_string = questions_ID_string.rstrip("_")
+        time_string = time_string.rstrip("_")
+        chapters = chapters.rstrip("_")
+        wrong_answer_string = "_".join(wrong_answers)
+
+        # Create a new Test record
+        new_test_record = Test(
+            user_id=current_user.id,
+            test_type=3,  
+            time=date,
+            knowledge=chapters,
+            questions=questions_ID_string,
+            wrong_answer=wrong_answer_string,
+            result="_".join(result),  # Format 0_1_0...
+            time_result=time_string  # Format time1_time2_time3...
+        )
+        db.session.add(new_test_record)
+        db.session.commit()
+        # Redirect to another page or render a home template
+        return render_template('home.html')
+
+
+    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+
+
+@app.route("/total-test/<subject>")
+def total_test(subnject):
+    if subject == "M":
+        chapter = 7
+    elif subject == "L":
+        chapter = 7
+    else:
+        chapter = 8
+    time_limit = 90 #Minute
+    rate = [40, 30, 20, 10]
+    test_total = TestTotal(subject, chapter)
+    questions = test_total.create_test(rate)
+    if request.method == "POST":
+        
+        time_spent = request.form.get('timeSpent')
+        answers = request.form.get('answers')
+        date = request.form.get('date')
+        # Convert from JSON string back to Python lists
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
+        time_string = ""
+        questions_ID_string = ""
+        wrong_answer_string = ""
+        chapters = ""
+        result = []
+        wrong_answers = []
+        for i in range(chapter):
+            chapters += f"{i+1}_"
+        for i, question in enumerate(questions):
+            questions_ID_string += f"{question.ID}_"
+            result.append(str(answers[i]))
+            time_string += f"{time_spent[i]}_"
+            
+            if answers[i] == 0:
+                wrong_answers.append(str(question.ID))
+
+        # Remove trailing underscores from strings
+        questions_ID_string = questions_ID_string.rstrip("_")
+        time_string = time_string.rstrip("_")
+        chapters = chapters.rstrip("_")
+        wrong_answer_string = "_".join(wrong_answers)
+
+        # Create a new Test record
+        new_test_record = Test(
+            user_id=current_user.id,
+            test_type=1,  
+            time=date,
+            knowledge=chapters,
+            questions=questions_ID_string,
+            wrong_answer=wrong_answer_string,
+            result="_".join(result),  # Format 0_1_0...
+            time_result=time_string  # Format time1_time2_time3...
+        )
+        db.session.add(new_test_record)
+        db.session.commit()
+        # Redirect to another page or render a home template
+        return render_template('home.html')
+
+
+    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+
 
 
 # # Getting-started route
