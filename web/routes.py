@@ -278,7 +278,7 @@ def subject(subject_id):
     elif subject_id == 'S3': #Hoa
         subject_name = 'Hóa'
         subject = 'H'
-    elif subject_id == 0:
+    if subject == 0:
         return url_for('home')
     chapter_numbers = (
     QAs.query
@@ -304,7 +304,7 @@ def chapter_test(chap_id):
     if request.method == "POST":
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-
+        date_input = request.form.get('date')
         # Convert from JSON string back to Python lists
         import json
         time_spent = json.loads(time_spent)
