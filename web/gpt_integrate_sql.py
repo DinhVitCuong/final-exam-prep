@@ -51,7 +51,7 @@ class promptCreation:
         elif self.type_test == 0:
             return f"Đây là kết quả của test chương, là bài test chương {self.data.num_chap}."
 
-    def previous_result(self):
+    def previous_result(self): # đánh giá kết quả của 1 môn , gồm điểm số, thời điểm làm bài. (progress)
         data_prompt = self.test_intro
         data_prompt += (
             f"{self.prompt}, Đây là kết quả môn {self.subject}, từ đó hãy Phân tích kết quả kiểm tra {self.prompt_score} và thời gian thực hiện chúng. "
@@ -168,7 +168,7 @@ class promptTotal(promptCreation):
 class promptChap(promptCreation):
     def __init__(self, type_test,num_test,subject,num_chap):
         super().__init__(type_test, num_test,subject,num_chap)
-    def chap_analysis(self):
+    def chap_analysis(self): # khi nhấn vô "Chap 1" thì sẽ hiện chart với thông tin phần chap 1
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro}. "
             f"Tất cả các dữ liệu dưới đây được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó.\n"
@@ -268,8 +268,8 @@ class generateAnalysis:
         prompt = self.return_prompt(analyze_type)
         response = self.call_gpt(prompt)
         return response
-
-    def detail_plan_and_timeline(self):
+    
+    def detail_plan_and_timeline(self): # generate ra plan 
         # Xác định ngày tiếp theo cho test tổng và test chương
         self.num_chap = promptTotal(1, self.num_test, self.subject).return_max_chap()
         date_total = promptCreation(1, self.num_test, self.subject, self.num_chap).next_test_date()
@@ -303,7 +303,7 @@ class generateAnalysis:
 
         response = self.call_gpt(prompt)
         return response
-
+    
     def format_data(self):
         data = self.detail_plan_and_timeline()
         prompt = (
