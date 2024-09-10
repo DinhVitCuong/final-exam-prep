@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import json
 import requests
 import os
-from data_retriever_sql import DrawTotal, DrawChap
+from chart_drawing_sql import DrawTotal, DrawChap
 from predict_threshold_sql import PrepThreshold, PredictThreshold
 import csv
 from datetime import datetime
@@ -18,9 +18,9 @@ load_dotenv()
 # prompt creation
 class promptCreation:
     def __init__(self, type_test, num_test, subject, num_chap = None):
-        self.type_test = type_test # '0' : test chap, '1' : test total
-        self.num_test = num_test # số bài test
-        self.num_chap = num_chap # số chương là mấy
+        self.type_test = type_test
+        self.num_test = num_test
+        self.num_chap = num_chap
         self.prompt = "Bạn là một gia sư dạy kèm"
         self.final_exam_date = "2025-06-27"
         self.subject = subject
@@ -51,7 +51,7 @@ class promptCreation:
         elif self.type_test == 0:
             return f"Đây là kết quả của test chương, là bài test chương {self.data.num_chap}."
 
-    def previous_result(self): # đánh giá kết quả của 1 môn , gồm điểm số, thời điểm làm bài. (progress)
+    def previous_result(self):
         data_prompt = self.test_intro
         data_prompt += (
             f"{self.prompt}, Đây là kết quả môn {self.subject}, từ đó hãy Phân tích kết quả kiểm tra {self.prompt_score} và thời gian thực hiện chúng. "
@@ -91,7 +91,7 @@ class promptTotal(promptCreation):
         super().__init__(type_test, num_test, subject)
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
-    def fast_analysis(self): # lấy sau khi làm test total
+    def fast_analysis(self):
         data_prompt = self.test_intro
         data_prompt += (
             f"{self.prompt} {self.subject_intro} và với lượng dữ liệu được đưa vào như sau ({self.prompt_score} và thời gian thực hiện chúng), "
@@ -112,8 +112,8 @@ class promptTotal(promptCreation):
         data_prompt += self.analyze_only_prompt
         return data_prompt
 
-    def deep_analysis(self):  #  khi mà người dùng nhấn vô nút đánh giá, lấy phần generate của fast_analysis với deep analysis
-        
+    def deep_analysis(self):
+
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
             "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
@@ -147,14 +147,14 @@ class promptTotal(promptCreation):
         for chap, value in lessons_review_dict.items():
             data_prompt += f"Chương {chap}:"
             for lesson, count in value['lesson'].items():
-                data_prompt += f" {lesson} bài, "
+                data_prompt += f" bài {lesson} sai {count} lần \n"
         # tìm ra điểm mạnh điểm yếu
         # Điểm số, tgian làm bài cải thiện hay giảm, so sánh với aim score để đánh giá
         # nhận xét về phần làm tốt, phần cần cải thiện
         # nhắc nhở học sinh ôn các bài hay sai trong chương, xem lại các chương sai nhiều
         # đề xuất chiến lược học tập, sử dụng các functions của ứng dụng
         data_prompt += (
-            "\nHãy phân tích kỹ lưỡng để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
+            "\nHãy phân tích kỹ lưỡng để tìm ra điểm mạnh và điểm yếu của học sinh, càng chi tiết càng tốt:\n"
             "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
             "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
             "- Nhắc nhở học sinh ôn tập lại các bài thường hay sai, đặc biệt chú ý những chương có tỉ lệ sai cao.\n"
@@ -168,7 +168,7 @@ class promptTotal(promptCreation):
 class promptChap(promptCreation):
     def __init__(self, type_test,num_test,subject,num_chap):
         super().__init__(type_test, num_test,subject,num_chap)
-    def chap_analysis(self): # khi nhấn vô "Chap 1" thì sẽ hiện chart với thông tin phần chap 1
+    def chap_analysis(self):
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro}. "
             f"Tất cả các dữ liệu dưới đây được lấy trung bình từ {self.num_test} bài test chương {self.num_chap} trước đó.\n"
@@ -187,6 +187,7 @@ class promptChap(promptCreation):
 
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
         predict = PredictThreshold(self.type_test, self.subject)
+
         data = predict.predicted_data()
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
@@ -215,7 +216,7 @@ class generateAnalysis:
     def __init__(self, subject, num_chap):
         self.configuration = {
             "temperature": 0.8,
-            "max_tokens": 5000,
+            "max_tokens": 4096,
             "top_p": 0.8,
         }
         self.api_key = os.getenv('OPENAI_API_KEY')
@@ -251,7 +252,7 @@ class generateAnalysis:
 
     def call_gpt(self, prompt):
         response = self.client.chat.completions.create(
-            model="gpt-4o-mini",  # Replace with the correct model name, such as 'gpt-4' or other supported models
+            model="gpt-4o-mini",  # ft:gpt-4o-2024-08-06:personal:study-planning-v1:A3hYPnEP
             messages=[
                 {"role": "system", "content": "bạn là 1 gia sư, bạn giỏi trong việc đánh giá những số liệu của X bài test total (bài test tổng hợp khi user học đến chương N) hoặc số liệu của X bài test chương (bài test chương N của user), biết N và X là số dương bất kỳ. Nhiệm vụ của bạn là theo prompt được hướng dẫn, bạn hãy generate các phân tích cũng như đánh giá. Và khi cần sẽ là 1 kế hoạch rõ ràng dựa vào đánh giá được cho, kế hoạch này sẽ như 1 to do list và từng ngày sẽ có từng tác vụ cụ thể được hướng dẫn trong prompt. Nếu đang phân tích thì chỉ tập trung phân tích, đừng ghi kế hoạch cụ thể."},
                 {"role": "user", "content": prompt}
@@ -268,8 +269,8 @@ class generateAnalysis:
         prompt = self.return_prompt(analyze_type)
         response = self.call_gpt(prompt)
         return response
-    
-    def detail_plan_and_timeline(self): # generate ra plan 
+
+    def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
         self.num_chap = promptTotal(1, self.num_test, self.subject).return_max_chap()
         date_total = promptCreation(1, self.num_test, self.subject, self.num_chap).next_test_date()
@@ -279,8 +280,10 @@ class generateAnalysis:
         functions = promptCreation(1, self.num_test, self.subject, self.num_chap).functions_prompt
         
         # Bắt đầu xây dựng chuỗi prompt
-        prompt = "1. **từ phân tích test tổng:**\n"
-        prompt += self.analyze("deep")
+        #prompt = "1. **từ phân tích test tổng:**\n"
+        # prompt += self.analyze("deep")
+        prompt = "1. **từ dữ liệu test tổng:**\n"
+        prompt += self.return_prompt("deep")
 
         # time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
         # prompt += "\n2. **từ phân tích test chương:**\n"
@@ -288,54 +291,74 @@ class generateAnalysis:
 
         # Gợi ý lập kế hoạch học tập chi tiết
         prompt += (
-            f"\n Ôn tập theo những thành phần được nêu sau:\n"
-            f"1. Ôn lại kiến thức cũ, đặc biệt là những phần còn yếu.\n"
+            f"\n Lập kế hoạch chi tiết ôn tập dựa vào các yếu tố sau , chú ý nhiệm vụ chi tiết cho từng ngày: \n"
+            f"1. Nhắc nhở ôn lại kiến thức cũ từ dữ liệu test tổng , đặc biệt là những phần còn yếu.\n"
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
-            f"3. Tập trung cải thiện điểm yếu đã chỉ ra ({diff}), sử dụng các chức năng của ứng dụng ({functions}).\n"
-            f"4. Đặc biệt nhắc học sinh chuẩn bị cho bài test chương {self.num_chap + 1} vào ngày {date_chap}.\n"
-            f"5. Lập lịch ôn tập để chuẩn bị cho bài test tổng vào ngày {date_total}, bắt đầu từ {current_date.strftime('%d/%m/%Y')}.\n"
-            f"6. Mỗi ngày có nhiệm vụ rõ ràng, đảm bảo ôn tập hiệu quả.\n"
+            f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}).\n"
+            f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
+            f"5. Dựa vào dữ liệu test tổng, nhắc nhở ôn tập cụ thể tên bài nào chương nào \n"
+            f"6. 1 ngày ôn tập của chương sẽ chú ý đến mục 3 và 5 của chương đó \n"
         )
-        prompt += (
-        "Hãy viết theo format sau, mỗi nhiệm vụ riêng biệt cho từng ngày:\n"
-        "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n")
-        # Yêu cầu format cụ thể cho kế hoạch học tập
 
+        # 31/8/2024
+        # {str(current_date.strftime('%d/%m/%Y'))[:10]} 
+        prompt += (
+            f"Đặc biệt tập trung vào mục 4,5,6 vừa rồi, ôn tập từ chương đầu đến hiện tại, lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
+            "Hãy viết theo format sau: \n"
+            "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n")
+        # Yêu cầu format cụ thể cho kế hoạch học tập
+        print(prompt)
         response = self.call_gpt(prompt)
+        return response
+
+    def format_data(self): 
+        data = self.detail_plan_and_timeline() # try except
+        data += (
+            f"Hãy viết theo format sau, chắc chắn rằng nó đúng format json"
+            f"ngày xx/tháng xx/năm xxxx : làm gì đó' ,từ prompt đầu vào sau, hãy làm file json sau để chứa to do list với format sau : {{'date': '24/08/2024', 'action': 'Phân tích kết quả bài test', 'done': 'false'}} và chú ý đến các tiêu chí : ôn tập đầy đủ các chương , sử dụng chính xác các functions trong app để ôn tập, nhắc nhở làm bài kiểm tra, học bài mới, to do list đa dạng với sáng tạo"
+        )
+        response = self.call_gpt(data)
         return response
     
-    def format_data(self):
-        data = self.detail_plan_and_timeline()
-        prompt = (
-            f"Từ {data} hãy format lại thành 1 file JSON với các mục sau cho mỗi nhiệm vụ:\n"
-            f"- 'date': Ngày tháng cụ thể của nhiệm vụ (ví dụ: '24/08/2024')\n"
-            f"- 'action': Mô tả nhiệm vụ cần làm (ví dụ: 'Phân tích kết quả bài test')\n"
-            f"- 'done': Trạng thái của nhiệm vụ, luôn là 'false' khi chưa hoàn thành\n"
-            f"Ví dụ:\n"
-            f"[{{'date': '24/08/2024', 'action': 'Phân tích kết quả bài test', 'done': 'false'}}]\n"
-            f"Đây là dữ liệu cần format lại:\n"
-            f"'{data}'\n"
-        )
-        response = self.call_gpt(prompt)
-        return response
+    def turning_into_json(self):
+        json_string = self.format_data()
 
-def turning_into_json(json_string):
-    start_pos = json_string.find("[")
-    end_pos = json_string.find("]")
-    json_string = json_string[start_pos:end_pos+1]
-    json_data = json.loads(json_string)
-    return json_data
+        
+        
+        with open("test.txt", "w", encoding="utf-8") as f:
+            f.write(json_string)
+        try: 
+            start_pos = json_string.find("[")
+            end_pos = json_string.find("]")
+            json_string = json_string[start_pos:end_pos+1]
+            json_data = json.loads(json_string)
+        except json.decoder.JSONDecodeError: 
+            prompt = "format json không đúng, hãy thử lại"
+            prompt += json_string
+            json_string = self.call_gpt(prompt)
+            start_pos = json_string.find("[")
+            end_pos = json_string.find("]")
+            json_string = json_string[start_pos:end_pos+1]
+            json_data = json.loads(json_string)
+        return json_data
 
 app = create_app()
 with app.app_context():
+    # a = promptChap(0, 8, "L", 3)
+    # print(a.next_test_date())
     test = generateAnalysis("L",3)
-    # "deep", "fast", "progress", "chapter"
+    # # "deep", "fast", "progress", "chapter"
+    # # print(test.analyze("deep"))
+    # # print(test.detail_plan_and_timeline())
+    # # # test.format_data()
     abc = test.format_data()
-    # with open("todo_T.txt", "w", encoding="utf-8") as f:
-    #     f.write(abc)
-    json_str = turning_into_json(abc)
+    with open("todo.txt", "w", encoding="utf-8") as f:
+        f.write(abc)
+    json_str = test.turning_into_json()
     with open("todo_T.json", "w", encoding="utf-8") as f:
-        json.dump(json_str, f, ensure_ascii=False, indent=4)
-    
+        try:
+            json.dump(json_str, f, ensure_ascii=False, indent=4)
+        except json.decoder.JSONDecodeError:
+            print("Error")
 
     # print(test.analyze("deep"))
