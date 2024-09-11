@@ -293,7 +293,7 @@ class generateAnalysis:
         )
         
         prompt += (
-            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, lập kế hoạch từ ngày 31/8/2024  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
+            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
             f"Tác vụ trong 1 ngày càng chi tiết càng tốt, các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n "
             "ôn tập từ chương đầu đến hiện tại\n"
             "Hãy viết theo format sau: \n"
