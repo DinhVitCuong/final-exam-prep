@@ -291,11 +291,11 @@ class generateAnalysis:
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
             f"5. Ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3) từ dữ liệu test tổng, và cụ thể bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn)\n"
         )
-        
+        # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
             f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
-            f"Tác vụ trong 1 ngày càng chi tiết càng tốt, các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n "
-            "ôn tập từ chương đầu đến hiện tại\n"
+            f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
+            "ôn tập từ chương đầu đến hiện tại,  các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n"
             "Hãy viết theo format sau: \n"
             "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n"
         )
@@ -304,24 +304,21 @@ class generateAnalysis:
         response = self.call_gpt(prompt)
         
         # # Kiểm tra và bổ sung nếu cần
-        # required_factors = [
-        #     f"1. Nhắc nhở ôn lại kiến thức cũ từ dữ liệu test tổng , đặc biệt là những phần còn yếu.\n"
-        #     f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n",
-        #     f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n",
-        #     f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n",
-        #     f"5. 1 ngày ôn tập chương sẽ gồm cả việc ôn lại loại câu hỏi hay sai (lấy từ dữ liệu test tổng) và bài học sai nhiều của chương đó \n"
-        # ]
+        required_factors = [
+            "Mỗi ngày ôn tập chương sẽ gồm cả việc ôn lại **các loại câu hỏi hay sai** và **bài học sai nhiều** từ dữ liệu test tổng của chương đó. Hãy làm rõ ra là nên xem lại loại câu hỏi nào và bài học nào của từng chương"
+        ]
 
-        # credit = self.return_prompt("deep")
-        # # Vòng lặp kiểm tra các yếu tố trong response
-        # for factor in required_factors:
-        #     # Nếu thiếu yếu tố, yêu cầu GPT bổ sung
-        #     additional_prompt = "Có dữ liệu test total sau : \n"
-        #     additional_prompt += credit
-        #     additional_prompt += "Đây là kế hoạch học tập hiện tại : \n"
-        #     additional_prompt += response
-        #     additional_prompt = f"Vui lòng bổ sung yếu tố sau vào kế hoạch học tập nếu thiếu: {factor}"
-        #     response = self.call_gpt(additional_prompt)
+        credit = self.return_prompt("deep")
+        # Vòng lặp kiểm tra các yếu tố trong response
+        for factor in required_factors:
+            # Nếu thiếu yếu tố, yêu cầu GPT bổ sung
+            additional_prompt = "Có dữ liệu test total sau : \n"
+            additional_prompt += credit
+            additional_prompt += "\nĐây là kế hoạch học tập hiện tại : \n"
+            additional_prompt += response
+            additional_prompt += f"\nVui lòng bổ sung yếu tố sau vào kế hoạch học tập nếu thiếu: {factor}"
+            print(additional_prompt)
+            response = self.call_gpt(additional_prompt)
 
         return response
 
