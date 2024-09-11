@@ -135,14 +135,14 @@ class promptTotal(promptCreation):
             for type1, acuc in dic_diff.items():
                 data_prompt += f"- Loại câu hỏi {type1}: {acuc}%\n"
 
-        data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương:\n"
+        data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương (để nhắc nhở học sinh chú ý loại câu hỏi sai nhiều trong to do list):\n"
         predict = PredictThreshold(self.type_test, self.subject)
         data = predict.predicted_data()
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
             data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
             
-        data_prompt += "Dưới đây là trung bình các bài hay sai của các chương:\n"
+        data_prompt += "Dưới đây là trung bình các bài hay sai của các chương (đây dùng để nhắc nhở học sinh chú ý các bài sai nhiều):\n"
         lessons_review_dict = self.data.lessons_id_to_review()
         for chap, value in lessons_review_dict.items():
             data_prompt += f"Chương {chap}:"
@@ -280,36 +280,51 @@ class generateAnalysis:
         functions = promptCreation(1, self.num_test, self.subject, self.num_chap).functions_prompt
         
         # Bắt đầu xây dựng chuỗi prompt
-        #prompt = "1. **từ phân tích test tổng:**\n"
-        # prompt += self.analyze("deep")
         prompt = "1. **từ dữ liệu test tổng:**\n"
         prompt += self.return_prompt("deep")
-
-        # time.sleep(5)  # Thời gian chờ để đảm bảo quá trình tải hoàn tất
-        # prompt += "\n2. **từ phân tích test chương:**\n"
-        # prompt += self.analyze("chapter")
-
-        # Gợi ý lập kế hoạch học tập chi tiết
+        
         prompt += (
-            f"\n Lập kế hoạch chi tiết ôn tập dựa vào các yếu tố sau , chú ý nhiệm vụ chi tiết cho từng ngày: \n"
+            f"\n Lập kế hoạch chi tiết ôn tập dựa vào các yếu tố sau  : \n"
             f"1. Nhắc nhở ôn lại kiến thức cũ từ dữ liệu test tổng , đặc biệt là những phần còn yếu.\n"
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
-            f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}).\n"
+            f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n"
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
-            f"5. Dựa vào dữ liệu test tổng, nhắc nhở ôn tập cụ thể tên bài nào chương nào \n"
-            f"6. 1 ngày ôn tập của chương sẽ chú ý đến mục 3 và 5 của chương đó \n"
+            f"5. Ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3) từ dữ liệu test tổng, và cụ thể bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn)\n"
+        )
+        
+        prompt += (
+            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, lập kế hoạch từ ngày 31/8/2024  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
+            f"Tác vụ trong 1 ngày càng chi tiết càng tốt, các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n "
+            "ôn tập từ chương đầu đến hiện tại\n"
+            "Hãy viết theo format sau: \n"
+            "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n"
         )
 
-        # 31/8/2024
-        # {str(current_date.strftime('%d/%m/%Y'))[:10]} 
-        prompt += (
-            f"Đặc biệt tập trung vào mục 4,5,6 vừa rồi, ôn tập từ chương đầu đến hiện tại, lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
-            "Hãy viết theo format sau: \n"
-            "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n")
-        # Yêu cầu format cụ thể cho kế hoạch học tập
-        print(prompt)
+        # # Gọi GPT với prompt ban đầu
         response = self.call_gpt(prompt)
+        
+        # # Kiểm tra và bổ sung nếu cần
+        # required_factors = [
+        #     f"1. Nhắc nhở ôn lại kiến thức cũ từ dữ liệu test tổng , đặc biệt là những phần còn yếu.\n"
+        #     f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n",
+        #     f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n",
+        #     f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n",
+        #     f"5. 1 ngày ôn tập chương sẽ gồm cả việc ôn lại loại câu hỏi hay sai (lấy từ dữ liệu test tổng) và bài học sai nhiều của chương đó \n"
+        # ]
+
+        # credit = self.return_prompt("deep")
+        # # Vòng lặp kiểm tra các yếu tố trong response
+        # for factor in required_factors:
+        #     # Nếu thiếu yếu tố, yêu cầu GPT bổ sung
+        #     additional_prompt = "Có dữ liệu test total sau : \n"
+        #     additional_prompt += credit
+        #     additional_prompt += "Đây là kế hoạch học tập hiện tại : \n"
+        #     additional_prompt += response
+        #     additional_prompt = f"Vui lòng bổ sung yếu tố sau vào kế hoạch học tập nếu thiếu: {factor}"
+        #     response = self.call_gpt(additional_prompt)
+
         return response
+
 
     def format_data(self): 
         data = self.detail_plan_and_timeline() # try except
