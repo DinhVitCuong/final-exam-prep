@@ -478,7 +478,7 @@ def evaluate_chapter_test(subject_id,chap_id):
     subject_name = ''
     if subject_id == 'S1': #Toan
         subject_name = 'Toán'
-        subject = 'T'
+        subject = 'M'
     elif subject_id == 'S2': #Li
         subject_name = 'Lí'
         subject = 'L'
