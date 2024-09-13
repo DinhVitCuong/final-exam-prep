@@ -31,7 +31,7 @@ from app import create_app, db, login_manager, bcrypt
 from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
-
+from gpt_integrate_sql import promptChap, generateAnalysis
 
 @login_manager.user_loader
 def load_user(user_id):
