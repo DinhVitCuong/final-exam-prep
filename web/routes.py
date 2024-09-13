@@ -408,8 +408,8 @@ def practice_test(subject):
 
 
 @app.route("/total-test/<subject>")
-def total_test(subnject):
-    if subject == "M":
+def total_test(subject):
+    if subject == "T":
         chapter = 7
     elif subject == "L":
         chapter = 7
@@ -467,6 +467,66 @@ def total_test(subnject):
 
 
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+
+
+
+
+# chọn vào chương X thì nhảy qua trang đánh giá ( chapter.html ) của chương X, gọi promtChap() ra để xử lí
+@app.route('/subject/<subject_id>/<chap_id>/evaluation', methods=["GET"])
+def evaluate_chapter_test(subject_id,chap_id):
+    subject_id = 0
+    subject_name = ''
+    if subject_id == 'S1': #Toan
+        subject_name = 'Toán'
+        subject = 'T'
+    elif subject_id == 'S2': #Li
+        subject_name = 'Lí'
+        subject = 'L'
+    elif subject_id == 'S3': #Hoa
+        subject_name = 'Hóa'
+        subject = 'H'
+    elif subject_id == 0:
+        return url_for('home')
+    
+    type_test = 0 # chapter test
+    num_test = 10 # Khoa said:"the lower limit is 10"
+    
+    num_of_test_done = Test.query.filter_by(subject=subject, type_test=type_test, knowledge=chap_id).count()
+
+    if num_of_test_done < 10: # take all finished tests if num_of_test_done is lower than 10
+        num_test = num_of_test_done
+
+    if num_test == 0:
+        return f"Bạn chưa làm bài test nào cho môn {subject}", 404
+    
+    analyzer = promptChap(type_test,num_test,subject,num_chap=chap_id)
+    analysis_result = analyzer.chap_analysis()
+
+    return render_template("chapter.html", feedback=analysis_result)
+
+
+# Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
+@app.route('/subject/<subject_id>/analytics', methods=["GET"])
+def analize_total_test(subject_id):
+    subject_id = 0
+    subject_name = ''
+    if subject_id == 'S1': #Toan
+        subject_name = 'Toán'
+        subject = 'T'
+    elif subject_id == 'S2': #Li
+        subject_name = 'Lí'
+        subject = 'L'
+    elif subject_id == 'S3': #Hoa
+        subject_name = 'Hóa'
+        subject = 'H'
+    elif subject_id == 0:
+        return url_for('home')
+    type_test = 1 # chapter test
+    
+    analyzer = generateAnalysis(subject=subject, num_chap=0) # num_chap = 0 means total test
+    analysis_result = analyzer.chap_analysis()
+
+    return render_template("chapter.html", feedback=analysis_result)
 
 
 
