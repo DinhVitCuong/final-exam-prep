@@ -7,7 +7,7 @@
     <style>
       * {
         font-family: "Kanit", sans-serif;
-        font-style: normal;
+        font-style: normal; 
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -237,7 +237,7 @@
           <div class="circular-progress-bar--subject"></div>
         </div>
         <div class="button button__review">
-          <p>Analytics</p>
+          <p>Xem lại câu sai</p>
           <img src="../static/assets/question-icon.svg" alt="review" />
         </div>
       </div>
@@ -251,45 +251,22 @@
 
         <div class="chapters-container">
           <!-- chapterList.map... o day ne, moi chapter la mot div.chapter -->
-           {{%for chapter in chapter_numbers_list%}}
-           <div class="chapter">
-            <div class="chapter__button">
-              <a href="{{ url_for('chapter-test', subject=subject, chapter_id=chapter) }}">
-              <p>Chương {{chapter}}</p>
-              </a>
-            </div>
-            <div class="circular-progress-bar--chapter1"></div>
-          </div>
-           {{%endfor%}}
-          <!-- <div class="chapter">
-            <div class="chapter__button">
-              <p>Chương 1</p>
-            </div>
-            <div class="circular-progress-bar--chapter1"></div>
-          </div>
+          {% for chapter in chapter_numbers_list %}
           <div class="chapter">
-            <div class="chapter__button">
-              <p>Chương 2</p>
-            </div>
-            <div class="circular-progress-bar--chapter2"></div>
+              <div class="chapter__button">
+                  <a href="{{ url_for('chapter_test', subject=subject, chap_id=chapter) }}">
+                      <p>Chương {{ chapter }}</p>
+                  </a>
+              </div>
+              <div class="circular-progress-bar--chapter1"></div>
           </div>
-          <div class="chapter">
-            <div class="chapter__button">
-              <p>Chương 3</p>
-            </div>
-            <div class="circular-progress-bar--chapter3"></div>
-          </div>
-          <div class="chapter">
-            <div class="chapter__button">
-              <p>Chương 4</p>
-            </div>
-            <div class="circular-progress-bar--chapter4"></div>
-          </div> -->
-        </div>
+          {% endfor %}
+      </div>
+      
       </div>
       <div class="buttons-container">
-        <a href="{{ url_for('practice-test', subject=subject) }}" class="practice-button">Luyện tập</a>
-        <a href="{{ url_for('test-total-test', subject=subject) }}" class="test-total-button">Làm bài kiểm tra tổng</a>
+        <a href="{{ url_for('practice_test', subject=subject) }}" class="practice-button">Luyện tập</a>
+        <a href="{{ url_for('total_test', subject=subject) }}" class="test-total-button">Làm bài kiểm tra tổng</a>
       </div>
     </div>
   </body>
@@ -337,7 +314,7 @@
       </div>
         `;
       });
-      const progressGroups = document.querySelectorAll(".progess-group");
+      const progressGroups = document.querySelectorAll(".progress-group");
 
       progressGroups.forEach((progress, index) => {
         let progressStartValue = 0;
