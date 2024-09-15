@@ -279,13 +279,13 @@ def total_test(subject):
     time_limit = 90  # Giới hạn thời gian cho bài kiểm tra, tính bằng phút
     rate = [40, 30, 20, 10]  # Tỉ lệ các câu hỏi theo từng mức độ
     test_total = TestTotal(subject, chapter)
-    questions = test_total.create_test(rate)
-
+    # questions = test_total.create_test(rate)
+    questions = [{"ID": q.id, "question": q.question, "options": q.options, "answer": q.answer} for q in test_total.create_test(rate)]
     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
     if request.method == "POST":
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date = request.form.get('date')
+        date = request.form.get('date') 
 
         # Convert từ chuỗi JSON sang danh sách Python
         time_spent = json.loads(time_spent)
@@ -293,21 +293,21 @@ def total_test(subject):
 
         time_string = ""
         questions_ID_string = ""
-        wrong_answer_string = ""
+        wrong_answer_string = ""    
         chapters = ""
-        result = []
+        result = []  
         wrong_answers = []
 
         # Xử lý dữ liệu câu hỏi
         for i in range(chapter):
             chapters += f"{i+1}_"
         for i, question in enumerate(questions):
-            questions_ID_string += f"{question.ID}_"
+            questions_ID_string += f"{question.id}_"
             result.append(str(answers[i]))
             time_string += f"{time_spent[i]}_"
             
             if answers[i] == 0:
-                wrong_answers.append(str(question.ID))
+                wrong_answers.append(str(question.id))
 
         # Xóa dấu gạch dưới cuối chuỗi
         questions_ID_string = questions_ID_string.rstrip("_")
