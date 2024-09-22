@@ -1,0 +1,27 @@
+```json
+[
+    {'date': '22/09/2024', 'action': 'Ôn tập Chương 1: Xem lại bài 02, 05, 06, 03 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 1', 'done': 'false'},
+    {'date': '23/09/2024', 'action': 'Ôn tập Chương 1: Sử dụng "Wrong question searching" để tìm các câu hỏi sai và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '24/09/2024', 'action': 'Ôn tập Chương 2: Xem lại bài 05, 01, 03 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 2', 'done': 'false'},
+    {'date': '25/09/2024', 'action': 'Ôn tập Chương 2: Sử dụng "Wrong question searching" và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '26/09/2024', 'action': 'Ôn tập Chương 3: Xem lại bài 03, 05, 01 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 3', 'done': 'false'},
+    {'date': '27/09/2024', 'action': 'Ôn tập Chương 3: Sử dụng "Wrong question searching" và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '28/09/2024', 'action': 'Ôn tập Chương 4: Xem lại bài 02, 07, 03, 04 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 4', 'done': 'false'},
+    {'date': '29/09/2024', 'action': 'Ôn tập Chương 4: Sử dụng "Wrong question searching" và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '30/09/2024', 'action': 'Ôn tập Chương 5: Xem lại bài 04, 01 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 5', 'done': 'false'},
+    {'date': '01/10/2024', 'action': 'Ôn tập Chương 5: Sử dụng "Wrong question searching" và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '02/10/2024', 'action': 'Ôn tập Chương 6: Xem lại bài 03, 04 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 6', 'done': 'false'},
+    {'date': '03/10/2024', 'action': 'Ôn tập Chương 6: Sử dụng "Wrong question searching", thực hiện "Analytic review" và làm bài test chương 8', 'done': 'false'},
+    {'date': '04/10/2024', 'action': 'Ôn tập Chương 7: Xem lại bài 06 và làm bài tập vận dụng loại câu hỏi 2 và 3 từ chương 7', 'done': 'false'},
+    {'date': '05/10/2024', 'action': 'Ôn tập Chương 7: Sử dụng "Wrong question searching" và thực hiện "Analytic review"', 'done': 'false'},
+    {'date': '06/10/2024', 'action': 'Ôn tập tổng quát các chương: Làm lại các bài đã sai từ các chương 1-7', 'done': 'false'},
+    {'date': '07/10/2024', 'action': 'Ôn tập tổng quát các chương: Xem lại các câu hỏi loại 2 và 3 đã làm từ các chương', 'done': 'false'},
+    {'date': '08/10/2024', 'action': 'Làm bài test thực hành: Sử dụng "Practice test recommendation"', 'done': 'false'},
+    {'date': '09/10/2024', 'action': 'Ôn tập lại các câu hỏi khó từ các chương: Tập trung vào các câu hỏi loại 2 và 3', 'done': 'false'},
+    {'date': '10/10/2024', 'action': 'Ôn tập tổng quát các chương: Thực hiện "Analytic review" cho các bài test đã làm', 'done': 'false'},
+    {'date': '11/10/2024', 'action': 'Ôn tập tổng quát: Xem lại tất cả các bài đã sai từ các chương', 'done': 'false'},
+    {'date': '12/10/2024', 'action': 'Chuẩn bị cho bài test tổng: Làm lại các bài test đã làm, đặc biệt là những bài đã sai', 'done': 'false'},
+    {'date': '13/10/2024', 'action': 'Ôn tập cuối cùng: Xem lại các kiến thức và phần đã ôn tập', 'done': 'false'},
+    {'date': '14/10/2024', 'action': 'Thực hiện bài test tổng', 'done': 'false'}
+]
+```

@@ -1,0 +1,18 @@
+24/08/2024 : Xem lại bài test chapter 3 vừa rồi, ghi chú lại những lỗi sai thường gặp.
+24/08/2024 : Sử dụng chức năng "Wrong question searching" để xem lại tất cả các câu hỏi sai trong 8 bài test trước đó của chương 3.
+24/08/2024 : Phân tích nguyên nhân dẫn đến sai lầm (lỗi kiến thức, đọc hiểu đề bài, tính toán,...).
+24/08/2024 : Ôn tập Chương 3: Sử dụng chức năng "Wrong question searching" để xem lại các câu hỏi sai ở Chương 3 trong các bài Total Test trước.
+24/08/2024 : Luyện tập Chương 3: Sử dụng chức năng "Practice test recommendation" để làm bài tập về các kiến thức Chương 3 còn yếu.
+25/08/2024 - 17/09/2024 : Ôn tập Chương 1 & 2:  Mỗi ngày ôn tập 1 chương, tập trung vào các loại câu hỏi cấp độ Nhận biết và Thông hiểu. Sử dụng "Wrong question searching" để ôn tập hiệu quả.
+25/08/2024 - 17/09/2024 : Luyện tập theo chương:  Sau khi ôn tập, sử dụng "Practice test recommendation" để luyện tập các kiến thức của từng chương.
+29/08/2024 : Sử dụng chức năng "Practice test recommendation" để ôn tập những kiến thức đã sai.
+29/08/2024 : Tập trung vào các loại câu hỏi có tỉ lệ đúng thấp (cả 4 loại câu hỏi đều cần được ôn tập kỹ lưỡng).
+08/09/2024 : Sử dụng chức năng "Analytic review" để phân tích điểm mạnh, điểm yếu trong 8 bài test trước.
+08/09/2024 : Ghi chú lại những điểm cần lưu ý cho các lần làm bài sau. 
+13/09/2024 : Ôn tập lại toàn bộ kiến thức chương 3. 
+13/09/2024 : Làm một bài test chương 3 mới để đánh giá sự tiến bộ.
+18/09/2024 : Làm bài Total Test tháng 9.
+19/09/2024 : Phân tích kết quả: Sử dụng chức năng "Analytic review" để phân tích bài Total Test vừa làm, xác định điểm mạnh, điểm yếu và các chương cần ôn tập thêm.
+20/09/2024 - 17/10/2024 : Tập trung vào điểm yếu: Dựa vào phân tích ở bước trên, tập trung ôn tập các chương và loại câu hỏi còn yếu.
+20/09/2024 - 17/10/2024 : Luyện tập nâng cao:  Tăng cường luyện tập các câu hỏi Vận dụng và Vận dụng cao.
+18/10/2024 : Làm bài Total Test tháng 10. 

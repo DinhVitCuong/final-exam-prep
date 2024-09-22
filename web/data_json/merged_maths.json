@@ -1,0 +1,3255 @@
+[
+    {
+        "id": "T0101002",
+        "question": "Cho hàm số $f(x)$ xác định và có đạo hàm trên $(a ; b)$. Nếu $f^{\\prime}(x)<0, \\forall x \\in(a ; b)$ thì:\\\\",
+        "options": [
+            "A. Hàm số đồng biến trên $(a ; b)$\\\\\n",
+            "B. Hàm số nghịch biến trên $(a ; b)$\\\\\n",
+            "C. Hàm số không đổi trên $(a ; b)$\\\\\n",
+            "D. Hàm số vừa đồng biến vừa nghịch biến trên $(a ; b)$"
+        ],
+        "explain": "Sử dụng định lý về xét tính đồng biến, nghịch biến của hàm số trên một khoảng đã nêu ở phần phương pháp, ở đây khoảng $K=(a ; b)$ ta được:\\\\\nHàm số $y=f(x)$ xác định và có đạo hàm $f^{\\prime}(x)<0, \\forall x \\in(a ; b)$ thì $f(x)$ nghịch biến trên $(a ; b)$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0101003",
+        "question": "Cho hàm số $y=f(x)$ xác định và có đạo hàm trên $R$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. Nếu $f^{\\prime}(x)>0, \\forall x \\in R$ thì hàm số đồng biến trên $R$.\\\\\n",
+            "B. Nếu $f^{\\prime}(x)<0, \\forall x \\in R$ thì hàm số đồng biến trên $R$.\\\\\n",
+            "C. Nếu $f^{\\prime}(x)=0, \\forall x \\in R$ thì hàm số nghịch biến trên $R$.\\\\\n",
+            "D. Nếu $f^{\\prime}(x)=0, \\forall x \\in R$ thì hàm số đồng biến trên $R$."
+        ],
+        "explain": "Đáp án A: Nếu $f^{\\prime}(x)>0, \\forall x \\in R$ thì hàm số $y=f(x)$ đồng biến trên $R$ nên $A$ đúng.\\\\\nĐáp án B: Nếu $f^{\\prime}(x)<0, \\forall x \\in R$ thì hàm số nghịch biến trên $R$ nên B sai.\\\\\nĐáp án C, D: Nếu $f^{\\prime}(x)=0, \\forall x \\in R$ thì hàm số không đổi trên $R$ nên $\\mathrm{C}, \\mathrm{D}$ sai.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0101004",
+        "question": "Hình dưới là đồ thị hàm số $y=f^{\\prime}(x)$. Hỏi hàm số $y=f(x)$ đồng biến trên khoảng nào dưới đây?\n\n\\\\",
+        "options": [
+            "A. $(0 ; 1)$ và $(2 ;+\\infty)$\\\\\n",
+            "B. $(1 ; 2)$\\\\\n",
+            "C. $(2 ;+\\infty)$\\\\\n",
+            "D. $(0 ; 1)$"
+        ],
+        "explain": "Hàm số $y=f^{\\prime}(x)$ dương trong khoảng $(2 ;+\\infty)$\\\\\n$\\Rightarrow$ Hàm số $y=f(x)$ đồng biến trên $(2 ;+\\infty)$\\\\",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1544174342304_00.PNG",
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0101005",
+        "question": "Hình bên là đồ thị hàm số $y=f^{\\prime}(x)$ Hỏi hàm số $y=f(x)$ nghịch biến trên khoảng nào dưới đây?\n\n\\\\",
+        "options": [
+            "A. $(2 ; 3)$\\\\\n",
+            "B. $(1 ;+\\infty)$\\\\\n",
+            "C. $(2 ;+\\infty)$\\\\\n",
+            "D. $(-\\infty ; 2)$"
+        ],
+        "explain": "Ta thấy: $f^{\\prime}(x)$ mang dấu âm trong khoảng $(-\\infty ; 2)$\\\\\n$\\Rightarrow$ Hàm số $y=f(x)$ nghịch biến trên $(-\\infty ; 2)$\\\\",
+        "image_source": "data:image/png;base64,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",
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0102006",
+        "question": "Cho hàm số $y=f(x)$ có đạo hàm trên $(a ; b)$. Nếu $f^{\\prime}(x)$ đổi dấu từ âm sang dương qua điểm $x_{0}$ thuộc $(a ; b)$ thì\\\\",
+        "options": [
+            "A. $x_{0}$ là điểm cực đại của hàm số.\\\\\n",
+            "B. $x_{0}$ là điểm cực tiểu của hàm số\\\\\n",
+            "C. $x_{0}$ là điểm cực đại của đồ thị hàm số.\\\\\n",
+            "D. $x_{0}$ là điểm cực tiểu của đồ thị hàm số."
+        ],
+        "explain": "Nếu $f^{\\prime}(x)$ đổi dấu từ âm sang dương qua điểm $x_{0}$ thì $x_{0}$ là điểm cực tiểu của hàm số.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0102007",
+        "question": "Cho hàm số $y=f(x)$ có đạo hàm trên $(a ; b)$. Nếu $f^{\\prime}(x)$ đổi dấu từ dương sang âm qua điểm $x_{0}$ thì:\\\\",
+        "options": [
+            "A. $x_{0}$ là điểm cực đại của hàm số\\\\\n",
+            "B. $x_{0}$ là điểm cực tiểu của hàm số.\\\\\n",
+            "C. $x_{0}$ là điểm cực đại của đồ thị hàm số\\\\\n",
+            "D. $x_{0}$ là điểm cực tiểu của đồ thị hàm số."
+        ],
+        "explain": "Nếu $f^{\\prime}(x)$ đổi dấu từ dương sang âm qua điểm $x_{0}$ thì $x_{0}$ là điểm cực đại của hàm số.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0102008",
+        "question": "Giả sử $y=f(x)$ có đạo hàm cấp hai trên $(a ; b)$. Nếu $\\left\\{\\begin{array}{l}f^{\\prime}\\left(x_{0}\\right)=0 \\\\ f^{\\prime \\prime}\\left(x_{0}\\right)>0\\end{array}\\right.$ thì\\\\",
+        "options": [
+            "A. $x_{0}$ là điểm cực tiểu của hàm số.\\\\\n",
+            "B. $x_{0}$ là điểm cực đại của hàm số.\\\\\n",
+            "C. $x_{0}$ là điểm nằm bên trái trục tung.\\\\\n",
+            "D. $x_{0}$ là điểm nằm bên phải trục tung."
+        ],
+        "explain": "Nếu $\\left\\{\\begin{array}{l}f^{\\prime}\\left(x_{0}\\right)=0 \\\\ f^{\\prime \\prime}\\left(x_{0}\\right)>0\\end{array}\\right.$ thì $x_{0}$ là một điểm cực tiểu của hàm số.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0102009",
+        "question": "Nếu $x_{0}$ là điểm cực tiểu của hàm số thì $f\\left(x_{0}\\right)$ là:\\\\",
+        "options": [
+            "A. Giá trị cực tiểu của hàm số.\\\\\n",
+            "B. Giá trị cực đại của hàm số.\\\\\n",
+            "C. Điểm cực tiểu của hàm số.\\\\\n",
+            "D. Điểm cực đại của hàm số."
+        ],
+        "explain": "Nếu $x_{0}$ là điểm cực tiểu của hàm số thì $f\\left(x_{0}\\right)$ là giá trị cực tiểu của hàm số.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0102010",
+        "question": "Nếu $x_{0}$ là điểm cực đại của hàm số thì $\\left(x_{0} ; f\\left(x_{0}\\right)\\right)$ là:\\\\",
+        "options": [
+            "A. Giá trị cực đại của hàm số.\\\\\n",
+            "B. Giá trị cực đại của đồ thị hàm số.\\\\\n",
+            "C. Điểm cực đại của hàm số.\\\\\n",
+            "D. Điểm cực đại của đồ thị hàm số."
+        ],
+        "explain": "Nếu $x_{0}$ là điểm cực đại của hàm số thì $\\left(x_{0} ; f\\left(x_{0}\\right)\\right)$ là điểm cực đại của đồ thị hàm số.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0103011",
+        "question": "Tìm tất cả các giá trị của $m$ để hàm số $y=\\frac{m x^{3}}{3}-m x^{2}+x-1$ có cực đại và cực tiểu.\\\\",
+        "options": [
+            "A. $0<m \\leqslant 1$.\\\\\n",
+            "B. $\\left[\\begin{array}{l}m<0 \\\\ m>1\\end{array}\\right.$\\\\\n",
+            "C. $0<m<1$.\\\\\n",
+            "D. $m<0$."
+        ],
+        "explain": "ТXĐ: $D=R$\\\\\nTH1: $m=0 \\rightarrow y=x-1$.\\\\\nHàm số không có cực trị.\\\\\nTH2: $m \\neq 0$.\\\\\nTa có: $y=\\frac{m x^{3}}{3}-m x^{2}+x-1 \\Rightarrow y^{\\prime}=m x^{2}-2 m x+1$.\\\\\nĐể hàm số cho có cực đại, cực tiểu thì phương trình $y^{\\prime}=0$ phải có 2 nghiệm phân biệt\\\\\n$\\Rightarrow \\Delta^{\\prime}=m^{2}-m>0 \\Leftrightarrow\\left[\\begin{array}{l}m<0 \\\\ m>1\\end{array}\\right.$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0103012",
+        "question": "Tìm tất cả các giá trị thực của tham số $m$ để hàm số $y=x^{3}-3 x^{2}+(m+1) x+2$ có hai điểm cực trị.\\\\",
+        "options": [
+            "A. $m \\leq 2$.\\\\\n",
+            "B. $m>2$.\\\\\n",
+            "C. $m<2$.\\\\\n",
+            "D. $m<-4$."
+        ],
+        "explain": "$y=x^{3}-3 x^{2}+(m+1) x+2 \\Rightarrow y^{\\prime}=3 x^{2}-6 x+m+1$\\\\\nHàm số $y=x^{3}-3 x^{2}+(m+1) x+2$ có hai điểm cực trị $\\Leftrightarrow y^{\\prime}=0$ có 2 nghiệm phân biệt\\\\\n$\\Leftrightarrow \\Delta^{\\prime}>0 \\Leftrightarrow 3^{2}-3 \\cdot(m+1)>0 \\Leftrightarrow m<2$\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0103013",
+        "question": "Tìm tất cả các giá trị của $m$ để đồ thị hàm số $y=-x^{4}+2 m x^{2}$ có 3 điểm cực trị ?\\\\",
+        "options": [
+            "A. $m<0$\\\\\n",
+            "B. $m=0$\\\\\n",
+            "C. $m>0$\\\\\n",
+            "D. $m \\geqslant 0$"
+        ],
+        "explain": "$y=-x^{4}+2 m x^{2} \\Rightarrow y^{\\prime}=-4 x^{3}+4 m x=-4 x\\left(x^{2}-m\\right) \\Rightarrow y^{\\prime}=0 \\Leftrightarrow\\left[\\begin{array}{c}x=0 \\\\ x^{2}=m\\end{array}\\right.$\\\\\nĐể hàm số có ba điểm cực trị thì phương trình $y^{\\prime}=0$ có ba nghiệm phân biệt hay phương trình $x^{2}=m$ có hai nghiệm phân biệt $\\neq 0$ hay $m>0$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0103014",
+        "question": "Tìm tất cả các giá trị thực của $m$ để hàm số $y=x^{4}+2\\left(m^{2}-9\\right) x^{2}+5 m+2$ có cực đại, cực tiểu\\\\",
+        "options": [
+            "A. $m \\in(-3 ; 3)$\\\\\n",
+            "B. $m \\in[-3 ; 3]$\\\\\n",
+            "C. $m \\in(-\\infty ;-3) \\cup(3 ;+\\infty)$\\\\\n",
+            "D. $m \\in(-9 ; 9)$"
+        ],
+        "explain": "Ta có: $y=x^{4}+2\\left(m^{2}-9\\right) x^{2}+5 m+2 \\Rightarrow y^{\\prime}=4 x^{3}+4 x\\left(m^{2}-9\\right)=4 x\\left(x^{2}+m^{2}-9\\right)$\\\\\n$y^{\\prime}=0 \\Leftrightarrow\\left[\\begin{array}{l}x=0 \\\\ x^{2}=9-m^{2}(1)\\end{array}\\right.$\\\\\nHàm số đã cho có cực đại, cực tiểu khi và chỉ khi phương trình (1) có hai nghiệm phân biệt khác 0 $\\Leftrightarrow 9-m^{2}>0 \\Leftrightarrow-3<m<3$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0103015",
+        "question": "Cho hàm số $y=2 x^{4}-(m+1) x^{2}-2$. Tất cả các giá trị của $m$ để hàm số có 1 điểm cực trị là:\\\\",
+        "options": [
+            "A. $m>-1$\\\\\n",
+            "B. $m<-1$\\\\\n",
+            "C. $m=-1$\\\\\n",
+            "D. $m \\leqslant-1$"
+        ],
+        "explain": "$y^{\\prime}=8 x^{3}-2(m+1) x=2 x\\left[4 x^{2}-(m+1)\\right] \\Rightarrow y^{\\prime}=0 \\Leftrightarrow\\left[\\begin{array}{c}x=0 \\\\ 4 x^{2}=m+1\\end{array}\\right.$\\\\\nTa có yêu cầu bài toán để hàm số có một điểm cực trị $\\Leftrightarrow y^{\\prime}=0$ có 1 nghiệm duy nhất $\\Leftrightarrow(1)$ có 1 nghiệm $x=0$ hoặc (1) vô nghiệm $\\Leftrightarrow m+1 \\leqslant 0 \\Leftrightarrow m \\leqslant-1$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0104016",
+        "question": "Giá trị lớn nhất và giá trị nhỏ nhất của hàm số $y=\\sin x$ trên đoạn $\\left[-\\frac{\\pi}{2} ;-\\frac{\\pi}{3}\\right]$ lần lượt là\\\\",
+        "options": [
+            "A. $-\\frac{1}{2} ;-\\frac{\\sqrt{3}}{2}$\\\\\n",
+            "B. $-\\frac{\\sqrt{3}}{2} ;-1$\\\\\n",
+            "C. $-\\frac{\\sqrt{3}}{2} ;-2$\\\\\n",
+            "D. $-\\frac{\\sqrt{2}}{2} ;-\\frac{\\sqrt{3}}{2}$"
+        ],
+        "explain": "Ta có $y^{\\prime}=\\cos x \\Rightarrow y^{\\prime}=0 \\Leftrightarrow \\cos x=0 \\Leftrightarrow x=\\frac{\\pi}{2}+k \\pi(k \\in \\mathbb{Z})$\\\\\nDo $x \\in\\left[-\\frac{\\pi}{2} ;-\\frac{\\pi}{3}\\right]$ nên $k=-1$ hay $x=-\\frac{\\pi}{2}$\\\\\nSuy ra $y\\left(-\\frac{\\pi}{2}\\right)=-1 ; y\\left(-\\frac{\\pi}{3}\\right)=-\\frac{\\sqrt{3}}{2} \\Rightarrow\\left\\{\\begin{array}{c}\\max y=-\\frac{\\sqrt{3}}{2} \\\\ {\\left[-\\frac{\\pi}{2} ;-\\frac{\\pi}{3}\\right]} \\\\ \\min _{\\left[-\\frac{\\pi}{2} ;-\\frac{\\pi}{3}\\right]} y=-1\\end{array}\\right.$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0104017",
+        "question": "Giá trị lớn nhất của hàm số $f(x)=\\frac{\\sin x}{x}$ trên đoạn $\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$ là:\\\\",
+        "options": [
+            "A. $\\frac{\\pi}{\\sqrt{3}}$\\\\\n",
+            "B. $\\frac{3}{\\pi}$\\\\\n",
+            "C. $\\frac{\\pi}{2}$\\\\\n",
+            "D. $\\frac{2}{\\pi}$"
+        ],
+        "explain": "TXĐ: $x \\neq 0$.\\\\\n$f^{\\prime}(x)=\\frac{x \\cos x-\\sin x}{x^{2}}<0 \\forall x \\in\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$\\\\\nThật vậy,\\\\\nXét hàm $g(x)=x \\cos x-\\sin x$ trên $\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$ có:\\\\\n$g^{\\prime}(x)=\\cos x-x \\sin x-\\cos x=-x \\sin x<0, \\forall x \\in\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$\\\\\nDo đó hàm số $g(x)$ nghịch biến trên $\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$.\\\\\nSuy ra $g(x) \\leq g\\left(\\frac{\\pi}{6}\\right)=\\frac{\\pi}{6} \\cdot \\cos \\frac{\\pi}{6}-\\sin \\frac{\\pi}{6}<0$ hay $x \\cos x-\\sin x<0$ với $\\forall x \\in\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]$\\\\\n$\\Rightarrow \\max _{\\left[\\frac{\\pi}{6} ; \\frac{\\pi}{3}\\right]} f(x)=f\\left(\\frac{\\pi}{6}\\right)=\\frac{3}{\\pi}$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0104018",
+        "question": "Cho biết GTLN của hàm số $f(x)$ trên $[1 ; 3]$ là $M=-2$. Chọn khẳng định đúng:\\\\",
+        "options": [
+            "A. $f(x) \\geqslant-2, \\forall x \\in[1 ; 3]$\\\\\n",
+            "B. $f(1)=f(3)=-2$\\\\\n",
+            "C. $f(x)<-2, \\forall x \\in[1 ; 3]$\\\\\n",
+            "D. $f(x) \\leqslant-2, \\forall x \\in[1 ; 3]$"
+        ],
+        "explain": "Nếu $M=-2$ là GTLN của hàm số $y=f(x)$ trên $[1 ; 3]$ thì $f(x) \\leqslant-2, \\forall x \\in[1 ; 3]$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0104019",
+        "question": "Cho hàm số $y=x^{2}$, biết $x^{2} \\geq 0, \\forall x \\in R$ và $x^{2}=0 \\Leftrightarrow x=0 \\Rightarrow y=0$. Khi đó $y=0$ là:\\\\",
+        "options": [
+            "A. GTNN của hàm số.\\\\\n",
+            "B. GTLN của hàm số\\\\\n",
+            "C. GTNN của đồ thị hàm số\\\\\n",
+            "D. GTLN của đồ thị hàm số."
+        ],
+        "explain": "$y=0$ là GTNN của hàm số\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0104020",
+        "question": "Cho hàm số $f(x)$ xác định trên $[0 ; 2]$ và có GTNN trên đoạn đó bằng 5 . Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $f(0)<5$\\\\\n",
+            "B. $f(2) \\geqslant 5$\\\\\n",
+            "C. $f(1)=5$\\\\\n",
+            "D. $f(0)=5$"
+        ],
+        "explain": "GTNN của $f(x)$ trên $[0 ; 2]$ bằng 5 nên $f(x) \\geqslant 5, \\forall x \\in[0 ; 2] \\Rightarrow f(2) \\geqslant 5$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0105021",
+        "question": "Cho hệ tọa độ $(O x y)$ và điểm $I\\left(x_{0} ; y_{0}\\right)$, công thức nào sau đây là công thức chuyển hệ tọa độ trong phép tịnh tiến theo véc tơ $\\overrightarrow{O I}$ ?\\\\",
+        "options": [
+            "A. $\\left\\{\\begin{array}{l}x=X+x_{0} \\\\ y=Y+y_{0}\\end{array}\\right.$\\\\\n",
+            "B. $\\left\\{\\begin{array}{l}x=X-x_{0} \\\\ y=Y-y_{0}\\end{array}\\right.$\\\\\n",
+            "C. $\\left\\{\\begin{array}{l}x=x_{0}-X \\\\ y=y_{0}-Y\\end{array}\\right.$\\\\\n",
+            "D. $\\left\\{\\begin{array}{l}X=x+x_{0} \\\\ Y=y+y_{0}\\end{array}\\right.$"
+        ],
+        "explain": "Công thức tịnh tiến hệ tọa độ: $\\left\\{\\begin{array}{l}x=X+x_{0} \\\\ y=Y+y_{0}\\end{array}\\right.$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0105022",
+        "question": "Đường cong $(C)$ : $y=f(x)$ trong hệ tọa độ $(I X Y)$ có phương trình:\\\\",
+        "options": [
+            "A. $Y-y_{0}=f\\left(X-x_{0}\\right)$\\\\\n",
+            "B. $Y-y_{0}=f\\left(X+x_{0}\\right)$\\\\\n",
+            "C. $Y+y_{0}=f\\left(X-x_{0}\\right)$\\\\\n",
+            "D. $Y+y_{0}=f\\left(X+x_{0}\\right)$"
+        ],
+        "explain": "Áp dụng công thức tịnh tiến hệ tọa độ $\\left\\{\\begin{array}{l}x=X+x_{0} \\\\ y=Y+y_{0}\\end{array}\\right.$ ta có: $Y+y_{0}=f\\left(X+x_{0}\\right)$ là phương trình đường cong trong hệ tọa độ mới.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0105023",
+        "question": "Điểm $I\\left(x_{0} ; y_{0}\\right)$ là tâm đối xứng của đồ thị hàm số $y=f(x)$ nếu hàm số $Y=g(x)$ qua phép tịnh tiến hệ tọa độ là:\\\\",
+        "options": [
+            "A. Hàm số chã̃n\\\\\n",
+            "B. Hàm số không chã̃n cũng không lẻ\\\\\n",
+            "C. Hàm số lẻ\\\\\n",
+            "D. Hàm số vừa chã̃n vừa lẻ"
+        ],
+        "explain": "Nếu hàm số $Y=g(X)$ là hàm số lẻ (trong hệ tọa độ mới $I X Y)$ thì điểm $I\\left(x_{0} ; y_{0}\\right)$ trong hệ tọa độ $O x y$ là tâm đối xứng của đồ thị hàm số $y=f(x)$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0105024",
+        "question": "Chọn khẳng định đúng:\\\\",
+        "options": [
+            "A. Tâm đối xứng của đồ thị hàm số $y=\\frac{1}{x}$ là $(0 ; 0)$.\\\\\n",
+            "B. Đồ thị hàm số $y=\\frac{1}{x}$ không có tâm đối xứng.\\\\\n",
+            "C. Hàm số $y=\\frac{1}{x}$ không có tâm đối xứng.\\\\\n",
+            "D. Hàm số $y=\\frac{1}{x}$ có tâm đối xứng là $(0 ; 0)$"
+        ],
+        "explain": "Hàm số $y=\\frac{1}{x}$ là hàm số lẻ nên đồ thị hàm số nhận điểm $(0 ; 0)$ làm tâm đối xứng.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0105025",
+        "question": "Chọn khẳng định sai:\\\\",
+        "options": [
+            "A. Đồ thị hàm số lẻ nhận điểm $(0 ; 0)$ làm tâm đối xứng.\\\\\n",
+            "B. Tâm đối xứng của đồ thị hàm số luôn thuộc đồ thị hàm số đó.\\\\\n",
+            "C. Tâm đối xứng của đồ thị hàm số có thể không nằm trên đồ thị hàm số đó.\\\\\n",
+            "D. Đồ thị hàm số bậc ba có tâm đối xứng thuộc đồ thị hàm số."
+        ],
+        "explain": "Đáp án $A$ : Đồ thị hàm số lẻ nhận $(0 ; 0)$ làm tâm đối xứng (đúng)\\\\\nĐáp án B: Tâm đới xứng của đồ thị hàm số luôn thuộc đồ thị hàm số (sai, ví dụ hàm số $y=\\frac{1}{x}$ có tâm đối xứng là $(0 ; 0)$ không thuộc đồ thị hàm số).\\\\\nĐáp án C: Tâm đối xứng của đồ thị hàm số có thể không nằm trên đồ thị hàm số đó (đúng).\\\\\nĐáp án D: Đồ thị hàm số bậc ba có tâm đối xứng thuộc đồ thị hàm số (đúng)\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0106026",
+        "question": "Nếu $\\lim _{x \\rightarrow x_{0}^{+}} y=+\\infty$ thì đường thẳng $x=x_{0}$ là:\\\\",
+        "options": [
+            "A. tiệm cận ngang\\\\\n",
+            "B. tiệm cận đứng\\\\\n",
+            "C. tiệm cận xiên\\\\\n",
+            "D. trục đối xứng"
+        ],
+        "explain": "Nếu $\\lim _{x \\rightarrow x^{+}} y=+\\infty$ thì đường thẳng $x=x_{0}$ là tiệm cận đứng của đồ thị hàm số.",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0106027",
+        "question": "Nếu $\\lim _{x \\rightarrow-\\infty}[f(x)-(a x+b)]=0$ thì đường thẳng $y=a x+b$ được gọi là:\\\\",
+        "options": [
+            "A. tiệm cận đứng\\\\\n",
+            "B. tiệm cận ngang\\\\\n",
+            "C. tiệm cận xiên\\\\\n",
+            "D. trục đối xứng"
+        ],
+        "explain": "Nếu $\\lim _{x \\rightarrow-\\infty}[f(x)-(a x+b)]=0$ thì đường thắng $y=a x+b$ được gọi là tiệm cận xiên của đồ thị hàm số.",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0106028",
+        "question": "Phương trình tiệm cận đứng của đồ thị hàm số có dạng:\\\\",
+        "options": [
+            "A. $y=y_{0}$\\\\\n",
+            "B. $y= \\pm \\infty$\\\\\n",
+            "C. $x=x_{0}$\\\\\n",
+            "D. $y=a x+b$"
+        ],
+        "explain": "Phương trình đường tiệm cận đứng có dạng $x=x_{0}$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0106029",
+        "question": "Tiệm cận ngang của đồ thị hàm số $y=\\frac{x-1}{-3 x+2}$ là?\\\\",
+        "options": [
+            "A. $x=\\frac{2}{3}$\\\\\n",
+            "B. $y=\\frac{2}{3}$\\\\\n",
+            "C. $x=-\\frac{1}{3}$\\\\\n",
+            "D. $y=-\\frac{1}{3}$"
+        ],
+        "explain": "Đồ thị hàm số có TCN là $y=-\\frac{1}{3}$.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0106030",
+        "question": "Đề thi THPT QG - 2021 - mã 102\\\\\nTiệm cận đứng của đồ thị hàm số $y=\\frac{x+1}{x-2}$ là đường thẳng có phương trình\\\\",
+        "options": [
+            "A. $x=-1$\\\\\n",
+            "B. $x=-2$\\\\\n",
+            "C. $x=2$\\\\\n",
+            "D. $x=1$"
+        ],
+        "explain": "Tiệm cận đứng của đồ thị hàm số $y=\\frac{x+1}{x-2}$ là đường thẳng có phương trình $x=2$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0107031",
+        "question": "Tập xác định của hàm số $y=-\\frac{1}{2} x^{3}+2 x-1$ là:",
+        "options": [
+            "A. $\\$ R \\$$\\\\\n",
+            "B. \\$R\\textbackslash backslash \\textbackslash eft\\\\\n\\{ 0 \\textbackslash rightl\\}\\$\\\\\n",
+            "C. $\\$ \\backslash$ left ( $\\{$ - linfty ; 0$\\}$ \\textbackslash right)\\$\\\\\n",
+            "D. $\\$ 1$ left $(\\{0 ;+$ infty $\\}$ \\textbackslash right)\\$"
+        ],
+        "explain": "Hàm đa thức bậc ba xác định trên [Math Processing Error].\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0107032",
+        "question": "Hàm đa thức bậc ba có thể có mấy cực trị?\\\\",
+        "options": [
+            "A. [Math Processing Error]\\\\\n",
+            "B. [Math Processing Error]\\\\\n",
+            "C. [Math Processing Error]\\\\\n",
+            "D. $B$ và $C$ đều đúng."
+        ],
+        "explain": "$y^{\\prime}=0$ có hai nghiệm phân biệt\\\\\n$\\mathrm{x}_{1}, \\mathrm{x}_{2} \\Rightarrow$ có\\\\\n2 cực trị.\\\\\n$y^{\\prime}=0$ vô nghiệm hoặc có nghiệm kép\\\\\n$\\Rightarrow$ không có cực trị.\\\\\nDo đó hàm đa thức bậc ba chỉ có thể có\\\\\n2 cực trị hoặc không có cực trị nào.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0107033",
+        "question": "Số điểm cực trị của hàm số $y=a x^{3}+b x^{2}+c x+d(a \\neq 0)$ có thế có nhiều nhất mấy điểm cực trị?\\\\",
+        "options": [
+            "A. 3\\\\\n",
+            "B. 2\\\\\n",
+            "C. 1\\\\\n",
+            "D. 0"
+        ],
+        "explain": "Hàm đa thức bậc ba chỉ có thể có 2 cực trị hoặc không có cực trị nào nên số điểm cực trị nhiều nhất có thể có là 2",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0107034",
+        "question": "Hàm đa thức bậc ba không có cực trị và nghịch biến có bảng biến thiên dạng nào dưới đây?\\\\",
+        "options": [],
+        "explain": "Hàm đa thức bậc ba không có cực trị và nghịch biến thì đạo hàm y' mang dấu âm với mọi $x \\in(-\\infty ;+\\infty)$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0107035",
+        "question": "Hàm đa thức bậc ba đồng biến trên $R$ có thể có bảng biến thiên dạng nào dưới đây?\\\\",
+        "options": [],
+        "explain": "Hàm đa thức bậc ba đồng biến trên $R$ thì $y^{\\prime} \\geq 0, \\forall x \\in R$ Quan sát các bbt ta thấy đáp án D thỏa mãn.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0201001",
+        "question": "Cho $n \\in Z, n>0$, với điều kiện nào của $a$ thì đẳng thức sau xảy ra: $a^{-n}=\\frac{1}{a^{n}}$ ?\\\\",
+        "options": [
+            "A. $a>0$\\\\\n",
+            "B. $a=0$\\\\\n",
+            "C. $a \\neq 0$\\\\\n",
+            "D. $a<0$"
+        ],
+        "explain": "Với $a \\neq 0, n \\in Z, n>0$ thì $a^{-n}=\\frac{1}{a^{n}}$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0201002",
+        "question": "Với $n \\in \\mathbb{N}^{*}$ thì $a$. $a \\ldots \\ldots$ ( $n$ thừa số $a$ ) được viết gọn lại là:\\\\",
+        "options": [
+            "A. $a^{n}$\\\\\n",
+            "B. $n^{a}$\\\\\n",
+            "C. $n a$\\\\\n",
+            "D. $a+n$"
+        ],
+        "explain": "Lũy thừa với số mũ nguyên dương $a \\in R: a^{n}=a . a . . a$ (n thừa số a).\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0201003",
+        "question": "Cho $a>0, m, n \\in Z, n \\geq 2$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $a^{\\frac{m}{n}}=\\sqrt[n]{a^{m}}$\\\\\n",
+            "B. $a^{\\frac{m}{n}}=\\sqrt[m]{a^{n}}$\\\\\n",
+            "C. $a^{\\frac{m}{n}}=\\sqrt[m n]{a}$\\\\\n",
+            "D. $a^{\\frac{m}{n}}=\\sqrt[m]{a^{m n}}$"
+        ],
+        "explain": "Cho $a>0, m, n \\in Z, n \\geq 2$, khi đó $a^{\\frac{m}{n}}=\\sqrt[n]{a^{m}}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0201004",
+        "question": "Cho $a>0, n \\in Z, n \\geq 2$, chọn khẳng định đúng:\\\\",
+        "options": [
+            "A. $a^{\\frac{1}{n}}=\\sqrt[n]{a}$\\\\\n",
+            "B. $a^{\\frac{1}{n}}=\\sqrt{a^{n}}$\\\\\n",
+            "C. $a^{\\frac{1}{n}}=a^{n}$\\\\\n",
+            "D. $a^{\\frac{1}{n}}=\\sqrt[a]{n}$"
+        ],
+        "explain": "Theo định nghĩa lũy thừa với số mũ hữu tỉ: $a>0: a^{\\frac{m}{n}}=\\sqrt[n]{a^{m}}(m, n \\in Z, n \\geq 2)$ nên $a^{\\frac{1}{n}}=\\sqrt[n]{a}$.",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0201005",
+        "question": "Cho $m, n \\in Z$, khi đó:\\\\",
+        "options": [
+            "A. $a^{m \\cdot n}=a^{m} \\cdot a^{n}$\\\\\n",
+            "B. $a^{m n}=a^{m}+a^{n}$\\\\\n",
+            "C. $a^{m n}=a^{m}: a^{n}$\\\\\n",
+            "D. $a^{m n}=\\left(a^{m}\\right)^{n}$"
+        ],
+        "explain": "Với $m, n \\in Z$ thì $a^{m n}=\\left(a^{m}\\right)^{n}$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0202006",
+        "question": "Rút gọn biểu thức $P=a^{\\frac{3}{2}} \\cdot \\sqrt[3]{a}$ với $a>0$.\\\\",
+        "options": [
+            "A. $P=a^{\\frac{1}{2}}$\\\\\n",
+            "B. $P=a^{\\frac{9}{2}}$\\\\\n",
+            "C. $P=a^{\\frac{11}{6}}$\\\\\n",
+            "D. $P=a^{3}$"
+        ],
+        "explain": "Ta có: $P=a^{\\frac{3}{2}} \\cdot \\sqrt[3]{a}=a^{\\frac{3}{2}} \\cdot a^{\\frac{1}{3}}=a^{\\frac{3}{2}+\\frac{1}{3}}=a^{\\frac{11}{6}}$\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0202007",
+        "question": "Cho số thực $a>0$ và $a \\neq 1$. Hãy rút gọn biểu thức $P=\\frac{a^{\\frac{1}{3}}\\left(a^{\\frac{1}{2}}-a^{\\frac{5}{2}}\\right)}{a^{\\frac{1}{4}}\\left(a^{\\frac{7}{12}}-a^{\\frac{19}{12}}\\right)}$.\\\\",
+        "options": [
+            "A. $P=1+a$.\\\\\n",
+            "B. $P=1$.\\\\\n",
+            "C. $P=a$.\\\\\n",
+            "D. $P=1-a$."
+        ],
+        "explain": "Ta có\n\n$$\nP=\\frac{a^{\\frac{1}{3}}\\left(a^{\\frac{1}{2}}-a^{\\frac{5}{2}}\\right)}{a^{\\frac{1}{4}}\\left(a^{\\frac{7}{12}}-a^{\\frac{19}{12}}\\right)}=\\frac{a^{\\frac{1}{3}} \\cdot a^{\\frac{1}{2}}\\left(1-a^{\\frac{5}{2}-\\frac{1}{2}}\\right)}{a^{\\frac{1}{4}} \\cdot a^{\\frac{7}{12}}\\left(1-a^{\\frac{19}{12}-\\frac{7}{12}}\\right)}=\\frac{a^{\\frac{1}{3}+\\frac{1}{2}}\\left(1-a^{2}\\right)}{a^{\\frac{1}{4}+\\frac{7}{12}}(1-a)}=\\frac{a^{\\frac{5}{6}}(1-a)(1+a)}{a^{\\frac{10}{12}}(1-a)}=1+a(a>0, a \\neq 1)\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0202008",
+        "question": "Giá trị $P=\\frac{\\sqrt[5]{4} \\cdot \\sqrt[4]{64} \\cdot(\\sqrt[3]{\\sqrt{2}})^{4}}{\\sqrt[3]{\\sqrt[3]{32}}}$ là:\\\\",
+        "options": [
+            "A. $P=2^{\\frac{181}{90}}$\\\\\n",
+            "B. $P=2^{\\frac{181}{9}}$\\\\\n",
+            "C. $P=2^{\\frac{5}{6}}$\\\\\n",
+            "D. $P=2^{\\frac{5}{3}}$"
+        ],
+        "explain": "\\\\\nVậy $P=2^{\\frac{181}{90}}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0202009",
+        "question": "Giá trị biểu thức $P=\\frac{125^{6} \\cdot\\left(-16^{3}\\right) 2 \\cdot\\left(-2^{3}\\right)}{25^{3} \\cdot\\left(-5^{2}\\right)^{4}}$ là:\\\\",
+        "options": [
+            "A. $P=\\frac{25}{2028}$\\\\\n( ",
+            "B. $P=2028$\\\\\n",
+            "C. $P=\\frac{5^{3}}{2^{14}}$\\\\\n",
+            "D. $P=5^{4} \\cdot 2^{16}$"
+        ],
+        "explain": "\\\\\nTa có $: P=\\frac{125^{6} \\cdot(-16)^{3} 2 \\cdot\\left(-2^{3}\\right)}{25^{3} \\cdot\\left(-5^{2}\\right)^{4}}=\\frac{5^{18} 2^{12} \\cdot 2 \\cdot 2^{3}}{5^{6} \\cdot 5^{2 \\cdot 4}}=5^{4} \\cdot 2^{16}$\\\\\nVậy $P=5^{4} \\cdot 2^{16}$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0202010",
+        "question": "Rút gọn biểu thức $A=\\frac{\\sqrt[3]{a^{7}} \\cdot a^{\\frac{11}{3}}}{a^{4} \\cdot \\sqrt[7]{a^{-5}}}$ với $a>0$, ta được kết quả $A=a^{\\frac{m}{n}}$, trong đó $m, n \\in \\mathbb{N}^{*}$ và $\\frac{m}{n}$ là phân số tố giản. Khẳng định nào sau đây là đúng ?\\\\",
+        "options": [
+            "A. $m^{2}-n^{2}=312$.\\\\\n",
+            "B. $m^{2}-n^{2}=-312$.\\\\\n",
+            "C. $m^{2}+n^{2}=543$.\\\\\n",
+            "D. $m^{2}+n^{2}=409$."
+        ],
+        "explain": "Ta có\n\n$$\nA=\\frac{\\sqrt[3]{a^{7}} \\cdot a^{\\frac{11}{3}}}{a^{4} \\cdot \\sqrt[7]{a^{-5}}}=\\frac{a^{\\frac{7}{3}} \\cdot a^{\\frac{11}{3}}}{a^{4} \\cdot a^{-\\frac{5}{7}}}=\\frac{a^{6}}{a^{\\frac{23}{7}}}=a^{\\frac{19}{7}}=a^{\\frac{m}{n}} \\Rightarrow\\left\\{\\begin{array}{l}\nm=19 \\\\\nn=7\n\\end{array}\\right.\n$$\n\nVậy $m^{2}-n^{2}=312$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0203011",
+        "question": "Điều kiện để biểu thức $a^{\\alpha}$ có nghĩa với $\\alpha \\in I$ là:\\\\",
+        "options": [
+            "A. $a<0$\\\\\n",
+            "B. $a>0$\\\\\n",
+            "C. $a \\in R$\\\\\n",
+            "D. $a \\in Z$"
+        ],
+        "explain": "Lũy thừa với số mũ không nguyên thì cơ số phải dương nên $a>0$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0203012",
+        "question": "Điều kiện của $x$ để biểu thức $(\\sqrt{x}-1)^{\\frac{1}{2}}$ có nghĩa là:\\\\",
+        "options": [
+            "A. $x<-1$\\\\\n",
+            "B. $x>1$\\\\\n",
+            "C. $x \\in R$\\\\\n",
+            "D. $x \\geq 1$"
+        ],
+        "explain": "Để biểu thức $(\\sqrt{x}-1)^{\\frac{1}{2}}$ có nghĩa thì $\\sqrt{x}-1>0 \\Leftrightarrow x>1$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0203013",
+        "question": "Tìm $x$ để biểu thức $\\left(x^{2}+x+1\\right)^{-\\frac{2 \\pi}{3}}$ có nghĩa:\\\\",
+        "options": [
+            "A. $\\forall x \\in \\mathbb{R}$\\\\\n",
+            "B. Không tồn tại $x$\\\\\n",
+            "C. $\\forall x>1$\\\\\n",
+            "D. $\\forall x \\in \\mathbb{R} \\backslash\\{0\\}$"
+        ],
+        "explain": "Biểu thức $\\left(x^{2}+x+1\\right)^{-\\frac{2 \\pi}{3}}$ có nghĩa $\\Leftrightarrow x^{2}+x+1>0 \\Leftrightarrow \\forall x \\in \\mathbb{R}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0203014",
+        "question": "Cho $a>0, b<0, \\alpha \\notin Z, n \\in N^{*}$, khi đó biểu thức nào dưới đây không có nghãa?\\\\",
+        "options": [
+            "A. $a^{n}$\\\\\n",
+            "B. $b^{n}$\\\\\n",
+            "C. $a^{\\alpha}$\\\\\n",
+            "D. $b^{\\alpha}$"
+        ],
+        "explain": "\\begin{itemize}\n  \\item Vì $n \\in N^{*}$ nên $a^{n}, b^{n}$ đều có nghĩa ( $\\mathrm{A}, \\mathrm{B}$ đúng).\n  \\item Vi $\\alpha \\notin Z, a>0$ nên $a^{\\alpha}$ có nghĩa (C đúng).\n  \\item Vì $\\alpha \\notin Z, b<0$ nên $b^{\\alpha}$ không có nghĩa (D sai).\n\\end{itemize}",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0203015",
+        "question": "Tìm biểu thức không có nghĩa trong các biểu thức sau:\\\\",
+        "options": [
+            "A. $(-3)^{-4}$.\\\\\n",
+            "B. $(-3)^{-\\frac{1}{3}}$.\\\\\n",
+            "C. $0^{4}$.\\\\\n",
+            "D. $\\left(\\frac{1}{2^{-3}}\\right)^{0}$."
+        ],
+        "explain": "Vi $-\\frac{1}{3} \\notin \\mathbb{Z}$ nên $(-3)^{-\\frac{1}{3}}$ không có nghĩa.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0204016",
+        "question": "Hàm số nào dưới đây KHÔNG là hàm số lũy thừa?\\\\",
+        "options": [
+            "A. $y=\\frac{1}{x^{4}}$\\\\\n",
+            "B. $y=x^{-\\sqrt{2}}$\\\\\n",
+            "C. $y=e^{x}$\\\\\n",
+            "D. $y=x^{\\pi}$"
+        ],
+        "explain": "Các hàm số ở mỗi đáp án $A, B, D$ đều là hàm số lũy thừa.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0204017",
+        "question": "Hàm số nào sau đây được gọi là hàm số lũy thừa?\\\\",
+        "options": [
+            "A. $y=\\ln x$.\\\\\n",
+            "B. $y=3^{-x}$.\\\\\n",
+            "C. $y=e^{x}$.\\\\\n",
+            "D. $y=x^{-3}$."
+        ],
+        "explain": "Hàm số lũy thừa là hàm số có số mũ là số thực.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0204018",
+        "question": "Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. Hàm số $y=x^{\\alpha}$ có TXĐ $D=R$ với mọi $\\alpha \\in R$.\\\\\n",
+            "B. Hàm số $y=x^{\\alpha}$ có TXĐ $D=R$ với mọi $\\alpha \\in Z$.\\\\\n",
+            "C. Hàm số $y=x^{\\alpha}$ có $T X Đ D=R \\backslash\\{0\\}$ với mọi $\\alpha \\in Z$.\\\\\n",
+            "D. Hàm số $y=x^{\\alpha}$ có TXĐ $D=(0 ;+\\infty)$ với mọi $\\alpha$ không nguyên."
+        ],
+        "explain": "\\begin{itemize}\n  \\item Hàm số $y=x^{\\alpha}$ có $\\mathrm{TX} Đ=R$ với mọi $\\alpha$ nguyên dương nên A và B sai.\n  \\item Hàm số $y=x^{\\alpha}$ có $\\operatorname{TXĐ} D=R \\backslash\\{0\\}$ với mọi $\\alpha$ nguyên âm hoặc $\\alpha=0$ nên C sai.\n  \\item Hàm số $y=x^{\\alpha}$ có $\\operatorname{TX} Đ D=(0 ;+\\infty)$ với mọi $\\alpha$ không nguyên nên $D$ đúng.\n\\end{itemize}",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0204019",
+        "question": "Hàm số nào dưới đây có tập xác định không phải là $\\mathbb{R}$ ?\n\n$$\n\\begin{array}{ll}\ny=\\left(x^{2}+1\\right)^{\\frac{1}{2}} & \\text {",
+        "options": [],
+        "explain": "\\begin{itemize}\n  \\item Hàm số $y=\\left(x^{2}+1\\right)^{\\frac{1}{2}}$ có điều kiện xác định $x^{2}+1>0$ (luôn đúng) nên TXĐ: $D=\\mathbb{R}$\n  \\item Hàm số $y=\\sqrt{x^{2}}$ có điều kiện xác định $x^{2} \\geq 0$ (luôn đúng) nên TXĐ: $D=\\mathbb{R}$\n  \\item Hàm số $y=\\frac{x}{x-1}$ có điều kiện xác định $x-1 \\neq 0 \\Leftrightarrow x \\neq 1$ nên TXĐ: $D=\\mathbb{R} \\backslash\\{1\\}$\n  \\item Hàm số $y=\\sqrt[3]{x}$ xác định với mọi $x$ nên TXĐ: $D=\\mathbb{R}$\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0204020",
+        "question": "Hàm số nào có tập xác định là $D=\\mathbb{R}$ ?\\\\",
+        "options": [
+            "A. $y=x^{5}$\\\\\n",
+            "B. $y=x^{-1}$\\\\\n",
+            "C. $y=x^{\\sqrt{2}}$\\\\\n",
+            "D. $y=\\left(x^{\\sqrt{2}}\\right)^{2}$"
+        ],
+        "explain": "Hàm số $y=x^{5}$ xác định trên $\\mathbb{R}$.\\\\\nHàm số $y=x^{-1}$ xác định nếu $x \\neq 0$.\\\\\nHàm số $y=x^{\\sqrt{2}}$ xác định nếu $x>0$.\\\\\nHàm số $y=\\left(x^{\\sqrt{2}}\\right)^{2}$ xác định nếu $x>0$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0205021",
+        "question": "Một người gửi tiết kiệm vào ngân hàng số tiền $A$ đồng, lãi suất mỗi tháng là $r$, gửi theo hình thức lãi kép không kì hạn. Công thức tính số tiền cả vốn lẫn lãi mà người đó nhận được sau $N$ kì hạn là:\\\\",
+        "options": [
+            "A. $T=A(1+r)^{N}$\\\\\n",
+            "B. $T=r(1+A)^{N}$\\\\\n",
+            "C. $T=A(1+N)^{r}$\\\\\n",
+            "D. $T=N(1+A)^{r}$"
+        ],
+        "explain": "Công thức tính số tiền cả vốn lẫn lãi mà người đó nhận được sau $N$ kì hạn là: $T=A(1+r)^{N}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0205022",
+        "question": "Một người gửi tiết kiệm vào ngân hàng số tiền $A$ đồng, lãi suất là $r \\%$ mỗi tháng. Công thức tính số tiền cả vốn lẫn lãi mà người đó nhận được sau 5 tháng là:\\\\",
+        "options": [
+            "A. $T=A(1+r)^{5}$\\\\\n",
+            "B. $T=A(1+r \\%)^{5}$\\\\\n",
+            "C. $T=5(1+r \\%)^{A}$\\\\\n",
+            "D. $T=(1+r \\%) \\cdot A^{5}$"
+        ],
+        "explain": "Vi lãi suất là $r \\%$ mỗi tháng nên định kì là 1 tháng, do đó số kì hạn là $N=5$.\\\\\nCông thức tính số tiền cả vốn lẫn lãi mà người đó nhận được sau 5 tháng là: $T=A(1+r \\%)^{5}$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0205023",
+        "question": "Một người gửi vào ngân hàng một số tiền theo thể thức lãi kép với lãi suất $0,5 \\%$ mỗi tháng. Sau 5 tháng nguời đó thu về số tiền cả vốn lẫn lãi là $T$ đồng. Số tiền $A$ người đó gứi vào lúc đầu là:\\\\",
+        "options": [
+            "A. $A=\\frac{T}{(1+0,5 \\%)^{5}}$\\\\\n",
+            "B. $A=\\frac{T}{(1+0,5)^{5}}$\\\\\n",
+            "C. $A=\\frac{(1+0,5)^{5}}{T}$\\\\\n",
+            "D. $A=0,5 \\%(1+T)^{5}$"
+        ],
+        "explain": "Vi lãi suất là $r \\%$ mỗi tháng nên định kì là 1 tháng, do đó số kì hạn là $N=5$.\\\\\nCông thức tính số tiền cả vốn lẫn lãi mà người đó nhận được sau 5 tháng là: $T=A(1+0,5 \\%)^{5}$ do đó\\\\\n$A=\\frac{T}{(1+0,5 \\%)^{5}}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0205024",
+        "question": "Bạn An gửi tiết kiệm vào ngân hàng với số tiền là 1.000 .000 đồng không kì hạn với lãi suất là $0,65 \\%$ mỗi tháng. Tính số tiền bạn An nhận được sau 2 năm?\\\\",
+        "options": [
+            "A. 1.658 .115\\\\\n",
+            "B. 1.168 .236\\\\\n",
+            "C. 1.150 .236\\\\\n",
+            "D. 1.013 .042"
+        ],
+        "explain": "Ta có:\n\n$$\n\n& A=1.000 .000 \\\\\n& r=0,65 \\% \\\\\n& N=2.12=24 \\\\\n& \\text { Vậy } T=A(1+r)^{N}=1.000 .000(1+0,65: 100)^{24}=1.168 .236 \\text { (đồng). }\n\n$$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0205025",
+        "question": "Một người gửi tiền vào ngân hàng với lãi suất không đổi là $6 \\% / n a ̆ m$. Biết rằng nếu không rút tiền ra khỏi ngân hàng thì cứ sau mỗi năm, số tiền lãi sẽ được nhập vào vốn ban đầu (lãi kép). Người đó định gửi tiền trong vòng 3 năm, sau đó rút ra 500 triệu đồng. Hỏi số tiền ít nhất người đó phải gửi vào ngân hàng (làm tròn đến hàng triệu) là bao nhiêu triệu đồng?\\\\",
+        "options": [
+            "A. 420\\\\\n",
+            "B. 410\\\\\n",
+            "C. 400\\\\\n",
+            "D. 390"
+        ],
+        "explain": "Gọi số tiền ban đầu gửi vào ngân hàng là $x$ (triệu đồng), số tiền người đó nhận được sau 3 năm là: $x(1+6 \\%)^{3}$ (triệu đồng).\\\\\nĐể sau 3 năm người đó rút được 500 triệu đồng thì số tiền nhận được sau 3 năm (cả gốc và lãi) phải không nhỏ hơn 500 triệu đồng.\\\\\nKhi đó ta có $x(1+6 \\%)^{3} \\geq 500 \\Leftrightarrow x \\geq 420$ (triệu đồng).\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0206026",
+        "question": "Logarit cơ số $a$ của $b$ kí hiệu là:\\\\",
+        "options": [
+            "A. $\\log _{a} b$\\\\\n",
+            "B. $\\log _{b} a$\\\\\n",
+            "C. $\\ln _{a} b$\\\\\n",
+            "D. $\\ln _{b} a$"
+        ],
+        "explain": "Số $\\log _{a} b$ được gọi là lôgarit cơ số $a$ của $b$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0206027",
+        "question": "Điều kiện để $\\log _{a} b$ có nghĩa là:\\\\",
+        "options": [
+            "A. $a<0, b>0$\\\\\n",
+            "B. $0<a \\neq 1, b<0$\\\\\n",
+            "C. $0<a \\neq 1, b>0$\\\\\n",
+            "D. $0<a \\neq 1,0<b \\neq 1$"
+        ],
+        "explain": "\\\\\nĐiều kiện để $\\log _{a} b$ có nghĩa là $0<a \\neq 1, b>0$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0206028",
+        "question": "Điều kiện để biểu thức $\\log _{2}(3-x)$ xác định là:\\\\",
+        "options": [
+            "A. $x \\leq 3$\\\\\n",
+            "B. $x>3$\\\\\n",
+            "C. $x \\geq 3$\\\\\n",
+            "D. $x<3$"
+        ],
+        "explain": "Để biểu thức $\\log _{2}(3-x)$ xác định thì $3-x>0 \\Leftrightarrow x<3$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0206029",
+        "question": "Cho $a>0 ; a \\neq 1, b>0$, khi đó nếu $\\log _{a} b=N$ thì:\\\\",
+        "options": [
+            "A. $a^{b}=N$\\\\\n",
+            "B. $\\log _{a} N=b$\\\\\n",
+            "C. $a^{N}=b$\\\\\n",
+            "D. $b^{N}=a$"
+        ],
+        "explain": "Cho $a>0 ; a \\neq 1, b>0$, khi đó nếu $\\log _{a} b=N$ thì $a^{N}=b$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0206030",
+        "question": "Giá trị của $x$ thỏa mãn $\\log _{\\frac{1}{2}} x=3$ là:\\\\",
+        "options": [
+            "A. $x=\\frac{1}{8}$\\\\\n",
+            "B. $x=\\sqrt{3}$\\\\\n",
+            "C. $x=\\frac{1}{6}$\\\\\n",
+            "D. $x=\\frac{3}{8}$"
+        ],
+        "explain": "Ta có: $\\log _{\\frac{1}{2}} x=3 \\Leftrightarrow x=\\left(\\frac{1}{2}\\right)^{3}=\\frac{1}{8}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0301001",
+        "question": "Hàm số $F(x)$ được gọi là nguyên hàm của hàm số $f(x)$ nếu:\\\\",
+        "options": [
+            "A. $F^{\\prime}(x)=f^{\\prime \\prime}(x)$\\\\\n",
+            "B. $F^{\\prime}(x)=f^{\\prime}(x)$\\\\\n",
+            "C. $F^{\\prime}(x)=f(x)$\\\\\n",
+            "D. $f^{\\prime}(x)=F(x)$"
+        ],
+        "explain": "Hàm số $F(x)$ được gọi là nguyên hàm của hàm số $f(x)$ nếu $F^{\\prime}(x)=f(x)$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0301002",
+        "question": "Cho hai hàm số $y=f(x)$ và $y=F(x)$ thỏa mãn $F^{\\prime}(x)=f(x)$. Chọn khẳng định đúng:\\\\",
+        "options": [
+            "A. $f(x)$ là nguyên hàm của $F(x)$\\\\\n",
+            "B. $F(x)$ là nguyên hàm của $f(x)$\\\\\n",
+            "C. $f(x)$ có đạo hàm là $F(x)$\\\\\n",
+            "D. $F(x)$ là đạo hàm của $f(x)$"
+        ],
+        "explain": "Nếu có $F^{\\prime}(x)=f(x)$ thì $F(x)$ được gọi là một nguyên hàm của hàm số $f(x)$ và $f(x)$ được gọi là đạo hàm của hàm số $F(x)$.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0301003",
+        "question": "Nếu $\\int f(x) d x=\\frac{x^{3}}{3}+e^{x}+C$ thì $f(x)$ bằng\\\\",
+        "options": [
+            "A. $\\frac{x^{4}}{12}+e^{x}$\\\\\n",
+            "B. $\\frac{x^{4}}{3}+e^{x}$\\\\\n",
+            "C. $3 x^{2}+e^{x}$\\\\\n",
+            "D. $x^{2}+e^{x}$"
+        ],
+        "explain": "Ta có $\\int f(x) d x=\\frac{x^{3}}{3}+e^{x}+C \\Rightarrow f(x)=\\left(\\int f(x) d x\\right)^{\\prime}=x^{2}+e^{x}$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0301004",
+        "question": "Cho $f(x)$ là đạo hàm của hàm số $F(x)$. Chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. $f^{\\prime}(x)=F(x)$\\\\\n",
+            "B. $\\int f(x) d x=F(x)+C$\\\\\n",
+            "C. $\\int F(x) d x=f(x)+C$\\\\\n",
+            "D. $f^{\\prime}(x)=F^{\\prime}(x)$"
+        ],
+        "explain": "Hàm số $f(x)$ là đạo hàm của $F(x)$ nên $F(x)$ là nguyên hàm của $f(x)$ hay $\\int f(x) d x=F(x)+C$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0301005",
+        "question": "Cho $F(x)$ là một nguyên hàm của $f(x)$. Với $C \\neq 0$ là một hằng số bất kì, hàm nào sau đây cũng là một nguyên hàm của $f(x)$ ?\\\\",
+        "options": [
+            "A. $C . F(x)$\\\\\n",
+            "B. $C-F(x)$\\\\\n",
+            "C. $C+F(x)$\\\\\n",
+            "D. $\\frac{F(x)}{C}$"
+        ],
+        "explain": "Nếu $F(x)$ là một nguyên hàm của $f(x)$ thì $F(x)+C$ hay $F(x)-C$ cũng là một nguyên hàm của $f(x)$ ( $C \\neq 0$ là một hằng số).\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0302006",
+        "question": "Nếu $t=u(x)$ thì:\\\\",
+        "options": [
+            "A. $d t=u^{\\prime}(x) d x$\\\\\n",
+            "B. $d x=u^{\\prime}(t) d t$\\\\\n",
+            "C. $d t=\\frac{1}{u(x)} d x$\\\\\n",
+            "D. $d x=\\frac{1}{u(t)} d t$"
+        ],
+        "explain": "Nếu $t=u(x)$ thì $d t=u^{\\prime}(x) d x$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0302007",
+        "question": "Biết $\\int f(x) \\mathrm{d} x=2 x \\ln (3 x-1)+C$ với $x \\in\\left(\\frac{1}{9} ;+\\infty\\right)$. Tìm khẳng định đúng trong các khẳng định sau.\\\\",
+        "options": [
+            "A. $\\int f(3 x) \\mathrm{d} x=2 x \\ln (9 x-1)+C$.\\\\\n",
+            "B. $\\int f(3 x) \\mathrm{d} x=6 x \\ln (3 x-1)+C$.\\\\\n",
+            "C. $\\int f(3 x) \\mathrm{d} x=6 x \\ln (9 x-1)+C$.\\\\\n",
+            "D. $\\int f(3 x) \\mathrm{d} x=3 x \\ln (9 x-1)+C$."
+        ],
+        "explain": "Đặt $t=3 x \\Rightarrow d t=3 d x \\Rightarrow d x=\\frac{d t}{3}$, khi đó:\\\\\n$\\int f(3 x) \\mathrm{d} x=\\frac{1}{3} \\int f(t) d t=\\frac{1}{3}(2 t \\ln (3 t-1))+C$\\\\\n$=\\frac{1}{3}(2.3 x \\cdot \\ln (3.3 x-1))+C=2 x \\ln (9 x-1)+C$\\\\\nVậy $\\int f(3 x) \\mathrm{d} x=2 x \\ln (9 x-1)+C$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0302008",
+        "question": "Nếu $t=x^{2}$ thì:\\\\",
+        "options": [
+            "A. $x f\\left(x^{2}\\right) d x=f(t) d t$\\\\\n",
+            "B. $x f\\left(x^{2}\\right) d x=\\frac{1}{2} f(t) d t$\\\\\n",
+            "C. $x f\\left(x^{2}\\right) d x=2 f(t) d t$\\\\\n",
+            "D. $x f\\left(x^{2}\\right) d x=f^{2}(t) d t$"
+        ],
+        "explain": "$$\n\n& \\text { Ta có: } t=x^{2} \\Rightarrow d t=2 x d x \\Rightarrow x d x=\\frac{d t}{2} \\\\\n& \\Rightarrow x f\\left(x^{2}\\right) d x=f\\left(x^{2}\\right) \\cdot x d x=f(t) \\cdot \\frac{d t}{2}=\\frac{1}{2} f(t) d t\n\n$$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0302010",
+        "question": "Cho $f(x)=\\sin 2 x \\sqrt{1-\\cos ^{2} x}$. Nếu đặt $\\sqrt{1-\\cos ^{2} x}=t$ thì:\\\\",
+        "options": [
+            "A. $f(x) d x=-t d t$\\\\\n",
+            "B. $f(x) d x=2 t d t$\\\\\n",
+            "C. $f(x) d x=-2 t^{2} d t$\\\\\n",
+            "D. $f(x) d x=2 t^{2} d t$"
+        ],
+        "explain": "Ta có: $\\sqrt{1-\\cos ^{2} x}=t$\\\\\n$\\Rightarrow t^{2}=1-\\cos ^{2} x \\Rightarrow 2 t d t=2 \\cos x \\sin x d x=\\sin 2 x d x \\Rightarrow \\sin 2 x d x=2 t d t$\\\\\nSuy ra $f(x) d x=\\sin 2 x \\sqrt{1-\\cos ^{2} x} d x=\\sqrt{1-\\cos ^{2} x} \\cdot \\sin 2 x d x=t .2 t d t=2 t^{2} d t$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0303011",
+        "question": "Chọn công thức đúng:\\\\",
+        "options": [
+            "A. $\\int u d v=u v+\\int v d u$\\\\\n",
+            "B. $\\int u d v=u v-\\int v d u$\\\\\n",
+            "C. $\\int u d v=\\int u v-\\int v d u$\\\\\n",
+            "D. $\\int u d v=\\int u v d v-\\int v d u$"
+        ],
+        "explain": "Công thức đúng là $\\int u d v=u v-\\int v d u$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0303012",
+        "question": "Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $\\int x d\\left(e^{x}\\right)=x e^{x}-\\int e^{x} d x$\\\\\n",
+            "B. $\\int x d\\left(e^{x}\\right)=x e^{x}-\\int x e^{x} d x$\\\\\n",
+            "C. $\\int x d\\left(e^{x}\\right)=\\int x e^{x} d x-\\int e^{x} d x$\\\\\n",
+            "D. $\\int x d\\left(e^{x}\\right)=x e^{x}+\\int x e^{x} d x$"
+        ],
+        "explain": "Đặt $\\int x d\\left(e^{x}\\right)=x e^{x}-\\int e^{x} d x$ (ở đây $u=x, v=e^{x}$ )\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0303013",
+        "question": "Trong phương pháp nguyên hàm từng phần, nếu $\\left\\{\\begin{array}{l}u=g(x) \\\\ d v=h(x) d x\\end{array}\\right.$ thì:\\\\",
+        "options": [
+            "A. $\\left\\{\\begin{array}{l}d u=g^{\\prime}(x) d x \\\\ v=\\int h(x) d x\\end{array}\\right.$\\\\\n",
+            "B. $\\left\\{\\begin{array}{l}d u=g(x) d x \\\\ v=\\int h(x) d x\\end{array}\\right.$\\\\\n",
+            "C. $\\left\\{\\begin{array}{l}d u=\\int g(x) d x \\\\ v=h(x)\\end{array}\\right.$\\\\\n",
+            "D. $\\left\\{\\begin{array}{l}d u=g^{\\prime}(x) d x \\\\ v=h(x)\\end{array}\\right.$"
+        ],
+        "explain": "Ta có: $u=g(x) \\Rightarrow d u=g^{\\prime}(x) d x$.\\\\\n$d v=h(x) d x \\Rightarrow v=\\int h(x) d x$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0303014",
+        "question": "Cho $F(x)=\\int(x+1) f^{\\prime}(x) d x$. Tính $I=\\int f(x) d x$ theo $F(x)$.\\\\",
+        "options": [
+            "A. $I=(x+1) f(x)-2 F(x)+C$\\\\\n",
+            "B. $I=F(x)-(x+1) f(x)$\\\\\n",
+            "C. $I=(x+1) f(x)+C$\\\\\n",
+            "D. $I=(x+1) f(x)-F(x)+C$"
+        ],
+        "explain": "\\\\\nĐặt $\\left\\{\\begin{array}{l}u=x+1 \\\\ d v=f^{\\prime}(x) d x\\end{array} \\Rightarrow\\left\\{\\begin{array}{l}d u=d x \\\\ v=f(x)\\end{array}\\right.\\right.$\\\\\n$\\Rightarrow F(x)=(x+1) f(x)-\\int f(x) d x+C$\\\\\n$\\Rightarrow I=\\int f(x) d x=(x+1) f(x)-F(x)+C$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0303015",
+        "question": "Cho nguyên hàm $\\int x \\sin x d x$. Nếu đặt $\\left\\{\\begin{array}{l}u=x \\\\ d v=\\sin x d x\\end{array}\\right.$ thì:\\\\",
+        "options": [
+            "A. $\\int x \\sin x d x=x \\sin x-\\int \\cos x d x$\\\\\n",
+            "B. $\\int x \\sin x d x=-x \\cos x+\\int \\cos x d x$\\\\\n",
+            "C. $\\int x \\sin x d x=x \\cos x-\\int \\cos x d x$\\\\\n",
+            "D. $\\int x \\sin x d x=x \\cos x-\\int \\sin x d x$"
+        ],
+        "explain": "Ta có:\\\\\n$\\left\\{\\begin{array}{l}u=x \\\\ d v=\\sin x d x\\end{array} \\Rightarrow\\left\\{\\begin{array}{l}d u=d x \\\\ v=-\\cos x\\end{array}\\right.\\right.$\\\\\nKhi đó $\\int x \\sin x d x=-x \\cos x+\\int \\cos x d x$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0304016",
+        "question": "Cho hàm số $f(x)$ liên tục trên đoạn $[a ; b]$. Chọn mệnh đề sai?\\\\",
+        "options": [
+            "A. $\\int_{a}^{b} f(x) d x=-\\int_{b}^{a} f(x) d x$\\\\\n",
+            "B. $\\int_{a}^{b} k d x=k(b-a)$\\\\\n",
+            "C. $\\int_{a}^{b} f(x) d x+\\int_{b}^{c} f(x) d x=\\int_{a}^{c} f(x) d x$ với $b \\in[a ; c]$\\\\\n",
+            "D. $\\int_{a}^{b} f(x) d x=\\int_{b}^{a} f(-x) d x$"
+        ],
+        "explain": "Các mệnh đề $A, B, C$ đều đúng. Mệnh đề $D$ sai.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0304017",
+        "question": "Trong các khẳng định sau, khẳng định nào đúng?\n\n$$\n\n& \\text {",
+        "options": [
+            "A. } \\int_{a}^{b} f(x) d x+\\int_{b}^{c} f(x) d x=\\int_{a}^{c} f(x) d x ; \\forall b \\in[a ; c] \\\\\n& \\text { ",
+            "B. } \\text { Nếu } \\int_{a}^{b} f(x) d x \\geq 0 \\text { thì } f(x) \\geq 0 \\text { trên }[a ; b] \\\\\n& \\text { ",
+            "C. } \\int x d x=1+C\n\n$$\n\n",
+            "D. Nếu $F(x)$ là nguyên hàm của $f(x)$ thì $\\sqrt{F(x)}$ là nguyên hàm của $\\sqrt{f(x)}$."
+        ],
+        "explain": "Ta có: $\\int_{a}^{b} f(x) d x+\\int_{b}^{c} f(x) d x=\\int_{a}^{c} f(x) d x ; \\forall b \\in[a ; c]$ đúng nên A đúng.\\\\\nNếu $\\int_{a}^{b} f(x) d x \\geq 0$ thì $f(x)$ chưa chắc không âm trên $[a ; b]$ nên B sai.\\\\\n$\\int x d x=\\frac{x^{2}}{2}+C$ nên C sai.\\\\\nNếu $F(x)$ là nguyên hàm của $f(x)$ thì $\\sqrt{F(x)}$ không phải là nguyên hàm của $\\sqrt{f(x)}$ nên D sai.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0304018",
+        "question": "Giả sử hàm số $y=f(x)$ liên tục trên $[a ; b]$ và $k$ là một số thực trên $R$. Cho các công thức:\\\\\na) $\\int_{a}^{a} f(x) d x=0$\\\\\nb) $\\int_{a}^{b} f(x) d x=\\int_{b}^{a} f(x) d x$\\\\\nc) $\\int_{a}^{b} k f(x) d x=k \\int_{a}^{b} f(x) d x$\n\nSố công thức sai là:\\\\",
+        "options": [
+            "A. 1\\\\\n",
+            "B. 2\\\\\n",
+            "C. 3\\\\\n",
+            "D. 0"
+        ],
+        "explain": "Dễ thấy các công thức a) đúng vì tích phân có hai cận bằng nhau thì có giá trị 0 . Công thức c) là đúng theo tính chất tích phân.\\\\\nCông thức b) sai vì $\\int_{a}^{b} f(x) d x=-\\int_{b}^{a} f(x) d x$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0304019",
+        "question": "Cho hàm số $f(x)$ có đạo hàm trên $[1 ; 4]$ và $f(1)=2, f(4)=10$. Giá trị của $I=\\int_{1}^{4} f^{\\prime}(x) d x$ là\\\\",
+        "options": [
+            "A. $I=12$\\\\\n",
+            "B. $I=48$\\\\\n",
+            "C. $I=8$\\\\\n",
+            "D. $I=3$"
+        ],
+        "explain": "$$\nI=\\int_{1}^{4} f^{\\prime}(x) d x=\\left.f(x)\\right|_{1} ^{4}=f(4)-f(1)=10-2=8\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0304020",
+        "question": "Cho hàm số $f(x)$ có đạo hàm liên tục trên $\\mathbb{R}$ và trên $[0 ; 1]$ ta có $f(1)-f(0)=2$. Tích phân $I=\\int_{0}^{1} f^{\\prime}(x) \\mathrm{d} x$ bằng\\\\",
+        "options": [],
+        "explain": "Ta có $f(x)$ là 1 nguyên hàm của hàm số $f^{\\prime}(x)$ nên $I=\\int_{0}^{1} f^{\\prime}(x) \\mathrm{d} x=f(1)-f(0)=2$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0305021",
+        "question": "Cho số thực $a$ thỏa mãn $\\int_{-1}^{a} e^{x+1} d x=e^{2}-1$, khi đó $a$ có giá trị bằng\\\\",
+        "options": [
+            "A. 1 .\\\\\n",
+            "B. -1 .\\\\\n",
+            "C. 0 .\\\\\n",
+            "D. 2 ."
+        ],
+        "explain": "Ta có $\\int_{-1}^{a} e^{x+1} d x=\\left.e^{x+1}\\right|_{-1} ^{a}=e^{a+1}-1$.\\\\\nVậy yêu cầu bài toán trở thành $e^{a+1}-1=e^{2}-1 \\Leftrightarrow a+1=2 \\Leftrightarrow a=1$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0305022",
+        "question": "Trong các hàm số dưới đây, hàm số nào có tích phân trên đoạn $[0 ; \\pi]$ đạt giá trị bằng 0 ?\\\\",
+        "options": [
+            "A. $f(x)=\\cos 3 x$.\\\\\n",
+            "B. $f(x)=\\sin 3 x$.\\\\\n",
+            "C. $f(x)=\\cos \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right)$.\\\\\n",
+            "D. $f(x)=\\sin \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right)$."
+        ],
+        "explain": "Tính tích phân cho từng hàm số trong các đáp án:\\\\\n+) $\\int_{0}^{\\pi} \\cos 3 x d x=\\left.\\frac{1}{3} \\sin 3 x\\right|_{0} ^{\\pi}=0$\\\\\n+) $\\int_{0}^{\\pi} \\sin 3 x d x=-\\left.\\frac{1}{3} \\cos 3 x\\right|_{0} ^{\\pi}=\\frac{2}{3}$,\\\\\n+) $\\int_{0}^{\\pi} \\cos \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right) d x=\\left.4 \\sin \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right)\\right|_{0} ^{\\pi}=2(\\sqrt{2}-2)$,\\\\\n+) $\\int_{0}^{\\pi} \\sin \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right) d x=-\\left.4 \\cos \\left(\\frac{x}{4}+\\frac{\\pi}{2}\\right)\\right|_{0} ^{\\pi}=2 \\sqrt{2}$.\\\\\nVậy chọn $f(x)=\\cos 3 x$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0305023",
+        "question": "Trong các tích phân sau, tích phân nào có giá trị khác 2 ?\\\\",
+        "options": [
+            "A. $e^{2}$\\\\\n$\\int_{1} \\ln x d x$.\\\\\n",
+            "B. 1\\\\\n$\\int_{0}^{1} 2 d x$\\\\\n",
+            "C. $\\int_{0}^{\\pi} \\sin x d x$.\\\\\n",
+            "D. ${ }^{2}$ $\\int_{0} x d x$."
+        ],
+        "explain": "+) $\\int_{0}^{1} 2 d x=\\left.2 x\\right|_{0} ^{1}=2$,\\\\\n+) $\\int_{0}^{2} x d x=\\left.\\frac{x^{2}}{2}\\right|_{0} ^{2}=2$\\\\\n+) $\\int_{0}^{\\pi} \\sin x d x=-\\left.\\cos x\\right|_{0} ^{\\pi}=2$\\\\\nDo đó ta dự đoán chỉ có đáp án $A$ là kết quả khác 2 .\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0305024",
+        "question": "Tích phân $I=\\int_{2}^{5} \\frac{d x}{x}$ có giá trị bằng\\\\",
+        "options": [
+            "A. $3 \\ln 3$.\\\\\n",
+            "B. $\\frac{1}{3} \\ln 3$.\\\\\n",
+            "C. $\\ln \\frac{5}{2}$.\\\\\n",
+            "D. $\\ln \\frac{2}{5}$."
+        ],
+        "explain": "$$\n\\left.I=\\int_{2}^{5} \\frac{d x}{x}=\\ln \\right\\rvert\\, x \\|_{2}^{5}=\\ln 5-\\ln 2=\\ln \\frac{5}{2}\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0305025",
+        "question": "Tích phân $\\int_{0}^{2} \\frac{d x}{x+3}$ bằng\\\\",
+        "options": [
+            "A. $\\frac{16}{225}$\\\\\n",
+            "B. $\\log \\frac{5}{3}$\\\\\n",
+            "C. $\\ln \\frac{5}{3}$\\\\\n",
+            "D. $\\frac{2}{15}$"
+        ],
+        "explain": "Ta có: $\\int_{0}^{2} \\frac{d x}{x+3}=\\ln |x+3|_{0}^{2}=\\ln 5-\\ln 3=\\ln \\frac{5}{3}$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng"
+    },
+    {
+        "id": "T0306026",
+        "question": "Hàm số $y=f(x)$ có nguyên hàm trên $(a ; b)$ đồng thời thỏa mãn $f(a)=f(b)$. Lựa chọn phương án đúng:\\\\",
+        "options": [],
+        "explain": "Đặt $t=f(x) \\Rightarrow d t=f^{\\prime}(x) d x$\\\\\nĐổi cận: $\\left\\{\\begin{array}{l}x=a \\Rightarrow t=f(a) \\\\ x=b \\Rightarrow t=f(b)\\end{array}\\right.$\\\\\n$f(b)$\\\\\nKhi đó $I=\\int_{f(a)} e^{t} d t=0($ Vi $f(a)=f(b))$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0306027",
+        "question": "Cho hàm số $f(x)$ liên tục trên $R$ và $\\int_{-2}^{4} f(x) d x=2$. Mệnh đề nào sau đây là sai?\\\\",
+        "options": [
+            "A. $\\int_{-1}^{2} f(2 x) d x=2$\\\\\n",
+            "B. $\\int_{-3}^{3} f(x+1) d \\mathrm{x}=2$\\\\\n",
+            "C. $\\int_{-1}^{2} f(2 x) d x=1$\\\\\n",
+            "D. $\\int_{0}^{6} \\frac{1}{2} f(x-2) d x=1$"
+        ],
+        "explain": "Dựa vào các đáp án, ta có nhận xét sau:\n\n$$\n\n& \\int_{-1}^{2} f(2 x) d x=\\frac{1}{2} \\int_{-1}^{2} f(2 x) d(2 x)=\\frac{1}{2} \\int_{-2}^{4} f(x) d x=1 \\\\\n& \\int_{-3}^{3} f(x+1) d x=\\int_{-3}^{3} f(x+1) d(x+1)=\\int_{-2}^{4} f(x) d x=2 \\\\\n& \\int_{0}^{6} \\frac{1}{2} f(x-2) d x=\\int_{0}^{6} \\frac{1}{2} f(x-2) d(x-2)=\\frac{1}{2} \\int_{-2}^{4} f(x) d x=1\n\n$$\n\nDo đó các đáp án $B, C, D$ đều đúng, đáp án $A$ sai.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0306028",
+        "question": "Cho $y=f(x)$ là hàm số lẻ và liên tục trên $[-a ; a]$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $\\int_{-a}^{a} f(x) d x=0$\\\\\n",
+            "B. $\\int_{-a}^{a} f(x) d x=1$\\\\\n",
+            "C. $\\int_{-a}^{a} f(x) d x=-1$\\\\\n",
+            "D. $\\int_{-a}^{a} f(x) d x=a$"
+        ],
+        "explain": "Hàm số $y=f(x)$ là hàm số lẻ nếu $f(x)=-f(-x)$.\\\\\nĐặt $x=-t \\Rightarrow d x=-d t$.\\\\\nĐổi cận $\\left\\{\\begin{array}{l}x=a \\Rightarrow t=-a \\\\ x=-a \\Rightarrow t=a\\end{array}\\right.$\\\\\n$\\Rightarrow \\int_{-a}^{a} f(x) d x=\\int_{a}^{-a} f(-t)(-d t)=\\int_{-a}^{a}(-f(t)) d t=-\\int_{-a}^{a} f(t) d t=-\\int_{-a}^{a} f(x) d x$\\\\\nDo đó $\\int_{-a}^{a} f(x) d x=-\\int_{-a}^{a} f(x) d x \\Leftrightarrow 2 \\int_{-a}^{a} f(x) d x=0 \\Leftrightarrow \\int_{-a}^{a} f(x) d x=0$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0306029",
+        "question": "Cho $\\int_{0}^{4} f(x) d x=-1$, tính $I=\\int_{0}^{1} f(4 x) d x$ :\\\\",
+        "options": [
+            "A. $I=\\frac{-1}{2}$\\\\\n",
+            "B. $I=-\\frac{1}{4}$\\\\\n",
+            "C. $I=\\frac{1}{4}$\\\\\n",
+            "D. $I=-2$"
+        ],
+        "explain": "Đặt $4 x=t$ khi đó $4 d x=d t$.\\\\\nĐối cận với $x=0$ thì $t=0 ; x=1$ thì $t=4$\\\\\n$\\int_{0}^{1} f(4 x) d x=\\frac{1}{4} \\int_{0}^{4} f(t) d t=-\\frac{1}{4}$ vì tích phân không phụ thuộc vào biến số.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0306030",
+        "question": "Cho hàm số $f(x)$ liên tục trên $R$ và thỏa mãn $\\int_{-5}^{1} f(x) \\mathrm{d} x=9$. Tính tích phân $\\int_{0}^{2}[f(1-3 x)+9] \\mathrm{d} x$.\\\\",
+        "options": [
+            "A. 15 .\\\\\n",
+            "B. 27 .\\\\\n",
+            "C. 75 .\\\\\n",
+            "D. 21 ."
+        ],
+        "explain": "Ta có\\\\\n$I=\\int_{0}^{2}[f(1-3 x)+9] d x$\\\\\n$\\Leftrightarrow I=\\int_{0}^{2} f(1-3 x) d x+\\int_{0}^{2} 9 d x$\\\\\nĐặt $I_{1}=\\int_{0}^{2} f(1-3 x) d x$.\\\\\nĐặt $t=1-3 x \\Rightarrow d t=-3 d x$.\\\\\nĐổi cận: $\\left\\{\\begin{array}{l}x=0 \\Rightarrow t=1 \\\\ x=2 \\Rightarrow t=-5\\end{array}\\right.$.\\\\\n$\\Rightarrow I_{1}=-\\frac{1}{3} \\int_{1}^{-5} f(t) \\cdot d t=\\frac{1}{3} \\int_{-5}^{1} f(x) d x=\\frac{1}{3} .9=3$.\\\\\nĐặt $I_{2}=\\int_{0}^{2} 9 d x=\\left.9 x\\right|_{0} ^{2}=18$.\\\\\nVậy $I=I_{1}+I_{2}=3+18=21$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0401001",
+        "question": "Số phức $z=a+b i$ có phần thực là:\\\\",
+        "options": [
+            "A. $\\backslash(a \\backslash)$\\\\\n",
+            "B. $\\backslash(b \\backslash)$\\\\\n",
+            "C. (i)\\\\\n",
+            "D. $\\backslash(z \\backslash)$"
+        ],
+        "explain": "Phần thực của số phức [Math Processing Error] là [Math Processing Error].\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0401002",
+        "question": "Số phức [Math Processing Error] có phần thực là:\\\\",
+        "options": [
+            "A. [Math Processing\\\\\n",
+            "B. [Math Processing Error] Error]\\\\\n",
+            "C. [Math Processing Error]\\\\\n",
+            "D. [Math Processing Error]"
+        ],
+        "explain": "Số phức [Math Processing Error] có phần thực là [Math Processing Error].\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0401003",
+        "question": "Hai số phức [Math Processing Error] bằng nhau nếu:\\\\",
+        "options": [
+            "A. [Math Processing\\\\\n",
+            "B. [Math Processing Error] Error]\\\\\n",
+            "C. [Math Processing Error]\\\\\n",
+            "D. [Math Processing Error]"
+        ],
+        "explain": "Hai số phức [Math Processing Error] bằng nhau nếu [Math Processing Error]\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0401004",
+        "question": "Biết rằng có duy nhất một cặp số thực [Math Processing Error] thỏa mãn [Math Processing Error]. Tính [Math Processing Error]\\\\",
+        "options": [
+            "A. [Math Processing\\\\\n",
+            "B. [Math Processing\\\\\nError] Error].\\\\\n",
+            "C. [Math Processing Error].\\\\\n",
+            "D. [Math Processing Error]."
+        ],
+        "explain": "\\\\\nTa có [Math Processing Error]\\\\\n[Math Processing Error]\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0401005",
+        "question": "Số phức liên hợp của số phức\\\\\n[Math Processing Error]là:\\\\",
+        "options": [
+            "A. [Math Processing\\\\\nError]\\\\\n",
+            "B. [Math Processing\\\\\nError]\\\\\n",
+            "C. [Math Processing Error]\\\\\n",
+            "D. [Math Processing Error]"
+        ],
+        "explain": "Số phức liên hợp của số phức\\\\\n[Math Processing Error] là\\\\\n[Math Processing Error].\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0402006",
+        "question": "Số phức $w$ là căn bậc hai của số phức $z$ nếu:\\\\",
+        "options": [
+            "A. $z^{2}=w$\\\\\n",
+            "B. $w^{2}=z$\\\\\n",
+            "C. $\\sqrt{w}=z$\\\\\n",
+            "D. $z= \\pm \\sqrt{w}$"
+        ],
+        "explain": "Số phức $w=x+y i(x, y \\in R)$ là căn bậc hai của số phức $z=a+b i$ nếu $w^{2}=z$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0402007",
+        "question": "Cho $z=1-3 i$ là một căn bậc hai của $w=-8-6 i$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $(1-3 i)^{2}=-8-6 i$\\\\\n",
+            "B. $(1-3 i)^{2}=-8+6 i$\\\\\n",
+            "C. $(1-3 i)^{2}=8+6 i$\\\\\n",
+            "D. $(-8-6 i)^{2}=1-3 i$"
+        ],
+        "explain": "Do $z=1-3 i$ là một căn bậc hai của $w=-8-6 i$ nên $(1-3 i)^{2}=-8-6 i$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0402008",
+        "question": "Căn bậc hai của số phức khác 0 là:\\\\",
+        "options": [
+            "A. hai số phức liên hợp\\\\\n",
+            "B. hai số phức bằng nhau\\\\\n",
+            "C. hai số phức có cùng phần ảo\\\\\n",
+            "D. hai số phức đối nhau"
+        ],
+        "explain": "Căn bậc hai của số phức khác 0 là hai số đối nhau.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0402009",
+        "question": "Biết số phức $z=2+3 i$ là một căn bậc hai của số phức $w=-5+12 i$. Một căn bậc hai khác của $w=-5+12 i$ là:\\\\",
+        "options": [
+            "A. $2-3 i$\\\\\n",
+            "B. $3+2 i$\\\\\n",
+            "C. $3-2 i$\\\\\n",
+            "D. $-2-3 i$"
+        ],
+        "explain": "Vì $z=2+3 i$ là một căn bậc hai của số phức $w=-5+12 i$ nên căn bậc hai còn lại là số đối của $z$ chính là $-2-3 i$.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0402010",
+        "question": "Căn bậc hai của số $a=-3$ là:\\\\",
+        "options": [
+            "A. $3 i$ và $-3 i$\\\\\n",
+            "B. $3 \\sqrt{i}$ và $-3 \\sqrt{i}$\\\\\n",
+            "C. $i \\sqrt{3}$ và $-i \\sqrt{3}$\\\\\n",
+            "D. $\\sqrt{3 i}$ và $-\\sqrt{3 i}$"
+        ],
+        "explain": "Căn bậc hai của số $a=-3$ là $i \\sqrt{3}$ và $-i \\sqrt{3}$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0403011",
+        "question": "Tìm điểm $M$ biểu diễn số phức $z=i-2$\\\\",
+        "options": [
+            "A. $M(1 ;-2)$\\\\\n",
+            "B. $M(2 ;-1)$\\\\\n",
+            "C. $M(-2 ; 1)$\\\\\n",
+            "D. $M(2 ; 1)$"
+        ],
+        "explain": "$$\nz=i-2=-2+i \\text { nên điểm biểu diễn là } M(-2 ; 1)\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0403012",
+        "question": "Trong mặt phẳng tọa độ $O x y$, cho số phức $z=-4-5 i$, điểm biểu diễn số phức $\\bar{z}$ có tọa độ là:\\\\",
+        "options": [
+            "A. $(4 ;-5)$\\\\\n",
+            "B. $(-4 ; 5)$\\\\\n",
+            "C. $(-4 ;-5)$\\\\\n",
+            "D. $(5 ;-4)$"
+        ],
+        "explain": "Ta có: $z=-4-5 i \\Rightarrow \\bar{z}=-4+5 i$\\\\\n$\\Rightarrow M(-4 ; 5)$ là điểm biểu diễn số phức $\\bar{z}$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0403013",
+        "question": "Điểm biểu diễn số phức $z=2-3 i$ có tọa độ là:\\\\",
+        "options": [
+            "A. $(2 ; 3)$.\\\\\n",
+            "B. $(-2 ;-3)$.\\\\\n",
+            "C. $(2 ;-3)$.\\\\\n",
+            "D. $(-2 ; 3)$."
+        ],
+        "explain": "Gọi $A$ là điểm biểu diễn số phức, suy ra $\\left\\{\\begin{array}{l}x_{A}=2 \\\\ y_{A}=-3\\end{array}\\right.$.\\\\\nVậy $A(2 ;-3)$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0403014",
+        "question": "Cho số phức $z$ thỏa mãn $(1+i) z=3-i$. Hỏi điểm biểu diễn của $z$ là điểm nào trong các điểm $M, N, P, Q$ ở hình bên?\n\n\\\\",
+        "options": [
+            "A. Điểm $P$\\\\\n",
+            "B. Điểm $Q$\\\\\n",
+            "C. Điểm $M$\\\\\n",
+            "D. Điểm $N$"
+        ],
+        "explain": "$$\n(1+i) z=3-i \\Rightarrow z=\\frac{3-i}{1+i}=\\frac{(3-i)(1-i)}{(1+i)(1-i)}=\\frac{2-4 i}{1^{2}+1^{2}}=1-2 i \\Rightarrow Q(1 ;-2) \\text { là điểm biểu diễn }\n$$",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0329/cau-87.png",
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0403015",
+        "question": "Giả sử $M, N, P, Q$ được cho ở hình vẽ bên là điểm biểu diễn của các số phức $z_{1}, z_{2}, z_{3}, z_{4}$ trên mặt phẳng tọa độ. Khẳng định nào sau đây là đúng?\n\n\\\\",
+        "options": [
+            "A. Điểm $M$ là điểm biểu diễn số phức $z_{1}=2+i$.\\\\\n",
+            "B. Điểm $Q$ là điểm biểu diễn số phức $z_{4}=-1+2 i$.\\\\\n",
+            "C. Điểm $N$ là điểm biểu diễn số phức $z_{2}=2-i$.\\\\\n",
+            "D. Điểm $P$ là điểm biểu diễn số phức $z_{3}=-1-2 i$."
+        ],
+        "explain": "Dựa vào hình vẽ ta thấy\\\\\nĐiểm $M$ là điểm biểu diễn số phức $z_{1}=1+2 i$.\\\\\nĐiểm $Q$ là điểm biểu diễn số phức $z_{4}=1-2 i$.\\\\\nĐiểm $N$ là điểm biểu diễn số phức $z_{2}=-1+2 i$.\\\\\nĐiểm $P$ là điểm biểu diễn số phức $z_{3}=-1-2 i$.\\\\",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1559012548172_bieu_dien_so_phuc.PNG",
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0404016",
+        "question": "Với hai số phức bất kì $z_{1}, z_{2}$, khẳng định nào sau đây đúng:\\\\",
+        "options": [
+            "A. $\\left|z_{1}+z_{2}\\right| \\leq\\left|z_{1}\\right|+\\left|z_{2}\\right|$\\\\\n",
+            "B. $\\left|z_{1}+z_{2}\\right|=\\left|z_{1}\\right|+\\left|z_{2}\\right|$\\\\\n",
+            "C. $\\left|z_{1}+z_{2}\\right| \\geq\\left|z_{1}\\right|+\\left|z_{2}\\right|$\\\\\n",
+            "D. $\\left|z_{1}+z_{2}\\right|=\\left|z_{1}\\right|+\\left|z_{2}\\right|+\\left|z_{1}-z_{2}\\right|$"
+        ],
+        "explain": "Ta có: ||$z_{1}|-| z_{2}|| \\leq\\left|z_{1} \\pm z_{2}\\right| \\leq\\left|z_{1}\\right|+\\left|z_{2}\\right|$ nên A đúng.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0404017",
+        "question": "Cho số phức $z$ thỏa mãn điều kiện $|z-2+2 i|=1$. Tìm giá trị lớn nhất của $|z|$\\\\",
+        "options": [
+            "A. $\\max |z|=2 \\sqrt{2}+1$\\\\\n",
+            "B. $\\max |z|=2 \\sqrt{2}$\\\\\n",
+            "C. $\\max |z|=2 \\sqrt{2}+2$\\\\\n",
+            "D. $\\max |z|=2 \\sqrt{2}-1$"
+        ],
+        "explain": "Áp dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có:\\\\\n$1=|z-2+2 i|=|z-(2-2 i)| \\geq|z|-|2-2 i|=|z|-2 \\sqrt{2} \\Rightarrow|z| \\leq 1+2 \\sqrt{2}$\\\\\nVậy $\\max |z|=1+2 \\sqrt{2}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0404018",
+        "question": "Cho số phức $z$ thỏa mãn $|z-2-2 i|=1$. Số phức $z-i$ có mô đun nhỏ nhất là:\\\\",
+        "options": [
+            "A. $\\sqrt{5}-1$\\\\\n",
+            "B. $1-\\sqrt{5}$\\\\\n",
+            "C. $\\sqrt{5}+1$\\\\\n",
+            "D. $\\sqrt{5}+2$"
+        ],
+        "explain": "Ta có: $|z-i|=|(z-2-2 i)+(i+2)| \\geq|| z-2-2 i|-| i+2||=|1-\\sqrt{5}|=\\sqrt{5}-1$\\\\\nVậy $|z-i| \\geq \\sqrt{5}-1$ nên $\\min |z-i|=\\sqrt{5}-1$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0404019",
+        "question": "Xác định số phức $z$ thỏa mãn $|z-2-2 i|=\\sqrt{2}$ mà $|z|$ đạt giá trị lớn nhất.\\\\",
+        "options": [
+            "A. $z=1+i$\\\\\n",
+            "B. $z=3+i$\\\\\n",
+            "C. $z=3+3 i$\\\\\n",
+            "D. $z=1+3 i$"
+        ],
+        "explain": "Sử dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có:\\\\\n$\\sqrt{2}=|z-2-2 i| \\geq|z|-|-2-2 i|=|z|-2 \\sqrt{2} \\Rightarrow|z| \\leq 3 \\sqrt{2}$\\\\\nSuy ra $\\max |z|=3 \\sqrt{2}$.\\\\\nKiểm tra các đáp án đã cho chỉ có đáp án $C$ thỏa mãn.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0404020",
+        "question": "Trong các số phức $z$ thỏa mãn $|z-2-4 i|=|z-2 i|$. Tìm số phức $z$ có mô đun nhỏ nhất.\\\\",
+        "options": [
+            "A. $z=2-2 i$\\\\\n",
+            "B. $z=1+i$\\\\\n",
+            "C. $z=2+2 i$\\\\\n",
+            "D. $z=1-i$"
+        ],
+        "explain": "Giả sử $z=a+b i$, ta có\\\\\n$|a+b i-2-4 i|=|a+b i-2 i| \\Leftrightarrow(a-2)^{2}+(b-4)^{2}=a^{2}+(b-2)^{2}$\\\\\n$\\Leftrightarrow-4 a+4-8 b+16=-4 b+4 \\Leftrightarrow-4 a-4 b+16=0 \\Leftrightarrow a+b=4 \\Rightarrow b=4-a$\\\\\nTa có\\\\\n$|z|=\\sqrt{a^{2}+b^{2}}=\\sqrt{a^{2}+(4-a)^{2}}=\\sqrt{2 a^{2}-8 a+16}=\\sqrt{2\\left(a^{2}-4 a+4\\right)+8}=\\sqrt{2(a-2)^{2}+8}$\\\\\n$\\geq 2 \\sqrt{2}$\\\\\n$\\Rightarrow \\min |z|=2 \\sqrt{2} \\Rightarrow a=2, b=2 \\Rightarrow z=2+2 i$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0405021",
+        "question": "Số phức $z$ có mô đun $r$ và acgumen $\\varphi$ thì có dạng lượng giác là:\\\\",
+        "options": [
+            "A. $z=r(\\cos \\varphi+i \\sin \\varphi)$\\\\\n",
+            "B. $z=r(\\cos \\varphi-i \\sin \\varphi)$\\\\\n",
+            "C. $z=r(\\sin \\varphi+i \\cos \\varphi)$\\\\\n",
+            "D. $z=r(\\sin \\varphi-i \\cos \\varphi)$"
+        ],
+        "explain": "\\begin{itemize}\n  \\item Số phức $z=r(\\cos \\varphi+i \\sin \\varphi)$ là dạng lượng giác của $z$, ở đó:\\\\\n$+r$ là mô đun của số phức.\\\\\n$+\\varphi$ là acgumen của số phức.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0405022",
+        "question": "Cho $z=r(\\cos \\varphi+i \\sin \\varphi)$. Chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. $r$ là acgumen của $z$\\\\\n",
+            "B. $r$ là mô đun của $z$\\\\\n",
+            "C. $\\cos \\varphi$ là acgumen của $z$\\\\\n",
+            "D. $\\sin \\varphi$ là acgumen của $z$"
+        ],
+        "explain": "\\begin{itemize}\n  \\item Số phức $z=r(\\cos \\varphi+i \\sin \\varphi)$ là dạng lượng giác của $z$, ̛̛̉ đó: $+r$ là mô đun của số phức.\\\\\n$+\\varphi$ là acgumen của số phức.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0405023",
+        "question": "Gọi $\\varphi$ là một acgumen của $z$, chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. $\\varphi+\\pi$ là một acgumen của $z$\\\\\n",
+            "B. $\\varphi-\\pi$ là một acgumen của $z$\\\\\n",
+            "C. $\\varphi-2 \\pi$ là một acgumen của $z$\\\\\n",
+            "D. $\\varphi-3 \\pi$ là một acgumen của $z$"
+        ],
+        "explain": "\\begin{itemize}\n  \\item Nếu $\\varphi$ là một acgumen của $z$ thì $\\varphi+k 2 \\pi$ cũng là một acgumen của $z$ với mỗi $k \\in Z$.\n\\end{itemize}",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0405024",
+        "question": "Cho số phức $z=r\\left(\\cos \\frac{\\pi}{4}+i \\sin \\frac{\\pi}{4}\\right)$. Chọn 1 acgumen của $z$ :\\\\",
+        "options": [
+            "A. $-\\frac{\\pi}{4}$\\\\\n",
+            "B. $-\\frac{5 \\pi}{4}$\\\\\n",
+            "C. $\\frac{5 \\pi}{4}$\\\\\n",
+            "D. $\\frac{9 \\pi}{4}$"
+        ],
+        "explain": "Vì $z=r\\left(\\cos \\frac{\\pi}{4}+i \\sin \\frac{\\pi}{4}\\right)$ nên $\\varphi=\\frac{\\pi}{4}$ là 1 acgumen của $z$.\\\\\nDo đó $\\frac{\\pi}{4}+k 2 \\pi$ cũng là 1 acgumen của $z$.\\\\\nTa có: $-\\frac{\\pi}{4}-\\frac{\\pi}{4}=-\\frac{\\pi}{2} \\neq k 2 \\pi, \\forall k \\in Z$ nên A sai.\\\\\n$-\\frac{5 \\pi}{4}-\\frac{\\pi}{4}=-\\frac{3 \\pi}{2} \\neq k 2 \\pi, \\forall k \\in Z$ nên B sai.\\\\\n$\\frac{5 \\pi}{4}-\\frac{\\pi}{4}=\\pi \\neq k 2 \\pi, \\forall k \\in Z$ nên C sai.\\\\\n$\\frac{9 \\pi}{4}-\\frac{\\pi}{4}=2 \\pi$ nên $D$ đúng.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0405025",
+        "question": "Số phức $z$ có mô đun $r=3$ và acgumen $\\varphi=-\\frac{\\pi}{3}$ thì có dạng lượng giác là:\n\n$$\n\n& \\text {",
+        "options": [
+            "A. } z=3\\left(\\cos \\left(-\\frac{\\pi}{3}\\right)+i \\sin \\left(-\\frac{\\pi}{3}\\right)\\right) \\\\\n& \\text { ",
+            "B. } z=3\\left(\\cos \\left(-\\frac{\\pi}{3}\\right)-i \\sin \\left(-\\frac{\\pi}{3}\\right)\\right) \\\\\n& \\text { ",
+            "C. } z=3\\left(-\\cos \\frac{\\pi}{3}-i \\sin \\frac{\\pi}{3}\\right) \\\\\n& \\text { ",
+            "D. } z=3\\left(\\cos \\frac{\\pi}{3}+i \\sin \\frac{\\pi}{3}\\right)\n\n$$"
+        ],
+        "explain": "Số phức $z$ có mô đun $r=3$ và acgumen $\\varphi=-\\frac{\\pi}{3}$ thì có dạng lượng giác là\\\\\n$z=3\\left(\\cos \\left(-\\frac{\\pi}{3}\\right)+i \\sin \\left(-\\frac{\\pi}{3}\\right)\\right)$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0406026",
+        "question": "Cho hai số phức $z_{1}, z_{2}$ thỏa mãn $\\left|z_{1}\\right|=2,\\left|z_{2}\\right|=\\sqrt{3}$. Gọi $\\mathrm{M}, \\mathrm{N}$ là các điểm biểu diễn cho $z_{1}$ và $i z_{2}$. Biết $\\widehat{M O N}=30^{0}$. Tính $S=\\left|z_{1}^{2}+4 z_{2}^{2}\\right| ?$\\\\",
+        "options": [
+            "A. $\\sqrt{5}$\\\\\n",
+            "B. $4 \\sqrt{7}$\\\\\n",
+            "C. $3 \\sqrt{3}$\\\\\n",
+            "D. $5 \\sqrt{2}$"
+        ],
+        "explain": "Đặt $z_{3}=i z_{2} \\Rightarrow z_{3}^{2}=-z_{2}^{2} \\Rightarrow S=\\left|z_{1}^{2}+4 z_{2}^{2}\\right|=\\left|z_{1}^{2}-4 z_{3}^{2}\\right|=\\left|z_{1}-2 z_{3}\\right|\\left|z_{1}+2 z_{3}\\right|$\\\\\n$\\mathrm{M}, \\mathrm{N}$ là các điểm biểu diễn cho $z_{1}, z_{3} \\Rightarrow O M=2, O N=\\left|z_{3}\\right|=\\left|i z_{2}\\right|=|i| \\cdot\\left|z_{2}\\right|=\\sqrt{3}$.\\\\\nGọi P là điểm biểu diễn cho $2 z_{3}$ và $Q$ là điểm biểu diễn cho $-2 z_{3}$, ta có $N$ là trung điểm của $O P$ và $P$, $Q$ đối xứng nhau qua O . Khi đó $S=M P . M Q$.\\\\\nÁp dụng định lí Cosin trong $\\triangle O M P$ có:\\\\\n$M P^{2}=O P^{2}+O M^{2}-2 O P \\cdot O M \\cdot \\cos 30=12+4-2 \\cdot 2 \\sqrt{3} \\cdot 2 \\cdot \\frac{\\sqrt{3}}{2}=4 \\Rightarrow M P=2$ Áp dụng định lí Cosin trong $\\triangle O M Q$ có:\n\n$$\n\n& M Q^{2}=O M^{2}+O Q^{2}-2 O M \\cdot O Q \\cdot \\cos 150^{\\circ} \\\\\n& =4+12+2.2 .2 \\sqrt{3} \\cdot \\frac{\\sqrt{3}}{2}=2 \\sqrt{7} \\\\\n& \\Rightarrow S=M P . M Q=2.2 \\sqrt{7}=4 \\sqrt{7}\n\n$$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0406028",
+        "question": "Cho hai số phức $z_{1}, z_{2}$ thỏa mãn $\\left|z_{1}+1-i\\right|=2$ và $z_{2}=i z_{1}$. Tìm giá trị lớn nhất $m$ của biểu thức $\\left|z_{1}-z_{2}\\right|$.\\\\",
+        "options": [
+            "A. $m=2$\\\\\n",
+            "B. $m=2 \\sqrt{2}+2$\\\\\n",
+            "C. $m=2 \\sqrt{2}$\\\\\n",
+            "D. $m=\\sqrt{2}+1$"
+        ],
+        "explain": "Ta có $: 2=\\left|z_{1}+1-i\\right|=\\left|z_{1}+(1-i)\\right| \\geq\\left|z_{1}\\right|-|1-i|=\\left|z_{1}\\right|-\\sqrt{2}$\\\\\n$\\Rightarrow\\left|z_{1}\\right|-\\sqrt{2} \\leq 2 \\Rightarrow\\left|z_{1}\\right| \\leq 2+\\sqrt{2}$\\\\\nLại có $z_{2}=i z_{1} \\Rightarrow\\left|z_{1}-z_{2}\\right|=\\left|z_{1}-i z_{1}\\right|=\\left|(1-i) z_{1}\\right|=\\sqrt{2}\\left|z_{1}\\right| \\leq \\sqrt{2}(2+\\sqrt{2})=2 \\sqrt{2}+2$\\\\\n$\\Rightarrow \\max \\left|z_{1}-z_{2}\\right|=2 \\sqrt{2}+2$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0406029",
+        "question": "Cho hai số phức $z_{1}, z_{2}$ thỏa mãn $\\left|z_{1}+1-i\\right|=2$ và $z_{2}=i z_{1}$. Tim GTNN $m$ của biểu thức $\\left|z_{1}-z_{2}\\right|$ ?\\\\",
+        "options": [
+            "A. $m=\\sqrt{2}-1$.\\\\\n",
+            "B. $m=2$.\\\\\n",
+            "C. $m=2 \\sqrt{2}-2$.\\\\\n",
+            "D. $m=2 \\sqrt{2}$."
+        ],
+        "explain": "$$\n\n& 2=\\left|z_{1}+1-i\\right| \\leq\\left|z_{1}\\right|+|1-i|=\\left|z_{1}\\right|+\\sqrt{2} \\\\\n& \\Rightarrow\\left|z_{1}\\right|+\\sqrt{2} \\geq 2 \\\\\n& \\Rightarrow\\left|z_{1}\\right| \\geq 2-\\sqrt{2} \\\\\n& \\Rightarrow\\left|z_{1}-z_{2}\\right|=\\left|z_{1}-i z_{1}\\right| \\\\\n& =\\left|z_{1}(1-i)\\right|=\\left|z_{1}\\right| \\cdot \\sqrt{2} \\\\\n& \\geq(2-\\sqrt{2}) \\cdot \\sqrt{2}=2 \\sqrt{2}-2 \\\\\n& \\Rightarrow\\left|z_{1}-z_{2}\\right| \\geq 2 \\sqrt{2}-2 \\\\\n& \\Rightarrow m=2 \\sqrt{2}-2\n\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0406030",
+        "question": "Cho các số phức $z_{1}, z_{2}, z_{3}$ thỏa mãn điều kiện $\\left|z_{1}\\right|=4,\\left|z_{2}\\right|=3,\\left|z_{3}\\right|=2$ và $\\left|4 z_{1} z_{2}+16 z_{2} z_{3}+9 z_{1} z_{3}\\right|=48$. Giá trị của biểu thức $P=\\left|z_{1}+z_{2}+z_{3}\\right|$ bằng\\\\",
+        "options": [
+            "A. 8\\\\\n",
+            "B. 6\\\\\n",
+            "C. 1\\\\\n",
+            "D. 2"
+        ],
+        "explain": "Ta có:\\\\\n$\\left|4 z_{1} z_{2}+16 z_{2} z_{3}+9 z_{1} z_{3}\\right|=\\left|z_{3} \\cdot \\overline{z_{3}} \\cdot z_{1} z_{2}+z_{1} \\cdot \\overline{z_{1}} \\cdot z_{2} z_{3}+z_{2} \\cdot \\overline{z_{2}} \\cdot z_{1} z_{3}\\right|=\\left|z_{1} z_{2} z_{3} \\cdot\\left(\\overline{z_{1}}+\\overline{z_{2}}+\\overline{z_{3}}\\right)\\right|=\\mid z_{1} z_{2} z_{3}$ $\\left|\\overline{z_{1}}+\\overline{z_{2}}+\\overline{z_{3}}\\right|$\\\\\n$=\\left|z_{1}\\right| \\cdot\\left|z_{2}\\right| \\cdot\\left|z_{2}\\right| \\cdot\\left|\\overline{z_{1}+z_{2}+z_{3}}\\right|=24 \\cdot\\left|z_{1}+z_{2}+z_{3}\\right|=48$\\\\\n$\\Rightarrow P=\\left|z_{1}+z_{2}+z_{3}\\right|=\\frac{48}{24}=2$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0407031",
+        "question": "Có bao nhiêu số phức $z$ thỏa mãn điều kiện $z^{2}=|z|^{2}+\\bar{z}$ ?\\\\",
+        "options": [
+            "A. 4 .\\\\\n",
+            "B. 2 .\\\\\n",
+            "C. 3 .\\\\\n",
+            "D. 1 ."
+        ],
+        "explain": "Giả sử $z=x+y i(x, y \\in R) \\Rightarrow(x+y i)^{2}=\\left(x^{2}+y^{2}\\right)+(x-y i)$\\\\\n$\\Leftrightarrow x^{2}-y^{2}+2 x y i=x^{2}+y^{2}+x-y i \\Leftrightarrow\\left\\{\\begin{array}{l}2 x y=-y \\\\ x^{2}-y^{2}=x^{2}+y^{2}+x\\end{array}\\right.$\\\\\n$\\Leftrightarrow\\left\\{\\begin{array}{l}{\\left[\\begin{array}{l}y=0 \\\\ x=-\\frac{1}{2} \\\\ 2 y^{2}+x=0\\end{array}\\right.} \\\\ \\left\\{\\begin{array}{l}\\left\\{\\begin{array}{l}y=0 \\\\ x=0\\end{array}\\right. \\\\ x=-\\frac{1}{2} \\\\ 2 y^{2}-\\frac{1}{2}=0\\end{array} \\Leftrightarrow\\left[\\begin{array}{l}x=y=0\\end{array}\\right.\\right. \\\\ \\left\\{\\begin{array}{l}x=-\\frac{1}{2} \\\\ y= \\pm \\frac{1}{2}\\end{array}\\right.\\end{array}\\right.$\\\\\nDo đó có 3 số phức $z$ thỏa mãn bài toán.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0407033",
+        "question": "Trong các số phức $z$ thỏa mãn $\\left|z^{2}+1\\right|=2|z|$, gọi $z 1$ và $z 2$ lần lượt là các số phức có môđun lớn nhất và nhỏ nhất. Khi đó môđun lớn nhất của số phức $w=z_{1}+z_{2}$ là:\\\\",
+        "options": [
+            "A. $|w|=2 \\sqrt{2}$\\\\\n",
+            "B. $|w|=2$\\\\\n",
+            "C. $|w|=\\sqrt{2}$\\\\\n",
+            "D. $|w|=1+\\sqrt{2}$"
+        ],
+        "explain": "Ta có\n\n$$\n\n& \\left|z^{2}+1\\right|=2|z| \\Leftrightarrow\\left|z^{2}+1\\right|^{2}=4|z|^{2} \\Leftrightarrow\\left(z^{2}+1\\right)\\left(\\overline{z^{2}+1}\\right)=4 z \\bar{z} \\\\\n& \\Leftrightarrow\\left(z^{2}+1\\right)\\left(\\bar{z}^{2}+1\\right)=4 z \\bar{z} \\Leftrightarrow(z \\bar{z})^{2}+z^{2}+\\bar{z}^{2}+1-4 z \\bar{z}=0 \\\\\n& \\Leftrightarrow(z+\\bar{z})^{2}+(z \\bar{z})^{2}-6 z \\bar{z}+1=0 \\\\\n& \\Leftrightarrow(z+\\bar{z})^{2}+|z|^{4}-6|z|^{2}+1=0 \\\\\n& \\Leftrightarrow|z|^{4}-6|z|^{2}+1=-(z+\\bar{z})^{2} \\leq 0 \\\\\n& \\Leftrightarrow 3-2 \\sqrt{2} \\leq|z|^{2} \\leq 3+2 \\sqrt{2} \\\\\n& \\Leftrightarrow \\sqrt{2}-1 \\leq|z| \\leq \\sqrt{2}+1 \\Rightarrow\\left\\{\\begin{array}{l}\n\\left|z_{1}\\right|=\\sqrt{2}-1 \\\\\n\\left|z_{2}\\right|=\\sqrt{2}+1\n\\end{array}\\right.\n\n$$\n\n$$\n\\text { Dấu = xảy ra } \\Leftrightarrow\\left\\{\\begin{array} { l } \n{ | z _ { 1 } | = \\sqrt { 2 } - 1 } \\\\\n{ | z _ { 2 } | = \\sqrt { 2 } + 1 } \\\\\n{ z + \\overline { z } = 0 }\n\\end{array} \\Leftrightarrow \\left\\{\\begin{array}{l}\n{\\left[\\begin{array}{l}\nz_{1}=(\\sqrt{2}-1) i \\\\\nz_{1}=(1-\\sqrt{2}) i\n\\end{array}\\right.} \\\\\n{\\left[\\begin{array} { l } \n{ z _ { 2 } = ( \\sqrt { 2 } + 1 ) i } \\\\\n{ z _ { 2 } = ( - \\sqrt { 2 } - 1 ) i }\n\\end{array} \\Leftrightarrow \\left[\\begin{array}{l}\n|w|=\\left|z_{1}+z_{2}\\right|=2 \\sqrt{2} \\\\\n|w|=\\left|z_{1}+z_{2}\\right|=2\n\\end{array}\\right.\\right.}\n\\end{array}\\right.\\right.\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0407034",
+        "question": "Cho số phức $z=a+b i(a, b \\in \\mathbb{R}, a>0)$ thỏa mãn $|z-1+2 i|=5$ và $z \\cdot \\bar{z}=10$. Tính $P=a-b$\\\\",
+        "options": [
+            "A. $P=4$.\\\\\n",
+            "B. $P=-4$.\\\\\n",
+            "C. $P=-2$.\\\\\n",
+            "D. $P=2$."
+        ],
+        "explain": "Theo bài ra, ta có $\\left\\{\\begin{array}{l}|z-1+2 i|=5 \\\\ z . \\bar{z}=10\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}|(a-1)+(b+2) i|=5 \\\\ (a+b i)(a-b i)=10\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}(a-1)^{2}+(b+2)^{2}=25 \\\\ a^{2}+b^{2}=10\\end{array}\\right.\\right.\\right.$\\\\\n$\\Leftrightarrow\\left\\{\\begin{array}{l}a^{2}+b^{2}=10 \\\\ a^{2}+b^{2}-2 a+4 b=20\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}2 a-4 b=-10 \\\\ a^{2}+b^{2}=10\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}a=2 b-5 \\\\ a^{2}+b^{2}=10\\end{array}\\right.\\right.\\right.$\n\n\\\\\n$\\Rightarrow P=a-b=1-3=-2$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0407035",
+        "question": "Cho số phức $z$ thỏa mãn $|z-1-i|=1$, số phức $w$ thỏa mãn $|\\bar{w}-2-3 i|=2$. Tính giá trị nhỏ nhất của $|z-w|$.\\\\",
+        "options": [
+            "A. $\\sqrt{13}-3$.\\\\\n",
+            "B. $\\sqrt{17}-3$.\\\\\n",
+            "C. $\\sqrt{17}+3$.\\\\\n",
+            "D. $\\sqrt{13}+3$."
+        ],
+        "explain": "Theo bài ra, ta có\\\\\n$|z-1-i|=1 \\Rightarrow$ Tập hợp biểu diễn số phức $z$ là đường tròn $\\left(C_{1}\\right)$ có tâm $I_{1}(1 ; 1)$ và bán kính $R_{1}=1$.\\\\\n$|\\bar{w}-2-3 i|=2 \\Leftrightarrow|w-2+3 i|=2 \\Rightarrow$ Tập hợp biểu diễn số phức $w$ là đường tròn $\\left(C_{2}\\right)$ có tâm $I_{2}(2 ;-3)$ và bán kính $R_{2}=2$.\\\\\nDo $I_{1} I_{2}>R_{1}+R_{2}$ nên hai đường tròn không cắt nhau.\\\\\nKhi đó $|z-w|=M N \\Rightarrow|z-w|_{\\min }=M N_{\\min }=I_{1} I_{2}-\\left(R_{1}+R_{2}\\right)=\\sqrt{17}-3$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0501001",
+        "question": "Một khối chóp có đáy là đa giác $n$ cạnh. Trong các mệnh đề sau đây, mệnh đề nào đúng?\\\\",
+        "options": [
+            "A. Số mặt và số đỉnh bằng nhau\\\\\n",
+            "B. Số đỉnh của khối chóp bằng $n$\\\\\n",
+            "C. Số cạnh của khối chóp bằng $n+1$\\\\\n",
+            "D. Số mặt của khối chóp bằng $2 n$"
+        ],
+        "explain": "Khối chóp có đáy là đa giác $n$ cạnh thì có $n+1$ đỉnh (gồm đỉnh $S$ và $n$ đỉnh của đa giác đáy),\\\\\n$n+1$ mặt ( 1 mặt đáy và $n$ mặt bên) và $2 n$ cạnh ( $n$ cạnh bên và $n$ cạnh đáy)\\\\\nDo đó chỉ có ý A đúng.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0501002",
+        "question": "Mỗi đỉnh của hình đa diện là đỉnh chung của ít nhất:\\\\",
+        "options": [
+            "A. Năm mặt\\\\\n",
+            "B. Hai mặt\\\\\n",
+            "C. Ba mặt\\\\\n",
+            "D. Bốn mặt"
+        ],
+        "explain": "Mỗi đỉnh của hình đa diện là đỉnh chung của ít nhất 3 mặt (ví dụ các đỉnh của hình tứ diện)\\\\\nKhông tồn tại 1 đỉnh nào đó của đa diện nào đó là đỉnh chung của ít hơn 3 mặt\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0501003",
+        "question": "Hãy chọn cụm từ (hoặc từ) cho dưới đây để sau khi điền nó vào chỗ trống mệnh đề sau trở thành mệnh đề đúng: \"Số cạnh của một hình đa diện luôn. số đỉnh của hình đa diện ãy\"\\\\",
+        "options": [
+            "A. nhỏ hơn\\\\\n",
+            "B. nhỏ hơn hoặc bằng\\\\\n",
+            "C. lớn hơn\\\\\n",
+            "D. bằng"
+        ],
+        "explain": "Hình tứ diện có 6 cạnh và 4 mặt nên số cạnh của tứ diện lớn hơn số đỉnh của nó.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0501004",
+        "question": "Hãy chọn cụm từ (hoặc từ) cho dưới đây để sau khi điền nó vào chỗ trống mệnh đề sau trở thành mệnh đề đúng: \"Số cạnh của một hình đa diện luôn. .số mặt của hình đa diện ấy\"\\\\",
+        "options": [
+            "A. nhỏ hơn\\\\\n",
+            "B. nhỏ hơn hoặc bằng\\\\\n",
+            "C. bằng\\\\\n",
+            "D. lớn hơn"
+        ],
+        "explain": "Hình tứ diện có 6 cạnh và 4 đỉnh nên số cạnh của tứ diện lớn hơn số mặt của nó.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0501005",
+        "question": "Trong các mệnh đề sau, mệnh đề nào đúng?\\\\",
+        "options": [
+            "A. Tồn tại một hình đa diện có số cạnh bằng số đỉnh\\\\\n",
+            "B. Tồn tại một hình đa diện có số cạnh và mặt bằng nhau.\\\\\n",
+            "C. Số đỉnh và số mặt của một hình đa diện luôn bằng nhau\\\\\n",
+            "D. Tồn tại hình đa diện có số đỉnh và số mặt bằng nhau"
+        ],
+        "explain": "Hình đa diện luôn có số đỉnh và số mặt nhỏ hơn số cạnh\\\\\nKhông phải hình đa diện nào cũng có số đỉnh bằng số mặt, ví dụ hình lập phương có 8 đỉnh và 6 mặt\\\\\nHình tứ diện có số đỉnh bằng số mặt (bằng 4).\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0502006",
+        "question": "Phép đối xứng qua mặt phẳng biến một điểm thuộc mặt phẳng đó thành:\\\\",
+        "options": [
+            "A. không tồn tại ảnh của điểm đó qua phép đối xứng\\\\\n",
+            "B. một điểm nẳm ngoài mặt phẳng\\\\\n",
+            "C. một điểm bất kì thuộc mặt phẳng\\\\\n",
+            "D. một điểm trùng với nó."
+        ],
+        "explain": "Phép đối xứng qua mặt phẳng $(P)$ là phép biến hình biến mỗi điểm thuộc $(P)$ thành chính nó.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0502007",
+        "question": "Cho điểm $A \\in(P)$. Lấy đối xứng $A$ qua $(P)$ được ảnh là điểm $A^{\\prime}$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $A^{\\prime} \\notin(P)$\\\\\n",
+            "B. $A A^{\\prime}>0$\\\\\n",
+            "C. $A^{\\prime} \\equiv A$\\\\\n",
+            "D. $A^{\\prime} A / /(P)$"
+        ],
+        "explain": "Phép đối xứng qua mặt phẳng $(P)$ là phép biến hình biến mỗi điểm thuộc $(P)$ thành chính nó nên $A \\equiv A^{\\prime}$.",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0502008",
+        "question": "Phép đối xứng qua mặt phẳng $(P)$ biến điểm $M, N$ thành $M^{\\prime}, N^{\\prime}$ thì:\\\\",
+        "options": [
+            "A. $M N=M^{\\prime} N^{\\prime}$\\\\\n",
+            "B. $M M^{\\prime}=N N^{\\prime}$\\\\\n",
+            "C. $M M^{\\prime} \\equiv N N^{\\prime}$\\\\\n",
+            "D. $M N \\equiv M^{\\prime} N^{\\prime}$"
+        ],
+        "explain": "Phép đối xứng qua mặt phẳng bảo toàn khoảng cách giữa 2 điểm bất kì nên $M^{\\prime} N^{\\prime}=M N$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0502009",
+        "question": "Cho điểm $M^{\\prime}$ là ảnh của điểm $M \\notin(P)$ qua phép đối xứng qua mặt phẳng $(P)$. Khi đó:\\\\",
+        "options": [
+            "A. $(P) \\perp M M^{\\prime}$\\\\\n",
+            "B. $M M^{\\prime} \\subset(P)$\\\\\n",
+            "C. $M \\in(P)$\\\\\n",
+            "D. $M^{\\prime} \\in(P)$"
+        ],
+        "explain": "Phép đối xứng qua mặt phẳng $(P)$ là phép biến hình biến mỗi điểm thuộc $(P)$ thành chính nó và biến mỗi điểm $M$ không thuộc $(P)$ thành điểm $M^{\\prime}$ sao cho $(P)$ là mặt phẳng trung trực của $M M^{\\prime}$.\\\\\nDo đó $M M^{\\prime} \\perp(P)$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0502010",
+        "question": "Cho điểm $A \\in(P), B \\notin(P)$, gọi $B^{\\prime}$ là ảnh của $B$ qua phép đối xứng qua mặt phẳng $(P), A \\notin B B^{\\prime}$. Chọn kết luận đúng:\\\\",
+        "options": [
+            "A. $\\triangle A B B^{\\prime}$ đều\\\\\n",
+            "B. $\\triangle A B B^{\\prime}$ vuông\\\\\n",
+            "C. $\\triangle A B B^{\\prime}$ cân\\\\\n",
+            "D. $\\triangle A B B^{\\prime}$ vuông cân"
+        ],
+        "explain": "Vi $(P)$ là mặt phẳng trung trực của $B B^{\\prime}$ nên mọi điểm thuộc $(P)$ sẽ cách đều $B, B^{\\prime} \\Rightarrow A B=A B^{\\prime}$.\\\\\nDo đó $\\Delta A B B^{\\prime}$ cân tại $A$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0503011",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k \\neq 0$ biến điểm $M$ thành điểm $M^{\\prime}$. Chọn mệnh đề đúng:\\\\",
+        "options": [],
+        "explain": "Phép vị tự tâm $O$ tỉ số $k$ biến điểm $M$ thành $M^{\\prime}$ nếu $\\overrightarrow{O M^{\\prime}}=k \\overrightarrow{O M}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0503012",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k<0$ lần lượt biến điểm $M, N$ thành $M^{\\prime}, N^{\\prime}$, chọn mệnh đề sai:\\\\",
+        "options": [
+            "A. $\\overrightarrow{O M^{\\prime}}=k \\overrightarrow{O M}$\\\\\n",
+            "B. $\\overrightarrow{O N^{\\prime}}=k \\overrightarrow{O N}$\\\\\n",
+            "C. $\\overrightarrow{M^{\\prime} N^{\\prime}}=k \\cdot \\overrightarrow{M N}$\\\\\n",
+            "D. $M^{\\prime} N^{\\prime}=k \\cdot M N$"
+        ],
+        "explain": "Các đáp án $A, B, C$ đều đúng.\\\\\nĐáp án D sai vi $\\overrightarrow{M^{\\prime} N^{\\prime}}=k \\cdot \\overrightarrow{M N} \\Rightarrow M^{\\prime} N^{\\prime}=|k| M N \\Rightarrow M^{\\prime} N^{\\prime}=-k \\cdot M N(k<0)$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0503013",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k<0$ lần lượt biến điểm $M, N$ thành $M^{\\prime}, N^{\\prime}$, chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. $M N=k M^{\\prime} N^{\\prime}$\\\\\n",
+            "B. $M^{\\prime} N^{\\prime}=k M N$\\\\\n",
+            "C. $\\overrightarrow{M^{\\prime} N^{\\prime}}=-k \\overrightarrow{M N}$\\\\\n",
+            "D. $M^{\\prime} N^{\\prime}=-k . M N$"
+        ],
+        "explain": "Phép vị tự tâm $O$ biến $M, N$ thành $M^{\\prime}, N^{\\prime}$ nên $\\overrightarrow{M^{\\prime} N^{\\prime}}=k \\overrightarrow{M N}$ và $M^{\\prime} N^{\\prime}=|k| M N$ Do $k<0$ nên $M^{\\prime} N^{\\prime}=-k M N$.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0503014",
+        "question": "Chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. Phép vị tự là phép dời hình\\\\\n",
+            "B. Phép vị tự tỉ số $k=-1$ không là phép dời hình.\\\\\n",
+            "C. Phép vị tự tỉ số $k=1$ là phép dời hình\\\\\n",
+            "D. Phép vị tự tỉ số $k=0$ là phép dời hình."
+        ],
+        "explain": "Phép vị tự tỉ số $k \\neq \\pm 1$ làm thay đổi độ dài đoạn thẳng nên nó không phải phép dời hình nên A sai.\\\\\nPhép vị tự tỉ số $k=-1$ là phép đối xứng tâm nên nó là phép dời hình, B sai.\\\\\nKhông có phép vị tự tỉ số $k=0$ nên D sai.\\\\\nPhép vị tự tỉ số $k=1$ là phép đồng nhất nên nó là phép dời hình.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0503015",
+        "question": "Cho điểm $O$ cố định trong không gian. Chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. Không có phép vị tự tâm $O$ nào là phép dời hình.\\\\\n",
+            "B. Có duy nhất một phép vị tự tâm $O$ là phép dời hình\\\\\n",
+            "C. Có hai phép vị tự tâm $O$ là phép dời hình.\\\\\n",
+            "D. Có vô số phép vị tự tâm $O$ là phép dời hình."
+        ],
+        "explain": "Có 2 phép vị tự tâm $O$ là phép dời hình, đó là các phép vị tự tâm $O$ tỉ số vị tự bằng $\\pm 1$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0504016",
+        "question": "Cho khối chóp có thể tích $V$, diện tích đáy là $S$ và chiều cao $h$. Chọn công thức đúng:\\\\",
+        "options": [
+            "A. $V=S h$\\\\\n",
+            "B. $V=\\frac{1}{2} S h$\\\\\n",
+            "C. $V=\\frac{1}{3} S h$\\\\\n",
+            "D. $V=\\frac{1}{6} S h$"
+        ],
+        "explain": "Công thức tính thể tích khối chóp $V=\\frac{1}{3} S h$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0504017",
+        "question": "Phép vị tự tỉ số $k>0$ biến khối chóp có thể tích $V$ thành khối chóp có thể tích $V^{\\prime}$. Khi đó:\\\\",
+        "options": [
+            "A. $\\frac{V}{V^{\\prime}}=k$\\\\\n",
+            "B. $\\frac{V^{\\prime}}{V}=k^{2}$\\\\\n",
+            "C. $\\frac{V}{V^{\\prime}}=k^{3}$\\\\\n",
+            "D. $\\frac{V^{\\prime}}{V}=k^{3}$"
+        ],
+        "explain": "Phép vị tự tỉ số $k>0$ biến khối chóp có thể tích $V$ thành khối chóp có thể tích $V^{\\prime}$. Khi đó $\\frac{V^{\\prime}}{V}=k^{3}$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0504018",
+        "question": "Cho khối chóp tam giác $S . A B C$, trên các cạnh $S A, S B, S C$ lần lượt lấy các điểm $A^{\\prime}, B^{\\prime}, C^{\\prime}$. Khi đó:\\\\",
+        "options": [
+            "A. $\\frac{V_{S . A^{\\prime} B^{\\prime} C^{\\prime}}}{V_{S . A B C}}=\\frac{S A^{\\prime}}{S A}+\\frac{S B^{\\prime}}{S B}+\\frac{S C^{\\prime}}{S C}$\\\\\n",
+            "B. $\\frac{V_{S . A B C}}{V_{S . A^{\\prime} B^{\\prime} C^{\\prime}}}=\\frac{S A^{\\prime}}{S A} \\cdot \\frac{S B^{\\prime}}{S B} \\cdot \\frac{S C^{\\prime}}{S C}$\\\\\n",
+            "C. $\\frac{V_{S . A^{\\prime} B^{\\prime} C^{\\prime}}}{V_{S . A B C}}=\\frac{S A^{\\prime}}{S A}=\\frac{S B^{\\prime}}{S B}=\\frac{S C^{\\prime}}{S C}$\\\\\n",
+            "D. $\\frac{V_{S . A^{\\prime} B^{\\prime} C^{\\prime}}}{V_{S . A B C}}=\\frac{S A^{\\prime}}{S A} \\cdot \\frac{S B^{\\prime}}{S B} \\cdot \\frac{S C^{\\prime}}{S C}$"
+        ],
+        "explain": "Nếu $A^{\\prime}, B^{\\prime}, C^{\\prime}$ là ba điểm lần lượt nằm trên các cạnh $S A, S B, S C$ của hình chóp tam giác $S . A B C$. Khi đó: $\\frac{V_{S . A^{\\prime} B \\prime C^{\\prime}}}{V_{S . A B C}}=\\frac{S A^{\\prime}}{S A} \\cdot \\frac{S B^{\\prime}}{S B} \\cdot \\frac{S C^{\\prime}}{S C}$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0504019",
+        "question": "Đáy của hình chóp $S$. $A B C D$ là một hình vuông cạnh $a$. Cạnh bên $S A$ vuông góc với mặt đáy và có độ dài là $a$. Thể tích khối tứ diện $S . B C D$ bằng:\\\\",
+        "options": [
+            "A. $\\frac{a^{3}}{6}$\\\\\n",
+            "B. $\\frac{a^{3}}{3}$\\\\\n",
+            "C. $\\frac{a^{3}}{4}$\\\\\n",
+            "D. $\\frac{a^{3}}{8}$"
+        ],
+        "explain": "Ta có: $S_{\\triangle B C D}=\\frac{1}{2} S_{A B C D}=\\frac{1}{2} a^{2}$\\\\\n$V_{S . B C D}=\\frac{1}{3} S A \\cdot S_{B C D}=\\frac{1}{3} a \\cdot \\frac{1}{2} a^{2}=\\frac{a^{3}}{6}$\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0504020",
+        "question": "Cho hình chóp $S$. $A B C D$ có $A B C D$ là hình thang vuông tại $A$ và $D$ thỏa mãn $S A \\perp(A B C D)$ và $A B=2 A D=2 C D=2 a=\\sqrt{2} S A$. Thể tích khối chóp $S . B C D$ là:\\\\",
+        "options": [
+            "A. $\\frac{2 a^{3} \\sqrt{2}}{3}$\\\\\n",
+            "B. $\\frac{a^{3} \\sqrt{2}}{6}$\\\\\n",
+            "C. $\\frac{2 a^{3}}{3}$\\\\\n",
+            "D. $\\frac{a^{3} \\sqrt{2}}{12}$"
+        ],
+        "explain": "Ta có: $S_{A B C D}=\\frac{1}{2}(A B+C D) \\cdot A D=\\frac{1}{2}(2 a+a) a=\\frac{3 a^{2}}{2}$\\\\\n$S_{\\triangle A B D}=\\frac{1}{2} A D \\cdot A B=\\frac{1}{2} a \\cdot 2 a=a^{2}$\\\\\n$\\Rightarrow S_{B C D}=S_{A B C D}-S_{A B D}=\\frac{3 a^{2}}{2}-a^{2}=\\frac{a^{2}}{2}$\\\\\n$S A=\\frac{2 a}{\\sqrt{2}}=a \\sqrt{2}$\\\\\n$\\Rightarrow V_{S . B C D}=\\frac{1}{3} S A \\cdot S_{B C D}=\\frac{1}{3} a \\sqrt{2} \\cdot \\frac{a^{2}}{2}=\\frac{a^{3} \\sqrt{2}}{6}$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0505021",
+        "question": "Công thức tính thể tích lăng trụ có diện tích đáy $S$ và chiều cao $h$ là:\\\\",
+        "options": [
+            "A. $V=\\frac{1}{3} S h$\\\\\n",
+            "B. $V=\\frac{1}{2} S h$\\\\\n",
+            "C. $V=\\frac{1}{6} S h$\\\\\n",
+            "D. $V=S h$"
+        ],
+        "explain": "Công thức tính thể tích lăng trụ có diện tích đáy $S$ và chiều cao $h$ là $V=S h$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0505022",
+        "question": "Cho khối lăng trụ có chiều cao $h=5$ và diện tích đáy $S=6$. Thể tích của khối lăng trụ đã cho là:\\\\",
+        "options": [
+            "A. 15\\\\\n",
+            "B. 30\\\\\n",
+            "C. 11\\\\\n",
+            "D. 10"
+        ],
+        "explain": "Thể tích của khối lăng trụ đã cho là: $V=S h=6.5=30$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0505023",
+        "question": "Cho khối lăng trụ có diện tích đáy $B=6$ và chiều cao $h=2$. Thể tích của khối lăng trụ đã cho bằng:\\\\",
+        "options": [
+            "A. 12\\\\\n",
+            "B. 8\\\\\n",
+            "C. 72\\\\\n",
+            "D. 24"
+        ],
+        "explain": "Thể tích của khối lăng trụ đã cho là: $V=B h=6.2=12$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0505024",
+        "question": "Thể tích khối hộp chữ nhật có diện tích đáy $S$ và độ dài cạnh bên $a$ là:\\\\",
+        "options": [
+            "A. $V=S . a$\\\\\n",
+            "B. $V=S^{2} a$\\\\\n",
+            "C. $V=\\frac{1}{3} S a$\\\\\n",
+            "D. $V=\\frac{S^{2}}{a}$"
+        ],
+        "explain": "Hình hộp chữ nhật có cạnh bên vuông góc với đáy nên cạnh bên chính là đường cao.\\\\\nVi hình hộp chữ nhật cũng là hình lăng trụ nên thể tích của khối hộp cũng được tính bởi công thức $V=S h$,\\\\\nhay $V=S a$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0505025",
+        "question": "Đề thi THPT QG - 2021 lần 1- mã 104\\\\\nThể tích của khối lập phương cạnh $2 a$ bằng:\\\\",
+        "options": [
+            "A. $a^{3}$\\\\\n",
+            "B. $2 a^{3}$\\\\\n",
+            "C. $8 a^{3}$\\\\\n",
+            "D. $4 a^{3}$"
+        ],
+        "explain": "Thể tích khối lập phương cạnh $2 a$ là: $V=(2 a)^{3}=8 a^{3}$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0506026",
+        "question": "Cho tứ diện $A B C D$ và $G$ là trọng tâm tam giác $A C D$. Mặt phẳng $(P)$ qua $B G$ và song song với $C D$ chia khối tứ diện thành hai phần. Tính tỉ số thể tích (số bé chia số lớn) của hai phần đó là:\\\\",
+        "options": [
+            "A. $\\frac{1}{8}$\\\\\n",
+            "B. $\\frac{4}{9}$\\\\\n",
+            "C. $\\frac{2}{3}$\\\\\n",
+            "D. $\\frac{4}{5}$"
+        ],
+        "explain": "Gọi $H$ là trung điểm của $CD$. Ta có $G$ là trọng tâm tam giác $ACD \\Rightarrow \\frac{AG}{AH} = \\frac{2}{3}$.\n\nTrong mặt phẳng $ACD$, qua $G$ kẻ đường thẳng song song với $CD$, cắt $AC$ tại $M$ và cắt $AD$ tại $N$.\n\nKhi đó ta có mặt phẳng $(P)$ là mặt phẳng $(BMN)$.\n\nMặt phẳng $(BMN)$ chia tứ diện $ABCD$ thành hai phần là $ABMN$ có thể tích $V_{1}$ và $BMNDC$ có thể tích $V_{2}$.\n\n\\[\n\\Rightarrow V = V_{ABCD} = V_{1} + V_{2}.\n\\]\n\nTa có $\\mathrm{MN} \\parallel \\mathrm{CD}$ theo cách dựng, do đó theo định lý Ta-lét:\n\n\\[\n\\frac{AM}{AC} = \\frac{AN}{AD} = \\frac{AG}{AH} = \\frac{2}{3}.\n\\]\n\nVì mặt phẳng $(BMN)$ song song với $CD$, tỉ số chiều cao từ $B$ đến các đáy $ABMN$ và $ABCD$ cũng là $\\frac{2}{3}$.\n\nDo đó, thể tích tứ diện $ABMN$ so với thể tích tứ diện $ABCD$ là:\n\n\\[\n\\frac{V_{1}}{V} = \\left(\\frac{2}{3}\\right)^3 = \\frac{8}{27}.\n\\]\n\nVậy thể tích của phần còn lại $BMNDC$ sẽ là:\n\n\\[\n\\frac{V_{2}}{V} = 1 - \\frac{8}{27} = \\frac{19}{27}.\n\\]\n\nTỉ số thể tích (số bé chia số lớn) của hai phần là:\n\n\\[\n\\frac{V_{1}}{V_{2}} = \\frac{\\frac{8}{27}}{\\frac{19}{27}} = \\frac{8}{19}.\n\\]",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0506028",
+        "question": "Cho hình chóp $S$. $A B C$ có $A B=5 \\mathrm{~cm}, B C=6 \\mathrm{~cm}, C A=7 \\mathrm{~cm}$. Hình chiếu vuông góc của $S$ xuống mặt phẳng $(A B C)$ nằm bên trong tam giác $A B C$. Các mặt phẳng $(S A B),(S B C),(S C A)$ đều tạo với đáy một góc $60^{\\circ}$. Gọi $A D, B E, C F$ là các đường phân giác của tam giác $A B C$ với $D \\in B C, E \\in A C, F \\in A B$. Thể tích $S . D E F$ gần nhất với số nào sau đây?\\\\",
+        "options": [
+            "A. $2,9 \\mathrm{~cm}^{3}$.\\\\\n",
+            "B. $4,1 \\mathrm{~cm}^{3}$.\\\\\n",
+            "C. $3,7 \\mathrm{~cm}^{3}$.\\\\\n",
+            "D. $3,4 \\mathrm{~cm}^{3}$."
+        ],
+        "explain": "Vì các mặt phẳng $(SAB), (SBC), (SCA)$ đều tạo với đáy một góc $60^\\circ$ và hình chiếu vuông góc của $S$ xuống mặt phẳng $(ABC)$ nằm bên trong tam giác $ABC$, nên ta có hình chiếu của $S$ xuống mặt phẳng $(ABC)$ là tâm đường tròn nội tiếp $I$ của tam giác $ABC$.\\\\\nGọi $p$ là nửa chu vi tam giác $ABC$, ta có:\n\\[\np = \\frac{5 + 6 + 7}{2} = 9.\n\\]\nDiện tích tam giác $ABC$ là:\n\\[\nS_{ABC} = \\sqrt{9(9-5)(9-6)(9-7)} = 6\\sqrt{6}.\n\\]\nBán kính $r$ của đường tròn nội tiếp tam giác $ABC$ là:\n\\[\nr = \\frac{S}{p} = \\frac{6\\sqrt{6}}{9} = \\frac{2\\sqrt{6}}{3}.\n\\]\nChiều cao của hình chóp là:\n\\[\nh = r \\cdot \\tan 60^\\circ = 2\\sqrt{2}.\n\\]\n\nKí hiệu $BC = a, AC = b, AB = c$. Ta có:\\\\\nVì $BE$ là phân giác của góc $B$, nên:\n\\[\n\\frac{AE}{CE} = \\frac{BA}{BC}.\n\\]\nTương tự, $\\frac{FA}{FB} = \\frac{CA}{CB}$ và $\\frac{DB}{DC} = \\frac{AB}{AC}$.\\\\\n\nKhi đó:\n\\[\n\\frac{S_{AEF}}{S_{ABC}} = \\frac{AE}{AC} \\cdot \\frac{AF}{AB} = \\frac{AB}{AB + BC} \\cdot \\frac{AC}{AC + BC}.\n\\]\nTương tự:\n\\[\n\\frac{S_{CED}}{S_{ABC}} = \\frac{CA}{CA + AB} \\cdot \\frac{CB}{CB + AB},\n\\]\nvà:\n\\[\n\\frac{S_{BFD}}{S_{ABC}} = \\frac{BC}{BC + CA} \\cdot \\frac{BA}{BA + CA}.\n\\]\n\nTổng ba phần diện tích trên là diện tích của tam giác $DEF$.\\\\\n\nTừ các phần diện tích đã tính, thể tích của khối chóp $S . DEF$ là:\n\\[\nV_{S . DEF} = \\frac{1}{3} S_{DEF} \\cdot h.\n\\]\nSau khi tính toán, thể tích gần đúng của khối chóp $S . DEF$ là khoảng $3,7 \\ \\mathrm{cm}^3$.",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0506029",
+        "question": "Khối chóp $S$. $A B C D$ có đáy là hình thoi cạnh $a, S A=S B=S C=a$, cạnh $S D$ thay đổi. Thể tích khối chóp $S . A B C D$ lớn nhất khi độ dài cạnh $S D$ là:\\\\",
+        "options": [
+            "A. $a$\\\\\n",
+            "B. $\\frac{a \\sqrt{3}}{2}$.\\\\\n",
+            "C. $\\frac{a \\sqrt{6}}{2}$.\\\\\n",
+            "D. $\\frac{2 a}{3}$."
+        ],
+        "explain": "Khối chóp $S . ABCD$ có đáy là hình thoi cạnh $a$, $SA = SB = SC = a$.\n\n\\[\n\\Rightarrow \\text{Khối chóp} \\ S . ABC \\ \\text{có} \\ SA = SB = SC = AB = BC = a \\ \\text{và có thể tích bằng} \\ \\frac{1}{2} \\ \\text{thể tích khối chóp} \\ S . ABCD.\n\\]\n\nNhư vậy, để thể tích khối chóp $S . ABCD$ lớn nhất thì thể tích khối chóp $S . ABC$ phải lớn nhất khi $SD$ thay đổi. Gọi $H$ là trung điểm của $SB$.\n\nTa có $\\triangle SAB$ và $\\triangle SBC$ là hai tam giác đều, cạnh $a \\Rightarrow AH = CH = \\frac{a\\sqrt{3}}{2}$.\n\nVà $AH \\perp SB$, $CH \\perp SB \\Rightarrow SB \\perp (AHC) \\Rightarrow BH \\perp (AHC)$.\n\nDo đó:\n\\[\nV_{S . ABC} = 2V_{B . AHC} = 2 \\cdot \\frac{1}{3} BH \\cdot S_{AHC} = 2 \\cdot \\frac{1}{3} \\cdot \\frac{1}{2} SB \\cdot S_{AHC} = \\frac{1}{3} a \\cdot S_{AHC}.\n\\]\n\nMặt khác:\n\\[\nS_{AHC} = \\frac{1}{2} \\cdot AH \\cdot CH \\cdot \\sin \\widehat{AHC} = \\frac{1}{2} \\cdot \\left(\\frac{a\\sqrt{3}}{2}\\right)^2 \\cdot \\sin \\widehat{AHC}.\n\\]\n\nVậy:\n\\[\nV_{S . ABC} \\ \\text{lớn nhất khi và chỉ khi} \\ \\widehat{AHC} = 90^\\circ \\Rightarrow AH \\perp HC \\Rightarrow \\triangle AHC \\ \\text{vuông cân tại} \\ H.\n\\]\n\nKhi đó, ta có $SD$ đạt giá trị lớn nhất khi $\\widehat{AHC} = 90^\\circ$, và từ cấu trúc hình học của khối chóp, ta suy ra độ dài cạnh $SD$ đạt giá trị lớn nhất là:\n\n\\[\nSD = \\frac{a\\sqrt{6}}{2}.\n\\]",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0506030",
+        "question": "Cho khối lăng trụ $A B C \\cdot A^{\\prime} B^{\\prime} C^{\\prime}$, khoảng cách từ $C$ đến đường thẳng $B B^{\\prime}$ bằng $\\sqrt{5}$, khoảng cách từ $A$ đến các đường thẳng $B B^{\\prime}$ và $C C^{\\prime}$ lần lượt bằng 1 và 2 , hình chiếu vuông góc của $A$ lên mặt phẳng $\\left(A^{\\prime} B^{\\prime} C^{\\prime}\\right)$ là trung điểm $M$ của $B^{\\prime} C^{\\prime}$ và $A^{\\prime} M=\\sqrt{5}$. Thể tích của khối lăng trụ đã cho bằng:\\\\",
+        "options": [
+            "A. $\\frac{2 \\sqrt{5}}{3}$\\\\\n",
+            "B. $\\frac{2 \\sqrt{15}}{3}$\\\\\n",
+            "C. $\\sqrt{5}$\\\\\n",
+            "D. $\\frac{\\sqrt{15}}{3}$"
+        ],
+        "explain": "Qua $M$ dựng mặt phẳng $(P)$ vuông góc với $A A'$ cắt các cạnh $A A'$, $B B'$, $C C'$ lần lượt tại $N, E, F$.\\\\\nTa có:\n\\[\n\\left\\{\n\\begin{array}{l}\nA A' \\perp NE \\Rightarrow NE = d(E, A A') = d(N, BB') = d(A, BB') = 1. \\\\\nA A' \\perp NF \\Rightarrow NF = d(F, A A') = d(N, CC') = d(A, CC') = 2. \\\\\nA A' \\perp (P) \\Rightarrow CC' \\perp (P) \\Rightarrow CC' \\perp EF \\Rightarrow EF = d(E, CC') = d(F, BB') = d(C, BB') = \\sqrt{5}.\n\\end{array}\n\\right.\n\\]\nCó: \n\\[\nNE^2 + NF^2 = EF^2 \\Rightarrow \\triangle NEF \\ \\text{vuông tại} \\ N \\ (\\text{theo định lý Pi-ta-go đảo}).\n\\]\nMà: \n\\[\n\\frac{ME}{MF} = \\frac{MB'}{MC'} = 1 \\Rightarrow ME = MF \\ \\text{(định lý Ta-lét)} \\Rightarrow M \\ \\text{là trung điểm của} \\ EF.\n\\]\n$\\Rightarrow MN = \\frac{1}{2} EF = \\frac{\\sqrt{5}}{2}$.\\\\\nXét tam giác $AA'M$ vuông tại $M$ ta có:\n\\[\n\\frac{1}{MN^2} = \\frac{1}{AM^2} + \\frac{1}{A'M^2} \\Rightarrow \\frac{4}{5} = \\frac{1}{AM^2} + \\frac{1}{5} \\Rightarrow AM = \\frac{\\sqrt{15}}{3}.\n\\]\n\nTa có: \n\\[\n\\left\\{\n\\begin{array}{l}\n(P) \\perp A A' \\\\\n\\left(A'B'C'\\right) \\perp AM\n\\end{array}\n\\right. \n\\Rightarrow \\text{góc giữa} \\ (P) \\ \\text{và} \\ (A'B'C') \\ \\text{là} \\ \\widehat{A'MA}.\n\\]\n\nVậy thể tích của khối lăng trụ đã cho là:\n\\[\nV = \\frac{2\\sqrt{15}}{3}.\n\\]",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0507031",
+        "question": "Vận dụng cao\\\\\nCho khối chóp tứ giác $S$. $A B C D$. Mặt phẳng đi qua trọng tâm các tam giác $S A B, S A C, S A D$ chia khối chóp này thành hai phần có thể tích là $V_{1}$ và $V_{2} \\quad\\left(V_{1}<V_{2}\\right)$. Tính tỉ lệ $\\frac{V_{1}}{V_{2}}$.\\\\",
+        "options": [
+            "A. $\\frac{8}{27}$\\\\\n",
+            "B. $\\frac{16}{81}$\\\\\n",
+            "C. $\\frac{8}{19}$\\\\\n",
+            "D. $\\frac{16}{75}$"
+        ],
+        "explain": "Gọi $G_{1}, G_{2}, G_{3}$ lần lượt là trọng tâm các tam giác $\\mathrm{SAB}$, $\\mathrm{SAC}$ và $\\mathrm{SAD}$.\\\\\nGọi $E, F, G$ lần lượt là trung điểm của $AB$, $AC$ và $AD$. Ta có:\n$$\n\\frac{SG_{1}}{SE} = \\frac{SG_{2}}{SF} = \\frac{SG_{3}}{SG} = \\frac{2}{3} \\Rightarrow G_{1} G_{2} \\parallel EF, G_{2} G_{3} \\parallel FG \\Rightarrow \\left(G_{1} G_{2} G_{3}\\right) \\parallel (EFG)\n$$\nHay $\\left(G_{1} G_{2} G_{3}\\right) \\parallel (ABC)$.\\\\\n\nQua $G_{1}$, kẻ $MN \\parallel AB$ $(M \\in SA, N \\in SB)$.\\\\\nQua $G_{3}$, kẻ $MQ \\parallel AD$ $(Q \\in SD)$.\\\\\nQua $N$, kẻ $NP \\parallel BC$ $(P \\in SC)$.\\\\\nDo đó, thiết diện của khối chóp cắt bởi mặt phẳng $\\left(G_{1} G_{2} G_{3}\\right)$ là tứ giác $MNPQ$, chia khối chóp thành hai phần:\\\\\nKhối chóp $S . MNPQ$ và khối chóp $MNPQ . ABCD$.\\\\\n\nÁp dụng định lý Talet, ta tính được:\n$$\n\\frac{SM}{SA} = \\frac{SN}{SB} = \\frac{SP}{SC} = \\frac{SQ}{SD} = \\frac{2}{3}\n$$\nDo đó:\n$$\n\\frac{V_{S . MNPQ}}{V_{S . ABCD}} = \\frac{SM}{SA} \\cdot \\frac{SN}{SB} \\cdot \\frac{SP}{SC} = \\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{8}{27}\n$$\n\nVậy, thể tích của khối chóp $S . MNPQ$ là:\n$$\nV_{S . MNPQ} = \\frac{8}{27} V_{S . ABCD}\n$$\n\nTừ đó, tỉ lệ giữa hai phần thể tích là:\n$$\n\\frac{V_{1}}{V_{2}} = \\frac{8}{27}\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0507033",
+        "question": "Xét khối tứ diện $A B C D$ có cạnh $A D, B C$ thỏa mãn $A B^{2}+C D^{2}=18$ và các cạnh còn lại đều bằng 5 . Biết thể tích của khối tứ diện $A B C D$ đạt giá trị lớn nhất có dạng $V_{\\max }=\\frac{x \\sqrt{y}}{4} ; x, y \\in N^{*} ;(x ; y)=1$. Khi đó, $x, y$ thỏa mãn bất đẳng thức nào dưới đây?\\\\",
+        "options": [
+            "A. $x+y^{2}-x y>4550$.\\\\\n",
+            "B. $x y+2 x+y>2550$.\\\\\n",
+            "C. $x^{2}-x y+y^{2}<5240$\\\\\n",
+            "D. $x^{3}-y>19602$."
+        ],
+        "explain": "Gọi $I, J$ lần lượt là trung điểm của $CD$ và $AB$. Độ dài các đoạn $AB = a, CD = b$, với $a, b > 0$ và $a^{2} + b^{2} = 18$. Tam giác $ACD$ và tam giác $BCD$ cân tại $A$ và $B$.\n\n$$\n\\Rightarrow AI \\perp CD, BI \\perp CD \\Rightarrow CD \\perp (ABI)\n$$\n\n$$\n\\Rightarrow V_{ABCD} = V_{D \\cdot ABI} + V_{C \\cdot ABI} = \\frac{1}{3} \\cdot DI \\cdot S_{ABI} + \\frac{1}{3} \\cdot IC \\cdot S_{ABI} = \\frac{1}{3} \\cdot CD \\cdot S_{ABI} \\quad (*)\n$$\n\nXét tam giác $AID$ vuông tại $I$:\n\n$$\nAI = \\sqrt{AD^{2} - ID^{2}} = \\sqrt{5^{2} - \\left(\\frac{b}{2}\\right)^{2}} = \\sqrt{25 - \\frac{b^{2}}{4}}\n$$\n\nDễ dàng chứng minh $\\triangle ACD = \\triangle BCD$ (theo trường hợp cạnh - góc - cạnh), do đó $IA = IB$ (chiều cao tương ứng bằng nhau).\\\\\n$\\Rightarrow \\triangle IAB$ cân tại $I$, do đó $IJ \\perp AB$.\\\\\nXét tam giác $AIJ$ vuông tại $J$:\n\n$$\nIJ = \\sqrt{AI^{2} - AJ^{2}} = \\sqrt{25 - \\frac{b^{2}}{4} - \\frac{a^{2}}{4}} = \\sqrt{25 - \\frac{b^{2} + a^{2}}{4}} = \\sqrt{25 - \\frac{18}{4}} = \\frac{\\sqrt{82}}{2}\n$$\n\nDo đó, thể tích của khối tứ diện $ABCD$ lớn nhất có dạng:\n\n$$\nV_{\\max} = \\frac{x \\sqrt{y}}{4}\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0507034",
+        "question": "Vận dụng cao\\\\\nCho hình hộp đứng $A B C D \\cdot A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ có đáy $A B C D$ là hình thoi cạnh $a$ và $\\widehat{B A D}=60^{\\circ}, A B^{\\prime}$ hợp với đáy $(A B C D)$ một góc $30^{\\circ}$. Thể tích của khối hộp là\\\\",
+        "options": [
+            "A. $\\frac{a^{3}}{2}$.\\\\\n",
+            "B. $\\frac{a^{3}}{6}$.\\\\\n",
+            "C. $\\frac{a^{3} \\sqrt{2}}{6}$.\\\\\n",
+            "D. $\\frac{3 a^{3}}{2}$."
+        ],
+        "explain": "$A B C D \\cdot A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}$ là hình hộp đứng\\\\\n$\\Rightarrow B B^{\\prime} \\perp(A B C D) \\Rightarrow\\left(A B^{\\prime}, \\widehat{(A B C D)}\\right)=\\left(\\widehat{A B^{\\prime} ; A} B\\right)=\\widehat{B A B^{\\prime}}=30^{0}$\\\\\nTam giác $A B B^{\\prime}$ vuông tại $B \\Rightarrow \\tan \\widehat{B A B^{\\prime}}=\\frac{B B^{\\prime}}{A B}$\\\\\n$\\Rightarrow B B^{\\prime}=A B \\cdot \\tan 30^{\\circ}=\\frac{a}{\\sqrt{3}}$\\\\\nTam giác $A B D$ có: $A B=A D=a, \\widehat{B A D}=60^{\\circ} \\Rightarrow$ Tam giác $A B D$ đều, có cạnh đều bằng $a$.\\\\\n$\\Rightarrow S_{A B D}=\\frac{a^{2} \\sqrt{3}}{4} \\Rightarrow S_{A B C D}=2 S_{A B D}=2 \\cdot \\frac{a^{2} \\sqrt{3}}{4}=\\frac{a^{2} \\sqrt{3}}{2}$\\\\\nThể tích khối hộp $A B C D \\cdot A^{\\prime} B^{\\prime} C^{\\prime} D^{\\prime}: V=S_{A B C D} \\cdot B B^{\\prime}=\\frac{a^{2} \\sqrt{3}}{2} \\cdot \\frac{a}{\\sqrt{3}}=\\frac{a^{3}}{2}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0507035",
+        "question": "Vận dụng cao\\\\\nCho khối chóp $S$. $A B C$ có điểm $M$ và $N$ lần lượt nằm trên các cạnh $S A$ và $S B$ sao cho $\\frac{S M}{S A}=\\frac{1}{3}, \\frac{S N}{S B}=\\frac{2}{3}$. Mặt phẳng $(\\alpha)$ qua hai điểm $M, N$ và song song $S C$ chia khối chóp thành 2 khối đa diện. Tính tỉ số thể tích của khối đa diện có thể tích lớn hơn so với thể tích khối chóp $S . A B C$.\\\\",
+        "options": [
+            "A. $\\frac{5}{9}$.\\\\\n",
+            "B. $\\frac{3}{5}$.\\\\\n",
+            "C. $\\frac{2}{3}$.\\\\\n",
+            "D. $\\frac{3}{4}$."
+        ],
+        "explain": "Trong mặt phẳng $(SBC)$: kẻ $NI \\parallel SC, I \\in BC$.\\\\\nTrong mặt phẳng $(SAC)$: kẻ $MJ \\parallel SC, J \\in AC$.\\\\\n$\\Rightarrow$ Thiết diện của hình chóp cắt bởi $(\\alpha)$ là tứ giác $MNJI$.\\\\\nTa tính tỉ số thể tích của khối đa diện $MNBJI$ với khối chóp $S . ABC$:\\\\\nTa có:\n\n$$\n\\frac{V_{MNJI}}{V_{S . ABC}} = \\frac{\\frac{1}{3} \\cdot d(N,(SAC)) \\cdot S_{AMJ}}{\\frac{1}{3} \\cdot d(B,(SAC)) \\cdot S_{SAC}} = \\frac{d(N,(SAC))}{d(B,(SAC))} \\cdot \\frac{S_{AMJ}}{S_{SAC}}\n$$\n\nTa tiếp tục tính toán:\n\n$$\n\\frac{d(N,(SAC))}{d(B,(SAC))} = \\frac{SN}{SB} = \\frac{2}{3}\n$$\n\n$$\n\\frac{S_{AMJ}}{S_{SAC}} = \\frac{AM}{SA} \\cdot \\frac{AJ}{AC} = \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{4}{9}\n$$\n\nVậy:\n\n$$\n\\frac{V_{MNJI}}{V_{S . ABC}} = \\frac{2}{3} \\cdot \\frac{4}{9} = \\frac{8}{27}\n$$\n\nDo đó, thể tích của khối đa diện $MNJI$ là:\n\n$$\nV_{MNJI} = \\frac{8}{27} V_{S . ABC}\n$$\n\nTiếp theo, ta tính tỉ số thể tích của khối còn lại:\n\n\\begin{equation*}\n\\frac{V_{NBJI}}{V_{S . ABC}} = \\frac{\\frac{1}{3} \\cdot d(N,(ABC)) \\cdot S_{ABIJ}}{\\frac{1}{3} \\cdot d(S,(ABC)) \\cdot S_{ABC}} = \\frac{d(N,(ABC))}{d(S,(ABC))} \\cdot \\frac{S_{ABIJ}}{S_{ABC}} = \\frac{NB}{SB} \\cdot \\frac{S_{ABIJ}}{S_{ABC}} = \\frac{1}{3} \\cdot \\frac{7}{9} = \\frac{7}{27}\n\\end{equation*}\n\nTừ đó, tỉ số thể tích của khối đa diện có thể tích lớn hơn so với khối chóp $S . ABC$ là:\n\n$$\n\\frac{V_{MNJI} + V_{NBJI}}{V_{S . ABC}} = \\frac{8}{27} + \\frac{7}{27} = \\frac{15}{27} = \\frac{5}{9}\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0508036",
+        "question": "Bát diện đều có mã́y đỉnh ?\\\\",
+        "options": [
+            "A. 6\\\\\n",
+            "B. 8\\\\\n",
+            "C. 10\\\\\n",
+            "D. 12"
+        ],
+        "explain": "Hình bát diện đều có 6 đỉnh."
+    },
+    {
+        "id": "T0508037",
+        "question": "Cho khối chóp $S . A B C$ có đáy $A B C$ là tam giác đều cạnh $a, S A \\perp(A B C)$ và $S A=a$. Tính thể tích khối chóp S. $A B C$.\n\n$$\n\n& \\text {",
+        "options": [
+            "A. } V_{S . A B C}=\\frac{a^{3} \\sqrt{3}}{6} \\\\\n& \\text { ",
+            "B. } V_{S . A B C}=\\frac{a^{3} \\sqrt{3}}{4} \\\\\n& \\text { ",
+            "C. } V_{S . A B C}=\\frac{a^{3} \\sqrt{3}}{12} \\\\\n& \\text { ",
+            "D. } V_{S . A B C}=\\frac{a^{3} \\sqrt{3}}{3}\n\n$$"
+        ],
+        "explain": "Ta có $S A=a, \\mathrm{~S}_{\\triangle A B C}=\\frac{a^{2} \\sqrt{3}}{4}$. Suy ra thể tích $V_{S . A B C}=\\frac{1}{3} S A . S_{\\triangle A B C}=\\frac{a^{3} \\sqrt{3}}{12}$."
+    },
+    {
+        "id": "T0508038",
+        "question": "Cho hình chóp $S$. $A B C$ có đáy $A B C$ là tam giác vuông tại $C, A B=a \\sqrt{5}, A C=a$. Cạnh bên $S A=3 a$ và vuông góc với mặt phẳng đáy. Thể tích của khối chóp $S . A B C$ bằng\\\\",
+        "options": [
+            "A. $\\frac{\\sqrt{5}}{2} a^{3}$.\\\\\n",
+            "B. $3 a^{3}$.\\\\\n",
+            "C. $a^{3}$.\\\\\n",
+            "D. $2 a^{3}$."
+        ],
+        "explain": "Vi $\\triangle A B C$ vuông nên áp dụng pitago.\n\n$$\nC B=\\sqrt{A B^{2}-A C^{2}}=\\sqrt{5 a^{2}-a^{2}}=2 a \\ldots\n$$\n\nDiện tích đáy $S_{\\triangle A B C}=\\frac{1}{2} \\cdot a \\cdot 2 a=a^{2}$.\\\\\nThể tích khối chóp: $V_{S \\cdot A B C}=\\frac{1}{3} \\cdot S_{\\triangle A B C} \\cdot S A=\\frac{1}{3} \\cdot a^{2} \\cdot 3 a=a^{3}$.\\\\"
+    },
+    {
+        "id": "T0508039",
+        "question": "Cho hình chóp $S . A B C$ có đáy là tam giác đều cạnh $2 a$ và thể tích bằng $a^{3}$. Tính chiều cao $h$ của hình chóp đã cho.\\\\",
+        "options": [
+            "A. $h=\\frac{\\sqrt{3} a}{6}$.\\\\\n",
+            "B. $h=\\frac{\\sqrt{3} a}{2}$.\\\\\n",
+            "C. $h=\\frac{\\sqrt{3} a}{3}$.\\\\\n",
+            "D. $h=\\sqrt{3} a$."
+        ],
+        "explain": "Do đáy là tam giác đều nên $S_{\\triangle A B C}=\\frac{(2 a)^{2} \\sqrt{3}}{4}=a^{2} \\sqrt{3}$\n\n$$\n\\text { Mà } V=\\frac{1}{3} S_{\\triangle A B C} \\cdot h \\Rightarrow h=\\frac{3 V}{S_{\\triangle A B C}}=\\frac{3 a^{3}}{a^{2} \\sqrt{3}}=\\sqrt{3} a\n$$"
+    },
+    {
+        "id": "T0508040",
+        "question": "Cho tứ diện $A B C D$ có thế tích bằng 12 và $G$ là trọng tâm tam giác $B C D$. Tính thể tích $V$ của khối chóp",
+        "options": [
+            "A. GBC.\\\\\nA. $V=3$\\\\\n",
+            "B. $V=4$\\\\\n",
+            "C. $V=6$\\\\\n",
+            "D. $V=5$"
+        ],
+        "explain": "Tứ diện $A B C D$ và khối chóp $A$. GBC có cùng đường cao là khoảng cách từ $A$ đến mặt phẳng $(B C D)$. Do $G$ là trọng tâm tam giác $B C D$ nên ta có $S_{\\triangle B G C}=S_{\\triangle B G D}=S_{\\triangle C G D} \\Rightarrow S_{\\triangle B C D}=3 S_{\\triangle B G C}$\\\\\nÁp dụng công thức thể tích hình chóp ta có:\n\n$$\n\n& \\left.\\begin{array}{l}\nV_{A . B C D}=\\frac{1}{3} h \\cdot S_{\\triangle B C D} \\\\\nV_{A \\cdot G B C}=\\frac{1}{3} h \\cdot S_{\\triangle G B C}\n\\end{array}\\right\\} \\Rightarrow \\frac{V_{A \\cdot B C D}}{V_{A \\cdot G B C}}=\\frac{\\frac{1}{3} h \\cdot S_{\\triangle B C D}}{\\frac{1}{3} h \\cdot S_{\\triangle G B C}}=\\frac{S_{\\triangle B C D}}{S_{\\triangle G B C}}=3 \\\\\n& \\Rightarrow V_{A . G B C}=\\frac{1}{3} V_{A B C D}=\\frac{1}{3} \\cdot 12=4 \\text {. }\n\n$$"
+    },
+    {
+        "id": "T0601001",
+        "question": "Trục đường tròn là đường thẳng đi qua tâm và:\\\\",
+        "options": [
+            "A. vuông góc với một bán kính đường tròn\\\\\n",
+            "B. vuông góc với một đường kính đường tròn\\\\\n",
+            "C. vuông góc với mặt phẳng chứa đường tròn\\\\\n",
+            "D. vuông góc với mặt phẳng chứa một đường kính"
+        ],
+        "explain": "\\begin{itemize}\n  \\item Trục của đường tròn: là đường thẳng vuông góc với mặt phẳng chứa đường tròn tại tâm của nó.\n\\end{itemize}",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0601002",
+        "question": "Đường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là:\\\\",
+        "options": [
+            "A. trục đường tròn\\\\\n",
+            "B. đường kính đường tròn\\\\\n",
+            "C. bán kính đường tròn\\\\\n",
+            "D. không xác định được\n\n\\\\\nĐường thẳng đi qua tâm và vuông góc với mặt phẳng chứa đường tròn được gọi là trục đường tròn.\\\\\nĐáp án cằn chọn là: A\n\n"
+        ],
+        "explain": "None",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0601003",
+        "question": "Cho điểm $M$, đường tròn $\\left(C_{M}\\right)$ trục $\\Delta$ và các điểm $N \\in\\left(C_{M}\\right), A \\in \\Delta$. Chọn mệnh đề sai:\\\\",
+        "options": [
+            "A. $M N$ là đường kính\\\\\n",
+            "B. $d(M, \\Delta)=d(N, \\Delta)$\\\\\n",
+            "C. $M N \\perp \\Delta$\\\\\n",
+            "D. $A M=A N$\n\n\n\nĐường tròn $\\left(C_{M}\\right)$ là đường tròn đi qua điểm $M$.\\\\\nvi $N \\in\\left(C_{M}\\right)$ nhưng $M N$ chưa chắc là đường kính nên A sai.\\\\\nNgoài ra $d(M, \\Delta)=M O=N O=d(N, \\Delta)$\\\\\n$\\Delta$ vuông góc với mp chứa $\\left(C_{M}\\right)$ nên vuông góc với mọi đường thẳng thuộc mp này.\n\n\nTam giác vuông AOM = AON (hai cạnh góc vuông) nên $A M=A N$\\\\\nVậy các đáp án còn lại đều đúng.\\\\\n"
+        ],
+        "explain": "Đường tròn $\\left(C_{M}\\right)$ là đường tròn đi qua điểm $M$.\\\\\nvi $N \\in\\left(C_{M}\\right)$ nhưng $M N$ chưa chắc là đường kính nên A sai.\\\\\nNgoài ra $d(M, \\Delta)=M O=N O=d(N, \\Delta)$\\\\\n$\\Delta$ vuông góc với mp chứa $\\left(C_{M}\\right)$ nên vuông góc với mọi đường thẳng thuộc mp này.\n\n\\section*{Do đó $\\Delta \\perp M N$}\nTam giác vuông AOM = AON (hai cạnh góc vuông) nên $A M=A N$\\\\\nVậy các đáp án còn lại đều đúng.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0601004",
+        "question": "Cho hai điểm $M, N$ và đường thẳng $\\Delta$. Chỉ cần điều kiện nào sau đây là đủ để tồn tại một đường tròn duy nhất đi qua cả $M, N$ và nhận $\\Delta$ làm trục?\\\\",
+        "options": [
+            "A. $M N \\perp \\Delta$\\\\\n",
+            "B. $d(M, \\Delta)=d(N, \\Delta)$\\\\\n",
+            "C. $M N \\cap \\Delta=\\{O\\}$\\\\\n",
+            "D. $M N \\perp \\Delta$ và $d(M, \\Delta)=d(N, \\Delta)$"
+        ],
+        "explain": "Đáp án A sai vì nếu $d(M, \\Delta) \\neq d(N, \\Delta)$ thì điểm $M \\notin\\left(C_{N}\\right)$ và $N \\notin\\left(C_{M}\\right)$ nên không có đường tròn thỏa mãn.\n\nĐáp án B sai vì nếu $d(M, \\Delta)=d(N, \\Delta)$ nhưng $M N$ không vuông góc $\\Delta$ thì $M N$ không thuộc đường tròn nhận $\\Delta$ làm trục.\n\nĐáp án C sai vì chưa chắc $M N$ có vuông góc $\\Delta$ hay không, hoặc $d(M, \\Delta)$ và $d(N, \\Delta)$ có bằng nhau hay không.\n\nĐáp án D đúng vì gọi $\\left(C_{M}\\right)$ là đường tròn qua $M$ và nhận $\\Delta$ làm trục; gọi $(P)$ là mặt phẳng đi qua $M$ và vuông góc với $\\Delta$ thì $\\left(C_{M}\\right) \\subset(P)$\n\nNếu $M N \\perp \\Delta$ thì $(P)$ đí qua $N$.\\\\\nMặt khác $d(M, \\Delta)=d(N, \\Delta)$ nên $N$ nằm trên đường tròn $\\left(C_{M}\\right)$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0601005",
+        "question": "Cho hai điểm $M, N$ cố định và đường thẳng $\\Delta$ cố định thỏa mãn $M N \\perp \\Delta, d(M, \\Delta)=d(N, \\Delta)$. Có bao nhiêu đường tròn đi qua $M, N$ và nhận $\\Delta$ làm trục?\\\\",
+        "options": [
+            "A. 1\\\\\n",
+            "B. 2\\\\\n",
+            "C. 0\\\\\n",
+            "D. vô số"
+        ],
+        "explain": "Gọi $(P)$ là mặt phẳng chứa $M N$ và vuông góc $\\Delta, O=(P) \\cap \\Delta$. Khi đó $M O=N O$ nên $M, N$ nằm trên đường tròn tâm $O$ bán kính $O M$.\n\nDo $M, N, \\Delta$ cố định nên $(P), O$ cố định và $(O, O M)$ cố định và duy nhất.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0602006",
+        "question": "Công thức tính diện tích xung quanh hình nón có bán kính đáy $r$ và độ dài đường $\\sinh l$ là\\\\",
+        "options": [
+            "A. $S_{x q}=\\frac{1}{3} \\pi r l$\\\\\n",
+            "B. $S_{x q}=\\pi r^{2} l$\\\\\n",
+            "C. $S_{x q}=\\pi r l+\\pi r^{2}$\\\\\n",
+            "D. $S_{x q}=\\pi r l$"
+        ],
+        "explain": "Công thức tính diện tích xung quanh hình nón có bán kính đáy $r$ và độ dài đường $\\sinh l$ là: $S_{x q}=\\pi r l$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0602007",
+        "question": "Diện tích xung quanh của hình nón có bán kính đường tròn đáy $R$ và chiều cao $h$ bằng:\\\\",
+        "options": [
+            "A. $S_{x q}=\\frac{1}{3} \\pi R^{2} h$\\\\\n",
+            "B. $S_{x q}=\\pi R \\sqrt{R^{2}+h^{2}}$\\\\\n",
+            "C. $S_{x q}=\\pi R \\sqrt{R^{2}-h^{2}}$\\\\\n",
+            "D. $S_{x q}=\\pi R h$"
+        ],
+        "explain": "Hình nón có bán kính đáy $R$ và chiều cao $h$ thì đường $\\sinh l=\\sqrt{R^{2}+h^{2}}$.\\\\\nKhi đó diện tích xung quanh hình nón là $S_{x q}=\\pi R l=\\pi R \\sqrt{R^{2}+h^{2}}$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0602008",
+        "question": "Diện tích xung quanh hình nón có bán kính đáy $r=3 \\mathrm{~cm}$ và độ dài đường sinh 4 cm là:\\\\",
+        "options": [
+            "A. $12\\left(m^{2}\\right)$\\\\\n",
+            "B. $12 \\pi\\left(\\mathrm{cm}^{3}\\right)$\\\\\n",
+            "C. $12 \\pi\\left(\\mathrm{cm}^{2}\\right)$\\\\\n",
+            "D. $4 \\pi\\left(\\mathrm{cm}^{2}\\right)$"
+        ],
+        "explain": "Áp dụng công thức $S_{x q}=\\pi r l$ ta được: $S_{x q}=\\pi .3 .4=12 \\pi\\left(\\mathrm{cm}^{2}\\right)$\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0602009",
+        "question": "Cho hình nón có chiều cao $h=4$, bán kính đáy $r=3$. Diện tích xung quanh của hình nón đã cho bằng:\\\\",
+        "options": [
+            "A. $20 \\pi$\\\\\n",
+            "B. $10 \\pi$\\\\\n",
+            "C. $15 \\pi$\\\\\n",
+            "D. $30 \\pi$"
+        ],
+        "explain": "Diện tích xung quanh của hình nón đã cho là: $S_{x q}=\\pi R l=\\pi \\cdot 3 \\cdot \\sqrt{4^{2}+3^{2}}=15 \\pi$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0602010",
+        "question": "Cho hình nón có bán kính đáy $r=\\sqrt{3}$, độ dài đường $\\sinh l=4$. Tính diện tích xung quanh của hình nón đó?\\\\",
+        "options": [
+            "A. $\\sqrt{39} \\pi$\\\\\n",
+            "B. $4 \\sqrt{3} \\pi$\\\\\n",
+            "C. $12 \\pi$\\\\\n",
+            "D. $8 \\sqrt{3} \\pi$"
+        ],
+        "explain": "Diện tích xung quanh của hình nón đã cho là: $S_{x q}=\\pi R l=\\pi \\cdot \\sqrt{3} \\cdot 4=4 \\sqrt{3} \\pi$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0603011",
+        "question": "Công thức tính diện tích xung quanh hình trụ có bán kính đáy $r$ và chiều cao $h$ là:\\\\",
+        "options": [
+            "A. $S_{x q}=\\pi r^{2} h$\\\\\n",
+            "B. $S_{x q}=\\pi r h$\\\\\n",
+            "C. $S_{x q}=2 \\pi r h$\\\\\n",
+            "D. $S_{x q}=\\frac{1}{3} \\pi r^{2} h$"
+        ],
+        "explain": "Công thức tính diện tích xung quanh hình trụ: $S_{x q}=2 \\pi r h$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0603012",
+        "question": "Cho hình trụ có diện tích xung quanh $S_{x q}$ và bán kính đáy $r$. Công thức tính chiều cao hình trụ là:\\\\",
+        "options": [
+            "A. $h=\\frac{S_{x q}}{\\pi r}$\\\\\n",
+            "B. $h=\\frac{S_{x q}}{\\pi r^{2}}$\\\\\n",
+            "C. $h=\\frac{S_{x q}}{2 \\pi r}$\\\\\n",
+            "D. $h=\\frac{2 S_{x q}}{\\pi r}$"
+        ],
+        "explain": "Ta có: $S_{x q}=2 \\pi r h \\Leftrightarrow h=\\frac{S_{x q}}{2 \\pi r}$\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0603013",
+        "question": "Hình trụ có bán kính đáy $r=2 \\mathrm{~cm}$ và chiều cao $h=5 \\mathrm{~cm}$ có diện tích xung quanh:\\\\",
+        "options": [
+            "A. $10 \\pi \\mathrm{cm}^{2}$\\\\\n",
+            "B. $5 \\pi \\mathrm{cm}^{2}$\\\\\n",
+            "C. $40 \\pi \\mathrm{cm}^{2}$\\\\\n",
+            "D. $20 \\pi \\mathrm{cm}^{2}$"
+        ],
+        "explain": "Ta có: $S_{x q}=2 \\pi r h=2 \\pi \\cdot 2 \\cdot 5=20 \\pi \\mathrm{cm}^{2}$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0603014",
+        "question": "Cho hình trụ có bán kính đáy $r=2$ và chiều cao $h=3$. Diện tích xung quanh của hình trụ này bằng\\\\",
+        "options": [
+            "A. $24 \\pi$.\\\\\n",
+            "B. $12 \\pi$.\\\\\n",
+            "C. $6 \\pi$.\\\\\n",
+            "D. $20 \\pi$."
+        ],
+        "explain": "Diện tích xung quanh của hình trụ này bằng $S_{x q}=2 \\pi r h=2 \\pi \\cdot 2 \\cdot 3=12 \\pi$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0603015",
+        "question": "Công thức tính diện tích toàn phần hình trụ có bán kính $r$ và chiều cao $h$ là:\\\\",
+        "options": [
+            "A. $S_{t p}=2 \\pi r h+2 \\pi r^{2}$\\\\\n",
+            "B. $S_{t p}=2 \\pi r h$\\\\\n",
+            "C. $S_{t p}=2 \\pi r^{2}$\\\\\n",
+            "D. $S_{t p}=2 \\pi r h+\\pi r^{2}$"
+        ],
+        "explain": "Công thức tính diện tích toàn phần hình trụ là: $S_{t p}=2 \\pi r h+2 \\pi r^{2}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0604016",
+        "question": "Điểm $M$ thuộc mặt cầu tâm $O$ bán kính $R$ nếu:\\\\",
+        "options": [
+            "A. $O M=R$\\\\\n",
+            "B. $O M \\leq R$\\\\\n",
+            "C. $O M<R$\\\\\n",
+            "D. $O M>R$"
+        ],
+        "explain": "Điểm $M$ thuộc mặt cầu tâm $O$ bán kính $R$ nếu $O M=R$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0604017",
+        "question": "Điểm $M$ thuộc khối cầu tâm $O$ bán kính $R$ nếu:\\\\",
+        "options": [
+            "A. $O M>R$\\\\\n",
+            "B. $O M=R$\\\\\n",
+            "C. $O M<R$\\\\\n",
+            "D. $O M \\leq R$"
+        ],
+        "explain": "Điểm $M$ thuộc khối cằu tâm $O$ bán kính $R$ nếu $O M \\leq R$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0604018",
+        "question": "Chọn mệnh đề đúng:\\\\",
+        "options": [
+            "A. Điểm thuộc mặt cầu thì thuộc khối cầu.\\\\\n",
+            "B. Điểm thuộc khối cầu thì thuộc mặt cầu\\\\\n",
+            "C. Điểm nằm ngoài mặt cầu thì thuộc khối cầu\\\\\n",
+            "D. Điểm nằm ngoài khối cầu thì thuộc mặt cầu"
+        ],
+        "explain": "Điểm $M$ thuộc mặt cầu tâm $O$ bán kính $R$ thì $O M=R$.\\\\\nĐiểm $M$ thuộc khối cầu tâm $O$ bán kính $R$ thì $O M \\leq R$.\\\\\nDo đó điểm thuộc mặt cầu sẽ thuộc khối cầu.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0604019",
+        "question": "Chọn mệnh đề sai:\\\\",
+        "options": [
+            "A. Điểm không thuộc khối cầu thì không thuộc mặt cầu.\\\\\n",
+            "B. Điểm nằm ngoài mặt cầu thì không thuộc khối cầu.\\\\\n",
+            "C. Điểm không thuộc mặt cầu thì không thuộc khối cầu.\\\\\n",
+            "D. Điểm nằm trong mặt cầu thì thuộc khối cầu."
+        ],
+        "explain": "Điểm không thuộc mặt cầu thì có thể nằm ngoài hoặc nằm trong mặt cầu nên các điểm nằm trong mặt cầu vẫn thuộc khối cầu.\n\nDo đó $C$ sai.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0604020",
+        "question": "Cho mặt cầu $(S)$ tâm $O$, bán kính $R$ và mặt phẳng $(P)$, gọi $H$ là hình chiếu của $O$ trên $(P)$. Nếu $R>O H$ thì:\\\\",
+        "options": [
+            "A. $(P)$ cắt $(S)$\\\\\n",
+            "B. $(P)$ tiếp xúc $(S)$\\\\\n",
+            "C. $(P)$ và $(S)$ không có điểm chung\\\\\n",
+            "D. $(P)$ cắt $(S)$ tại hai điểm phân biệt"
+        ],
+        "explain": "Nếu $O H<R$ thì $(P)$ cắt $(S)$ theo giao tuyến là một đường tròn.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0605021",
+        "question": "Mặt cầu ngoại tiếp hình đa diện nếu nó:\\\\",
+        "options": [
+            "A. đi qua các đỉnh của đa diện\\\\\n",
+            "B. tiếp xúc với các mặt của đa diện\\\\\n",
+            "C. tiếp xúc với các cạnh của đa diện\\\\\n",
+            "D. đi qua trung điểm các cạnh của đa diện"
+        ],
+        "explain": "Mặt cầu ngoại tiếp hình đa diện nếu nó đi qua mọi đỉnh của đa diện.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0605022",
+        "question": "Trục đa giác đáy là đường thẳng vuông góc với mặt phẳng đáy tại:\\\\",
+        "options": [
+            "A. đỉnh đa giác đáy\\\\\n",
+            "B. trực tâm đa giác đáy\\\\\n",
+            "C. trọng tâm đa giác đáy\\\\\n",
+            "D. tâm đường tròn đáy"
+        ],
+        "explain": "Trục đa giác đáy: là đường thẳng đi qua tâm đường tròn ngoại tiếp đa giác đáy và vuông góc với mặt phẳng chứa đa giác đáy.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0605023",
+        "question": "Hình chóp tứ giác đều có trục đa giác đáy là đường thẳng\\\\",
+        "options": [
+            "A. đi qua tâm đáy\\\\\n",
+            "B. đi qua đỉnh\\\\\n",
+            "C. đi qua đỉnh và song song đáy\\\\\n",
+            "D. đi qua đỉnh và tâm đáy"
+        ],
+        "explain": "Hình chóp tứ giác đều có trục đa giác đáy chính là đường thẳng vuông góc với đáy tại tâm hình vuông.\\\\\nMọi điểm thuộc đường thẳng này đều cách đều bốn đỉnh hình vuông nên đỉnh hình chóp cũng thuộc đường thẳng này.\n\nDo đó trục đa giác đáy của hình chóp tứ giác đều là đường thẳng đi qua đỉnh và tâm đáy.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0605024",
+        "question": "Tập hợp các điểm cách đều hai đầu mút của đoạn thẳng là:\\\\",
+        "options": [
+            "A. đường trung trực của đoạn thẳng\\\\\n",
+            "B. trung điểm của đoạn thẳng\\\\\n",
+            "C. mặt phẳng trung trực của đoạn thẳng\\\\\n",
+            "D. đường tròn đường kính là đoạn thẳng đó"
+        ],
+        "explain": "Mọi điểm nằm trên mặt phẳng trung trực của đoạn thẳng thì cách đều hai đầu mút của đoạn thẳng và ngược lại.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0605025",
+        "question": "Cho $(P)$ là mặt phẳng trung trực của đoạn thẳng $A B, M \\in(P)$. Chọn kết luận đúng\"\\\\",
+        "options": [
+            "A. $M \\in A B$\\\\\n",
+            "B. $M$ là trung điểm của $A B$\\\\\n",
+            "C. $M A=M B$\\\\\n",
+            "D. $M A+M B=A B$"
+        ],
+        "explain": "Do $M \\in(P)$ là mặt phẳng trung trực của $A B$ nên $M A=M B$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0606026",
+        "question": "Một hình nón đỉnh $S$ có bán kính đáy bằng $2 a \\sqrt{3}$, góc ở đỉnh là $120^{\\circ}$. Thiết diện qua đỉnh của hình nón là một tam giác. Diện tích lớn nhất $S_{\\max }$ của thiết diện đó là bao nhiêu?\\\\",
+        "options": [
+            "A. $S_{\\max }=8 a^{2}$.\\\\\n",
+            "B. $S_{\\max }=4 a^{2} \\sqrt{2}$.\\\\\n",
+            "C. $S_{\\max }=4 a^{2}$.\\\\\n",
+            "D. $S_{\\max }=16 a^{2}$."
+        ],
+        "explain": "Giả sử $O$ là tâm đáy và $A B$ là một đường kính của đường tròn đáy hình nón.\\\\\nThiết diện qua đỉnh của hình nón là tam giác cân $S A M$. Theo giả thiết hình nón có bán kính đáy $R=O A=2 a \\sqrt{3}, \\widehat{A S B}=120^{\\circ}$ nên $\\widehat{A S O}=60^{\\circ}$.\\\\\nXét tam giác $S O A$ vông tại $O$, ta có $\\sin 60^{\\circ}=\\frac{O A}{S A} \\Rightarrow S A=\\frac{O A}{\\sin 60^{\\circ}}=4 a$.\\\\\nDiện tích thiết diện là $S_{S A M}=\\frac{1}{2} S A \\cdot S M \\cdot \\sin \\widehat{A S M}=\\frac{1}{2} \\cdot 4 a \\cdot 4 a \\cdot \\sin \\widehat{A S M}=8 a^{2} \\cdot \\sin \\widehat{A S M}$\\\\\nDo $0<\\sin \\widehat{A S M} \\leq 1$ nên $S_{S A M}$ lớn nhất khi và chỉ khi $\\sin \\widehat{A S M}=1$ hay khi tam giác $A S M$ vuông cân đỉnh $S$ (vì $\\widehat{A S B}=120^{\\circ}>90^{\\circ}$ nên tồn tại tam giác $A S M$ thoả mãn).\\\\\nVậy diện tích thiết diện lớn nhất là $S_{\\max }=8 a^{2}$ (đvdt).\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0606028",
+        "question": "Cho khối trụ có hai đáy là hình tròn $(O ; R)$ và $\\left(O^{\\prime} ; R\\right), O O^{\\prime}=4 R$. Trên đường tròn tâm $O$ lấy $(O)$ lấy hai điểm $A, B$ sao cho $A B=R \\sqrt{3}$. Mặt phẳng $(P)$ đi qua $A, B$ cắt $O O^{\\prime}$ và tạo với đáy một góc bằng $60^{\\circ} .(P)$ cắt khối trụ theo thiết diện là một phần của elip. Diện tích thiết diện đó bằng:\\\\",
+        "options": [
+            "A. $\\left(\\frac{4\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right) R^{2}$\\\\\n",
+            "B. $\\left(\\frac{2 \\pi}{3}+\\frac{\\sqrt{3}}{4}\\right) R^{2}$\\\\\n",
+            "C. $\\left(\\frac{4 \\pi}{3}+\\frac{\\sqrt{3}}{2}\\right) R^{2}$\\\\\n",
+            "D. $\\left(\\frac{2 \\pi}{3}-\\frac{\\sqrt{3}}{4}\\right) R^{2}$\\\\"
+        ],
+        "explain": "Gọi $M$ là trung điểm của $AB$ ta có:\n\\[\nOM = \\sqrt{OA^{2} - \\left(\\frac{AB}{2}\\right)^{2}} = \\sqrt{R^{2} - \\frac{3R^{2}}{4}} = \\frac{R}{2}\n\\]\nGiả sử mặt phẳng $(P)$ cắt trục $OO^{\\prime}$ tại $I$. Ta có $IA = IB$ nên $\\Delta IAB$ cân tại $I$, do đó $MI \\perp AB$.\\\\\nDo đó, góc giữa $(P)$ và mặt đáy bằng $\\widehat{IMO} = 60^\\circ$.\\\\\nXét tam giác vuông $IMO$ ta có:\n\\[\nOI = OM \\cdot \\tan 60^\\circ = \\frac{R\\sqrt{3}}{2} < \\frac{OO^{\\prime}}{2} = 2R\n\\]\n$\\Rightarrow I$ nằm giữa $O$ và $O^{\\prime}$. Do đó $(P)$ không cắt đáy còn lại. Vậy hình chiếu của $(P)$ trên $(O; R)$ là phần diện tích của hình quạt cung lớn $AB$ và $\\Delta OAB$ (phần gạch chéo).\\\\\nÁp dụng định lý Cosin trong tam giác $OAB$:\n\\[\n\\cos \\widehat{AOB} = \\frac{OA^{2} + OB^{2} - AB^{2}}{2 \\cdot OA \\cdot OB} = \\frac{R^{2} + R^{2} - 3R^{2}}{2R^{2}} = -\\frac{1}{2} \\Rightarrow \\widehat{AOB} = 120^\\circ\n\\]\n$\\Rightarrow S_{\\triangle OAB} = \\frac{1}{2} OA \\cdot OB \\cdot \\sin 120^\\circ = \\frac{1}{2} R^{2} \\cdot \\frac{\\sqrt{3}}{2} = R^{2} \\cdot \\frac{\\sqrt{3}}{4}$\\\\\nGọi $S_{O\\widehat{A}B}$ là diện tích hình quạt:\n\\[\nS_{O\\widehat{A}B} = \\frac{120^\\circ}{360^\\circ} \\cdot \\pi R^{2} = \\frac{2}{3} \\pi R^{2}\n\\]\nVậy diện tích thiết diện là:\n\\[\nS_{\\text{thiết diện}} = S_{O\\widehat{A}B} - S_{\\triangle OAB} = \\frac{2}{3} \\pi R^{2} - \\frac{\\sqrt{3}}{4} R^{2}\n\\]\n\\[\n\\Rightarrow S_{\\text{thiết diện}} = \\left(\\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{4}\\right) R^{2}\n\\]",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0606029",
+        "question": "Một cái phễu có dạng hình nón có chiều cao $15(\\mathrm{~cm})$. Người ta đổ một lượng nước vào phễu sao cho chiều cao của lượng nước trong phễu bằng $\\frac{1}{3}$ chiều cao ban đầu của cái phễu (hình 1). Hỏi nếu bịt kín miệng phễu rồi lộn ngược phễu lên (hình 2) thì chiều cao của nước xấp xỉ bằng bao nhiêu (làm tròn đến hàng phần nghìn).\\\\\n\\\\",
+        "options": [
+            "A. $0,577(\\mathrm{~cm})$\\\\\n",
+            "B. $0,216(\\mathrm{~cm})$\\\\\n",
+            "C. $0,325(\\mathrm{~cm})$\\\\\n",
+            "D. $0,188(\\mathrm{~cm})$"
+        ],
+        "explain": "Gọi $r_{1}$ là bán kính đáy phễu, $r_{2}$ là bán kính đáy phần nước, $h_{1}$ và $h_{2}$ là chiều cao phễu và chiều cao cột nước ta có $\\frac{r_{2}}{r_{1}}=\\frac{h_{2}}{h_{1}}=\\frac{5}{15}=\\frac{1}{3} \\Rightarrow r_{2}=\\frac{1}{3} r_{1}$\n\nKhi úp phễu xuống thì thể tích của phần nón không chứa nước là:\\\\\n$\\frac{1}{3} \\pi r_{1}^{2} h_{1}-\\frac{1}{3} \\pi r_{2}^{2} h_{2}=5 \\pi r_{1}^{2}-\\frac{5}{3} \\pi\\left(\\frac{r_{1}}{3}\\right)^{2}=\\frac{130}{27} \\pi r_{1}^{2}=\\frac{1}{3} \\pi r^{2} h$ với $r, h$ là bán kính và chiều cao của hình nón không chứa nước $\\Rightarrow r^{2} h=\\frac{130}{9} r_{1}^{2}$\\\\\nTa có $\\frac{r}{r_{1}}=\\frac{h}{h_{1}} \\Rightarrow r=\\frac{r_{1} h}{15} \\Rightarrow \\frac{r_{1}^{2} h^{3}}{225}=\\frac{130}{9} r_{1}^{2} \\Leftrightarrow h=14,812(\\mathrm{~cm})$\\\\\nVậy chiều cao của nước sau khi úp phếu xuống là $15-14,812=0,188(\\mathrm{~cm})$\\\\",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537879224327_45.PNG",
+        "answer": "D",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0606030",
+        "question": "Một cái phễu có dạng hình nón. Chiều cao của phễu là 20 cm . Người ta đổ một lượng nước vào phễu sao cho chiều cao của cột nước trong phễu bằng 10 cm . Nếu bịt kín miệng phễu rồi lật ngược phễu lên thì chiều cao của cột nước trong phễu gần bằng với giá trị nào sau đây?\\\\\n\\\\",
+        "options": [
+            "A. $(20 \\sqrt[3]{7}-10) \\mathrm{cm}$\\\\\n",
+            "B. $10 \\sqrt[3]{7} \\mathrm{~cm}$\\\\\n",
+            "C. $(20-10 \\sqrt[3]{7}) \\mathrm{cm}$\\\\\n",
+            "D. $20 \\sqrt[3]{7} \\mathrm{~cm}$"
+        ],
+        "explain": "Gọi thể tích của phễu là $V$, bán kính đáy phễu là $R$, bán kính của cột nước có dạng khối nón trong H 1 là $R_{1}$ Ta có: $\\frac{10}{20}=\\frac{R_{1}}{R}=\\frac{1}{2}$\\\\\nGọi $V_{1}$ là thể tích của nước ta có:\\\\\n$\\frac{V_{1}}{V}=\\frac{\\frac{1}{3} \\pi R_{1}^{2} .10}{\\frac{1}{3} \\pi R^{2} .20}=\\frac{1}{2}\\left(\\frac{R_{1}}{R}\\right)^{2}=\\frac{1}{8} \\Rightarrow V_{1}=\\frac{1}{8} V$\\\\\nSau khi úp ngược phễu lên, thể tích của phần không có nước có dạng khối nón có thể tích là\\\\\n$V_{2}=V-V_{1}=\\frac{7}{8} V$\\\\\nGọi $h, R_{2}$ là chiều cao và bán kính đáy của khối nón không chứa nước ở H 2 ta có\\\\\n$\\frac{R_{2}}{R}=\\frac{h}{20}$ và : $\\frac{V_{2}}{V}=\\frac{\\frac{1}{3} \\pi R_{2}^{2} h}{\\frac{1}{3} \\pi R^{2} .20}=\\frac{7}{8} \\Rightarrow\\left(\\frac{R_{2}}{R}\\right)^{2} \\cdot \\frac{h}{20}=\\frac{7}{8} \\Leftrightarrow \\frac{h^{3}}{20^{3}}=\\frac{7}{8} \\Rightarrow h=10 \\sqrt[3]{7}$\\\\\n$\\Rightarrow$ Chiều cao của cột nước trong H 2 là $20-10 \\sqrt[3]{7} \\mathrm{~cm}$.\\\\",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538009498427_1.PNG",
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0607031",
+        "question": "Người ta thả một viên billiards snooker có dạng hình cầu với bán kính nhỏ hơn $4,5 \\mathrm{~cm}$ vào một chiếc cốc hình trụ đang chứa nước thì viên billiards đó tiếp xúc với đáy cốc và tiếp xúc với mặt nước sau khi dâng (tham khảo hình vẽ bên). Biết rằng bán kính của phần trong đáy cốc bằng $5,4 \\mathrm{~cm}$ và chiều cao của mực nước ban đầu trong cốc bằng $4,5 \\mathrm{~cm}$. Bán kính của viên billiards đó bằng\n\n\\\\",
+        "options": [
+            "A. $4,2 \\mathrm{~cm}$.\\\\\n",
+            "B. $3,6 \\mathrm{~cm}$.\\\\\n",
+            "C. $2,6 \\mathrm{~cm}$.\\\\\n",
+            "D. $2,7 \\mathrm{~cm}$."
+        ],
+        "explain": "Thể tích mực nước ban đầu là: $V_{1}=\\pi r_{1}^{2} h_{1}=\\pi .5,4^{2} .4,5$\\\\\nGọi $R$ là bán kính của viên bi ta có sau khi thả viên bi vào cốc, chiều cao của mực nước bằng $2 R$, do đó tổng thể tích của nước và bi sau khi thả viên bi vào trong cốc là: $V=\\pi r_{1}^{2} \\cdot(2 R)=\\pi .5,4^{2} .2 R$\\\\\nThể tích của quả cầu là: $V_{(C)}=\\frac{4}{3} \\pi R^{3}$\\\\\nTa có: $V=V_{1}+V_{2} \\Leftrightarrow 5,4^{2} .4,5+\\frac{4}{3} R^{3}=5,4^{2} .2 R$\\\\\nGiải phương trình trên với điều kiện $R<4,5 \\Rightarrow R=2,7 \\mathrm{~cm}$.\\\\",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1547103412665_Capture.PNG",
+        "answer": "D",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0607033",
+        "question": "Cho hình lăng trụ đứng $A B C \\cdot A^{\\prime} B^{\\prime} C^{\\prime}$ có đáy $A B C$ là tam giác vuông tại $A, A B=a \\sqrt{3}, B C=2 a$, đường thẳng $A C^{\\prime}$ tạo với mặt phẳng $\\left(B C C^{\\prime} B^{\\prime}\\right)$ một góc $30^{\\circ}$. Diện tích mặt cầu ngoại tiếp lăng trụ đã cho bằng:\\\\",
+        "options": [
+            "A. $24 \\pi a^{2}$\\\\\n",
+            "B. $6 \\pi a^{2}$\\\\\n",
+            "C. $4 \\pi a^{2}$\\\\\n",
+            "D. $3 \\pi a^{2}$\\\\"
+        ],
+        "explain": "Gọi $H, H^{\\prime}$ lần lượt là trung điểm của $B C$ và $B^{\\prime} C^{\\prime} \\Rightarrow H H^{\\prime} \\perp(A B C)$ và $H H^{\\prime} \\perp\\left(A^{\\prime} B^{\\prime} C^{\\prime}\\right)$.\\\\\nGọi $I$ là trung điểm của $H H^{\\prime}$.\\\\\nMặt khác $\\triangle A B C$ vuông tại $A, I \\in H H^{\\prime} \\Rightarrow\\left\\{\\begin{array}{l}I A=I B=I C \\\\ I A^{\\prime}=I B^{\\prime}=I C^{\\prime}\\end{array}\\right.$\\\\\nDễ dàng chứng minh được $\\Delta B H I=\\Delta B^{\\prime} H^{\\prime} I(c . g . c) \\Rightarrow I B=I B^{\\prime}$\\\\\n$\\Rightarrow I A=I B=I C=I A^{\\prime}=I B^{\\prime}=I C^{\\prime}$ hay $I$ là tâm mặt cầu ngoại tiếp lăng trụ $A B C \\cdot A^{\\prime} B^{\\prime} C^{\\prime}$.\\\\\nKẻ $A K \\perp B C$ ta có $\\left.A K \\perp\\left(B C C^{\\prime} B^{\\prime}\\right) \\Rightarrow\\left(A C^{\\prime} ; \\widehat{\\left(B C C^{\\prime} B^{\\prime}\\right.}\\right)\\right)=\\left(A \\widehat{C^{\\prime} ; K} C^{\\prime}\\right)=\\widehat{A C^{\\prime} K}=30^{0}$.\\\\\nCó $A C=A^{\\prime} C^{\\prime}=\\sqrt{4 a^{2}-3 a^{2}}=a$\\\\\nTa có $A K=\\frac{A C \\cdot A B}{B C}=\\frac{a \\cdot a \\sqrt{3}}{2 a}=\\frac{a \\sqrt{3}}{2}$\\\\\n$\\Rightarrow A C^{\\prime}=\\frac{A K}{\\sin 30}=a \\sqrt{3}$\\\\\n$\\Rightarrow A A^{\\prime}=\\sqrt{A C^{\\prime 2}-A^{\\prime} C^{\\prime 2}}=\\sqrt{3 a^{2}-a^{2}}=a \\sqrt{2}=H H^{\\prime}$\\\\\n$\\Rightarrow H I=\\frac{1}{2} H H^{\\prime}=\\frac{a}{\\sqrt{2}} \\Rightarrow B I=\\sqrt{a^{2}+\\frac{a^{2}}{2}}=\\frac{a \\sqrt{6}}{2}=R$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0607034",
+        "question": "Cho hình chóp tam giác đều $S . A B C$. Hình nón có đỉnh $S$ và có đường tròn đáy là đường tròn tam giác $A B C$ gọi là hình nón nội tiếp hình chóp $S . A B C$, hình nón có đỉnh $S$ và có đường tròn đáy là đường tròn ngoại tiếp tam giác $A B C$ gọi là hình nón ngoại tiếp hình chóp $S$. $A B C$. Tỉ số thế tích của hình nón nội tiếp và hình nón ngoại tiếp hình chóp đã cho là\\\\",
+        "options": [
+            "A. $\\frac{1}{4}$.\\\\\n",
+            "B. $\\frac{1}{2}$.\\\\\n",
+            "C. $\\frac{2}{3}$.\\\\\n",
+            "D. $\\frac{1}{3}$."
+        ],
+        "explain": "Gọi $h, x$ lần lượt là chiều cao, độ dài cạnh đáy của hình chóp tam giác đều $S . A B C$.\\\\\nBán kính đường tròn nội tiếp $\\triangle A B C$ là Thể tích khối nón nội tiếp là $V_{1}=\\frac{1}{3} \\pi r^{2} h$.\\\\\nBán kính đường tròn ngoại tiếp $\\triangle A B C$ là Thể tích khối nón nội tiếp là $V_{2}=\\frac{1}{3} \\pi R^{2} h$.\\\\\nVậy tỉ số $\\frac{V_{1}}{V_{2}}=\\frac{r^{2}}{R^{2}}=\\left(\\frac{x \\sqrt{3}}{6}\\right)^{2}:\\left(\\frac{x \\sqrt{3}}{3}\\right)^{2}=\\frac{1}{4}$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0607035",
+        "question": "Cần đẽo thanh gỗ hình hộp có đáy là hình vuông thành hình trụ có cùng chiều cao. Tỉ lệ thể tích gỗ cần phải đẽo đi ít nhất (tính gần đúng) là\\\\",
+        "options": [
+            "A. $30 \\%$.\\\\\n",
+            "B. $50 \\%$.\\\\\n",
+            "C. $21 \\%$.\\\\\n",
+            "D. $11 \\%$."
+        ],
+        "explain": "Để thể tích gỗ cần phải đẽo đi là ít nhất thì thể tích hình trụ là lớn nhất.\\\\\nHay hình trụ là hình trụ nội tiếp hình hộp và có thể tích là $V_{1}=\\pi R^{2} h=\\frac{\\pi x^{2} h}{4}$.\\\\\nVới $x$ là độ dài cạnh đáy hình hộp $\\Rightarrow$ Thể tích hình hộp là $V=x^{2} h$.\\\\\nSuy ra thể tích cần phải đẽo là $V_{2}=V-V_{2}=\\left(1-\\frac{\\pi}{4}\\right) x^{2} h$.\\\\\nVậy tỉ lệ thể tích gỗ cần phải đẽo là $\\frac{V_{2}}{V} \\cdot 100 \\%=\\left(1-\\frac{\\pi}{4}\\right) \\cdot 100 \\% \\approx 21,5 \\%$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Vận dụng cao"
+    },
+    {
+        "id": "T0608036",
+        "question": "Cho mặt cầu $(S)$ tâm $O$, bán kính $R$ và mặt phẳng $(P)$, gọi $H$ là hình chiếu của $O$ trên $(P)$. Nếu $R>O H$ thì:\\\\",
+        "options": [
+            "A. $(P)$ cắt $(S)$\\\\\n",
+            "B. $(P)$ tiếp xúc $(S)$\\\\\n",
+            "C. $(P)$ và $(S)$ không có điểm chung\\\\\n",
+            "D. $(P)$ cắt $(S)$ tại hai điểm phân biệt"
+        ],
+        "explain": "Nếu $O H<R$ thì $(P)$ cắt $(S)$ theo giao tuyến là một đường tròn.\\\\"
+    },
+    {
+        "id": "T0608037",
+        "question": "Cho khối nón tròn xoay có đường cao $h=15 \\mathrm{~cm}$ và đường $\\sinh l=25 \\mathrm{~cm}$. Thể tích V của khối nón là:\\\\",
+        "options": [
+            "A. $V=2000 \\pi\\left(\\mathrm{cm}^{3}\\right)$.\\\\\n",
+            "B. $V=240 \\pi\\left(\\mathrm{cm}^{3}\\right)$.\\\\\n",
+            "C. $V=500 \\pi\\left(\\mathrm{cm}^{3}\\right)$.\\\\\n",
+            "D. $V=1500 \\pi\\left(\\mathrm{cm}^{3}\\right)$."
+        ],
+        "explain": "Bán kính đáy của hình nón là $r=\\sqrt{l^{2}-h^{2}}=\\sqrt{25^{2}-15^{2}}=20$\\\\\nThể tích khối nón là $V=\\frac{1}{3} \\pi r^{2} h=\\frac{1}{3} \\cdot \\pi \\cdot 20^{2} \\cdot 15=2000 \\pi\\left(\\mathrm{cm}^{3}\\right)$\\\\"
+    },
+    {
+        "id": "T0608038",
+        "question": "Cho mặt cầu $(S)$. Nếu $(P)$ là mặt phẳng kính của mặt cầu $(S)$ thì:\\\\",
+        "options": [
+            "A. $(P)$ tiếp xúc $(S)$\\\\\n",
+            "B. $(P)$ không cắt $(S)$\\\\\n",
+            "C. $(P)$ không đi qua tâm mặt cầu.\\\\\n",
+            "D. $(P)$ đi qua tâm mặt cầu."
+        ],
+        "explain": "Nếu $(P)$ là mặt phẳng kính thì $O H=0(H \\equiv O)$ hay $(P)$ đi qua $O$ là tâm mặt cầu.\\\\"
+    },
+    {
+        "id": "T0608039",
+        "question": "Cho mặt cầu $(S)$ có tâm $O$ bán kính $R$ và đường thẳng $d$. Nếu $d$ và $(S)$ không có điểm chung thì:\\\\",
+        "options": [
+            "A. $d(O ; d)>R$\\\\\n",
+            "B. $d(O ; d)<R$\\\\\n",
+            "C. $d(O ; d)=R$\\\\\n",
+            "D. $d(O ; d) \\leq R$"
+        ],
+        "explain": "Mặt cầu $(S)$ và đường thẳng $d$ không có điểm chung nếu $d(O ; d)>R$.\\\\"
+    },
+    {
+        "id": "T0608040",
+        "question": "Cho một hình nón có bán kính đáy bằng $a$ và góc ở đỉnh bằng $60^{\\circ}$. Tính diện tích xung quanh của hình nón đó.\\\\",
+        "options": [
+            "A. $S_{x q}=4 \\pi a^{2}$\\\\\n",
+            "B. $S_{x q}=\\frac{2 \\sqrt{3} \\pi a^{2}}{3}$\\\\\n",
+            "C. $S_{x q}=\\frac{4 \\sqrt{3} \\pi a^{2}}{3}$\\\\\n",
+            "D. $S_{x q}=2 \\pi a^{2}$"
+        ],
+        "explain": "Giả sử thiết diện của mặt phẳng đi qua trục của hình nón với hình nón là tam giác $A B C$, theo giả thiết bài toán, ta có $A B C$ là tam giác đều cạnh $2 a$. Do đó hình nón có:\\\\\nBán kính đáy $R=a$.\\\\\nĐộ dài đường sinh $l=A C=2 a$.\\\\\nDiện tích xung quanh cần tìm $S_{x q}=\\pi R l=\\pi \\cdot a \\cdot 2 a=2 \\pi a^{2}$.\\\\"
+    },
+    {
+        "id": "T0701001",
+        "question": "Véc tơ đơn vị trên trục $O y$ là:\\\\",
+        "options": [
+            "A. $\\vec{i}$\\\\\n",
+            "B. $\\vec{j}$\\\\\n",
+            "C. $\\vec{k}$\\\\\n",
+            "D. $\\overrightarrow{0}$"
+        ],
+        "explain": "Véc tơ là véc tơ đơn vị của trục .\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0701002",
+        "question": "Véc tơ đơn vị trên trục $O x$ là:\\\\",
+        "options": [
+            "A. $\\vec{i}$\\\\\n",
+            "B. $\\vec{j}$\\\\\n",
+            "C. $\\vec{k}$\\\\\n",
+            "D. $\\overrightarrow{0}$"
+        ],
+        "explain": "Véc tơ $\\vec{i}$ là véc tơ đơn vị của trục $O x$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0701003",
+        "question": "Chọn mệnh đề đúng:\\\\",
+        "options": [],
+        "explain": "Ta có: $|\\vec{i}|=|\\vec{j}|=|\\vec{k}|=1$ nên $B$ đúng và các đáp án còn lại sai.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0701004",
+        "question": "Chọn nhận xét đúng:\\\\",
+        "options": [
+            "A. $|\\vec{i}|=\\vec{k}^{2}$\\\\\n",
+            "B. $\\vec{j}=\\vec{k}^{2}$\\\\\n",
+            "C. $\\vec{i}=\\vec{j}$\\\\\n",
+            "D. $|\\vec{k}|^{2}=\\vec{k}$"
+        ],
+        "explain": "Ta có: $|\\vec{i}|=|\\vec{j}|=|\\vec{k}|=1$ hoặc $\\vec{i}^{2}=\\vec{j}^{2}=\\vec{k}^{2}=1$ nên $|\\vec{i}|=\\vec{k}^{2}$ đúng.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0701005",
+        "question": "Trong không gian với hệ tọa độ Oxyz cho điểm $A(1 ;-2 ; 4)$. Hình chiếu vuông góc của $A$ trên trục $O y$ là điểm\\\\",
+        "options": [
+            "A. $P(0 ; 0 ; 4)$\\\\\n",
+            "B. $Q(1 ; 0 ; 0)$\\\\\n",
+            "C. $N(0 ;-2 ; 0)$\\\\\n",
+            "D. $M(0 ;-2 ; 4)$"
+        ],
+        "explain": "Hình chiếu vuông góc của $A(1 ;-2 ; 4)$ trên trục $O y$ là điểm $N(0 ;-2 ; 0)$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0702006",
+        "question": "Tọa độ véc tơ $\\vec{u}$ thỏa mãn $\\vec{u}=x \\cdot \\vec{i}+y \\cdot \\vec{j}+z \\cdot \\vec{k}$ là:\\\\",
+        "options": [
+            "A. $\\vec{u}=(x ; y ; z)$\\\\\n",
+            "B. $\\vec{u}=(\\vec{i} ; \\vec{j} ; \\vec{k})$\\\\\n",
+            "C. $\\vec{u}=(x i ; y j ; z k)$\\\\\n",
+            "D. $\\vec{u}=(i ; j ; k)$"
+        ],
+        "explain": "$$\n\\vec{u}=x . \\vec{i}+y \\cdot \\vec{j}+z \\cdot \\vec{k} \\text { thì } \\vec{u}=(x ; y ; z)\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0702007",
+        "question": "Véc tơ $\\vec{u}=-\\vec{i}+\\vec{k}$ có tọa độ là:\\\\",
+        "options": [
+            "A. $(1 ; 0 ; 1)$\\\\\n",
+            "B. $(-1 ; 0 ; 0)$\\\\\n",
+            "C. $(-1 ; 1 ; 0)$\\\\\n",
+            "D. $(-1 ; 0 ; 1)$"
+        ],
+        "explain": "$$\n\\vec{u}=-\\vec{i}+\\vec{k}=-1 \\cdot \\vec{i}+0 \\cdot \\vec{j}+1 \\cdot \\vec{k} \\Rightarrow \\vec{u}(-1 ; 0 ; 1)\n$$",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0702008",
+        "question": "Trong không gian $O x y z$, cho vectơ $\\vec{a}$ biểu diễn của các vectơ đơn vị là $\\vec{a}=2 \\vec{i}+\\vec{k}-3 \\vec{j}$. Tọa độ của vectơ $\\vec{a}$ là\\\\",
+        "options": [
+            "A. $(1 ; 2 ;-3)$\\\\\n",
+            "B. $(2 ;-3 ; 1)$\\\\\n",
+            "C. $(2 ; 1 ;-3)$\\\\\n",
+            "D. $(1 ;-3 ; 2)$."
+        ],
+        "explain": "$$\n\\vec{a}=2 \\vec{i}+\\vec{k}-3 \\vec{j}=2 \\vec{i}-3 \\vec{j}+\\vec{k} \\Rightarrow \\vec{a}(2 ;-3 ; 1)\n$$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0702009",
+        "question": "Cho các véc tơ $\\overrightarrow{u_{1}}\\left(x_{1} ; y_{1} ; z_{1}\\right)$ và $\\overrightarrow{u_{2}}\\left(x_{2} ; y_{2} ; z_{2}\\right)$. Khi đó, nếu $\\overrightarrow{u_{1}}=\\overrightarrow{u_{2}}$ thì:\\\\",
+        "options": [
+            "A. $x_{1}=y_{2}$\\\\\n",
+            "B. $y_{1}=z_{1}$\\\\\n",
+            "C. $z_{2}=y_{1}$\\\\\n",
+            "D. $y_{2}=y_{1}$"
+        ],
+        "explain": "$$\n\\text { Nếu } \\overrightarrow{u_{1}}=\\overrightarrow{u_{2}} \\text { thì }\\left\\{\\begin{array}{l}\nx_{1}=x_{2} \\\\\ny_{1}=y_{2} \\\\\nz_{1}=z_{2}\n\\end{array} \\text { nên đáp án } \\mathrm{D}\\right. \\text { đúng. }\n$$",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0702010",
+        "question": "Cho hai véc tơ $\\overrightarrow{u_{1}}\\left(x_{1} ; y_{1} ; z_{1}\\right)$ và $\\overrightarrow{u_{2}}=\\left(x_{2} ; y_{2} ; z_{2}\\right)$. Hai véc tơ $\\overrightarrow{u_{1}}=\\overrightarrow{u_{2}}$ nếu và chỉ nếu:\\\\",
+        "options": [
+            "A. $x_{1}=x_{2}$\\\\\n",
+            "B. $y_{1}=y_{2}$\\\\\n",
+            "C. $z_{1}=z_{2}$\\\\\n",
+            "D. $\\left\\{\\begin{array}{l}x_{1}=x_{2} \\\\ y_{1}=y_{2} \\\\ z_{1}=z_{2}\\end{array}\\right.$"
+        ],
+        "explain": "Hai véc tơ $\\overrightarrow{u_{1}}=\\overrightarrow{u_{2}}$ nếu và chỉ nếu $\\left\\{\\begin{array}{l}x_{1}=x_{2} \\\\ y_{1}=y_{2} \\\\ z_{1}=z_{2}\\end{array}\\right.$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0703011",
+        "question": "Tích có hướng của hai véc tơ là:\\\\",
+        "options": [
+            "A. một véc tơ\\\\\n",
+            "B. một số thực\\\\\n",
+            "C. một véc tơ khác $\\overrightarrow{0}$\\\\\n",
+            "D. một số thực khác 0"
+        ],
+        "explain": "Tích có hướng của hai véc tơ là một véc tơ vuông góc với cả hai véc tơ.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0703012",
+        "question": "Cho hai véc tơ $\\overrightarrow{u_{1}}=\\left(x_{1} ; y_{1} ; z_{1}\\right)$ và $\\overrightarrow{u_{2}}=\\left(x_{2} ; y_{2} ; z_{2}\\right)$. Kí hiệu $\\vec{u}=\\left[\\overrightarrow{u_{1}}, \\overrightarrow{u_{2}}\\right]$, khi đó:\n\n$$\n\\text {",
+        "options": [
+            "A. } \\vec{u}=\\left(\\left|\\begin{array}{cc}\ny_{2} & z_{2} \\\\\ny_{1} & z_{1}\n\\end{array}\\right| ;\\left|\\begin{array}{cc}\nz_{2} & x_{2} \\\\\nz_{1} & x_{1}\n\\end{array}\\right| ;\\left|\\begin{array}{cc}\nx_{2} & y_{2} \\\\\nx_{1} & y_{1}\n\\end{array}\\right|\\right)\n$$\n\n",
+            "B. $\\vec{u}=\\left(\\left|\\begin{array}{ll}x_{1} & y_{1} \\\\ x_{2} & y_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}y_{1} & z_{1} \\\\ y_{2} & z_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}z_{1} & x_{1} \\\\ z_{2} & x_{2}\\end{array}\\right|\\right)$\\\\\n",
+            "C. $\\vec{u}=\\left(\\left|\\begin{array}{ll}y_{1} & z_{1} \\\\ y_{2} & z_{2}\\end{array}\\right| ;\\left|\\begin{array}{cc}z_{1} & x_{1} \\\\ z_{2} & x_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}x_{1} & y_{1} \\\\ x_{2} & y_{2}\\end{array}\\right|\\right)$\\\\\n",
+            "D. $\\vec{u}=\\left(\\left|\\begin{array}{ll}z_{1} & x_{1} \\\\ z_{2} & x_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}x_{1} & y_{1} \\\\ x_{2} & y_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}y_{1} & z_{1} \\\\ y_{2} & z_{2}\\end{array}\\right|\\right)$"
+        ],
+        "explain": "Công thức xác định tọa độ tích có hướng $\\left[\\overrightarrow{u_{1}}, \\overrightarrow{u_{2}}\\right]=\\left(\\left|\\begin{array}{ll}y_{1} & z_{1} \\\\ y_{2} & z_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}z_{1} & x_{1} \\\\ z_{2} & x_{2}\\end{array}\\right| ;\\left|\\begin{array}{ll}x_{1} & y_{1} \\\\ x_{2} & y_{2}\\end{array}\\right|\\right)$\n\n$$\n=\\left(y_{1} z_{2}-y_{2} z_{1} ; z_{1} x_{2}-z_{2} x_{1} ; x_{1} y_{2}-x_{2} y_{1}\\right)\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0703013",
+        "question": "Tích có hướng của hai véc tơ $\\overrightarrow{u_{1}}=\\left(x_{1} ; y_{1} ; z_{1}\\right)$ và $\\overrightarrow{u_{2}}=\\left(x_{2} ; y_{2} ; z_{2}\\right)$ được xác định bằng tọa độ là:\\\\",
+        "options": [
+            "A. $\\left(y_{1} z_{2}-y_{2} z_{1} ; z_{1} x_{2}-z_{2} x_{1} ; x_{1} y_{2}-x_{2} y_{1}\\right)$\\\\\n",
+            "B. $\\left(x_{1} y_{2}-x_{2} y_{1} ; y_{1} z_{2}-y_{2} z_{1} ; z_{1} x_{2}-z_{2} x_{1}\\right)$\\\\\n",
+            "C. $\\left(z_{1} x_{2}-z_{2} x_{1} ; y_{1} z_{2}-y_{2} z_{1} ; x_{1} y_{2}-x_{2} y_{1}\\right)$\\\\\n",
+            "D. $\\left(x_{1} y_{2}-x_{2} y_{1} ; z_{1} x_{2}-z_{2} x_{1} ; y_{1} z_{2}-y_{2} z_{1}\\right)$"
+        ],
+        "explain": "Công thức xác định tọa độ tích có hướng\n\n$$\n\\left[\\overrightarrow{u_{1}}, \\overrightarrow{u_{2}}\\right]=\\left(\\left|\\begin{array}{ll}\ny_{1} & z_{1} \\\\\ny_{2} & z_{2}\n\\end{array}\\right| ;\\left|\\begin{array}{cc}\nz_{1} & x_{1} \\\\\nz_{2} & x_{2}\n\\end{array}\\right| ;\\left|\\begin{array}{cc}\nx_{1} & y_{1} \\\\\nx_{2} & y_{2}\n\\end{array}\\right|\\right)=\\left(y_{1} z_{2}-y_{2} z_{1} ; z_{1} x_{2}-z_{2} x_{1} ; x_{1} y_{2}-x_{2} y_{1}\\right)\n$$",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0703014",
+        "question": "Tính tích có hướng của hai véc tơ $\\vec{u}(0 ; 1 ;-1), \\vec{v}(1 ;-1 ;-1)$.\\\\",
+        "options": [
+            "A. $\\overrightarrow{0}$\\\\\n",
+            "B. $(-2 ;-1 ;-1)$\\\\\n",
+            "C. $(2 ; 1 ; 1)$\\\\\n",
+            "D. $(-1 ;-2 ;-1)$"
+        ],
+        "explain": "Ta có:\n\n$$\n\n& {[\\vec{u}, \\vec{v}]=\\left(\\left|\\begin{array}{ll}\n1 & -1 \\\\\n-1 & -1\n\\end{array}\\right| ;\\left|\\begin{array}{cc}\n-1 & 0 \\\\\n-1 & 1\n\\end{array}\\right| ;\\left|\\begin{array}{ll}\n0 & 1 \\\\\n1 & -1\n\\end{array}\\right|\\right)} \\\\\n& =(-1-1 ;-1-0 ; 0-1)=(-2 ;-1 ;-1)\n\n$$",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0703015",
+        "question": "Cho hai véc tơ $\\vec{u}=(0 ; 2 ; 0)$ và $\\vec{v}=(3 ; 0 ; 0)$. Tích có hướng của $\\vec{u}$ và $\\vec{v}$ có tọa độ:\\\\",
+        "options": [
+            "A. $(1 ; 0 ; 0)$\\\\\n",
+            "B. $(0 ; 0 ; 6)$\\\\\n",
+            "C. $(-6 ; 0 ; 0)$\\\\\n",
+            "D. $(0 ; 0 ;-6)$"
+        ],
+        "explain": "Ta có: $[\\vec{u}, \\vec{v}]=\\left(\\left|\\begin{array}{ll}2 & 0 \\\\ 0 & 0\\end{array}\\right| ;\\left|\\begin{array}{ll}0 & 0 \\\\ 0 & 3\\end{array}\\right| ;\\left|\\begin{array}{ll}0 & 2 \\\\ 3 & 0\\end{array}\\right|\\right)=(0 ; 0 ;-6)$\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0704016",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, cho điểm $M$ thỏa mãn hệ thức $\\overrightarrow{O M}=2 \\vec{i}+\\vec{j}$. Tọa độ của điểm $M$ là\\\\",
+        "options": [
+            "A. $M(0 ; 2 ; 1)$\\\\\n",
+            "B. $M(1 ; 2 ; 0)$\\\\\n",
+            "C. $M(2 ; 0 ; 1)$\\\\\n",
+            "D. $M(2 ; 1 ; 0)$"
+        ],
+        "explain": "$$\n\\text { Ta có: } \\overrightarrow{O M}=2 \\vec{i}+\\vec{j} \\Rightarrow \\overrightarrow{O M}=2 \\cdot \\vec{i}+1 \\cdot \\vec{j}+0 \\cdot \\vec{k} \\Leftrightarrow M(2 ; 1 ; 0)\n$$",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0704017",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, cho hai vectơ $\\vec{a}=(1 ; 1 ;-2), \\vec{b}=(-3 ; 0 ;-1)$ và điểm $A(0 ; 2 ; 1)$. Tọa độ điểm $M$ thỏa mãn $\\overrightarrow{A M}=2 \\vec{a}-\\vec{b}$ là:\\\\",
+        "options": [
+            "A. $M(-5 ; 1 ; 2)$.\\\\\n",
+            "B. $M(3 ;-2 ; 1)$.\\\\\n",
+            "C. $M(1 ; 4 ;-2)$.\\\\\n",
+            "D. $M(5 ; 4 ;-2)$."
+        ],
+        "explain": "Ta có $2 \\vec{a}-\\vec{b}=(5 ; 2 ;-3)$. Gọi $M(x ; y ; z)$, suy ra $\\overrightarrow{A M}=(x ; y-2 ; z-1)$.\\\\\nTheo giả thiết, suy ra $\\left\\{\\begin{array}{l}x=5 \\\\ y-2=2 \\\\ z-1=-3\\end{array} \\Rightarrow\\left\\{\\begin{array}{l}x=5 \\\\ y=4 \\\\ z=-2\\end{array}\\right.\\right.$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0704018",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, cho $\\overrightarrow{O M}=2 \\vec{j}-\\vec{k}$ và $\\overrightarrow{O N}=2 \\vec{j}-3 \\vec{i}$. Tọa độ của $\\overrightarrow{M N}$ là:\\\\",
+        "options": [
+            "A. $(-3 ; 0 ; 1)$\\\\\n",
+            "B. $(0 ;-1 ;-3)$.\\\\\n",
+            "C. $(-2 ; 1 ; 1)$.\\\\\n",
+            "D. $(-3 ; 0 ;-1)$."
+        ],
+        "explain": "Ta có: $\\overrightarrow{M N}=\\overrightarrow{O N}-\\overrightarrow{O M}=(2 \\vec{j}-3 \\vec{i})-(2 \\vec{j}-\\vec{k})=-3 \\vec{i}+\\vec{k}$\\\\\nSuy ra $\\overrightarrow{M N}=(-3 ; 0 ; 1)$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0704019",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, cho hai điểm $A(0 ;-2 ; 3), B(1 ; 0 ;-1)$. Gọi $M$ là trung điểm đoạn $A B$. Khẳng định nào sau đây là đúng?\\\\",
+        "options": [
+            "A. $\\overrightarrow{B A}=(-1 ;-2 ;-4)$\\\\\n",
+            "B. $A B=\\sqrt{21}$\\\\\n",
+            "C. $M(1 ;-1 ; 1)$\\\\\n",
+            "D. $\\overrightarrow{A B}=(-1 ;-2 ; 4)$"
+        ],
+        "explain": "Ta có: $\\overrightarrow{B A}=(0-1 ;-2-0 ; 3+1)=(-1 ;-2 ; 4)$. Suy ra A sai.\\\\\nSuy ra $\\overrightarrow{A B}=(1 ; 2 ;-4)$, D sai.\\\\\nCó $A B=\\sqrt{1^{2}+2^{2}+(-4)^{2}}=\\sqrt{21}$. B đúng.\\\\\nMà $M$ là trung điểm của $A B$ nên $M\\left(\\frac{1}{2} ;-1 ; 1\\right), \\mathrm{C}$ sai.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0704020",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, cho bốn điểm $A(2 ; 0 ; 0), B(0 ; 2 ; 0), C(0 ; 0 ; 2)$ và $D(2 ; 2 ; 2)$. Gọi $M, N$ lần lượt là trung điểm của $A B$ và $C D$. Tọa độ trung điểm $I$ của $M N$ là:\\\\",
+        "options": [
+            "A. $I\\left(\\frac{1}{2} ; \\frac{1}{2} ; 1\\right)$.\\\\\n",
+            "B. $I(1 ; 1 ; 0)$.\\\\\n",
+            "C. $I(1 ;-1 ; 2)$.\\\\\n",
+            "D. $I(1 ; 1 ; 1)$."
+        ],
+        "explain": "$M$ là trung điểm của $A B$ suy ra tọa độ điểm $M(1 ; 1 ; 0)$.\\\\\n$N$ là trung điểm của $C D$ suy ra tọa độ điểm $N(1 ; 1 ; 2)$.\\\\\n$I$ là trung điểm của $M N$ suy ra tọa độ điểm $I(1 ; 1 ; 1)$.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Thông hiểu"
+    },
+    {
+        "id": "T0705021",
+        "question": "Mặt phẳng $(P)$ có véc tơ pháp tuyến $\\vec{n} \\neq \\overrightarrow{0}$ thì giá của $\\vec{n}$ :\\\\",
+        "options": [
+            "A. vuông góc $(P)$\\\\\n",
+            "B. song song $(P)$\\\\\n",
+            "C. nằm trong $(P)$\\\\\n",
+            "D. trùng $(P)$"
+        ],
+        "explain": "Véc tơ $\\vec{n}(\\neq \\overrightarrow{0})$ là một véc tơ pháp tuyến (VTPT) của mặt phẳng $(P) \\Leftrightarrow \\vec{n} \\perp(P)$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0705022",
+        "question": "Hai véc tơ không cùng phương $\\vec{a}, \\vec{b}$ được gọi là cặp véc tơ chỉ phương (VTCP) của $(P)$ nếu giá của chúng:\\\\",
+        "options": [
+            "A. nằm trong $(P)$\\\\\n",
+            "B. song song $(P)$\\\\\n",
+            "C. nằm trong $(P)$ hoặc song song với $(P)$.\\\\\n",
+            "D. vuông góc $(P)$"
+        ],
+        "explain": "Hai véc tơ $\\vec{a}, \\vec{b}(\\neq \\overrightarrow{0})$ được gọi là cặp véc tơ chỉ phương (VTCP) của $(P)$ nếu giá của chúng nằm trong\\\\\n$(P)$ hoặc song song với $(P)$.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0705023",
+        "question": "Nếu $\\vec{n}$ là một VTPT của $(P)$ thì một VTPT khác của $(P)$ là:\\\\",
+        "options": [
+            "A. $\\overrightarrow{0}$\\\\\n",
+            "B. $k \\cdot \\vec{n}(k \\neq 0)$\\\\\n",
+            "C. $k+\\vec{n}$\\\\\n",
+            "D. $k: \\vec{n}(k \\neq 0)$"
+        ],
+        "explain": "Nếu $\\vec{n}$ là một VTPT của $(P)$ thì $k \\cdot \\vec{n}(k \\neq 0)$ cũng là VTPT của $(P)$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0705024",
+        "question": "Nếu hai véc tơ $\\vec{a}, \\vec{b}$ là cặp véc tơ chỉ phương của mặt phẳng $(P)$ thì:\\\\",
+        "options": [
+            "A. giá của chúng song song\\\\\n",
+            "B. giá của chúng trùng nhau\\\\\n",
+            "C. chúng không cùng phương\\\\\n",
+            "D. một trong hai véc tơ là véc tơ $\\overrightarrow{0}$"
+        ],
+        "explain": "Hai véc tơ không cùng phương $\\vec{a}, \\vec{b}$ được gọi là cặp véc tơ chỉ phương (VTCP) của $(P)$ nếu giá của chúng nằm trong $(P)$ hoặc song song với $(P)$.\n\nTừ định nghĩa ta thấy hai véc tơ đó muốn là cặp VTCP thì chúng phải không cùng phương.\\\\",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0705025",
+        "question": "Nếu $\\vec{a}, \\vec{b}$ là cặp VTCP của $(P)$ thì véc tơ nào sau đây có thể là VTPT của $(P)$ ?\\\\",
+        "options": [
+            "A. $-\\vec{a}$ hoặc $-\\vec{b}$\\\\\n",
+            "B. $[\\vec{a}, \\vec{b}]$\\\\\n",
+            "C. $\\vec{a}-\\vec{b}$\\\\\n",
+            "D. $\\vec{a}+\\vec{b}$"
+        ],
+        "explain": "Vi tích có hướng của hai vecto là một vecto vuông góc với cả hai vecto ban đầu nên nó vuông góc với mặt phẳn $(P)$.\\\\\nNếu $\\vec{a}, \\vec{b}$ là cặp VTCP của $(P)$ thì $[\\vec{a}, \\vec{b}]$ là một VTPT của $(P)$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0706026",
+        "question": "Trong không gian $O x y z$, cho mặt phẳng $(P): x-y+3=0$. Vec-tơ nào sau đây không là vecto pháp tuyến của mặt phẳng $(P)$.\\\\",
+        "options": [
+            "A. $\\backslash($ vec $a=(3,-3,0) \\backslash)$\\\\\n",
+            "B. $\\backslash(\\backslash$ vec $a=(1,-2,3) \\backslash)$\\\\\n",
+            "C. $\\(\\backslash$ vec $a=(-1,1,0) \\backslash)$\\\\\n",
+            "D. $\\backslash(\\backslash$ vec $a=(1,-1,0) \\backslash)$"
+        ],
+        "explain": "Nhận thấy $(P): x-y+3=0$ nhận $\\vec{n}=(1 ;-1 ; 0)$ làm véc tơ pháp tuyến nên các véc tơ $\\vec{a}=(3 ;-3 ; 0), \\vec{a}=(-1 ; 1 ; 0)$ cũng là các véc tơ pháp tuyến của $(P)$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0706027",
+        "question": "Trong không gian $O x y z$, cho mặt phẳng $(P): x-3 z+2=0$. Vectơ nào dưới đây là một vectơ pháp tuyến của mặt phẳng $(P)$ ?\\\\",
+        "options": [
+            "A. $\\overrightarrow{n_{1}}=(1 ;-3 ; 2)$.\\\\\n",
+            "B. $\\overrightarrow{n_{2}}=(1 ; 0 ; 2)$.\\\\\n",
+            "C. $\\overrightarrow{n_{3}}=(1 ; 0 ;-3)$\\\\\n",
+            "D. $\\overrightarrow{n_{4}}=(1 ;-3 ; 0)$."
+        ],
+        "explain": "Vectơ $\\overrightarrow{n_{3}}=(1 ; 0 ;-3)$ là một vectơ pháp tuyến của mặt phẳng $(P): x-3 z+2=0$.",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0706028",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, mặt phẳng $(P): x-2 y+3 z-3=0$ có một vectơ pháp tuyến là\\\\",
+        "options": [
+            "A. $(1 ;-2 ;-3)$.\\\\\n",
+            "B. $(1 ; 2 ; 3)$.\\\\\n",
+            "C. $(1 ;-2 ; 3)$.\\\\\n",
+            "D. $(-1 ;-2 ; 3)$."
+        ],
+        "explain": "Một vectơ pháp tuyến của $(P)$ là $\\vec{n}=(1 ;-2 ; 3)$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0706029",
+        "question": "Trong không gian với hệ tọa độ $O x y z$, viết phương trình mặt phắng qua điểm $M(2,-3,4)$ và nhận $\\vec{n}=(-2,4,1)$ làm vectơ pháp tuyến.\\\\",
+        "options": [
+            "A. $2 x-3 y+4 z+12=0$\\\\\n",
+            "B. $2 x-4 y-z-12=0$\\\\\n",
+            "C. $2 x-4 y-z+10=0$\\\\\n",
+            "D. $-2 x+4 y+z+11=0$"
+        ],
+        "explain": "Phương trình mặt phẳng qua điểm $M(2,-3,4)$ và nhận $\\vec{n}=(-2,4,1)$ làm vectơ pháp tuyến là:\\\\\n$-2(x-2)+4(y+3)+(z-4)=0 \\Leftrightarrow-2 x+4 y+z+12=0 \\Leftrightarrow 2 x-4 y-z-12=0$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0706030",
+        "question": "Trong không gian $O x y z$ cho $A(1 ; 1 ;-2), B(2 ; 0 ; 3), C(-2 ; 4 ; 1)$. Mặt phẳng đi qua $A$ và vuông góc với đường thẳng $B C$ có phương trình là:\\\\",
+        "options": [
+            "A. $x+y-2 z-6=0$.\\\\\n",
+            "B. $2 x-2 y+z+2=0$.\\\\\n",
+            "C. $2 x+2 y+z-2=0$.\\\\\n",
+            "D. $x+y-2 z+2=0$."
+        ],
+        "explain": "Ta có: $\\overrightarrow{B C}=(-4 ; 4 ;-2)$ là 1 VTPT của mặt phẳng qua $A$ và vuông góc với đường thẳng $B C$.\\\\\nMặt phẳng đi qua $A$ và vuông góc với đường thẳng $B C$ nhận $\\overrightarrow{B C}=(-4 ; 4 ;-2)$ là VTPT, có phương trình là:\\\\\n$-4(x-1)+4(y-1)-2(z+2)=0 \\Leftrightarrow-4 x+4 y-2 z-4=0 \\Leftrightarrow 2 x-2 y+z+2=0$\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0707031",
+        "question": "Phương trình tham số của đường thẳng đi qua điểm $M\\left(x_{0} ; y_{0} ; z_{0}\\right)$ và có VTCP $\\vec{u}=(a ; b ; c)$ là:\\\\",
+        "options": [
+            "A. $d:\\left\\{\\begin{array}{l}x=x_{0}+a t \\\\ y=y_{0}+b t \\\\ z=z_{0}+c t\\end{array} \\quad(t \\in \\mathbb{Z})\\right.$\\\\\n",
+            "B. $d:\\left\\{\\begin{array}{l}x=x_{0}+a t \\\\ y=y_{0}+b t \\\\ z=z_{0}+c t\\end{array} \\quad(t \\in \\mathbb{R})\\right.$\\\\\n",
+            "C. $d:\\left\\{\\begin{array}{l}x=a+x_{0} t \\\\ y=b+y_{0} t \\\\ z=c+z_{0} t\\end{array} \\quad(t \\in \\mathbb{R})\\right.$\\\\\n",
+            "D. $d:\\left\\{\\begin{array}{l}x=a+x_{0} t \\\\ y=b+y_{0} t \\\\ z=c+z_{0} t\\end{array} \\quad(t \\in \\mathbb{Z})\\right.$"
+        ],
+        "explain": "Phương trình tham số $d:\\left\\{\\begin{array}{l}x=x_{0}+a t \\\\ y=y_{0}+b t \\\\ z=z_{0}+c t\\end{array} \\quad(t \\in \\mathbb{R})\\right.$.\\\\",
+        "image_source": null,
+        "answer": "B",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0707032",
+        "question": "Phương trình chính tắc của đường thẳng đi qua $M\\left(x_{0} ; y_{0} ; z_{0}\\right)$ và nhận $\\vec{u}=(a ; b ; c)$ làm VTCP là:\\\\",
+        "options": [
+            "A. $\\frac{x-a}{x_{0}}=\\frac{y-b}{y_{0}}=\\frac{z-c}{z_{0}}$\\\\\n",
+            "B. $\\frac{x-x_{0}}{x_{0}}=\\frac{y-y_{0}}{y_{0}}=\\frac{z-z_{0}}{z_{0}}$\\\\\n",
+            "C. $\\frac{x-x_{0}}{a}=\\frac{y-y_{0}}{b}=\\frac{z-z_{0}}{c}$\\\\\n",
+            "D. $\\left\\{\\begin{array}{l}x=x_{0}+a t \\\\ y=y_{0}+b t \\\\ z=z_{0}+c t\\end{array} \\quad(t \\in \\mathbb{R})\\right.$"
+        ],
+        "explain": "Phương trình chính tắc của đường thẳng đi qua $M\\left(x_{0} ; y_{0} ; z_{0}\\right)$ và nhận $\\vec{u}=(a ; b ; c)$ làm VTCP là $\\frac{x-x_{0}}{a}=\\frac{y-y_{0}}{b}=\\frac{z-z_{0}}{c}$.",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0707033",
+        "question": "Đường thẳng $\\frac{x-x_{0}}{a}=\\frac{y-y_{0}}{b}=\\frac{z-z_{0}}{c}$ có một VTCP là:\\\\",
+        "options": [
+            "A. $(a ; b ; c)$\\\\\n",
+            "B. $(a ;-b ; c)$\\\\\n",
+            "C. $\\left(x_{0} ; y_{0} ; z_{0}\\right)$\\\\\n",
+            "D. $\\left(-x_{0} ;-y_{0} ;-z_{0}\\right)$"
+        ],
+        "explain": "Đường thẳng $\\frac{x-x_{0}}{a}=\\frac{y-y_{0}}{b}=\\frac{z-z_{0}}{c}$ có một VTCP là $(a ; b ; c)$.\\\\",
+        "image_source": null,
+        "answer": "A",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0707034",
+        "question": "Đường thẳng đi qua điểm $\\left(-x_{0} ;-y_{0} ;-z_{0}\\right)$ và có VTCP $(-a ;-b ;-c)$ có phương trình:\\\\",
+        "options": [
+            "A. $\\frac{x-x_{0}}{a}=\\frac{y-y_{0}}{b}=\\frac{z-z_{0}}{c}$\\\\\n",
+            "B. $\\frac{x-x_{0}}{-a}=\\frac{y-y_{0}}{-b}=\\frac{z-z_{0}}{-c}$\\\\\n",
+            "C. $\\frac{x+x_{0}}{a}=\\frac{y+y_{0}}{b}=\\frac{z+z_{0}}{c}$\\\\\n",
+            "D. $\\frac{x+x_{0}}{a}=\\frac{y+y_{0}}{-b}=\\frac{z+z_{0}}{c}$"
+        ],
+        "explain": "Đường thẳng đi qua điểm $\\left(-x_{0} ;-y_{0} ;-z_{0}\\right)$ và có VTCP $(-a ;-b ;-c)$ có phương trình:\n\n$$\n\\frac{x-\\left(-x_{0}\\right)}{-a}=\\frac{y-\\left(-y_{0}\\right)}{-b}=\\frac{z-\\left(-z_{0}\\right)}{-c} \\Leftrightarrow \\frac{x+x_{0}}{a}=\\frac{y+y_{0}}{b}=\\frac{z+z_{0}}{c}\n$$",
+        "image_source": null,
+        "answer": "C",
+        "difficulty": "Nhận biết"
+    },
+    {
+        "id": "T0707035",
+        "question": "Cho đường thẳng $d:\\left\\{\\begin{array}{l}x=-t \\\\ y=1-t \\\\ z=t\\end{array} \\quad(t \\in \\mathbb{R})\\right.$. Điểm nào trong các điểm dưới đây thuộc đường thẳng $d$ ?\\\\",
+        "options": [
+            "A. $(-1 ;-1 ; 1)$\\\\\n",
+            "B. $(-1 ; 1 ; 1)$\\\\\n",
+            "C. $(0 ; 1 ; 1)$\\\\\n",
+            "D. $(0 ; 1 ; 0)$"
+        ],
+        "explain": "Vì $d:\\left\\{\\begin{array}{l}x=-t \\\\ y=1-t \\\\ z=t\\end{array} \\Leftrightarrow\\left\\{\\begin{array}{l}x=0-t \\\\ y=1-t \\\\ z=0+t\\end{array}(t \\in \\mathbb{R})\\right.\\right.$ nên $d$ đi qua điểm $(0 ; 1 ; 0)$.\\\\\nNgoài ra các điểm ở mỗi đáp án $A, B, C$ đều không thỏa mãn phương trình của $d$ nên chỉ có đáp án $D$ đúng.\\\\",
+        "image_source": null,
+        "answer": "D",
+        "difficulty": "Nhận biết"
+    }
+]

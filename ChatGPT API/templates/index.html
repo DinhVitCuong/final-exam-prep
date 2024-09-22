@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chat App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+  <!-- Highlight.js for code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+  <!-- MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Showdown.js for Markdown to HTML conversion -->
+  <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 style="color:white">Chat Bot</h1>
+    <div class="chat-box mt-3" id="chat-box">
+      <!-- Chat messages will be added here dynamically -->
+    </div>
+    <div class="form-group mt-3">
+      <textarea class="form-control" rows="3" placeholder="Type your message here" id="message-input" disabled></textarea>
+    </div>
+    <button type="button" class="btn btn-primary" id="send-btn" disabled>Send</button>
+  </div>
+  
+  <script>
+    // Initialize Showdown converter
+    const converter = new showdown.Converter();
+
+    function highlightAll() {
+      document.querySelectorAll("pre code").forEach(block => {
+        hljs.highlightBlock(block);  // Highlight code blocks
+      });
+    }
+
+    function renderMath() {
+      MathJax.typesetPromise();  // Re-render MathJax equations
+    }
+
+    const chatBox = document.querySelector("#chat-box");
+    const messageInput = document.querySelector("#message-input");
+    const sendBtn = document.querySelector("#send-btn");
+
+    // Enable input and send button after loading
+    window.onload = function() {
+      messageInput.disabled = false;
+      sendBtn.disabled = false;
+    };
+
+    function addMessage(message, isUserMessage) {
+      const messageDiv = document.createElement("div");
+      messageDiv.classList.add("mt-3", "p-3", "rounded");
+
+      if (isUserMessage) {
+        messageDiv.classList.add("user-message");
+        messageDiv.innerHTML = `<img src="{{ url_for('static', filename='images/user.png') }}" class="user-icon"><p>${message}</p>`;
+      } else {
+        // Convert Markdown to HTML
+        const htmlContent = converter.makeHtml(message);
+
+        messageDiv.classList.add("bot-message");
+        messageDiv.innerHTML = `<img src="{{ url_for('static', filename='images/gpt.jpg') }}" class="bot-icon"><p>${htmlContent}</p>`;
+      }
+
+      chatBox.appendChild(messageDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      highlightAll();  // Highlight any code blocks
+      renderMath();  // Render MathJax
+    }
+
+    function sendMessage() {
+      const message = messageInput.value.trim();
+
+      if (message !== "") {
+        // Add user message to chatbox
+        addMessage(message, true);
+        
+        // Clear input field and disable input & button while waiting
+        messageInput.value = "";
+        messageInput.disabled = true;
+        sendBtn.disabled = true;
+
+        // Send the message to the Flask backend
+        fetch("/api", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ message })
+        })
+          .then(response => response.json())
+          .then(data => {
+            const content = data.response || data.error;  // Adjust to your backend's response structure
+            addMessage(content, false);  // Add bot message
+
+            // Enable input and button after receiving response
+            messageInput.disabled = false;
+            sendBtn.disabled = false;
+            messageInput.focus();  // Focus back on the input field
+
+            highlightAll();  // Re-highlight any code block
+            renderMath();  // Re-render any MathJax equations
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            addMessage('Error: Unable to get a response from the server.', false);
+
+            // Re-enable input and button in case of error
+            messageInput.disabled = false;
+            sendBtn.disabled = false;
+            messageInput.focus();
+          });
+      }
+    }
+
+    sendBtn.addEventListener("click", sendMessage);
+    messageInput.addEventListener("keydown", event => {
+      if (event.keyCode === 13 && !event.shiftKey) {
+        event.preventDefault();
+        sendMessage();
+      }
+    });
+  </script>
+</body>
+
+</html>
