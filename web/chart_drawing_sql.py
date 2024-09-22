@@ -276,15 +276,15 @@ class DrawChap(DrawChartBase):
     
 
 
-# with app.app_context():     #chap  #test_type    #self.num
-#     test = DrawTotal("L", None , None, 10, "average")
-#     # print(test.data)
-#     print(test.cal_accu_diff())
-#     #print(test.lessons_id_to_review())
-#     print(test.previous_results())
-#     # print(test.short_total_analysis())
+with app.app_context():     #chap  #test_type    #self.num
+    test = DrawTotal("T", None , None, 10, "average")
+    print(test.data)
+    print(test.cal_accu_diff())
+    #print(test.lessons_id_to_review())
+    print(test.previous_results())
+    print(test.short_total_analysis())
     
-#     # print(test.find_most_wrong_chap())
-#     # test = DrawChap("L", 3 , None, 3, "average")
-#     # print(test.difficult_percentile_per_chap())
+    # print(test.find_most_wrong_chap())
+    # test = DrawChap("L", 3 , None, 3, "average")
+    # print(test.difficult_percentile_per_chap())
     

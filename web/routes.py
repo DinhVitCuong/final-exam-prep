@@ -269,7 +269,7 @@ def select_uni():
 
 @app.route("/total-test/<subject>", methods=["GET", "POST"])  
 def total_test(subject):  
-    if subject == "M":
+    if subject == "T":
         chapter = 7
     elif subject == "L":
         chapter = 7
@@ -340,7 +340,7 @@ def subject(subject_id):
     subject_name = ''
     if subject_id == 'S1':  # Toán
         subject_name = 'Toán'
-        subject = 'M'
+        subject = 'T'
     elif subject_id == 'S2':  # Lí
         subject_name = 'Lí'
         subject = 'L'

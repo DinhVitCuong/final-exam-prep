@@ -354,11 +354,12 @@ class generateAnalysis:
             json_data = json.loads(json_string)
         return json_data
 
+
 app = create_app()
 with app.app_context():
     # a = promptChap(0, 8, "L", 3)
     # print(a.next_test_date())
-    test = generateAnalysis("L",3)
+    test = generateAnalysis("T",3)
     # # "deep", "fast", "progress", "chapter"
     # # print(test.analyze("deep"))
     # # print(test.detail_plan_and_timeline())
@@ -372,5 +373,5 @@ with app.app_context():
             json.dump(json_str, f, ensure_ascii=False, indent=4)
         except json.decoder.JSONDecodeError:
             print("Error")
-
+    
     # print(test.analyze("deep"))
