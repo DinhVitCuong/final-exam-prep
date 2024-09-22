@@ -1,0 +1,17 @@
+```json
+[
+    {'date': '15/09/2024', 'action': 'Ôn tập Chương 1: Ôn lại bài 01 và bài 0R, tập trung vào loại câu hỏi 1 và 3', 'done': 'false'},
+    {'date': '16/09/2024', 'action': 'Ôn tập Chương 2: Ôn lại bài 05, bài 04 và bài 0R, tập trung vào loại câu hỏi 1 và 2', 'done': 'false'},
+    {'date': '17/09/2024', 'action': 'Ôn tập Chương 3: Ôn lại bài 10 và bài 08, tập trung vào loại câu hỏi 0 và 3', 'done': 'false'},
+    {'date': '18/09/2024', 'action': 'Ôn tập Chương 4: Ôn lại bài 13 và bài 14, tập trung vào loại câu hỏi 1 và 2', 'done': 'false'},
+    {'date': '19/09/2024', 'action': 'Ôn tập Chương 5: Ôn lại bài 0R và bài 18, tập trung vào loại câu hỏi 1 và 2', 'done': 'false'},
+    {'date': '20/09/2024', 'action': 'Ôn tập Chương 6: Ôn lại bài 21 và bài 23, tập trung vào loại câu hỏi 0 và 1', 'done': 'false'},
+    {'date': '21/09/2024', 'action': 'Ôn tập Chương 7: Ôn lại bài 26 và bài 25, tập trung vào tất cả các loại câu hỏi', 'done': 'false'},
+    {'date': '21/09/2024', 'action': 'Chuẩn bị cho bài test tổng vào ngày 21/09/2024', 'done': 'false'},
+    {'date': '22/09/2024', 'action': 'Xem lại kết quả bài test tổng và phân tích các điểm mạnh, điểm yếu', 'done': 'false'},
+    {'date': '23/09/2024', 'action': 'Thực hiện 'Wrong question searching' cho các bài đã sai', 'done': 'false'},
+    {'date': '24/09/2024', 'action': 'Thực hiện 'Analytic review' để nhận diện điểm mạnh và điểm yếu', 'done': 'false'},
+    {'date': '25/09/2024', 'action': 'Làm các bài test tập trung vào các kiến thức đã sai từ các chương trước', 'done': 'false'},
+    {'date': '26/09/2024', 'action': 'Học bài mới và áp dụng các kiến thức đã học vào thực hành', 'done': 'false'}
+]
+```
