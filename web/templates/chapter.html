@@ -172,7 +172,7 @@
         class="background-image"
       />
       <div class="header">
-        <p class="header__content">Chương 1:</p>
+        <p class="header__content">Chương {{chap_id}}:</p>
       </div>
       <div class="content">
         <button class="button--back">
@@ -189,13 +189,12 @@
             <button class="button--watch-history">Lịch sử làm bài</button>
             <div class="feedback__container">
               <p class="feedback__content">
-                Phần lớn bạn sai ở đâu đâu đó mik dell biết nhưng hãy xem lại
-                bài đi thằng ngu m đang học tệ đi đấy
+                {{feedback}}
               </p>
             </div>
           </div>
         </div>
-        <button class="button__practice">Bạn sợ à?</button>
+        <a href="{{ url_for('chapter_test',chap_id=chap_id)}}" class="button__chapter__test">Làm bài kiểm tra</a>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
