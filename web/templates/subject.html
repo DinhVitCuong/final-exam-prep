@@ -254,7 +254,7 @@
           {% for chapter in chapter_numbers_list %}
           <div class="chapter">
               <div class="chapter__button">
-                  <a href="{{ url_for('chapter_test', subject=subject, chap_id=chapter) }}">
+                  <a href="{{ url_for('evaluate_chapter_test', subject_id=subject_id, chap_id=chapter) }}">
                       <p>Chương {{ chapter }}</p>
                   </a>
               </div>
