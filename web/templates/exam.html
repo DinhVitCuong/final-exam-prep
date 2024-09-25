@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam</title>
     <style>
@@ -230,6 +231,24 @@
     }
 
   </style>
+  <script>
+    MathJax = {
+      tex: {
+        // Hỗ trợ cả toán học nội tuyến và toán học block
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        processEscapes: false,  // Tắt thoát ký tự $ để tránh nhầm lẫn với công thức toán học
+        decimalSeparator: ".",  // Đảm bảo dấu chấm trong số thập phân được nhận diện
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],  // Bỏ qua những thẻ không cần xử lý
+        ignoreHtmlClass: 'tex-ignore',  // Cho phép thêm class để bỏ qua nếu cần
+      },
+      svg: {
+        fontCache: 'global'  // Sử dụng font cache để tăng tốc độ hiển thị
+      }
+    };
+  </script>
   </head>
   <body>
     <div class="test-page">
@@ -239,7 +258,7 @@
 
       <div class="header">
         <div class="header__content">
-          <p>Bài kiểm tra tổng</p>
+          <p>Bài kiểm tra</p>
         </div>
       </div>
       <div class="countdown">
@@ -281,52 +300,69 @@
       let answers = new Array(QAs.length).fill(null); // Track the answers
     
       // Update question content and options dynamically
-      function updateQuestionContent(index) {
-        const questionContent = document.querySelector(".current-question__content");
-        const optionsContainer = document.querySelector(".current-question__options-container");
-    
-        // Set the current question text
-        questionContent.textContent = `Câu ${index + 1}: ${QAs[index].question}`;
-    
-        // Clear previous options
-        optionsContainer.innerHTML = "";
-    
-        // Split options (assuming options are stored as "A.1_B.2_C.3_D.4")
-        const options = QAs[index].options.split("_");
-    
-        // Dynamically create options
-        options.forEach(option => {
-          const [optLabel, optContent] = option.split(".");
-    
-          const optionDiv = document.createElement("div");
-          optionDiv.className = `current-question__option option--${optLabel}`;
-    
-          const input = document.createElement("input");
-          input.type = "radio";
-          input.name = "option";
-          input.id = `option-${optLabel}`;
-          input.value = optLabel;
-          input.addEventListener("change", () => saveAnswer(index, optLabel));
-    
-          const label = document.createElement("label");
-          label.htmlFor = `option-${optLabel}`;
-          label.textContent = optLabel;
-    
-          const content = document.createElement("p");
-          content.className = `option__content option__content--${optLabel}`;
-          content.textContent = optContent;
-    
-          optionDiv.appendChild(input);
-          optionDiv.appendChild(label);
-          optionDiv.appendChild(content);
-          optionsContainer.appendChild(optionDiv);
-    
-          // Restore previous selection if the user has already selected an answer
-          if (answers[index] === optLabel) {
-            input.checked = true;
+      MathJax.startup.promise.then(() => {
+        console.log("MathJax is ready");});
+          
+        function updateQuestionContent(index) {
+          const questionContent = document.querySelector(".current-question__content");
+          const optionsContainer = document.querySelector(".current-question__options-container");
+
+          // Set the current question text with inline LaTeX (use \( and \) instead of $$)
+          questionContent.innerHTML = `Câu ${index + 1}: ${QAs[index].question.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;
+
+          // If there's an image URL for the question, add an image below the question text
+          if (QAs[index].image_source) {
+            const img = document.createElement("img");
+            img.src = QAs[index].image_source;
+            img.alt = "Question Image";
+            img.style.maxWidth = "100%";
+            questionContent.appendChild(img);
           }
-        });
-      }
+
+          // Clear previous options
+          optionsContainer.innerHTML = "";
+
+          // Split options (assuming options are stored as "A.1__B.2__C.3__D.4")
+          const options = QAs[index].options.split("__");
+
+          // Dynamically create options (supports LaTeX)
+          options.forEach(option => {
+            const [optLabel, optContent] = option.split(".");
+
+            const optionDiv = document.createElement("div");
+            optionDiv.className = `current-question__option option--${optLabel}`;
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "option";
+            input.id = `option-${optLabel}`;
+            input.value = optLabel;
+            input.addEventListener("change", () => saveAnswer(index, optLabel));
+
+            const label = document.createElement("label");
+            label.htmlFor = `option-${optLabel}`;
+            label.innerHTML = optLabel;  // This part remains text
+
+            const content = document.createElement("p");
+            content.className = `option__content option__content--${optLabel}`;
+            content.innerHTML = `${optContent.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;  // Use innerHTML for LaTeX
+
+            optionDiv.appendChild(input);
+            optionDiv.appendChild(label);
+            optionDiv.appendChild(content);
+            optionsContainer.appendChild(optionDiv);
+
+            // Restore previous selection if the user has already selected an answer
+            if (answers[index] === optLabel) {
+              input.checked = true;
+            }
+          });
+
+          // After dynamically adding LaTeX content, trigger MathJax rendering
+          MathJax.typesetPromise().then(() => {
+            console.log("MathJax processing complete");
+          });
+        }
     
       // Save the user's answer
       function saveAnswer(index, option) {
