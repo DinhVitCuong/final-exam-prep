@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Selection Page</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Kanit", sans-serif;
+        font-style: normal;
+      }
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Darker color when hovering */
+      }
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+      .university-selection-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+      .university-selection-page__background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        z-index: -10;
+      }
+      .university-selection-page__carousel-container {
+        width: 50%;
+        height: 80vh;
+        max-height: 80vh;
+        padding: 100px 10px 20px;
+        color: black;
+        background-color: #f1f5f9;
+        border-radius: 40px;
+        border: 2px solid #c28282;
+        overflow: hidden;
+        position: relative;
+      }
+      .university-selection-page__slide {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+      }
+      .university-selection-page__title {
+        font-size: 1.875rem;
+        text-align: center;
+      }
+      .university-selection-page__input-container,
+      .university-selection-page__goal-input-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        border-radius: 24px;
+        border: 2px solid #2642a5;
+        box-shadow: 2px 2px 1px 2px #2642a5;
+        width: 80%;
+      }
+      .university-selection-page__goal-input-container {
+        background-color: #cccdee;
+        width: 91.666667%;
+        display: flex;
+      }
+      .university-selection-page__icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 12px;
+      }
+      .university-selection-page__input{
+        padding-left: 12px;
+        padding-right: 32px;
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        height: 32px;
+        appearance: none;
+        
+      }
+      .university-selection-page__input:focus{
+        outline: none;
+      }
+      .university-selection-page__goal-input {
+        height: 56px;
+        font-size: 1.5rem;
+        flex: 1; 
+        
+        border: none;
+        width: 100%;
+        background-color: transparent;
+        height: 32px;
+        appearance: none; 
+      }
+      .university-selection-page__label {
+        margin-left: 20px;
+        font-size: 1.5rem;
+        white-space: nowrap;
+        margin-right: 8px; 
+      }
+      .carousel__arrow {
+        position: absolute;
+        bottom: 10%;
+        z-index: 10;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      .carousel__arrow--left {
+        left: 10%;
+      }
+      .carousel__arrow--right {
+        right: 10%;
+      }
+      .rotate-180 {
+        transform: rotate(180deg);
+      }
+      .options-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        border-radius: 24px;
+        gap: 8px;
+        max-height: 250px;  
+        overflow-y: auto;  
+        background-color: rgb(255, 255, 255);
+        .option{
+          text-align: left;
+          background-color: white;
+          border: 1px solid #1a3081;
+          width: 100%;
+          font-size: 1em;
+          padding: 0.4rem 0.6rem;
+          border-radius: 16px;
+          box-shadow: inset 0 0 5px 0 #1a3081;
+        }
+      }
+      .selected {
+        background-color: #80ff60; /* Change to a distinctive color */
+        color: rgb(255, 54, 54);              /* Change text color to make it readable */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="university-selection-page">
+      <img
+        src="../static/assets/background.svg"
+        alt="background"
+        class="university-selection-page__background-image"
+      />
+      <div class="university-selection-page__carousel-container">
+        <form method="POST">
+          {{ form.csrf_token }}
+          {{ form.hidden_tag() }}
+          <div class="carousel">
+            <div class="university-selection-page__slide">
+              <h1 class="university-selection-page__title">Chọn khối bạn quan tâm?</h1>
+              <div class="university-selection-page__input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="university-selection-page__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+                {{ form.subject_category(class="university-selection-page__input",placeholder="Hãy chọn khối của bạn") }}
+              </div>
+            </div>
+            <div class="university-selection-page__slide">
+              <h1 class="university-selection-page__title">Chọn ngành bạn quan tâm?</h1>
+              <div class="university-selection-page__input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="university-selection-page__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+                {{ form.major(class="university-selection-page__input") }}
+              </div>
+            </div>
+            <div class="university-selection-page__slide">
+              <h1 class="university-selection-page__title">Chọn thành phố bạn mong muốn?</h1>
+              <div class="university-selection-page__input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="university-selection-page__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+                {{ form.location(class="university-selection-page__input",placeholder="Hãy chọn thành phố bạn mong muốn học") }}
+              </div>
+            </div>
+            <div class="university-selection-page__slide">
+              <h1 class="university-selection-page__title">Chọn mức học phí bạn mong muốn?</h1>
+              <div class="university-selection-page__input-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="university-selection-page__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+                {{ form.budget(class="university-selection-page__input",placeholder="Đơn vị: triệu đồng") }}
+              </div>
+            </div>
+            <div class="university-selection-page__slide">
+              <h1 class="university-selection-page__title">Chọn trường bạn quan tâm?</h1>
+              <div class="university-selection-page__input-container">
+                <div class="options-container">
+                  {% for uni_id, uni_details in form.university.choices %}
+                  <button type="button" class="option" onclick="selectUniversity('{{ uni_id }}')">
+                    {{ uni_details.replace('\n', '<br>') | safe }}
+                  </button>
+                  {% endfor %}
+                </div>
+                <input type="hidden" name="university" id="selected-university" value="">
+              </div>
+            </div>
+            <div class="university-selection-page__slide">
+              {{ form.csrf_token }}
+              <h1 class="university-selection-page__title">Mục tiêu</h1>
+              <div class="university-selection-page__goal-input-container">
+                <label for="selected-university" class="university-selection-page__label"
+                >Trường:</label
+                >
+                <input
+                  type="text"
+                  id="selected-university"
+                  class="university-selection-page__goal-input"
+                  value="{{ uni_name }}"
+                  readonly
+                />
+              </div>
+              <div class="university-selection-page__goal-input-container">
+                <label for="selected-major" class="university-selection-page__label"
+                  >Ngành:</label
+                >
+                <input
+                  type="text"
+                  id="selected-major"
+                  class="university-selection-page__goal-input"
+                  value="{{ form.major.data }}"
+                  readonly
+                />
+              </div>
+              <div class="university-selection-page__goal-input-container">
+                <label for="selected-subject-cat" class="university-selection-page__label"
+                  >Khối thi:</label
+                >
+                <input
+                  type="text"
+                  id="selected-subject-cat"
+                  class="university-selection-page__goal-input"
+                  value="{{ form.subject_category.data }}"
+                  readonly
+                />
+              </div>
+              <div class="university-selection-page__goal-input-container">
+                <label for="selected-score" class="university-selection-page__label"
+                  >Điểm:</label
+                >
+                <input
+                  type="text"
+                  id="selected-score"
+                  class="university-selection-page__goal-input"
+                  value="{{ score }}"
+                  readonly
+                />
+              </div>
+            </div>
+          </div>
+          {%if current_slide != 0%}
+          <button
+            class="carousel__arrow carousel__arrow--left"
+            onclick="prevSlide()"
+          >
+            <img src="../static/assets/left-arrow-slider.svg" alt="left arrow" />
+          </button>
+          {%endif%}
+          <button
+            class="carousel__arrow carousel__arrow--right"
+            onclick="nextSlide()"
+          >
+            <img
+              src="../static/assets/left-arrow-slider.svg"
+              alt="right arrow"
+              class="rotate-180"
+            />
+          </button>
+          {{ form.current_slide(style="display:none;") }}
+        </div>
+      </form>
+    </div>
+    <script>
+      let currentSlide = {{ current_slide }};
+      const slides = document.querySelectorAll(".university-selection-page__slide");
+      const totalSlides = slides.length;
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? "flex" : "none";
+        });
+        document.getElementsByName('current_slide')[0].value = index;
+      }
+
+      function nextSlide() {
+        // Advance to the next slide
+        // currentSlide = (currentSlide + 1) % totalSlides;
+        // showSlide(currentSlide);
+        currentSlide++;
+        // Update the hidden field value with the new slide index
+        document.getElementsByName('current_slide')[0].value = currentSlide;
+        document.querySelector('form').submit()
+      }
+
+      function prevSlide() {
+        currentSlide--;
+        // Update the hidden field value with the new slide index
+        document.getElementsByName('current_slide')[0].value = currentSlide;
+        // Show the previous slide
+        showSlide(currentSlide);
+      }
+
+      function selectUniversity(university) {
+        document.getElementById('selected-university').value = university;
+        // Highlight the selected button
+        document.querySelectorAll('.option').forEach(button => button.classList.remove('selected'));
+        document.querySelector(`.option[onclick="selectUniversity('${university}')"]`).classList.add('selected');
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        showSlide(currentSlide);
+        
+      });
+    </script>
+  </body>
+</html>
