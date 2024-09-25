@@ -186,7 +186,7 @@ class promptChap(promptCreation):
             data_prompt += f"- Loại câu hỏi {type1}: {accu}%\n"
 
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
-        predict = PredictThreshold(self.type_test, self.subject)
+        predict = PredictThreshold(self.type_test, self.subject, self.num_chap)
 
         data = predict.predicted_data()
         for row in data.itertuples(index=False):
@@ -322,7 +322,6 @@ class generateAnalysis:
 
         return response
 
-
     def format_data(self): 
         data = self.detail_plan_and_timeline() # try except
         data += (
@@ -356,22 +355,25 @@ class generateAnalysis:
 
 
 app = create_app()
-with app.app_context():
-    # a = promptChap(0, 8, "L", 3)
+with app.app_context(): # type , num , subject, num_chap
+    # a = promptChap(0, 1, "L", 3)
+    # print(a.chap_analysis())
+    a = generateAnalysis("L", 3)
+    print(a.analyze("chapter"))
     # print(a.next_test_date())
-    test = generateAnalysis("T",3)
-    # # "deep", "fast", "progress", "chapter"
-    # # print(test.analyze("deep"))
-    # # print(test.detail_plan_and_timeline())
-    # # # test.format_data()
-    abc = test.format_data()
-    with open("todo.txt", "w", encoding="utf-8") as f:
-        f.write(abc)
-    json_str = test.turning_into_json()
-    with open("todo_T.json", "w", encoding="utf-8") as f:
-        try:
-            json.dump(json_str, f, ensure_ascii=False, indent=4)
-        except json.decoder.JSONDecodeError:
-            print("Error")
+#     test = generateAnalysis("T",3)
+#     # # "deep", "fast", "progress", "chapter"
+#     # # print(test.analyze("deep"))
+#     # # print(test.detail_plan_and_timeline())
+#     # # # test.format_data()
+#     abc = test.format_data()
+#     with open("todo.txt", "w", encoding="utf-8") as f:
+#         f.write(abc)
+#     json_str = test.turning_into_json()
+#     with open("todo_T.json", "w", encoding="utf-8") as f:
+#         try:
+#             json.dump(json_str, f, ensure_ascii=False, indent=4)
+#         except json.decoder.JSONDecodeError:
+#             print("Error")
     
     # print(test.analyze("deep"))
