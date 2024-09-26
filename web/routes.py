@@ -434,58 +434,63 @@ def practice_test(subject):
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 
-@app.route("/chapter-test/<chap_id>")
-def chapter_test(chap_id):
-    subject = request.args.get('subject')
-    time_limit = 45 #Minute
-    rate = [40, 30, 20, 10]
-    test_chap = TestChap(subject, chap_id)
-    questions= test_chap.create_test(rate)
+@app.route("/chapter-test/<chap_id>/<subject>", methods=["GET", "POST"])
+def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và subject từ URL
+    time_limit = 45  # Giới hạn thời gian là 45 phút
+    rate = [40, 30, 20, 10]  # Tỷ lệ câu hỏi trong bài kiểm tra
+
+    print(f"Subject: {subject}")
+    print(f"Chapter ID: {chap_id}")
+    
+    test_chap = TestChap(subject, int(chap_id))
+    questions = [{"ID": q.id, "question": q.question, "options": q.options, "answer": q.answer} for q in test_chap.create_test(rate)]
+
     if request.method == "POST":
-        
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
         date = request.form.get('date')
-        # Convert from JSON string back to Python lists
-        
-        time_spent = json.loads(time_spent)
-        answers = json.loads(answers)
+
+        # Chuyển từ chuỗi JSON sang list Python
+        time_spent = json.loads(time_spent) if time_spent else []
+        answers = json.loads(answers) if answers else []
+
         time_string = ""
         questions_ID_string = ""
         wrong_answer_string = ""
         result = []
         wrong_answers = []
+
         for i, question in enumerate(questions):
-            questions_ID_string += f"{question.ID}_"
+            questions_ID_string += f"{question['ID']}_"
             result.append(str(answers[i]))
             time_string += f"{time_spent[i]}_"
             
             if answers[i] == 0:
-                wrong_answers.append(str(question.ID))
+                wrong_answers.append(str(question['ID']))
 
-        # Remove trailing underscores from strings
+        # Loại bỏ ký tự '_' cuối cùng
         questions_ID_string = questions_ID_string.rstrip("_")
         time_string = time_string.rstrip("_")
         wrong_answer_string = "_".join(wrong_answers)
 
-        # Create a new Test record
+        # Tạo bản ghi Test mới và lưu vào cơ sở dữ liệu
         new_test_record = Test(
             user_id=current_user.id,
-            test_type=0,  # 0 for Chapter test
+            test_type=0,  # 0 cho Chapter test
             time=date,
             knowledge=chap_id,
             questions=questions_ID_string,
             wrong_answer=wrong_answer_string,
-            result="_".join(result),  # Format 0_1_0...
-            time_result=time_string  # Format time1_time2_time3...
+            result="_".join(result),
+            time_result=time_string
         )
         db.session.add(new_test_record)
         db.session.commit()
-        # Redirect to another page or render a home template
+
         return render_template('home.html')
 
-
-    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+    # Trả về trang 'exam.html' với các dữ liệu cần thiết
+    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions)
 
 # chọn vào chương X thì nhảy qua trang đánh giá ( chapter.html ) của chương X, gọi promtChap() ra để xử lí
 @app.route('/subject/<subject_id>/<chap_id>/evaluation', methods=["GET"])
@@ -515,10 +520,10 @@ def evaluate_chapter_test(subject_id,chap_id):
     if num_test == 0:
         return f"Bạn chưa làm bài test nào cho môn {subject}", 404
     
-    analyzer = promptChap(test_type,num_test,subject,num_chap=int(chap_id))
-    analysis_result = analyzer.chap_analysis()
-
-    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id)
+    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id))
+    analysis_result = analyzer.analyze("chapter")
+    
+    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
@@ -539,7 +544,7 @@ def analize_total_test(subject_id):
         return url_for('home')
     type_test = 1 # chapter test
     
-    analyzer = generateAnalysis(subject=subject, num_chap=0) # num_chap = 0 means total test
+    analyzer = generateAnalysis(subject=subject, num_chap=0)        
     analysis_result = analyzer.chap_analysis()
 
     return render_template("chapter.html", feedback=analysis_result)
