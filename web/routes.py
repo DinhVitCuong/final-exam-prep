@@ -348,76 +348,29 @@ def subject(subject_id):
         subject_name = 'Hóa'
         subject = 'H'
     else:
-        return redirect(url_for('home'))  
-    
-    
-    chapter_numbers = (
-    QAs.query
-    .filter(QAs.id.like(f'{subject}%'))
-    .with_entities(db.func.substr(QAs.id, 2, 2).label('chapter_number'))  
-    .distinct()
-    .all()
-)
+        return redirect(url_for('home'))
 
-    chapter_numbers_list = [f"{int(row.chapter_number):02}" for row in chapter_numbers]
+    # Get chapter numbers based on subject_id
+    chapter_numbers = (
+        QAs.query
+        .filter(QAs.id.like(f'{subject}%'))
+        .with_entities(db.func.substr(QAs.id, 2, 2).label('chapter_number'))  
+        .distinct()
+        .all()
+    )
 
     # Convert the results to a list of chapter numbers
     chapter_numbers_list = [f"{int(row.chapter_number):02}" for row in chapter_numbers]
     
-    return render_template('subject.html', subject_name=subject_name, subject=subject, chapter_numbers_list=chapter_numbers_list)
+    # Pass subject_id to the template
+    return render_template(
+        'subject.html', 
+        subject_name=subject_name, 
+        subject=subject, 
+        chapter_numbers_list=chapter_numbers_list, 
+        subject_id=subject_id  # Pass subject_id to the template
+    )
 
-@app.route("/chapter-test/<chap_id>")
-def chapter_test(chap_id):
-    subject = request.args.get('subject')
-    time_limit = 45 #Minute
-    rate = [40, 30, 20, 10]
-    test_chap = TestChap(subject, chap_id)
-    questions= test_chap.create_test(rate)
-    if request.method == "POST":
-        
-        time_spent = request.form.get('timeSpent')
-        answers = request.form.get('answers')
-        date = request.form.get('date')
-        # Convert from JSON string back to Python lists
-        
-        time_spent = json.loads(time_spent)
-        answers = json.loads(answers)
-        time_string = ""
-        questions_ID_string = ""
-        wrong_answer_string = ""
-        result = []
-        wrong_answers = []
-        for i, question in enumerate(questions):
-            questions_ID_string += f"{question.ID}_"
-            result.append(str(answers[i]))
-            time_string += f"{time_spent[i]}_"
-            
-            if answers[i] == 0:
-                wrong_answers.append(str(question.ID))
-
-        # Remove trailing underscores from strings
-        questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")
-        wrong_answer_string = "_".join(wrong_answers)
-
-        # Create a new Test record
-        new_test_record = Test(
-            user_id=current_user.id,
-            test_type=0,  # 0 for Chapter test
-            time=date,
-            knowledge=chap_id,
-            questions=questions_ID_string,
-            wrong_answer=wrong_answer_string,
-            result="_".join(result),  # Format 0_1_0...
-            time_result=time_string  # Format time1_time2_time3...
-        )
-        db.session.add(new_test_record)
-        db.session.commit()
-        # Redirect to another page or render a home template
-        return render_template('home.html')
-
-
-    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 @app.route("/practice-test/<subject>")
 def practice_test(subject):
@@ -481,13 +434,66 @@ def practice_test(subject):
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 
+@app.route("/chapter-test/<chap_id>")
+def chapter_test(chap_id):
+    subject = request.args.get('subject')
+    time_limit = 45 #Minute
+    rate = [40, 30, 20, 10]
+    test_chap = TestChap(subject, chap_id)
+    questions= test_chap.create_test(rate)
+    if request.method == "POST":
+        
+        time_spent = request.form.get('timeSpent')
+        answers = request.form.get('answers')
+        date = request.form.get('date')
+        # Convert from JSON string back to Python lists
+        
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
+        time_string = ""
+        questions_ID_string = ""
+        wrong_answer_string = ""
+        result = []
+        wrong_answers = []
+        for i, question in enumerate(questions):
+            questions_ID_string += f"{question.ID}_"
+            result.append(str(answers[i]))
+            time_string += f"{time_spent[i]}_"
+            
+            if answers[i] == 0:
+                wrong_answers.append(str(question.ID))
+
+        # Remove trailing underscores from strings
+        questions_ID_string = questions_ID_string.rstrip("_")
+        time_string = time_string.rstrip("_")
+        wrong_answer_string = "_".join(wrong_answers)
+
+        # Create a new Test record
+        new_test_record = Test(
+            user_id=current_user.id,
+            test_type=0,  # 0 for Chapter test
+            time=date,
+            knowledge=chap_id,
+            questions=questions_ID_string,
+            wrong_answer=wrong_answer_string,
+            result="_".join(result),  # Format 0_1_0...
+            time_result=time_string  # Format time1_time2_time3...
+        )
+        db.session.add(new_test_record)
+        db.session.commit()
+        # Redirect to another page or render a home template
+        return render_template('home.html')
+
+
+    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+
 # chọn vào chương X thì nhảy qua trang đánh giá ( chapter.html ) của chương X, gọi promtChap() ra để xử lí
 @app.route('/subject/<subject_id>/<chap_id>/evaluation', methods=["GET"])
 def evaluate_chapter_test(subject_id,chap_id):
-    subject_id = 0
+    # subject_id = 0
     subject_name = ''
     if subject_id == 'S1': #Toan
-        subject_name = 'Toán'
+        subject_name = 'Toán' 
         subject = 'M'
     elif subject_id == 'S2': #Li
         subject_name = 'Lí'
@@ -498,10 +504,10 @@ def evaluate_chapter_test(subject_id,chap_id):
     elif subject_id == 0:
         return url_for('home')
     
-    type_test = 0 # chapter test
+    test_type = 0 # chapter test
     num_test = 10 # Khoa said:"the lower limit is 10"
     
-    num_of_test_done = Test.query.filter_by(subject=subject, type_test=type_test, knowledge=chap_id).count()
+    num_of_test_done = Test.query.filter_by( test_type=test_type, knowledge=chap_id).count()
 
     if num_of_test_done < 10: # take all finished tests if num_of_test_done is lower than 10
         num_test = num_of_test_done
@@ -509,10 +515,10 @@ def evaluate_chapter_test(subject_id,chap_id):
     if num_test == 0:
         return f"Bạn chưa làm bài test nào cho môn {subject}", 404
     
-    analyzer = promptChap(type_test,num_test,subject,num_chap=chap_id)
+    analyzer = promptChap(test_type,num_test,subject,num_chap=int(chap_id))
     analysis_result = analyzer.chap_analysis()
 
-    return render_template("chapter.html", feedback=analysis_result)
+    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
