@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta charset="UTF-8" />
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam</title>
     <style>
@@ -151,12 +151,12 @@
       width: 90%;
       overflow-x: hidden;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       gap: 32px 16px;
       margin-left: 40px;
     }
     .current-question__option {
-      width: 40%;
+      width: 80%;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -237,7 +237,8 @@
         // Hỗ trợ cả toán học nội tuyến và toán học block
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: true,  // Cho phép thoát ký tự $ để không nhầm lẫn với toán học nội tuyến
+        processEscapes: false,  // Tắt thoát ký tự $ để tránh nhầm lẫn với công thức toán học
+        decimalSeparator: ".",  // Đảm bảo dấu chấm trong số thập phân được nhận diện
       },
       options: {
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],  // Bỏ qua những thẻ không cần xử lý
@@ -257,7 +258,7 @@
 
       <div class="header">
         <div class="header__content">
-          <p>Bài kiểm tra tổng</p>
+          <p>Bài kiểm tra</p>
         </div>
       </div>
       <div class="countdown">
@@ -362,7 +363,7 @@
             console.log("MathJax processing complete");
           });
         }
-      
+    
       // Save the user's answer
       function saveAnswer(index, option) {
         answers[index] = option; // Save the selected option
@@ -394,12 +395,7 @@
     
         // Switch to the new question and mark it as selected (blue)
         currentQuestionIndex = newIndex;
-        MathJax.startup.promise.then(() => {
-          console.log("MathJax is ready");});
         updateQuestionContent(newIndex);
-        MathJax.typesetPromise().then(() => {
-          console.log("MathJax processing complete");
-        });
         questionStates[newIndex] = 'selected'; // Mark as selected
         updateQuestionItemStyle(newIndex, 'selected');
       }

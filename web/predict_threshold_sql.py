@@ -31,9 +31,9 @@ class PrepThreshold:
                     self.dic['accuracy'].append(acuc)
         
         # Repeat the process for another set of data if needed
-        query = db.session.query(Test).filter_by(test_type=1).all()
+        query = db.session.query(Test).filter_by(test_type=0).all()
         for i in range(num):
-            test = DrawTotal(self.subject, None, 0, i, "specific")
+            test = DrawChap(self.subject, None, 0, i, "specific")
             chap_difficulty_percentile = test.difficult_percentile_per_chap()
             for chap, dic_diff in chap_difficulty_percentile.items():
                 for type1, acuc in dic_diff.items():
@@ -63,10 +63,10 @@ class PrepThreshold:
         # df.to_csv(self.path, index=False)
 
 class PredictThreshold:
-    def __init__(self, predict_type, subject):
+    def __init__(self, predict_type, subject, max_chap = None):
         self.X_train = None
         self.predict_type = int(predict_type)  # Ensure predict_type is an integer
-        self.max_chap = None
+        self.max_chap = max_chap
         self.subject = subject
         self.X_test = None
         self.date = None
@@ -81,12 +81,21 @@ class PredictThreshold:
 
         # Load JSON data with error handling
         try:
-            query = db.session.query(Test).filter(
-                Test.questions.like(f"{self.subject}%"),
-                Test.test_type.like(1)
-            ).all()
-            self.max_chap = int(query[-1].knowledge)  # Ensure knowledge is treated as an integer
-            self.date = pd.to_datetime(query[-1].time, errors='coerce')  # Ensure the date is parsed correctly
+            if self.predict_type == 1:
+                query = db.session.query(Test).filter(
+                    Test.questions.like(f"{self.subject}%"),
+                    Test.test_type.like(self.predict_type)  # Filtering by test type
+                ).order_by(Test.knowledge).all()
+                
+                self.max_chap = int(query[-1].knowledge)  # Ensure knowledge is treated as an integer
+                self.date = pd.to_datetime(query[-1].time, errors='coerce')  # Ensure the date is parsed correctly
+            else:
+                query = db.session.query(Test).filter(
+                    Test.questions.like(f"{self.subject}%"),
+                    Test.test_type.like(self.predict_type),
+                    Test.knowledge.like(f"0{self.max_chap}") 
+                ).all()
+                self.date = pd.to_datetime(query[-1].time, errors='coerce')
             if pd.isnull(self.date):
                 raise ValueError("Invalid date format encountered in the database.")
         except IndexError:
@@ -151,11 +160,10 @@ class PredictThreshold:
         return self.X_test
 
 # Initialize and run prediction
-# app = create_app()
-# with app.app_context():
-#     predict_type = "1"
-#     
-#     subject = "L"
-#     prep = PrepThreshold(path, subject)
-#     predict = PredictThreshold(predict_type, subject)
-#     print(predict.predicted_data())
+app = create_app()
+with app.app_context():
+    predict_type = "0"
+    
+    subject = "L"
+    predict = PredictThreshold(predict_type, subject, 5)
+    print(predict.predicted_data())

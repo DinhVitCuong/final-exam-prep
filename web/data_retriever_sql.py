@@ -259,6 +259,7 @@ class DrawChap(DrawChartBase):
         chap_difficulty_count = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         chap_difficulty_percentile = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         
+
         for diff, ids in diff_ids.items():
             for id in ids:
                 chap = int(id[1:3])
@@ -277,14 +278,16 @@ class DrawChap(DrawChartBase):
 
 
 # with app.app_context():     #chap  #test_type    #self.num
-#     test = DrawTotal("L", None , None, 10, "average")
-#     # print(test.data)
-#     print(test.cal_accu_diff())
-#     #print(test.lessons_id_to_review())
-#     print(test.previous_results())
-#     # print(test.short_total_analysis())
-    
-#     # print(test.find_most_wrong_chap())
-#     # test = DrawChap("L", 3 , None, 3, "average")
+#     # test = DrawTotal("L", None , None, 10, "average")
 #     # print(test.difficult_percentile_per_chap())
+#     # # print(test.data)
+#     # print(test.cal_accu_diff())
+#     # #print(test.lessons_id_to_review())
+#     # print(test.previous_results())
+#     # # print(test.short_total_analysis())
+    
+#     # # print(test.find_most_wrong_chap())
+#     test = DrawChap("L", 3 , None, 3, "average")
+#     # print(test.cal_accu_diff())
+#     print(test.difficult_percentile_per_chap())
     

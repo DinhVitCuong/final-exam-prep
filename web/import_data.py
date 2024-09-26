@@ -53,6 +53,7 @@ with app.app_context():
                 options_list = item.get('options', [])
                 if isinstance(options_list, list):
                     options_str = "__".join(options_list)
+                    options_str = options_str.replace("'", "")
                 else:
                     options_str = options_list  # If it's not a list, keep as is (or handle accordingly)
                 
