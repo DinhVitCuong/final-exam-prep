@@ -288,6 +288,12 @@
           {% endfor %}
         </div>
       </div>
+
+      <form id="examForm" method="POST" action="/total-test/{{ subject }}"></form>
+        <input type="hidden" name="timeSpent" value="" />
+        <input type="hidden" name="answers" value="" />
+      </form>
+
       <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
     </div>
     
@@ -309,11 +315,11 @@
 
           // Set the current question text with inline LaTeX (use \( and \) instead of $$)
           questionContent.innerHTML = `Câu ${index + 1}: ${QAs[index].question.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;
-
+          
           // If there's an image URL for the question, add an image below the question text
-          if (QAs[index].image_source) {
+          if (QAs[index].image) {
             const img = document.createElement("img");
-            img.src = QAs[index].image_source;
+            img.src = QAs[index].image;
             img.alt = "Question Image";
             img.style.maxWidth = "100%";
             questionContent.appendChild(img);

@@ -160,10 +160,10 @@ class PredictThreshold:
         return self.X_test
 
 # Initialize and run prediction
-app = create_app()
-with app.app_context():
-    predict_type = "0"
+# app = create_app()
+# with app.app_context():
+#     predict_type = "0"
     
-    subject = "L"
-    predict = PredictThreshold(predict_type, subject, 5)
-    print(predict.predicted_data())
+#     subject = "L"
+#     predict = PredictThreshold(predict_type, subject, 5)
+#     print(predict.predicted_data())

@@ -75,15 +75,14 @@ class Test(db.Model):
     time_result = db.Column(db.String, nullable=True) #Time spent each question, 0 = not do, Format: time1_time2_time3_...
 
 
-
 class TodoList(db.Model):
-    __tablename__= "todo-list"
+    __tablename__ = "todo_list"
 
-    id = db.Column(db.Integer, primary_key=True)
-    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
-    date = db.Column(db.String, nullable=False) #12/4/2021_31/12/2021_3/2/2022
-    action = db.Column(db.String, nullable=False) #do 1_do 2_do 3
-    status = db.Column(db.String, nullable=False) #1_0_1_0 1: done, 0 = not done
+    todo_id = db.Column(db.String(1), primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
+    date = db.Column(db.String, nullable=False)  # 12/4/2021
+    action = db.Column(db.String, nullable=False)  # do 1
+    status = db.Column(db.String, nullable=False)  # 1: done, 0 = not done
 
 class SubjectCategory(db.Model):
     __tablename__="subject-category"
@@ -92,3 +91,21 @@ class SubjectCategory(db.Model):
     subject1 = db.Column(db.String, nullable=False)
     subject2 = db.Column(db.String, nullable=False)
     subject3 = db.Column(db.String, nullable=False)
+
+class Analysis(db.Model):
+    __tablename__ = "analysis"
+
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
+    analysis_type = db.Column(db.String, nullable=False)
+    subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'), nullable=False)
+    num_chap = db.Column(db.Integer, nullable=False)
+    main_text = db.Column(db.Text, nullable=False)
+
+
+class Knowledge(db.Model):
+    __tablename__ = "knowledge"
+
+    id_subject = db.Column(db.Integer, db.ForeignKey('subject.id'), primary_key=True, nullable=False)
+    num_chap = db.Column(db.Integer, primary_key=True, nullable=False)
+    url_chap = db.Column(db.String, nullable=False)
+    latex_text = db.Column(db.Text, nullable=False)
