@@ -6,27 +6,9 @@
     <title>Document</title>
     <style>
       * {
-        font-family: "Kanit", sans-serif;
-        font-style: normal; 
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-      }
-      ::-webkit-scrollbar {
-        width: 8px; /* Width of the scrollbar */
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1; /* Background of the scrollbar track */
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #888; /* Color of the scrollbar thumb */
-        border-radius: 10px; /* Rounded corners for the thumb */
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555; /* Darker color when hovering */
       }
       body,
       html {
@@ -109,9 +91,6 @@
         background-color: #1976d2;
         font-size: 2em;
       }
-      .button__review:hover {
-        background-color: #a78920;
-      }
 
       .information {
         margin-top: 64px;
@@ -164,7 +143,7 @@
         align-items: center;
         width: 100%;
         .practice-button,
-        .test-button {
+        .test-total-button {
           padding: 1rem 2rem;
           font-size: 1.5em;
           color: white;
@@ -173,9 +152,6 @@
           width: 20%;
           min-width: fit-content;
         }
-      }
-      .button__analytics:hover {
-        background-color: #275e29;
       }
       .progess-group {
         background-color: transparent;
@@ -248,7 +224,7 @@
           <p>Hãy làm bài kiểm tra tổng kết để xác nhận bạn có trình</p>
         </div>
         <h2 class="chapters-container__title">Bài kiểm tra chương</h2>
-
+        
         <div class="chapters-container">
           <!-- chapterList.map... o day ne, moi chapter la mot div.chapter -->
           {% for chapter in chapter_numbers_list %}
@@ -258,7 +234,7 @@
                       <p>Chương {{ chapter }}</p>
                   </a>
               </div>
-              <div class="circular-progress-bar--chapter1"></div>
+              <div class="circular-progress-bar--chapter{{ chapter }}"></div>
           </div>
           {% endfor %}
       </div>
@@ -272,68 +248,135 @@
   </body>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const chapters = [
-        { name: "subject", percent: 65, color: "#78e08f" },
-        { name: "chapter1", percent: 45, color: "#f0932b" },
-        { name: "chapter2", percent: 75, color: "#78e08f" },
-        { name: "chapter3", percent: 85, color: "#78e08f" },
-        { name: "chapter4", percent: 85, color: "#78e08f" },
-      ];
-      const chapterButtons = document.querySelectorAll(".chapter__button");
-      chapterButtons.forEach((button, index) => {
-        // TODO: button.addEventListener("click", () => {
-        if (chapters[index + 1].percent < 25) {
-          button.style.backgroundColor = "#eb4d4b";
-        } else if (chapters[index + 1].percent < 50) {
-          button.style.backgroundColor = "#f0932b";
-        } else if (chapters[index + 1].percent < 75) {
-          button.style.backgroundColor = "#f9ca24";
-        } else {
-          button.style.backgroundColor = "#78e08f";
-        }
-      });
-      chapters.forEach((chapter) => {
-        // define color o day ne`
-        if (chapter.percent < 25) {
-          chapter.color = "#eb4d4b";
-        } else if (chapter.percent < 50) {
-          chapter.color = "#f0932b";
-        } else if (chapter.percent < 75) {
-          chapter.color = "#f9ca24";
-        } else {
-          chapter.color = "#78e08f";
-        }
-        let container = document.querySelector(
-          `.circular-progress-bar--${chapter.name}`
-        );
-        container.innerHTML += `
-        <div class="progess-group">
-        <div class="circular-progress" >
-          <span class="chapter-value">0%</span>
+  const chapters = [
+    { name: "subject", percent: 65, color: "" },  // Treat this separately
+    { name: "chapter01", percent: 45, color: "" },
+    { name: "chapter02", percent: 75, color: "" },
+    { name: "chapter03", percent: 85, color: "" },
+    { name: "chapter04", percent: 85, color: "" },
+    { name: "chapter05", percent: 85, color: "" },
+    { name: "chapter06", percent: 85, color: "" },
+    { name: "chapter07", percent: 85, color: "" }
+  ];
+
+  // Handle the subject separately
+  const subjectEntry = chapters[0];  // Assuming the first entry is always "subject"
+  if (subjectEntry) {
+    const subjectPercent = subjectEntry.percent;
+    let subjectColor = "";
+
+    // Determine the subject's color based on the percentage
+    if (subjectPercent < 25) {
+      subjectColor = "#eb4d4b";  // Red for less than 25%
+    } else if (subjectPercent >= 25 && subjectPercent < 50) {
+      subjectColor = "#f0932b";  // Orange for 25% to 49%
+    } else if (subjectPercent >= 50 && subjectPercent < 75) {
+      subjectColor = "#f9ca24";  // Yellow for 50% to 74%
+    } else {
+      subjectColor = "#78e08f";  // Green for 75% and above
+    }
+
+    // Apply subject color and update the progress bar for the subject
+    const subjectButton = document.querySelector(".subject__button");
+    if (subjectButton) {
+      subjectButton.style.backgroundColor = subjectColor;
+    }
+
+    const subjectProgressBar = document.querySelector(".circular-progress-bar--subject");
+    if (subjectProgressBar) {
+      subjectProgressBar.innerHTML = `
+        <div class="progress-group">
+          <div class="circular-progress">
+            <span class="chapter-value">0%</span>
+          </div>
         </div>
-      </div>
-        `;
-      });
-      const progressGroups = document.querySelectorAll(".progress-group");
+      `;
 
-      progressGroups.forEach((progress, index) => {
-        let progressStartValue = 0;
-        let progressStartEnd = chapters[index].percent;
-        let speed = 10;
-        let progessTimer = setInterval(() => {
-          progressStartValue++;
-          if (progressStartValue == progressStartEnd) {
-            clearInterval(progessTimer);
-          }
-          progress.querySelector(".circular-progress").style.background = `
-  conic-gradient(${chapters[index].color} ${
-            3.6 * progressStartValue
-          }deg, #fff 0deg)`;
+      // Animate the subject progress bar
+      let subjectProgressStartValue = 0;
+      let speed = 10;
 
-          progress.querySelector(".chapter-value").innerHTML =
-            progressStartValue + "%";
-        }, speed);
-      });
-    });
+      let subjectProgressTimer = setInterval(() => {
+        subjectProgressStartValue++;
+        if (subjectProgressStartValue >= subjectPercent) {
+          clearInterval(subjectProgressTimer);
+        }
+
+        subjectProgressBar.querySelector(".circular-progress").style.background = `
+          conic-gradient(${subjectColor} ${
+          3.6 * subjectProgressStartValue
+        }deg, #fff 0deg)`;
+
+        subjectProgressBar.querySelector(".chapter-value").innerHTML =
+          subjectProgressStartValue + "%";
+      }, speed);
+    }
+  }
+
+  // Handle the chapters starting from index 1 (skip the subject)
+  chapters.slice(1).forEach((chapter, index) => {
+    const percent = chapter.percent;
+
+    // Determine the color based on the percent
+    if (percent < 25) {
+      chapter.color = "#eb4d4b"; // Red for less than 25%
+    } else if (percent >= 25 && percent < 50) {
+      chapter.color = "#f0932b"; // Orange for 25% to 49%
+    } else if (percent >= 50 && percent < 75) {
+      chapter.color = "#f9ca24"; // Yellow for 50% to 74%
+    } else {
+      chapter.color = "#78e08f"; // Green for 75% and above
+    }
+
+    // Apply color to chapter buttons
+    const button = document.querySelectorAll(".chapter__button")[index];
+    if (button) {
+      button.style.backgroundColor = chapter.color;
+    }
+
+    // Apply color to circular progress bar
+    const progressBarContainer = document.querySelector(
+      `.circular-progress-bar--${chapter.name}`
+    );
+    if (progressBarContainer) {
+      // Add the progress group HTML structure
+      progressBarContainer.innerHTML = `
+        <div class="progress-group">
+          <div class="circular-progress">
+            <span class="chapter-value">0%</span>
+          </div>
+        </div>
+      `;
+
+      // Animate the progress bar
+      let progressStartValue = 0;
+      const speed = 10;
+      const progressEndValue = percent; // Use the chapter's percent
+
+      let progressTimer = setInterval(() => {
+        progressStartValue++;
+        if (progressStartValue >= progressEndValue) {
+          clearInterval(progressTimer);
+        }
+
+        // Apply the gradient background for circular progress with the same color
+        progressBarContainer.querySelector(".circular-progress").style.background = `
+          conic-gradient(${chapter.color} ${
+          3.6 * progressStartValue
+        }deg, #fff 0deg)`;
+
+        // Update the displayed percentage value
+        progressBarContainer.querySelector(".chapter-value").innerHTML =
+          progressStartValue + "%";
+      }, speed);
+    }
+  });
+});
+
+
+
+
+
+
   </script>
 </html>

@@ -266,7 +266,7 @@ def select_uni():
 
 
 
-
+import time
 @app.route("/total-test/<subject>", methods=["GET", "POST"])  
 def total_test(subject):  
     if subject == "T":
@@ -280,7 +280,9 @@ def total_test(subject):
     rate = [40, 30, 20, 10]  # Tỉ lệ các câu hỏi theo từng mức độ
     test_total = TestTotal(subject, chapter)
     # questions = test_total.create_test(rate)
-    questions = [{"ID": q.id, "question": q.question, "options": q.options, "answer": q.answer} for q in test_total.create_test(rate)]
+    
+    questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer} for q in test_total.create_test(rate)]
+
     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
     if request.method == "POST":
         time_spent = request.form.get('timeSpent')
@@ -430,7 +432,7 @@ def practice_test(subject):
         # Redirect to another page or render a home template
         return render_template('home.html')
 
-
+    
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
 
 

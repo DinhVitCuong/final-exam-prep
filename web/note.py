@@ -40,3 +40,10 @@
 # C4 : 
 
 
+# today tasks:
+# làm bài test -> lưu vô test-record 
+#              
+#              -> run anlysis chapter + reviewExam.html 
+#              -> 
+# check css mấy phần kia ổn chưa
+# tạo thêm table data 
