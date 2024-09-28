@@ -232,24 +232,33 @@
   </style>
   <script type="text/javascript">
     MathJax = {
+      loader: {
+        load: [
+          'input/tex-full',  // Tải toàn bộ các gói đầu vào TeX
+          'output/chtml',    // Sử dụng đầu ra HTML nén
+          '[tex]/all-packages' // Tải tất cả các gói TeX khả dụng
+        ]
+      },
       tex: {
-        packages: ['base', 'ams'], // Include the 'ams' package
+        packages: 'all', // Sử dụng tất cả các gói có sẵn
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
         processEscapes: false,
-        decimalSeparator: ".",
+        processEnvironments: true,
+        // Các cấu hình khác nếu cần
       },
       options: {
         skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
         ignoreHtmlClass: 'tex-ignore',
       },
-      svg: {
-        fontCache: 'global',
+      chtml: {
+        scale: 1, // Kích thước chữ
+        // Các cấu hình khác nếu cần
       },
     };
   </script>
-  <!-- Load MathJax script after the configuration -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- Tải MathJax sau khi đã cấu hình -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
   </head>
   <body>
     <div class="test-page">

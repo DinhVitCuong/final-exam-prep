@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 import json
-from chart_drawing_sql import DrawTotal, DrawChap
+from data_retriever_sql import DrawTotal, DrawChap
 from app import create_app, db, login_manager, bcrypt
 from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
 
@@ -32,6 +32,7 @@ class PrepThreshold:
         
         # Repeat the process for another set of data if needed
         query = db.session.query(Test).filter_by(test_type=0).all()
+        num = len(query)
         for i in range(num):
             test = DrawChap(self.subject, None, 0, i, "specific")
             chap_difficulty_percentile = test.difficult_percentile_per_chap()
