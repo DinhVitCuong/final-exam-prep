@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam</title>
     <style>
@@ -231,24 +230,26 @@
     }
 
   </style>
-  <script>
+  <script type="text/javascript">
     MathJax = {
       tex: {
-        // Hỗ trợ cả toán học nội tuyến và toán học block
+        packages: ['base', 'ams'], // Include the 'ams' package
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: false,  // Tắt thoát ký tự $ để tránh nhầm lẫn với công thức toán học
-        decimalSeparator: ".",  // Đảm bảo dấu chấm trong số thập phân được nhận diện
+        processEscapes: false,
+        decimalSeparator: ".",
       },
       options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],  // Bỏ qua những thẻ không cần xử lý
-        ignoreHtmlClass: 'tex-ignore',  // Cho phép thêm class để bỏ qua nếu cần
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        ignoreHtmlClass: 'tex-ignore',
       },
       svg: {
-        fontCache: 'global'  // Sử dụng font cache để tăng tốc độ hiển thị
-      }
+        fontCache: 'global',
+      },
     };
   </script>
+  <!-- Load MathJax script after the configuration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </head>
   <body>
     <div class="test-page">
