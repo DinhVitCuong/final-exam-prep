@@ -327,9 +327,10 @@
       box-shadow: inset 0 0 2px 1px #2a2a2a;
     }
   </style>
-  <script>
+  <script type="text/javascript">
     MathJax = {
       tex: {
+        packages: ['base', 'ams'], // Include the 'ams' package
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
         processEscapes: false,
@@ -340,15 +341,17 @@
         ignoreHtmlClass: 'tex-ignore',
       },
       svg: {
-        fontCache: 'global'
-      }
+        fontCache: 'global',
+      },
     };
   </script>
+  <!-- Load MathJax script after the configuration -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
   <div class="review-test-page">
     <button class="button--back">
-      <img src="/assets/left-arrow-slider.svg" />
+      <img src="/static/assets/left-arrow-slider.svg" />
     </button>
 
     <div class="header">
@@ -361,14 +364,14 @@
       <div class="result__encouragement">
         <div class="result__encouragement__content">
           <p>Tốt lắm bro !</p>
-          <img src="/assets/like.svg" alt="encouragement" />
+          <img src="/static/assets/like.svg" alt="encouragement" />
         </div>
         <p class="result__score" id="result-score"></p>
       </div>
     </div>
     <div class="current-question__container">
       <img
-        src="/assets/question-icon.svg"
+        src="/static/assets/question-icon.svg"
         alt="question-icon"
         class="current-question__icon"
       />
