@@ -543,7 +543,8 @@ def evaluate_chapter_test(subject_id,chap_id):
     if num_test == 0:
         return f"Bạn chưa làm bài test nào cho môn {subject}", 404
     
-    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id))
+    print(num_test)
+    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
     analysis_result = analyzer.analyze("chapter")
     
     return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject)
@@ -565,11 +566,11 @@ def analize_total_test(subject_id):
         subject = 'H'
     elif subject_id == 0:
         return url_for('home')
-    type_test = 1 # chapter test
-    
-    analyzer = generateAnalysis(subject=subject, num_chap=0)        
+    test_type = 1 # chapter test
+    num_of_test_done = Test.query.filter_by( test_type=test_type).count()
+    analyzer = generateAnalysis(subject=subject, num_chap=0, num_test=3)        
     analysis_result = analyzer.analyze("deep")
-
+    
     return render_template("chapter.html", feedback=analysis_result)
 
 

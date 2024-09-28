@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import json
 import requests
 import os
-from chart_drawing_sql import DrawTotal, DrawChap
+from data_retriever_sql import DrawTotal, DrawChap
 from predict_threshold_sql import PrepThreshold, PredictThreshold
 import csv
 from datetime import datetime
@@ -213,7 +213,7 @@ class promptChap(promptCreation):
 
 
 class generateAnalysis:
-    def __init__(self, subject, num_chap):
+    def __init__(self, subject, num_chap, num_test):
         self.configuration = {
             "temperature": 0.8,
             "max_tokens": 4096,
@@ -221,7 +221,7 @@ class generateAnalysis:
         }
         self.api_key = os.getenv('OPENAI_API_KEY')
         self.client = OpenAI(api_key=self.api_key)
-        self.num_test = 8
+        self.num_test = num_test
         self.subject = subject
         self.num_chap = num_chap
         self.next_test_date = promptTotal(1, self.num_test, self.subject).next_test_date()
