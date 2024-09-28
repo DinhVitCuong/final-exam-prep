@@ -231,33 +231,27 @@
 
   </style>
   <script type="text/javascript">
-    MathJax = {
+    window.MathJax = {
       loader: {
-        load: [
-          'input/tex-full',  // Tải toàn bộ các gói đầu vào TeX
-          'output/chtml',    // Sử dụng đầu ra HTML nén
-          '[tex]/all-packages' // Tải tất cả các gói TeX khả dụng
-        ]
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem']
       },
       tex: {
-        packages: 'all', // Sử dụng tất cả các gói có sẵn
+        packages: {'[+]': ['mhchem']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
         processEscapes: false,
         processEnvironments: true,
-        // Các cấu hình khác nếu cần
       },
-      options: {
-        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-        ignoreHtmlClass: 'tex-ignore',
-      },
-      chtml: {
-        scale: 1, // Kích thước chữ
-        // Các cấu hình khác nếu cần
-      },
+      startup: {
+        ready: () => {
+          console.log("MathJax is ready");
+          MathJax.startup.defaultReady();
+          // Đặt mã của bạn ở đây nếu cần
+        }
+      }
     };
   </script>
-  <!-- Tải MathJax sau khi đã cấu hình -->
+  <!-- Tải MathJax -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
   </head>
   <body>
