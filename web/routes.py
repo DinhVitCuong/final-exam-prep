@@ -32,7 +32,8 @@ from models import User, Progress, Test, Universities, QAs, Subject, TodoList, S
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
-
+from datetime import datetime
+import time
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
@@ -281,14 +282,15 @@ def total_test(subject):
     test_total = TestTotal(subject, chapter)
     # questions = test_total.create_test(rate)
     
-    questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer} for q in test_total.create_test(rate)]
-
+    questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination" : q.explain} for q in test_total.create_test(rate)]
+    
     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
     if request.method == "POST":
+        
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date = request.form.get('date') 
-
+        date= datetime.now().date()
+        
         # Convert từ chuỗi JSON sang danh sách Python
         time_spent = json.loads(time_spent)
         answers = json.loads(answers)
@@ -304,35 +306,43 @@ def total_test(subject):
         for i in range(chapter):
             chapters += f"{i+1}_"
         for i, question in enumerate(questions):
-            questions_ID_string += f"{question.id}_"
-            result.append(str(answers[i]))
+            # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
+            questions_ID_string += f"{question['ID']}_"
+            if str(answers[i]) == question["answer"]:
+                result.append("1")
+            else:
+                result.append("0")
             time_string += f"{time_spent[i]}_"
-            
-            if answers[i] == 0:
-                wrong_answers.append(str(question.id))
+
+            if result[i] == '0':  # Assuming 0 means an incorrect answer
+                wrong_answers.append(str(question['ID']))
 
         # Xóa dấu gạch dưới cuối chuỗi
         questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")
-        chapters = chapters.rstrip("_")
+        time_string = time_string.rstrip("_")   
+        chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
         wrong_answer_string = "_".join(wrong_answers)
+        
+        score = f'{result.count("1")}/{len(result)}'
+        
 
         # Tạo bản ghi mới trong bảng Test
         new_test_record = Test(
             user_id=current_user.id,
             test_type=1,  # Loại bài kiểm tra tổng
             time=date,
-            knowledge=chapters,
+            knowledge=chapter,
             questions=questions_ID_string,
             wrong_answer=wrong_answer_string,
             result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
             time_result=time_string  # Chuỗi thời gian làm từng câu
         )
+        # nhin vao database sua lai
         db.session.add(new_test_record)
         db.session.commit()
 
         # Sau khi hoàn thành, chuyển hướng về trang chủ
-        return render_template('home.html')
+        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
     # Nếu không phải là POST, render trang thi với câu hỏi
     return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions)
@@ -430,7 +440,7 @@ def practice_test(subject):
         db.session.add(new_test_record)
         db.session.commit()
         # Redirect to another page or render a home template
-        return render_template('home.html')
+        return redirect(url_for('home'))
 
     
     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
@@ -448,48 +458,59 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
     questions = [{"ID": q.id, "question": q.question, "options": q.options, "answer": q.answer} for q in test_chap.create_test(rate)]
 
     if request.method == "POST":
+        
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date = request.form.get('date')
-
-        # Chuyển từ chuỗi JSON sang list Python
-        time_spent = json.loads(time_spent) if time_spent else []
-        answers = json.loads(answers) if answers else []
+        date= datetime.now().date()
+        
+        # Convert từ chuỗi JSON sang danh sách Python
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
 
         time_string = ""
         questions_ID_string = ""
-        wrong_answer_string = ""
-        result = []
+        wrong_answer_string = ""    
+        chapters = ""
+        result = []  
         wrong_answers = []
 
+        # Xử lý dữ liệu câu hỏi
+        for i in range(chapter):
+            chapters += f"{i+1}_"
         for i, question in enumerate(questions):
+            # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
             questions_ID_string += f"{question['ID']}_"
-            result.append(str(answers[i]))
+            if str(answers[i]) == question["answer"]:
+                result.append("1")
+            else:
+                result.append("0")
             time_string += f"{time_spent[i]}_"
-            
-            if answers[i] == 0:
+
+            if result[i] == '0':  # Assuming 0 means an incorrect answer
                 wrong_answers.append(str(question['ID']))
 
-        # Loại bỏ ký tự '_' cuối cùng
+        # Xóa dấu gạch dưới cuối chuỗi
         questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")
+        time_string = time_string.rstrip("_")   
+        chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
         wrong_answer_string = "_".join(wrong_answers)
 
-        # Tạo bản ghi Test mới và lưu vào cơ sở dữ liệu
+        # Tạo bản ghi mới trong bảng Test
         new_test_record = Test(
             user_id=current_user.id,
-            test_type=0,  # 0 cho Chapter test
+            test_type=1,  # Loại bài kiểm tra tổng
             time=date,
-            knowledge=chap_id,
+            knowledge=chapter,
             questions=questions_ID_string,
             wrong_answer=wrong_answer_string,
-            result="_".join(result),
-            time_result=time_string
+            result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
+            time_result=time_string  # Chuỗi thời gian làm từng câu
         )
+        # nhin vao database sua lai
         db.session.add(new_test_record)
         db.session.commit()
 
-        return render_template('home.html')
+        return redirect(url_for('home'))
 
     # Trả về trang 'exam.html' với các dữ liệu cần thiết
     return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions)
@@ -547,7 +568,7 @@ def analize_total_test(subject_id):
     type_test = 1 # chapter test
     
     analyzer = generateAnalysis(subject=subject, num_chap=0)        
-    analysis_result = analyzer.chap_analysis()
+    analysis_result = analyzer.analyze("deep")
 
     return render_template("chapter.html", feedback=analysis_result)
 
