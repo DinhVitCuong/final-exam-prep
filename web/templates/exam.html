@@ -239,20 +239,15 @@
         packages: {'[+]': ['mhchem']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        processEscapes: false,
-        processEnvironments: true,
       },
-      startup: {
-        ready: () => {
-          console.log("MathJax is ready");
-          MathJax.startup.defaultReady();
-          // Đặt mã của bạn ở đây nếu cần
-        }
-      }
+      svg: {
+        fontCache: 'global',
+      },
     };
   </script>
-  <!-- Tải MathJax -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"></script>
+  <!-- Tải MathJax phiên bản mới nhất -->
+  <script type="text/javascript" id="MathJax-script" 
+  src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-chtml-full.js"></script>
   </head>
   <body>
     <div class="test-page">
@@ -293,12 +288,14 @@
         </div>
       </div>
 
-      <form id="examForm" method="POST" action="/total-test/{{ subject }}"></form>
-        <input type="hidden" name="timeSpent" value="" />
-        <input type="hidden" name="answers" value="" />
-      </form>
+      <form id="examForm" method="POST" action="/total-test/{{ subject }}">
+        <input type="hidden" name="timeSpent" id="timeSpent" value="" />
+        <input type="hidden" name="answers" id="answers" value="" />
+        <input type="hidden" name="test_id" value="{{ test_id }}">
+      
 
-      <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
+        <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
+      </form>
     </div>
     
     <script>
@@ -443,25 +440,18 @@
     
       // Form submission handler
       function submitExam() {
-        console.log("Submitting form..."); // Add this line for debugging
+          console.log("Submitting form..."); // Debugging
+          console.log("Time Spent Array:", timeSpent);
+          console.log("Answers Array:", answers);
 
-        const form = document.getElementById("examForm");
-        
-        // Create hidden input fields for time spent and answers
-        const timeSpentInput = document.createElement("input");
-        timeSpentInput.type = "hidden";
-        timeSpentInput.name = "timeSpent";
-        timeSpentInput.value = JSON.stringify(timeSpent);
-        form.appendChild(timeSpentInput);
+          const form = document.getElementById("examForm");
+          
+          // Update hidden inputs with current values
+          document.getElementById('timeSpent').value = JSON.stringify(timeSpent);
+          document.getElementById('answers').value = JSON.stringify(answers);
 
-        const answersInput = document.createElement("input");
-        answersInput.type = "hidden";
-        answersInput.name = "answers";
-        answersInput.value = JSON.stringify(answers);
-        form.appendChild(answersInput);
-
-        // Submit the form
-        form.submit();
+          // Submit the form
+          form.submit();
       }
     
       // Initialize the page when the DOM is loaded

@@ -1,6 +1,6 @@
 from app import db
 from flask_login import UserMixin
-
+import datetime
 class User(UserMixin, db.Model):
     __tablename__ = "account"
     
@@ -109,3 +109,12 @@ class Knowledge(db.Model):
     num_chap = db.Column(db.Integer, primary_key=True, nullable=False)
     url_chap = db.Column(db.String, nullable=False)
     latex_text = db.Column(db.Text, nullable=False)
+
+class TempTest(db.Model):
+    id = db.Column(db.String(36), primary_key=True)  # UUID as primary key
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
+    subject = db.Column(db.String(10), nullable=False)
+    questions = db.Column(db.PickleType, nullable=False)  # Store as a pickled object
+    chapter = db.Column(db.Integer, nullable=False)
+    time_limit = db.Column(db.Integer, nullable=False)
+    rate = db.Column(db.PickleType, nullable=False)

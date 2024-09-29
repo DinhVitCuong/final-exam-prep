@@ -1,0 +1,1122 @@
+[
+    {
+        "id": "L01020051",
+        "question": "Một con lắc lò xo dao động không ma sát trên một mặt phẳng ngang. Phát biểu nào sau đây đúng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Chu kì dao động của con lắc tỉ lệ thuận với căn bậc hai của khối lượng m",
+            "B. Chu kì dao động của con lắc tỉ lệ thuận với căn bậc hai của độ cứng k",
+            "C. Thời gian thực hiện một dao động càng lớn khi biên độ càng lớn.",
+            "D. Số dao động thực hiện được trong 1s tỉ lệ thuận với độ cứng k."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, chu kì và tần số của con lắc lò xo: + Chu kì: T = 2 \\pi \\sqrt{\\frac{m}{k}} + Tần số: f = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} A – đúng B – sai vì: chu kì tỉ lệ nghịch với căn bậc hai của độ cứng C - sai vì: chu kì dao động không phụ thuộc vào biên độ D – sai vì: số dao động vật thực hiện trong 1s là tần số f = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} (tỉ lệ thuận với căn bậc 2 của k) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01020371",
+        "question": "Cơ năng của một con lắc lò xo không phụ thuộc vào?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Khối lượng vật nặng",
+            "B. Độ cứng của vật",
+            "C. Biên độ dao động",
+            "D. Điều kiện kích thích ban đầu"
+        ],
+        "answer": "A",
+        "explain": "W = \\frac{1}{2} k A^2 => Cơ năng của con lắc phụ thuộc vào độ cứng, biên độ dao động của vật Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01020691",
+        "question": "Một chất điểm có khối lượng 250 g dao động điều hòa dưới tác dụng của một lực kéo về có biểu thức F = − 0 , 75 c o s ( 4 t ) N . Biên độ dao động của chất điểm bằng",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 18,75 cm",
+            "B. 10 cm",
+            "C. 12 cm",
+            "D. 6 cm"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com  \nTừ phương trình của lực kéo về \\( F = -0.75 \\cos(4t) \\, \\text{N} \\), ta có:  \n- Tần số góc \\( \\omega = 4 \\, \\left( \\text{rad/s} \\right) \\)  \n- Lực kéo về cực đại: \\( F_{\\text{max}} = 0.75 \\, \\text{N} \\)  \n+ Ta có: \\( F_{\\text{max}} = k A = m \\omega^2 A \\rightarrow A = \\frac{F_{\\text{max}}}{m \\omega^2} = \\frac{0.75}{0.25 \\cdot 4^2} = 0.1875 \\, \\text{m} = 18.75 \\, \\text{cm} \\)  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L01010671",
+        "question": "Phương trình dao động của một vật có dạng x = A sin ( ω t + π 4 ) .Chọn kết luận đúng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Vật dao động với biên độ A",
+            "B. Vật dao động với pha ban đầu 3 π 4",
+            "C. Vật dao động với biên độ 2 A",
+            "D. Vật dao động với biên độ A / 2"
+        ],
+        "answer": "A",
+        "explain": "x = A \\sin \\left( \\omega t + \\frac{\\pi}{4} \\right) = A \\cos \\left( \\omega t + \\frac{\\pi}{4} - \\frac{\\pi}{2} \\right) = A \\cos \\left( \\omega t - \\frac{\\pi}{4} \\right) - \\text{Biên độ dao động của vật là } A - \\text{Pha ban đầu: } \\phi = - \\frac{\\pi}{4} \\text{Đáp án cần chọn là: } A."
+    },
+    {
+        "id": "L01010691",
+        "question": "Một vật dao động điều hòa với biên độ A = 8 c m . Tại thời điểm t = 0 , vật có li độ x = − 4 c m và đang đi theo chiều âm của trục O x . Pha ban đầu của dao động bằng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. − π 3",
+            "B. π 3",
+            "C. − 2 π 3",
+            "D. 2 π 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: tại t = 0: { x = A \\cos \\varphi = - 4 \\\\ v = - A \\omega \\sin \\varphi < 0 \\rightarrow \\left\\{ \\begin{array}{l} \\cos \\varphi = - \\frac{4}{8} = - \\frac{1}{2} \\\\ \\sin \\varphi > 0 \\rightarrow \\varphi = \\frac{2\\pi}{3} \\end{array} \\right. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L010R1331",
+        "question": "Một vật dao động điều hoà đi được quãng đường 16 c m trong một chu kì dao động. Biên độ dao động của vật là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 4 c m",
+            "B. 8 c m",
+            "C. 16 c m",
+            "D. 2 c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, quãng đường vật đi được trong một chu kì \\( S = 4A = 16 \\, \\text{cm} \\rightarrow A = 4 \\, \\text{cm} \\) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01010451",
+        "question": "Một vật dao động điều hoà theo phương trình x = − 5 c o s ( 5 π t − 7 π / 6 ) c m . Biên độ dao động và pha ban đầu của vật là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. A = - 5 cm và φ = - 7π/6 rad.",
+            "B. A = 5 cm và φ = - π/6 rad.",
+            "C. A = 5 cm và φ = 7π/6 rad.",
+            "D. A = 5 cm và φ = π/6 rad."
+        ],
+        "answer": "B",
+        "explain": "A = 5 \\, \\text{cm}, \\, \\phi = -\\frac{\\pi}{6}"
+    },
+    {
+        "id": "L010R0121",
+        "question": "Con lắc lò xo gồm vật nặng m = 100g và lò xo nhẹ có độ cứng k = 100 N / m . Tác dụng một ngoại lực cưỡng bức biến thiên điều hòa biên độ F 0 và tần số f 1 = 6 H z thì biên độ dao động là A 1 . Nếu giữ nguyên biên độ F 0 mà tăng tần số ngoại lực đến f 2 = 5 , 5 H z thì biên độ dao động ổn định là A 2 . Kết luận đúng là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Biên độ dao động cưỡng bức tăng rồi giảm",
+            "B. A1 = A2",
+            "C. A1 > A2",
+            "D. A1 < A2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Tần số dao động riêng của con lắc: \\( f = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} = \\frac{1}{2 \\pi} \\sqrt{\\frac{100}{0,1}} = 5 \\, \\text{Hz} + f_0 < f_2 < f_1 Từ đồ thị ta suy ra: A_2 > A_1 Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01011221",
+        "question": "Một vật nhỏ dao động điều hòa với biên độ 4 c m và chu kì 2 s . Quãng đường vật đi được trong 4 s là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 32 c m",
+            "B. 16 c m",
+            "C. 8 c m",
+            "D. 64 c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: \\( T = 2 \\, s \\) => \\( 4 \\, s = 2T \\) Quãng đường vật đi được trong \\( 4 \\, s = 2T \\) là \\( S = 2 \\cdot 4 \\, A = 2 \\cdot 4 \\cdot 4 = 32 \\, cm \\) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01020641",
+        "question": "Một con lắc lò xo dao động theo phương ngang với cơ năng dao động là 20mJ và lực đàn hồi cực đại là 2N. Biên độ dao động của con lắc là",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 1cm",
+            "B. 2cm",
+            "C. 4cm",
+            "D. 3cm"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: - Cơ năng dao động: \\( W = \\frac{1}{2} k A^2 = 20 \\cdot 10^{-3} \\, J \\) - Lực đàn hồi cực đại: \\( F_{đhmax} = kA = 2 \\, N \\rightarrow \\frac{W}{F_{đhmax}} = A^2 = \\frac{20 \\cdot 10^{-3}}{2} \\rightarrow A = 0,02 \\, m = 2 \\, cm \\) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L01010421",
+        "question": "Một vật dao động điều hòa theo phương trình x = 3cos(7πt + π) cm, pha dao động tại thời điểm t = 1 (s) là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 7π (rad).",
+            "B. 𝜋 (rad).",
+            "C. 6π (rad).",
+            "D. 8π (rad)"
+        ],
+        "answer": "D",
+        "explain": "Pha dao động của vật tại thời điểm t: \\(\\omega t + \\varphi = 7\\pi t + \\pi\\) => Pha dao động tại thời điểm t=1s là: \\(7\\pi \\cdot 1 + \\pi = 8\\pi\\) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01030041",
+        "question": "Chu kì dao động điều hòa của con lắc đơn không phụ thuộc vào yếu tố nào sau đây?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. khối lượng quả nặng.",
+            "B. độ cao nơi dao động so với mặt đất.",
+            "C. vĩ độ địa lý.",
+            "D. chiều dài dây treo."
+        ],
+        "answer": "A",
+        "explain": "T = 2 \\pi \\sqrt{\\frac{l}{g}} \\rightarrow chu kì của con lắc đơn không phụ thuộc vào khối lượng quả nặng Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01030081",
+        "question": "Tại cùng một nơi trên Trái Đất, con lắc đơn có chiều dài l dao động điều hòa với chu kì 2 s , con lắc đơn có chiều dài l 2 dao động điều hòa với chu kì:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. √ 2 s",
+            "B. 2 √ 2 s",
+            "C. 1 s",
+            "D. 4 s"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Chu kì dao động của con lắc đơn có chiều dài l : T_1 = 2 \\pi \\sqrt{\\frac{l}{g}} + Chu kì dao động của con lắc đơn có chiều dài l_2 : T_2 = 2 \\pi \\sqrt{\\frac{l_2}{g}} = T_1 \\sqrt{2} = 2 \\sqrt{2} = \\sqrt{2} \\, \\text{s} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R0411",
+        "question": "Phát biểu nào sau đây là sai khi nói về biên độ của dao động tổng hợp của hai dao động điều hoà cùng phương cùng tần số ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Phụ thuộc vào tần số của hai dao động thành phần.",
+            "B. Phụ thuộc vào độ lệch pha của hai dao động thành phần.",
+            "C. Lớn nhất khi hai dao động thành phần cùng pha",
+            "D. Nhỏ nhất khi hai dao động thành phần ngược pha."
+        ],
+        "answer": "A",
+        "explain": "A = \\sqrt{A_1^2 + A_2^2 + 2 A_1 A_2 \\cos \\Delta \\phi}  \nBiên độ của dao động tổng hợp của hai dao động điều hoà cùng phương cùng tần số không phụ thuộc vào tần số của hai dao động thành phần.  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L01020681",
+        "question": "Một chất điểm có khối lượng 500 g dao động điều hòa dưới tác dụng của một lực kéo về có biểu thức F = − 0 , 8 c o s 4 t ( N ) . Biên độ dao động của chất điểm bằng",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 8 c m",
+            "B. 10 c m",
+            "C. 12 c m",
+            "D. 6 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: F = m a_{max} = k A = m \\omega^2 A \\rightarrow A = \\frac{F}{m \\omega^2} = \\frac{0.8}{0.5 \\cdot 4^2} = 0.1 \\, m = 10 \\, cm Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L01020041",
+        "question": "Một con lắc lò xo dao động không ma sát trên một mặt phẳng ngang. Phát biểu nào sau đây sai:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Dao động của con lắc là dao động tuần hoàn.",
+            "B. Dao động của con lắc là dao động điều hòa.",
+            "C. Thời gian thực hiện một dao động càng lớn khi biên độ càng lớn.",
+            "D. Số dao động thực hiện được trong 1s tỉ lệ thuận với căn bậc hai của độ cứng k."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B - đúng vì dao động của con lắc lò xo là dao động điều hòa mà dao động điều hòa là trường hợp riêng của dao động tuần hoàn D - đúng vì: số dao động vật thực hiện trong 1s là tần số $f = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}}$ (tỉ lệ thuận với căn bậc 2 của $k$) C - sai vì chu kì dao động không phụ thuộc vào biên độ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010531",
+        "question": "Một chất điểm dao động điều hòa có phương trình li độ x = 6 c o s ( 10 t − 3 π 2 ) c m . Gia tốc của chất điểm khi pha dao động bằng 2 π 3 là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. a = − 3 m / s 2",
+            "B. a = − 3 √ 3 m / s 2",
+            "C. a = 3 m / s 2",
+            "D. a = 3 √ 3 m / s"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Li độ của chất điểm khi pha dao động bằng \\( \\frac{2 \\pi}{3} \\) là: \\( x = 6 \\cos\\left(\\frac{2 \\pi}{3}\\right) = -3 \\, \\text{cm} \\) + Gia tốc tại điểm đó: \\( a = -\\omega^2 x = -10^2 \\cdot (-3) = 300 \\, \\text{cm/s}^2 = 3 \\, \\text{m/s}^2 \\) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010681",
+        "question": "Một vật nhỏ dao động theo phương trình x = A c o s ( ω t + φ ) ( c m ) . Tại thời điểm ban đầu, vật đi qua vị trí có li độ x < 0 , hướng ra xa vị trí cân bằng. Giá trị của φ thỏa mãn:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. π 2 < φ < π",
+            "B. π 2 < φ < 0",
+            "C. − π < φ < − π 2",
+            "D. 0 < φ < π 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tại t = 0 , ta có x < 0 và hướng ra xa vị trí cân bằng => v < 0 ↔ \\{ A \\cos \\phi < 0 \\\\ v = - A \\omega \\sin \\phi < 0 \\rightarrow \\{ \\cos \\phi < 0 \\\\ \\sin \\phi > 0 \\rightarrow \\frac{\\pi}{2} < \\phi < \\pi \\} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R1471",
+        "question": "Đồ thị biểu diễn sự biến thiên của vận tốc theo li độ trong dao động điều hoà có dạng là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. đường parabol.",
+            "B. đường tròn.",
+            "C. đường elip",
+            "D. đường hypebol"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: \\( A^2 = x^2 + v^2 \\omega^2 \\) → \\( \\frac{x^2}{A^2} + \\frac{v^2}{A^2 \\omega^2} = 1 \\) (Có dạng của phương trình elip \\( \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\)) => Đồ thị biểu diễn sự biến thiên của vận tốc theo li độ trong dao động điều hòa có dạng là đường elip Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010121",
+        "question": "Chọn phát biểu đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Quãng đường vật đi được trong một chu kì dao động là 2 A",
+            "B. Độ dời lớn nhất của vật trong quá trình dao động là A",
+            "C. Độ dài quỹ đạo chuyển động của vật là 4 A",
+            "D. Quãng đường vật đi được trong nửa chu kì dao động là A 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A – sai vì: Quãng đường vật đi trong một chu kỳ dao động là 4A B – đúng C – sai vì: Độ dài quỹ đạo chuyển động của vật là 2A D – sai vì: Quãng đường vật đi được trong nửa chu kỳ dao động là 2A Đáp án cần chọn là: B"
+    },
+    {
+        "id": "L01020622",
+        "question": "Chọn phát biểu đúng khi nói về lực kéo về tác dụng vào con lắc lò xo dao động điều hòa theo phương ngang?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Luôn hướng về vị trí biên",
+            "B. Luôn cùng chiều với chiều chuyển động của vật",
+            "C. Luôn hướng về vị trí cân bằng",
+            "D. Luôn cùng chiều với chiều biến dạng của lò xo"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Lực kéo về tác dụng vào vật luôn hướng về vị trí cân bằng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L010R0072",
+        "question": "Một vật dao động cưỡng bức dưới tác dụng là một ngoại lực biến thiên điều hòa với tần số f . Chu kì dao động của vật là",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 2 f .",
+            "B. 1 2 π f",
+            "C. 1 f",
+            "D. 2 π f"
+        ],
+        "answer": "C",
+        "explain": "- Chỉ ghi theo format: Lời giải của GV Loigiaihay.com Dao động cưỡng bức có tần số bằng tần số của lực cưỡng bức = f à T = \\frac{1}{f}. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01020022",
+        "question": "Phát biểu nào sau đây là đúng khi nói về chuyển động của con lắc lò xo:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Chuyển động của con lắc là chuyển động cong",
+            "B. Chuyển động của con lắc là chuyển động đều",
+            "C. Chuyển động của con lắc là chuyển động biến đổi đều",
+            "D. Chuyển động của con lắc là chuyển động tuần hoàn"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com A – sai vì: Chuyển động của con lắc lò xo là chuyển động thẳng B – sai vì: Gia tốc của con lắc luôn thay đổi => Không phải là chuyển động đều C – sai vì: Gia tốc của con lắc luôn thay đổi mà chuyển động biến đổi đều là chuyển động có gia tốc không đổi theo thời gian D - đúng Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01010862",
+        "question": "Phương trình nào dưới đây không biểu thị cho dao động điều hòa?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. x = A c o s ( ω t + φ )",
+            "B. x = A sin ( ω t + φ )",
+            "C. x = − A c o s ( ω t + φ )",
+            "D. x = A tan ( ω t + φ )"
+        ],
+        "answer": "D",
+        "explain": "A, B, C – là phương trình của dao động điều hòa  \nD – không là phương trình dao động điều hòa vì: dao động điều hòa là dao động trong đó li độ của vật biến đổi theo hàm sin (hay cosin)  \nĐáp án cần chọn là: D."
+    },
+    {
+        "id": "L01010072",
+        "question": "Trong dao động điều hòa của một vật thì tập hợp 2 đại lượng nào sau đây là không đổi theo thời gian?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Biên độ, tần số.",
+            "B. Biên độ, gia tốc.",
+            "C. Vận tốc, tần số.",
+            "D. Li độ, vận tốc."
+        ],
+        "answer": "A",
+        "explain": "x = A \\cos(\\omega t + \\phi)  \nA : biên độ dao động  \nTần số f : Là số dao động toàn phần thực hiện được trong một giây.  \nVận tốc: v = x' = -\\omega A \\sin(\\omega t + \\phi) = \\omega A \\cos(\\omega t + \\phi + \\frac{\\pi}{2})  \nGia tốc: a = v' = -\\omega^2 A \\cos(\\omega t + \\phi) = -\\omega^2 x = \\omega^2 A \\cos(\\omega t + \\phi + \\pi)  \nTa nhận thấy li độ x, vận tốc, gia tốc luôn biến đổi A, f không đổi  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L01030432",
+        "question": "Một con lắc đơn gồm vật nặng có khối lượng m dao động điều hòa với biên độ góc α0. Biểu thức tính lực căng dây ở li độ α là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. m g ( 1 + α 2 0 − α 2 )",
+            "B. m g ( 1 + α 2 0 − 3 α 2 2 )",
+            "C. m g ( 3 c o s α 0 − 2 c o s α )",
+            "D. m g ( 2 c o s α − 3 c o s α 0 )"
+        ],
+        "answer": "B",
+        "explain": "T = m g \\left( 1 - 1.5 \\alpha^2 + \\alpha_0^2 \\right)  \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "L01030952",
+        "question": "Với g0 là gia tốc rơi tự do ở mặt đất, R - là bán kính Trái Đất. Ở độ sâu d so với mặt đất gia tốc rơi tự do của một vật là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. g d = G M R 2",
+            "B. g d = G M R 2 − d 2",
+            "C. g d = g 0 R − d R",
+            "D. g d = g 0 ( R R − d ) 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com  \nỞ sâu d so với mặt đất, gia tốc rơi tự do của một vật là: \\( g_d = g_0 \\left( \\frac{R - d}{R} \\right) \\)  \nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010062",
+        "question": "Một chất điểm dao động điều hòa với phương trình x = A c o s ( ω t + φ ) ; trong đó A , ω là các hằng số dương. Pha của dao động ở thời điểm t là",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ( ω t + φ )",
+            "B. ω",
+            "C. φ",
+            "D. ω t"
+        ],
+        "answer": "A",
+        "explain": "x = A \\cos(\\omega t + \\phi)  \n\\omega t + \\phi : pha của dao động tại thời điểm t \\text{ (đơn vị: rad)}  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L01030322",
+        "question": "Một con lắc đơn gồm vật nặng có khối lượng m , dây treo dài l . Kéo vật ra khỏi vị trí cân bằng một góc α 0 rồi thả cho vật dao động. Biểu thức nào sau đây xác định vận tốc tại vị trí α bất kì?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. v 2 α = 2 g l ( c o s α 0 − c o s α )",
+            "B. v 2 α = g l ( cos α 0 − c o s α )",
+            "C. v 2 α = 2 g l ( c o s α − c o s α 0 )",
+            "D. v 2 α = g l ( c o s α − c o s α 0 )"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vận tốc của con lắc tại vị trí bất kì được xác định bởi biểu thức: \\( v_\\alpha = \\pm \\sqrt{2gl \\left( \\cos \\alpha - \\cos \\alpha_0 \\right)} \\) hay \\( v^2_\\alpha = 2gl \\left( \\cos \\alpha - \\cos \\alpha_0 \\right) \\) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L010R0312",
+        "question": "Hai dao động ngược pha khi:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Δ φ = φ 2 − φ 1 = k 2 π",
+            "B. Δ φ = φ 2 − φ 1 = ( 2 k + 1 ) π",
+            "C. Δ φ = φ 2 − φ 1 = 2 k + 1 2 π",
+            "D. Δ φ = φ 2 − φ 1 = α bất kì"
+        ],
+        "answer": "B",
+        "explain": "- Hai dao động ngược pha khi: Δ φ = φ_2 - φ_1 = (2k + 1) \\pi \n- Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R1412",
+        "question": "Đối với dao động tuần hoàn, khoảng thời gian ngắn nhất mà sau đó trạng thái dao động của vật được lặp lại như cũ được gọi là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. tần số dao động.",
+            "B. chu kì dao động.",
+            "C. chu kì riêng của dao động.",
+            "D. tần số riêng của dao động"
+        ],
+        "answer": "B",
+        "explain": "Chỉ ghi theo format:\n\nKhoảng thời gian ngắn nhất mà sau đó trạng thái dao động của vật được lặp lại như cũ gọi là chu kì dao động của vật. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L01030402",
+        "question": "Một con lắc đơn gồm vật nặng có khối lượng m , dây treo dài l . Kéo vật ra khỏi vị trí cân bằng một góc α 0 rồi thả cho vật dao động. Biểu thức xác định lực căng dây tại vị trí α bất kì là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. T = m g ( 2 c o s α 0 − c o s α )",
+            "B. T = m g ( c o s α 0 − c o s α )",
+            "C. T = m g ( 3 c o s α − 2 c o s α 0 )",
+            "D. T = m g ( 2 c o s α − c o s α 0 )"
+        ],
+        "answer": "C",
+        "explain": "T = m g ( 3 \\cos \\alpha - 2 \\cos \\alpha_0 )  \nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L01020312",
+        "question": "Biểu thức nào sau đây xác định cơ năng của con lắc lò xo dao động điều hòa?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. W = 1 2 k x 2",
+            "B. W = 1 2 ω 2 A 2",
+            "C. W = 1 2 m v 2",
+            "D. W = 1 2 k A 2"
+        ],
+        "answer": "D",
+        "explain": "Cơ năng của con lắc lò xo dao động điều hòa: \\( W = \\frac{1}{2} k A^2 \\) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01030012",
+        "question": "Một con lắc đơn chiều dài l dao động điều hòa tại nơi có gia tốc trọng trường g. Chu kỳ dao động của con lắc được tính:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. T = 2 π √ ℓ g",
+            "B. T = 2 π √ g ℓ",
+            "C. T = 1 2 π √ ℓ g",
+            "D. T = 1 2 π √ g ℓ"
+        ],
+        "answer": "A",
+        "explain": "Chu kì dao động của con lắc đơn: \\( T = 2 \\pi \\sqrt{\\frac{l}{g}} \\) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01030392",
+        "question": "Một con lắc đơn gồm vật nặng có khối lượng m, dây treo dài l. Kéo vật ra khỏi vị trí cân bằng một góc α0 rồi thả cho vật dao động. Biểu thức xác định lực căng dây tại vị trí α bất kì là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. T = m g ( 3 c o s α 0 − 2 c o s α )",
+            "B. T = m g ( 3 c o s α − 2 c o s α 0 )",
+            "C. T = m g ( c o s α 0 − c o s α )",
+            "D. T = m g ( c o s α − c o s α 0 )"
+        ],
+        "answer": "B",
+        "explain": "T = m g ( 3 \\cos \\alpha - 2 \\cos \\alpha_0 )"
+    },
+    {
+        "id": "L01010052",
+        "question": "Một vật dao động điều hoà theo phương trình x = A cos ( ω t + φ ) ( A > 0 ; ω > 0 ) Pha của dao động ở thời điểm t là",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. ω",
+            "B. cos ( ω t + φ )",
+            "C. ( ω t + φ )",
+            "D. φ ."
+        ],
+        "answer": "C",
+        "explain": "x = A \\cos (\\omega t + \\phi)  \npha dao động ở thời điểm t là: (\\omega t + \\phi)  \nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L010R0182",
+        "question": "Tần số của hệ dao động tự do:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Chỉ phụ thuộc vào đặc tính của hệ dao động và không phụ thuộc vào các yếu tố bên ngoài",
+            "B. Phụ thuộc vào cách kích thích dao động và đặc tính của hệ dao động",
+            "C. Phụ thuộc vào điều kiện ban đầu và biên độ của dao động",
+            "D. Chỉ phụ thuộc vào cách kích thích dao động và không phụ thuộc vào đặc tính của hệ dao động"
+        ],
+        "answer": "A",
+        "explain": "Tần số của hệ dao động tự do chỉ phụ thuộc vào đặc tính của hệ dao động và không phụ thuộc vào các yếu tố bên ngoài  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L01031122",
+        "question": "Một con lắc đơn có chiều dài l, dao động điều hòa với chu kì T1 . Tại nơi có gia tốc trọng trường là g = π2 = 10m/s2. Khi vật đi qua vị trí cân bằng dây treo bị vướng đinh tại vị trí 0,5l và con lắc tiếp tục dao động. Xác định chu kì dao động của con lắc đơn khi này?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. T = T 1 2",
+            "B. T = T 2",
+            "C. T = 1 2 ( T 1 + T 2 )",
+            "D. T = 1 2 ( T 1 − T 2 )"
+        ],
+        "answer": "C",
+        "explain": "T = \\frac{1}{2} (T_1 + T_2) \\rightarrow T = \\pi \\sqrt{g} \\left( \\sqrt{l_1} + \\sqrt{l_2} \\right) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010312",
+        "question": "Một vật dao động điều hòa với phương trình x = A c o s ( ω t + φ ) . A được gọi là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Li độ dao động của vật",
+            "B. Chu kì dao động của vật",
+            "C. Biên độ dao động của vật",
+            "D. Tần số góc của vật"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: x=A\\cos(\\omega t+\\phi) + x: li độ dao động của vật + A: Biên độ dao động của vật + \\omega: Tần số góc của dao động + \\phi: Pha ban đầu của dao động + \\omega t+\\phi: Pha dao động tại thời điểm t Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01010282",
+        "question": "Trong dao động điều hòa, so sánh nào dưới đây là đúng khi nói về biến đổi điều hòa giữa li độ và vận tốc",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. cùng pha",
+            "B. nhanh pha π 2",
+            "C. ngược pha",
+            "D. chậm pha π 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Li độ dao động: \\( x = A \\cos(\\omega t + \\phi) \\) + Vận tốc: \\( v = x' = -A \\omega \\sin(\\omega t + \\phi) = A \\omega \\cos(\\omega t + \\phi + \\frac{\\pi}{2}) \\) + Gia tốc: \\( a = v' = x'' = -A \\omega^2 \\cos(\\omega t + \\phi) = A \\omega^2 \\cos(\\omega t + \\phi + \\pi) \\) => Li độ chậm pha \\( \\frac{\\pi}{2} \\) so với vận tốc Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01021163",
+        "question": "Treo một vật vào một lò xo thì nó dãn 4 c m . Từ vị trí cân bằng, nâng vật theo phương thẳng đứng đến vị trí lò xo bị nén 4 c m và thả nhẹ tại thời điểm t = 0 thì vật dao động điều hòa theo phương thẳng đứng trùng với trục của lò xo. Lấy g = π 2 m / s 2 . Hãy xác định thời điểm thứ 147 lò xo có chiều dài tự nhiên.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 29,27s",
+            "B. 27,29s",
+            "C. 28,26s",
+            "D. 26,28s"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Δ l = m g k = g \\omega^2 = g \\frac{4 \\pi^2}{T^2} = 0,04 \\rightarrow T = \\sqrt{\\frac{4 \\pi^2}{0,04}} = 10 = 0,4 \\text{s} Biên độ: A = 8 \\text{cm} Chọn chiều dương hướng lên, ta có: - Lò xo không biến dạng khi x = \\frac{A}{2} Thời điểm thứ 147 lò xo có chiều dài tự nhiên: t = t_{146} + t_{1} + Trong 1 chu kì vật qua vị trí có chiều dài tự nhiên 2 lần t_{146} = \\frac{146}{2} T = 73T + T Tại t = 0, vật đang ở biên +A \\Rightarrow thời điểm ban đầu vật qua vị trí có chiều dài tự nhiên (thời gian từ A đến \\frac{A}{2}): t_{1} = \\frac{T}{6} \\Rightarrow Thời điểm thứ 147 lò xo có chiều dài tự nhiên: t = t_{146} + t_{1} = 73T + \\frac{T}{6} = \\frac{439T}{6} \\approx 29,27 \\text{s} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01030273",
+        "question": "Con lắc đơn dao động điều hòa có S 0 = 6 c m , tại nơi có gia tốc trọng trường g = 10 m / s 2 . Biết chiều dài của dây l = 0 , 9 m . Hãy viết phương trình dao động biết lúc t = 0 vật đi qua vị trí cân bằng theo chiều âm?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. s = 6 c o s ( 10 π 3 t − π 2 ) c m",
+            "B. s = 6 c o s ( 10 3 t + π 2 ) c m",
+            "C. s = 6 c o s ( 10 3 t − π 2 ) c m",
+            "D. s = 6 c o s ( 10 π 3 t + π 2 ) c m"
+        ],
+        "answer": "B",
+        "explain": "S 0 = 6 \\, \\text{cm}  \n\\omega = \\sqrt{\\frac{g}{l}} = \\sqrt{\\frac{10}{0.9}} = 10^{3} \\, \\text{(rad/s)}  \ns = s_0 \\cos \\phi = 0  \nv = -\\omega s_0 \\sin \\phi < 0 \\rightarrow \\{ \\cos \\phi = 0 \\, \\sin \\phi > 0 \\rightarrow \\phi = \\frac{\\pi}{2}  \ns = 6 \\cos (10^{3} t + \\frac{\\pi}{2}) \\, \\text{cm}  \nB."
+    },
+    {
+        "id": "L01010813",
+        "question": "Một vật dao động điều hòa với biên độ 4 c m và chu kì 2 s , chọn gốc thời gian là lúc vật đi qua vị trí cân bằng theo chiều dương. Phương trình dao động của vật là",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. x = 4 sin ( 2 π t + π 2 ) ( c m ) .",
+            "B. x = 4 sin ( 2 π t − π 2 ) ( c m ) .",
+            "C. x = 4 c o s ( π t + π 2 ) ( c m ) .",
+            "D. x = 4 c o s ( π t − π 2 ) ( c m ) ."
+        ],
+        "answer": "D",
+        "explain": "ω = 2 \\pi T = 2 \\pi 2 = \\pi \\, \\left( \\text{rad/s} \\right)  \nA = 4 \\, \\text{cm}  \nt = 0 : \\{ x_0 = 0 \\, v > 0 \\Rightarrow \\{ \\cos \\phi = 0 \\, \\sin \\phi < 0 \\Rightarrow \\phi = - \\frac{\\pi}{2}  \nx = 4 \\cos \\left( \\pi t - \\frac{\\pi}{2} \\right) \\, \\text{cm}  \nD."
+    },
+    {
+        "id": "L010R1163",
+        "question": "Một vật dao động điều hòa với gia tốc a được biểu diễn trên hình vẽ. Lấy π2 = 10. Phương trình dao động của vật là",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223300143391593481735180-29.png",
+        "difficulty": 2,
+        "options": [
+            "A. x = 2 , 5 cos ( π t + π 2 ) c m",
+            "B. x = 2 , 5 cos ( 2 π t ) c m",
+            "C. x = 2 , 5 cos ( 2 π t + π ) c m",
+            "D. x = 2 , 5 cos ( π t + π 3 ) c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Từ đồ thị, ta có gia tốc cực đại là: a_0 = 25 \\left( \\mathrm{cm/s^2} \\right) Chu kì dao động của vật là: T = 2 \\left( s \\right) \\Rightarrow \\omega = \\frac{2 \\pi}{T} = \\frac{2 \\pi}{2} = \\pi \\left( \\mathrm{rad/s} \\right) Tại thời điểm đầu, gia tốc của vật bằng 0 và đang tăng, pha ban đầu là: \\phi = -\\frac{\\pi}{2} \\left( \\mathrm{rad} \\right) Phương trình gia tốc của vật là: a = 25 \\cos \\left( \\pi t - \\frac{\\pi}{2} \\right) \\left( \\mathrm{cm/s^2} \\right) Phương trình li độ của vật là: x = 2.5 \\cos \\left( \\pi t + \\frac{\\pi}{2} \\right) \\left( \\mathrm{cm} \\right) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01021443",
+        "question": "Một con lắc lò xo treo thẳng đứng gồm lò xo có độ cứng bằng 100N/m và vật nhỏ khối lượng 250g. Từ vị trí cân bằng, kéo vật xuống dưới một đoạn sao cho lò xo dãn 7,5cm rồi thả nhẹ sau đó vật dao động điều hòa. Lấy g = 10 m / s 2 . Tốc độ của vật khi nó đi qua vị trí lò xo không biến dạng là",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 141,4 cm/s",
+            "B. 86,6 cm/s",
+            "C. 70,7 cm/s",
+            "D. 173,2 cm/s"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Tần số góc: ω = \\sqrt{\\frac{k}{m}} = \\sqrt{\\frac{100}{0.25}} = 20 \\, \\text{rad/s} Độ biến dạng của lò xo tại VTCB: \\Delta l = \\frac{m g}{k} = \\frac{0.25 \\cdot 10}{100} = 2.5 \\, \\text{cm} Từ VTCB kéo vật xuống dưới 1 đoạn sao cho lò xo dãn 7.5 \\, \\text{cm} rồi thả nhẹ \\Rightarrow \\Delta l + A = 7.5 \\, \\text{cm} \\Rightarrow A = 7.5 - 2.5 = 5 \\, \\text{cm} Vị trí lò xo không biến dạng có |x| = 2.5 \\, \\text{cm} \\Rightarrow Tốc độ của vật khi nó đi qua vị trí lò xo không biến dạng là: v = \\omega \\sqrt{A^2 - x^2} = 20 \\sqrt{5^2 - 2.5^2} = 86.6 \\, \\text{cm/s} Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0523",
+        "question": "Dao động tổng hợp của hai dao động điều hòa cùng phương, cùng tần số có phương trình li độ là x = 4 c o s ( 2 π t − π 6 ) c m . Biết dao động thứ nhất có phương trình li độ là x 1 = 3 c o s ( 2 π t + π 3 ) . Dao động thứ hai có phương trình li độ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. x 2 = 5 c o s ( 2 π t + 1 , 17 ) c m",
+            "B. x 2 = c o s ( 2 π t + π 2 ) c m",
+            "C. x 2 = c o s ( 2 π t − π 2 ) c m",
+            "D. x 2 = 5 c o s ( 2 π t − 1 , 17 ) c m"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : x = x_1 + x_2 \\rightarrow x_2 = x - x_1 x = 4 \\cos(2 \\pi t - \\frac{\\pi}{6}) \\text{ cm} x_1 = 3 \\cos(2 \\pi t + \\frac{\\pi}{3}) Ta suy ra: x_2 = x - x_1 = 4 \\cos(2 \\pi t - \\frac{\\pi}{6}) - 3 \\cos(2 \\pi t + \\frac{\\pi}{3}) = 4 \\cos(2 \\pi t - \\frac{\\pi}{6}) + 3 \\cos(2 \\pi t + \\frac{\\pi}{3} + \\pi) Biên độ dao động của 2 : A_2 = \\sqrt{4^2 + 3^2 + 2 \\cdot 4 \\cdot 3 \\cdot \\cos(\\pi + \\frac{\\pi}{3} - (-\\frac{\\pi}{6}))} = 5 \\text{ cm} Pha ban đầu của dao động 2 : \\tan \\phi_2 = \\frac{4 \\sin(-\\frac{\\pi}{6}) + 3 \\sin(\\frac{\\pi}{3} + \\pi)}{4 \\cos(-\\frac{\\pi}{6}) + 3 \\cos(\\frac{\\pi}{3} + \\pi)} = -2.34 \\rightarrow \\phi_2 = -66.80 \\approx -1.17 \\text{ (rad)} \\rightarrow x_2 = 5 \\cos(2 \\pi t - 1.17) \\text{ cm} Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L01011283",
+        "question": "Một vật dao động điều hòa theo phương trình x = 4 c o s ( 10 π t + π 4 ) c m (t tính bằng giây). Tìm quãng đường vật đi được kể từ lúc bắt đầu dao động đến li độ x = − 2 c m theo chiều âm lần thứ nhất?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 + 2 √ 2 c m",
+            "B. 8 + 4 √ 3 c m",
+            "C. 10 − 2 √ 2 c m",
+            "D. 16 c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com\nTại t = 0: \n⎧ \n⎪ \n⎨ \n⎪ \n⎩ \nx_0 = 4 \\cos\\left(\\frac{\\pi}{4}\\right) = 2 \\sqrt{2} \\text{ cm} \nv = -40 \\pi \\sin\\left(\\frac{\\pi}{4}\\right) = -20 \\pi \\sqrt{2} < 0 \n=> \\text{Quãng đường vật đi được: } S = 2 \\sqrt{2} + | -2 | = 2 + 2 \\sqrt{2} \\text{ cm} \n\\text{Đáp án cần chọn là: A.}"
+    },
+    {
+        "id": "L01011043",
+        "question": "Một chất điểm dao động điều hòa theo phương trình \\(x = 4c{\\rm{os}}\\left( {\\dfrac{{2\\pi }},{3}t} \\right)cm\\)(x tính bằng cm, t tính bằng giây). Kể từ $t=0$, chất điểm đi qua vị trí có li độ $x= -2cm$ lần thứ $2011$ tại thời điểm:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3015s$",
+            "B. $6030s$",
+            "C. $3016s$",
+            "D. $6031s$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Chu kỳ: \\(T = \\dfrac{2\\pi }{\\omega } = \\dfrac{2\\pi }{\\dfrac{2\\pi }{3}} = 3s\\) Trong một chu kỳ, chất điểm đi qua vị trí có li độ $x=-2cm$ hai lần => \\({t_{2011}} = \\frac{2011 - 1}{2}T + {t_1} = 1005T + {t_1}\\) Tại $t=0$, vật ở li độ: $x=4cm$ => t1 là khoảng thời gian chất điểm đi từ $A$ (vị trí ban đầu) đến $-A/2$ => \\({t_1} = \\dfrac{T}{4} + \\dfrac{T}{12} = \\dfrac{T}{3}\\) \\( \\to {t_{2011}} = 1005T + {t_1} = 1005T + \\dfrac{T}{3} = \\dfrac{3016T}{3} = \\dfrac{3016.3}{3} = 3016{\\rm{s}}\\) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01021223",
+        "question": "Một con lắc lò xo, lò xo có độ cứng 50 N / m , vật M có khối lượng M = 200 g , dao động điều hòa trên mặt phẳng nằm ngang với biên độ 4 ( c m ) . Giả sử M đang dao động thì có một vật có khối lượng m = 50 g bắn vào M theo phương ngang với vận tốc 2 √ 2 m / s . Giả thiết là va chạm mềm, xảy ra tại thời điểm lò xo có độ dài lớn nhất. Sau va chạm, hai vật gắn chặt vào nhau và cùng dao động điều hòa với biên độ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 8 , 2 c m",
+            "B. 10 c m",
+            "C. 4 cm",
+            "D. 4 √ 2 c m"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: \nω = \\sqrt{\\frac{k}{m + M}} = \\sqrt{\\frac{50}{0.25}} = 10 \\sqrt{2} \\, \\left( \\frac{rad}{s} \\right) \nV = \\frac{m v_0}{m + M} = \\frac{15}{200} \\sqrt{2} = 40 \\sqrt{2} \\, \\left( \\frac{cm}{s} \\right) \n\\left\\{ \nx_0 = \\pm 4 \\, cm \nA = \\sqrt{x_0^2 + \\frac{V}{\\omega^2}} = 4 \\sqrt{2} \\, cm \n\\right. \nĐáp án cần chọn là: D."
+    },
+    {
+        "id": "L01031053",
+        "question": "Một đồng hồ quả lắc được coi như một con lắc đơn chạy đúng giờ ở một nơi trên mặt đất có nhiệt độ 200C. Tại đó, khi nhiệt độ là 300C thì đồng hồ chạy nhanh hay chậm. Tính thời gian đồng hồ chạy sai sau một ngày đêm. Biết hệ số nở dài của dây treo con lắc là α = 2.10 − 5 K − 1",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. đồng hồ chạy nhanh 30,85 s.",
+            "B. đồng hồ chạy chậm 8,64 s.",
+            "C. đồng hồ chạy nhanh 17,85 s.",
+            "D. đồng hồ chạy chậm 18,72 s."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, thời gian quả lắc đồng hồ chạy sai trong 1s là:  \\(\\frac{\\Delta T}{T} = \\frac{1}{2} \\alpha (t_2 - t_1) = \\frac{1}{2} \\cdot 2 \\cdot 10^{-5} (30 - 20) = 10^{-4} > 0 \\Rightarrow\\) Đồng hồ chạy chậm Trong một ngày đêm, đồng hồ chạy chậm khoảng thời gian là: \\(\\theta = \\frac{\\Delta T}{T} \\cdot 24 \\cdot 60 \\cdot 60 = 8.64 \\, s\\) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L01021333",
+        "question": "Con lắc lò xo bố trí nằm ngang gồm vật M = 400 g có thể trượt không ma sát trên mặt phẳng nằm ngang. Hệ đang ở trạng thái cân bằng, dùng vật m = 100 g bắn vào M theo phương ngang với tốc độ 1 m / s , va chạm là hoàn toàn đàn hồi. Sau va chạm vật M dao động điều hòa, chiều dài cực đại và cực tiểu của lò xo lần lượt là 28 c m và 20 c m . Khoảng cách giữa 2 vật sau 1 , 57 s từ lúc bắt đầu va chạm là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 90 , 2 c m",
+            "B. 92 c m",
+            "C. 94 , 2 c m",
+            "D. 96 c m"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ngay sau va chạm, vận tốc của m và M lần lượt là v và V: \nV = \\frac{2 m v_0}{m + M} = 0,4 \\frac{m}{s} = 40 \\frac{cm}{s}\nv = \\frac{m - M}{m + M} v_0 = -0,6 \\frac{m}{s} = -60 \\frac{cm}{s} \nM dao động điều hòa với tốc độ cực đại V và biên độ: A = \\frac{l_{max} - l_{min}}{2} = 4 \\frac{cm}{} \nnên \\omega = \\frac{V}{A} = 10 \\frac{rad}{s} \\rightarrow T = \\frac{2 \\pi}{\\omega} = \\frac{\\pi}{5} s \nt = 1,57 s = 2,5 T \nM ở VTCB m đi được quãng đường: S = vt = 60 \\cdot 1,57 = 94,2 \\frac{cm}{} \n=> Khoảng cách hai vật : 94,2 \\frac{cm}{} \nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L01011113",
+        "question": "Một vật dao động theo phương trình \\(x = 3\\cos \\left( {5\\pi t - \\frac{{2\\pi }},{3}} \\right)cm\\). Trong giây đầu tiên vật qua vị trí cân bằng bao nhiêu lần?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3$",
+            "B. $4$",
+            "C. $5$",
+            "D. $6$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Chu kỳ dao động: \\(T = \\frac{2\\pi}{\\omega} = \\frac{2\\pi}{5\\pi} = 0,4\\,{\\rm{s}}\\) Tại \\(t=0\\,{\\rm{s}}\\): \\(\\left\\{ \\begin{array}{l}x = 3\\,{\\rm{cos}}\\left( - \\frac{2\\pi}{3} \\right) = - 1,5\\,{\\rm{cm}}\\\\v = - A\\omega \\sin \\left( - \\frac{2\\pi}{3} \\right) > 0\\end{array} \\right.\\) ta có: \\(1\\,{\\rm{s}} = 2T + \\frac{T}{2}\\) Trong một chu kỳ, vật đi qua vị trí VTCB \\(2\\) lần Trong khoảng thời gian \\(\\frac{T}{2}\\) vật qua vị trí cân bằng \\(1\\) lần kể từ \\(t = 0\\) => Trong \\(1\\,{\\rm{s}\\) đầu tiên, vật qua VTCB số lần là: \\(2 \\cdot 2 + 1 = 5\\) lần Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01011263",
+        "question": "Vật dao động điều hoà theo phương trình x = 10 cos ( π t − π 2 ) c m . Quãng đường vật đi được trong khoảmg thời gian từ t 1 = 1 , 5 s đến t 2 = 13 3 s là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 50 + 5 √ 3 cm",
+            "B. 40 + 5 √ 3 cm",
+            "C. 50 + 5 √ 2 cm",
+            "D. 60 - 5 √ 3 cm"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tại t_1 = 1,5s: \n⎧ \n⎪ \n⎨ \n⎪ \n⎩ \nx_1 = 10 \\cos \\left( \\pi \\cdot 1.5 - \\frac{\\pi}{2} \\right) = -10 \nv_1 = -A \\omega \\sin \\left( \\pi \\cdot 1.5 - \\frac{\\pi}{2} \\right) = 0 \n\nTại t_2 = \\frac{13}{3}s: \n⎧ \n⎪ \n⎨ \n⎪ \n⎩ \nx_2 = 10 \\cos \\left( \\pi \\cdot \\frac{13}{3} - \\frac{\\pi}{2} \\right) = 5\\sqrt{3} \nv_2 = -A \\omega \\sin \\left( \\pi \\cdot \\frac{13}{3} - \\frac{\\pi}{2} \\right) > 0 \n\n\\Delta t = t_2 - t_1 = \\frac{13}{3} - 1.5 = \\frac{17}{6}s = T + \\frac{5}{12}T \\Rightarrow \\text{Quãng đường vật đi được từ } t_1 \\text{ đến } t_2 \\text{ là: } S = 4A + A + A\\frac{\\sqrt{3}}{2} = 5 \\cdot 10 + 5\\sqrt{3} = 50 + 5\\sqrt{3} \\text{ (cm)} \n\nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R1013",
+        "question": "Một con lắc lò xo đang dao động điều hòa, lực đàn hồi của lò xo phụ thuộc vào chiều dài của lò xo như đồ thị hình vẽ. Cho g = 10 m / s 2 . Biên độ và chu kì dao động của con lắc là",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223288323031625533006563-3d.jpg",
+        "difficulty": 2,
+        "options": [
+            "A. A = 8 c m ; T = 0 , 56 s",
+            "B. A = 6 c m ; T = 0 , 28 s",
+            "C. A = 6 c m ; T = 0 , 56 s",
+            "D. A = 4 c m ; T = 0 , 28 s"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com  \nTừ đồ thị ta có:  \n- Chiều dài cực đại của con lắc lò xo: \\( l_{\\text{max}} = 18 \\, \\text{cm} \\)  \n- Chiều dài nhỏ nhất của con lắc lò xo: \\( l_{\\text{min}} = 6 \\, \\text{cm} \\)  \n- Biên độ dao động của vật: \\( A = \\frac{l_{\\text{max}} - l_{\\text{min}}}{2} = \\frac{18 - 6}{2} = 6 \\, \\text{cm} \\)  \nChiều dài của con lắc khi ở vị trí cân bằng: \\( l_{\\text{cb}} = l_{\\text{max}} - A = 18 - A = 18 - 6 = 12 \\, \\text{cm} \\)  \nTa để ý rằng, tại vị trí lò xo không biến dạng (lực đàn hồi bằng 0) lò xo có chiều dài là \\( 10 \\, \\text{cm} \\)  \n=> Độ dãn của lò xo tại vị trí cân bằng:  \n\\(\\Delta l_0 = 12 - 10 = 2 \\, \\text{cm}\\)  \n\\(\\Rightarrow T = 2 \\pi \\sqrt{\\frac{\\Delta l_0}{g}} = 0.28 \\, \\text{s}\\)  \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "L01030643",
+        "question": "Đặt con lắc đơn trong điện trường có theo phương thẳng đứng hướng từ trên xuống dưới và có độ lớn E = 104 V/m. Biết khối lượng của quả cầu là m = 20 g, quả cầu được tích điện q = - 12.10-6 C, chiều dài dây treo ℓ = 1 m. Lấy g = π2 = 10 m/s2. Chu kì dao động của con lắc là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. π 4 s",
+            "B. 2 π s",
+            "C. π s",
+            "D. π 2 s"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, con lắc tích điện âm, Cường độ điện trường → E hướng xuống => Lực điện −→ F d hướng lên Chu kì dao động của con lắc khi đó: T = 2 \\pi \\sqrt{\\frac{l}{g'}} Ta có: g' = g - \\frac{F}{m} = g - \\frac{|q|E}{m} = 10 - \\frac{|-12 \\cdot 10^{-6}| \\cdot 10^{4}}{0.02} = 4 \\, \\text{m/s}^2 \\rightarrow T = 2 \\pi \\sqrt{\\frac{l}{g'}} = 2 \\pi \\sqrt{\\frac{1}{4}} = \\pi \\, (\\text{s}) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01011483",
+        "question": "Vật dao động điều hoà theo phương trình x = 5 cos ( 2 π t − π 4 ) c m . Tốc độ trung bình của vật đi được trong khoảng thời gian từ t 1 = 1 s đến t 2 = 4 , 625 s là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 15 , 5 c m / s",
+            "B. 17 , 4 c m / s",
+            "C. 18 , 2 c m / s",
+            "D. 19 , 7 c m / s"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Chu kì dao động: T = 2 \\pi \\omega = 2 \\pi 2 \\pi = 1 \\, s Tại t = 1s: \\left\\{ \\begin{array}{l} x = 5 \\cos \\left( 2 \\pi \\cdot 1 - \\frac{\\pi}{4} \\right) = 2.5 \\sqrt{2} \\\\ v = - A \\omega \\sin \\left( 2 \\pi \\cdot 1 - \\frac{\\pi}{4} \\right) > 0 \\end{array} \\right. Tại t = 4.625s: \\left\\{ \\begin{array}{l} x = 5 \\cos \\left( 2 \\pi \\cdot 4.625 - \\frac{\\pi}{4} \\right) = -5 \\\\ v = - A \\omega \\sin \\left( 2 \\pi \\cdot 4.625 - \\frac{\\pi}{4} \\right) = 0 \\end{array} \\right. Khoảng thời gian: \\Delta t = 3.625 \\, s = 3 T + \\frac{T}{2} + \\frac{T}{8} Quãng đường S trong khoảng thời gian đó: S = 3.4 A + 2 A + \\left( A - \\frac{A \\sqrt{2}}{2} \\right) = 15 A - \\frac{A \\sqrt{2}}{2} = 71.464 \\, cm Tốc độ trung bình vật đi được trong khoảng thời gian đó là: v_{tb} = \\frac{S}{\\Delta t} = \\frac{71.464}{3.625} = 19.71 \\, \\frac{cm}{s} Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L010R0603",
+        "question": "Hai con lắc lò xo giống hệt nhau được treo vào hai điểm ở cùng độ cao, cách nhau 5 c m . Kích thích cho hai con lắc dao động điều hòa theo phương thẳng đứng với phương trình lần lượt là x 1 = 3 c o s ( ω t + π 6 ) và x 2 = 4 c o s ( ω t + π 3 ) c m . Trong quá trình dao động, khoảng cách lớn nhất giữa hai vật nhỏ của các con lắc bằng:",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1547647231023_Capture.png",
+        "difficulty": 2,
+        "options": [
+            "A. 2 cm",
+            "B. 7,05 cm",
+            "C. 5,4 cm",
+            "D. 5 cm"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Khoảng cách giữa hai vật nhỏ của con lắc bằng: \\( d = \\sqrt{5^2 + | x_1 - x_2 |^2} \\) \\( x_1 = 3 \\cos ( \\omega t + \\frac{\\pi}{6} ) \\) và \\( x_2 = 4 \\cos ( \\omega t + \\frac{\\pi}{3} ) \\) cm Ta có: \\( x_1 - x_2 = 3 \\cos ( \\omega t + \\frac{\\pi}{6} ) - 4 \\cos ( \\omega t + \\frac{\\pi}{3} ) = 3 \\cos ( \\omega t + \\frac{\\pi}{6} ) + 4 \\cos ( \\omega t + \\frac{\\pi}{3} + \\pi ) \\) + Biên độ tổng hợp: của \\( x_1 - x_2 \\) là \\( A^2 = 3^2 + 4^2 + 2 \\cdot 3 \\cdot 4 \\cdot \\cos ( \\pi + \\frac{\\pi}{3} - \\frac{\\pi}{6} ) \\) → \\( A \\approx 2,05 \\) cm \\( d_{max} \\leftrightarrow | x_1 - x_2 |_{max} = A \\rightarrow d_{max} = \\sqrt{5^2 + (2,05)^2} = 5,4 \\) cm Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L010R1233",
+        "question": "Một vật dao động điều hoà khi vật có li độ x 1 = 3 c m thì vận tốc của nó là v 1 = 40 c m / s , khi vật qua vị trí cân bằng vật có vận tốc v 2 = 50 c m / s . Li độ của vật khi có vận tốc v 3 = 30 c m / s là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4 c m",
+            "B. ± 4 c m",
+            "C. 16 c m",
+            "D. 2 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: \nA^2 = x^2 + \\frac{v^2}{\\omega^2} \\\\ \nTại vị trí 1: A^2 = x_1^2 + \\frac{v_1^2}{\\omega^2} \\leftrightarrow A^2 = 3^2 + \\frac{40^2}{\\omega^2} \\quad (1) \\\\ \nTại vị trí 2 (vị trí cân bằng): \\{ x = 0 \\\\ v = \\omega A = 50 \\text{cm/s} \\quad (2) \\\\ \nTừ (1) và (2) ta suy ra: \\{ \\omega = 10 \\text{rad/s} \\\\ A = 5 \\text{cm} \\\\ \nTại vị trí 3: \\{ x_3 = ? \\\\ v_3 = 30 \\text{cm/s} \\\\ \nA^2 = x_3^2 + \\frac{v_3^2}{\\omega^2} \\leftrightarrow 5^2 = x_3^2 + \\frac{30^2}{10^2} \\rightarrow x_3 = \\pm 4 \\text{cm} \\\\ \nVậy li độ của vật khi có vận tốc v_3 = 30 \\text{cm/s} là x_3 = \\pm 4 \\text{cm} \\\\ \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0533",
+        "question": "Một vật nhỏ có chuyển động là tổng hợp của hai dao động điều hòa cùng phương. Hai dao động này có phương trình là x 1 = A 1 cos ω t và x 2 = A 2 cos ( ω t + π 2 ) . Gọi E là cơ năng của vật. Khối lượng của vật bằng",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. E ω 2 ( A 2 1 + A 2 2 )",
+            "B. E ω 2 √ A 2 1 + A 2 2 .",
+            "C. 2 E ω 2 ( A 2 1 + A 2 2 )",
+            "D. 2 E ω 2 √ A 2 1 + A 2 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com  \nDo hai dao động vuông pha nên biên độ dao động tổng hợp là : \\( A = \\sqrt{A_1^2 + A_2^2} \\)  \nCơ năng dao động của vật : \\( E = \\frac{1}{2} m \\omega^2 A^2 = \\frac{1}{2} m \\omega^2 (A_1^2 + A_2^2) \\)  \n=> Khối lượng vật \\( m = \\frac{2E}{\\omega^2 (A_1^2 + A_2^2)} \\)  \nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L01030333",
+        "question": "Một con lắc đơn gồm vật có khối lượng 100g, chiều dài dây l = 40cm. Kéo vật lệch khỏi VTCB để dây treo hợp với phương thẳng đứng một góc 300 rồi buông tay. Lấy g = 10m/s2. Vận tốc của vật khi qua vị trí góc α=150 có độ lớn là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,894m/s",
+            "B. 0,632m/s",
+            "C. 0,466m/s",
+            "D. 0,266m/s"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, vận tốc của con lắc: \\( v_{15}^{0} = \\pm \\sqrt{2gl} \\left( \\cos \\alpha - \\cos \\alpha_{0} \\right) = \\pm \\sqrt{2 \\cdot 10 \\cdot 0.4} \\left( \\cos 15^{0} - \\cos 30^{0} \\right) = \\pm 0.894 \\, \\text{m/s} \\) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R0714",
+        "question": "Hai điểm sáng dao động điều hòa với cùng biên độ trên một đường thẳng, quanh vị trí cân bằng O. Các pha của hai dao động ở thời điểm t là a1 và a2 . Hình bên là đồ thị biểu diễn sự phụ thuộc của a1 và của a2 theo thời gian t. Tính từ t = 0 , thời điểm hai điểm sáng gặp nhau lần đầu là",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1560761385807_7.png",
+        "difficulty": 3,
+        "options": [
+            "A. 0 , 15 s .",
+            "B. 0 , 3 s .",
+            "C. 0 , 2 s .",
+            "D. 0 , 25 s ."
+        ],
+        "answer": "A",
+        "explain": "α1 = ω1t + φ1  \nTại thời điểm t = 0, α1 = φ1 = \\frac{2\\pi}{3}  \nTại thời điểm t = 0,9s; α1 = ω1 \\cdot 0,9 + φ1 = \\frac{4\\pi}{3}  \nVậy ω1 = \\frac{20\\pi}{27} \\text{ rad/s}  \nα2 = ω2t + φ2  \nTại thời điểm t = 0,3s: α2 = 0,3 \\cdot ω2 + φ2 = -\\frac{2\\pi}{3}  \nTại thời điểm t = 1,2s : α2 = 1,2 \\cdot ω2 + φ2 = 0  \nGiải hai phương trình bậc nhất ta được ω2 = \\frac{20\\pi}{27} \\text{ rad/s} và φ2 = \\frac{8\\pi}{9}  \nVậy hai dao động có pha là \\left( \\frac{20\\pi}{27} t + \\frac{2\\pi}{3} \\right) và \\left( \\frac{20\\pi}{27} t + \\frac{8\\pi}{9} \\right)  \nĐể hai điểm sáng gặp nhau thì A \\cos \\left( \\frac{20\\pi}{27} t + \\frac{2\\pi}{3} \\right) = A \\cos \\left( \\frac{20\\pi}{27} t + \\frac{8\\pi}{9} \\right)  \nTa có : \\left( \\frac{20\\pi}{27} t + \\frac{2\\pi}{3} \\right) = \\pm \\left( \\frac{20\\pi}{27} t + \\frac{8\\pi}{9} \\right) + 2k\\pi  \n⇒ \\left( \\frac{20\\pi}{27} t + \\frac{2\\pi}{3} \\right) = - \\left( \\frac{20\\pi}{27} t + \\frac{8\\pi}{9} \\right) + 2k\\pi  \n⇒ 40\\pi \\cdot \\frac{1}{27} t = - \\frac{2\\pi}{3} + 2k\\pi  \nHai điểm sáng gặp nhau ứng với giá trị k nhỏ nhất để t dương  \nVậy t_{\\text{min}} = 0,15s  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R0694",
+        "question": "Hai con lắc lò xo đặt trên mặt nằm ngang không ma sát, hai đầu gắn hai vật nặng khối lượng m 1 = m 2 , hai đầu lò xo còn lại gắn cố định vào hai tường thẳng đứng đối diện sao cho trục chính của chúng trùng nhau. Độ cứng tương ứng của mỗi lò xo lần lượt là k 1 = 100 N / m , k 2 = 400 N / m . Vật m 1 đặt bên trái, m 2 đặt bên phải. Kéo m 1 về bên trái và m 2 về bên phải rồi buông nhẹ hai vật cùng thời điểm cho chúng dao động điều hòa cùng cơ năng 0 , 125 J . Khi hai vật ở vị trí cân bằng chúng cách nhau 10 c m . Khoảng cách ngắn nhất giữa hai vật trong quá trình dao động là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 3 , 32 c m",
+            "B. 6 , 25 c m",
+            "C. 9 , 8 c m",
+            "D. 2 , 5 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Biên độ dao động của các vật tính từ công thức \\( W = k_1 A_1^2 = k_2 A_2^2 \\) ⇒ \n\\[\n\\begin{cases}\nA_1 = \\sqrt{\\frac{2W}{k_1}} = 0,05 \\, (m) = 5 \\, (cm) \\\\\nA_2 = \\sqrt{\\frac{2W}{k_2}} = 0,025 \\, (m) = 2,5 \\, (cm)\n\\end{cases}\n\\]\nKhoảng cách lúc đầu giữa hai vật: \\( O_1 O_2 = 10 \\, cm \\) Chọn gốc thời gian là lúc bắt đầu dao động, chọn gốc tọa độ trùng với \\( O_1 \\) thì phương trình dao động của các vật lần lượt là: \n\\[\nx_1 = -5 \\cos \\omega t \\, (cm), \\quad x_2 = 10 + 2,5 \\cos 2\\omega t = 5 \\cos 2\\omega t + 7,5 \\, (cm), \n\\]\nvới \\( \\omega \\) là tần số góc của con lắc thứ nhất. Khoảng cách giữa hai vật: \n\\[\ny = x_2 - x_1 = 5 \\cos 2\\omega t + 5 \\cos \\omega t + 7,5 \\, (cm).\n\\]\nTa thấy \\( y \\) là tam thức bậc 2 đối với \\( \\cos \\omega t \\) và \\( y_{min} \\) khi \\( \\cos \\omega t = -0,5 \\) Thay \\( \\cos \\omega t = -0,5 \\) và biểu thức \\( y \\) ta tính được \\( y_{min} = 6,25 \\, cm \\) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0794",
+        "question": "Một con lắc lò xo treo thẳng đứng gồm vật nặng m = 100g, lò xo có độ cứng k = 40N/m. Từ vị trí cân bằng kéo vật xuống dưới 5cm rồi thả nhẹ cho nó dao động điều hòa. Lấy g = π2 = 10m/s2. Trong một chu kì, tốc độ trung bình của vật trong khoảng thời gian lò xo bị nén là",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 1 , 5 π ( m / s )",
+            "B. 15 π ( m / s )",
+            "C. 3 π ( m / s )",
+            "D. 30 π ( c m / s )"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khi vật ở vị trí cân bằng thì độ dãn của lò xo là : Δ l_0 = \\frac{m g}{k} = 0, 1 \\cdot 10^{-40} = 0, 025 \\, m = 2, 5 \\, cm Vì kéo vật xuống khỏi vị trí cân bằng 5 \\, cm rồi thả nhẹ nên biên độ : A = 5 \\, cm. Trong quá trình dao động, chọn chiều dương hướng xuống, gốc O ở vị trí cân bằng. Vậy lò xo bị nén khi chuyển động từ vị trí – 2,5 \\, cm đến – 5 \\, cm. Vậy trong một chu kì, thời gian lò xo bị nén là: t = 2 \\cdot \\alpha \\cdot \\omega = 2 \\cdot \\arccos \\left( \\frac{2,5}{5} \\right) \\sqrt{\\frac{k}{m}} = 2 \\cdot \\pi \\cdot 3 \\sqrt{\\frac{40}{0, 1}} = \\pi \\cdot 30 \\, s Quãng đường vật đi được là: S = 5 \\, cm. Vận tốc trung bình trong thời gian lò xo bị nén là: v = \\frac{S}{t} = \\frac{5}{\\pi \\cdot 30} = \\frac{150}{\\pi} \\left( \\frac{cm}{s} \\right) = 1, 5 \\pi \\left( \\frac{m}{s} \\right) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01021354",
+        "question": "Một con lắc lò xo, lò xo có độ cứng 30 ( N / m ) , vật nặng M = 200 g có thể trượt không ma sát trển mặt phẳng nằm ngang. Hệ đang ở trạng thái cân bằng, dùng một vật m = 100 g bắn vào M theo phương nằm ngang với tốc độ 3 ( m / s ) . Sau va chạm hai vật dính vào nhau và làm cho lò xo nén rồi cùng dao động điều hòa theo phương ngang trùng với trục của lò xo. Gốc thời gian là ngay lúc sau va chạm, thời điểm lần thứ 2013 và lần thứ 2015 độ biến dạng của lò xo bằng 5 c m lần lượt là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 316 , 10 s và 316 , 62 s",
+            "B. 316 , 30 s và 316 , 62 s",
+            "C. 316,30s và 316,41s",
+            "D. 316 , 10 s và 316 , 41 s"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: ω = \\sqrt{\\frac{k}{m + M}} = 10 \\, \\text{(rad/s)} ; T = 2 \\pi \\omega = \\pi \\, 5 \\, \\text{s} V = \\frac{m v_0}{m + M} = 1 \\, \\text{(m/s)} \\rightarrow A = V \\omega = 0.1 \\, \\text{m} = 10 \\, \\text{cm} Trong 1 chu kỳ: lò xo có 4 lần có độ biến dạng bằng 5 \\, \\text{cm}. Bốn thời điểm đầu tiên độ biến dạng của lò xo bằng 5 \\, \\text{cm} là: \n\\[\n\\begin{cases}\nt_1 = \\frac{T}{12} \\\\\nt_2 = \\frac{T}{4} + \\frac{T}{6} = \\frac{5 T}{12} \\\\\nt_3 = \\frac{T}{2} + \\frac{T}{12} = \\frac{7 T}{12} \\\\\nt_4 = \\frac{3 T}{4} + \\frac{T}{6} = \\frac{11 T}{12}\n\\end{cases}\n\\]\nNhận thấy: \n\\[\n\\begin{cases}\nt_{2013} = 503.4 + 1 \\\\\nt_{2015} = 503.4 + 3 \\rightarrow \\\\\n\\begin{cases}\nt_{2013} = 503 T + t_1 = 6037 \\frac{T}{12} = 316.10 \\, \\text{s} \\\\\nt_{2015} = 503 T + t_3 = 6043 \\frac{T}{12} = 316.41 \\, \\text{s}\n\\end{cases}\n\\end{cases}\n\\]\nĐáp án cần chọn là: D."
+    },
+    {
+        "id": "L010R0664",
+        "question": "Con lắc lò xo gồm lò xo có độ cứng 200 N / m , quả cầu m có khối lượng 1 k g đang dao động điều hòa theo phương thẳng đứng với biên độ 12 , 5 c m . Khi quả cầu xuống đến vị trí thấp nhất thì có một vật nhỏ khối lượng 500 g bay theo phương trục lò xo, từ dưới lên với tốc độ 6 m / s tới dính chặt vào M. Lấy g = 10 m / s 2 . Sau va chạm , hai vật dao động điều hòa. Biên độ dao động của hệ hai vật sau va chạm là :",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 10 c m",
+            "B. 20 c m",
+            "C. 10 √ 13 c m",
+            "D. 21 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Ở vị trí cân bằng lò xo dãn một đoạn $\\Delta l$ Ta có: $k \\Delta l = mg \\rightarrow \\Delta l = \\frac{mg}{k} = \\frac{1.10}{200} = 0.05 \\, m = 5 \\, cm$ - Khi quả cầu đến vị trí thấp nhất thì lò xo đang dãn đoạn: $A + \\Delta l = 12.5 + 5 = 17.5 \\, cm$ và vận tốc của vật bằng $0$. + Sau khi va chạm vận tốc hai vật là: $mv = (m + M)v' \\leftrightarrow 0.5 \\cdot 6 = 1.5 \\cdot v' \\rightarrow v' = 2 \\, \\frac{m}{s}$ Sau đó hai vật dao động điều hòa, vị trí cân bằng lò xo dãn $\\Delta l' $ với : $k \\Delta \\ell' = (m + M)g \\Rightarrow \\Delta \\ell' = 0.075 \\, m = 7.5 \\, cm$ Vậy khi $x = 10 \\, cm$, $v' = 2 \\, \\frac{m}{s}$, $\\omega' = \\sqrt{\\frac{k}{M + m}} = \\sqrt{\\frac{400}{3}} \\, rad/s$ Áp dụng công thức độc lập: $A^2 = x^2 + \\frac{v^2}{\\omega^2} \\Rightarrow A = 0.2 \\, m = 20 \\, cm$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R1084",
+        "question": "Một con lắc lò xo thẳng đứng đầu trên cố định, đầu dưới treo vật có khối lượng 100 g . Chọn trục O x có gốc O tại vị trí cân bằng, chiều dương hướng xuống dưới. Cho con lắc đó dao động điều hòa theo phương thẳng đứng thì thu được đồ thị theo thời gian của thế năng đàn hồi như hình vẽ. Lấy g = π 2 = 10 m / s 2 . Vật dao động điều hòa với phương trình :",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537625672678_19.JPG",
+        "difficulty": 3,
+        "options": [
+            "A. x = 6 , 25 cos ( 2 π t − π 3 ) c m",
+            "B. x = 12 , 5 cos ( 4 π t − π 3 ) c m",
+            "C. x = 12 , 5 cos ( 2 π t + π 3 ) c m",
+            "D. x = 6 , 25 cos ( 4 π t + π 3 ) c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com + Thế năng đàn hồi của vật có thời điểm bằng 0 → A > \\Delta l_0. + Thế năng đàn hồi của con lắc tại vị trí biên dương gấp 9 lần thế năng đàn hồi của con lắc tại vị trí biên âm: → \\frac{E_{dh}max}{E_{dh}min} = \\frac{(A + \\Delta l_0)(A - \\Delta l_0)}{2} = 9 → (A + \\Delta l_0) = 3 (A - \\Delta l_0) → A = 2 \\Delta l_0 + Tại thời điểm t = 0, ta có: \\frac{E_{dh}}{E_{dh}max} = \\frac{(\\Delta l_0 + x)(\\Delta l_0 + A)}{2} = \\frac{4}{9} → x = 0, 5 A, thế năng có xu hướng tăng → v > 0, vậy \\phi_0 = -60^{\\circ}. + Từ thời điểm t = 0 đến thời điểm t = \\frac{1}{3}s (biên âm) tương ứng với khoảng thời gian \\Delta t = \\frac{T}{6} + \\frac{T}{2} = \\frac{1}{3} → T = 0, 5 s. → \\omega = 4 \\pi \\text{ rad/s} → \\Delta l_0 = 6, 25 \\text{ cm} → A = 12, 5 \\text{ cm}. → x = 12, 5 \\cos(4 \\pi t - \\frac{\\pi}{3}) \\text{ cm}. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0834",
+        "question": "Một con lắc gồm lò xo nhẹ có độ cứng k = 50 N / m một đầu cố định, đầu kia gắn với một vật nhỏ khối lượng m 1 = m đặt trên mặt phẳng nằm ngang không ma sát. Ban đầu kéo lò xo dãn một đoạn 10 c m rồi buông nhẹ để m dao động điều hòa. Ở thời điểm lò xo có chiều dài cực tiểu, ta đặt nhẹ vật m 2 = 3 m lên trên m 1 , sau đó cả hai cùng dao động điều hòa với vận tốc cực đại 50 √ 2 c m / s . Giá trị của m là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 0 , 25 k g",
+            "B. 0 , 5 k g",
+            "C. 0 , 05 k g",
+            "D. 0 , 025 k g"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com => Sau đó hệ sẽ dao động với biên độ $A' = A = 10 \\, \\text{cm}$ + Vận tốc cực đại của con lắc sau đó là $v'_{max} = \\omega' A' = \\omega' A \\Rightarrow \\omega'^2 = \\frac{k}{4m} = \\left( \\frac{v_{max}}{A} \\right)^2$ Do đó khối lượng $m$ là: $m = \\frac{k A^2}{4 v^2_{max}} = \\frac{50.0}{1.2 \\cdot 4.0 \\cdot 5^2} = 0.25 \\, \\text{kg}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L01021414",
+        "question": "Một vật có khối lượng m 1 = 125 g mắc vào lò xo nhẹ có độ cứng k = 200 N / m , đầu kia của lò xo gắn chặt vào tường, vật và lò xo đặt trên mặt phẳng ngang không ma sát. Đặt vật thứ 2 có khối lượng m 2 = 375 g sát với vật thứ nhất rồi đẩy chậm cả 2 vật cho lò xo nén lại 8cm. Khi thả nhẹ chúng ra, lò xo đẩy 2 vật chuyển động về 1 phía. Lấy π 2 = 10 , khi lò xo dãn cực đại lần đầu tiên thì 2 vật cách xa nhau một đoạn là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. ( 4 π − 8 ) c m",
+            "B. 16 c m",
+            "C. ( 2 π − 4 ) c m",
+            "D. ( 4 π − 4 ) c m"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đẩy chậm lò xo nén lại 8 cm rồi thả nhẹ ra => A = 8 cm Ta có: + Tần số góc của hệ hai vật: ω = \\sqrt{\\frac{k}{m_1 + m_2}} = \\sqrt{\\frac{200}{0.125 + 0.375}} = 20 \\, \\text{(rad/s)} + Tại VTCB vận tốc của hệ có giá trị là v_{max} = A \\omega = 160 \\, \\text{cm/s} ngay sau đó vận tốc giảm dần nên vật m_2 tách ra và chuyển động thẳng đều với v = v_{max} + Khi m_2 tách ra, m_1 dao động với tần số góc ω' = \\sqrt{\\frac{k}{m_1}} = \\sqrt{\\frac{200}{0.125}} = 40 \\, \\text{(rad/s)} và chu kì T' = \\frac{2\\pi}{\\omega'} = \\frac{2\\pi}{40} = \\frac{\\pi}{20} \\, \\text{s} + Thời gian từ lúc hai vật tách ra đến khi lò xo có độ dãn cực đại là thời gian vật m_1 đi từ VTCB ra biên mới nên mất \\frac{T'}{4} Quãng đường m_2 đi được trong thời gian \\frac{T'}{4} là: S_2 = v_{max} \\frac{T'}{4} = 160 \\cdot \\frac{\\pi}{20} \\cdot \\frac{1}{4} = 2\\pi \\, \\text{cm} Khi m_2 tách ra thì m_1 dao động điều hòa với vận tốc cũ nhưng tần số góc thay đổi. Do đó, nó dao động với biên độ: A' = v_{max} \\omega' = v_{max} \\sqrt{\\frac{k}{m_1}} = 0.04 \\, \\text{m} = 4 \\, \\text{cm} Quãng đường m_1 đi được trong thời gian \\frac{T'}{4} là S_1 = A' = 4 \\, \\text{cm} Vậy khoảng cách giữa 2 vật khi lò xo dãn cực đại lần đầu tiên là: \\Delta S = S_2 - S_1 = 2\\pi - 4 \\, \\text{cm} Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01021434",
+        "question": "Hai vật A và B có cùng khối lượng 1 k g và có kích thước nhỏ được nối với nhau bằng một sợi dây mảnh nhẹ dài 10 c m , hai vật được treo vào lò xo có độ cứng k = 100 N / m tại nơi có gia tốc trọng trường g = 10 m / s 2 , lấy π 2 = 10 . Khi hệ vật và lò xo đang ở vị trí cân bằng đủ cao so với mặt đất, người ta đốt sợi dây nối hai vật và vật B sẽ rơi tự do còn vật A sẽ dao động điều hòa theo phương thẳng đứng. Lần đầu tiên vật A lên đến vị trí cao nhất thì khoảng cách giữa hai vật bằng:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 80 c m",
+            "B. 20 c m",
+            "C. 70 c m",
+            "D. 50 c m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tại vị trí cân bằng: Khi chỉ có vật A thì lò xo dãn: Δ l_1 = \\frac{m_A g}{k} = 10 \\, \\text{cm} Khi treo đồng A và B thì lò xo dãn: Δ l_2 = \\frac{(m_A + m_B) g}{k} = 20 \\, \\text{cm} Khi hệ vật đang ở VTCB, dây đứt, vật A dao động điều hòa với biên độ A=\\Delta l_2 - \\Delta l_1 = 10 \\, \\text{cm}. Chu kỳ con lắc lò xo khi gắn vật A là: T = 2 \\pi \\sqrt{\\frac{\\Delta l_1}{g}} = 2 \\pi \\sqrt{\\frac{0.1}{10}} = \\frac{\\pi}{5} \\, \\text{s} Thời gian vật A đi từ vị trí đốt dây (biên dưới) đến vị trí cao nhất lần đầu tiên (biên trên) hết t = \\frac{T}{2} = \\frac{\\pi}{10} \\, \\text{s} khi đó, vị trí của vật A là: x_A = -A = -10 \\, \\text{cm} Sau khi đốt dây nối hai vật, vật B rơi tự do từ B cách O_1: O_1B = BO_2 + O_1O_2 = l_d + A = 20 \\, \\text{cm} Tọa độ của B: x_B = O_1B + \\frac{g t^2}{2} = 0.2 + 10 \\cdot \\left(\\frac{\\pi}{10}\\right)^2 \\cdot \\frac{1}{2} = 0.7 \\, \\text{m} = 70 \\, \\text{cm} Vậy khoảng cách giữa hai vật lúc này là: \\Delta x = x_B - x_A = 70 - (-10) = 80 \\, \\text{cm} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R0644",
+        "question": "Một vật có khối lượng không đổi, thực hiện đồng thời hai dao động điều hòa có phương trình dao động lần lượt là x 1 = 10 c o s ( 2 π t + φ ) c m và x 2 = A 2 c o s ( 2 π t − π 2 ) c m thì dao động tổng hợp là x = A c o s ( 2 π t − π 3 ) c m . Khi năng lượng dao động của vật cực đại thì biên độ dao động A 2 có giá trị là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 20 √ 3 c m",
+            "B. 10 √ 3 c m",
+            "C. 10 √ 3 c m",
+            "D. 20 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Từ dữ kiện đề bài A_1 = 10 \\, \\text{cm}; \\, \\phi_{x_1} = \\phi; \\, \\phi_{x_2} = -\\frac{\\pi}{2}; \\, \\phi_{x} = -\\frac{\\pi}{3} ta vẽ được giản đồ vecto : - Xét \\Delta O A_2 A ta có: \\begin{cases} A_2 A = A_1 = 10 \\, \\text{cm} \\\\ \\hat{A_2 O A} = 90^{\\circ} - 60^{\\circ} = 30^{\\circ} \\\\ \\hat{O A A_2} = \\hat{A_1 O A} = 60^{\\circ} + \\phi \\, (O A_1 \\parallel A_2 A) \\\\ \\hat{O A_2 A} = 180^{\\circ} - \\hat{A_2 O A} - \\hat{O A A_2} = 180^{\\circ} - 30^{\\circ} - 60^{\\circ} - \\phi = 90^{\\circ} - \\phi \\end{cases} - Sử dụng định lí hàm số sin trong \\Delta O A_2 A ta có: A_2 A \\sin \\hat{A_2 O A} = O A_2 \\sin \\hat{O A A_2} = O A \\sin \\hat{O A_2 A} \\Leftrightarrow 10 \\sin 30 = A_2 \\sin (60 + \\phi) = A \\sin (90 - \\phi) \\Rightarrow \\begin{cases} A = 10 \\cdot \\frac{\\sin (90 - \\phi)}{\\sin 30} \\\\ A_2 = 10 \\cdot \\frac{\\sin (60 + \\phi)}{\\sin 30} \\end{cases} - Năng lượng dao động cực đại khi A_{max} \\Leftrightarrow \\sin (90 - \\phi) = 1 \\Leftrightarrow 90 - \\phi = 90 \\Rightarrow \\phi = 0 \\Rightarrow A_2 = 10 \\cdot \\frac{\\sin (60 + 0)}{\\sin 30} = 10 \\sqrt{3} \\, \\text{cm} Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0854",
+        "question": "Một con lắc đơn gồm một vật nhỏ có khối lượng m = 2 g và một dây treo mảnh, chiều dài l , được kích thích cho dao động điều hòa. Trong khoảng thời gian Δ t con lắc thực hiện được 40 dao động. Khi tăng chiều dài con lắc thêm một đoạn bằng 7 , 9 c m , thì cũng trong khoảng thời gian Δ t con lắc thực hiện được 39 dao động. Lấy gia tốc trọng trường g = 9 , 8 m / s 2 . Để con lắc với chiều dài tăng thêm có cùng chu kỳ dao động với con lắc có chiều dài l , người ta truyền cho vật điện tích q = − 10 − 8 C rồi cho nó dao động điều hòa trong một điện trường đều có đường sức thẳng đứng. Véc tơ cường độ điện trường này có",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. chiều hướng lên và độ lớn bằng 2 , 04.10 5 V / m",
+            "B. chiều hướng lên và độ lớn bằng 1 , 02.10 5 V / m",
+            "C. chiều hướng xuống và độ lớn bằng 2 , 04.10 5 V / m",
+            "D. chiều hướng xuống và độ lớn bằng 1 , 02.10 5 V / m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com  \nChiều dài của con lắc là $l$. Khi chiều dài là $l \\rightarrow$ chu kỳ dao động $T = \\Delta t_{40}$. Khi chiều dài là $l + 7,9 \\text{ cm} \\rightarrow$ chu kỳ dao động $T' = \\Delta t_{39} \\Rightarrow \\frac{l}{l + 7,9} = \\frac{T^2}{T'^2} = \\frac{39^2}{40^2} \\Rightarrow l = 152,1 \\text{ cm}$.  \n+ Con lắc có chiều dài tăng thêm là $l' = l + 7,9 \\text{ cm} = 160 \\text{ cm}$, tích thêm điện tích $q = -10^{-8} \\text{ C}$.  \nTheo đề bài: $T' = T \\Leftrightarrow \\sqrt{\\frac{l'}{g'}} = \\sqrt{\\frac{l}{g}} \\Rightarrow g' = g \\cdot \\frac{l'}{l} = 9,8 \\cdot \\frac{160}{152,1} = 10,31 \\text{ m/s}^2$.  \nNhận xét: $g' > g$ mà $\\Rightarrow g' = \\Rightarrow g + \\Rightarrow F \\cdot m \\Rightarrow \\Rightarrow F \\uparrow \\uparrow \\Rightarrow g$ mà $q < 0 \\Rightarrow \\Rightarrow E \\downarrow \\downarrow \\Rightarrow g$ hay $\\Rightarrow E$ thẳng đứng hướng lên.  \nVà: $\\left| q \\right| E \\cdot m = g' - g \\Rightarrow E = (g' - g) \\cdot m \\left| q \\right| = (10,31 - 9,8) \\cdot 2 \\cdot 10^{-3} \\cdot 10^{-8} = 102000 \\text{ V/m} = 1,02 \\cdot 10^5 \\text{ V/m}$.  \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R1124",
+        "question": "Hai con lắc lò xo giống nhau được treo vào hai điểm ở cùng độ cao, cách nhau 4 c m . Kích thích cho hai con lắc dao động điều hòa theo phương thẳng đứng thì đồ thị biểu diễn sự phụ thuộc của li độ x vào thời gian t của hai vật như hình vẽ. Kể từ thời điểm t = 0 , hai vật cách nhau 4 √ 3 c m lần thứ 2019 là",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1560829355839_12.png",
+        "difficulty": 3,
+        "options": [
+            "A. 726 , 18 s",
+            "B. 726 , 54 s",
+            "C. 726 , 6 s",
+            "D. 726 , 12 s"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ hình vẽ ta được chu kỳ của hai vật bằng nhau T = 1,44 \\, s Tần số góc \\omega = \\frac{2 \\pi}{T} = \\frac{25 \\pi}{18} \\, \\left( \\frac{\\text{rad}}{s} \\right) + Con lắc (1) có biên độ A_1 = 4 \\, \\text{cm}, thời điểm ban đầu có x = 2 \\, \\text{cm} theo chiều âm nên pha ban đầu \\phi_1 = \\frac{\\pi}{3} + Con lắc (2) ở thời điểm t = 0,48 \\, s = \\frac{T}{3} đi qua vị trí cân bằng theo chiều âm, thời điểm ban đầu có x = 6 \\, \\text{cm} theo chiều dương. Vậy pha ban đầu \\phi_2 = -\\frac{\\pi}{6} và A_2 = 4 \\sqrt{3} \\, \\text{cm} Phương trình dao động của hai con lắc là x_1 = 4 \\cos \\left( \\frac{10 \\pi t}{9} + \\frac{\\pi}{3} \\right) \\, \\text{cm}; \\, x_2 = 4 \\sqrt{3} \\cos \\left( \\frac{10 \\pi t}{9} - \\frac{\\pi}{6} \\right) Ta có: x = x_1 - x_2 = 4 \\cos \\left( \\frac{10 \\pi t}{9} + \\frac{\\pi}{3} \\right) + 4 \\sqrt{3} \\cos \\left( \\frac{10 \\pi t}{9} - \\frac{\\pi}{6} + \\pi \\right) = 8 \\cos \\left( \\frac{10 \\pi t}{9} + \\frac{2 \\pi}{3} \\right) \\, \\text{cm} Khoảng cách giữa hai vật là 4 \\sqrt{3} \\, \\text{cm} ứng với d = \\sqrt{a^2 + \\Delta x^2} = 4 \\sqrt{3} = \\sqrt{4^2 + x^2} \\rightarrow x = \\pm 4 \\sqrt{2} \\, \\text{cm} Trong 1 chu kỳ có 4 lần vật đi qua vị trí x = \\pm 4 \\sqrt{2} \\, \\text{cm} => Sau 504T có 2016 lần vật đi qua vị trí x = \\pm 4 \\sqrt{2} \\, \\text{cm} và trở về vị trí ban đầu. Vậy thời điểm vật đi qua vị trí có x = \\pm 4 \\sqrt{2} \\, \\text{cm} lần thứ 2019 là : t = 504 T + \\frac{T}{6} + \\frac{3T}{8} = 726,54 \\, s Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R1054",
+        "question": "Một con lắc lò xo gồm một vật nhỏ có khối lượng m = 200 g và lò xo có độ cứng k , đang dao động điều hòa theo phương thẳng đứng. Chọn gốc tọa độ ở vị trí cân bằng, chiều dương hướng xuống dưới. Đồ thị biểu diễn sự phụ thuộc của lực đàn hồi theo thời gian được cho như hình vẽ. Biết F 1 + 3 F 2 + 6 F 3 = 0 . Lấy g = 10 m / s 2 . Tỉ số thời gian lò xo giãn với thời gian lò xo nén trong một chu kì gần giá trị nào nhất sau đây?",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537625275753_14.JPG",
+        "difficulty": 3,
+        "options": [
+            "A. 2 , 46",
+            "B. 1 , 38",
+            "C. 1 , 27",
+            "D. 2 , 15"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ đồ thị ta thấy: Lực đàn hồi tại thời điểm ban đầu: F = F_{1} = -k (\\Delta l_{0} + x) Lực đàn hồi tại vị trí biên dương: F = F_{2} = -k (\\Delta l_{0} + A) Lực đàn hồi tại vị trí biên âm: F = F_{3} = -k (\\Delta l_{0} - A) Gọi \\Delta t là thời gian từ t = 0 đến t = \\frac{2}{15} s Ta có: T + \\frac{\\Delta t}{2} = 2 \\Delta t \\Rightarrow \\Delta t = \\frac{2T}{3} \\Rightarrow x = \\frac{A}{2} Theo đề bài: F_{1} + 3 F_{2} + 6 F_{3} = 0 \\Leftrightarrow k (\\Delta l_{0} + x) + 3k (\\Delta l_{0} + A) + 6k (\\Delta l_{0} - A) = 0 \\Rightarrow \\Delta l_{0} = 0.25 A \\Rightarrow Thời gian lo xo nén là : t_{n} = \\frac{2\\alpha}{360} T = \\frac{151}{360} T = 0.42 T \\Rightarrow t_{g} = T - t_{n} = 0.58 T Tỉ số thời gian giãn và nén trong một chu kì: \\frac{t_{g}}{t_{n}} = \\frac{0.58}{0.42} = 1.381 Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0624",
+        "question": "Một vật nặng có khối lượng m, điện tích q = + 5. 10 − 5 ( C ) được gắn vào lò xo có độ cứng k = 10 N / m tạo thành con lắc lò xo nằm ngang . Điện tích trên vật nặng không thay đổi khi con lắc dao động và bỏ qua mọi ma sát. Kích thích cho con lắc dao động điều hòa với biên độ 5 c m . Tại thời điểm vật nặng đi qua vị trí cân bằng và có vận tốc hướng ra xa điểm treo lò xo, người ta bật một điện trường đều có cường độ E = 10 4 V / m , cùng hướng với vận tốc của vật. Khi đó biên độ dao động mới của con lắc lò xo là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 10 c m",
+            "B. 7 , 07 c m",
+            "C. 5 c m",
+            "D. 8 , 66 c m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Động năng của vật khi đi qua vị trí cân bằng (khi chưa có điện trường): \\( m v_0^2 = k A_1^2 \\) Vị trí cân bằng mới (khi có thêm điện trường) lò xo biến dạng một đoạn: \\( \\Delta l = \\frac{q E}{k} = 0,05 \\, m = 5 \\, cm \\) Ở thời điểm bắt đầu có điện trường có thể xem đưa vật đến vị trí lò xo có độ biến dạng \\( \\Delta l \\) và truyền cho vật vận tốc \\( v_0 \\). Vậy năng lượng mới của hệ là: \\( W = k A_2^2 = k (\\Delta l)^2 + m v_0^2 = 2 k A_1^2 \\rightarrow A_2 = \\sqrt{2} A_1 = 7,07 \\, cm \\) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0704",
+        "question": "Cho cơ hệ như hình bên. Vật m khối lượng 100 g có thể chuyển động tịnh tiến, không ma sát trên mặt phẳng nằm ngang dọc theo trục lò xo có k = 40 N / m . Vật M khối lượng 300 g có thể trượt trên m với hệ số ma sát μ = 0 , 2 . Ban đầu, giữ m đứng yên ở vị trí lò xo dãn 4 , 5 c m , dây D (mềm, nhẹ, không dãn) song song với trục lò xo. Biết M luôn ở trên m và mặt tiếp xúc giữa hai vật nằm ngang. Lấy g = 10 m / s 2 . Thả nhẹ cho m chuyển động. Tính từ lúc thả đến khi lò xo trở về trạng thái có chiều dài tự nhiên lần thứ 3 thì tốc độ trung bình của m là:",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537449880712_7.jpg",
+        "difficulty": 3,
+        "options": [
+            "A. 16,7 cm/s.",
+            "B. 23,9 cm/s.",
+            "C. 29,1 cm/s.",
+            "D. 8,36 cm/s."
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Lực ma sát giữa M và m làm cho lò xo có độ dãn $\\Delta \\ell_0 = \\mu M g k = 0, 2.0, 3.10^{40} = 0, 015 \\, m = 1, 5 \\, cm$. Vật m đi từ vị trí lò xo giãn 4,5cm qua vị trí lò xo có chiều dài tự nhiên lần thứ nhất đến vị trí biên đối diện rồi đổi chiều qua vị trí lò xo có chiều dài tự nhiên lần thứ 2; tiếp tục chạy đến vị trí biên rồi đổi chiều về vị trí lò xo có chiều dài tự nhiên lần thứ 3. + Giai đoạn 1: $\\begin{cases} A_1 = 4,5 - 1,5 = 3 \\, cm \\\\ t_1 = \\frac{T_1}{2} = \\frac{1}{2} 2 \\pi \\sqrt{\\frac{m}{k}} = \\pi 20 \\, s \\\\ S_1 = 2 A_1 = 2 \\cdot 3 = 6 \\, cm. \\end{cases}$ (dây căng, vật M không dao động) + Giai đoạn 2: $\\begin{cases} A_2 = 3 - 1,5 = 1,5 \\, cm \\\\ t_2 = \\frac{T_2}{4} = \\frac{1}{4} 2 \\pi \\sqrt{\\frac{m + M}{k}} = \\pi 20 \\, s \\\\ S_2 = A_2 = 1,5 \\, cm. \\end{cases}$ (dây trùng, vật M dao động cùng với m) + Giai đoạn 3: $\\begin{cases} S_3 = 2 \\cdot 1,5 = 3 \\, cm \\\\ t_3 = \\frac{1}{2} 2 \\pi \\sqrt{\\frac{m + M}{k}} = \\pi 10 \\, s \\end{cases}$ (dây trùng, vật M dao động cùng với m) $v_T = S_1 + S_2 + S_3 = t_1 + t_2 + t_3 = 6 + 1.5 + 3 \\frac{\\pi}{20} + \\frac{\\pi}{20} + \\frac{\\pi}{10} = 16.71126902 \\, (cm/s)$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L010R1044",
+        "question": "Có hai con lắc lò xo giống nhau đều có khối lượng vật nhỏ là m = 400 g . Mốc thế năng tại vị trí cân bằng x 1 , x 2 lần lượt là đồ thị li độ theo thời gian của con lắc thứ nhất và thứ 2 như hình vẽ: Tại thời điểm t con lắc thứ nhất có động năng 0 , 06 J và con lắc thứ hai có thế năng 0 , 005 J . Chu kì của hai con lắc là:",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537625148938_13.JPG",
+        "difficulty": 3,
+        "options": [
+            "A. 0 , 25 s",
+            "B. 1 s",
+            "C. 2 s",
+            "D. 0 , 5 s"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ đồ thị ta có phương trình dao động của từng vật là: \nx_{1} = 10 \\cos \\left( \\omega t - \\frac{\\pi}{2} \\right) \nx_{2} = 5 \\cos \\left( \\omega t - \\frac{\\pi}{2} \\right) \\Rightarrow x_{2} = \\frac{x_{1}}{2} \nXét tại thời điểm t ta có: \n\\begin{cases} \nW_{d1} = W - W_{t1} = \\frac{1}{2} k A_{1}^{2} - \\frac{1}{2} k x_{1}^{2} = 0,06 \\text{ J} \\quad (1) \\\\ \nW_{t2} = \\frac{1}{2} k x_{2}^{2} = \\frac{1}{2} k \\left( \\frac{x_{1}}{2} \\right)^{2} = 0,005 \\Leftrightarrow \\frac{1}{2} k x_{1}^{2} = 0,02 \\quad (2) \n\\end{cases} \nLấy (2) thế vào (1) ta có: \n\\frac{1}{2} k A_{1}^{2} = 0,06 + 0,02 = 0,08 \\Leftrightarrow \\frac{1}{2} k \\cdot 0,12 = 0,08 \\Leftrightarrow k = 16 \\, \\text{(N/m)} \nChu kì của 2 con lắc là: \nT = 2 \\pi \\sqrt{\\frac{m}{k}} = 2 \\pi \\sqrt{\\frac{0,4}{16}} \\approx 1 \\, \\text{s} \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0804",
+        "question": "Hai vật A và B có cùng khối lượng 1 ( k g ) và có kích thước nhỏ, được nối với nhau bằng một sợi dây mảnh, nhẹ, không dẫn điện dài 20 ( c m ) , vật B tích điện tích q = 10 − 6 ( C ) . Vật A được gắn vào một đầu lò xo nhẹ có độ cứng k = 10 ( N / m ) , đầu kia của lò xo cố định. Hệ được đặt nằm ngang trên mặt bàn nhẵn trong một điện trường đều có cường độ điện trường E = 2.10 5 ( V / m ) hướng dọc theo trục lò xo. Ban đầu hệ nằm yên, lò xo bị dãn. Cắt dây nối hai vật, vật B rời ra chuyển động dọc theo chiều điện trường, vật A dao động điều hòa. Sau khoảng thời gian 1 , 5 ( s ) kể từ lúc dây bị cắt thì A và B cách nhau một khoảng gần đúng là?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 28 , 5 ( c m ) .",
+            "B. 44 , 5 ( c m ) .",
+            "C. 24 , 5 ( c m ) .",
+            "D. 22 , 5 ( c m ) ."
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ban đầu nối hai vật bằng dây dẫn, lực điện tác dụng lên vật B có độ lớn bằng độ lớn lực đàn hồi tác dụng lên vật A : F_d = F_{dh} \\Rightarrow |qE| = k \\Delta l \\Rightarrow \\Delta l = \\frac{|qE|}{k} = 0,02 \\, (m) = 2 \\, (cm) Cắt dây nối hai vật, hai vật chuyển động không vận tốc đầu, vật A ở biên dương Biên độ dao động của vật A là: A = \\Delta l = 2 \\, (cm) Tần số góc dao động của con lắc lò xo là: \\omega = \\sqrt{\\frac{k}{m}} = \\sqrt{10} = \\sqrt{10} = \\pi \\, \\left( \\frac{rad}{s} \\right) Chọn gốc tọa độ tại VTCB của vật A Phương trình dao động của vật A là: x_A = 2 \\cos(\\pi t) \\, (cm) Tại thời điểm 1,5 \\, s, li độ của vật A là: x_A = 0 Vật B chuyển động với gia tốc: a = \\frac{F_d}{m} = \\frac{|qE|}{m} = 0,2 \\, \\left( \\frac{m}{s^2} \\right) = 20 \\, \\left( \\frac{cm}{s^2} \\right) Phương trình chuyển động của vật B là: x_B = (A + \\Delta x) + v_0 t + \\frac{a t^2}{2} = 22 + 10t^2 Tọa độ của vật B ở thời điểm 1,5 \\, s là: x_B = 22 + 10 \\cdot 1,5^2 = 44,5 \\, (cm) Khoảng cách giữa hai vật là: d = |x_B - x_A| = 44,5 \\, (cm) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L010R0954",
+        "question": "Cho một con lắc dao động tắt dần chậm trong môi trường có ma sát. Nếu sau mỗi chu kì cơ năng của con lắc giảm 5% thì sau 10 chu kì biên độ của nó giảm xấp xỉ",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 36%.",
+            "B. 64%.",
+            "C. 77%.",
+            "D. 23%."
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cơ năng con lắc sau 1 chu kì còn: \\({{\\rm{W}}_1} = (100\\% - 5\\% ).{{\\rm{W}}_0} \\Rightarrow {{\\rm{W}}_n} = {(100\\% - 5\\% )^n}.{{\\rm{W}}_0}\\) Ta có: \\(\\begin{array}{l} {{\\rm{W}}_n} = \\frac{1}{2}k{A_n}^2 \\Rightarrow \\frac{1}{2}k{A_n}^2 = {\\left( {100\\% - 5\\% } \\right)^n}\\frac{1}{2}kA_0^2\\\\ \\Rightarrow {A_1} = \\sqrt {{{\\left( {100\\% - 5\\% } \\right)}^n}{A_0}} \\end{array}\\) Vậy sau 10 chu kỳ thì biên độ của con lắc còn : \\({A_{10}} = \\sqrt {{{\\left( {95\\% } \\right)}^{10}}{A_0}} = 77,4\\% {A_0}\\) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L01021394",
+        "question": "Một con lắc lò xo có độ cứng k = 100 N / m và vật nặng khối lượng M = 100 g , vật dao động điều hòa theo phương thẳng đứng với biên độ A = 4 c m . Khi vật ở biên độ dưới người ta đặt nhẹ nhàng một vật m = 300 g vào con lắc. Hệ hai vật tiếp tục dao động điều hòa, vận tốc dao động cực đại của hệ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 30 π c m / s",
+            "B. 8 π c m / s",
+            "C. 15 π c m / s",
+            "D. 5 π c m / s"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com - Tại vị trí cân bằng: Khi vật có khối lượng M thì lò xo dãn: $\\Delta l_1 = \\frac{M g}{k} = 1 \\text{ cm}$ Khi gắn thêm vật m thì lò xo dãn: $\\Delta l_1 = \\frac{(M + m) g}{k} = 4 \\text{ cm}$ - Khi vật M biên dưới gắn thêm vật m: Biên độ dao động của hệ vật là: $A_2=A_1+\\Delta l_1-\\Delta l_2 = 1 \\text{ cm}$ Tần số góc dao động của hệ: $\\omega' = \\sqrt{\\frac{k}{M + m}} = \\sqrt{\\frac{100}{0.1 + 0.3}} = 5 \\pi \\, \\left( \\frac{\\text{rad}}{\\text{s}} \\right)$ => Vận tốc dao động cực đại của hệ: $v_{max} = \\omega' A_2 = 5 \\pi \\cdot 1 = 5 \\pi \\, \\left( \\frac{\\text{cm}}{\\text{s}} \\right)$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L010R1114",
+        "question": "Một con lắc lò xo treo vào một điểm cố định ở nơi có gia tốc trọng trường g = π 2 ( m / s 2 ) . Cho con lắc dao động điều hoà theo phương thẳng đứng. Hình bên là đồ thị biểu diễn sự phụ thuộc của thế năng đàn hồi Wđh của lò xo vào thời gian t. Khối lượng của con lắc gần giá trị nào sau đây?",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537626082304_23.JPG",
+        "difficulty": 3,
+        "options": [
+            "A. 0 , 35 k g",
+            "B. 0 , 65 k g",
+            "C. 0 , 45 k g",
+            "D. 0 , 55 k g"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com  \nBài này đã chọn mốc thế năng tại vị trí lò xo không biến dạng.  \nTừ đồ thị => $W_{tđh}$ có độ chia nhỏ nhất: $0,25 / 4 = 0,0625 \\text{ J}$  \nTại vị trí cao nhất thế năng đàn hồi: $W_{tđh} (C N) = 0,0625 = \\frac{1}{2} k (A - \\Delta \\ell_0)^2$ (1)  \nTại vị trí thấp nhất thế năng đàn hồi cực đại: $W_{dh \\, max} = 0,5625 = \\frac{1}{2} k (A + \\Delta \\ell_0)^2$ (2)  \nLấy (2) chia (1): $9 = \\frac{(A + \\Delta \\ell_0)^2}{(A - \\Delta \\ell_0)^2} \\Rightarrow A = 2 \\Delta \\ell_0 \\Rightarrow W_{tđh} (VTCB) = W_{tđh} (t = 0, 1 \\, s) = 0,0625 \\text{ J}$ (3)  \nTừ đồ thị => Chu kì dao động của con lắc: $T = 0,3 \\, s$  \nTa có: $T = 2 \\pi \\sqrt{\\frac{\\Delta \\ell_0}{g}} \\Rightarrow \\Delta \\ell_0 = \\frac{T^2 \\cdot g}{4 \\pi^2} = 0,025 \\, (m)$  \nTại VTCB: $W_h = \\frac{1}{2} k (\\Delta \\ell_0)^2 = \\frac{1}{2} (k \\cdot \\Delta \\ell_0) \\cdot \\Delta \\ell_0 = \\frac{1}{2} m \\cdot g \\cdot \\Delta \\ell_0 = 0,0625 \\, (J) \\Rightarrow \\frac{1}{2} m \\cdot \\pi^2 \\cdot 0,025 = 0,0625 \\Rightarrow m \\approx 0,5629 \\, kg$  \nĐáp án cần chọn là: D."
+    }
+]
