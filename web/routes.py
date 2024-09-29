@@ -416,82 +416,166 @@ def subject(subject_id):
     )
 
 
-@app.route("/practice-test/<subject>")
-def practice_test(subject):
-    if subject == "T":
-        chapter = 7 
-    elif subject == "L":
-        chapter = 7
-    else:
-        chapter = 8
-    time_limit = 90 #Minute
-    rate = [40, 30, 20, 10]
-    test_prac = pr_br_rcmd(subject, 5, 1)
+# @app.route("/practice-test/<subject>")
+# def practice_test(subject):
+#     if subject == "T":
+#         chapter = 7 
+#     elif subject == "L":
+#         chapter = 7
+#     else:
+#         chapter = 8
+#     time_limit = 90 #Minute
+#     rate = [40, 30, 20, 10]
+#     test_prac = pr_br_rcmd(subject, 5, 1)
 
-    questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination" : q.explain} for q in test_prac.question_prep()]
-    # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
-    if request.method == "POST":
+#     questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination" : q.explain} for q in test_prac.question_prep()]
+#     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
+#     if request.method == "POST":
         
+#         time_spent = request.form.get('timeSpent')
+#         answers = request.form.get('answers')
+#         date= datetime.now().date()
+        
+#         # Convert từ chuỗi JSON sang danh sách Python
+#         time_spent = json.loads(time_spent)
+#         answers = json.loads(answers)
+
+#         time_string = ""
+#         questions_ID_string = ""
+#         wrong_answer_string = ""    
+#         chapters = ""
+#         result = []  
+#         wrong_answers = []
+
+#         # Xử lý dữ liệu câu hỏi
+#         for i in range(chapter):
+#             chapters += f"{i+1}_"
+#         for i, question in enumerate(questions):
+#             # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
+#             questions_ID_string += f"{question['ID']}_"
+#             if str(answers[i]) == question["answer"]:
+#                 result.append("1")
+#             else:
+#                 result.append("0")
+#             time_string += f"{time_spent[i]}_"
+
+#             if result[i] == '0':  # Assuming 0 means an incorrect answer
+#                 wrong_answers.append(str(question['ID']))
+
+#         # Xóa dấu gạch dưới cuối chuỗi
+#         questions_ID_string = questions_ID_string.rstrip("_")
+#         time_string = time_string.rstrip("_")   
+#         chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
+#         wrong_answer_string = "_".join(wrong_answers)
+        
+#         score = f'{result.count("1")}/{len(result)}'
+        
+
+#         # Tạo bản ghi mới trong bảng Test
+#         new_test_record = Test(
+#             user_id=current_user.id,
+#             test_type=1,  # Loại bài kiểm tra tổng
+#             time=date,
+#             knowledge=chapter,
+#             questions=questions_ID_string,
+#             wrong_answer=wrong_answer_string,
+#             result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
+#             time_result=time_string  # Chuỗi thời gian làm từng câu
+#         )
+#         # nhin vao database sua lai
+#         db.session.add(new_test_record)
+#         db.session.commit()
+        
+#         # Sau khi hoàn thành, chuyển hướng về trang chủ
+#         return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
+
+    
+#     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+
+
+
+@app.route("/practice-test/<subject>", methods=["GET", "POST"])
+def practice_test(subject):
+    # Xác định chapter theo subject
+    if subject == "M":
+        chapter_count = 7
+    elif subject == "L":
+        chapter_count = 7
+    else:
+        chapter_count = 8
+
+    time_limit = 45  
+    rate = [40, 30, 20, 10]  
+    test_prac = pr_br_rcmd(subject, 5, 1) 
+    
+    # Chuẩn bị câu hỏi sử dụng hàm question_prep của pr_br_rcmd
+    questions = [{"ID": q.id, "image": q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination": q.explain} for q in test_prac.question_prep()]
+
+    if request.method == "POST":
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date= datetime.now().date()
-        
-        # Convert từ chuỗi JSON sang danh sách Python
-        time_spent = json.loads(time_spent)
-        answers = json.loads(answers)
+
+        if not time_spent or not answers:
+            return "Missing time_spent or answers in the request", 400
+
+        try:
+            time_spent = json.loads(time_spent)
+            answers = json.loads(answers)
+        except json.JSONDecodeError as e:
+            return f"Error parsing JSON data: {str(e)}", 400
+
+        if len(answers) != len(questions) or len(time_spent) != len(questions):
+            return "Number of answers or time_spent does not match the number of questions", 400
 
         time_string = ""
         questions_ID_string = ""
-        wrong_answer_string = ""    
-        chapters = ""
-        result = []  
+        wrong_answer_string = ""
+        result = []
         wrong_answers = []
 
         # Xử lý dữ liệu câu hỏi
-        for i in range(chapter):
-            chapters += f"{i+1}_"
         for i, question in enumerate(questions):
-            # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
             questions_ID_string += f"{question['ID']}_"
+
+            # Kiểm tra câu trả lời
             if str(answers[i]) == question["answer"]:
                 result.append("1")
             else:
                 result.append("0")
-            time_string += f"{time_spent[i]}_"
-
-            if result[i] == '0':  # Assuming 0 means an incorrect answer
                 wrong_answers.append(str(question['ID']))
+
+            # Xử lý thời gian làm bài
+            time_string += f"{time_spent[i]}_"
 
         # Xóa dấu gạch dưới cuối chuỗi
         questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")   
-        chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
-        wrong_answer_string = "_".join(wrong_answers)
-        
+        time_string = time_string.rstrip("_")
+        wrong_answer_string = "_".join(wrong_answers) 
+
+        # Tính điểm (score)
         score = f'{result.count("1")}/{len(result)}'
-        
 
         # Tạo bản ghi mới trong bảng Test
         new_test_record = Test(
             user_id=current_user.id,
-            test_type=1,  # Loại bài kiểm tra tổng
-            time=date,
-            knowledge=chapter,
+            test_type=3,  
+            time=datetime.now().date(),
+            knowledge="default_knowledge",  # Bạn có thể thay thế logic để xác định chương kiến thức
             questions=questions_ID_string,
             wrong_answer=wrong_answer_string,
             result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
             time_result=time_string  # Chuỗi thời gian làm từng câu
         )
-        # nhin vao database sua lai
+
+        # Thêm và commit vào database
         db.session.add(new_test_record)
         db.session.commit()
-        
-        # Sau khi hoàn thành, chuyển hướng về trang chủ
+
+        # Sau khi hoàn thành, chuyển hướng về trang review kết quả
         return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
-    
-    return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
-
+    return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions)
+ 
 
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["GET", "POST"])
 def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và subject từ URL
