@@ -28,7 +28,7 @@ from flask_login import (
 )
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
@@ -505,77 +505,103 @@ def practice_test(subject):
         chapter_count = 8
 
     time_limit = 45  
-    rate = [40, 30, 20, 10]  
-    test_prac = pr_br_rcmd(subject, 5, 1) 
+    rate = [40, 30, 20, 10]     
     
-    # Chuẩn bị câu hỏi sử dụng hàm question_prep của pr_br_rcmd
-    questions = [{"ID": q.id, "image": q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination": q.explain} for q in test_prac.question_prep()]
+    if request.method == "GET":
+        test_prac = pr_br_rcmd(subject, 5, 1)  #  so bai test tong, chuong
+    
+        # Chuẩn bị câu hỏi sử dụng hàm question_prep của pr_br_rcmd
+        questions = [{"ID": q.id, 
+                      "image": q.image, 
+                      "question": q.question, 
+                      "options": q.options, 
+                      "answer": q.answer, 
+                      "explaination": q.explain} for q in test_prac.question_prep()]
 
-    if request.method == "POST":
+
+        # Generate a unique test ID
+        test_id = str(uuid4())
+
+        # Store the test data in the database
+        temp_test = TempTest(
+            id=test_id,
+            user_id=current_user.id,
+            subject=subject,
+            questions=questions,
+            chapter='05',
+            time_limit=time_limit,
+            rate=rate
+        )
+        db.session.add(temp_test)
+        db.session.commit()
+
+        return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id)
+
+    elif request.method == "POST":
+        # Retrieve the test ID from the form data
+        test_id = request.form.get('test_id')
+
+        # Retrieve the stored test data using the test ID
+        temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+
+        if not temp_test:
+            return "Session expired or invalid test. Please restart the test.", 400
+
+        # Extract the test data
+        questions = temp_test.questions
+        chapter = temp_test.chapter
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
+        date = datetime.now().date()
 
-        if not time_spent or not answers:
-            return "Missing time_spent or answers in the request", 400
+        # Convert JSON strings to Python lists
+        time_spent = json.loads(time_spent)
+        answers = json.loads(answers)
 
-        try:
-            time_spent = json.loads(time_spent)
-            answers = json.loads(answers)
-        except json.JSONDecodeError as e:
-            return f"Error parsing JSON data: {str(e)}", 400
-
-        if len(answers) != len(questions) or len(time_spent) != len(questions):
-            return "Number of answers or time_spent does not match the number of questions", 400
-
+        # Initialize variables for processing
         time_string = ""
         questions_ID_string = ""
         wrong_answer_string = ""
         result = []
         wrong_answers = []
 
-        # Xử lý dữ liệu câu hỏi
+        # Process the answers
         for i, question in enumerate(questions):
             questions_ID_string += f"{question['ID']}_"
-
-            # Kiểm tra câu trả lời
             if str(answers[i]) == question["answer"]:
                 result.append("1")
             else:
                 result.append("0")
                 wrong_answers.append(str(question['ID']))
-
-            # Xử lý thời gian làm bài
             time_string += f"{time_spent[i]}_"
 
-        # Xóa dấu gạch dưới cuối chuỗi
+        # Clean up strings
         questions_ID_string = questions_ID_string.rstrip("_")
         time_string = time_string.rstrip("_")
-        wrong_answer_string = "_".join(wrong_answers) 
+        wrong_answer_string = "_".join(wrong_answers)
+        score = f"{result.count('1')}/{len(result)}"
 
-        # Tính điểm (score)
-        score = f'{result.count("1")}/{len(result)}'
+        # Create a new test record in the database
+        # new_test_record = Test(
+        #     user_id=current_user.id,
+        #     test_type=1,  # Total test type
+        #     time=date,
+        #     knowledge=chapter,
+        #     questions=questions_ID_string,
+        #     wrong_answer=wrong_answer_string,
+        #     result="_".join(result),
+        #     time_result=time_string
+        # )
+        # db.session.add(new_test_record)
+        # db.session.commit()
 
-        # Tạo bản ghi mới trong bảng Test
-        new_test_record = Test(
-            user_id=current_user.id,
-            test_type=3,  
-            time=datetime.now().date(),
-            knowledge="default_knowledge",  # Bạn có thể thay thế logic để xác định chương kiến thức
-            questions=questions_ID_string,
-            wrong_answer=wrong_answer_string,
-            result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
-            time_result=time_string  # Chuỗi thời gian làm từng câu
-        )
-
-        # Thêm và commit vào database
-        db.session.add(new_test_record)
+        # Delete the temporary test data
+        db.session.delete(temp_test)
         db.session.commit()
 
-        # Sau khi hoàn thành, chuyển hướng về trang review kết quả
+        # Redirect to the review route
         return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
-    return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions)
- 
 
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["GET", "POST"])
 def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và subject từ URL
@@ -583,72 +609,142 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
     rate = [40, 30, 20, 10]  # Tỷ lệ câu hỏi trong bài kiểm tra
 
     
-    test_chap = TestChap(subject, int(chap_id))
-
-    questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination" : q.explain} for q in test_chap.create_test(rate)]
     
     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
-    if request.method == "POST":
-        
+    if request.method == "GET":
+        # Generate the test questions
+        test_total = TestChap(subject, chap_id)
+        questions = [{
+            "ID": q.id,
+            "image": q.image,
+            "question": q.question,
+            "options": q.options,
+            "answer": q.answer,
+            "explaination": q.explain
+        } for q in test_total.create_test(rate)]
+
+        # Generate a unique test ID
+        test_id = str(uuid4())
+
+        # Store the test data in the database
+        temp_test = TempTest(
+            id=test_id,
+            user_id=current_user.id,
+            subject=subject,
+            questions=questions,
+            chapter=chap_id,
+            time_limit=time_limit,
+            rate=rate
+        )
+        db.session.add(temp_test)
+        db.session.commit()
+
+        # Pass the test ID to the template
+        return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id)
+
+    elif request.method == "POST":
+        # Retrieve the test ID from the form data
+        test_id = request.form.get('test_id')
+
+        # Retrieve the stored test data using the test ID
+        temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+
+        if not temp_test:
+            return "Session expired or invalid test. Please restart the test.", 400
+
+        # Extract the test data
+        questions = temp_test.questions
+        chapter = temp_test.chapter
         time_spent = request.form.get('timeSpent')
         answers = request.form.get('answers')
-        date= datetime.now().date()
-        
-        # Convert từ chuỗi JSON sang danh sách Python
+        date = datetime.now().date()
+
+        # Convert JSON strings to Python lists
         time_spent = json.loads(time_spent)
         answers = json.loads(answers)
 
+        # Initialize variables for processing
         time_string = ""
         questions_ID_string = ""
-        wrong_answer_string = ""    
-        chapters = ""
-        result = []  
+        wrong_answer_string = ""
+        result = []
         wrong_answers = []
 
-        # Xử lý dữ liệu câu hỏi
-        for i in range(chapter):
-            chapters += f"{i+1}_"
+        # Process the answers
         for i, question in enumerate(questions):
-            # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
             questions_ID_string += f"{question['ID']}_"
             if str(answers[i]) == question["answer"]:
                 result.append("1")
             else:
                 result.append("0")
+                wrong_answers.append(str(question['ID']))
             time_string += f"{time_spent[i]}_"
 
-            if result[i] == '0':  # Assuming 0 means an incorrect answer
-                wrong_answers.append(str(question['ID']))
-
-        # Xóa dấu gạch dưới cuối chuỗi
+        # Clean up strings
         questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")   
-        chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
+        time_string = time_string.rstrip("_")
         wrong_answer_string = "_".join(wrong_answers)
-        
-        score = f'{result.count("1")}/{len(result)}'
-        
+        score = f"{result.count('1')}/{len(result)}"
 
-        # Tạo bản ghi mới trong bảng Test
+        # Create a new test record in the database
         new_test_record = Test(
             user_id=current_user.id,
-            test_type=1,  # Loại bài kiểm tra tổng
+            test_type=1,  # Total test type
             time=date,
             knowledge=chapter,
             questions=questions_ID_string,
             wrong_answer=wrong_answer_string,
-            result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
-            time_result=time_string  # Chuỗi thời gian làm từng câu
+            result="_".join(result),
+            time_result=time_string
         )
-        # nhin vao database sua lai
         db.session.add(new_test_record)
         db.session.commit()
-        
-        # Sau khi hoàn thành, chuyển hướng về trang chủ
-        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
-    # Trả về trang 'exam.html' với các dữ liệu cần thiết
-    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions)
+        # Delete the temporary test data
+        db.session.delete(temp_test)
+        db.session.commit()
+
+
+        # thêm vào table analysis
+        test_type = 0
+        num_test = 10 # Khoa said:"the lower limit is 10"
+    
+        num_of_test_done = Test.query.filter_by(test_type=test_type, knowledge=chap_id).count()
+
+        if num_of_test_done < 10: # take all finished tests if num_of_test_done is lower than 10
+            num_test = num_of_test_done
+        analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+        analyze_content = analyzer.analyze("chapter")
+
+
+        existing_record = Analysis.query.filter_by(
+            user_id = current_user.id,
+            analysis_type=test_type,
+            subject_id=subject,
+            num_chap=chap_id
+        ).first()
+
+        # If a record exists, update the main_text
+        if existing_record:
+            existing_record.main_text = analyze_content
+            db.session.commit()  # Commit the changes
+            return "Analysis record updated successfully."
+
+        # If the record doesn't exist, create a new one
+        analyze_record = Analysis(
+            user_id=current_user.id,
+            analysis_type=test_type,
+            subject_id=subject,
+            num_chap=chap_id,
+            main_text=analyze_content
+        )
+
+        # Add the new record to the session and commit it to the database
+        db.session.add(analyze_record)
+        db.session.commit()
+
+
+        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
 # chọn vào chương X thì nhảy qua trang đánh giá ( chapter.html ) của chương X, gọi promtChap() ra để xử lí
 @app.route('/subject/<subject_id>/<chap_id>/evaluation', methods=["GET"])
@@ -678,9 +774,23 @@ def evaluate_chapter_test(subject_id,chap_id):
     if num_test == 0:
         return f"Bạn chưa làm bài test nào cho môn {subject}", 404
     
-    print(num_test)
-    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
-    analysis_result = analyzer.analyze("chapter")
+    
+    existing_record = Analysis.query.filter_by(
+            user_id=current_user.id,
+            analysis_type=test_type,
+            subject_id=subject,
+            num_chap=chap_id
+        ).first()
+    
+    if existing_record:
+        analysis_result = existing_record.main_text
+    else:
+
+        # vì test purpose nên mình sẽ giữ nguyên cái này
+        # theo logic thì user chưa làm bài test nào thì sẽ không có dữ liệu để phân tích
+        # analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+        # analysis_result = analyzer.analyze("chapter")
+        analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
     
     return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject)
 

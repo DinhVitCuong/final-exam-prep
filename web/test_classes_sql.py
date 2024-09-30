@@ -109,8 +109,8 @@ class TestChap(TestOrigin):
 class pr_br_rcmd:
     def __init__(self, subject_name, n_total=1, n_chap = 1):
         self.subject_name = subject_name
-        self.n_total = n_total
-        self.n_chap = n_chap
+        self.n_total = n_total # so bai test tong
+        self.n_chap = n_chap # so bai test chuong 
         self.top_t = []
         self.top_c = []
         self.chap_freq = {}
