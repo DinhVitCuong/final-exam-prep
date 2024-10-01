@@ -5,8 +5,13 @@ from flask import (
     flash,
     request,
     url_for,
-    session
+    session, 
+    jsonify
 )
+
+import subprocess
+import redis
+import threading
 
 from datetime import timedelta
 from sqlalchemy.exc import (
@@ -135,6 +140,7 @@ def register():
         title="Register",
         btn_action="Register account"
         )
+
 
 
 # Logout route
@@ -270,7 +276,7 @@ def select_uni():
 
 
 import time
-@app.route("/total-test/<subject>", methods=["GET", "POST"])
+@app.route("/total-test/<subject>", methods=["GET"])
 def total_test(subject):
     # Determine the chapter based on the subject
     if subject == "T":
@@ -283,102 +289,106 @@ def total_test(subject):
     time_limit = 90  # Time limit in minutes
     rate = [40, 30, 20, 10]  # Question distribution rates
 
-    if request.method == "GET":
-        # Generate the test questions
-        test_total = TestTotal(subject, chapter)
-        questions = [{
-            "ID": q.id,
-            "image": q.image,
-            "question": q.question,
-            "options": q.options,
-            "answer": q.answer,
-            "explaination": q.explain
-        } for q in test_total.create_test(rate)]
+    # Generate the test questions
+    test_total = TestTotal(subject, chapter)
+    questions = [{
+        "ID": q.id,
+        "image": q.image,
+        "question": q.question,
+        "options": q.options,
+        "answer": q.answer,
+        "explaination": q.explain
+    } for q in test_total.create_test(rate)]
 
-        # Generate a unique test ID
-        test_id = str(uuid4())
+    # Generate a unique test ID
+    test_id = str(uuid4())
 
-        # Store the test data in the database
-        temp_test = TempTest(
-            id=test_id,
-            user_id=current_user.id,
-            subject=subject,
-            questions=questions,
-            chapter=chapter,
-            time_limit=time_limit,
-            rate=rate
-        )
-        db.session.add(temp_test)
-        db.session.commit()
+    # Store the test data in the database
+    temp_test = TempTest(
+        id=test_id,
+        user_id=current_user.id,
+        subject=subject,
+        questions=questions,
+        chapter=chapter,
+        time_limit=time_limit,
+        rate=rate
+    )
+    db.session.add(temp_test)
+    db.session.commit()
 
-        # Pass the test ID to the template
-        return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id)
+    # Pass the test ID to the template
+    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chapter)
+        
+@app.route("/total-test/<chap_id>/<subject>", methods=["POST"])
+def total_test_post(chap_id, subject):
+    # Existing logic for processing answers
+    test_id = request.form.get('test_id')
+    temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
 
-    elif request.method == "POST":
-        # Retrieve the test ID from the form data
-        test_id = request.form.get('test_id')
+    if not temp_test:
+        return "Session expired or invalid test. Please restart the test.", 400
 
-        # Retrieve the stored test data using the test ID
-        temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+    # Extract the test data
+    questions = temp_test.questions
+    chapter = temp_test.chapter
+    time_spent = request.form.get('timeSpent')
+    answers = request.form.get('answers')
+    date = datetime.now().date()
 
-        if not temp_test:
-            return "Session expired or invalid test. Please restart the test.", 400
+    # Convert JSON strings to Python lists
+    time_spent = json.loads(time_spent)
+    answers = json.loads(answers)
 
-        # Extract the test data
-        questions = temp_test.questions
-        chapter = temp_test.chapter
-        time_spent = request.form.get('timeSpent')
-        answers = request.form.get('answers')
-        date = datetime.now().date()
+    # Initialize variables for processing
+    time_string = ""
+    questions_ID_string = ""
+    wrong_answer_string = ""
+    result = []
+    wrong_answers = []
 
-        # Convert JSON strings to Python lists
-        time_spent = json.loads(time_spent)
-        answers = json.loads(answers)
+    # Process the answers
+    for i, question in enumerate(questions):
+        questions_ID_string += f"{question['ID']}_"
+        if str(answers[i]) == question["answer"]:
+            result.append("1")
+        else:
+            result.append("0")
+            wrong_answers.append(str(question['ID']))
+        time_string += f"{time_spent[i]}_"
 
-        # Initialize variables for processing
-        time_string = ""
-        questions_ID_string = ""
-        wrong_answer_string = ""
-        result = []
-        wrong_answers = []
+    # Clean up strings
+    questions_ID_string = questions_ID_string.rstrip("_")
+    time_string = time_string.rstrip("_")
+    wrong_answer_string = "_".join(wrong_answers)
+    score = f"{result.count('1')}/{len(result)}"
 
-        # Process the answers
-        for i, question in enumerate(questions):
-            questions_ID_string += f"{question['ID']}_"
-            if str(answers[i]) == question["answer"]:
-                result.append("1")
-            else:
-                result.append("0")
-                wrong_answers.append(str(question['ID']))
-            time_string += f"{time_spent[i]}_"
+    # Create a new test record in the database
+    new_test_record = Test(
+        user_id=current_user.id,
+        test_type=1,  # Total test type
+        time=date,
+        knowledge=chapter,
+        questions=questions_ID_string,
+        wrong_answer=wrong_answer_string,
+        result="_".join(result),
+        time_result=time_string
+    )
+    db.session.add(new_test_record)
+    db.session.commit()
 
-        # Clean up strings
-        questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")
-        wrong_answer_string = "_".join(wrong_answers)
-        score = f"{result.count('1')}/{len(result)}"
+    # Delete the temporary test data
+    db.session.delete(temp_test)
+    db.session.commit()
 
-        # Create a new test record in the database
-        new_test_record = Test(
-            user_id=current_user.id,
-            test_type=1,  # Total test type
-            time=date,
-            knowledge=chapter,
-            questions=questions_ID_string,
-            wrong_answer=wrong_answer_string,
-            result="_".join(result),
-            time_result=time_string
-        )
-        db.session.add(new_test_record)
-        db.session.commit()
+    task_id = str(uuid4())
 
-        # Delete the temporary test data
-        db.session.delete(temp_test)
-        db.session.commit()
+    # Run analysis in a separate thread and pass the app object
+    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 1))
+    analysis_thread.start()
 
-        # Redirect to the review route
-        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
-
+    # Redirect to the review route
+    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+    
 @app.route('/subject/<subject_id>', methods=["GET", "POST"])
 def subject(subject_id):
     subject_name = ''
@@ -603,148 +613,183 @@ def practice_test(subject):
         return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
 
 
-@app.route("/chapter-test/<chap_id>/<subject>", methods=["GET", "POST"])
+@app.route("/chapter-test/<chap_id>/<subject>", methods=["GET"])
 def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và subject từ URL
     time_limit = 45  # Giới hạn thời gian là 45 phút
     rate = [40, 30, 20, 10]  # Tỷ lệ câu hỏi trong bài kiểm tra
 
+    # Generate the test questions
+    test_total = TestChap(subject, chap_id)
+    questions = [{
+        "ID": q.id,
+        "image": q.image,
+        "question": q.question,
+        "options": q.options,
+        "answer": q.answer,
+        "explaination": q.explain
+    } for q in test_total.create_test(rate)]
+
+    # Generate a unique test ID
+    test_id = str(uuid4())
+
+    # Store the test data in the database
+    temp_test = TempTest(
+        id=test_id,
+        user_id=current_user.id,
+        subject=subject,
+        questions=questions,
+        chapter=chap_id,
+        time_limit=time_limit,
+        rate=rate
+    )
+    db.session.add(temp_test)
+    db.session.commit()
+
+    # Pass the test ID to the template
+    return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id)
+
+        
     
-    
-    # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
-    if request.method == "GET":
-        # Generate the test questions
-        test_total = TestChap(subject, chap_id)
-        questions = [{
-            "ID": q.id,
-            "image": q.image,
-            "question": q.question,
-            "options": q.options,
-            "answer": q.answer,
-            "explaination": q.explain
-        } for q in test_total.create_test(rate)]
+@app.route("/chapter-test/<chap_id>/<subject>", methods=["POST"])
+def chapter_test_post(chap_id, subject):
+    # Existing logic for processing answers
+    test_id = request.form.get('test_id')
+    temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
 
-        # Generate a unique test ID
-        test_id = str(uuid4())
+    if not temp_test:
+        return "Session expired or invalid test. Please restart the test.", 400
 
-        # Store the test data in the database
-        temp_test = TempTest(
-            id=test_id,
-            user_id=current_user.id,
-            subject=subject,
-            questions=questions,
-            chapter=chap_id,
-            time_limit=time_limit,
-            rate=rate
-        )
-        db.session.add(temp_test)
-        db.session.commit()
+    # Extract the test data
+    questions = temp_test.questions
+    chapter = temp_test.chapter
+    time_spent = request.form.get('timeSpent')
+    answers = request.form.get('answers')
+    date = datetime.now().date()
 
-        # Pass the test ID to the template
-        return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id)
+    # Convert JSON strings to Python lists
+    time_spent = json.loads(time_spent)
+    answers = json.loads(answers)
 
-    elif request.method == "POST":
-        # Retrieve the test ID from the form data
-        test_id = request.form.get('test_id')
+    # Initialize variables for processing
+    time_string = ""
+    questions_ID_string = ""
+    wrong_answer_string = ""
+    result = []
+    wrong_answers = []
 
-        # Retrieve the stored test data using the test ID
-        temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+    # Process the answers
+    for i, question in enumerate(questions):
+        questions_ID_string += f"{question['ID']}_"
+        if str(answers[i]) == question["answer"]:
+            result.append("1")
+        else:
+            result.append("0")
+            wrong_answers.append(str(question['ID']))
+        time_string += f"{time_spent[i]}_"
 
-        if not temp_test:
-            return "Session expired or invalid test. Please restart the test.", 400
+    # Clean up strings
+    questions_ID_string = questions_ID_string.rstrip("_")
+    time_string = time_string.rstrip("_")
+    wrong_answer_string = "_".join(wrong_answers)
+    score = f"{result.count('1')}/{len(result)}"
 
-        # Extract the test data
-        questions = temp_test.questions
-        chapter = temp_test.chapter
-        time_spent = request.form.get('timeSpent')
-        answers = request.form.get('answers')
-        date = datetime.now().date()
+    # Create a new test record in the database
+    new_test_record = Test(
+        user_id=current_user.id,
+        test_type=1,  # Total test type
+        time=date,
+        knowledge=chapter,
+        questions=questions_ID_string,
+        wrong_answer=wrong_answer_string,
+        result="_".join(result),
+        time_result=time_string
+    )
+    db.session.add(new_test_record)
+    db.session.commit()
 
-        # Convert JSON strings to Python lists
-        time_spent = json.loads(time_spent)
-        answers = json.loads(answers)
+    # Delete the temporary test data
+    db.session.delete(temp_test)
+    db.session.commit()
 
-        # Initialize variables for processing
-        time_string = ""
-        questions_ID_string = ""
-        wrong_answer_string = ""
-        result = []
-        wrong_answers = []
+    task_id = str(uuid4())
 
-        # Process the answers
-        for i, question in enumerate(questions):
-            questions_ID_string += f"{question['ID']}_"
-            if str(answers[i]) == question["answer"]:
-                result.append("1")
+    # Run analysis in a separate thread and pass the app object
+    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 0))
+    analysis_thread.start()
+
+    # Redirect to the review route
+    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+
+
+# Define task statuses globally
+task_statuses = {}
+
+def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
+    with app.app_context():
+        try:
+            if test_type == 0:
+                # Mark task as running
+                task_statuses[task_id] = 'running'
+
+                # Generate the analysis content
+                
+                num_of_test_done = Test.query.filter_by(test_type=test_type, knowledge=chap_id).count()
+                num_test = 10 if num_of_test_done >= 10 else num_of_test_done
+
+                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+                analyze_content = analyzer.analyze("chapter")
             else:
-                result.append("0")
-                wrong_answers.append(str(question['ID']))
-            time_string += f"{time_spent[i]}_"
+                # Mark task as running
+                task_statuses[task_id] = 'running'
 
-        # Clean up strings
-        questions_ID_string = questions_ID_string.rstrip("_")
-        time_string = time_string.rstrip("_")
-        wrong_answer_string = "_".join(wrong_answers)
-        score = f"{result.count('1')}/{len(result)}"
+                # Generate the analysis content
+                
+                num_of_test_done = Test.query.filter_by(test_type=test_type).count()
+                num_test = 10 if num_of_test_done > 10 else num_of_test_done
+                
+                print(chap_id)
+                print(num_test)
+                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+                analyze_content = analyzer.analyze("deep")
+            
+            print(chap_id)
+            print(num_test)
+            # Update or create analysis record in the database
+            existing_record = Analysis.query.filter_by(
+                user_id=user_id,
+                analysis_type=test_type,
+                subject_id=subject,
+                num_chap=chap_id
+            ).first()
 
-        # Create a new test record in the database
-        new_test_record = Test(
-            user_id=current_user.id,
-            test_type=1,  # Total test type
-            time=date,
-            knowledge=chapter,
-            questions=questions_ID_string,
-            wrong_answer=wrong_answer_string,
-            result="_".join(result),
-            time_result=time_string
-        )
-        db.session.add(new_test_record)
-        db.session.commit()
+            if existing_record:
+                existing_record.main_text = analyze_content
+            else:
+                analyze_record = Analysis(
+                    user_id=user_id,
+                    analysis_type=test_type,
+                    subject_id=subject,
+                    num_chap=chap_id,
+                    main_text=analyze_content
+                )
+                db.session.add(analyze_record)
 
-        # Delete the temporary test data
-        db.session.delete(temp_test)
-        db.session.commit()
+            db.session.commit()
 
-
-        # thêm vào table analysis
-        test_type = 0
-        num_test = 10 # Khoa said:"the lower limit is 10"
-    
-        num_of_test_done = Test.query.filter_by(test_type=test_type, knowledge=chap_id).count()
-
-        if num_of_test_done < 10: # take all finished tests if num_of_test_done is lower than 10
-            num_test = num_of_test_done
-        analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
-        analyze_content = analyzer.analyze("chapter")
-
-
-        existing_record = Analysis.query.filter_by(
-            user_id = current_user.id,
-            analysis_type=test_type,
-            subject_id=subject,
-            num_chap=chap_id
-        ).first()
-
-        # If a record exists, update the main_text
-        if existing_record:
-            existing_record.main_text = analyze_content
-            db.session.commit()  # Commit the changes
-            return "Analysis record updated successfully."
-
-        # If the record doesn't exist, create a new one
-        analyze_record = Analysis(
-            user_id=current_user.id,
-            analysis_type=test_type,
-            subject_id=subject,
-            num_chap=chap_id,
-            main_text=analyze_content
-        )
-
-        # Add the new record to the session and commit it to the database
-        db.session.add(analyze_record)
-        db.session.commit()
+            # Mark task as complete
+            task_statuses[task_id] = 'complete'
+        except Exception as e:
+            # Mark task as failed in case of an error
+            task_statuses[task_id] = 'failed'
+            print(f"Error during analysis: {e}")
 
 
-        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
+@app.route("/task_status/<task_id>")
+def task_status(task_id):
+    status = task_statuses.get(task_id, 'pending')
+    return jsonify({'status': status})
+
+
 
 # chọn vào chương X thì nhảy qua trang đánh giá ( chapter.html ) của chương X, gọi promtChap() ra để xử lí
 @app.route('/subject/<subject_id>/<chap_id>/evaluation', methods=["GET"])

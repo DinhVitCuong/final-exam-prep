@@ -27,7 +27,7 @@ class DrawChartBase:
                         test_type = self.test_type,
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     self.num_chap = max([int(test.knowledge) for test in self.data])
-
+                    
                 elif self.test_type == 0:
                     self.data = db.session.query(Test).filter_by(
                         test_type = self.test_type,
@@ -129,7 +129,7 @@ class DrawChartBase:
             score = len([id for id in a.result.split('_') if id == '1']) / num_ques 
             results.append(score*10)
             for time in a.time_result.split('_'):
-                duration += int(time)
+                duration += float(time)
             durations.append(duration)
             exact_time.append(a.time)
         return results, durations, exact_time,  num_quess # list of scores, list of durations, list of exact time
@@ -184,7 +184,7 @@ class DrawTotal(DrawChartBase):
                 time_list = data.time_result.split('_')
                 for i in range(len(time_list)):
                     if data.questions.split('_')[i][1:3] == str(chap).zfill(2):
-                        time += int(time_list[i])
+                        time += float(time_list[i])
             times.append(time)
         return sum(times) / self.num
     
@@ -236,6 +236,7 @@ class DrawTotal(DrawChartBase):
                     chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 # so loai cau trong chap do
         
         return chap_difficulty_percentile 
+    
     def find_most_wrong_chap(self): # Tìm chương sai nhiều nhất (trả về 1 list nếu nhiều hơn 1 chương)
         accu_chaps, _ = self.short_total_analysis()
         if accu_chaps:

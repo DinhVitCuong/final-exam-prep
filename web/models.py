@@ -96,9 +96,9 @@ class Analysis(db.Model):
     __tablename__ = "analysis"
 
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
-    analysis_type = db.Column(db.String, nullable=False)
-    subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'), nullable=False)
-    num_chap = db.Column(db.Integer, nullable=False)
+    analysis_type = db.Column(db.String,primary_key=True, nullable=False)
+    subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'),primary_key=True, nullable=False)
+    num_chap = db.Column(db.Integer,primary_key=True, nullable=False)
     main_text = db.Column(db.Text, nullable=False)
 
 

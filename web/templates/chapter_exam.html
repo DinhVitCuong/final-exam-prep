@@ -292,8 +292,8 @@
         <input type="hidden" name="timeSpent" id="timeSpent" value="" />
         <input type="hidden" name="answers" id="answers" value="" />
         <input type="hidden" name="test_id" value="{{ test_id }}">
-      
-
+        
+        
         <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
       </form>
     </div>
@@ -449,7 +449,7 @@
           // Update hidden inputs with current values
           document.getElementById('timeSpent').value = JSON.stringify(timeSpent);
           document.getElementById('answers').value = JSON.stringify(answers);
-        
+
           // Submit the form
           form.submit();
       }

@@ -345,10 +345,11 @@
   <!-- Tải MathJax phiên bản mới nhất -->
   <script type="text/javascript" id="MathJax-script" 
    src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-chtml-full.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <div class="review-test-page">
-    <button class="button--back">
+    <button id = "returnButton" class="button--back" style="display: none;" onclick="window.location.href='/home'" >
       <img src="/static/assets/left-arrow-slider.svg" />
     </button>
 
@@ -486,6 +487,28 @@
         document.getElementById("question-1").dispatchEvent(new Event("change"));
       }
     });
-  </script>
+    function checkTaskStatus(taskId) {
+        $.get("/task_status/" + taskId, function(data) {
+            if (data.status === 'complete') {
+                $("#returnButton").show();  // Show the return button when analysis is complete
+                
+            } else if (data.status === 'failed') {
+                $("#analysisStatus").html("Analysis Failed. Please try again later.");
+            } else {
+                setTimeout(function() {
+                    checkTaskStatus(taskId);  // Poll every 2 seconds
+                }, 2000);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        var taskId = "{{ task_id }}";  // Get task ID from Flask
+        console.log("Task ID:", taskId);  // Log the task ID to check
+        if (taskId) {
+            checkTaskStatus(taskId);  // Start polling for task completion
+        }
+    });
+    </script>
 </body>
 </html>
