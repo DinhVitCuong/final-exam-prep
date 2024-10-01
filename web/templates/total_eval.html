@@ -246,7 +246,7 @@
         class="background-image"
       />
       <div class="header">
-        <p class="header__content">Chương {{chap_id}}:</p>
+        <p class="header__content">Đánh giá tổng : {{chap_id}} chương</p>
       </div>
       <div class="content">
         <button class="button--back" onclick="window.location.href='{{ url_for('subject', subject_id=subject_id) }}'">
@@ -270,12 +270,13 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div>
         <a href="{{ url_for('chapter_test', chap_id=chap_id, subject=subject) }}" class="button__practice">Bạn sợ à?</a>
-      </div>
+      </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+      const subject_id = "{{ subject_id }}";
       document.addEventListener("DOMContentLoaded", () => {
         const ctx = document
           .getElementById("nearestResultsChart")

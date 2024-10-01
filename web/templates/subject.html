@@ -200,13 +200,14 @@
         class="background-image"
       />
       <div class="header">
-        <button class="button--back">
+        <button class="button--back" onclick="window.location.href='/home'">
           <img src="../static/assets/left-arrow-slider.svg" />
         </button>
-        <div class="button button__analytics">
+        <button class="button button__analytics" onclick="window.location.href='{{ url_for('analyze_total_test', subject_id=subject_id) }}'">
           <p>Đánh giá</p>
           <img src="../static/assets/analytics-icon.svg" alt="analytics" />
-        </div>
+        </button>
+      
         <div class="button button__progress">
           <p class="header__subject">{{subject_name}}</p>
           <!-- circular progress -->

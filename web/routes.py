@@ -837,31 +837,58 @@ def evaluate_chapter_test(subject_id,chap_id):
         # analysis_result = analyzer.analyze("chapter")
         analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
     
-    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject)
+    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
 @app.route('/subject/<subject_id>/analytics', methods=["GET"])
-def analize_total_test(subject_id):
-    subject_id = 0
+def analyze_total_test(subject_id):
     subject_name = ''
-    if subject_id == 'S1': #Toan
+    
+    if subject_id == 'S1':  # Toán
         subject_name = 'Toán'
-        subject = 'M'
-    elif subject_id == 'S2': #Li
+        subject = 'T'
+    elif subject_id == 'S2':  # Lí
         subject_name = 'Lí'
         subject = 'L'
-    elif subject_id == 'S3': #Hoa
+    elif subject_id == 'S3':  # Hóa
         subject_name = 'Hóa'
         subject = 'H'
-    elif subject_id == 0:
-        return url_for('home')
-    test_type = 1 # chapter test
-    num_of_test_done = Test.query.filter_by( test_type=test_type).count()
-    analyzer = generateAnalysis(subject=subject, num_chap=0, num_test=3)        
-    analysis_result = analyzer.analyze("deep")
+    else:
+        return redirect(url_for('home'))  # Redirect if subject_id is invalid
     
-    return render_template("chapter.html", feedback=analysis_result)
+    test_type = 1  # Total test type
+    num_of_test_done = Test.query.filter_by(test_type=test_type, user_id=current_user.id).count()
+
+    if num_of_test_done < 10:
+        num_test = num_of_test_done  # Use all tests if fewer than 10 are done
+    else:
+        num_test = 10  # Limit to 10 tests
+
+    # Query the max chapter (chap_id) from the test records
+    chap_id_list = db.session.query(Test.knowledge).filter_by(
+        user_id=current_user.id,
+        test_type=test_type
+    ).all()
+
+    chap_id = max(int(a[0]) for a in chap_id_list)  # Extract max chap_id
+
+    # Check for an existing analysis record
+    existing_record = Analysis.query.filter_by(
+        user_id=current_user.id,
+        analysis_type=test_type,
+        subject_id=subject,
+        num_chap=chap_id
+    ).first()
+
+    if existing_record:
+        analysis_result = existing_record.main_text
+    else:
+        analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
+
+    # Render the evaluation template
+    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id = subject_id)
+
 
 
 
