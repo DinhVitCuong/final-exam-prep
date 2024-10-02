@@ -33,10 +33,11 @@ from flask_login import (
 )
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
+from data_retriever_sql import DrawChartBase
 from datetime import datetime
 import time
 from uuid import uuid4
@@ -287,7 +288,7 @@ def total_test(subject):
         chapter = 8
 
     time_limit = 90  # Time limit in minutes
-    rate = [40, 30, 20, 10]  # Question distribution rates
+    rate = [40, 20, 30, 10]  # Question distribution rates
 
     # Generate the test questions
     test_total = TestTotal(subject, chapter)
@@ -385,6 +386,7 @@ def total_test_post(chap_id, subject):
     # Run analysis in a separate thread and pass the app object
     analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 1))
     analysis_thread.start()
+
 
     # Redirect to the review route
     return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
@@ -515,7 +517,7 @@ def practice_test(subject):
         chapter_count = 8
 
     time_limit = 45  
-    rate = [40, 30, 20, 10]     
+    rate = [40, 20, 30, 10]     
     
     if request.method == "GET":
         test_prac = pr_br_rcmd(subject, 5, 1)  #  so bai test tong, chuong
@@ -616,7 +618,7 @@ def practice_test(subject):
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["GET"])
 def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và subject từ URL
     time_limit = 45  # Giới hạn thời gian là 45 phút
-    rate = [40, 30, 20, 10]  # Tỷ lệ câu hỏi trong bài kiểm tra
+    rate = [40, 20, 30, 10]  # Tỷ lệ câu hỏi trong bài kiểm tra
 
     # Generate the test questions
     test_total = TestChap(subject, chap_id)
@@ -751,7 +753,37 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 print(num_test)
                 analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
                 analyze_content = analyzer.analyze("deep")
-            
+
+                # get date để làm test
+                drawBase = DrawChartBase(subject, int(chap_id), test_type=1, num =num_test)
+                days = drawBase.time_to_do_test
+                exisiting_test = Test.query.filter_by(test_type=test_type).first()
+                exisiting_date = TestDate.query.filter_by(user_id = current_user.id, test_type = test_type).first()
+                if not exisiting_test or not exisiting_date:
+                    new_date = datetime.now().strftime('%Y-%m-%d') + days
+                    new_test_date = TestDate(
+                            user_id = current_user.id,
+                            test_type = test_type,
+                            test_date = new_date + days
+                        )
+                    db.session.add(new_test_date)
+                    db.session.commit()
+                else:
+                    current_date = datetime.now().strftime('%Y-%m-%d')
+                    prev_date = exisiting_date.test_date
+                    if current_date > prev_date:
+                        todo_json = analyzer.turning_into_json()
+                        for todo in todo_json:
+                            new_todo = TodoList(
+                                user_id = current_user.id,
+                                date = todo["date"],
+                                action = todo["action"],
+                                status = todo["status"]
+                            )
+                            db.session.add(new_todo)
+                    db.session.commit()
+                # to do list
+
             print(chap_id)
             print(num_test)
             # Update or create analysis record in the database

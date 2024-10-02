@@ -111,6 +111,7 @@ class Knowledge(db.Model):
     latex_text = db.Column(db.Text, nullable=False)
 
 class TempTest(db.Model):
+    __tablename__ = "temp_test"
     id = db.Column(db.String(36), primary_key=True)  # UUID as primary key
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
     subject = db.Column(db.String(10), nullable=False)
@@ -118,3 +119,11 @@ class TempTest(db.Model):
     chapter = db.Column(db.Integer, nullable=False)
     time_limit = db.Column(db.Integer, nullable=False)
     rate = db.Column(db.PickleType, nullable=False)
+
+
+class TestDate(db.Model):
+    __tablename__ = "test_date"
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
+    test_type = db.Column(db.Integer, primary_key=True, nullable=False)  # 1 = Total, 0 = Chapter, 3 = Practice
+    subject = db.Column(db.String(100), primary_key=True, nullable=False)  # Thêm cột subject
+    date = db.Column(db.Date, nullable=False)

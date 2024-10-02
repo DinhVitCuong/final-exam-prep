@@ -34,9 +34,6 @@ def create_app():
     app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database.db"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-    # Redis configuration for Celery
-    app.config['CELERY_BROKER_URL'] = 'redis://localhost:6379/0'
-    app.config['CELERY_RESULT_BACKEND'] = 'redis://localhost:6379/0'
 
     # Initialize Flask extensions with app
     login_manager.init_app(app)

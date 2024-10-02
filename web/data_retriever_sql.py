@@ -150,6 +150,7 @@ class DrawChartBase:
         elif self.test_type == 0:
             self.time_to_do_test = (get_date_prep - start_date)/14
         return get_date_prep
+    
     def return_max_chap(self):
         return self.num_chap
 
@@ -169,7 +170,7 @@ class DrawTotal(DrawChartBase):
                     if id[1:3] == str(chap).zfill(2):
                         score += 1
                 if self.num_chap <= 2:
-                    num_ques = 15
+                    num_ques = 10 # fix later
                 else:
                     num_ques = 10
             scores.append(score / num_ques * 100)
@@ -187,6 +188,7 @@ class DrawTotal(DrawChartBase):
                         time += float(time_list[i])
             times.append(time)
         return sum(times) / self.num
+    
     
     def short_total_analysis(self): # trả về accuracy và thời gian làm bài trung bình từng chương
         accu_chaps = {}
@@ -208,7 +210,7 @@ class DrawTotal(DrawChartBase):
                 accu_chaps[chap].append(accu_chap)
             if time_chap is not None:
                 time_chaps[chap].append(time_chap)
-
+            
         # Calculate the average accuracy and time for each chapter
         for chap in range(1, self.num_chap + 1):
             accu_chaps[chap] = sum(accu_chaps[chap]) / len(accu_chaps[chap]) if accu_chaps[chap] else 0
@@ -217,6 +219,8 @@ class DrawTotal(DrawChartBase):
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
     
     def difficult_percentile_per_chap(self): # trả về ti le % dung cua moi do kho moi chuong, cac chuong con lai mac dinh la ko co cau dung
+        # tìm ra số loại câu hỏi của của từng chương, tìm số câu đúng của mỗi loại câu hỏi của từng chương, sau đó tính accuracy
+        
         _, diff_ids, _ = self.cal_accu_diff()
         chap_difficulty_count = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
         chap_difficulty_percentile = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}

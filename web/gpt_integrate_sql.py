@@ -354,12 +354,14 @@ class generateAnalysis:
         return json_data
 
 
-    # app = create_app()
-    # with app.app_context(): # type , num , subject, num_chap
-    #     # a = promptChap(0, 1, "L", 3)
-    #     # print(a.chap_analysis())
-    #     a = generateAnalysis("L", 3)
-    #     print(a.analyze("chapter"))
+
+
+# app = create_app()
+# with app.app_context(): # type , num , subject, num_chap
+#     a = promptTotal(1, 15, "L")
+#     print(a.deep_analysis())
+    # a = generateAnalysis("L", 3)
+    # print(a.analyze("chapter"))
     # print(a.next_test_date())
 #     test = generateAnalysis("T",3)
 #     # # "deep", "fast", "progress", "chapter"
