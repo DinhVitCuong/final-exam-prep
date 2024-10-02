@@ -78,11 +78,12 @@ class promptCreation:
         return f"Thời điểm làm bài test {test_name} cuối cùng là {date}"
     
     def next_test_date(self):
-        query = db.session.query(Test).filter_by(test_type=self.type_test).all()
-        date = query[-1].time
+        query = db.session
+        query = db.session.query(Test).filter_by(test_type=self.type_test,subject=self.subject).first()
+        date = query[-1].date
         
         date = pd.to_datetime(date)  
-        print(self.data.time_to_do_test)
+        print(self.data.time_to_do_test)   
         return date + self.data.time_to_do_test
 
 
@@ -189,6 +190,7 @@ class promptChap(promptCreation):
         predict = PredictThreshold(self.type_test, self.subject, self.num_chap)
 
         data = predict.predicted_data()
+        print(data)
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
             data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"

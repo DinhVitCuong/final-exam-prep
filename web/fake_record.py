@@ -62,9 +62,9 @@ with app.app_context():
             j = i % 7 + 1
         else:
             j = i
-        test_total = TestTotal("L", j)
+        test_total = TestChap("L", j)
         questions_total = test_total.create_test(rate)
-        test_data = create_test_record(questions_total, str(j).zfill(2) , 1)
+        test_data = create_test_record(questions_total, str(j).zfill(2) , 0)
         
         new_test_record = Test(
             user_id=test_data['user_id'],

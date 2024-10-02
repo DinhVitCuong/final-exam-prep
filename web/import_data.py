@@ -27,13 +27,13 @@ with app.app_context():
 #QAs
 
     folder_path = "data_json/"
-    file_names = [f for f in os.listdir(folder_path) if f.endswith('latex_3.json')]
+    file_names = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     # print(file_names)
     difficulty_mapping = {
-        0: 0,
-        1: 1,
-        2: 2,
-        3: 3
+        "Nhận biết": 0,
+        "Thông hiểu": 1,
+        "Vận dụng": 2,
+        "Vận dụng cao": 3
     }
     for file_name in file_names:
         file_path = os.path.join(folder_path, file_name)
@@ -69,7 +69,7 @@ with app.app_context():
                     )
                     db.session.add(new_QAs)
             # Commit the transaction after each file
-            #db.session.commit()
+            db.session.commit()
             print(f"Data from {file_name} have been successfully imported into the SQLite database.")
 
 # #University Major data

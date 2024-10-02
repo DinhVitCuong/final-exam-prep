@@ -26,6 +26,7 @@ class DrawChartBase:
                     self.data = db.session.query(Test).filter_by(
                         test_type = self.test_type,
                     ).order_by(Test.id.desc()).limit(self.num).all()
+                    print("hi")
                     self.num_chap = max([int(test.knowledge) for test in self.data])
                     
                 elif self.test_type == 0:

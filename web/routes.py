@@ -555,9 +555,9 @@ def practice_test(subject):
 
         # Retrieve the stored test data using the test ID
         temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
-
         if not temp_test:
             return "Session expired or invalid test. Please restart the test.", 400
+
 
         # Extract the test data
         questions = temp_test.questions
@@ -715,6 +715,7 @@ def chapter_test_post(chap_id, subject):
 
     task_id = str(uuid4())
 
+    print(chap_id)
     # Run analysis in a separate thread and pass the app object
     analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 0))
     analysis_thread.start()
@@ -729,6 +730,7 @@ task_statuses = {}
 def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
     with app.app_context():
         try:
+            #user_id = current_user.id
             if test_type == 0:
                 # Mark task as running
                 task_statuses[task_id] = 'running'
@@ -758,31 +760,59 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 drawBase = DrawChartBase(subject, int(chap_id), test_type=1, num =num_test)
                 days = drawBase.time_to_do_test
                 exisiting_test = Test.query.filter_by(test_type=test_type).first()
-                exisiting_date = TestDate.query.filter_by(user_id = current_user.id, test_type = test_type).first()
+                exisiting_date = TestDate.query.filter_by(user_id = user_id, test_type = test_type).first()
+                if isinstance(days, timedelta):
+                    days = days.days  # Extract the number of days if `days` is a timedelta
+
                 if not exisiting_test or not exisiting_date:
-                    new_date = datetime.now().strftime('%Y-%m-%d') + days
+                    # Get the current date and add the number of days
+                    new_date = datetime.now()
+                    new_date_with_days_added = new_date + timedelta(days=days)
+
+                    # Format the new date to 'YYYY-MM-DD'
+                    new_date_str = new_date_with_days_added.date()
+
+                    # Create a new TestDate object
                     new_test_date = TestDate(
-                            user_id = current_user.id,
-                            test_type = test_type,
-                            test_date = new_date + days
-                        )
+                        user_id=user_id,
+                        test_type=test_type,
+                        subject=subject,
+                        date=new_date_str
+                    )
                     db.session.add(new_test_date)
                     db.session.commit()
+
                 else:
-                    current_date = datetime.now().strftime('%Y-%m-%d')
-                    prev_date = exisiting_date.test_date
-                    if current_date > prev_date:
+                    # Compare current date and existing date
+                    current_date = datetime.now().date()
+                    prev_date = exisiting_date.date  # Assuming it's a string like '2024-10-01'
+                    # print(current_date)
+                    # print(prev_date)
+                    if current_date >= prev_date:
+
+                        existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date).all()
+                        # Xóa các todo có date nhỏ hơn ngày hiện tại
+                        for todo in existing_todos:
+                            db.session.delete(todo)
+                        db.session.commit()
                         todo_json = analyzer.turning_into_json()
+
+                        print(todo_json)
                         for todo in todo_json:
                             new_todo = TodoList(
-                                user_id = current_user.id,
-                                date = todo["date"],
-                                action = todo["action"],
-                                status = todo["status"]
+                                todo_id=str(uuid4()),
+                                user_id=user_id,
+                                date=todo["date"],
+                                action=todo["action"],
+                                status=todo["done"]
                             )
                             db.session.add(new_todo)
-                    db.session.commit()
+                        exisiting_date.date = current_date + timedelta(days=days)
+                        db.session.commit()
+                        
+
                 # to do list
+
 
             print(chap_id)
             print(num_test)
@@ -794,6 +824,8 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 num_chap=chap_id
             ).first()
 
+            
+            
             if existing_record:
                 existing_record.main_text = analyze_content
             else:
@@ -813,7 +845,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
         except Exception as e:
             # Mark task as failed in case of an error
             task_statuses[task_id] = 'failed'
-            print(f"Error during analysis: {e}")
+            print(f"Error during analysis: {e}, test_type: {test_type}")
 
 
 @app.route("/task_status/<task_id>")
@@ -848,8 +880,8 @@ def evaluate_chapter_test(subject_id,chap_id):
     if num_of_test_done < 10: # take all finished tests if num_of_test_done is lower than 10
         num_test = num_of_test_done
 
-    if num_test == 0:
-        return f"Bạn chưa làm bài test nào cho môn {subject}", 404
+    # if num_test == 0:
+    #     return f"Bạn chưa làm bài test nào cho môn {subject}", 404
     
     
     existing_record = Analysis.query.filter_by(
@@ -902,9 +934,11 @@ def analyze_total_test(subject_id):
         user_id=current_user.id,
         test_type=test_type
     ).all()
-
-    chap_id = max(int(a[0]) for a in chap_id_list)  # Extract max chap_id
-
+    if chap_id_list != []:
+        # handle error neu nhu ko co
+        chap_id = max(int(a[0]) for a in chap_id_list)  # Extract max chap_id
+    else:
+        return "Loi roi dume"
     # Check for an existing analysis record
     existing_record = Analysis.query.filter_by(
         user_id=current_user.id,

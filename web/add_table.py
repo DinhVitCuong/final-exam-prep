@@ -1,6 +1,6 @@
 from app import create_app, db
 from flask_migrate import upgrade, migrate, init, stamp
-from models import TestDate  # Import your model
+from models import TestDate, TempTest, Knowledge, Analysis, TodoList  # Import your model
 
 app = create_app()
 

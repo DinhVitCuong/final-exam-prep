@@ -78,7 +78,7 @@ class Test(db.Model):
 class TodoList(db.Model):
     __tablename__ = "todo_list"
 
-    todo_id = db.Column(db.String(1), primary_key=True)
+    todo_id = db.Column(db.String, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
     date = db.Column(db.String, nullable=False)  # 12/4/2021
     action = db.Column(db.String, nullable=False)  # do 1
