@@ -729,7 +729,7 @@ task_statuses = {}
 
 def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
     with app.app_context():
-        try:
+        # try:
             #user_id = current_user.id
             if test_type == 0:
                 # Mark task as running
@@ -742,6 +742,8 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
 
                 analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
                 analyze_content = analyzer.analyze("chapter")
+
+
             else:
                 # Mark task as running
                 task_statuses[task_id] = 'running'
@@ -789,7 +791,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                     # print(current_date)
                     # print(prev_date)
                     if current_date >= prev_date:
-
+                        
                         existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date).all()
                         # Xóa các todo có date nhỏ hơn ngày hiện tại
                         for todo in existing_todos:
@@ -797,7 +799,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         db.session.commit()
                         todo_json = analyzer.turning_into_json()
 
-                        print(todo_json)
+                        # print(todo_json)
                         for todo in todo_json:
                             new_todo = TodoList(
                                 todo_id=str(uuid4()),
@@ -807,11 +809,10 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                                 status=todo["done"]
                             )
                             db.session.add(new_todo)
-                        exisiting_date.date = current_date + timedelta(days=days)
+                        # update date
+                        exisiting_date.date = exisiting_date.date + timedelta(days=days)
                         db.session.commit()
-                        
 
-                # to do list
 
 
             print(chap_id)
@@ -842,10 +843,10 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
 
             # Mark task as complete
             task_statuses[task_id] = 'complete'
-        except Exception as e:
-            # Mark task as failed in case of an error
-            task_statuses[task_id] = 'failed'
-            print(f"Error during analysis: {e}, test_type: {test_type}")
+        # except Exception as e:
+        #     # Mark task as failed in case of an error
+        #     task_statuses[task_id] = 'failed'
+        #     print(f"Error during analysis: {e}, test_type: {test_type}")
 
 
 @app.route("/task_status/<task_id>")

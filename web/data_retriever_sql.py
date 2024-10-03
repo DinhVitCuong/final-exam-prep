@@ -23,20 +23,20 @@ class DrawChartBase:
             )
             if self.load_type == None or self.load_type == "average":
                 if self.test_type == 1: 
-                    self.data = db.session.query(Test).filter_by(
+                    self.data = self.data.filter_by(
                         test_type = self.test_type,
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     print("hi")
                     self.num_chap = max([int(test.knowledge) for test in self.data])
                     
                 elif self.test_type == 0:
-                    self.data = db.session.query(Test).filter_by(
+                    self.data = self.data.filter_by(
                         test_type = self.test_type,
                         knowledge = str(self.num_chap).zfill(2)
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     
             else:
-                query = db.session.query(Test).filter_by(
+                query = self.data.filter_by(
                     test_type = self.test_type
                 ).all()
                 self.data = [query[self.num]]
@@ -219,28 +219,54 @@ class DrawTotal(DrawChartBase):
 
         return accu_chaps, time_chaps # average accuracy per chap, average time per chap
     
-    def difficult_percentile_per_chap(self): # trả về ti le % dung cua moi do kho moi chuong, cac chuong con lai mac dinh la ko co cau dung
-        # tìm ra số loại câu hỏi của của từng chương, tìm số câu đúng của mỗi loại câu hỏi của từng chương, sau đó tính accuracy
-        
-        _, diff_ids, _ = self.cal_accu_diff()
-        chap_difficulty_count = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
-        chap_difficulty_percentile = {chap: {0: 0, 1: 0, 2: 0, 3:0} for chap in range(1, self.num_chap + 1)}
-        
-        for diff, ids in diff_ids.items():
-            for id in ids:
-                chap = int(id[1:3])
-                chap_difficulty_count[chap][diff] += 1
+    def difficult_percentile_per_chap(self):
+        # Giả định self.data chứa danh sách các câu hỏi với thuộc tính chương và độ khó
+        # Tạo từ điển để lưu đếm số lượng câu hỏi theo từng độ khó và chương
+        chap_difficulty_count = {chap: {0: 0, 1: 0, 2: 0, 3: 0} for chap in range(1, self.num_chap + 1)}
+        chap_difficulty_correct_count = {chap: {0: 0, 1: 0, 2: 0, 3: 0} for chap in range(1, self.num_chap + 1)}
 
-        diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
-        for rate in self.rate:
-            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num
+        # Tải tất cả các câu hỏi và độ khó từ trước để tránh truy vấn nhiều lần trong vòng lặp
+        all_questions = QAs.query.all()
+        question_difficulty_map = {question.id: question.difficulty for question in all_questions}
 
+        # Duyệt qua self.data để lấy dữ liệu chương, độ khó và trạng thái câu hỏi
+        datas = self.data
+        for data in datas:
+            questions = data.questions.split('_')
+            results = data.result.split('_')
+
+            # Kiểm tra nếu số lượng câu hỏi và kết quả không khớp, bỏ qua dữ liệu không hợp lệ
+            if len(questions) != len(results):
+                continue
+            
+            for i in range(len(questions)):
+                chap = int(questions[i][1:3])  # Xác định chương từ chuỗi question ID
+
+                # Lấy độ khó của câu hỏi từ bảng QAs
+                difficulty = question_difficulty_map.get(questions[i], None)
+                if difficulty is None:
+                    continue  # Nếu không tìm thấy câu hỏi trong bảng QAs, bỏ qua
+
+                is_correct = True if results[i] == '1' else False  # Xác định câu trả lời đúng/sai
+
+                # Đếm tổng số câu hỏi theo từng chương và độ khó
+                chap_difficulty_count[chap][difficulty] += 1
+
+                # Đếm số câu trả lời đúng theo từng chương và độ khó
+                if is_correct:
+                    chap_difficulty_correct_count[chap][difficulty] += 1
+
+        # Tính tỷ lệ % câu trả lời đúng theo độ khó của từng chương
+        chap_difficulty_percentile = {chap: {0: 0, 1: 0, 2: 0, 3: 0} for chap in range(1, self.num_chap + 1)}
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:
-                if diff_nums[diff] != 0:
-                    chap_difficulty_percentile[chap][diff] = chap_difficulty_count[chap][diff] / diff_nums[diff] * 100 # so loai cau trong chap do
-        
-        return chap_difficulty_percentile 
+                total_questions = chap_difficulty_count[chap][diff]
+                if total_questions > 0:
+                    # Tính % câu đúng theo từng độ khó
+                    correct_questions = chap_difficulty_correct_count[chap][diff]
+                    chap_difficulty_percentile[chap][diff] = (correct_questions / total_questions) * 100
+
+        return chap_difficulty_percentile
     
     def find_most_wrong_chap(self): # Tìm chương sai nhiều nhất (trả về 1 list nếu nhiều hơn 1 chương)
         accu_chaps, _ = self.short_total_analysis()
@@ -272,7 +298,7 @@ class DrawChap(DrawChartBase):
                 chap_difficulty_count[chap][diff] += 1
         diff_nums = {0: 0, 1: 0, 2: 0, 3: 0}
         for rate in self.rate:
-            diff_nums[self.rate.index(rate)] = rate / 100 * 10 * self.num
+            diff_nums[self.rate.index(rate)] = rate / 100 * 30 * self.num
         
         for chap in chap_difficulty_count:
             for diff in chap_difficulty_count[chap]:

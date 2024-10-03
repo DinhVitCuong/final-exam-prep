@@ -88,10 +88,16 @@ class TestOrigin:
 class TestTotal(TestOrigin):
     def create_test(self, rate):
         questions = []
-        for i in range(1, self.chapter + 1):
-            chapter_questions = self.select_questions(rate, 10, chapter=i)
-            questions.extend(chapter_questions)
-        questions = self.shuffle_questions(questions)
+        if self.chapter <= 2:
+            for i in range(1, self.chapter + 1):
+                chapter_questions = self.select_questions(rate, 20, chapter=i)
+                questions.extend(chapter_questions)
+
+        
+        else:
+            for i in range(1, self.chapter + 1):
+                chapter_questions = self.select_questions(rate, 10, chapter=i)
+                questions.extend(chapter_questions)
         self.num_ques = len(questions)
         return questions
 

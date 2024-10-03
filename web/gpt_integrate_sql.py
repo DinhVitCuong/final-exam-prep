@@ -10,7 +10,7 @@ from datetime import datetime
 import time 
 import pandas as pd
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, TestDate
 
 load_dotenv()
 
@@ -78,9 +78,9 @@ class promptCreation:
         return f"Thời điểm làm bài test {test_name} cuối cùng là {date}"
     
     def next_test_date(self):
-        query = db.session
-        query = db.session.query(Test).filter_by(test_type=self.type_test,subject=self.subject).first()
-        date = query[-1].date
+        
+        query =  db.session.query(TestDate).filter_by(subject = self.subject).first()
+        date = query.date
         
         date = pd.to_datetime(date)  
         print(self.data.time_to_do_test)   
