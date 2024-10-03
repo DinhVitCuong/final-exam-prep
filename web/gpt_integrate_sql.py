@@ -17,15 +17,16 @@ load_dotenv()
 
 # prompt creation
 class promptCreation:
-    def __init__(self, type_test, num_test, subject, num_chap = None):
+    def __init__(self, type_test, num_test, subject, user_id, num_chap = None):
         self.type_test = type_test
         self.num_test = num_test
         self.num_chap = num_chap
         self.prompt = "Bạn là một gia sư dạy kèm"
         self.final_exam_date = "2025-06-27"
         self.subject = subject
+        self.user_id = user_id
         self.aim_score = 9
-        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, self.type_test, self.num_test)
+        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, self.type_test, self.num_test,user_id =  self.user_id)
         self.test_intro = self.get_test_intro()
         self.subject_intro = f"Đây là kết quả môn {self.return_subject_name()}"
         self.detail_analyze_prompt = (f"Lưu ý là thêm số liệu cụ thể để phân tích cho kĩ lưỡng nha, Từ đó đưa ra nhận xét về kết quả vừa thực hiện (mạnh phần nào, yếu phần nào, "
@@ -79,7 +80,7 @@ class promptCreation:
     
     def next_test_date(self):
         
-        query =  db.session.query(TestDate).filter_by(subject = self.subject).first()
+        query =  db.session.query(TestDate).filter_by(subject = self.subject, user_id = int(self.user_id)).first()
         date = query.date
         
         date = pd.to_datetime(date)  
@@ -88,8 +89,8 @@ class promptCreation:
 
 
 class promptTotal(promptCreation):
-    def __init__(self, type_test, num_test, subject):
-        super().__init__(type_test, num_test, subject)
+    def __init__(self, type_test, num_test, subject, user_id):
+        super().__init__(type_test, num_test, subject, user_id)
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
     def fast_analysis(self):
@@ -137,7 +138,7 @@ class promptTotal(promptCreation):
                 data_prompt += f"- Loại câu hỏi {type1}: {acuc}%\n"
 
         data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương (để nhắc nhở học sinh chú ý loại câu hỏi sai nhiều trong to do list):\n"
-        predict = PredictThreshold(self.type_test, self.subject)
+        predict = PredictThreshold(self.type_test, self.subject,self.user_id)
         data = predict.predicted_data()
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
@@ -167,8 +168,8 @@ class promptTotal(promptCreation):
 
 
 class promptChap(promptCreation):
-    def __init__(self, type_test,num_test,subject,num_chap):
-        super().__init__(type_test, num_test,subject,num_chap)
+    def __init__(self, type_test,num_test,subject,user_id,num_chap):
+        super().__init__(type_test, num_test,subject,user_id, num_chap)
     def chap_analysis(self):
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro}. "
@@ -187,7 +188,7 @@ class promptChap(promptCreation):
             data_prompt += f"- Loại câu hỏi {type1}: {accu}%\n"
 
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
-        predict = PredictThreshold(self.type_test, self.subject, self.num_chap)
+        predict = PredictThreshold(self.type_test, self.subject, self.user_id, self.num_chap)
 
         data = predict.predicted_data()
         print(data)
@@ -215,7 +216,7 @@ class promptChap(promptCreation):
 
 
 class generateAnalysis:
-    def __init__(self, subject, num_chap, num_test):
+    def __init__(self, subject, num_chap, num_test, user_id):
         self.configuration = {
             "temperature": 0.8,
             "max_tokens": 4096,
@@ -223,10 +224,13 @@ class generateAnalysis:
         }
         self.api_key = os.getenv('OPENAI_API_KEY')
         self.client = OpenAI(api_key=self.api_key)
+        self.user_id = user_id
         self.num_test = num_test
         self.subject = subject
         self.num_chap = num_chap
-        self.next_test_date = promptTotal(1, self.num_test, self.subject).next_test_date()
+        if self.user_id is None:
+            raise ValueError("user_id cannot be None in generateAnalysis, user_id", user_id)
+        self.next_test_date = promptTotal(1, self.num_test, self.subject, self.user_id).next_test_date()
 
     def return_subject_name(self):
         name = {
@@ -238,16 +242,16 @@ class generateAnalysis:
             "A": "Anh",
         }
         return name.get(self.subject, "Unknown Subject")
-
+    # def __init__(self, type_test, num_test, subject, user_id = None, num_chap = None):
     def return_prompt(self, analyze_type):
         if analyze_type == "fast":
-            prompt = promptTotal(1, self.num_test, self.subject).fast_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).fast_analysis()
         elif analyze_type == "deep":
-            prompt = promptTotal(1, self.num_test, self.subject).deep_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).deep_analysis()
         elif analyze_type == "progress":
-            prompt = promptTotal(1, self.num_test, self.subject).previous_result()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).previous_result()
         elif analyze_type == "chapter":
-            prompt = promptChap(0, self.num_test, self.subject, self.num_chap).chap_analysis()
+            prompt = promptChap(0, self.num_test, self.subject,  user_id=self.user_id, num_chap=self.num_chap).chap_analysis()
         else:
             return "Invalid analyze type. Please choose between 'fast', 'deep', 'progress', or 'chapter'."
         return prompt
@@ -274,12 +278,12 @@ class generateAnalysis:
 
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
-        self.num_chap = promptTotal(1, self.num_test, self.subject).return_max_chap()
-        date_total = promptCreation(1, self.num_test, self.subject, self.num_chap).next_test_date()
-        date_chap = promptCreation(0, self.num_test, self.subject, self.num_chap).next_test_date()
-        diff = promptCreation(1, self.num_test, self.subject, self.num_chap).diff_prompt()
+        self.num_chap = promptTotal(1, self.num_test, self.subject, self.user_id).return_max_chap()
+        date_total = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).next_test_date()
+        date_chap = promptCreation(0, self.num_test, self.subject, self.user_id, self.num_chap).next_test_date()
+        diff = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).diff_prompt()
         current_date = datetime.now()
-        functions = promptCreation(1, self.num_test, self.subject, self.num_chap).functions_prompt
+        functions = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).functions_prompt
         
         # Bắt đầu xây dựng chuỗi prompt
         prompt = "1. **từ dữ liệu test tổng:**\n"

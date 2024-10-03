@@ -754,7 +754,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 num_of_test_done = Test.query.filter_by(test_type=test_type, knowledge=chap_id).count()
                 num_test = 10 if num_of_test_done >= 10 else num_of_test_done
 
-                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
                 analyze_content = analyzer.analyze("chapter")
 
 
@@ -769,11 +769,11 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 
                 print(chap_id)
                 print(num_test)
-                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test)
+                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
                 analyze_content = analyzer.analyze("deep")
 
                 # get date để làm test
-                drawBase = DrawChartBase(subject, int(chap_id), test_type=1, num =num_test)
+                drawBase = DrawChartBase(subject, int(chap_id), test_type=1, num =num_test, user_id = user_id)
                 days = drawBase.time_to_do_test
                 exisiting_test = Test.query.filter_by(test_type=test_type).first()
                 exisiting_date = TestDate.query.filter_by(user_id = user_id, test_type = test_type).first()

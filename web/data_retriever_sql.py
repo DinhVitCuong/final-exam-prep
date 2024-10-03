@@ -6,11 +6,14 @@ from models import User, Progress, Test, Universities, QAs, Subject, SubjectCate
 app = create_app()
 
 class DrawChartBase:
-    def __init__(self, subject_name, num_chap, test_type, num, load_type = None, ) -> None:
+    def __init__(self, subject_name, num_chap, test_type, num, user_id , load_type = None, ) -> None:
         self.subject_name = subject_name
         self.num_chap = num_chap
         self.test_type = test_type # 1 : total, 0: chapter, 3: practice
         self.num = num
+        self.user_id = user_id
+        if self.user_id is None:
+            raise ValueError("user_id cannot be None in DrawChartBase, test_type: ", self.test_type)
         self.load_type = load_type if load_type in ["specific", "average"] else None # picking specefic to load specific test from the database
         self.time_to_do_test = None
         self.data = None
@@ -25,19 +28,23 @@ class DrawChartBase:
                 if self.test_type == 1: 
                     self.data = self.data.filter_by(
                         test_type = self.test_type,
+                        user_id = int(self.user_id)
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     print("hi")
                     self.num_chap = max([int(test.knowledge) for test in self.data])
                     
                 elif self.test_type == 0:
+                    print(self.user_id)
                     self.data = self.data.filter_by(
                         test_type = self.test_type,
+                        user_id = int(self.user_id),
                         knowledge = str(self.num_chap).zfill(2)
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     
             else:
                 query = self.data.filter_by(
-                    test_type = self.test_type
+                    test_type = self.test_type,
+                    user_id = int(self.user_id)
                 ).all()
                 self.data = [query[self.num]]
                 self.num_chap = int(self.data[0].knowledge)
@@ -156,9 +163,10 @@ class DrawChartBase:
         return self.num_chap
 
 class DrawTotal(DrawChartBase):
-    def __init__(self, subject_name, num_chap, test_type, num, load_type=None) -> None:
-        super().__init__(subject_name, num_chap, test_type, num, load_type)
+    def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None) -> None:
+        super().__init__(subject_name, num_chap, test_type, num, user_id, load_type)
         self.test_type = 1
+        print(f"DrawTotal initialized with user_id: {user_id}")  # Debugging statement
         self.load_data()
     def cal_accu_chap(self, chap): # accuracy từng chapter
         datas = self.data
@@ -283,9 +291,10 @@ class DrawTotal(DrawChartBase):
 
         
 class DrawChap(DrawChartBase):
-    def __init__(self, subject_name, num_chap, test_type, num, load_type=None) -> None:
-        super().__init__(subject_name, num_chap, test_type, num, load_type)
+    def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None) -> None:
+        super().__init__(subject_name, num_chap, test_type, num, user_id, load_type)
         self.test_type = 0
+        print(f"DrawChap initialized with user_id: {user_id}")  # Debugging statement
         self.load_data()
     def difficult_percentile_per_chap(self): # trả về tỉ lệ % các độ khó trong chương
         _, diff_ids, diff_nums = self.cal_accu_diff()

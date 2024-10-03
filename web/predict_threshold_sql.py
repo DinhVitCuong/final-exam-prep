@@ -6,7 +6,7 @@ from app import create_app, db, login_manager, bcrypt
 from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
 
 class PrepThreshold:
-    def __init__(self, subject):
+    def __init__(self, subject, user_id=None):
         self.subject = subject
         self.dic = {
             'chapter': [],
@@ -14,14 +14,15 @@ class PrepThreshold:
             'date': [],
             'accuracy': []
         }
+        self.user_id = user_id
         self.load_and_save()
 
     def load_and_save(self):
         # Load total results
-        query = db.session.query(Test).filter_by(test_type=1).all()
+        query = db.session.query(Test).filter_by(test_type=1, user_id = int(self.user_id)).all()
         num = len(query)
         for i in range(num):
-            test = DrawTotal(self.subject, None, 1, i, "specific")
+            test = DrawTotal(self.subject, None, 1, i, self.user_id, "specific")
             chap_difficulty_percentile = test.difficult_percentile_per_chap()
             for chap, dic_diff in chap_difficulty_percentile.items():
                 for type1, acuc in dic_diff.items():
@@ -31,10 +32,10 @@ class PrepThreshold:
                     self.dic['accuracy'].append(acuc)
         
         # Repeat the process for another set of data if needed
-        query = db.session.query(Test).filter_by(test_type=0).all()
+        query = db.session.query(Test).filter_by(test_type=0, user_id = int(self.user_id)).all()
         num = len(query)
         for i in range(num):
-            test = DrawChap(self.subject, None, 0, i, "specific")
+            test = DrawChap(self.subject, None, 0, i, self.user_id, "specific")
             chap_difficulty_percentile = test.difficult_percentile_per_chap()
             for chap, dic_diff in chap_difficulty_percentile.items():
                 for type1, acuc in dic_diff.items():
@@ -64,10 +65,11 @@ class PrepThreshold:
         # df.to_csv(self.path, index=False)
 
 class PredictThreshold:
-    def __init__(self, predict_type, subject, max_chap = None):
+    def __init__(self, predict_type, subject, user_id , max_chap = None):
         self.X_train = None
         self.predict_type = int(predict_type)  # Ensure predict_type is an integer
         self.max_chap = max_chap
+        self.user_id = user_id
         self.subject = subject
         self.X_test = None
         self.date = None
@@ -76,7 +78,7 @@ class PredictThreshold:
 
     def load_data(self):
         # Load data from CSV
-        data = PrepThreshold(self.subject).load_and_save()
+        data = PrepThreshold(self.subject, self.user_id).load_and_save()
         self.X_train = data.drop(columns=['accuracy'])
         self.y_train = data['accuracy']
 
@@ -85,7 +87,8 @@ class PredictThreshold:
             if self.predict_type == 1:
                 query = db.session.query(Test).filter(
                     Test.questions.like(f"{self.subject}%"),
-                    Test.test_type.like(self.predict_type)  # Filtering by test type
+                    Test.test_type.like(self.predict_type),
+                    Test.user_id.like(int(self.user_id))
                 ).order_by(Test.knowledge).all()
                 
                 self.max_chap = int(query[-1].knowledge)  # Ensure knowledge is treated as an integer
@@ -94,7 +97,8 @@ class PredictThreshold:
                 query = db.session.query(Test).filter(
                     Test.questions.like(f"{self.subject}%"),
                     Test.test_type.like(self.predict_type),
-                    Test.knowledge.like(f"0{self.max_chap}") 
+                    Test.knowledge.like(f"0{self.max_chap}"),
+                    Test.user_id.like(int(self.user_id)) 
                 ).all()
                 self.date = pd.to_datetime(query[-1].time, errors='coerce')
             if pd.isnull(self.date):
