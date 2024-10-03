@@ -266,6 +266,7 @@ class DrawTotal(DrawChartBase):
                     correct_questions = chap_difficulty_correct_count[chap][diff]
                     chap_difficulty_percentile[chap][diff] = (correct_questions / total_questions) * 100
 
+        
         return chap_difficulty_percentile
     
     def find_most_wrong_chap(self): # Tìm chương sai nhiều nhất (trả về 1 list nếu nhiều hơn 1 chương)
