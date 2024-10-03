@@ -311,7 +311,7 @@ class generateAnalysis:
         
         # # Kiểm tra và bổ sung nếu cần
         required_factors = [
-            "Mỗi ngày ôn tập chương sẽ gồm cả việc ôn lại **các loại câu hỏi hay sai** và **bài học sai nhiều** từ dữ liệu test tổng của chương đó. Hãy làm rõ ra là nên xem lại loại câu hỏi nào và bài học nào của từng chương"
+            "Mỗi ngày ôn tập chương sẽ gồm cả việc ôn lại cụ thể **các loại câu hỏi hay sai** và cụ thể **bài học sai nhiều** từ dữ liệu test tổng của chương đó. Hãy làm rõ ra là nên xem lại loại câu hỏi nào và bài học nào của từng chương"
         ]
 
         credit = self.return_prompt("deep")

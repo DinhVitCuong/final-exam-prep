@@ -475,59 +475,23 @@
           <div class="panel__to-do__container">
             <div class="panel__to-do__header">
               <img src="../static/assets/to-do.svg" alt="to-do" />
-              <h1 class="panel__to-do__title">To do list</h1>
+              <h1 class="panel__to-do__title">To Do List</h1>
             </div>
             <div class="panel__to-do__tasks-container">
-              <!-- todoList.map() ->  -->
+              {% for todo in todo_l %}
               <div class="panel__to-do__task">
                 <label class="checkbox-container">
-                  <input type="checkbox" >
+                  <input type="checkbox" {% if todo.status == 'done' %} checked {% endif %}>
                   <span class="checkmark"></span>
-                  Todo_list 0
+                  {{ todo.action }} <!-- Assuming 'action' is the description of the to-do item -->
                 </label>
               </div>
+              {% endfor %}
+              {% if todo_l | length == 0 %}
               <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                  Todo_list 1
-                </label>
+                <p>No to-dos for today!</p>
               </div>
-              <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox" checked>
-                  <span class="checkmark"></span>
-                  Todo_list 2
-                </label>
-              </div>
-              <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                  Todo_list 3
-                </label>
-              </div>
-              <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox" checked>
-                  <span class="checkmark"></span>
-                  Todo_list 4
-                </label>
-              </div>
-              <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox" checked>
-                  <span class="checkmark"></span>
-                  Todo_list 5
-                </label>
-              </div>
-              <div class="panel__to-do__task">
-                <label class="checkbox-container">
-                  <input type="checkbox" checked>
-                  <span class="checkmark"></span>
-                  Todo_list 6
-                </label>
-              </div>
+              {% endif %}
             </div>
           </div>
         </div>

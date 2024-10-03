@@ -166,7 +166,17 @@ def home():
     progress = Progress.query.filter(Progress.user_id==current_user.id).first()
     university = Universities.query.filter(Universities.id==progress.user_major_uni).first()
     subject = SubjectCategory.query.filter(SubjectCategory.id==progress.user_subject_cat).first()
-    return render_template("home.html", title="Trang chủ", university=university, subject=subject)
+
+    todo_list = TodoList.query.filter(TodoList.user_id == current_user.id).all()
+    todo_l = []
+    for todo in todo_list:
+        date_string = todo.date 
+        todo_date = datetime.strptime(date_string, "%d/%m/%Y").date()
+        current_date = datetime.now().date()
+        if todo_date == current_date:
+            todo_l.append(todo)
+
+    return render_template("home.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l)
 
 
 
