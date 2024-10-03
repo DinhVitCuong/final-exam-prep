@@ -293,7 +293,7 @@
         <input type="hidden" name="answers" id="answers" value="" />
         <input type="hidden" name="test_id" value="{{ test_id }}">
         <input type="hidden" name="chap_id" value="{{ chap_id }}">
-
+        <input type="hidden" name="user_id" value="{{ user_id }}">
         <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
       </form>
     </div>
@@ -306,7 +306,7 @@
       let questionStates = new Array(QAs.length).fill('not-clicked'); // Track the state of each question
       let answers = new Array(QAs.length).fill(null); // Track the answers
       const chap_id = "{{ chap_id }}";
-
+      const user_id = "{{ user_id }}";
       // Update question content and options dynamically
       MathJax.startup.promise.then(() => {
         console.log("MathJax is ready");});

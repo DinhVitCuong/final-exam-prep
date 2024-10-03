@@ -303,11 +303,11 @@ def total_test(subject):
 
     # Generate a unique test ID
     test_id = str(uuid4())
-
+    user_id = str(current_user.id)
     # Store the test data in the database
     temp_test = TempTest(
         id=test_id,
-        user_id=current_user.id,
+        user_id=user_id,
         subject=subject,
         questions=questions,
         chapter=chapter,
@@ -316,15 +316,17 @@ def total_test(subject):
     )
     db.session.add(temp_test)
     db.session.commit()
-
+    
     # Pass the test ID to the template
-    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chapter)
+    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chapter, user_id = user_id)
         
 @app.route("/total-test/<chap_id>/<subject>", methods=["POST"])
 def total_test_post(chap_id, subject):
     # Existing logic for processing answers
     test_id = request.form.get('test_id')
-    temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+    user_id = request.form.get('user_id')
+    # them user id vao
+    temp_test = TempTest.query.filter_by(id=test_id, user_id=user_id).first()
 
     if not temp_test:
         return "Session expired or invalid test. Please restart the test.", 400
@@ -365,7 +367,7 @@ def total_test_post(chap_id, subject):
 
     # Create a new test record in the database
     new_test_record = Test(
-        user_id=current_user.id,
+        user_id=user_id,
         test_type=1,  # Total test type
         time=date,
         knowledge=chapter,
@@ -384,7 +386,7 @@ def total_test_post(chap_id, subject):
     task_id = str(uuid4())
 
     # Run analysis in a separate thread and pass the app object
-    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 1))
+    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, user_id, task_id, 1))
     analysis_thread.start()
 
 
@@ -506,7 +508,7 @@ def subject(subject_id):
 
 
 
-@app.route("/practice-test/<subject>", methods=["GET", "POST"])
+@app.route("/practice-test/<subject>", methods=["GET"])
 def practice_test(subject):
     # Xác định chapter theo subject
     if subject == "M":
@@ -518,7 +520,7 @@ def practice_test(subject):
 
     time_limit = 45  
     rate = [40, 20, 30, 10]     
-    
+    user_id = str(current_user.id)
     if request.method == "GET":
         test_prac = pr_br_rcmd(subject, 5, 1)  #  so bai test tong, chuong
     
@@ -533,11 +535,11 @@ def practice_test(subject):
 
         # Generate a unique test ID
         test_id = str(uuid4())
-
+        user_id = str(current_user.id)
         # Store the test data in the database
         temp_test = TempTest(
             id=test_id,
-            user_id=current_user.id,
+            user_id=user_id,
             subject=subject,
             questions=questions,
             chapter='05',
@@ -547,19 +549,21 @@ def practice_test(subject):
         db.session.add(temp_test)
         db.session.commit()
 
-        return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id)
+        return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, user_id = user_id)
 
-    elif request.method == "POST":
+        
+
+@app.route("/practice-test/<subject>", methods=["POST"])
+def practice_test_post(subject):
+        # Extract the test data
         # Retrieve the test ID from the form data
         test_id = request.form.get('test_id')
-
+        user_id = request.form.get('user_id')
         # Retrieve the stored test data using the test ID
-        temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+        temp_test = TempTest.query.filter_by(id=test_id, user_id=user_id).first()
         if not temp_test:
             return "Session expired or invalid test. Please restart the test.", 400
-
-
-        # Extract the test data
+    
         questions = temp_test.questions
         chapter = temp_test.chapter
         time_spent = request.form.get('timeSpent')
@@ -610,9 +614,16 @@ def practice_test(subject):
         # Delete the temporary test data
         db.session.delete(temp_test)
         db.session.commit()
+        
+        task_id = str(uuid4())
 
+        chap_id = 0
+        # Run analysis in a separate thread and pass the app object
+        analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id , user_id, task_id, 3))
+        analysis_thread.start()
+        
         # Redirect to the review route
-        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
+        return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id = task_id)
 
 
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["GET"])
@@ -633,11 +644,11 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
 
     # Generate a unique test ID
     test_id = str(uuid4())
-
+    user_id = str(current_user.id)
     # Store the test data in the database
     temp_test = TempTest(
         id=test_id,
-        user_id=current_user.id,
+        user_id=user_id,
         subject=subject,
         questions=questions,
         chapter=chap_id,
@@ -648,7 +659,7 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
     db.session.commit()
 
     # Pass the test ID to the template
-    return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id)
+    return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id, user_id = user_id)
 
         
     
@@ -656,7 +667,8 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
 def chapter_test_post(chap_id, subject):
     # Existing logic for processing answers
     test_id = request.form.get('test_id')
-    temp_test = TempTest.query.filter_by(id=test_id, user_id=current_user.id).first()
+    user_id = request.form.get('user_id')
+    temp_test = TempTest.query.filter_by(id=test_id, user_id=user_id).first()
 
     if not temp_test:
         return "Session expired or invalid test. Please restart the test.", 400
@@ -697,7 +709,7 @@ def chapter_test_post(chap_id, subject):
 
     # Create a new test record in the database
     new_test_record = Test(
-        user_id=current_user.id,
+        user_id=user_id,
         test_type=1,  # Total test type
         time=date,
         knowledge=chapter,
@@ -717,7 +729,7 @@ def chapter_test_post(chap_id, subject):
 
     print(chap_id)
     # Run analysis in a separate thread and pass the app object
-    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, current_user.id, task_id, 0))
+    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, user_id, task_id, 0))
     analysis_thread.start()
 
     # Redirect to the review route
@@ -731,7 +743,9 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
     with app.app_context():
         # try:
             #user_id = current_user.id
-            if test_type == 0:
+            if test_type == 3:
+                task_statuses[task_id] = 'complete'
+            elif test_type == 0:
                 # Mark task as running
                 task_statuses[task_id] = 'running'
 
@@ -812,12 +826,12 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         # update date
                         exisiting_date.date = exisiting_date.date + timedelta(days=days)
                         db.session.commit()
+            
 
 
 
-
-            print(chap_id)
-            print(num_test)
+            # print(chap_id)
+            # print(num_test)
             # Update or create analysis record in the database
             existing_record = Analysis.query.filter_by(
                 user_id=user_id,
@@ -827,27 +841,28 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
             ).first()
 
             
-            
-            if existing_record:
-                existing_record.main_text = analyze_content
-            else:
-                analyze_record = Analysis(
-                    user_id=user_id,
-                    analysis_type=test_type,
-                    subject_id=subject,
-                    num_chap=chap_id,
-                    main_text=analyze_content
-                )
-                db.session.add(analyze_record)
+            if test_type != 3:
+                if existing_record:
+                    existing_record.main_text = analyze_content
+                else:
+                    analyze_record = Analysis(
+                        user_id=user_id,
+                        analysis_type=test_type,
+                        subject_id=subject,
+                        num_chap=chap_id,
+                        main_text=analyze_content
+                    )
+                    db.session.add(analyze_record)
 
-            db.session.commit()
+                db.session.commit()
 
-            # Mark task as complete
-            task_statuses[task_id] = 'complete'
+                # Mark task as complete
+                task_statuses[task_id] = 'complete'
         # except Exception as e:
         #     # Mark task as failed in case of an error
         #     task_statuses[task_id] = 'failed'
         #     print(f"Error during analysis: {e}, test_type: {test_type}")
+            
 
 
 @app.route("/task_status/<task_id>")

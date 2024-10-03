@@ -66,10 +66,12 @@ class TestOrigin:
         
         # Randomly select questions for each difficulty level
 
-        questions = random.choices(th_questions, k=min(num_th, len(th_questions))) + \
-            random.choices(nb_questions, k=min(num_nb, len(nb_questions))) + \
-            random.choices(vd_questions, k=min(num_vd, len(vd_questions))) + \
-            random.choices(vdc_questions, k=min(num_vdc, len(vdc_questions)))
+        questions = (
+            random.sample(th_questions, k=min(num_th, len(th_questions))) +
+            random.sample(nb_questions, k=min(num_nb, len(nb_questions))) +
+            random.sample(vd_questions, k=min(num_vd, len(vd_questions))) +
+            random.sample(vdc_questions, k=min(num_vdc, len(vdc_questions)))
+        )
         
         return questions
     def shuffle_questions(self, questions):
