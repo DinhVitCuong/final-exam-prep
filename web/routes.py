@@ -813,7 +813,8 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         exisiting_date.date = exisiting_date.date + timedelta(days=days)
                         db.session.commit()
 
-            # thay doi ti teo
+
+
 
             print(chap_id)
             print(num_test)
