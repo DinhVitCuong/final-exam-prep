@@ -308,9 +308,9 @@ class generateAnalysis:
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
-            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, chỉ lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]} thôi\n"
+            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, chỉ lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]} thôi, ôn tập hết tất cả các chương\n"
             f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
-            "Đặc biệt nhất là đừng có ghi số bài học mà ghi rõ tên bài, chú ý ghi rõ tên loại câu hỏi sai nhiều của chương đó (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao)\n"
+            "Đặc biệt nhất là đừng có ghi số bài học mà ghi rõ tên bài, cực kì chú ý ghi rõ tên loại câu hỏi sai nhiều của chương đó (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao)\n"
             "Hãy viết theo format sau: \n"
             "'ngày xx/tháng xx/năm xxxx : Ôn tập chương 1 môn lý, tập trung vào bài giao động điều hòa và sóng cơ, sử dụng wrong question searching để xem lại các loại câu hỏi Nhận Biết, Thông Hiểu'\n"
         )
