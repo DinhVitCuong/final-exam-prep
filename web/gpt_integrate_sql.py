@@ -310,7 +310,7 @@ class generateAnalysis:
         prompt += (
             f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, chỉ lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]} thôi\n"
             f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
-            "ôn tập từ chương đầu đến hiện tại,  các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n"
+            "Đừng có ghi số bài học mà ghi rõ tên bài, ghi rõ tên loại câu hỏi sai nhiều của chương đó (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao)\n"
             "Hãy viết theo format sau: \n"
             "'ngày xx/tháng xx/năm xxxx : Ôn tập chương 1 môn lý, tập trung vào bài giao động điều hòa và sóng cơ, sử dụng wrong question searching để xem lại các loại câu hỏi Nhận Biết, Thông Hiểu'\n"
         )
@@ -373,6 +373,8 @@ class generateAnalysis:
 
 # app = create_app()
 # with app.app_context():
+#     # prompt = promptTotal(1,10, "L", 2).deep_analysis()
+#     # print(prompt)
 #     analyzer = generateAnalysis("L", 7, 10, 2)
 #     json_data = analyzer.turning_into_json()
 #     print(json_data)    
