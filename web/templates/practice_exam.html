@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam</title>
+    <style>
+    * {
+      font-family: "poppins", sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    ::-webkit-scrollbar {
+      width: 8px; /* Width of the scrollbar */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; /* Background of the scrollbar track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888; /* Color of the scrollbar thumb */
+      border-radius: 10px; /* Rounded corners for the thumb */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; /* Darker color when hovering */
+    }
+    body,
+    html {
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+    .test-page {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      background-color: white;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 16px;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.6;
+    }
+    .button--back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10px;
+    }
+    .header {
+      flex-basis: 60%;
+      display: flex;
+      justify-content: center;
+    }
+    .header__content,
+    .countdown__content {
+      padding: 0.7rem 1rem;
+      font-size: 1.5rem;
+      background-color: #1976d2;
+      width: 50%;
+      text-align: center;
+      border-radius: 24px;
+    }
+    .countdown {
+      flex-basis: 39%;
+      display: flex;
+      justify-content: center;
+    }
+    .current-question__container {
+      flex-basis: 65%;
+      border: gray 1px solid;
+      height: 80%;
+      border-radius: 20px;
+      padding: 16px;
+      box-shadow: inset 0 0 2px 1px #000000;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: relative;
+      gap: 32px;
+    }
+    .questions-list__container {
+      flex-basis: 33%;
+      border: gray 1px solid;
+      height: 70%;
+      max-height: 70%;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: inset 0 0 2px 1px #000000;
+      overflow: hidden;
+    }
+    .questions {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 32px 16px;
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      overflow-y: auto;
+      padding-top: 16px;
+      grid-auto-rows: min-content; /* Đảm bảo các hàng có chiều cao tối thiểu */
+      align-content: start;
+    }
+    .button--submit {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-bottom: 48px;
+      margin-right: 48px;
+      background-color: #4caf50;
+      font-size: 1.6em;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 24px;
+    }
+    .current-question__icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      padding-left: 16px;
+      padding-top: 16px;
+    }
+    .current-question__content {
+      width: 80%;
+      margin-left: 36px;
+      font-size: 1.5em;
+      font-weight: bold;
+      flex-basis: 35%;
+    }
+    .current-question__options-container {
+      width: 90%;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px 16px;
+      margin-left: 40px;
+    }
+    .current-question__option {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      input {
+        display: none;
+      }
+      label {
+        font-size: 1.8em;
+        font-weight: 400;
+        padding: 1rem 1.2rem;
+        background-color: #d9d9d9;
+        border-radius: 16px;
+      }
+      input:checked + label {
+        background-color: #1976d2;
+        color: white;
+      }
+      p {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+    }
+    .question__item {
+      flex-basis: 18%;
+      input {
+        display: none;
+      }
+      label {
+        font-size: 1.2em;
+        font-weight: 300;
+        padding: 0.8rem 1.4rem;
+        background-color: #d9d9d9;
+        border-radius: 8px;
+      }
+      input:checked + label {
+        background-color: #808080;
+        color: white;
+      }
+      p {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+    }
+    .not-clicked {
+        background-color: white;
+    }
+
+    /* Currently selected */
+    .selected {
+        background-color: gray;
+    }
+
+    /* Answered */
+    .answered {
+        background-color: rgb(98, 255, 98);
+    }
+
+    /* Clicked but no answer */
+    .clicked-no-answer {
+        background-color: rgb(255, 255, 111);
+    }
+    .question__item.clicked-no-answer {
+      background-color: yellow;
+    }
+
+    .question__item.answered {
+      background-color: green;
+    }
+
+    .question__item.selected {
+      background-color: green;
+    }
+
+  </style>
+  <script type="text/javascript">
+    window.MathJax = {
+      loader: {
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem']
+      },
+      tex: {
+        packages: {'[+]': ['mhchem']},
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      },
+      svg: {
+        fontCache: 'global',
+      },
+    };
+  </script>
+  <!-- Tải MathJax phiên bản mới nhất -->
+  <script type="text/javascript" id="MathJax-script" 
+  src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-chtml-full.js"></script>
+  </head>
+  <body>
+    <div class="test-page">
+      <button class="button--back">
+        <img src="{{ url_for('static', filename='assets/left-arrow-slider.svg') }}" />
+      </button>
+
+      <div class="header">
+        <div class="header__content">
+          <p>Bài kiểm tra</p>
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="countdown__content">
+          <p>Còn lại <span class="time">00:45:00</span></p>
+        </div>
+      </div>
+      <div class="current-question__container">
+        <img
+          src="{{ url_for('static', filename='assets/question-icon.svg') }}"
+          alt="question-icon"
+          class="current-question__icon"
+        />
+        <p class="current-question__content"></p> <!-- Dynamic question content -->
+
+        <div class="current-question__options-container">
+          <!-- Options will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+      <div class="questions-list__container">
+        <div class="questions">
+          {% for question in questions %}
+          <div class="question__item not-clicked" id="question-item-{{ loop.index }}">
+            <input type="radio" name="questionItem" id="question-{{ loop.index }}" />
+            <label for="question-{{ loop.index }}">{{ loop.index }}</label>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      
+      <form id="examForm" method="POST" action="/practice-test/{{ subject }}">
+        <input type="hidden" name="timeSpent" id="timeSpent" value="" />
+        <input type="hidden" name="answers" id="answers" value="" />
+        <input type="hidden" name="test_id" value="{{ test_id }}">
+      
+
+        <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
+      </form>
+    </div>
+    
+    <script>
+      const QAs = {{ questions | tojson | safe }};
+      let currentQuestionIndex = 0;
+      let timeSpent = new Array(QAs.length).fill(0);
+      let questionStartTime = new Date().getTime();
+      let questionStates = new Array(QAs.length).fill('not-clicked'); // Track the state of each question
+      let answers = new Array(QAs.length).fill(null); // Track the answers
+    
+      // Update question content and options dynamically
+      MathJax.startup.promise.then(() => {
+        console.log("MathJax is ready");});
+          
+        function updateQuestionContent(index) {
+          const questionContent = document.querySelector(".current-question__content");
+          const optionsContainer = document.querySelector(".current-question__options-container");
+
+          // Set the current question text with inline LaTeX (use \( and \) instead of $$)
+          questionContent.innerHTML = `Câu ${index + 1}: ${QAs[index].question.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;
+          
+          // If there's an image URL for the question, add an image below the question text
+          if (QAs[index].image) {
+            const img = document.createElement("img");
+            img.src = QAs[index].image;
+            img.alt = "Question Image";
+            img.style.maxWidth = "100%";
+            questionContent.appendChild(img);
+          }
+
+          // Clear previous options
+          optionsContainer.innerHTML = "";
+
+          // Split options (assuming options are stored as "A.1__B.2__C.3__D.4")
+          const options = QAs[index].options.split("__");
+
+          // Dynamically create options (supports LaTeX)
+          options.forEach(option => {
+            const [optLabel, optContent] = option.split(".");
+
+            const optionDiv = document.createElement("div");
+            optionDiv.className = `current-question__option option--${optLabel}`;
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "option";
+            input.id = `option-${optLabel}`;
+            input.value = optLabel;
+            input.addEventListener("change", () => saveAnswer(index, optLabel));
+
+            const label = document.createElement("label");
+            label.htmlFor = `option-${optLabel}`;
+            label.innerHTML = optLabel;  // This part remains text
+
+            const content = document.createElement("p");
+            content.className = `option__content option__content--${optLabel}`;
+            content.innerHTML = `${optContent.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;  // Use innerHTML for LaTeX
+
+            optionDiv.appendChild(input);
+            optionDiv.appendChild(label);
+            optionDiv.appendChild(content);
+            optionsContainer.appendChild(optionDiv);
+
+            // Restore previous selection if the user has already selected an answer
+            if (answers[index] === optLabel) {
+              input.checked = true;
+            }
+          });
+
+          // After dynamically adding LaTeX content, trigger MathJax rendering
+          MathJax.typesetPromise().then(() => {
+            console.log("MathJax processing complete");
+          });
+        }
+    
+      // Save the user's answer
+      function saveAnswer(index, option) {
+        answers[index] = option; // Save the selected option
+        questionStates[index] = 'answered'; // Mark the question as answered
+        updateQuestionItemStyle(index, 'answered');
+      }
+    
+      // Update the style of the question item
+      function updateQuestionItemStyle(index, state) {
+        const questionItem = document.getElementById(`question-item-${index + 1}`);
+        questionItem.className = `question__item ${state}`;
+      }
+    
+      // Switch to a different question
+      function switchQuestion(newIndex) {
+        const now = new Date().getTime();
+        timeSpent[currentQuestionIndex] += (now - questionStartTime) / 1000; // Calculate time in seconds
+        questionStartTime = now;
+    
+        // Mark the previous question with its final state (green if answered, yellow if clicked but not answered)
+        if (questionStates[currentQuestionIndex] === 'selected' && !answers[currentQuestionIndex]) {
+          questionStates[currentQuestionIndex] = 'clicked-no-answer'; // Turn yellow if no answer
+        }
+    
+        // Only update the style if the question hasn't been answered (i.e., don't revert green back to yellow)
+        if (questionStates[currentQuestionIndex] !== 'answered') {
+          updateQuestionItemStyle(currentQuestionIndex, questionStates[currentQuestionIndex]);
+        }
+    
+        // Switch to the new question and mark it as selected (blue)
+        currentQuestionIndex = newIndex;
+        updateQuestionContent(newIndex);
+        questionStates[newIndex] = 'selected'; // Mark as selected
+        updateQuestionItemStyle(newIndex, 'selected');
+      }
+    
+      // Add event listeners to the question items on the right
+      function addQuestionSwitchListeners() {
+        const questionItems = document.querySelectorAll('.question__item');
+        questionItems.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            switchQuestion(index);
+          });
+        });
+      }
+    
+      // Countdown timer
+      function startCountdown(display) {
+        let timer = {{ time_limit | int }} * 60;
+        const interval = setInterval(() => {
+          const hours = String(Math.floor(timer / 3600)).padStart(2, '0');
+          const minutes = String(Math.floor((timer % 3600) / 60)).padStart(2, '0');
+          const seconds = String(timer % 60).padStart(2, '0');
+          display.textContent = `${hours}:${minutes}:${seconds}`;
+    
+          if (--timer < 0) {
+            clearInterval(interval);
+            countdownFinished();
+          }
+        }, 1000);
+      }
+    
+      // When the countdown finishes
+      function countdownFinished() {
+        submitExam(); // Auto-submit the form
+      }
+    
+      // Form submission handler
+      function submitExam() {
+          console.log("Submitting form..."); // Debugging
+          console.log("Time Spent Array:", timeSpent);
+          console.log("Answers Array:", answers);
+
+          const form = document.getElementById("examForm");
+          
+          // Update hidden inputs with current values
+          document.getElementById('timeSpent').value = JSON.stringify(timeSpent);
+          document.getElementById('answers').value = JSON.stringify(answers);
+
+          // Submit the form
+          form.submit();
+      }
+    
+      // Initialize the page when the DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        updateQuestionContent(0); // Load the first question
+        questionStates[0] = 'selected';
+        updateQuestionItemStyle(0, 'selected');
+    
+        const timeDisplay = document.querySelector(".time");
+        startCountdown(timeDisplay); // Start the countdown timer
+    
+        // Add listeners to switch between questions
+        addQuestionSwitchListeners();
+      });
+
+    </script>
+    
+    
+  </body>
+</html>
