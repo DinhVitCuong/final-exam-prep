@@ -12,8 +12,6 @@ class DrawChartBase:
         self.test_type = test_type # 1 : total, 0: chapter, 3: practice
         self.num = num
         self.user_id = user_id
-        if self.user_id is None:
-            raise ValueError("user_id cannot be None in DrawChartBase, test_type: ", self.test_type)
         self.load_type = load_type if load_type in ["specific", "average"] else None # picking specefic to load specific test from the database
         self.time_to_do_test = None
         self.data = None
