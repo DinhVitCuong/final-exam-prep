@@ -10,7 +10,7 @@ from datetime import datetime
 import time 
 import pandas as pd
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, TestDate
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, TestDate, LessonInfo
 
 load_dotenv()
 
@@ -242,6 +242,7 @@ class generateAnalysis:
             "A": "Anh",
         }
         return name.get(self.subject, "Unknown Subject")
+    
     # def __init__(self, type_test, num_test, subject, user_id = None, num_chap = None):
     def return_prompt(self, analyze_type):
         if analyze_type == "fast":
@@ -276,6 +277,14 @@ class generateAnalysis:
         response = self.call_gpt(prompt)
         return response
 
+    def lesson_info(self):
+        prompt = f"\n Dưới đây là thông tin về các bài học của môn {self.return_subject_name()} này: \n"
+        lesson_infos = db.session.query(LessonInfo).filter_by(subject=self.subject).all()
+        for lesson in lesson_infos:
+            prompt += f"Chương {lesson.chapter_num}, Bài {lesson.lesson_num}: {lesson.lesson_name}\n"
+        return prompt
+        # with open()
+
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
         self.num_chap = promptTotal(1, self.num_test, self.subject, self.user_id).return_max_chap()
@@ -286,45 +295,45 @@ class generateAnalysis:
         functions = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).functions_prompt
         
         # Bắt đầu xây dựng chuỗi prompt
-        prompt = "1. **từ dữ liệu test tổng:**\n"
-        prompt += self.return_prompt("deep")
+        prompt = "1. **từ phân tích test tổng:**\n"
+        prompt += self.analyze("deep")
         
         prompt += (
             f"\n Lập kế hoạch chi tiết ôn tập dựa vào các yếu tố sau  : \n"
-            f"1. Nhắc nhở ôn lại kiến thức cũ từ dữ liệu test tổng , đặc biệt là những phần còn yếu.\n"
+            f"1. Phân tích kĩ ra ở chương cụ thể còn sai tên bài nào, ghi rõ tên bài học ra\n"
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
             f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n"
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
-            f"5. Ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3) từ dữ liệu test tổng, và cụ thể bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn)\n"
+            f"5. Ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
-            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
+            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, chỉ lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]} thôi\n"
             f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
             "ôn tập từ chương đầu đến hiện tại,  các loại câu hỏi hay bài học cần chú ý thì phải cụ thể\n"
             "Hãy viết theo format sau: \n"
-            "'ngày xx/tháng xx/năm xxxx : làm gì đó'\n"
+            "'ngày xx/tháng xx/năm xxxx : Ôn tập chương 1 môn lý, tập trung vào bài giao động điều hòa và sóng cơ, sử dụng wrong question searching để xem lại các loại câu hỏi Nhận Biết, Thông Hiểu'\n"
         )
 
         # # Gọi GPT với prompt ban đầu
         response = self.call_gpt(prompt)
         
         # # Kiểm tra và bổ sung nếu cần
-        required_factors = [
-            "Mỗi ngày ôn tập chương sẽ gồm cả việc ôn lại cụ thể **các loại câu hỏi hay sai** và cụ thể **bài học sai nhiều** từ dữ liệu test tổng của chương đó. Hãy làm rõ ra là nên xem lại loại câu hỏi nào và bài học nào của từng chương"
-        ]
+        # required_factors = [
+        #     "Ôn tập luôn cả loại câu hỏi hay sai của từng chương : Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao",
+        # ]
 
-        credit = self.return_prompt("deep")
-        # Vòng lặp kiểm tra các yếu tố trong response
-        for factor in required_factors:
-            # Nếu thiếu yếu tố, yêu cầu GPT bổ sung
-            additional_prompt = "Có dữ liệu test total sau : \n"
-            additional_prompt += credit
-            additional_prompt += "\nĐây là kế hoạch học tập hiện tại : \n"
-            additional_prompt += response
-            additional_prompt += f"\nVui lòng bổ sung yếu tố sau vào kế hoạch học tập nếu thiếu: {factor}"
-            print(additional_prompt)
-            response = self.call_gpt(additional_prompt)
+        # credit = self.return_prompt("deep")
+        # # Vòng lặp kiểm tra các yếu tố trong response
+        # for factor in required_factors:
+        #     # Nếu thiếu yếu tố, yêu cầu GPT bổ sung
+        #     additional_prompt = "Có dữ liệu test total sau : \n"
+        #     additional_prompt += credit
+        #     additional_prompt += "\nĐây là kế hoạch học tập hiện tại : \n"
+        #     additional_prompt += response
+        #     additional_prompt += f"\nVui lòng bổ sung yếu tố sau vào kế hoạch học tập nếu thiếu: {factor}"
+        #     print(additional_prompt)
+        #     response = self.call_gpt(additional_prompt)
 
         return response
 
@@ -332,7 +341,7 @@ class generateAnalysis:
         data = self.detail_plan_and_timeline() # try except
         data += (
             f"Hãy viết theo format sau, chắc chắn rằng nó đúng format json"
-            f"ngày xx/tháng xx/năm xxxx : làm gì đó' ,từ prompt đầu vào sau, hãy làm file json sau để chứa to do list với format sau : {{'date': '24/08/2024', 'action': 'Phân tích kết quả bài test', 'done': 'false'}} và chú ý đến các tiêu chí : ôn tập đầy đủ các chương , sử dụng chính xác các functions trong app để ôn tập, nhắc nhở làm bài kiểm tra, học bài mới, to do list đa dạng với sáng tạo"
+            f"ngày xx/tháng xx/năm xxxx : làm gì đó' ,từ prompt đầu vào sau, hãy làm file json sau để chứa to do list với format sau : {{'date': '24/08/2024', 'action': 'Phân tích kết quả bài test', 'done': 'false'}} "
         )
         response = self.call_gpt(data)
         return response
@@ -363,25 +372,8 @@ class generateAnalysis:
 
 
 # app = create_app()
-# with app.app_context(): # type , num , subject, num_chap
-#     a = promptTotal(1, 15, "L")
-#     print(a.deep_analysis())
-    # a = generateAnalysis("L", 3)
-    # print(a.analyze("chapter"))
-    # print(a.next_test_date())
-#     test = generateAnalysis("T",3)
-#     # # "deep", "fast", "progress", "chapter"
-#     # # print(test.analyze("deep"))
-#     # # print(test.detail_plan_and_timeline())
-#     # # # test.format_data()
-#     abc = test.format_data()
-#     with open("todo.txt", "w", encoding="utf-8") as f:
-#         f.write(abc)
-#     json_str = test.turning_into_json()
-#     with open("todo_T.json", "w", encoding="utf-8") as f:
-#         try:
-#             json.dump(json_str, f, ensure_ascii=False, indent=4)
-#         except json.decoder.JSONDecodeError:
-#             print("Error")
-    
-    # print(test.analyze("deep"))
+# with app.app_context():
+#     analyzer = generateAnalysis("L", 7, 10, 2)
+#     json_data = analyzer.turning_into_json()
+#     print(json_data)    
+

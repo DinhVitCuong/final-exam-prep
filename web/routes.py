@@ -176,7 +176,7 @@ def home():
         if todo_date == current_date:
             todo_l.append(todo)
 
-    return render_template("home.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l)
+    return render_template("home_new.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l)
 
 
 
@@ -823,6 +823,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         db.session.commit()
                         todo_json = analyzer.turning_into_json()
 
+                        print(todo_json)
                         # print(todo_json)
                         for todo in todo_json:
                             new_todo = TodoList(

@@ -127,3 +127,10 @@ class TestDate(db.Model):
     test_type = db.Column(db.Integer, primary_key=True, nullable=False)  # 1 = Total, 0 = Chapter, 3 = Practice
     subject = db.Column(db.String(100), primary_key=True, nullable=False)  # Thêm cột subject
     date = db.Column(db.Date, nullable=False)
+
+class LessonInfo(db.Model):
+    __tablename__ = "lesson_info"
+    subject = db.Column(db.String(10), primary_key = True,nullable=False)
+    chapter_num = db.Column(db.String,primary_key = True, nullable=False)
+    lesson_num = db.Column(db.String, primary_key = True, nullable=False)
+    lesson_name = db.Column(db.String, nullable=False)

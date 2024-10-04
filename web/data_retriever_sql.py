@@ -166,7 +166,6 @@ class DrawTotal(DrawChartBase):
     def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None) -> None:
         super().__init__(subject_name, num_chap, test_type, num, user_id, load_type)
         self.test_type = 1
-        print(f"DrawTotal initialized with user_id: {user_id}")  # Debugging statement
         self.load_data()
     def cal_accu_chap(self, chap): # accuracy từng chapter
         datas = self.data
@@ -294,7 +293,6 @@ class DrawChap(DrawChartBase):
     def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None) -> None:
         super().__init__(subject_name, num_chap, test_type, num, user_id, load_type)
         self.test_type = 0
-        print(f"DrawChap initialized with user_id: {user_id}")  # Debugging statement
         self.load_data()
     def difficult_percentile_per_chap(self): # trả về tỉ lệ % các độ khó trong chương
         _, diff_ids, diff_nums = self.cal_accu_diff()
