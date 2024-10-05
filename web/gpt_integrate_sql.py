@@ -113,7 +113,13 @@ class promptTotal(promptCreation):
         )
         data_prompt += self.analyze_only_prompt
         return data_prompt
-
+    
+    def lesson_info(self):
+        prompt = f"\n Dưới đây là thông tin về các bài học của môn {self.return_subject_name()} này: \n"
+        lesson_infos = db.session.query(LessonInfo).filter_by(subject=self.subject).all()
+        for lesson in lesson_infos:
+            prompt += f"Chương {lesson.chapter_num}, Bài {lesson.lesson_num}: {lesson.lesson_name}\n"
+        return prompt
     def deep_analysis(self):
 
         data_prompt = (
@@ -155,12 +161,13 @@ class promptTotal(promptCreation):
         # nhận xét về phần làm tốt, phần cần cải thiện
         # nhắc nhở học sinh ôn các bài hay sai trong chương, xem lại các chương sai nhiều
         # đề xuất chiến lược học tập, sử dụng các functions của ứng dụng
+        diff = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).diff_prompt()
         data_prompt += (
             "\nHãy phân tích kỹ lưỡng để tìm ra điểm mạnh và điểm yếu của học sinh, càng chi tiết càng tốt:\n"
             "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
             "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
-            "- Nhắc nhở học sinh ôn tập lại các bài thường hay sai, đặc biệt chú ý những chương có tỉ lệ sai cao.\n"
             "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
+            f"- Đặc biệt Ghi rõ cụ thể tên bài, cụ thể loại câu hay sai của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
         )
         return data_prompt
     def return_max_chap(self):
@@ -170,6 +177,13 @@ class promptTotal(promptCreation):
 class promptChap(promptCreation):
     def __init__(self, type_test,num_test,subject,user_id,num_chap):
         super().__init__(type_test, num_test,subject,user_id, num_chap)
+    def lesson_info(self):
+        prompt = f"\n Dưới đây là thông tin về các bài học của môn {self.return_subject_name()} này: \n"
+        lesson_infos = db.session.query(LessonInfo).filter_by(subject=self.subject, chapter_num = str(self.num_chap)).all()
+        for lesson in lesson_infos:
+            prompt += f"Chương {lesson.chapter_num}, Bài {lesson.lesson_num}: {lesson.lesson_name}\n"
+        return prompt
+        
     def chap_analysis(self):
         data_prompt = (
             f"{self.test_intro} {self.prompt} {self.subject_intro}. "
@@ -201,13 +215,14 @@ class promptChap(promptCreation):
             "- Xác định các phần kiến thức mà học sinh đã nắm vững (điểm số cao, thời gian ngắn).\n"
             "- Nhận diện các phần cần cải thiện (điểm số thấp, thời gian dài).\n"
             "- So sánh kết quả với kỳ vọng để xác định liệu học sinh có đạt được mục tiêu đã đề ra không.\n"
-            "- Chú ý đến những chương hoặc loại câu hỏi có tỉ lệ sai cao để tập trung ôn tập.\n"
+            "- Chú ý đến những bài hoặc loại câu hỏi (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao) có tỉ lệ sai cao để tập trung ôn tập.\n"
+            f" Thông tin của bài học của chương như sau : {self.lesson_info()}\n"
         )
-
+        
         data_prompt += (
             "Đưa ra các nhận xét và lời khuyên cụ thể cho học sinh:\n"
             "- Tập trung ôn lại các loại câu hỏi có tỉ lệ đúng thấp.\n"
-            "- Chuẩn bị kỹ lưỡng cho bài kiểm tra tiếp theo bằng cách ôn tập các chương có tỉ lệ sai cao.\n"
+            "- Chuẩn bị kỹ lưỡng cho bài kiểm tra tiếp theo bằng cách ôn tập các bàì học có tỉ lệ sai cao.\n"
             "- Đặt mục tiêu cụ thể cho mỗi buổi học, ví dụ: cải thiện điểm số trong các câu hỏi 'Nhận biết' và 'Thông hiểu'. (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể)\n"
         )
 
@@ -296,7 +311,9 @@ class generateAnalysis:
         
         # Bắt đầu xây dựng chuỗi prompt
         prompt = "1. **từ phân tích test tổng:**\n"
-        prompt += self.analyze("deep")
+        deep_analyze = self.analyze("deep")
+        print(deep_analyze)
+        prompt += deep_analyze
         
         prompt += (
             f"\n Lập kế hoạch chi tiết ôn tập dựa vào các yếu tố sau  : \n"
@@ -304,7 +321,7 @@ class generateAnalysis:
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
             f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n"
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
-            f"5. Đặc biệt chú ý ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
+            f"5. Tìm ra những loại câu hay sai nhất của từng chương dựa vào phân tích, ghi rõ ra loại nào từng chương một (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
@@ -371,11 +388,11 @@ class generateAnalysis:
 
 
 
-# app = create_app()
-# with app.app_context():
-#     # prompt = promptTotal(1,10, "L", 2).deep_analysis()
-#     # print(prompt)
-#     analyzer = generateAnalysis("L", 7, 10, 2)
-#     json_data = analyzer.turning_into_json()
-#     print(json_data)    
+app = create_app()
+with app.app_context():
+    # prompt = promptTotal(1,10, "L", 2).deep_analysis()
+    # print(prompt)
+    analyzer = generateAnalysis("L", 7, 10, 2)
+    json_data = analyzer.turning_into_json()
+    print(json_data)    
 
