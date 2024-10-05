@@ -30,10 +30,10 @@ with app.app_context():
     file_names = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     # print(file_names)
     difficulty_mapping = {
-        'Nhận biết': 0,
-        'Thông hiểu': 1,
-        'Vận dụng': 2,
-        'Vận dụng cao': 3
+        "Nhận biết": 0,
+        "Thông hiểu": 1,
+        "Vận dụng": 2,
+        "Vận dụng cao": 3
     }
     for file_name in file_names:
         file_path = os.path.join(folder_path, file_name)
@@ -43,7 +43,7 @@ with app.app_context():
             # Insert each record into the table
             for item in data:
                 for k, v in item.items():
-                    if item[k] != None and not isinstance(item[k], list):
+                    if item[k] != None and not isinstance(item[k], list) and not isinstance(item[k], int):
                         item[k] = item[k].replace("\\\\", '\\')
                     if isinstance(item[k], list):
                         for i in range(len(item[k])):

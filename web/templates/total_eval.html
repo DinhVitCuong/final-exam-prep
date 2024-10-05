@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .chapter-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0;
+        gap: 24px;
+      }
+      .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: cover;
+        z-index: -10;
+      }
+      .header {
+        width: 80%;
+        padding: 0.5rem 1rem;
+        background-color: #ffc107;
+        text-align: start;
+        border-radius: 24px;
+        box-shadow: 0px 2px 4px 0px #000000;
+      }
+      .content {
+        width: 100%;
+        gap: 1rem;
+        padding: 1.5rem;
+        background-color: white;
+        height: 100%;
+        position: relative;
+        margin-top: 10px;
+        justify-content: flex-start;
+        flex-direction: column;
+        display: flex;
+      }
+      .container {
+        margin-top: 10px;
+        width: 100%;
+        height: 85%;
+        border: 1px solid #000000;
+        box-shadow: inset 0px 0px 5px 0px #4a4a4a;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+      .button--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0.5rem;
+      }
+      .analytics__container {
+        flex-basis: 48%;
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-wrap: wrap;
+        height: 100%;
+        padding: 1rem;
+        margin-bottom: 0;
+      }
+      .average-score__container {
+        flex-basis: 35%;
+        height: 30%;
+        padding: 1rem;
+        border-radius: 16px;
+        border: 1px solid #8a8a8a;
+        box-shadow: 0px 0px 5px 0px #5e5e5e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .buttons-container {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .button--watch-history,
+      .button--revise {
+        flex-basis: 40%;
+        background-color: #1976d2;
+        padding: 0.8rem 1rem;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        width: 100%;
+      }
+      .button--revise {
+        font-size: 1.8em;
+      }
+      .feedback__container {
+        flex-basis: 95%;
+        border: 1px solid #8a8a8a;
+        box-shadow: 0px 0px 5px 0px #5e5e5e;
+        border-radius: 16px;
+        padding: 1rem;
+        margin: 1rem; /* Adds margin around the container */
+        height: 60%;
+        font-size: 1.2em;
+        box-sizing: border-box;
+        overflow-y: auto;
+      }
+
+      .feedback__content {
+        margin: 0;
+        padding: 1rem; /* Adds padding inside the content */
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+        word-wrap: break-word;
+        word-break: break-word;
+      }
+
+      /* Styles for headings */
+      .feedback__content h3 {
+        font-size: 1.5em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+      }
+
+      .feedback__content code {
+        background-color: #f4f4f4;
+        padding: 2px 4px;
+        font-family: monospace;
+      }
+      
+      /* Styles for paragraphs */
+      .feedback__content p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+
+      /* Styles for lists */
+      .feedback__content ul {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        padding-left: 1.5em;
+      }
+
+      .feedback__content li {
+        margin-bottom: 0.3em;
+      }
+
+      .chart__container {
+        flex-basis: 48%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .progess-group {
+        background-color: transparent;
+        width: 180px;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .circular-progress {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 0.8s;
+      }
+
+      .circular-progress::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .subject-value {
+        position: relative;
+        color: black;
+        font-size: 32px;
+        font-weight: 200;
+      }
+      .button__practice {
+          position: absolute;
+          bottom: 4rem; /* Adjust as needed */
+          right: 2rem;
+          background-color: #1976d2;
+          padding: 0.8rem 1.2rem;
+          font-size: 1.4em;
+          border: none;
+          border-radius: 20px;
+          color: white;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.6;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.4/dist/purify.min.js"></script>
+  </head>
+  <body>
+    <div class="chapter-page">
+      <img
+        src="{{ url_for('static', filename='assets/background.svg') }}"
+        alt="background"
+        class="background-image"
+      />
+      <div class="header">
+        <p class="header__content">Đánh giá tổng : {{chap_id}} chương</p>
+      </div>
+      <div class="content">
+        <button class="button--back" onclick="window.location.href='{{ url_for('subject', subject_id=subject_id) }}'">
+          <img src="{{ url_for('static', filename='assets/left-arrow-slider.svg') }}" />
+        </button>
+        <div class="container">
+          <div class="chart__container">
+            <canvas id="nearestResultsChart"></canvas>
+          </div>
+          <div class="analytics__container">
+            <div class="average-score__container">
+              <div class="circular-progress-bar"></div>
+            </div>
+            <div class="buttons-container">
+              <button class="button--watch-history">Lịch sử làm bài</button>
+              <button class="button--revise">Ôn kiến thức</button>
+            </div>
+            <div class="feedback__container">
+              <div class="feedback__content" id = "feedback-content">
+                {{feedback}}
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+        <a href="{{ url_for('chapter_test', chap_id=chap_id, subject=subject) }}" class="button__practice">Bạn sợ à?</a>
+      </div> -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const subject_id = "{{ subject_id }}";
+      document.addEventListener("DOMContentLoaded", () => {
+        const ctx = document
+          .getElementById("nearestResultsChart")
+          .getContext("2d");
+        const data = [28, 53, 84, 50, 71];
+        const nearestResultsChart = new Chart(ctx, {
+          type: "bar",
+          data: {
+            labels: ["Kỳ 1", "Kỳ 2", "Kỳ 3", "Kỳ 4", "Kỳ 5"],
+            datasets: [
+              {
+                label: "Kết quả 5 lần làm kiểm tra gần nhất",
+                data: data,
+                backgroundColor: [
+                  "rgba(255, 99, 132)",
+                  "rgba(54, 162, 235)",
+                  "rgba(255, 206, 86)",
+                  "rgba(75, 192, 192)",
+                  "rgba(153, 102, 255)",
+                ],
+              },
+            ],
+          },
+          options: {
+            plugins: {
+              legend: {
+                labels: {
+                  font: {
+                    size: 20,
+                  },
+                },
+              },
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                max: 100, // Đặt giá trị tối đa của trục y là 100%
+                ticks: {
+                  callback: function (value) {
+                    return value + "%"; // Thêm ký hiệu % vào nhãn trục y
+                  },
+                  font: {
+                    size: 16, // Tăng cỡ chữ của trục y
+                  },
+                },
+              },
+              x: {
+                ticks: {
+                  font: {
+                    size: 16, // Tăng cỡ chữ của trục x
+                  },
+                },
+              },
+            },
+          },
+        });
+
+        //TODO: assign real value to progressBar.percent
+        let progressBar = { percent: 40, color: "" };
+        if (progressBar.percent < 25) {
+          progressBar.color = "#eb4d4b";
+        } else if (progressBar.percent < 50) {
+          progressBar.color = "#f0932b";
+        } else if (progressBar.percent < 75) {
+          progressBar.color = "#f9ca24";
+        } else {
+          progressBar.color = "#78e08f";
+        }
+        let container = document.querySelector(".circular-progress-bar");
+        container.innerHTML += `
+          <div class="progress-group">
+          <div class="circular-progress" >
+            <span class="subject-value">0%</span>
+          </div>
+        </div>
+          `;
+        let progressGroup = document.querySelector(".progress-group");
+        let progressStartValue = 0;
+        let progressEndValue = progressBar.percent;
+        let speed = 10;
+        let progressTimer = setInterval(() => {
+          progressStartValue++;
+          if (progressStartValue == progressEndValue) {
+            clearInterval(progressTimer);
+          }
+          progressGroup.querySelector(".circular-progress").style.background = `
+            conic-gradient(${progressBar.color} ${
+            3.6 * progressStartValue
+          }deg, #fff 0deg)`;
+
+          progressGroup.querySelector(".subject-value").innerHTML =
+            progressStartValue + "%";
+        }, speed);
+      });
+
+      var feedbackElement = document.getElementById('feedback-content');
+      var rawMarkdown = feedbackElement.textContent || feedbackElement.innerText;
+      rawMarkdown = rawMarkdown.trim();
+      console.log('Raw Markdown:', rawMarkdown); // Debugging
+      var htmlContent = marked.parse(rawMarkdown);
+      console.log('Converted HTML:', htmlContent); // Debugging
+      var cleanHtml = DOMPurify.sanitize(htmlContent);
+      feedbackElement.innerHTML = cleanHtml;
+    </script>
+  </body>
+</html>

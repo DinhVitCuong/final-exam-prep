@@ -66,10 +66,12 @@ class TestOrigin:
         
         # Randomly select questions for each difficulty level
 
-        questions = random.choices(th_questions, k=min(num_th, len(th_questions))) + \
-            random.choices(nb_questions, k=min(num_nb, len(nb_questions))) + \
-            random.choices(vd_questions, k=min(num_vd, len(vd_questions))) + \
-            random.choices(vdc_questions, k=min(num_vdc, len(vdc_questions)))
+        questions = (
+            random.sample(th_questions, k=min(num_th, len(th_questions))) +
+            random.sample(nb_questions, k=min(num_nb, len(nb_questions))) +
+            random.sample(vd_questions, k=min(num_vd, len(vd_questions))) +
+            random.sample(vdc_questions, k=min(num_vdc, len(vdc_questions)))
+        )
         
         return questions
     def shuffle_questions(self, questions):
@@ -88,10 +90,16 @@ class TestOrigin:
 class TestTotal(TestOrigin):
     def create_test(self, rate):
         questions = []
-        for i in range(1, self.chapter + 1):
-            chapter_questions = self.select_questions(rate, 10, chapter=i)
-            questions.extend(chapter_questions)
-        questions = self.shuffle_questions(questions)
+        if self.chapter <= 2:
+            for i in range(1, self.chapter + 1):
+                chapter_questions = self.select_questions(rate, 20, chapter=i)
+                questions.extend(chapter_questions)
+
+        
+        else:
+            for i in range(1, self.chapter + 1):
+                chapter_questions = self.select_questions(rate, 10, chapter=i)
+                questions.extend(chapter_questions)
         self.num_ques = len(questions)
         return questions
 
@@ -105,11 +113,12 @@ class TestChap(TestOrigin):
         self.num_ques = len(questions)
         return questions
 
+
 class pr_br_rcmd:
     def __init__(self, subject_name, n_total=1, n_chap = 1):
         self.subject_name = subject_name
-        self.n_total = n_total
-        self.n_chap = n_chap
+        self.n_total = n_total # so bai test tong
+        self.n_chap = n_chap # so bai test chuong 
         self.top_t = []
         self.top_c = []
         self.chap_freq = {}
@@ -173,10 +182,10 @@ class pr_br_rcmd:
 
             # Sort chapter frequencies to find the top 2 chapters
             self.chap_freq = sorted(self.chap_freq.items(), key=lambda x: x[1], reverse=True)[:2]
-
+    
         except Exception as e:
             print(f"Error loading data: {str(e)}")
-
+        
     def containter_type(self, id):  # Return a list of questions for each id
         return db.session.query(QAs).filter(QAs.id.like(f'{id[0][0]}%'), QAs.difficulty == id[0][1]).all()
 
@@ -202,15 +211,47 @@ class pr_br_rcmd:
 
         # Adjust based on aim
         if self.aim >= 9.5:
-            QAs_list += random.sample(self.find_vdc(self.chap_freq[0][0]), 2)
-            QAs_list += random.sample(self.find_vdc(self.chap_freq[1][0]), 1)
-        elif self.aim >=9:
-            QAs_list += random.sample(self.find_vdc(self.chap_freq[0][0]), 1)
-            QAs_list += random.sample(self.find_vdc(self.chap_freq[1][0]), 1)
-        elif self.aim >= 8.5:
-            QAs_list += random.sample(self.find_vdc(self.chap_freq[0][0]), 1)
+            vdc_chap_1 = self.find_vdc(self.chap_freq[0][0])
+            vdc_chap_2 = self.find_vdc(self.chap_freq[1][0])
 
-        return QAs_list
+            # Check if there are enough questions to sample
+            if len(vdc_chap_1) >= 2:
+                QAs_list += random.sample(vdc_chap_1, 2)
+            else:
+                QAs_list += vdc_chap_1  # Add all if not enough to sample
+
+            if len(vdc_chap_2) >= 1:
+                QAs_list += random.sample(vdc_chap_2, 1)
+            else:
+                QAs_list += vdc_chap_2  # Add all if not enough to sample
+
+        elif self.aim >= 9:
+            vdc_chap_1 = self.find_vdc(self.chap_freq[0][0])
+            vdc_chap_2 = self.find_vdc(self.chap_freq[1][0])
+
+            if len(vdc_chap_1) >= 1:
+                QAs_list += random.sample(vdc_chap_1, 1)
+            else:
+                QAs_list += vdc_chap_1  # Add all if not enough to sample
+
+            if len(vdc_chap_2) >= 1:
+                QAs_list += random.sample(vdc_chap_2, 1)
+            else:
+                QAs_list += vdc_chap_2  # Add all if not enough to sample
+
+        elif self.aim >= 8.5:
+            vdc_chap_1 = self.find_vdc(self.chap_freq[0][0])
+
+            if len(vdc_chap_1) >= 1:
+                QAs_list += random.sample(vdc_chap_1, 1)
+            else:
+                QAs_list += vdc_chap_1  # Add all if not enough to sample
+        
+        if not QAs_list:
+            print("Warning: You haven't done any test.")
+
+        return QAs_list if QAs_list else []
+    
     
 from app import create_app, db, login_manager, bcrypt
 

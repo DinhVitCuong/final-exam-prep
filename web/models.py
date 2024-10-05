@@ -1,6 +1,6 @@
 from app import db
 from flask_login import UserMixin
-
+import datetime
 class User(UserMixin, db.Model):
     __tablename__ = "account"
     
@@ -78,7 +78,7 @@ class Test(db.Model):
 class TodoList(db.Model):
     __tablename__ = "todo_list"
 
-    todo_id = db.Column(db.String(1), primary_key=True)
+    todo_id = db.Column(db.String, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
     date = db.Column(db.String, nullable=False)  # 12/4/2021
     action = db.Column(db.String, nullable=False)  # do 1
@@ -96,9 +96,9 @@ class Analysis(db.Model):
     __tablename__ = "analysis"
 
     user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
-    analysis_type = db.Column(db.String, nullable=False)
-    subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'), nullable=False)
-    num_chap = db.Column(db.Integer, nullable=False)
+    analysis_type = db.Column(db.String,primary_key=True, nullable=False)
+    subject_id = db.Column(db.Integer, db.ForeignKey('subject.id'),primary_key=True, nullable=False)
+    num_chap = db.Column(db.Integer,primary_key=True, nullable=False)
     main_text = db.Column(db.Text, nullable=False)
 
 
@@ -109,3 +109,28 @@ class Knowledge(db.Model):
     num_chap = db.Column(db.Integer, primary_key=True, nullable=False)
     url_chap = db.Column(db.String, nullable=False)
     latex_text = db.Column(db.Text, nullable=False)
+
+class TempTest(db.Model):
+    __tablename__ = "temp_test"
+    id = db.Column(db.String(36), primary_key=True)  # UUID as primary key
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
+    subject = db.Column(db.String(10), nullable=False)
+    questions = db.Column(db.PickleType, nullable=False)  # Store as a pickled object
+    chapter = db.Column(db.Integer, nullable=False)
+    time_limit = db.Column(db.Integer, nullable=False)
+    rate = db.Column(db.PickleType, nullable=False)
+
+
+class TestDate(db.Model):
+    __tablename__ = "test_date"
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), primary_key=True, nullable=False)
+    test_type = db.Column(db.Integer, primary_key=True, nullable=False)  # 1 = Total, 0 = Chapter, 3 = Practice
+    subject = db.Column(db.String(100), primary_key=True, nullable=False)  # Thêm cột subject
+    date = db.Column(db.Date, nullable=False)
+
+class LessonInfo(db.Model):
+    __tablename__ = "lesson_info"
+    subject = db.Column(db.String(10), primary_key = True,nullable=False)
+    chapter_num = db.Column(db.String,primary_key = True, nullable=False)
+    lesson_num = db.Column(db.String, primary_key = True, nullable=False)
+    lesson_name = db.Column(db.String, nullable=False)
