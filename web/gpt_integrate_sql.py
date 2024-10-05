@@ -167,7 +167,7 @@ class promptTotal(promptCreation):
             "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
             "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
             "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
-            f"- Đặc biệt Ghi rõ cụ thể tên bài, cụ thể loại câu hay sai của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
+            f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
         )
         return data_prompt
     def return_max_chap(self):
@@ -321,7 +321,7 @@ class generateAnalysis:
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
             f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n"
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
-            f"5. Tìm ra những loại câu hay sai nhất của từng chương dựa vào phân tích, ghi rõ ra loại nào từng chương một (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
+            f"5. ĐẶC BIỆT ÔN TẬP NHỮNG LOẠI CÂU HAY SAI NHẤT của từng chương dựa vào phân tích, GHI RÕ RA LOẠI NÀO TỪNG CHƯƠNG MỘT (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
@@ -335,7 +335,7 @@ class generateAnalysis:
         # # Gọi GPT với prompt ban đầu
         response = self.call_gpt(prompt)
         
-        # # Kiểm tra và bổ sung nếu cần
+        # # # Kiểm tra và bổ sung nếu cần
         # required_factors = [
         #     "Ôn tập luôn cả loại câu hỏi hay sai của từng chương : Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao",
         # ]
