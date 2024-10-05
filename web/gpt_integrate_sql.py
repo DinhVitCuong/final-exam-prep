@@ -304,13 +304,13 @@ class generateAnalysis:
             f"2. Chuẩn bị học chương {self.num_chap + 1} để sẵn sàng cho bài test chương tiếp theo.\n"
             f"3. Từ dữ liệu test tổng, tập trung cải thiện điểm yếu đã chỉ ra ({diff}) của từng chương, sử dụng các chức năng của ứng dụng ({functions}), nhắc nhở ôn tập cụ thể tên bài nào chương nào\n"
             f"4. Lưu ý không bỏ sót việc nhắc học sinh làm bài test chương {self.num_chap + 1} vào ngày {str(date_chap.strftime('%d/%m/%Y'))[:10]}, bài test tổng vào ngày {str(date_total)[:10]}\n"
-            f"5. Ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
+            f"5. Đặc biệt chú ý ôn tập chương kèm với cụ thể các loại câu hỏi hay sai nhất từ dữ liệu test tổng (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và cụ thể tên bài học sai nhiều của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
         prompt += (
-            f"Đặc biệt tập trung vào các yếu tố 3,4,5 (đặc biệt yếu tố 5) vừa rồi, chỉ lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]} thôi, ôn tập hết tất cả các chương\n"
-            f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
-            "Đặc biệt nhất là đừng có ghi số bài học mà ghi rõ tên bài, cực kì chú ý ghi rõ tên loại câu hỏi sai nhiều của chương đó (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao)\n"
+            f"lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
+            # f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
+            # f"Đặc biệt nhất là đừng có ghi số bài học mà ghi rõ tên bài, đặc biệt chú ý ghi rõ tên loại câu hỏi sai nhiều từng chương một (từ chương 1 tới đang học) (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao) và ghi rõ chúng vào 1 ngày\n"
             "Hãy viết theo format sau: \n"
             "'ngày xx/tháng xx/năm xxxx : Ôn tập chương 1 môn lý, tập trung vào bài giao động điều hòa và sóng cơ, sử dụng wrong question searching để xem lại các loại câu hỏi Nhận Biết, Thông Hiểu'\n"
         )
