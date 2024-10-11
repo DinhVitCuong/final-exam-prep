@@ -388,11 +388,11 @@ class generateAnalysis:
 
 
 
-app = create_app()
-with app.app_context():
-    # prompt = promptTotal(1,10, "L", 2).deep_analysis()
-    # print(prompt)
-    analyzer = generateAnalysis("L", 7, 10, 2)
-    json_data = analyzer.turning_into_json()
-    print(json_data)    
+# app = create_app()
+# with app.app_context():
+#     # prompt = promptTotal(1,10, "L", 2).deep_analysis()
+#     # print(prompt)
+#     analyzer = generateAnalysis("L", 7, 10, 2)
+#     json_data = analyzer.turning_into_json()
+#     print(json_data)    
 
