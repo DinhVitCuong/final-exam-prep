@@ -329,7 +329,7 @@ def total_test(subject):
     
     # Pass the test ID to the template
     return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chapter, user_id = user_id)
-        
+    
 @app.route("/total-test/<chap_id>/<subject>", methods=["POST"])
 def total_test_post(chap_id, subject):
     # Existing logic for processing answers
@@ -991,6 +991,82 @@ def analyze_total_test(subject_id):
 
 
 
+@app.route('/subject/<subject_id>/exam-history', methods=['GET', 'POST'])
+def total_exam_history(subject_id):
+    subject_name = ''
+    
+    if subject_id == 'S1':  # Toán
+        subject_name = 'Toán'
+        subject = 'T'
+    elif subject_id == 'S2':  # Lí  
+        subject_name = 'Lí'
+        subject = 'L' 
+    elif subject_id == 'S3':  # Hóa
+        subject_name = 'Hóa' 
+        subject = 'H' 
+    else:
+        return redirect(url_for('home'))
+    
+    user_id = str(current_user.id)
+
+    query = db.session.query(Test).filter_by(test_type=1, user_id=int(user_id)).all()
+    test_list = []
+    for test in query:
+        num_question = 0
+        num_wrong_answer = 0
+        percent_of_correct_answer = 0
+        num_question = test.questions.count('_') + 1
+        num_wrong_answer = test.wrong_answer.count('_') + 1
+        percent_of_correct_answer = round((1 - num_wrong_answer / num_question) * 100, 2)  
+        test_data = {
+            'test_type': test.test_type,
+            'time': test.time.strftime('%d/%m/%Y'),
+            'progress': percent_of_correct_answer  
+        } 
+        test_list.append(test_data)
+
+    return render_template('totalHistory.html', test_list=test_list, subject_id=subject_id) 
+
+ 
+ 
+@app.route('/subject/<subject_id>/<chap_id>/exam-history', methods=['GET', 'POST'])
+def chapter_exam_history(subject_id,chap_id):
+    subject_name = ''
+    
+    if subject_id == 'S1':  # Toán
+        subject_name = 'Toán'
+        subject = 'T'
+    elif subject_id == 'S2':  # Lí  
+        subject_name = 'Lí'
+        subject = 'L' 
+    elif subject_id == 'S3':  # Hóa
+        subject_name = 'Hóa' 
+        subject = 'H' 
+    else:
+        return redirect(url_for('home'))
+    
+    user_id = str(current_user.id)
+    chap_id = int(chap_id)
+
+    query = db.session.query(Test).filter_by(test_type=0, user_id=int(user_id),knowledge=chap_id).all()
+
+    test_list = []
+    for test in query:
+        num_question = 0
+        num_wrong_answer = 0
+        percent_of_correct_answer = 0
+        num_question = test.questions.count('_') + 1
+        num_wrong_answer = test.wrong_answer.count('_') + 1
+        percent_of_correct_answer = round((1 - num_wrong_answer / num_question) * 100, 2)  
+        test_data = {
+            'test_type': test.test_type,
+            'time': test.time.strftime('%d/%m/%Y'),
+            'chapter': test.knowledge,
+            'progress': percent_of_correct_answer  
+        } 
+        test_list.append(test_data) 
+
+    return render_template('chapterHistory.html', test_list=test_list, subject_id=subject_id, chap_id=chap_id) 
 
 
 
