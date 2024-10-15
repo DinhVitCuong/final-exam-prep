@@ -1077,6 +1077,100 @@ def chapter_exam_history(subject_id,chap_id):
 
 
 
+@app.route('/subject/<subject_id>/<chap_id>/review-chapter', methods=['GET','POST'])
+def review_chapter(subject_id, chap_id):
+    if subject_id == 'S3':
+        if chap_id == '01':
+            chapter_title = 'Este và Lipit'
+            img_src = "/static/chemistry/c1.jpg"
+
+        elif chap_id == '02':
+            chapter_title = 'Cacbohidrat'
+            img_src = "/static/chemistry/c2.jpg"
+
+        elif chap_id == '03':
+            chapter_title = 'Amin, Amino axit và protein'
+            img_src = "/static/chemistry/c3.png"
+        
+        elif chap_id == '04':
+            chapter_title = 'Polime và vật liệu polime'
+            img_src = "/static/chemistry/c4.png"
+
+        elif chap_id == '05':
+            chapter_title = 'Đại cương về kim loại'
+            img_src = "/static/chemistry/c5.png"
+
+        elif chap_id == '06':
+            chapter_title = 'Kim loại kiềm - kiềm thổ - nhôm'
+            img_src = "/static/chemistry/c6.png"
+
+        elif chap_id == '07':
+            chapter_title = 'Crom - Sắt - Đồng'
+            img_src = "/static/chemistry/c7.png"
+    
+    if subject_id == 'S2':
+        if chap_id == '01':
+            chapter_title = ' Dao động cơ'
+            img_src = "/static/physics/c1.jpg"
+
+        elif chap_id == '02':
+            chapter_title = 'Sóng cơ và sóng âm'
+            img_src = "/static/physics/c2.jpg"
+
+        elif chap_id == '03':
+            chapter_title = 'Dòng điện xoay chiều'
+            img_src = "/static/physics/c3.jpg"
+        
+        elif chap_id == '04':
+            chapter_title = 'Giao động và sóng điện từ'
+            img_src = "/static/physics/c4.jpg"
+
+        elif chap_id == '05':
+            chapter_title = 'Sóng ánh sáng'
+            img_src = "/static/physics/c5.png"
+
+        elif chap_id == '06':
+            chapter_title = 'Lượng tử ánh sáng'
+            img_src = "/static/physics/c6.png"
+
+        elif chap_id == '07':
+            chapter_title = 'Hạt nhân nguyên tử'
+            img_src = "/static/physics/c7.png"
+
+    if subject_id == 'S1':
+        if chap_id == '01':
+            chapter_title = 'Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số'
+            img_src = "/static/maths/c1.jpeg"
+
+        elif chap_id == '02':
+            chapter_title = 'Hàm số lũy thừa, hàm số mũ và hàm số logarit'
+            img_src = "/static/maths/c2.jpg"
+
+        elif chap_id == '03':
+            chapter_title = 'Nguyên hàm. Tích phân và ứng dụng'
+            img_src = "/static/maths/c3.jpg"
+        
+        elif chap_id == '04':
+            chapter_title = 'Số phức'
+            img_src = "/static/maths/c4.jpg"
+
+        elif chap_id == '05':
+            chapter_title = 'Khối đa diện'
+            img_src = "/static/maths/c5.jpg"
+
+        elif chap_id == '06':
+            chapter_title = 'Mặt nón, mặt trụ, mặt cầu'
+            img_src = "/static/maths/c6.jpg"
+
+        elif chap_id == '07':
+            chapter_title = 'Phương pháp tọa độ trong không gian'
+            img_src = "/static/maths/c7.jpg"
+
+
+
+    return render_template("chatbot.html", subject_id=subject_id, chap_id=chap_id,chapter_title=chapter_title,img_src=img_src)
+
+   
 
 
 
