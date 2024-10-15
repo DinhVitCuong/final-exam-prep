@@ -329,7 +329,7 @@ def total_test(subject):
     
     # Pass the test ID to the template
     return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chapter, user_id = user_id)
-    
+
 @app.route("/total-test/<chap_id>/<subject>", methods=["POST"])
 def total_test_post(chap_id, subject):
     # Existing logic for processing answers
@@ -402,7 +402,7 @@ def total_test_post(chap_id, subject):
 
     # Redirect to the review route
     return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
-    
+        
 @app.route('/subject/<subject_id>', methods=["GET", "POST"])
 def subject(subject_id):
     subject_name = ''
@@ -672,7 +672,7 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
     return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id, user_id = user_id)
 
         
-    
+        
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["POST"])
 def chapter_test_post(chap_id, subject):
     # Existing logic for processing answers
@@ -685,7 +685,7 @@ def chapter_test_post(chap_id, subject):
 
     # Extract the test data
     questions = temp_test.questions
-    chapter = temp_test.chapter
+    chapter = str(temp_test.chapter)
     time_spent = request.form.get('timeSpent')
     answers = request.form.get('answers')
     date = datetime.now().date()
@@ -717,12 +717,18 @@ def chapter_test_post(chap_id, subject):
     wrong_answer_string = "_".join(wrong_answers)
     score = f"{result.count('1')}/{len(result)}"
 
+
+    if isinstance(chap_id, int):
+        chapter_str = f"{chap_id:02d}"
+    else:
+        chapter_str = str(chap_id)
+
     # Create a new test record in the database
     new_test_record = Test(
         user_id=user_id,
-        test_type=1,  # Total test type
+        test_type=0,  
         time=date,
-        knowledge=chapter,
+        knowledge=chapter_str,
         questions=questions_ID_string,
         wrong_answer=wrong_answer_string,
         result="_".join(result),
@@ -737,13 +743,14 @@ def chapter_test_post(chap_id, subject):
 
     task_id = str(uuid4())
 
-    print(chap_id)
+    # print(chap_id)
     # Run analysis in a separate thread and pass the app object
     analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, user_id, task_id, 0))
     analysis_thread.start()
 
     # Redirect to the review route
     return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+
 
 
 # Define task statuses globally
@@ -989,8 +996,6 @@ def analyze_total_test(subject_id):
 
 
 
-
-
 @app.route('/subject/<subject_id>/exam-history', methods=['GET', 'POST'])
 def total_exam_history(subject_id):
     subject_name = ''
@@ -1027,8 +1032,8 @@ def total_exam_history(subject_id):
 
     return render_template('totalHistory.html', test_list=test_list, subject_id=subject_id) 
 
- 
- 
+
+     
 @app.route('/subject/<subject_id>/<chap_id>/exam-history', methods=['GET', 'POST'])
 def chapter_exam_history(subject_id,chap_id):
     subject_name = ''
@@ -1046,7 +1051,7 @@ def chapter_exam_history(subject_id,chap_id):
         return redirect(url_for('home'))
     
     user_id = str(current_user.id)
-    chap_id = int(chap_id)
+    chap_id = str(chap_id)
 
     query = db.session.query(Test).filter_by(test_type=0, user_id=int(user_id),knowledge=chap_id).all()
 
@@ -1068,11 +1073,7 @@ def chapter_exam_history(subject_id,chap_id):
 
     return render_template('chapterHistory.html', test_list=test_list, subject_id=subject_id, chap_id=chap_id) 
 
-
-
-
-
-
+ 
 
 
 
