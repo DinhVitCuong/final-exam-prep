@@ -233,10 +233,10 @@
   <script type="text/javascript">
     window.MathJax = {
       loader: {
-        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem']
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem', '[tex]/textmacros']
       },
       tex: {
-        packages: {'[+]': ['mhchem']},
+        packages: {'[+]': ['textmacros', 'mhchem']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
       },
@@ -251,8 +251,8 @@
   </head>
   <body>
     <div class="test-page">
-      <button class="button--back">
-        <img src="{{ url_for('static', filename='assets/left-arrow-slider.svg') }}" />
+      <button class="button--back" onclick="window.location.href='/home'">
+        <img src="../static/assets/left-arrow-slider.svg" />
       </button>
 
       <div class="header">
@@ -307,6 +307,7 @@
       let answers = new Array(QAs.length).fill(null); // Track the answers
       const chap_id = "{{ chap_id }}";
       const user_id = "{{ user_id }}";
+      const subject_id = "{{ subject_id }}";
       // Update question content and options dynamically
       MathJax.startup.promise.then(() => {
         console.log("MathJax is ready");});

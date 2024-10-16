@@ -326,14 +326,35 @@
       border-radius: 16px;
       box-shadow: inset 0 0 2px 1px #2a2a2a;
     }
+    
+    #loadingIcon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 120px; /* Tăng chiều rộng */
+      margin-top: 0px;
+      padding: 10px;
+      text-align: center; /* Căn giữa văn bản */
+    }
+
+    #loadingIcon img {
+        width: 30px; /* Kích thước ảnh GIF */
+        height: 30px;
+    }
+
+    #loadingIcon p {
+        font-size: 14px; /* Tăng kích thước chữ */
+        margin-top: 5px;
+    }
   </style>
   <script type="text/javascript">
     window.MathJax = {
       loader: {
-        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem']
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem', '[tex]/textmacros']
       },
       tex: {
-        packages: {'[+]': ['mhchem']},
+        packages: {'[+]': ['textmacros', 'mhchem']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
       },
@@ -352,6 +373,11 @@
     <button id = "returnButton" class="button--back" style="display: none;" onclick="window.location.href='/home'" >
       <img src="/static/assets/left-arrow-slider.svg" />
     </button>
+
+    <div id="loadingIcon" style="display: none; text-align: center;">
+      <img src="{{ url_for('static', filename='assets/running_cat.gif') }}" alt="Loading..." style="width: 50px; height: 50px;" />
+      <p>Đang phân tích kết quả, đợi xí nha...</p>
+    </div>
 
     <div class="header">
       <div class="header__content">
@@ -490,23 +516,25 @@
     function checkTaskStatus(taskId) {
         $.get("/task_status/" + taskId, function(data) {
             if (data.status === 'complete') {
-                $("#returnButton").show();  // Show the return button when analysis is complete
-                
+                $("#loadingIcon").hide();  // Ẩn icon loading khi hoàn tất
+                $("#returnButton").show();  // Hiển thị nút trở về sau khi hoàn tất
             } else if (data.status === 'failed') {
+                $("#loadingIcon").hide();  // Ẩn icon loading nếu bị lỗi
                 $("#analysisStatus").html("Analysis Failed. Please try again later.");
             } else {
+                $("#loadingIcon").show();  // Hiển thị biểu tượng loading trong khi phân tích
                 setTimeout(function() {
-                    checkTaskStatus(taskId);  // Poll every 2 seconds
+                    checkTaskStatus(taskId);  // Poll mỗi 2 giây
                 }, 2000);
             }
         });
     }
 
     $(document).ready(function() {
-        var taskId = "{{ task_id }}";  // Get task ID from Flask
-        console.log("Task ID:", taskId);  // Log the task ID to check
+        var taskId = "{{ task_id }}";  // Lấy task ID từ Flask
         if (taskId) {
-            checkTaskStatus(taskId);  // Start polling for task completion
+            $("#loadingIcon").show();  // Hiển thị biểu tượng loading ngay khi bắt đầu
+            checkTaskStatus(taskId);  // Bắt đầu polling trạng thái task
         }
     });
     </script>
