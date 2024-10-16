@@ -1075,102 +1075,110 @@ def chapter_exam_history(subject_id,chap_id):
 
  
 
+api_key = os.getenv('OPENAI_API_KEY')
+client = OpenAI(api_key=api_key)
 
-
-@app.route('/subject/<subject_id>/<chap_id>/review-chapter', methods=['GET','POST'])
+@app.route('/subject/<subject_id>/<chap_id>/review-chapter', methods=['GET', 'POST'])
 def review_chapter(subject_id, chap_id):
-    if subject_id == 'S3':
-        if chap_id == '01':
-            chapter_title = 'Este và Lipit'
-            img_src = "/static/chemistry/c1.jpg"
+    chapter_data = {
+        "S3": {
+            "01": {"title": "Este và Lipit", "img": "/static/chemistry/c1.jpg"},
+            "02": {"title": "Cacbohidrat", "img": "/static/chemistry/c2.jpg"},
+            "03": {"title": "Amin, Amino axit và protein", "img": "/static/chemistry/c3.png"},
+            "04": {"title": "Polime và vật liệu polime", "img": "/static/chemistry/c4.png"},
+            "05": {"title": "Đại cương về kim loại", "img": "/static/chemistry/c5.png"},
+            "06": {"title": "Kim loại kiềm - kiềm thổ - nhôm", "img": "/static/chemistry/c6.png"},
+            "07": {"title": "Crom - Sắt - Đồng", "img": "/static/chemistry/c7.png"},
+        },
+        "S2": {
+            "01": {"title": "Dao động cơ", "img": "/static/physics/c1.jpg"},
+            "02": {"title": "Sóng cơ và sóng âm", "img": "/static/physics/c2.jpg"},
+            "03": {"title": "Dòng điện xoay chiều", "img": "/static/physics/c3.jpg"},
+            "04": {"title": "Giao động và sóng điện từ", "img": "/static/physics/c4.jpg"},
+            "05": {"title": "Sóng ánh sáng", "img": "/static/physics/c5.png"},
+            "06": {"title": "Lượng tử ánh sáng", "img": "/static/physics/c6.png"},
+            "07": {"title": "Hạt nhân nguyên tử", "img": "/static/physics/c7.png"},
+        },
+        "S1": {
+            "01": {"title": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số", "img": "/static/maths/c1.jpeg"},
+            "02": {"title": "Hàm số lũy thừa, hàm số mũ và hàm số logarit", "img": "/static/maths/c2.jpg"},
+            "03": {"title": "Nguyên hàm. Tích phân và ứng dụng", "img": "/static/maths/c3.jpg"},
+            "04": {"title": "Số phức", "img": "/static/maths/c4.jpg"},
+            "05": {"title": "Khối đa diện", "img": "/static/maths/c5.jpg"},
+            "06": {"title": "Mặt nón, mặt trụ, mặt cầu", "img": "/static/maths/c6.jpg"},
+            "07": {"title": "Phương pháp tọa độ trong không gian", "img": "/static/maths/c7.jpg"},
+        }
+    }
+    if subject_id in chapter_data and chap_id in chapter_data[subject_id]:
+        chapter_title = chapter_data[subject_id][chap_id]["title"]
+        img_src = chapter_data[subject_id][chap_id]["img"]
+        data = chapter_title  
+    else:
+        chapter_title = "Chapter Not Found"
+        img_src = ""
+        data = "No data available for this chapter."
 
-        elif chap_id == '02':
-            chapter_title = 'Cacbohidrat'
-            img_src = "/static/chemistry/c2.jpg"
+    return render_template("chatbot.html", subject_id=subject_id, chap_id=chap_id, chapter_title=chapter_title, img_src=img_src)
 
-        elif chap_id == '03':
-            chapter_title = 'Amin, Amino axit và protein'
-            img_src = "/static/chemistry/c3.png"
-        
-        elif chap_id == '04':
-            chapter_title = 'Polime và vật liệu polime'
-            img_src = "/static/chemistry/c4.png"
+# Tạo route API để xử lý câu hỏi từ người dùng
+@app.route("/api", methods=["POST"])
+def api():
+    try:
+        data = request.get_json()
+        print("Received data:", data)
 
-        elif chap_id == '05':
-            chapter_title = 'Đại cương về kim loại'
-            img_src = "/static/chemistry/c5.png"
+        message = data.get("message")
+        subject_id = data.get("subject_id")
+        chap_id = data.get("chap_id")
 
-        elif chap_id == '06':
-            chapter_title = 'Kim loại kiềm - kiềm thổ - nhôm'
-            img_src = "/static/chemistry/c6.png"
+        print("subject_id:", subject_id)
+        print("chap_id:", chap_id)
 
-        elif chap_id == '07':
-            chapter_title = 'Crom - Sắt - Đồng'
-            img_src = "/static/chemistry/c7.png"
-    
-    if subject_id == 'S2':
-        if chap_id == '01':
-            chapter_title = ' Dao động cơ'
-            img_src = "/static/physics/c1.jpg"
+        if not message or not subject_id or not chap_id:
+            return jsonify({"response": "Thiếu dữ liệu trong yêu cầu."}), 400
 
-        elif chap_id == '02':
-            chapter_title = 'Sóng cơ và sóng âm'
-            img_src = "/static/physics/c2.jpg"
+        # Định dạng chap_id thành chuỗi hai chữ số
+        chap_id_formatted = chap_id.zfill(2)
 
-        elif chap_id == '03':
-            chapter_title = 'Dòng điện xoay chiều'
-            img_src = "/static/physics/c3.jpg"
-        
-        elif chap_id == '04':
-            chapter_title = 'Giao động và sóng điện từ'
-            img_src = "/static/physics/c4.jpg"
+        # Truy vấn cơ sở dữ liệu
+        knowledge_data = Knowledge.query.filter_by(
+            id_subject=subject_id, num_chap=chap_id_formatted
+        ).first()
 
-        elif chap_id == '05':
-            chapter_title = 'Sóng ánh sáng'
-            img_src = "/static/physics/c5.png"
+        if knowledge_data is None:
+            return jsonify({"response": "Không tìm thấy dữ liệu cho môn học và chương này."}), 404
+ 
+        # Gọi API OpenAI
+        try:
+            completion = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": f"Bạn là 1 gia sư giải thích lý thuyết bài học cho học sinh, sau đây là phần lý thuyết của bài học học sinh chuẩn bị hỏi: {knowledge_data.latex_text}"
+                    },
+                    {"role": "user", "content": message}
+                ]
+            )
+        except Exception as e:
+            print("Error during OpenAI API call:", e)
+            return jsonify({"response": "Lỗi khi giao tiếp với dịch vụ AI."}), 500
 
-        elif chap_id == '06':
-            chapter_title = 'Lượng tử ánh sáng'
-            img_src = "/static/physics/c6.png"
+        if completion.choices and completion.choices[0].message:
+            content = completion.choices[0].message.content
+            return jsonify({"response": content})
+        else:
+            return jsonify({"response": "Không thể tạo phản hồi."}), 500
 
-        elif chap_id == '07':
-            chapter_title = 'Hạt nhân nguyên tử'
-            img_src = "/static/physics/c7.png"
-
-    if subject_id == 'S1':
-        if chap_id == '01':
-            chapter_title = 'Ứng dụng đạo hàm để khảo sát và vẽ đồ thị của hàm số'
-            img_src = "/static/maths/c1.jpeg"
-
-        elif chap_id == '02':
-            chapter_title = 'Hàm số lũy thừa, hàm số mũ và hàm số logarit'
-            img_src = "/static/maths/c2.jpg"
-
-        elif chap_id == '03':
-            chapter_title = 'Nguyên hàm. Tích phân và ứng dụng'
-            img_src = "/static/maths/c3.jpg"
-        
-        elif chap_id == '04':
-            chapter_title = 'Số phức'
-            img_src = "/static/maths/c4.jpg"
-
-        elif chap_id == '05':
-            chapter_title = 'Khối đa diện'
-            img_src = "/static/maths/c5.jpg"
-
-        elif chap_id == '06':
-            chapter_title = 'Mặt nón, mặt trụ, mặt cầu'
-            img_src = "/static/maths/c6.jpg"
-
-        elif chap_id == '07':
-            chapter_title = 'Phương pháp tọa độ trong không gian'
-            img_src = "/static/maths/c7.jpg"
+    except Exception as e:
+        print("Error in /api route:", e)
+        return jsonify({"response": "Máy chủ gặp lỗi khi xử lý yêu cầu."}), 500
 
 
 
-    return render_template("chatbot.html", subject_id=subject_id, chap_id=chap_id,chapter_title=chapter_title,img_src=img_src)
 
-   
+
+
 
 
 
