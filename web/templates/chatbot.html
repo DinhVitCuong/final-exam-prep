@@ -4,6 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- <script type="text/javascript">
+      MathJax = {
+        tex: {
+          inlineMath: [['\\(', '\\)'], ['$', '$']],
+          displayMath: [['\\[', '\\]'], ['$$', '$$']],
+        },
+        options: {
+          renderActions: {
+            addNode: [0, '', 'add'],
+            updateNode: [0, '', 'update'],
+            typeset: [2, 'typeset', ''],
+          }
+        }
+      };
+    </script> -->
+    
+    <!-- Load MathJax from a CDN -->
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    
     <style>
       * {
         box-sizing: border-box;
@@ -179,13 +203,13 @@
   </head>
   <body>
     <div class="chatbot">
-      <button class="button--back">
-        <img src="/assets/left-arrow-slider.svg" />
+      <button class="button--back" onclick="window.location.href='/home'">
+        <img src="./static/assets/left-arrow-slider.svg">
       </button>
 
       <div class="current-chapter__container">
         <div class="chapter__header">
-          <h2>Chương {{chapt_id}}: {{ chapter_title }}</h2>
+          <h2>Chương {{chap_id}}: {{ chapter_title }}</h2>
         </div>
 
         <div id="image-container">
@@ -228,63 +252,106 @@
         image.parentElement.addEventListener('wheel', panzoom.zoomWithWheel);
       });
     </script>
-
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        const chatMessages = document.getElementById('chatMessages');
-        const userInput = document.getElementById('userInput');
-        const sendButton = document.getElementById('sendButton');
-
-        sendButton.addEventListener('click', function () {
-          sendMessage();
-        });
-
-        userInput.addEventListener('keydown', function (event) {
-          if (event.key === 'Enter') {
-            event.preventDefault(); // Ngăn việc gửi form khi ấn Enter
-            sendMessage();
-          }
-        });
-
-        function sendMessage() {
+          const chatMessages = document.getElementById('chatMessages');
+          const userInput = document.getElementById('userInput');
+          const sendButton = document.getElementById('sendButton');
+    
+          sendButton.addEventListener('click', function () {
+              sendMessage();
+          });
+    
+          userInput.addEventListener('keydown', function (event) {
+              if (event.key === 'Enter') {
+                  event.preventDefault();
+                  sendMessage();
+              }
+          });
+    
+          async function sendMessage() {
           const userMessage = userInput.value.trim();
           if (userMessage) {
-            appendMessage(userMessage, 'user');
-            userInput.value = ''; // Xóa trường nhập sau khi gửi
-            setTimeout(() => {
-              const aiMessage = getAIResponse(userMessage);
+              appendMessage(userMessage, 'user');
+              userInput.value = '';
+
+              const subjectId = "{{ subject_id }}";  
+              const chapId = "{{ chap_id }}";       
+
+              const aiMessage = await getAIResponse(userMessage, subjectId, chapId);
               appendMessage(aiMessage, 'ai');
-            }, 500); // Giả lập thời gian phản hồi của AI
           }
         }
+    
+          function appendMessage(message, sender) {
+              const messageElement = document.createElement('div');
+              messageElement.classList.add('message', sender);
+    
+              const avatar = document.createElement('img');
+              avatar.classList.add('avatar');
+              avatar.src = sender === 'user' ? '/static/images/user-avatar.png' : '/static/images/ai-avatar.png';
+              avatar.alt = sender === 'user' ? 'User Avatar' : 'AI Avatar';
+    
+              const textElement = document.createElement('div');
+              textElement.classList.add('text');
+              textElement.innerHTML = message; 
+    
+              messageElement.appendChild(avatar);
+              messageElement.appendChild(textElement);
+    
+              chatMessages.appendChild(messageElement);
+              chatMessages.scrollTop = chatMessages.scrollHeight;
+    
+              MathJax.typesetPromise([textElement])
+                  .then(() => {
+                      console.log("MathJax rendering completed");
+    
+                      const markdownContent = marked.parse(textElement.innerHTML);
+                      textElement.innerHTML = markdownContent;
+                      
+                      MathJax.typesetPromise([textElement])
+                          .then(() => {
+                              console.log("MathJax re-rendering completed after Markdown");
+                          });
+                  })
+                  .catch(function (err) {
+                      console.error('Error in MathJax rendering:', err);
+                  });
+          }
+    
+          async function getAIResponse(userMessage, subjectId, chapId) {
+            try {
+                const response = await fetch('/api', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        message: userMessage,
+                        subject_id: subjectId,
+                        chap_id: chapId
+                    })
+                });
 
-        function appendMessage(message, sender) {
-          const messageElement = document.createElement('div');
-          messageElement.classList.add('message', sender);
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    console.error('Server error:', response.status, errorText);
+                    return 'Xin lỗi, máy chủ gặp lỗi khi xử lý yêu cầu.';
+                }
 
-          const avatar = document.createElement('img');
-          avatar.classList.add('avatar');
-          avatar.src =
-            sender === 'user'
-              ? '/assets/google-icon.svg'
-              : '/assets/like.svg'; // avatars of user and ai
-          avatar.alt = sender === 'user' ? 'User Avatar' : 'AI Avatar';
+                const data = await response.json();
+                if (!data.response) {
+                    console.error('Invalid response format:', data);
+                    return 'Xin lỗi, máy chủ trả về dữ liệu không hợp lệ.';
+                }
 
-          const textElement = document.createElement('div');
-          textElement.classList.add('text');
-          textElement.textContent = message;
-
-          messageElement.appendChild(avatar);
-          messageElement.appendChild(textElement);
-
-          chatMessages.appendChild(messageElement);
-          chatMessages.scrollTop = chatMessages.scrollHeight; // Tự động cuộn xuống dưới cùng
+                return data.response;
+            } catch (error) {
+                console.error('Error:', error);
+                return 'Xin lỗi, có lỗi xảy ra khi xử lý yêu cầu.';
+            }
         }
 
-        function getAIResponse(userMessage) {
-          // Giả lập phản hồi của AI
-          return 'This is a hardcoded response from AI.';
-        }
       });
     </script>
   </body>
