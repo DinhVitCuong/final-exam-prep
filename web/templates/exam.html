@@ -233,10 +233,10 @@
   <script type="text/javascript">
     window.MathJax = {
       loader: {
-        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem']
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem', '[tex]/textmacros']
       },
       tex: {
-        packages: {'[+]': ['mhchem']},
+        packages: {'[+]': ['textmacros', 'mhchem']},
         inlineMath: [['$', '$'], ['\\(', '\\)']],
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
       },
