@@ -253,14 +253,14 @@ class generateAnalysis:
 
     def return_subject_name(self):
         name = {
-            "M": "Toán",
+            "T": "Toán",
             "L": "Lý",
             "H": "Hóa",
             "S": "Sinh",
             "V": "Văn",
             "A": "Anh",
         }
-        return name.get(self.subject, "Unknown Subject")
+        return name[self.subject]
     
     # def __init__(self, type_test, num_test, subject, user_id = None, num_chap = None):
     def return_prompt(self, analyze_type):
@@ -394,9 +394,9 @@ class generateAnalysis:
 
 # app = create_app()
 # with app.app_context():
-#     # prompt = promptTotal(1,10, "L", 2).deep_analysis()
+#     # prompt = promptTotal(1,10, "H", 2).deep_analysis()
 #     # print(prompt)
-#     analyzer = generateAnalysis("L", 7, 10, 2)
+#     analyzer = generateAnalysis("T", 7, 10, 2)
 #     json_data = analyzer.turning_into_json()
 #     print(json_data)    
 
