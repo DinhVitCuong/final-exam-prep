@@ -171,7 +171,7 @@ class promptTotal(promptCreation):
             "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
             "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
             "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
-            f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
+            f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI CHỨ ĐỪNG GHI SỐ BÀI NHƯ 02 03, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
         )
         return data_prompt
     def return_max_chap(self):
@@ -328,10 +328,11 @@ class generateAnalysis:
             f"5. ĐẶC BIỆT ÔN TẬP NHỮNG LOẠI CÂU HAY SAI NHẤT của từng chương dựa vào phân tích, GHI RÕ RA LOẠI NÀO TỪNG CHƯƠNG MỘT (0, 1, 2, 3 tương ứng với nhận biết, thông hiểu, vận dụng, vận dụng cao) từ dữ liệu test tổng, và CỤ THỂ TÊN BÀI HỌC SAI NHIỀU của chương đó (cùng từ dữ liệu test tổng luôn), biết rằng : {self.lesson_info()}\n"
         )
         # {str(current_date.strftime('%d/%m/%Y'))[:10]}
+        print({str(date_total.strftime('%d/%m/%Y'))[:10]})
         prompt += (
             f"lập kế hoạch từ ngày {str(current_date.strftime('%d/%m/%Y'))[:10]}  đến ngày {str(date_total.strftime('%d/%m/%Y'))[:10]}\n"
             # f"Tác vụ trong 1 ngày càng chi tiết càng tốt\n "
-            f"Đặc biệt nhất là đừng có ghi số bài học mà ghi rõ tên bài, đặc biệt chú ý ghi rõ tên loại câu hỏi sai nhiều từng chương một (từ chương 1 tới đang học) (Nhận biết, Thông hiểu, Vận dụng, Vận dụng cao) và ghi rõ chúng vào 1 ngày\n"
+            f"Hãy đảm bảo tập trung đầy đủ cụ thể tên bài bằng chữ không phải số, và loại câu hỏi sai nhiều nhất của từng chương\n"
             "Hãy viết theo format sau: \n"
             f"'ngày xx/tháng xx/năm xxxx : Ôn tập chương 1 môn {self.return_subject_name()}, tập trung vào bài giao động điều hòa và sóng cơ, sử dụng wrong question searching để xem lại các loại câu hỏi Nhận Biết, Thông Hiểu'\n"
         )
@@ -396,7 +397,7 @@ class generateAnalysis:
 # with app.app_context():
 #     # prompt = promptTotal(1,10, "H", 2).deep_analysis()
 #     # print(prompt)
-#     analyzer = generateAnalysis("T", 7, 10, 2)
+#     analyzer = generateAnalysis("H", 7, 10, 2)
 #     json_data = analyzer.turning_into_json()
 #     print(json_data)    
 
