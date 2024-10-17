@@ -80,8 +80,12 @@ class promptCreation:
     
     def next_test_date(self):
         
+        
         query =  db.session.query(TestDate).filter_by(subject = self.subject, user_id = int(self.user_id)).first()
-        date = query.date
+        if query == None:
+            date = datetime.now().date()
+        else:
+            date = query.date
         
         date = pd.to_datetime(date)  
         print(self.data.time_to_do_test)   

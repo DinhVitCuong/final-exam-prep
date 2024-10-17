@@ -33,7 +33,7 @@ from flask_login import (
 )
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate, Knowledge
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
@@ -751,11 +751,12 @@ def chapter_test_post(chap_id, subject):
     # Redirect to the review route
     return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
 
+import logging
 
+logging.basicConfig(level=logging.DEBUG)
 
 # Define task statuses globally
 task_statuses = {}
-
 def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
     with app.app_context():
         # try:
@@ -767,9 +768,15 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 task_statuses[task_id] = 'running'
 
                 # Generate the analysis content
-                
-                num_of_test_done = Test.query.filter_by(test_type=test_type, knowledge=chap_id).count()
-                num_test = 10 if num_of_test_done >= 10 else num_of_test_done
+                num_of_test1 = Test.query.filter(
+                    Test.questions.like(f"{subject}%")
+                )
+                num_of_test_done = num_of_test1.filter_by(user_id=user_id, test_type=test_type).count()
+                # num_test = 10 if num_of_test_done >= 10 else num_test=num_of_test_done
+                if num_of_test_done >= 10:
+                    num_test = 10
+                else:
+                    num_test=num_of_test_done
 
                 analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
                 analyze_content = analyzer.analyze("chapter")
@@ -780,24 +787,44 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 task_statuses[task_id] = 'running'
 
                 # Generate the analysis content
-                
-                num_of_test_done = Test.query.filter_by(test_type=test_type).count()
-                num_test = 10 if num_of_test_done > 10 else num_of_test_done
-                
+                # print(subject)
+                # print('print subject roi ne')
+                num_of_test1 = db.session.query(Test).filter(
+                    Test.questions.like(f"{subject}%")
+                )
+
+                # Sau đó lọc tiếp theo user_id và test_type trước khi đếm số lượng
+                num_of_test_done = num_of_test1.filter_by(user_id = user_id, test_type = test_type).count()
+
+                # tests = num_of_test1.filter_by(user_id=user_id, test_type=test_type)
+                # logging.debug(f"Tests query result: {tests}")
+
+                if num_of_test_done >= 10:
+                    num_test = 10
+                else:
+                    num_test=num_of_test_done
+
+                print(num_of_test1.filter_by(user_id = user_id, test_type = test_type))
+                print(subject)
                 print(chap_id)
                 print(num_test)
-                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
-                analyze_content = analyzer.analyze("deep")
+
+                # 
+                # analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
+                # analyze_content = analyzer.analyze("deep")
 
                 # get date để làm test
                 drawBase = DrawChartBase(subject, int(chap_id), test_type=1, num =num_test, user_id = user_id)
+
+
                 days = drawBase.time_to_do_test
-                exisiting_test = Test.query.filter_by(test_type=test_type).first()
-                exisiting_date = TestDate.query.filter_by(user_id = user_id, test_type = test_type).first()
+                exisiting_test = Test.query.filter_by(user_id = user_id, test_type=test_type).first()
+                exisiting_date = TestDate.query.filter_by(user_id = user_id, test_type = test_type, subject = subject).first()
                 if isinstance(days, timedelta):
-                    days = days.days  # Extract the number of days if `days` is a timedelta
+                    days = days.days  # Extract the number of days if days is a timedelta
 
                 if not exisiting_test or not exisiting_date:
+
                     # Get the current date and add the number of days
                     new_date = datetime.now()
                     new_date_with_days_added = new_date + timedelta(days=days)
@@ -806,16 +833,51 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                     new_date_str = new_date_with_days_added.date()
 
                     # Create a new TestDate object
+                    
+
+                    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
+                    analyze_content = analyzer.analyze("deep")
+
+                    current_date = datetime.now().date()
+                    existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date).all()
+                    # thêm subject , update lại hàm filter ở trên, nếu nhỏ hơn current date của cùng subject thì xóa 
+
+
+                        # Xóa các todo có date nhỏ hơn ngày hiện tại
+                    for todo in existing_todos:
+                        db.session.delete(todo)
+                    db.session.commit()
+                    todo_json = analyzer.turning_into_json()
+
+
+            
+                    print(todo_json)
+                        # print(todo_json)
+                    for todo in todo_json:
+                        new_todo = TodoList(
+                            todo_id=str(uuid4()),
+                            user_id=user_id,
+                            date=todo["date"],
+                            action=todo["action"],
+                            status=todo["done"]
+                        )
+                        db.session.add(new_todo)
+                        # update date
                     new_test_date = TestDate(
                         user_id=user_id,
                         test_type=test_type,
                         subject=subject,
-                        date=new_date_str
+                        date=current_date+timedelta(days=days)
                     )
                     db.session.add(new_test_date)
                     db.session.commit()
 
+
+
                 else:
+                    analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
+                    analyze_content = analyzer.analyze("deep")
+
                     # Compare current date and existing date
                     current_date = datetime.now().date()
                     prev_date = exisiting_date.date  # Assuming it's a string like '2024-10-01'
@@ -880,8 +942,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
         #     # Mark task as failed in case of an error
         #     task_statuses[task_id] = 'failed'
         #     print(f"Error during analysis: {e}, test_type: {test_type}")
-            
-
+ 
 
 @app.route("/task_status/<task_id>")
 def task_status(task_id):
@@ -965,16 +1026,20 @@ def analyze_total_test(subject_id):
         num_test = 10  # Limit to 10 tests
 
     # Query the max chapter (chap_id) from the test records
-    chap_id_list = db.session.query(Test.knowledge).filter_by(
-        user_id=current_user.id,
-        test_type=test_type
-    ).all()
-    if chap_id_list != []:
-        # handle error neu nhu ko co
-        chap_id = max(int(a[0]) for a in chap_id_list)  # Extract max chap_id
+    knowledge_list = db.session.query(Test.knowledge).filter(
+            Test.user_id == current_user.id,
+            Test.test_type == test_type,
+            Test.questions.like(f"{subject}%")
+        ).all()
+
+    if knowledge_list:
+            # Lấy giá trị knowledge từ các tuple
+        chap_id = max(knowledge[0] for knowledge in knowledge_list)
     else:
-        return "Loi roi dume"
+        return "Không tìm thấy kết quả phù hợp"
     # Check for an existing analysis record
+    print(chap_id)
+
     existing_record = Analysis.query.filter_by(
         user_id=current_user.id,
         analysis_type=test_type,
@@ -1074,6 +1139,8 @@ def chapter_exam_history(subject_id,chap_id):
     return render_template('chapterHistory.html', test_list=test_list, subject_id=subject_id, chap_id=chap_id) 
 
  
+import os
+from openai import OpenAI
 
 api_key = os.getenv('OPENAI_API_KEY')
 client = OpenAI(api_key=api_key)
@@ -1120,7 +1187,6 @@ def review_chapter(subject_id, chap_id):
 
     return render_template("chatbot.html", subject_id=subject_id, chap_id=chap_id, chapter_title=chapter_title, img_src=img_src)
 
-# Tạo route API để xử lý câu hỏi từ người dùng
 @app.route("/api", methods=["POST"])
 def api():
     try:
@@ -1254,4 +1320,4 @@ def api():
     
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True) 

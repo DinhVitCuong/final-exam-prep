@@ -262,7 +262,7 @@
             </div>
             <div class="buttons-container">
               <button class="button--watch-history" onclick="window.location.href='{{ url_for('chapter_exam_history', subject_id=subject_id, chap_id=chap_id) }}'">Lịch sử làm bài</button>
-              <button class="button--revise">Ôn kiến thức</button>
+              <button class="button--revise"  onclick="window.location.href='{{ url_for('review_chapter', subject_id=subject_id, chap_id=chap_id) }}'">Ôn kiến thức</button>
             </div>
             <div class="feedback__container">
               <div class="feedback__content" id = "feedback-content">

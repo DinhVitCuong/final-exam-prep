@@ -261,7 +261,7 @@
               <div class="circular-progress-bar"></div>
             </div>
             <div class="buttons-container">
-              <button class="button--watch-history">Lịch sử làm bài</button>
+              <button class="button--watch-history" onclick="window.location.href='{{ url_for('total_exam_history', subject_id=subject_id) }}'">Lịch sử làm bài</button>
               <button class="button--revise">Ôn kiến thức</button>
             </div>
             <div class="feedback__container">
