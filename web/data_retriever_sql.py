@@ -44,7 +44,12 @@ class DrawChartBase:
                     test_type = self.test_type,
                     user_id = int(self.user_id)
                 ).all()
+                print(self.user_id)
+                print(self.num)
+                print(query)
+                
                 self.data = [query[self.num]]
+                
                 self.num_chap = int(self.data[0].knowledge)
 
         except FileNotFoundError:

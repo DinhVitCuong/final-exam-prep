@@ -19,30 +19,41 @@ class PrepThreshold:
 
     def load_and_save(self):
         # Load total results
-        query = db.session.query(Test).filter_by(test_type=1, user_id = int(self.user_id)).all()
+
+        query1 = db.session.query(Test).filter(
+            Test.questions.like(f"{self.subject}%")
+        )
+        query = query1.filter_by(test_type=1, user_id = int(self.user_id)).all()
         num = len(query)
         for i in range(num):
-            test = DrawTotal(self.subject, None, 1, i, self.user_id, "specific")
-            chap_difficulty_percentile = test.difficult_percentile_per_chap()
-            for chap, dic_diff in chap_difficulty_percentile.items():
-                for type1, acuc in dic_diff.items():
-                    self.dic['chapter'].append(chap)
-                    self.dic['difficulty'].append(type1)
-                    self.dic['date'].append(query[i].time)
-                    self.dic['accuracy'].append(acuc)
+            try:
+                test = DrawTotal(self.subject, None, 1, i, self.user_id, "specific")
+                chap_difficulty_percentile = test.difficult_percentile_per_chap()
+                for chap, dic_diff in chap_difficulty_percentile.items():
+                    for type1, acuc in dic_diff.items():
+                        self.dic['chapter'].append(chap)
+                        self.dic['difficulty'].append(type1)
+                        self.dic['date'].append(query[i].time)
+                        self.dic['accuracy'].append(acuc)
+            except:
+                continue
         
         # Repeat the process for another set of data if needed
-        query = db.session.query(Test).filter_by(test_type=0, user_id = int(self.user_id)).all()
+        
+        query = query1.filter_by(test_type=0, user_id = int(self.user_id)).all()
         num = len(query)
         for i in range(num):
-            test = DrawChap(self.subject, None, 0, i, self.user_id, "specific")
-            chap_difficulty_percentile = test.difficult_percentile_per_chap()
-            for chap, dic_diff in chap_difficulty_percentile.items():
-                for type1, acuc in dic_diff.items():
-                    self.dic['chapter'].append(chap)
-                    self.dic['difficulty'].append(type1)
-                    self.dic['date'].append(query[i].time)
-                    self.dic['accuracy'].append(acuc)
+            try:
+                test = DrawChap(self.subject, None, 0, i, self.user_id, "specific")
+                chap_difficulty_percentile = test.difficult_percentile_per_chap()
+                for chap, dic_diff in chap_difficulty_percentile.items():
+                    for type1, acuc in dic_diff.items():
+                        self.dic['chapter'].append(chap)
+                        self.dic['difficulty'].append(type1)
+                        self.dic['date'].append(query[i].time)
+                        self.dic['accuracy'].append(acuc)
+            except:
+                continue
         
         # Create DataFrame
         df = pd.DataFrame(self.dic)
