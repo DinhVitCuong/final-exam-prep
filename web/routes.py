@@ -839,13 +839,14 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                     analyze_content = analyzer.analyze("deep")
 
                     current_date = datetime.now().date()
-                    existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date).all()
+                    existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date, TodoList.subject == subject).all()
                     # thêm subject , update lại hàm filter ở trên, nếu nhỏ hơn current date của cùng subject thì xóa 
 
 
                         # Xóa các todo có date nhỏ hơn ngày hiện tại
                     for todo in existing_todos:
                         db.session.delete(todo)
+
                     db.session.commit()
                     todo_json = analyzer.turning_into_json()
 
@@ -859,7 +860,8 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                             user_id=user_id,
                             date=todo["date"],
                             action=todo["action"],
-                            status=todo["done"]
+                            status=todo["done"],
+                            subject = subject
                         )
                         db.session.add(new_todo)
                         # update date
@@ -873,7 +875,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                     db.session.commit()
 
 
-
+                
                 else:
                     analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
                     analyze_content = analyzer.analyze("deep")
@@ -885,7 +887,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                     # print(prev_date)
                     if current_date >= prev_date:
                         
-                        existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date).all()
+                        existing_todos = TodoList.query.filter(TodoList.user_id == user_id, TodoList.date < current_date, TodoList.subject == subject).all()
                         # Xóa các todo có date nhỏ hơn ngày hiện tại
                         for todo in existing_todos:
                             db.session.delete(todo)
@@ -900,7 +902,8 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                                 user_id=user_id,
                                 date=todo["date"],
                                 action=todo["action"],
-                                status=todo["done"]
+                                status=todo["done"],
+                                subject = subject
                             )
                             db.session.add(new_todo)
                         # update date
