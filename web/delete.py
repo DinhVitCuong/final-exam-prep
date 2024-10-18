@@ -6,7 +6,7 @@ app = create_app()
 with app.app_context():
     try:
         # Delete all rows from the Test table
-        db.session.query(TodoList).delete()
+        db.session.query(QAs).delete()
         
         # Commit the changes to make them permanent
         db.session.commit()
