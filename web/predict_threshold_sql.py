@@ -74,6 +74,8 @@ class PrepThreshold:
         df = df.drop(columns=['date'])
         return df
         # df.to_csv(self.path, index=False)
+from sklearn.exceptions import NotFittedError
+
 
 class PredictThreshold:
     def __init__(self, predict_type, subject, user_id , max_chap = None):
@@ -159,12 +161,23 @@ class PredictThreshold:
         self.X_test = pd.DataFrame(self.X_test)
 
     def predict(self):
-        # Train and predict using RandomForestRegressor
-        model = RandomForestRegressor()
-        model.fit(self.X_train, self.y_train)
-        self.create_x_test()
-        self.y_pred = model.predict(self.X_test)
+        # Check if X_train is empty or not available
+        if self.X_train is None or self.X_train.empty:
+            # If X_train is not available, set y_pred to 50 for all entries in X_test
+            self.create_x_test()
+            self.y_pred = [50] * len(self.X_test)
+        else:
+            # Train and predict using RandomForestRegressor
+            model = RandomForestRegressor()
+            try:
+                model.fit(self.X_train, self.y_train)
+                self.create_x_test()
+                self.y_pred = model.predict(self.X_test)
+            except NotFittedError:
+                self.y_pred = [50] * len(self.X_test)
+
         return self.y_pred
+
     
     def predicted_data(self):
         # Concatenate predictions with X_test

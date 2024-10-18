@@ -26,7 +26,7 @@ class promptCreation:
         self.subject = subject
         self.user_id = user_id
         self.aim_score = 9
-        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, self.type_test, self.num_test,user_id =  self.user_id)
+        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, 0, self.num_test,user_id =  self.user_id)
         self.test_intro = self.get_test_intro()
         self.subject_intro = f"Đây là kết quả môn {self.return_subject_name()}"
         self.detail_analyze_prompt = (f"Lưu ý là thêm số liệu cụ thể để phân tích cho kĩ lưỡng nha, Từ đó đưa ra nhận xét về kết quả vừa thực hiện (mạnh phần nào, yếu phần nào, "
@@ -397,7 +397,7 @@ class generateAnalysis:
 # with app.app_context():
 #     # prompt = promptTotal(1,10, "H", 2).deep_analysis()
 #     # print(prompt)
-#     analyzer = generateAnalysis("H", 7, 10, 2)
+#     analyzer = generateAnalysis("H", 7, 10, 3)
 #     json_data = analyzer.turning_into_json()
 #     print(json_data)    
 
