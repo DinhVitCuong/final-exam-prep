@@ -15,6 +15,18 @@
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
         <style>
+          a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
           * {
             box-sizing: border-box;
             margin: 0;
@@ -27,28 +39,18 @@
             display: flex;
           }
           .home-page {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            background-color: white;
-            gap: 0;
-            width: 100%;
-            height: 100%;
-          }
-          .background-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            object-fit: cover;
-            z-index: -10;
-          }
+        background-image: url("../static/assets/background.svg");
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position: top center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
           .panel {
             flex-basis: 25%;
             padding: 1rem;
@@ -58,7 +60,6 @@
             gap: 1rem;
             background-color: rgba(255, 255, 255, 0.84);
             min-height: 100vh;
-            max-width: 25%;
           }
           .panel__button-group {
             display: flex;
@@ -71,19 +72,17 @@
             opacity: 1;
             border-radius: 40px;
             width: 100%;
-            padding: 8px 16px;
+            padding: 8px 6px;
             display: flex;
-            position: relative;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             gap: 1rem;
           }
           .panel__user__image {
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            position: absolute;
-            left: 16px;
+            
           }
           .panel__user__content {
             color: white;
@@ -105,7 +104,7 @@
             width: 80%;
             border-radius: 40px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
             align-items: center;
           }
           .subject-item__name {
@@ -215,7 +214,6 @@
       </head>
       <body>
         <div class="home-page">
-          <img src="../static/assets/background.svg" alt="background" class="background-image" />
           <div class="panel">
             <div class="panel__button-group">
               <button><img src="../static/assets/signout.svg" alt="sign-out" /></button>
@@ -301,6 +299,12 @@
 
     <style>
       * {
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      * {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -343,7 +347,6 @@
         gap: 1rem;
         background-color: rgba(255, 255, 255, 0.84);
         min-height: 100vh;
-        max-width: 25%;
       }
       .panel__button-group {
         display: flex;
@@ -351,23 +354,22 @@
         gap: 0.8rem;
         width: 100%;
       }
-      .panel__user {
+      /* //??? th nao ` paste code ngu nua v */
+      .panel__user { 
         background-color: #1976d2;
         opacity: 1;
         border-radius: 40px;
         width: 100%;
-        padding: 8px 16px;
+        padding: 8px 6px;
         display: flex;
-        position: relative;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
         gap: 1rem;
         .panel__user__image {
           width: 32px;
           height: 32px;
           border-radius: 50%;
-          position: absolute;
-          left: 16px;
+          
         }
         .panel__user__content {
           color: white;
@@ -398,17 +400,13 @@
         align-items: center;
         border-radius: 24px;
         background-color: #cccdee;
-        padding: 0.5rem 1rem;
+        padding: 0.3rem 0.4rem;
         gap: 0.3rem;
-        input {
-          border: none;
-          background-color: transparent;
+        p {
+          
           width: 100%;
-          height: 20px;
         }
-        input:focus {
-          outline: none;
-        }
+       
       }
 
       .dashboard {
@@ -431,15 +429,17 @@
         align-items: center;
         margin-bottom: 12px;
       }
+      /* // lai paste code ngu */
       .subject-item {
         background-color: #ff855f;
         height: 70px;
         width: 80%;
         border-radius: 40px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-
+        padding-left: 1.2rem;
+        padding-right: 0.5rem;
         .subject-item__name {
           color: black;
           font-size: 1.5em;
@@ -674,15 +674,17 @@
               <label for="university" class="panel__target__label"
                 >Trường:</label
               >
-              <input type="text" id="university" class="panel__target__input" value="{{university.name}}" readonly/>
+              <p class="panel__target__input">
+                {{university.name}}
+              </p>
             </div>
             <div class="panel__target__input-container">
               <label for="major" class="panel__target__label">Ngành:</label>
-              <input type="text" id="major" class="panel__target__input" value="{{university.major_name}}" readonly/>
+              <p class="panel__target__input">{{university.major_name}}</p>
             </div>
             <div class="panel__target__input-container">
               <label for="score" class="panel__target__label">Điểm:</label>
-              <input type="text" id="score" class="panel__target__input" value="{{university.pass_score}}" readonly/>
+              <p class="panel__target__input">{{university.pass_score}}</p>
             </div>
           </div>
         </div>
