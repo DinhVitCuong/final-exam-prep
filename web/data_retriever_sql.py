@@ -19,21 +19,33 @@ class DrawChartBase:
         self.rate = [40,20,30,10]
     def load_data(self):
         try:
-            self.data = db.session.query(Test).filter(
+            self.data_find = db.session.query(Test).filter(
                 Test.questions.like(f"{self.subject_name}%")
             )
+            print('cho nay ne')
+            print(self.test_type)
             if self.load_type == None or self.load_type == "average":
                 if self.test_type == 1: 
-                    self.data = self.data.filter_by(
+                    self.data = self.data_find.filter_by(
                         test_type = self.test_type,
                         user_id = int(self.user_id)
                     ).order_by(Test.id.desc()).limit(self.num).all()
-                    print("hi")
-                    self.num_chap = max([int(test.knowledge) for test in self.data])
+
+                    if self.data == []:
+                        self.data1 = self.data_find.filter_by(
+                            user_id = int(self.user_id)
+                        ).order_by(Test.id.desc()).all()
+                        self.num_chap = max([int(test.knowledge) for test in self.data1])
+                    else:
+                        self.data1 = self.data_find.filter_by(
+                            user_id = int(self.user_id),
+                            test_type = self.test_type
+                        ).order_by(Test.id.desc()).all()
+                        self.num_chap = max([int(test.knowledge) for test in self.data1])
                     
                 elif self.test_type == 0:
                     print(self.user_id)
-                    self.data = self.data.filter_by(
+                    self.data = self.data_find.filter_by(
                         test_type = self.test_type,
                         user_id = int(self.user_id),
                         knowledge = str(self.num_chap).zfill(2)

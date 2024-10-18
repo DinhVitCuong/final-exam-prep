@@ -41,7 +41,7 @@ def create_test_record(qa_list, knowledge, type):
     time_result = "_".join(str(random.randint(5, 60)) for _ in question_ids)
     
     test_record = {
-        "user_id": 1,  # Assuming a specific user ID for the example
+        "user_id": 3,  # Assuming a specific user ID for the example
         "test_type": type, # ,random.choice([0, 1, 3]),
         "time": datetime.now().strftime('%Y-%m-%d'),
         "knowledge": knowledge,
@@ -64,7 +64,7 @@ with app.app_context():
             j = i
         test_total = TestChap("L", j)
         questions_total = test_total.create_test(rate)
-        test_data = create_test_record(questions_total, str(j).zfill(2) , 0)
+        test_data = create_test_record(questions_total, str(j).zfill(2) , 1)
         
         new_test_record = Test(
             user_id=test_data['user_id'],
