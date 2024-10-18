@@ -30,10 +30,10 @@ with app.app_context():
     file_names = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     # print(file_names)
     difficulty_mapping = {
-        "Nhận biết": 0,
-        "Thông hiểu": 1,
-        "Vận dụng": 2,
-        "Vận dụng cao": 3
+        0: 0,
+        1: 1,
+        2: 2,
+        3: 3
     }
     for file_name in file_names:
         file_path = os.path.join(folder_path, file_name)

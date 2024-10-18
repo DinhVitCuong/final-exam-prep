@@ -1,0 +1,2281 @@
+[
+    {
+        "id": "T0501001",
+        "question": "Một khối chóp có đáy là đa giác $n$ cạnh. Trong các mệnh đề sau đây, mệnh đề nào đúng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Số mặt và số đỉnh bằng nhau",
+            "B. Số đỉnh của khối chóp bằng $n$",
+            "C. Số cạnh của khối chóp bằng $n + 1$",
+            "D. Số mặt của khối chóp bằng $2 n$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khối chóp có đáy là đa giác $n$ cạnh thì có $n + 1$ đỉnh (gồm đỉnh $S$ và $n$ đỉnh của đa giác đáy), $n + 1$ mặt ( $1$ mặt đáy và $n$ mặt bên) và $2n$ cạnh ( $n$ cạnh bên và $n$ cạnh đáy) Do đó chỉ có ý $A$ đúng. Đáp án cần chọn là: $A$."
+    },
+    {
+        "id": "T0501002",
+        "question": "Mỗi đỉnh của hình đa diện là đỉnh chung của ít nhất: $3$ mặt.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Năm mặt",
+            "B. Hai mặt",
+            "C. Ba mặt",
+            "D. Bốn mặt"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mỗi đỉnh của hình đa diện là đỉnh chung của ít nhất 3 mặt (ví dụ các đỉnh của hình tứ diện) Không tồn tại 1 đỉnh nào đó của đa diện nào đó là đỉnh chung của ít hơn 3 mặt Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501003",
+        "question": "Hãy chọn cụm từ (hoặc từ) cho dưới đây để sau khi điền nó vào chỗ trống mệnh đề sau trở thành mệnh đề đúng: “Số cạnh của một hình đa diện luôn $<$ số đỉnh của hình đa diện ấy” ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $< $",
+            "B. $\\leq $",
+            "C. $> $",
+            "D. $=$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hình tứ diện có 6 cạnh và 4 mặt nên số cạnh của tứ diện lớn hơn số đỉnh của nó. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501004",
+        "question": "Hãy chọn cụm từ (hoặc từ) cho dưới đây để sau khi điền nó vào chỗ trống mệnh đề sau trở thành mệnh đề đúng: “Số cạnh của một hình đa diện luôn $<$ số mặt của hình đa diện ấy”",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. '$a < b$'",
+            "B. '$a \\leq b$'",
+            "C. '$a = b$'",
+            "D. '$a > b$'"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình tứ diện có 6 cạnh và 4 đỉnh nên số cạnh của tứ diện lớn hơn số mặt của nó. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501005",
+        "question": "Trong các mệnh đề sau, mệnh đề nào đúng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Tồn tại một hình đa diện có số cạnh bằng số đỉnh",
+            "B. Tồn tại một hình đa diện có số cạnh và mặt bằng nhau",
+            "C. Số đỉnh và số mặt của một hình đa diện luôn bằng nhau",
+            "D. Tồn tại hình đa diện có số đỉnh và số mặt bằng nhau"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình đa diện luôn có số đỉnh và số mặt nhỏ hơn số cạnh. Không phải hình đa diện nào cũng có số đỉnh bằng số mặt, ví dụ hình lập phương có $8$ đỉnh và $6$ mặt. Hình tứ diện có số đỉnh bằng số mặt (bằng $4$). Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501006",
+        "question": "Mệnh đề nào sau đây là mệnh đề đúng? Số các cạnh của một hình đa diện luôn: $> 6$ $> 7$ $> 7 \\text{ hoặc } \\geq 7$ $> 6$",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Lớn hơn $6$",
+            "B. Lớn hơn $7$",
+            "C. Lớn hơn hoặc bằng $7$",
+            "D. Lớn hơn hoặc bằng $6$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện là hình đa diện đơn giản nhất có cạnh bằng $6$ nên số cạnh của hình đa diện luôn lớn hơn hoặc bằng $6$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501007",
+        "question": "Trong các mệnh đề sau, mệnh đề nào sai? A. Khối lăng trụ tam giác là khối đa diện. B. Khối hộp là khối đa diện. C. $Lắp ghép\\, 2\\, khối\\, đa\\, diện\\, luôn\\, được\\, khối\\, đa\\, diện\\, lồi.$ D. Khối tứ diện là khối đa diện lồi.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Khối lăng trụ tam giác là khối đa diện",
+            "B. Khối hộp là khối đa diện",
+            "C. Lắp ghép 2 khối đa diện luôn được $khối\\ đa\\ diện\\ lồi$",
+            "D. Khối tứ diện là khối đa diện lồi"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Khối lăng trụ tam giác, khối hộp là các khối đa diện. - Khối tứ diện là một khối đa diện lồi. - Không phải khi nào lắp ghép 2 khối đa diện ta cũng được khối đa diện lồi. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501008",
+        "question": "Chọn khẳng định sai. Mỗi cạnh của khối đa diện là cạnh chung của đúng 2 mặt của khối đa diện. Hai mặt bất kì của khối đa diện luôn có ít nhất một điểm chung. Mỗi đỉnh của khối đa diện là đỉnh chung của ít nhất 3 mặt. Mỗi mặt của khối đa diện có ít nhất ba cạnh.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Mỗi cạnh của khối đa diện là cạnh chung của đúng 2 mặt của khối đa diện",
+            "B. Hai mặt bất kì của khối đa diện luôn có ít nhất một điểm chung",
+            "C. Mỗi đỉnh của khối đa diện là đỉnh chung của ít nhất 3 mặt",
+            "D. Mỗi mặt của khối đa diện có ít nhất ba cạnh"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Các khẳng định $A$, $C$, $D$ đúng Khẳng định $B$ sai vì hai mặt của khối đa diện có thể có điểm chung hoặc không có điểm chung, chẳng hạn hai mặt đối nhau của hình hộp chữ nhật. Đáp án cần chọn là: $B$."
+    },
+    {
+        "id": "T0501009",
+        "question": "Trong các mệnh đề sau mệnh đề nào đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Mỗi hình đa diện có ít nhất bốn đỉnh",
+            "B. Mỗi hình đa diện có ít nhất ba đỉnh",
+            "C. Số đỉnh của một hình đa diện lớn hơn hoặc bằng số cạnh của nó",
+            "D. Số mặt của một hình đa diện lớn hơn hoặc bằng số cạnh của nó"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình đa diện là hình được tạo bởi một số hữu hạn các đa giác. Hình đa diện nhỏ nhất là hình chóp tam giác. B sai vì hình chóp tam giác có 4 đỉnh C sai vì số đỉnh của hình đa diện luôn nhỏ hơn số cạnh D sai vì số mặt của hình đa diện luôn nhỏ hơn số cạnh Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501010",
+        "question": "Vật thể nào trong các vật thể sau không phải là khối đa diện?",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0329/Capture18.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Hình 1",
+            "B. Hình 2",
+            "C. Hình 3",
+            "D. Hình 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát bốn hình, có hình $C$ có cạnh là cạnh chung của $4$ đa giác, vậy hình này không phải khối đa diện. Đáp án cần chọn là: $C$."
+    },
+    {
+        "id": "T0501011",
+        "question": "Trong một hình đa diện lồi, mỗi cạnh là cạnh chung của tất cả bao nhiêu mặt?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $4$",
+            "B. $5$",
+            "C. $2$",
+            "D. $3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hình đa diện lồi cũng là hình đa diện nên mỗi cạnh của nó là cạnh chung của đúng 2 mặt. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501012",
+        "question": "Cho bốn hình sau đây. Mệnh đề nào sau đây sai: A. Khối đa diện A là khối chóp tứ giác. B. Cả 4 khối đa diện A, B, C, D đều là khối đa diện lồi. C. Khối đa diện C là khối đa diện lồi D. Khối đa diện B là khối đa diện lồi.",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0329/Capture23.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. Khối đa diện A là khối chóp tứ giác",
+            "B. Cả 4 khối đa diện A, B, C, D đều là khối đa diện lồi",
+            "C. Khối đa diện C là khối đa diện lồi",
+            "D. Khối đa diện B là khối đa diện lồi"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khối đa diện A là khối chóp tứ giác. Khối đa diện D không phải là khối đa diện lồi Khối đa diện B, C là khối đa diện lồi Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0501013",
+        "question": "Trong các hình dưới đây, hình nào là khối đa diện?",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0329/cau-99.png",
+        "difficulty": 0,
+        "options": [
+            "A. Hình a",
+            "B. Hình c",
+            "C. Hình d",
+            "D. Hình b"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong các hình đã cho chỉ có hình a) là khối đa diện. Hình b) có 3 cạnh ở trên không phải cạnh chung của 2 mặt, hình c) và d) có 1 cạnh là không là cạnh chung của 2 mặt. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501014",
+        "question": "Trong các khẳng định sau, khẳng định nào sai?  Lắp ghép $2$ khối hộp sẽ được một khối đa diện lồi. Khối tứ diện là khối đa diện lồi. Khối hộp là khối đa diện lồi. Khối lăng trụ tam giác là khối đa diện lồi.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Lắp ghép 2 khối hộp sẽ được một khối đa diện lồi",
+            "B. Khối tứ diện là khối đa diện lồi",
+            "C. Khối hộp là khối đa diện lồi",
+            "D. Khối lăng trụ tam giác là khối đa diện lồi"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các khối tứ diện, khối hộp, khối lăng trụ tam giác đều là khối đa diện lồi. Lắp ghép 2 khối hộp chưa chắc được một khối đa diện lồi. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501015",
+        "question": "Cho hình chóp $S.ABCĐ$ có đáy là hình vuông, $SA$ vuông góc với đáy. Hình chóp có bao nhiêu mặt bên là tam giác vuông?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 1 mặt",
+            "B. 2 mặt",
+            "C. 3 mặt",
+            "D. 4 mặt"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $S A \\perp (A B C D)$ nên $S A \\perp A D$, $S A \\perp A B \\Rightarrow \\Delta S A B$, $\\Delta S A D$ vuông tại A. Lại có $C D \\perp S A$, $C D \\perp A D \\Rightarrow C D \\perp (S A D) \\Rightarrow C D \\perp S D \\Rightarrow \\Delta S C D$ vuông tại D. $C B \\perp S A$, $C B \\perp A B \\Rightarrow C B \\perp (S A B) \\Rightarrow C B \\perp S B \\Rightarrow \\Delta S C B$ vuông tại B. Vậy có tất cả 4 mặt là các tam giác vuông. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501016",
+        "question": "Cho khối đa diện có các mặt đều là tam giác, kí hiệu số mặt là $M$, số cạnh là $C$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2 C = 3 M$",
+            "B. $3 C = 2 M$",
+            "C. $M = 2 C$",
+            "D. $C = 2 M$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì mỗi mặt là tam giác nên mỗi mặt có 3 cạnh. Do đó $M$ mặt sẽ có $3M$ cạnh hay đa diện có $3M$ cạnh. Tuy nhiên, mỗi cạnh lại là cạnh chung của 2 mặt nên mỗi cạnh trên đã được đếm 2 lần. Số cạnh thực tế của đa diện chỉ là $C = \\frac{3M}{2}$ hay $2C = 3M$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501017",
+        "question": "Cho khối đa diện mà mỗi đỉnh là đỉnh chung của 3 cạnh. Kí hiệu $D$ là số đỉnh, $C$ là số cạnh. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 C = 2 D$",
+            "B. $C = D$",
+            "C. $C = 3 D$",
+            "D. $2 C = 3 D$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì mỗi đỉnh là đỉnh chung của 3 cạnh nên $D$ đỉnh có $3D$ cạnh. Tuy nhiên mỗi cạnh lại là cạnh chung của 2 đỉnh nên $2C = 3D$. Đáp án cần chọn là: $D$."
+    },
+    {
+        "id": "T0501018",
+        "question": "Trung điểm của tất cả các cạnh của hình tứ diện đều là các đỉnh của khối đa diện nào?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Hình hộp chữ nhật",
+            "B. Hình bát diện đều",
+            "C. Hình lập phương",
+            "D. Hình tứ diện đều"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử ABCD là tứ diện đều. Gọi M, N, P, Q, S, T lần lượt là trung điểm của $A D$, $A B$, $B C$, $C D$, $A C$, $B D$. Khi đó các trung điểm các cạnh của tứ diện đều tạo thành hình $SMNPQT$. Do đó $SMNPQT$ không thể là tứ diện đều được. Ta loại đáp án D. Do $S$, $M$ là trung điểm của $A C$, $A D$ nên $S M \\parallel \\frac{1}{2} C D$. Tương tự ta có $S Q \\parallel \\frac{1}{2} A D$, $M Q \\parallel \\frac{1}{2} A C$. Do $\\Delta A C D$ là tam giác đều nên $A C = C D = D A$. Kéo theo $S M = S Q = M Q$. Chứng minh tương tự ta nhận được các cạnh của $SMNPQT$ có độ dài như nhau. Mặt khác từ $S M = S Q = M Q$ suy ra $\\Delta S M Q$ là tam giác đều, do đó $\\hat{Q S M} = 60^{\\circ}$. Do đó $SMNPQT$ không thể là hình hộp chữ nhật hay hình lập phương được. Như vậy đáp án A, C đều bị loại. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0501019",
+        "question": "Phép đối xứng qua mặt phẳng biến một điểm thuộc mặt phẳng đó thành: một điểm bất kì thuộc mặt phẳng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. không tồn tại ảnh của điểm đó qua phép đối xứng",
+            "B. một điểm nằm ngoài mặt phẳng",
+            "C. một điểm bất kì thuộc mặt phẳng",
+            "D. một điểm trùng với nó"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng qua mặt phẳng $ ( P ) $ là phép biến hình biến mỗi điểm thuộc $ ( P ) $ thành chính nó. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501020",
+        "question": "Cho điểm $A \\in ( P )$. Lấy đối xứng $A$ qua $( P )$ được ảnh là điểm $A'$. Chọn kết luận đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $A' \\notin (P)$",
+            "B. $A A' > 0$",
+            "C. $A' \\equiv A$",
+            "D. $A' A \\perp (P)$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng qua mặt phẳng $ P $ là phép biến hình biến mỗi điểm thuộc $ P $ thành chính nó nên $ A \\equiv A' $. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501021",
+        "question": "Phép đối xứng qua mặt phẳng $ ( P ) $ biến điểm $ M $, $ N $ thành $ M' $, $ N' $ thì:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $M N = M' N'$",
+            "B. $M M' = N N'$",
+            "C. $M M' \\equiv N N'$",
+            "D. $M N \\equiv M' N'$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng qua mặt phẳng bảo toàn khoảng cách giữa 2 điểm bất kì nên $M' N' = M N$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501022",
+        "question": "Cho điểm $M'$ là ảnh của điểm $M \\notin (P)$ qua phép đối xứng qua mặt phẳng $(P)$. Khi đó:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ ( P ) \\perp M M' $ ",
+            " B. $ M M' \\subset ( P ) $ ",
+            " C. $ M \\in ( P ) $ ",
+            " D. $ M' \\in ( P ) $"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng qua mặt phẳng $ ( P ) $ là phép biến hình biến mỗi điểm thuộc $ ( P ) $ thành chính nó và biến mỗi điểm $ M $ không thuộc $ ( P ) $ thành điểm $ M ′ $ sao cho $ ( P ) $ là mặt phẳng trung trực của $ M M ′ $. Do đó $ M M ′ \\perp ( P ) $. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501023",
+        "question": "Cho điểm $A \\in ( P )$, $B \\notin ( P)$, gọi $B'$ là ảnh của $B$ qua phép đối xứng qua mặt phẳng $( P)$, $A \\notin B B'$. Chọn kết luận đúng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $Δ A B B ′$ đều",
+            "B. $Δ A B B ′$ vuông",
+            "C. $Δ A B B ′$ cân",
+            "D. $Δ A B B ′$ vuông cân"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $ ( P ) $ là mặt phẳng trung trực của $ B B ′ $ nên mọi điểm thuộc $ ( P ) $ sẽ cách đều $ B , B ′ \\Rightarrow A B = A B ′ $. Do đó $ \\Delta A B B ′ $ cân tại $ A $. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501024",
+        "question": "Cho đoạn thẳng $AB$. Mặt phẳng $(P)$ là mặt phẳng trung trực của $AB$ thì:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. A , B đối xứng nhau qua $ ( P ) $ ",
+            "B. $ A B \\subset ( P ) $ ",
+            "C. $ A B \\parallel ( P ) $ ",
+            "D. $ A \\in ( P ) , B \\notin ( P ) $"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt phẳng $ ( P ) $ là mặt phẳng trung trực của $ A B $ thì $ A , B $ đối xứng nhau qua $ ( P ) $. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501025",
+        "question": "Hình nào sau đây có mặt phẳng đối xứng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. hình tứ diện",
+            "B. hình chóp có đáy là hình vuông",
+            "C. hình chóp tam giác đều",
+            "D. hình chóp có đáy là hình chữ nhật"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hình chóp tam giác đều có mặt phẳng đối xứng (các mặt phẳng đi qua cạnh bên hình chóp và trung điểm cạnh đối diện) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501026",
+        "question": "Cho các hình: tứ diện, tứ diện đều, chóp tam giác đều. Số hình có mặt phẳng đối xứng là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $0$",
+            "B. $1$",
+            "C. $2$",
+            "D. $3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hình chóp tam giác đều có mặt phẳng đối xứng (các mặt phẳng đi qua cạnh bên hình chóp và trung điểm cạnh đối diện) Do đó có hai hình có mặt phẳng đối xứng là tứ diện đều và hình chóp tam giác đều. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501027",
+        "question": "Hình tứ diện đều có mấy mặt phẳng đối xứng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $6$",
+            "B. $5$",
+            "C. $4$",
+            "D. $3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện đều có mặt phẳng đối xứng là mặt phẳng đi qua 1 cạnh và trung điểm cạnh đối diện. Vì tứ diện đều có 6 cạnh nên có 6 mặt phẳng đối xứng. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501028",
+        "question": "Số mặt phẳng đối xứng của mặt cầu là: 6.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $6$",
+            "B. $3$",
+            "C. $0$",
+            "D. Vô số"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Mọi mặt phẳng đi qua tâm của mặt cầu đều là mặt phẳng đối xứng của mặt cầu. Vậy có vô số mặt phẳng đối xứng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501029",
+        "question": "Số mặt phẳng đối xứng của hình hộp chữ nhật (các kích thước khác nhau) là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3$",
+            "B. $6$",
+            "C. $4$",
+            "D. $9$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình hộp chữ nhật có $3$ mặt phẳng đối xứng, đó là mặt phẳng đi qua trung điểm các cạnh đối diện. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501030",
+        "question": "Cho các hình sau: hình chóp tam giác đều, hình hộp đứng, hình lăng trụ tam giác đều, hình chóp tứ giác có đáy là hình thoi, hình hộp có đáy là hình thoi. Số hình có mặt phẳng đối xứng là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 5",
+            "B. 4",
+            "C. 3",
+            "D. 2"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Các hình có mặt phẳng đối xứng là: + Hình chóp tam giác đều có $3$ mặt phẳng đối xứng. + Hình hộp đứng có $1$ mặt phẳng đối xứng. + Hình lăng trụ tam giác đều có $4$ mặt phẳng đối xứng. + Hình hộp có đáy là hình thoi không có mặt phẳng đối xứng. + Hình chóp tứ giác có đáy là hình thoi không có mặt phẳng đối xứng. Vậy có $3$ hình có mặt phẳng đối xứng. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501031",
+        "question": "Số mặt phẳng đối xứng của hình bát diện đều là: $5$",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 5",
+            "B. 3",
+            "C. 7",
+            "D. 9"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình bát diện đều có $9$ mặt phẳng đối xứng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501032",
+        "question": "Phép dời hình biến đoạn thẳng thành:  đoạn thẳng dài bằng nó.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 'đoạn thẳng dài bằng nó'",
+            "B. 'đoạn thẳng vuông góc với nó'",
+            "C. 'đoạn thẳng song song với nó'",
+            "D. 'đoạn thẳng dài gấp đôi nó'"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phép dời hình bảo toàn khoảng cách giữa 2 điểm nên đoạn thẳng sẽ có độ dài bằng đoạn thẳng đã cho. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501033",
+        "question": "Phép dời hình biến đường thẳng thành: $A. \\text{đường tròn} \\ B. \\text{một điểm} \\ C. \\text{đoạn thẳng} \\ D. \\text{đường thẳng}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. đường tròn",
+            "B. một điểm",
+            "C. $ đoạn thẳng $ ",
+            "D. $ đường thẳng $"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phép dời hình biến đường thẳng thành đường thẳng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501034",
+        "question": "Phép dời hình biến mặt phẳng thành: $A.$ đường thẳng $B.$ đường tròn $C.$ mặt phẳng $D.$ một điểm.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. đường thẳng",
+            "B. đường tròn",
+            "C. mặt phẳng",
+            "D. một điểm"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phép dời hình biến mặt phẳng thành mặt phẳng. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501035",
+        "question": "Hai hình tứ diện có các cạnh tương ứng bằng nhau thì chúng: ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $bằng nhau$",
+            "B. $trùng nhau$",
+            "C. $có các đỉnh trùng nhau$",
+            "D. $có đáy trùng nhau$"
+        ],
+        "answer": "A",
+        "explain": "Hai tứ diện bằng nhau nếu chúng có các cạnh tương ứng bằng nhau. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501036",
+        "question": "Cho hai hình chóp tam giác đều cạnh đáy bằng $a$. Cần bổ sung thêm điều kiện gì để hai hình chóp đó bằng nhau?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. chung đỉnh",
+            "B. cạnh bên bằng nhau",
+            "C. khoảng cách 2 đỉnh bằng $a$",
+            "D. không cần bổ sung điều kiện gì"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Vì cả hai hình chóp tam giác đều có cách cạnh đáy bằng nhau và bằng $a$ nên chúng chỉ cần có các cạnh bên bằng nhau là đủ. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0501037",
+        "question": "Hai hình chóp tam giác đều có chung đáy là tam giác đều và đỉnh thuộc hai phía khác nhau so với mặt đáy. Hai hình này bằng nhau khi:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. chung đỉnh",
+            "B. không bằng nhau",
+            "C. hai đỉnh nằm trên trục đường tròn đáy",
+            "D. hai đỉnh đối xứng nhau qua mặt đáy"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hai hình chóp đều có chung đáy là các tam giác đều nên muốn bằng nhau chỉ cần các cạnh bên bằng nhau. Do đó khoảng cách từ hai đỉnh đến mặt đáy cũng bằng nhau. Vậy hai đỉnh đối xứng nhau qua mặt đáy. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501038",
+        "question": "Nếu hai hình $H$ và $H'$ bằng nhau thì có một phép tịnh tiến biến hình này thành hình kia. Nếu có một phép tịnh tiến biến hình $H'$ thành $H$ thì chúng bằng nhau. Nếu hai hình $H$ và $H'$ bằng nhau thì có một phép đồng nhất biến hình này thành hình kia. Nếu hai hình $H$ và $H'$ bằng nhau thì chúng trùng nhau.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Nếu hai hình $H$ và $H'$ bằng nhau thì có một phép tịnh tiến biến hình này thành hình kia",
+            "B. Nếu có một phép tịnh tiến biến hình $H'$ thành $H$ thì chúng bằng nhau",
+            "C. Nếu hai hình $H$ và $H'$ bằng nhau thì có một phép đồng nhất biến hình này thành hình kia",
+            "D. Nếu hai hình $H$ và $H'$ bằng nhau thì chúng trùng nhau"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Nếu có một phép dời hình biến hình $H'$ thành $H$ thì hai hình bằng nhau và phép tịnh tiến cũng là một phép dời hình nên $B$ đúng. - Các đáp án $A$, $C$, $D$ đều sai vì hai hình bằng nhau có thể là hợp thành của một số phép dời hình chứ không nhất thiết là chỉ một phép dời hình. Đáp án cần chọn là: $B$."
+    },
+    {
+        "id": "T0501039",
+        "question": "Nếu có phép đối xứng qua mặt phẳng biến hình lập phương $A B C D$. $A' B' C' D'$ thành hình lập phương $M N P Q$. $M' N' P' Q'$ thì:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $A B = M ′ N ′$",
+            "B. $A B ≡ M N$",
+            "C. $A B < M N$",
+            "D. $A B = M ′ P ′$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng qua mặt phẳng là phép dời hình nên nếu nó biến hình lập phương $A B C D$ thành hình lập phương $M N P Q$ thì hai hình này bằng nhau hay chúng có các cạnh bằng nhau. Vậy $A B = M' N'$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501040",
+        "question": "Cho hình lập phương $A B C D$. $A' B' C' D'$ cạnh $a$. Hình nào dưới đây bằng hình chóp $A' A B C D$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $C ′ . A B C$",
+            "B. $A . B D D ′ B ′$",
+            "C. $C ′ . C D A B$",
+            "D. $B . A C C ′ A ′$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Xét hai hình chóp $A' . A B C D$ và $C' . A B C D$ có: Tồn tại phép đối xứng qua mặt phẳng $(B D D' B')$ biến hình chóp $A' . A B C D$ thành $C' . A B C D$ nên chúng bằng nhau. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0501041",
+        "question": "Cho hình lăng trụ đứng $A B C D$. $A' B' C' D'$ có đáy là hình thoi. Hình nào sau đây bằng hình chóp $B' . A B C$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $B'$ ",
+            "B. $D'$ ",
+            "C. $C'$ ",
+            "D. $D'$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hai hình chóp $B' . A B C$ và $D' . A D C$ bằng nhau vì tồn tại phép đối xứng qua mặt phẳng $(A C C' A')$ biến $B' . A B C$ thành $D' . A D C$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0501042",
+        "question": "Cho hình lập phương $A B C D$. $A' B' C' D'$ cạnh $a$. Hình nào dưới đây bằng hình lăng trụ $A B C$. $A' B' C'$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $A A' D'$",
+            "B. $A B C D$ $A' B' C' D'$",
+            "C. $C'$",
+            "D. $B$ $A C C' A'$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy hai lăng trụ đứng $A B C$. $A' B' C'$ và $A A' D'$ . $B B' C'$ có một phép đối xứng qua mặt phẳng $(A B' C' D)$ nên hai lăng trụ này bằng nhau. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501043",
+        "question": "Hình lăng trụ tam giác đều có bao nhiêu mặt phẳng đối xứng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1$",
+            "B. $4$",
+            "C. $2$",
+            "D. $3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Hình lăng trụ tam giác đều có 4 mặt phẳng đối xứng như hình vẽ dưới: Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0501044",
+        "question": "Một hình hộp đứng có hai đáy là hình thoi (không phải là hình vuông) có bao nhiêu mặt phẳng đối xứng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $2$",
+            "C. $1$",
+            "D. $4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Một hình hộp đứng có hai đáy là hình thoi (không phải là hình vuông) có 3 mặt phẳng đối xứng. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0501045",
+        "question": "Cho tứ diện $A B C D$ có ba mặt $A B C$, $A C D$, $A D B$ là ba tam giác bằng nhau và cân tại đỉnh $A$. Số mặt phẳng đối xứng của tứ diện đó là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3$",
+            "B. $6$",
+            "C. $3 \\text{ hoặc } 6$",
+            "D. $4$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Ba mặt $A B C$, $A C D$, $A D B$ là ba tam giác bằng nhau và cân tại định $A \\Rightarrow \\{ A B = A C = A D, B C = C D = B D \\}$. TH1: Ta có: $\\{ A B = A C = A D, B C = C D = B D \\}$ và các cạnh bên không bằng các cạnh đáy. Khi đó ta có các mặt phẳng đối xứng là: $(A B N)$, $(A C M)$, $(A D P)$ với $M$, $N$, $P$ lần lượt là trung điểm của các cạnh $B D$, $D C$, $B C$. TH2: Ta có: $\\{ A B = A C = A D, B C = C D = B D \\}$ và các cạnh bên bằng các cạnh đáy. Khi đó ta có các mặt đối xứng như TH1 và thêm các mặt phẳng $(E D C)$, $(F B D)$, $(H B C)$ với $E$, $F$, $H$ lần lượt là trung điểm của các cạnh $A B$, $A C$, $A D$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0502001",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k \\neq 0$ biến điểm $M$ thành điểm $M'$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $−−−→ O M ′ = k −−→ O M$",
+            "B. $−−→ O M = k −−−→ O M ′$",
+            "C. $−−−→ O M ′ = − k −−→ O M$",
+            "D. $−−−→ O M ′ = | k | −−→ O M$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phép vị tự tâm $O$ tỉ số $k$ biến điểm $M$ thành $M'$ nếu $-\\overrightarrow{OM'} = k \\overrightarrow{OM}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0502002",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k < 0$ lần lượt biến điểm $M$, $N$ thành $M'$, $N'$, chọn mệnh đề sai:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $−−−→ O M ′ = k −−→ O M$",
+            "B. $−−−→ O N ′ = k −−→ O N$",
+            "C. $−−−−→ M ′ N ′ = k \\cdot −−−→ M N$",
+            "D. $M ′ N ′ = k \\cdot M N$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Các đáp án A, B, C đều đúng. Đáp án D sai vì $-\\overrightarrow{M'N'} = k \\cdot \\overrightarrow{MN} \\Rightarrow \\overrightarrow{M'N'} = |k| \\cdot \\overrightarrow{MN} \\Rightarrow \\overrightarrow{M'N'} = -k \\cdot \\overrightarrow{MN} \\, (k < 0)$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0502003",
+        "question": "Cho phép vị tự tâm $O$ tỉ số $k < 0$ lần lượt biến điểm $M$, $N$ thành $M'$, $N'$, chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $M N = k M ′ N ′$",
+            "B. $M ′ N ′ = k M N$",
+            "C. $−−−−→ M ′ N ′ = − k −−−→ M N$",
+            "D. $M ′ N ′ = − k \\cdot M N$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phép vị tự tâm $O$ biến $M$, $N$ thành $M'$, $N'$ nên $\\overrightarrow{M'N'} = k \\overrightarrow{MN}$ và $M'N' = | k | MN$. Do $k < 0$ nên $M'N' = -k MN$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0502004",
+        "question": "Chọn mệnh đề đúng: Phép vị tự là phép dời hình Phép vị tự tỉ số $k = -1$ không là phép dời hình. Phép vị tự tỉ số $k = 1$ là phép dời hình Phép vị tự tỉ số $k = 0$ là phép dời hình.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Phép vị tự là phép dời hình",
+            "B. Phép vị tự tỉ số $k = -1$ không là phép dời hình",
+            "C. Phép vị tự tỉ số $k = 1$ là phép dời hình",
+            "D. Phép vị tự tỉ số $k = 0$ là phép dời hình"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phép vị tự tỉ số $k \\neq \\pm 1$ làm thay đổi độ dài đoạn thẳng nên nó không phải phép dời hình nên A sai. Phép vị tự tỉ số $k = - 1$ là phép đối xứng tâm nên nó là phép dời hình, B sai. Không có phép vị tự tỉ số $k = 0$ nên D sai. Phép vị tự tỉ số $k = 1$ là phép đồng nhất nên nó là phép dời hình. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0502005",
+        "question": "Cho điểm O cố định trong không gian. Chọn mệnh đề đúng: Không có phép vị tự tâm $O$ nào là phép dời hình. Có duy nhất một phép vị tự tâm $O$ là phép dời hình. Có hai phép vị tự tâm $O$ là phép dời hình. Có vô số phép vị tự tâm $O$ là phép dời hình.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Không có phép vị tự tâm $O$ nào là phép dời hình",
+            "B. Có duy nhất một phép vị tự tâm $O$ là phép dời hình",
+            "C. Có hai phép vị tự tâm $O$ là phép dời hình",
+            "D. Có vô số phép vị tự tâm $O$ là phép dời hình"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Có 2 phép vị tự tâm $O$ là phép dời hình, đó là các phép vị tự tâm $O$ tỉ số vị tự bằng $± 1$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0502006",
+        "question": "Nếu tỉ số vị tự $k = -1$ thì phép vị tự là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. phép đồng nhất",
+            "B. phép tịnh tiến",
+            "C. $phép\\ đối\\ xứng\\ trục$",
+            "D. $phép\\ đối\\ xứng\\ tâm$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phép vị tự tỉ số $k = -1$ là phép đối xứng tâm. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0502007",
+        "question": "Phép đối xứng tâm $O$ cố định là phép vị tự tâm $O$ tỉ số:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $k = 1$",
+            "B. $k = 0$",
+            "C. $k = - 1$",
+            "D. không là phép vị tự"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phép đối xứng tâm $O$ cố định là phép vị tự tâm $O$ tỉ số $k = -1$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0502008",
+        "question": "Chọn mệnh đề đúng: Hai hình đồng dạng thì bằng nhau. Hai hình bằng nhau thì đồng dạng. Hai hình đồng dạng không thể trùng nhau. Hai hình bằng nhau thì không thể đồng dạng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hai hình đồng dạng thì bằng nhau",
+            "B. Hai hình bằng nhau thì đồng dạng",
+            "C. Hai hình đồng dạng không thể trùng nhau",
+            "D. Hai hình bằng nhau thì không thể đồng dạng"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Hai hình đồng dạng thì chưa chắc bằng nhau nên A sai. Hai hình bằng nhau thì đồng dạng nên B đúng, D sai. Hai hình đồng dạng sẽ trùng nhau nếu phép đồng dạng là phép đồng nhất nên C sai. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0502009",
+        "question": "Chọn khẳng định đúng: Hai tứ diện đều thì đồng dạng. Hai tứ diện bất kì thì đồng dạng Hai hình chóp bất kì thì đồng dạng. Hai tứ diện đều thì bằng nhau.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hai tứ diện đều thì đồng dạng",
+            "B. Hai tứ diện bất kì thì đồng dạng",
+            "C. Hai hình chóp bất kì thì đồng dạng",
+            "D. Hai tứ diện đều thì bằng nhau"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hai tứ diện đều thì đồng dạng nên $A$ đúng. Đáp án cần chọn là: $A$."
+    },
+    {
+        "id": "T0502010",
+        "question": "Cho khối chóp $S.AB C$. Trên các cạnh $SA$, $SB$, $SC$ lấy các điểm $A'$, $B'$, $C'$ sao cho $A'A = 2 SA'$, $B'B = 2 SB'$, $C'C = 2 SC'$, khi đó tồn tại một phép vị tự biến khối chóp $S.AB C$ thành khối chóp $S.A'B'C'$ với tỉ số đồng dạng là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $k = 1 \\, 2$",
+            "B. $k = 2$",
+            "C. $k = 1 \\, 3$",
+            "D. $k = 3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $A' A = 2 \\, S \\, A'$, $B' B = 2 \\, S \\, B'$, $C' C = 2 \\, S \\, C' \\Rightarrow \\overrightarrow{S} A' = \\frac{1}{3} \\overrightarrow{S} A$, $\\overrightarrow{S} B' = \\frac{1}{3} \\overrightarrow{S} B$, $\\overrightarrow{S} C' = \\frac{1}{3} \\overrightarrow{S} C$. Do đó phép vị tự tâm $S$ tỉ số $k = \\frac{1}{3}$ biến các điểm $A$, $B$, $C$ thành $A'$, $B'$, $C'$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0502011",
+        "question": "Trong các mệnh đề sau, mệnh đề nào sai? B. Tứ diện đều là đa diện lồi. C. Hình lập phương là đa diện lồi D. Hình bát diện đều là đa diện lồi.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hình tạo bởi hai tứ diện đều ghép với nhau là một đa diện lồi",
+            "B. Tứ diện đều là đa diện lồi",
+            "C. Hình lập phương là đa diện lồi",
+            "D. Hình bát diện đều là đa diện lồi"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các hình tứ diện đều, lập phương, bát diện đều là các khối đa diện đều nên chúng là đa diện lồi. Hình tạo bởi hai tứ diện đều ghép với nhau có thể là đa diện lồi hoặc không phải là đa diện lồi ⇒ Mệnh đề “Hình tạo bởi hai tứ diện đều ghép với nhau là đa diện lồi” là mệnh đề sai Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0502012",
+        "question": "Khối mười hai mặt đều là khối đa diện đều loại: $A. \\{ 3 ; 5 \\} B. \\{ 3 ; 6 \\} C. \\{ 5 ; 3 \\} D. \\{ 4 ; 4 \\}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $\\{ 3 ; 5 \\}$",
+            "B. $\\{ 3 ; 6 \\}$",
+            "C. $\\{ 5 ; 3 \\}$",
+            "D. $\\{ 4 ; 4 \\}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khối mười hai mặt đều thuộc loại $\\{ 5 ; 3 \\}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503001",
+        "question": "Cho khối chóp có thể tích $V$, diện tích đáy là $S$ và chiều cao $h$. Chọn công thức đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V = S h$",
+            "B. $V = \\frac{1}{2} S h$",
+            "C. $V = \\frac{1}{3} S h$",
+            "D. $V = \\frac{1}{6} S h$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính thể tích khối chóp $V = \\frac{1}{3} S h$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503002",
+        "question": "Phép vị tự tỉ số $k > 0$ biến khối chóp có thể tích $V$ thành khối chóp có thể tích $V'$. Khi đó:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V V' = k$",
+            "B. $V' V = k^2$",
+            "C. $V V' = k^3$",
+            "D. $V' V = k^3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phép vị tự tỉ số $k > 0$ biến khối chóp có thể tích $V$ thành khối chóp có thể tích $V'$. Khi đó $\\frac{V'}{V} = k^3$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503003",
+        "question": "Cho khối chóp tam giác $S . A B C$, trên các cạnh $S A$, $S B$, $S C$ lần lượt lấy các điểm $A'$, $B'$, $C'$. Khi đó:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V_S \\cdot A' B' C' \\, V_S \\cdot A B C = S A' S A + S B' S B + S C' S C$",
+            "B. $V_S \\cdot A B C \\, V_S \\cdot A' B' C' = S A' S A \\cdot S B' S B \\cdot S C' S C$",
+            "C. $V_S \\cdot A' B' C' \\, V_S \\cdot A B C = S A' S A = S B' S B = S C' S C$",
+            "D. $V_S \\cdot A' B' C' \\, V_S \\cdot A B C = S A' S A \\cdot S B' S B \\cdot S C' S C$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu $A'$, $B'$, $C'$ là ba điểm lần lượt nằm trên các cạnh $S_A$, $S_B$, $S_C$ của hình chóp tam giác $S.AB C$. Khi đó: $\\frac{V_{S.A'B'C'}}{V_{S.A B C}} = \\frac{S_{A'} S_A}{S_{B'} S_B} \\cdot \\frac{S_{C'} S_C}{S_C}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503004",
+        "question": "Đáy của hình chóp $S.ABCD$ là một hình vuông cạnh $a$. Cạnh bên $SA$ vuông góc với mặt đáy và có độ dài là $a$. Thể tích khối tứ diện $S.BCD$ bằng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a \\, 3 \\, 6$",
+            "B. $a \\, 3 \\, 3$",
+            "C. $a \\, 3 \\, 4$",
+            "D. $a \\, 3 \\, 8$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $S_{\\Delta BCD} = \\frac{1}{2} S_{ABCD} = \\frac{1}{2} a^2 V$ $S_{BCD} = \\frac{1}{3} S_A \\cdot S_{BCD} = \\frac{1}{3} a \\cdot \\frac{1}{2} a^2 = \\frac{a^3}{6}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503005",
+        "question": "Cho hình chóp $S.ABCD$ có $ABCD$ là hình thang vuông tại $A$ và $D$ thỏa mãn $SA \\perp (ABCD)$ và $AB = 2$, $AD = 2$, $CD = 2$, $a = \\sqrt{2} SA$. Thể tích khối chóp $S.BCD$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $2 a^3 \\sqrt{2} \\, 3$",
+            "B. $a^3 \\sqrt{2} \\, 6$",
+            "C. $2 a^3 \\, 3$",
+            "D. $a^3 \\sqrt{2} \\, 12$"
+        ],
+        "answer": "B",
+        "explain": "Ta có: $S_{ABCD} = \\frac{1}{2} (AB + CD)$. $AD = \\frac{1}{2} (2a + a) \\Rightarrow a = \\frac{3a}{2}$. $S_{\\Delta ABD} = \\frac{1}{2} AD \\cdot AB = \\frac{1}{2} a \\cdot 2a = a^2 \\Rightarrow S_{BCDA} = S_{ABCD} - S_{ABD} = \\frac{3a^2}{2} - a^2 = \\frac{a^2}{2}$. $S_A = 2a \\sqrt{2} = a \\sqrt{2} \\Rightarrow V_{S_{BCD}} = \\frac{1}{3} S_A \\cdot S_{BCDA} = \\frac{1}{3} a \\sqrt{2} \\cdot \\frac{a^2}{2} = \\frac{a^3 \\sqrt{2}}{6}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503006",
+        "question": "Cho khối chóp $S . A B C$ có đáy $A B C$ là tam giác cân tại $A$, biết $S A \\perp ( A B C )$, $B C = 2 a$, $ \\angle B A C = 120^\\circ$, góc giữa mặt phẳng $( S B C )$ và $( A B C )$ bằng $45^\\circ$. Tính thể tích khối chóp $S . A B C$.",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1561014972414_43.PNG",
+        "difficulty": 0,
+        "options": [
+            "A. $a \\ 3 \\ 2$",
+            "B. $a \\ 3 \\ 9$",
+            "C. $a \\ 3 \\ \\sqrt{2}$",
+            "D. $a \\ 3 \\ 3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $E$ là trung điểm của $B C$ ⇒ $\\{ A E \\perp B C \\, \\text{và} \\, S A \\perp B C \\} \\Rightarrow B C \\perp ( S A E ) \\Rightarrow B C \\perp S E$ Ta có: $\\begin{cases} A E \\perp B C \\\\ S E \\perp B C \\end{cases} ( A B C ) \\cap ( S B C ) = B C \\Rightarrow \\angle ( ( A B C ) ; ( S B C ) ) = \\angle S E A = 45^{\\circ} \\Rightarrow \\Delta S A E$ vuông cân tại $A \\Rightarrow S A = A E$. Tam giác $A B C$ cân tại $A$ có $\\hat{A} = 120^{\\circ} , B C = 2a , A E$ là tia phân giác của $\\hat{A} \\Rightarrow \\hat{B A E} = 60^{\\circ}$. Tam giác vuông $A E B$ có $\\hat{B A E} = 60^{\\circ} , B E = \\frac{1}{2} B C = a \\Rightarrow A E = B E \\tan 60^{\\circ} = B E \\sqrt{3} = a \\sqrt{3} \\Rightarrow S A$. ⇒ $V_{S A B C} = \\frac{1}{3} S A \\cdot S A B C = \\frac{1}{3} \\cdot S A \\cdot \\frac{1}{2} A E \\cdot B C = \\frac{1}{3} \\cdot a \\sqrt{3} \\cdot \\frac{1}{2} \\cdot a \\sqrt{3} \\cdot 2a = \\frac{a^3}{9}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503007",
+        "question": "Cho hình chóp $S.ABCD$ có $SA \\perp (ABCD)$. Biết $AC = a \\sqrt{2}$, cạnh $SC$ tạo với đáy một góc $60^\\circ$ và diện tích tứ giác $ABCD$ là $3a^2$. Gọi $H$ là hình chiếu của $A$ trên cạnh $SC$. Tính thể tích khối chóp $H.ABCD$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{6} \\cdot 2$",
+            "B. $a \\cdot 3 \\sqrt{6} \\cdot 4$",
+            "C. $a \\cdot 3 \\sqrt{6} \\cdot 8$",
+            "D. $3 \\cdot a \\cdot 3 \\sqrt{6} \\cdot 8$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $S A \\perp ( A B C D ) \\Rightarrow A C$ là hình chiếu của $S C$ trên $( A B C D ) \\Rightarrow \\widehat{( S C ; ( A B C D ) )} = \\widehat{( S C ; A C )} = 60^\\circ$ $S A \\perp ( A B C D ) \\Rightarrow S A \\perp A C \\Rightarrow \\triangle S A C$ vuông tại $A$ và $\\widehat{S C A} = 60^\\circ$ Xét tam giác vuông $S A C$ có: $S A = A C \\cdot \\tan 60^\\circ = a \\sqrt{2} \\cdot \\sqrt{3} = a \\sqrt{6} ; S C = A C \\cdot \\cos 60^\\circ = a \\sqrt{2} \\cdot \\frac{1}{2} = 2 a \\sqrt{2}$ Áp dụng hệ thức lượng trong tam giác vuông $S A C$ có: $A C^2 = H C \\cdot S C \\Rightarrow \\frac{H C}{S C} = \\frac{A C^2}{S C^2} = \\frac{2 a^2}{8 a^2} = \\frac{1}{4}$ Trong $( S A C )$ kẻ $H K \\parallel S A \\Rightarrow H K \\perp ( A B C D )$ Ta có: $\\frac{H K}{S A} = \\frac{H C}{S C} = \\frac{1}{4} \\Rightarrow H K = \\frac{1}{4} S A = \\frac{a \\sqrt{6}}{4}$ Vậy $V H \\cdot A B C D = \\frac{1}{3} H K \\cdot S A B C D = \\frac{1}{3} \\cdot \\frac{a \\sqrt{6}}{4} \\cdot 3 a^2 \\cdot 2 = a^3 \\cdot \\frac{\\sqrt{6}}{8}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503008",
+        "question": "Cho hình chóp $SABC$ có $SA \\perp SB$, $SB \\perp SC$, $SA \\perp SC$; $SA = 2a$, $SB = b$, $SC = c$. Thể tích khối chóp là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1 \\cdot 3 \\cdot a \\cdot b \\cdot c$",
+            "B. $1 \\cdot 9 \\cdot a \\cdot b \\cdot c$",
+            "C. $1 \\cdot 6 \\cdot a \\cdot b \\cdot c$",
+            "D. $2 \\cdot 3 \\cdot a \\cdot b \\cdot c$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $S_A \\perp S_B$ $S_A \\perp S_C$ $S_B \\perp S_C$  ⇒ $S_{ABC}$ là tứ diện vuông. ⇒ $V_{S_{ABC}} = \\frac{1}{6} S_A \\cdot S_B \\cdot S_C = \\frac{1}{6} \\cdot 2a \\cdot b \\cdot c = \\frac{1}{3} abc$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503009",
+        "question": "Cho hình chóp $S.ABC$ có đáy $ABC$ vuông tại $A$ và $SB$ vuông góc với đáy. Biết $SB = a$, $SC$ hợp với $(SAB)$ một góc $30^\\circ$ và $(SAC)$ hợp với đáy $(ABC)$ một góc $60^\\circ$. Thể tích khối chóp là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 27$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 9$",
+            "C. $a \\cdot 3 \\cdot 27$",
+            "D. $a \\cdot 3 \\cdot 9$"
+        ],
+        "answer": "A",
+        "explain": "Ta có: $A C \\perp A B$ $A C \\perp S B$ $( S B \\perp ( A B C ) )$ $\\Rightarrow A C \\perp ( S A B ) \\Rightarrow A C \\perp S A \\Rightarrow S A$ là hình chiếu vuông góc của $S C$ trên $( S A B )$ $\\Rightarrow \\hat{( S C ; ( S A B ) )} = \\hat{( S C ; S A )} = \\hat{C S A} = 30^{\\circ}$ $( S A C ) \\cap ( A B C ) = A C$ $( S A C ) \\supset S A \\perp A C$ $( A B C ) \\supset A B \\perp A C$ $\\begin{cases} \\hat{( ( S A C ) ; ( A B C ) )} = \\hat{( S A ; A B )} = \\hat{S A B} = 60^{\\circ} \\\\ S B \\perp ( A B C ) \\Rightarrow S B \\perp A B \\Rightarrow \\Delta S A B$ vuông tại B $\\Rightarrow A B = S B \\cdot \\cot 60^{\\circ} = a \\cdot 1 \\sqrt{3} = \\frac{a \\sqrt{3}}{3} \\Rightarrow S A = \\sqrt{S B^2 + A B^2} = \\sqrt{a^2 + \\frac{a^2}{3}} = 2a \\sqrt{3}$ Xét tam giác vuông $S A C$ ta có: $A C = S A \\cdot \\tan 30^{\\circ} = 2 a \\sqrt{3} \\cdot 1 \\sqrt{3} = 2 a \\cdot \\frac{1}{\\sqrt{3}}$ $S A B C = \\frac{1}{2} A B \\cdot A C = \\frac{1}{2} a \\cdot \\frac{\\sqrt{3}}{3} \\cdot 2 a \\cdot \\frac{1}{\\sqrt{3}} = \\frac{a^2 \\sqrt{3}}{9}$ $V S \\cdot A B C = \\frac{1}{3} S B \\cdot S A B C = \\frac{1}{3} \\cdot a \\cdot \\frac{a^2 \\sqrt{3}}{9} = \\frac{a^3 \\sqrt{3}}{27}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503010",
+        "question": "Cho tứ diện $A B C D$ có các cạnh $A B$, $A C$, $A D$ đôi một vuông góc với nhau, $A B = 6 a$, $A C = 7 a$, $A D = 4 a$. Gọi $M$, $N$, $P$ lần lượt là trung điểm của các cạnh $B C$, $C D$, $D B$. Thể tích $V$ của tứ diện $A M N P$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V = 7 a^3 2$",
+            "B. $V = 14 a^3$",
+            "C. $V = 28 a^3 3$",
+            "D. $V = 7 a^3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: A B C D là tứ diện vuông tại A nên $V_{A B C D} = \\frac{1}{6} A B \\cdot A C \\cdot A D = \\frac{1}{6} \\cdot 6a \\cdot 7a \\cdot 4a = 28a^3$. Áp dụng công thức tính tỉ lệ thể tích các khối tứ diện ta có: $V_{D A P N} \\cdot V_{D A B C} = \\frac{D A}{D A} \\cdot \\frac{D P}{D B} \\cdot \\frac{D N}{D C} = \\frac{1}{1} \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4} \\Rightarrow V_{D A P N} = \\frac{1}{4} V_{D A B C} = \\frac{1}{4} \\cdot 28a^3 = 7a^3$ $V_{B A P M} \\cdot V_{B A D C} = \\frac{B A}{B A} \\cdot \\frac{B P}{B D} \\cdot \\frac{B M}{B C} = \\frac{1}{1} \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4} \\Rightarrow V_{B A P M} = \\frac{1}{4} V_{B A D C} = \\frac{1}{4} \\cdot 28a^3 = 7a^3$ $V_{C A M N} \\cdot V_{C A B D} = \\frac{C A}{C A} \\cdot \\frac{C M}{C B} \\cdot \\frac{C N}{C D} = \\frac{1}{1} \\cdot \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{1}{4} \\Rightarrow V_{C A M N} = \\frac{1}{4} V_{C A B D} = \\frac{1}{4} \\cdot 28a^3 = 7a^3$ Do đó $V_{A M N P} = V_{A B C D} - V_{D A P N} - V_{B A P M} - V_{C A M N} = 28a^3 - 7a^3 - 7a^3 - 7a^3 = 7a^3$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503011",
+        "question": "Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$. Mặt phẳng $(SAB)$ và $(SAD)$ cùng vuông góc với mặt phẳng $(ABCD)$. Đường thẳng $SC$ tạo với đáy góc $45^\\circ$. Gọi $M$, $N$ lần lượt là trung điểm của $AB$ và $AD$. Thể tích của khối chóp $S.MCDN$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5 a 3 \\sqrt{2} 12$",
+            "B. $5 a 3 \\sqrt{2} 6$",
+            "C. $5 a 3 \\sqrt{2} 8$",
+            "D. $5 a 3 \\sqrt{2} 24$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ ( S A B ) \\perp ( A B C D ) $ $ ( S A D ) \\perp ( A B C D ) $ $ ( S A B ) \\cap ( S A D ) = S A $ \n$\\Rightarrow S A \\perp ( A B C D ) \\Rightarrow A C$ là hình chiếu vuông góc của $ S C $ trên $ ( A B C D ) \\Rightarrow \\widehat{( S C ; ( A B C D ) )} = \\widehat{( S C ; A C )} = \\widehat{S C A} = 45^\\circ $ (vì $ S A \\perp ( A B C D ) \\Rightarrow S A \\perp A C \\Rightarrow \\triangle S A C $ vuông tại A $\\Rightarrow \\widehat{S C A} < 90^\\circ $) \n$\\Rightarrow S A = A C = a \\sqrt{2} $ \n$ S A B C D = a^2 $ \n$ S A M N = \\frac{1}{2} A M \\cdot A N = \\frac{1}{2} a^2 \\cdot a^2 = \\frac{a^2}{8} $ \n$ S B C M = \\frac{1}{2} B M \\cdot B C = \\frac{1}{2} a^2 \\cdot a = \\frac{a^2}{4} \\Rightarrow S M C D N = S A B C D - S A M N - S B C M = a^2 - \\frac{a^2}{8} - \\frac{a^2}{4} = \\frac{5 a^2}{8} $ \n$ V_{S M C D N} = \\frac{1}{3} S A \\cdot S M C D N = \\frac{1}{3} a \\sqrt{2} \\cdot \\frac{5 a^2}{8} = \\frac{5 a^3 \\sqrt{2}}{24} $ \nĐáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503012",
+        "question": "Cho khối lăng trụ tam giác đều $A B C$ và $A_1 B_1 C_1$ có tất cả các cạnh bằng $a$. Gọi $M$ là trung điểm của $A A_1$. Thể tích khối chóp $M B C A_1$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\, 3 \\, \\sqrt{3} \\, 12$",
+            "B. $a \\, 3 \\, \\sqrt{3} \\, 24$",
+            "C. $a \\, 3 \\, \\sqrt{3} \\, 6$",
+            "D. $a \\, 3 \\, \\sqrt{3} \\, 8$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Δ A B C là tam giác đều cạnh $a$ nên có diện tích $S_{ABC} = \\frac{a^2 \\sqrt{3}}{4}$. Ta có $A M = \\frac{A A_1}{2} = \\frac{a}{2}$. Hai tứ diện $M A B C$ và $M A_1 B C$ có chung đỉnh $C$, diện tích hai đáy $M A B$ và $M A_1 B$ bằng nhau nên có thể tích bằng nhau, suy ra $V_{M.BC A_1} = V_{M.A B C} = \\frac{1}{3} A M \\cdot S_{ABC} = \\frac{a^3 \\sqrt{3}}{24}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503013",
+        "question": "Cho hình lăng trụ $A B C$ và $A' B' C'$ có thể tích bằng $V$. Gọi $M$ là trung điểm cạnh $B B'$, điểm $N$ thuộc cạnh $C C'$ sao cho $C N = 2 C' N$. Tính thể tích khối chóp $A B C N M$ theo $V$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_A \\cdot B_{C N M} = 7 V_{12}$",
+            "B. $V_A \\cdot B_{C N M} = 7 V_{18}$",
+            "C. $V_A \\cdot B_{C N M} = V_{3}$",
+            "D. $V_A \\cdot B_{C N M} = 5 V_{18}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $S_{B C C' B'} = d(B; C C')$. $C C' S_{B M N C} = (B M + C N) d(B; C C')^2 = \\frac{1}{2} d(B; C C') \\left(\\frac{1}{2} C C' + \\frac{2}{3} C C'\\right) = \\frac{7}{12} d(B; C C')$. $C C' \\Rightarrow S_{B M N C} S_{B C C' B'} = \\frac{7}{12}$. Vì $A.BMNC$ và $A.BCC'B'$ có cùng chiều cao từ $A$ nên $V_A . B M N C = V_A . B C C' B' = \\frac{1}{3} d(A, (A M N C)) . S_{A M N C} = \\frac{1}{3} d(A, (B C C' B')) . S_{B C C' B'} = S_{B M N C} S_{B C C' B'} = \\frac{7}{12} \\Rightarrow V_A . B M N C = \\frac{7}{12} V_A . B C C' B'$. Có $V_A . A' B' C' + V_A . B C C' B' = V$ và $V_A . A' B' C' = \\frac{1}{3} d(A, (A' B' C')) . S_{A' B' C'} = \\frac{1}{3} V$ (Do $d(A, (A' B' C')) . S_{A' B' C'} = V$) $\\Rightarrow V_A . B C C' B' = \\frac{2}{3} V \\Rightarrow V_A . B M N C = \\frac{7}{12} . \\frac{2}{3} V = \\frac{7}{18} V$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503014",
+        "question": "Cho hình chóp đều $S . A B C D$ có cạnh bên và cạnh đáy bằng $a$. Thể tích của khối chóp $S . A B C D$ là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a\\ 3\\ \\sqrt{2}\\ 6$",
+            "B. $a\\ 2\\ \\sqrt{2}\\ 2$",
+            "C. $a\\ 3\\ 2$",
+            "D. $a\\ 3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $O = A C \\cap B D$ Vì chóp $S . A B C D$ đều nên $S O \\perp ( A B C D )$ Ta có: $A C = B D = a \\sqrt{2} \\Rightarrow O A = \\frac{1}{2} A C = \\frac{a \\sqrt{2}}{2}$ $S O \\perp ( A B C D ) \\Rightarrow S O \\perp O A \\Rightarrow \\Delta S O A$ vuông tại $O \\Rightarrow S O = \\sqrt{S A^2 - O A^2} = \\sqrt{a^2 - \\left(\\frac{a}{2}\\right)^2} = \\frac{a \\sqrt{2}}{2}$ Vậy $V S . A B C D = \\frac{1}{3} S O . S A B C D = \\frac{1}{3} \\cdot \\frac{a \\sqrt{2}}{2} \\cdot a^2 = \\frac{a^3 \\sqrt{2}}{6}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503015",
+        "question": "Cho hình chóp tam giác đều $S.AB C$ có cạnh đáy bằng $a$, góc giữa cạnh bên và mặt đáy bằng $60^\\circ$. Tính thể tích khối chóp $S.AB C$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $V = 5 a^3 \\sqrt{3} \\, 12$",
+            "B. $V = a^3 \\sqrt{3} \\, 12$",
+            "C. $V = a^3 \\sqrt{5} \\, 12$",
+            "D. $V = a^3 \\sqrt{3} \\, 10$"
+        ],
+        "answer": "B",
+        "explain": "Gọi O là trọng tâm tam giác đều ABC. Vì chóp $S.ABC$ đều nên $S O \\perp ( A B C )$ ⇒ $O A$ là hình chiếu vuông góc của $S A$ lên $( A B C )$ ⇒ $\\hat{( S A ; ( A B C ) )} = \\hat{( S A ; O A )} = \\hat{S A O} = 60^{\\circ}$. $S O \\perp ( A B C )$ ⇒ $S O \\perp O A$ ⇒ $\\Delta S A O$ vuông tại O. Gọi D là trung điểm của BC ta có: $A D = a \\frac{\\sqrt{3}}{2}$ ⇒ $A O = \\frac{2}{3} A D = \\frac{2}{3} a \\frac{\\sqrt{3}}{2} = a \\frac{\\sqrt{3}}{3}$ ⇒ $S O = A O \\cdot \\tan 60^{\\circ} = a \\frac{\\sqrt{3}}{3} \\cdot \\sqrt{3} = a$. Vì tam giác $ABC$ đều nên $S \\Delta A B C = a^{2} \\frac{\\sqrt{3}}{4}$. Vậy $V_{S.A B C} = \\frac{1}{3} S O \\cdot S \\Delta A B C = \\frac{1}{3} a \\cdot a^{2} \\frac{\\sqrt{3}}{4} = \\frac{a^{3} \\sqrt{3}}{12}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503016",
+        "question": "Cho hình chóp tam giác đều $S.ABC$ có cạnh đáy bằng $a$. Gọi $G$ là trọng tâm tam giác $ABC$, góc giữa $SG$ và mặt phẳng $(SBC)$ là $30^\\circ$. Thể tích khối chóp $S.ABC$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 4$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 8$",
+            "C. $a \\cdot 3 \\sqrt{3} \\cdot 12$",
+            "D. $a \\cdot 3 \\sqrt{3} \\cdot 24$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì chóp $S.ABC$ đều nên $S G \\perp ( A B C )$ Gọi $D$ là trung điểm của $BC$ ta có: $B C \\perp S G$ $( S G \\perp ( A B C ) )$ $B C \\perp A D$ } ⇒ $B C \\perp ( S A D )$ Trong $( S A D )$ kẻ $G H \\perp S D$ $( 1 )$ ta có: $B C \\perp ( S A D )$ ⇒ $G H \\perp B C$ $( 2 )$ Từ $(1)$ và $(2)$ suy ra $SH$ là hình chiếu vuông góc của $SG$ trên $(SBC)$ ⇒ $\\hat{( S G ; ( S B C ) )} = \\hat{( S G ; S H )} = \\hat{G S H} = 30^\\circ$ Vì tam giác $ABC$ đều nên $A D = \\frac{a \\sqrt{3}}{2}$ ⇒ $G D = \\frac{1}{3} A D = \\frac{1}{3} \\frac{a \\sqrt{3}}{2} = \\frac{a \\sqrt{3}}{6}$ $S G \\perp ( A B C )$ ⇒ $S G \\perp G D$ ⇒ $\\Delta S G D$ vuông tại $G$ ⇒ $S G = G D \\cdot \\cot 30^\\circ = \\frac{a \\sqrt{3}}{6} \\cdot \\sqrt{3} = \\frac{a}{2}$ $S \\Delta A B C = \\frac{a^2 \\sqrt{3}}{4}$ ⇒ $V S . A B C = \\frac{1}{3} S G \\cdot S \\Delta A B C = \\frac{1}{3} \\cdot a^2 \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{24}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503017",
+        "question": "Cho hình chóp đều $S.ABCD$ có diện tích đáy là $16\\, \\text{cm}^2$, diện tích một mặt bên là $8\\sqrt{3}\\, \\text{cm}^2$. Thể tích khối chóp $S.ABCD$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $32 \\sqrt{2} \\, 3 \\, \\text{cm}^3$",
+            "B. $32 \\sqrt{13} \\, 3 \\, \\text{cm}^3$",
+            "C. $32 \\sqrt{11} \\, 3 \\, \\text{cm}^3$",
+            "D. $4 \\, \\text{cm}^3$"
+        ],
+        "answer": "C",
+        "explain": "Gọi O = A C ∩ B D. Vì chóp $S$. $A B C D$ đều nên $S O \\perp (A B C D)$. Vì chóp $S$. $A B C D$ đều nên $A B C D$ là hình vuông $\\Rightarrow S A B C D = A B^2 = 16 \\Rightarrow A B = 4 \\, \\text{cm}$. Gọi E là trung điểm của AB $\\Rightarrow O E$ là đường trung bình của tam giác $ABD \\Rightarrow O E \\parallel A D \\Rightarrow O E \\perp A B$ và $O E = \\frac{1}{2} A D = \\frac{1}{2} \\cdot 4 = 2 \\, \\text{cm}$. $O E \\perp A B$. $S O \\perp A B$ ($S O \\perp (A B C D)$) $\\Rightarrow A B \\perp (S O E) \\Rightarrow A B \\perp S E \\Rightarrow S \\Delta S A B = \\frac{1}{2} S E \\cdot A B = 8 \\sqrt{3} \\Rightarrow S E = 16 \\sqrt{3}$. $A B = \\frac{16 \\sqrt{3}}{4} = 4 \\sqrt{3} \\, \\text{cm}$. $S O \\perp (A B C D) \\Rightarrow S O \\perp O E \\Rightarrow \\Delta S O E$ vuông tại O $\\Rightarrow S O = \\sqrt{S E^2 - O E^2} = \\sqrt{48 - 4} = \\sqrt{44} = 2 \\sqrt{11} \\, \\text{cm}$. Vậy $V_{S . A B C D} = \\frac{1}{3} S O \\cdot S A B C D = \\frac{1}{3} \\cdot 2 \\sqrt{11} \\cdot 16 = \\frac{32 \\sqrt{11}}{3} \\, \\text{cm}^3$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503018",
+        "question": "Cho hình chóp tam giác đều $S.ABC$ có cạnh đáy bằng $a$ và mặt bên hợp với đáy một góc $60^{\\circ}$. Thể tích khối chóp $S.ABC$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 12$",
+            "B. $a \\cdot 3 \\sqrt{2} \\cdot 24$",
+            "C. $a \\cdot 3 \\sqrt{3} \\cdot 24$",
+            "D. $a \\cdot 3 \\cdot 24$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bước 1: Gọi $G$ là trọng tâm tam giác $A B C$. Vì chóp $S . A B C$ đều nên $S G \\perp ( A B C )$ Gọi $D$ là trung điểm của $B C$ ta có: $A D \\perp B C$ Ta có: $B C \\perp A D$ $B C \\perp S G$ $( S G \\perp ( A B C ) )$ $\\Rightarrow B C \\perp ( S A D ) \\Rightarrow B C \\perp S D$ $( S B C ) \\cap ( A B C ) = B C$ $( S B C ) \\supset S D \\perp B C$ $( A B C ) \\supset A D \\perp B C$ $\\begin{cases} \\hat{( S B C ) ; ( A B C ) \\\\ \\hat{( S D ; A D ) = \\hat{ S D A = 60^\\circ} \\end{cases}$ Bước 2: Vì tam giác $A B C$ đều cạnh $a$ nên $A D = \\frac{a \\sqrt{3}}{2} \\Rightarrow D G = \\frac{1}{3} A D = \\frac{a \\sqrt{3}}{6}$ $S G \\perp ( A B C ) \\Rightarrow S G \\perp A D \\Rightarrow \\Delta S G D$ vuông tại $G \\Rightarrow S G = G D \\cdot \\tan 60^\\circ = \\frac{a \\sqrt{3}}{6} \\cdot \\sqrt{3} = \\frac{a}{2}$ Bước 3: Tam giác $A B C$ đều $\\Rightarrow S \\Delta A B C = \\frac{a^2 \\sqrt{3}}{4}$ Bước 4: $\\Rightarrow V_{S . A B C} = \\frac{1}{3} S G \\cdot S \\Delta A B C = \\frac{1}{3} \\cdot a^2 \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{24}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503019",
+        "question": "Cho hình chóp tứ giác đều $S.ABCD$ có chiều cao $h$, góc ở đỉnh của mặt bên bằng $60^\\circ$. Thể tích hình chóp là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3\\,h\\,3\\,2$",
+            "B. $h\\,3\\,3$",
+            "C. $2\\,h\\,3\\,3$",
+            "D. $h\\,3\\,\\sqrt{3}\\,3$"
+        ],
+        "answer": "C",
+        "explain": "Gọi $O = A C \\cap B D$. Vì chóp $S . A B C D$ đều nên $S O \\perp ( A B C D )$. Đặt $S A = S B = S C = S D = a$. Tam giác $S C D$ có: $S C = S D$; $\\angle C S D = 60^{\\circ} \\Rightarrow \\Delta S C D$ đều $\\Rightarrow C D = S C = S D = a \\Rightarrow$ Hình vuông $A B C D$ cạnh $a \\Rightarrow A C = B D = a \\sqrt{2} \\Rightarrow O C = \\frac{1}{2} A C = \\frac{a \\sqrt{2}}{2}$. $S O \\perp ( A B C D ) \\Rightarrow S O \\perp O C \\Rightarrow \\Delta S O C$ vuông tại $O \\Rightarrow S O = \\sqrt{S C^2 - O C^2} \\Rightarrow h = \\sqrt{a^2 - \\left(\\frac{a \\sqrt{2}}{2}\\right)^2} = a \\frac{\\sqrt{2}}{2} \\Rightarrow a = h \\sqrt{2} \\Rightarrow S A B C D = a^2 = (h \\sqrt{2})^2 = 2 h^2$. Vậy $V S . A B C D = \\frac{1}{3} S O . S A B C D = \\frac{1}{3} h . 2 h^2 = \\frac{2 h^3}{3}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503020",
+        "question": "Cho hình chóp tứ giác đều $S . A B C D$ có chiều cao bằng $h$, góc giữa hai mặt phẳng $(S A B)$ và $(A B C D)$ bằng $\\alpha$. Tính thể tích của khối chóp $S . A B C D$ theo $h$ và $\\alpha$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 h^3 4 \\tan^2 \\alpha$",
+            "B. $4 h^3 3 \\tan^2 \\alpha$",
+            "C. $8 h^3 3 \\tan^2 \\alpha$",
+            "D. $4 h^3 8 \\tan^2 \\alpha$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com + Gọi $O = A \\cap B D$ ⇒ $S O \\perp ( A B C D )$. + Gọi $M$ là trung điểm của $C D$ ta có: $\\{ C D \\perp O M \\quad C D \\perp S O \\Rightarrow C D \\perp ( S O M ) \\Rightarrow C D \\perp S M$. + $\\begin{cases} ( S C D ) \\cap ( A B C D ) = C D S M \\subset ( S C D ), \\\\ S M \\perp C D \\\\ O M \\subset ( A B C D ), \\\\ O M \\perp C D \\end{cases} \\Rightarrow \\angle ( ( S C D ) ; ( A B C D ) ) = \\angle ( S M ; O M ) = \\angle S M O = \\alpha$. + $\\Delta S O M : O M = S O \\cdot \\cot \\alpha = h \\cdot \\tan \\alpha \\Rightarrow A D = 2 O M = 2 h \\cdot \\tan \\alpha \\Rightarrow S A B C D = 4 h^2 \\cdot \\tan^2 \\alpha$. + $V S \\cdot A B C D = \\frac{1}{3} S O \\cdot S A B C D = \\frac{1}{3} \\cdot h \\cdot 4 h^2 \\tan^2 \\alpha = \\frac{4 h^3}{3} \\tan^2 \\alpha$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503021",
+        "question": "Thể tích khối bát diện đều cạnh $a$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{2}$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 6$",
+            "C. $a \\cdot 3 \\sqrt{2} \\cdot 6$",
+            "D. $a \\cdot 3 \\sqrt{2} \\cdot 3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích khối bát diện đều $V = 2 V S \\cdot A B C D$ Gọi $O = A C \\cap B D \\Rightarrow S O \\perp ( A B C D )$ Vì $ABCD$ là hình vuông nên $A C = B D = a \\sqrt{2} \\Rightarrow O A = \\frac{1}{2} A C = \\frac{a \\sqrt{2}}{2}$ $S O \\perp ( A B C D ) \\Rightarrow S O \\perp O A \\Rightarrow \\Delta S O A$ vuông tại $O \\Rightarrow S O = \\sqrt{S A^2 - O A^2} = \\sqrt{a^2 - \\left( \\frac{a}{2} \\right)^2} = \\frac{a \\sqrt{2}}{2} \\Rightarrow V S \\cdot A B C D = \\frac{1}{3} S O \\cdot S A B C D = \\frac{1}{3} \\cdot \\frac{a \\sqrt{2}}{2} \\cdot a^2 = \\frac{a^3 \\sqrt{2}}{6} \\Rightarrow V = 2 \\cdot \\frac{a^3 \\sqrt{2}}{6} = \\frac{a^3 \\sqrt{2}}{3}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503022",
+        "question": "Cho hình chóp $S$. $A B C$ đáy $A B C$ là tam giác vuông tại $A$, $A B = a$, $A C = a \\sqrt{3}$. Tam giác $S B C$ đều nằm trong mặt phẳng vuông góc với đáy. Tính thể tích khối chóp $S$. $A B C$. $V = \\frac{a^3}{2}$. $V = \\frac{a^3}{6}$. $V = \\frac{a^3 \\sqrt{3}}{6}$. $V = \\frac{a^3 \\sqrt{3}}{2}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V = a^3 \\cdot 2$",
+            "B. $V = a^3 \\cdot 6$",
+            "C. $V = a^3 \\cdot \\sqrt{3} \\cdot 6$",
+            "D. $V = a^3 \\cdot \\sqrt{3} \\cdot 2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong m p ( S B C ) kẻ $S H \\perp B C$ ( $H \\in B C$ ) ⇒ $S H \\perp ( A B C )$, $H$ là trung điểm $B C$ Xét tam giác vuông $A B C$ có $B C = \\sqrt{a^2 + 3a^2} = 2a$ ⇒ $\\Delta S B C$ đều cạnh $2a$ ⇒ $S H = 2a \\sqrt{3} = a \\sqrt{3}$ ⇒ $V_{S . A B C} = \\frac{1}{3} S H . S \\Delta A B C = \\frac{1}{6} S H . A B . A C = \\frac{1}{2} a^3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503023",
+        "question": "Cho hình chóp đều $S . A B C D$ có cạnh đáy bằng $2a$. Khoảng cách giữa hai đường thẳng $S A$ và $C D$ bằng $a \\sqrt{3}$. Thể tích khối chóp $S . A B C D$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 3$",
+            "B. $4 \\cdot a \\cdot 3 \\sqrt{3}$",
+            "C. $a \\cdot 3 \\sqrt{3}$",
+            "D. $4 \\cdot a \\cdot 3 \\sqrt{3} \\cdot 3$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $O = A C \\cap B D$. Vì chóp $S . A B C D$ đều nên $S O \\perp ( A B C D )$. Gọi $E$ và $F$ lần lượt là trung điểm của $C D$ và $A B$. Ta có: $A B \\parallel C D \\Rightarrow S A \\subset ( S A B ) \\parallel C D \\Rightarrow d ( C D ; S A ) = d ( C D ; ( S A B ) ) = d ( E ; ( S A B ) ) = 2 d ( O ; ( S A B ) ) = a \\sqrt{3} \\Rightarrow d ( O ; ( S A B ) ) = \\frac{a \\sqrt{3}}{2}$. Ta có: $O F \\perp A B$, $S O \\perp A B$ $( S O \\perp ( A B C D ) ) \\Rightarrow A B \\perp ( S O F )$. Trong $( S O F )$ kẻ $O H \\perp S F \\;( 1 )$. Vì $A B \\perp ( S O F ) \\Rightarrow A B \\perp O H \\;( 2 )$. Từ $(1)$ và $(2)$ suy ra $O H \\perp ( S A B ) \\Rightarrow d ( O ; ( S A B ) ) = O H = \\frac{a \\sqrt{3}}{2}$. Xét tam giác vuông $SOF$ có: $\\frac{1}{O H^2} = \\frac{1}{S O^2} + \\frac{1}{O F^2} \\Rightarrow \\frac{1}{S O^2} = \\frac{1}{O H^2} - \\frac{1}{O F^2} = \\frac{4}{3} a^2 - \\frac{1}{a^2} = \\frac{1}{3} a^2 \\Rightarrow S O = a \\sqrt{3}$. Vậy $V S . A B C D = \\frac{1}{3} S O . S A B C D = \\frac{1}{3} a \\sqrt{3} . 4 a^2 = \\frac{4 a^3 \\sqrt{3}}{3}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503024",
+        "question": "Cho hình chóp đều $S.AB C$, góc giữa mặt bên và mặt phẳng đáy $(AB C)$ bằng $60^\\circ$, khoảng cách giữa hai đường thẳng $SA$ và $BC$ bằng $3a^2\\sqrt{7}$. Thể tích của khối chóp $S.AB C$ theo $a$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 12$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 18$",
+            "C. $a \\cdot 3 \\sqrt{3} \\cdot 16$",
+            "D. $a \\cdot 3 \\sqrt{3} \\cdot 24$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com + Gọi O là tâm tam giác đều A B C ⇒ $S O \\perp ( A B C )$. + Gọi N là trung điểm B C ta có: $\\begin{cases} B C \\perp A N \\\\ B C \\perp S O \\Rightarrow B C \\perp ( S A N ) \\\\ \\Rightarrow B C \\perp S N \\end{cases}$ + $\\begin{cases} ( S B C ) \\cap ( A B C ) = B C \\\\ S N \\subset ( S B C ), \\\\ S N \\perp B C \\\\ A N \\subset ( A B C ), \\\\ A N \\perp B C \\Rightarrow \\angle ( ( S B C ); ( A B C ) ) = \\angle ( S N ; A N ) = \\angle S N A = 60^\\circ \\end{cases}$ + Trong $( S A M )$ kẻ $N H \\perp S A \\ ( H \\in S A ) \\Rightarrow N H \\perp B C \\Rightarrow d ( S A ; B C ) = N H = 3 a 2 \\sqrt{7}$. + Đặt $O N = x \\Rightarrow A N = 3 x, O A = 2 x$. + $\\Delta S O N : S O = O N \\cdot \\tan 60^\\circ = x \\sqrt{3}, S A = \\sqrt{S O^2 + O A^2} = \\sqrt{3 x^2 + 4 x^2} = x \\sqrt{7}$. + $\\Delta S A N : S \\Delta S A N = \\frac{1}{2} S O \\cdot A N = \\frac{1}{2} N H \\cdot S A \\Rightarrow S O \\cdot A N = N H \\cdot S A \\Rightarrow x \\sqrt{3} \\cdot 3 x = 3 a 2 \\sqrt{7} \\Rightarrow x \\sqrt{7} \\Leftrightarrow x = a 2 \\sqrt{3} \\Rightarrow A M = 3 a = a \\frac{\\sqrt{3}}{2} = A B \\frac{\\sqrt{3}}{2} \\Rightarrow A B = a \\Rightarrow S \\Delta A B C = a^2 \\frac{\\sqrt{3}}{4}$. Và $S O = x \\sqrt{3} = a^2$. Vậy $V S \\cdot A B C = \\frac{1}{3} S O \\cdot S \\Delta A B C = \\frac{1}{3} \\cdot a^2 \\cdot a^2 \\frac{\\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{24}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503025",
+        "question": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông cân tại $A$, cạnh bên $SA = SB = SC$. Góc giữa mặt phẳng $(SAB)$ và mặt đáy bằng $60^\\circ$. Biết rằng khoảng cách giữa hai đường thẳng $BC$ và $SA$ bằng $a \\sqrt{30} \\, \\text{cm}$, khi đó thể tích khối chóp $S.ABC$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 12$",
+            "B. $2 \\cdot a \\cdot 3 \\sqrt{3} \\cdot 3$",
+            "C. $2 \\cdot a \\cdot 3 \\sqrt{3}$",
+            "D. $a \\cdot 3 \\sqrt{3} \\cdot 4$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $E$ là trung điểm của $BC$. Vì tam giác $ABC$ vuông cân tại $A$ nên $E$ là tâm đường tròn ngoại tiếp tam giác $ABC$ $\\Rightarrow S_E \\perp (ABC)$. Gọi $D$ là trung điểm của $AB$ ta có $DE$ là đường trung bình của tam giác $ABC$ nên $DE \\parallel AC \\Rightarrow DE \\perp AB$. Ta có: $DE \\perp AB$, $SE \\perp AB$ $(SE \\perp (ABC))$ $\\Rightarrow AB \\perp (SDE) \\Rightarrow AB \\perp SD$ $(SAB) \\cap (ABC) = AB$ $(SAB) \\supset SD \\perp AB$ $(ABC) \\supset DE \\perp AB$ $\\Rightarrow \\angle (SAB); (ABC) = \\angle (SD; DE) = \\angle SDE = 60^\\circ$ (Vì $SE \\perp (ABC) \\Rightarrow SE \\perp DE \\Rightarrow \\Delta SDE$ vuông tại $E \\Rightarrow \\angle SDE < 90^\\circ$). Vì tam giác $ABC$ vuông cân tại $A$ nên $AE \\perp BC$. $AE \\perp BC$. $SE \\perp BC$ $(SE \\perp (ABC))$ $\\Rightarrow BC \\perp (SAE)$. Trong $(SAE)$ kẻ $EF \\perp SA\\ (1)$. Vì $BC \\perp (SAE) \\supset EF \\Rightarrow EF \\perp BC\\ (2)$. Từ $(1)$ và $(2)$ suy ra $d(SA; BC) = EF = a \\sqrt{30} 5$. Đặt $SA = SB = SC = b$; $AB = AC = c$. Vì tam giác $ABC$ vuông cân tại $A$ nên $BC = AB \\sqrt{2} = c \\sqrt{2}$. $DE$ là đường trung bình của tam giác $ABC$ $\\Rightarrow DE = \\frac{1}{2} AC = \\frac{c}{2}$. Xét tam giác vuông $SDE$ và $SBE$ ta có: $SD = \\sqrt{SA^2 - AD^2} = \\sqrt{b^2 - \\frac{c^2}{4}}$; $SE = \\sqrt{SB^2 - BE^2} = \\sqrt{b^2 - \\frac{c^2}{2}}$. Xét tam giác vuông $SDE$ có: $\\tan 60 = \\frac{SE}{DE} = \\frac{\\sqrt{b^2 - \\frac{c^2}{2}}}{\\frac{c}{2}} = \\sqrt{3} \\Rightarrow b^2 - \\frac{c^2}{2} = 3 \\frac{c^2}{4} \\Rightarrow b^2 = \\frac{5}{4} c^2 \\Rightarrow b = c \\sqrt{\\frac{5}{2}} \\Rightarrow SE = \\sqrt{5} \\frac{c}{2} - \\frac{c}{2} = c \\sqrt{\\frac{3}{2}}$. Áp dụng hệ thức lượng trong tam giác vuông $SAE$ có: $SE \\cdot AE = EF \\cdot SA \\Rightarrow \\frac{c \\sqrt{3}}{2} \\cdot \\frac{c \\sqrt{2}}{2} = \\frac{c \\sqrt{5}}{2} \\cdot a \\sqrt{30} 5 \\Rightarrow c = 2a \\Rightarrow SE = a \\sqrt{3}$. $S_{\\Delta ABC} = \\frac{1}{2} AB^2 = \\frac{1}{2} c^2 = 2a^2$. Vậy $V_{S. ABC} = \\frac{1}{3} S_E \\cdot S_{\\Delta ABC} = \\frac{1}{3} a \\sqrt{3} \\cdot 2a^2 = 2 a^3 \\frac{\\sqrt{3}}{3}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503026",
+        "question": "Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$, $SA$ vuông góc với mặt phẳng đáy $(ABCD)$ và $SA = a$. Điểm $M$ thuộc cạnh $SA$ sao cho $SMSA = k$. Xác định $k$ sao cho mặt phẳng $(BMC)$ chia khối chóp $S.ABCD$ thành hai phần có thể tích bằng nhau.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $k = -1 + \\frac{\\sqrt{3}}{2}$",
+            "B. $k = -1 + \\frac{\\sqrt{5}}{2}$",
+            "C. $k = -1 + \\frac{\\sqrt{2}}{2}$",
+            "D. $k = 1 + \\frac{\\sqrt{5}}{4}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $ B \\parallel A D $ nên mặt phẳng $( B M C )$ cắt $( S A D )$ theo đoạn thẳng $ M N \\parallel A D \\ ( N \\in S D )$ Vì $ M N \\parallel A D \\Rightarrow S M S A = S N S D = k \\Rightarrow V S \\cdot M B C \\cdot V S \\cdot A B C = S M S A = k \\Rightarrow V S \\cdot M B C = k \\cdot V S \\cdot A B C = k^2 \\cdot V S \\cdot A B C D \\cdot V S \\cdot M N C \\cdot V S \\cdot A D C = S M S A \\cdot S N S D = k^2 \\Rightarrow V S \\cdot M N C = k^2 \\cdot V S \\cdot A D C = k^2 \\cdot 2 \\cdot V S \\cdot A B C D \\Rightarrow V S \\cdot M B C N = V S \\cdot M B C + V S \\cdot M N C = ( k^2 + k^2 \\cdot 2 ) V S \\cdot A B C D Để mặt phẳng $( B M N C )$ chia hình chóp thành 2 phần có thể tích bằng nhau thì $ k^2 + k^2 \\cdot 2 = \\frac{1}{2} \\Leftrightarrow k^2 + k - 1 = 0 \\Leftrightarrow k = -1 + \\frac{\\sqrt{5}}{2} $ do $ k > 0 $ . Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503027",
+        "question": "Cho tứ diện $S A B C$ và $G$ là trọng tâm của tứ diện, mặt phẳng quay quanh $A G$ và cắt các cạnh $S B$, $S C$ tương ứng tại $M$, $N$. Giá trị nhỏ nhất của tỉ số $\\frac{V_{S A M N}}{V_{S A B C}}$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1\\ 2$",
+            "B. $1\\ 3$",
+            "C. $3\\ 8$",
+            "D. $4\\ 9$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $S_M S_B = a$ ; $S_N S_C = b$ ($0 < a ; b < 1$) Lấy $E$ là trung điểm $B C$. Trong $(S A E)$, kéo dài $A G$ cắt $S E$ tại $I$. Khi đó $I \\in M N$ và $I$ là trọng tâm tam giác $S B C$. Khi đó trong tam giác $S B C$ ta luôn có $S_B S_M + S_C S_N = 3$ (tính chất đã được chứng minh ở trên) Lại có $\\frac{V_{S.A M N}}{V_{S.A B C}} = \\frac{S_A}{S_A} \\cdot \\frac{S_M S_B}{S_N S_C} = a b$ Ta có $S_B S_M + S_C S_N = 3 \\Leftrightarrow \\frac{1}{a} + \\frac{1}{b} = 3$. Xét $\\frac{1}{a} + \\frac{1}{b} \\geq 2 \\sqrt{ab} \\Leftrightarrow \\sqrt{ab} \\geq 2 \\cdot \\frac{1}{a} + \\frac{1}{b} = 2 \\cdot 3 \\Leftrightarrow ab \\geq \\frac{4}{9}$. Dấu $=$ xảy ra khi $a = b = \\frac{2}{3}$. Từ đó $\\frac{V_{S.A M N}}{V_{S.A B C}} = ab \\geq \\frac{4}{9}$ hay tỉ số $\\frac{V_{S.A M N}}{V_{S.A B C}}$ nhỏ nhất là bằng $\\frac{4}{9}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503028",
+        "question": "Cho tứ diện đều $A B C D$ có cạnh bằng $8$. Ở bốn đỉnh tứ diện, người ta cắt đi các tứ diện đều bằng nhau có cạnh bằng $x$, biết khối đa diện tạo thành sau khi cắt có thể tích bằng $\\frac{3}{4}$ thể tích tứ diện $A B C D$. Giá trị của $x$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 \\cdot 3 \\sqrt{2}$",
+            "B. $3 \\cdot 3 \\sqrt{4}$",
+            "C. $2 \\sqrt{2}$",
+            "D. $2 \\cdot 3 \\sqrt{4}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện $A B C D$ đều cạnh $a$ có thể tích là $V_{A B C D} = \\frac{a^3 \\sqrt{2}}{12}$. Vì tứ diện đều $A B C D$ cạnh $8$ nên $V_{A B C D} = \\frac{8^3 \\sqrt{2}}{12} = \\frac{128 \\sqrt{2}}{3}$. Tứ diện đều $F A H I$ cạnh $x$ nên $V_1 = \\frac{x^3 \\sqrt{2}}{12}$. Tương tự ta có: $V_2 = V_3 = V_4 = \\frac{x^3 \\sqrt{2}}{12} \\Rightarrow$ Khối đa diện tạo thành sau khi cắt có thể tích là $V = V_{A B C D} - 4V_1 = \\frac{128 \\sqrt{2}}{3} - 4 \\cdot \\frac{x^3 \\sqrt{2}}{12} = \\left(128 - x^3\\right) \\frac{\\sqrt{2}}{3}$. Vì khối đa diện tạo thành sau khi cắt có thể tích bằng $\\frac{3}{4}$ thể tích tứ diện $A B C D$ nên ta có: $\\left(128 - x^3\\right) \\frac{\\sqrt{2}}{3} = \\frac{3}{4} \\cdot \\frac{128 \\sqrt{2}}{3} \\Rightarrow 128 - x^3 = 96 \\Leftrightarrow x^3 = 32 \\Rightarrow x = 2 \\sqrt[3]{4}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503029",
+        "question": "Cho hình chóp $S.ABC$ có $AB = AC = 4$, $BC = 2$, $SA = 4\\sqrt{3}$, $\\angle SAB = \\angle SAC = 30^\\circ$. Tính thể tích khối chóp $S.ABC$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_S \\cdot ABC = 8$",
+            "B. $V_S \\cdot ABC = 6$",
+            "C. $V_S \\cdot ABC = 4$",
+            "D. $V_S \\cdot ABC = 12$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Dễ thấy $ \\Delta S_{AB} = \\Delta S_{AC} $ ( c . g . c ) nên $ S_B = S_C $ hay tam giác $ \\Delta S_{BC} $ cân. Gọi $ M $ là trung điểm $ BC $ ta có: $ AM \\perp BC $, $ SM \\perp BC \\Rightarrow BC \\perp ( SA M ) $. Gọi $ H $ là hình chiếu của $ S $ trên $ AM $ thì $ SH \\perp AM $, $ SH \\perp BC $ nên $ SH $ là đường cao của hình chóp. Xét tam giác $ SAB $ có: $ SB^2 = SA^2 + AB^2 - 2 SA \\cdot AB \\cos 30^\\circ = 16 \\Rightarrow SB = 4 \\Rightarrow SC = 4 $. Do đó $ SM^2 = SB^2 + SC^2 - \\frac{BC^2}{4} = 15 \\Rightarrow SM = \\sqrt{15} $. Tam giác $ ABC $ có $ AM^2 = AB^2 + AC^2 - \\frac{BC^2}{4} = 15 \\Rightarrow AM = \\sqrt{15} $. Khi đó $ SS_{AM} = \\sqrt{p ( p - a ) ( p - b ) ( p - c )} = 6 $. Do đó: $ SH = \\frac{2 SS_{AM}}{AM} = \\frac{2 \\cdot 6}{\\sqrt{15}} = \\frac{4 \\sqrt{15}}{5} $. $ V_{ABC} = \\frac{1}{3} S_{ABC} \\cdot SH = \\frac{1}{3} \\cdot \\frac{1}{2} AM \\cdot BC \\cdot SH = \\frac{1}{6} \\cdot \\sqrt{15} \\cdot 2 \\cdot \\frac{4 \\sqrt{15}}{5} = 4 $. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503030",
+        "question": "Công thức tính thể tích lăng trụ có diện tích đáy $S$ và chiều cao $h$ là: $V = S h$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V = \\frac{1}{3} S h$",
+            "B. $V = \\frac{1}{2} S h$",
+            "C. $V = \\frac{1}{6} S h$",
+            "D. $V = S h$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức tính thể tích lăng trụ có diện tích đáy $S$ và chiều cao $h$ là $V = S \\cdot h$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503031",
+        "question": "Nếu một khối lăng trụ đứng có diện tích đáy bằng $B$ và cạnh bên bằng $h$ thì có thể tích là: $V = B \\cdot h$",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1 \\quad 2 \\quad B \\quad h$",
+            "B. $3 \\quad B \\quad h$",
+            "C. $B \\quad h$",
+            "D. $1 \\quad 3 \\quad B \\quad h$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích khối lăng trụ đã cho là: $V = B h$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503032",
+        "question": "Cho khối lăng trụ có diện tích đáy $B = 6$ và chiều cao $h = 2$. Thể tích của khối lăng trụ đã cho bằng: $V = B \\cdot h = 6 \\cdot 2 = 12$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 12",
+            "B. 8",
+            "C. $72$",
+            "D. $24$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích của khối lăng trụ đã cho là: $V = B h = 6,2 = 12$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503033",
+        "question": "V = S \\cdot a",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V = S \\cdot a$",
+            "B. $V = S 2 a$",
+            "C. $V = \\frac{1}{3} S a$",
+            "D. $V = S 2 a$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình hộp chữ nhật có cạnh bên vuông góc với đáy nên cạnh bên chính là đường cao. Vì hình hộp chữ nhật cũng là hình lăng trụ nên thể tích của khối hộp cũng được tính bởi công thức $V = S h$, hay $V = S a$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503034",
+        "question": "Đề thi THPT QG – 2021 lần 1– mã 104 Thể tích của khối lập phương cạnh $2\\, \\text{a}$ bằng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a \\, 3$",
+            "B. $2 \\, a \\, 3$",
+            "C. $8 \\, a \\, 3$",
+            "D. $4 \\, a \\, 3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích khối lập phương cạnh $2a$ là: $V = (2a)^3 = 8a^3$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503035",
+        "question": "Thể tích của khối hộp chữ nhật có ba kích thước là $3\\, \\text{cm}$, $4\\, \\text{cm}$, $5\\, \\text{cm}$ bằng: 60.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 20",
+            "B. 25",
+            "C. $60$",
+            "D. 30"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thể tích của khối hộp chữ nhật đã cho là: $V = a b c = 3 \\cdot 4 \\cdot 5 = 60$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503036",
+        "question": "Đề thi THPT QG - 2021 - mã 101 Thể tích của khối lập phương cạnh $5\\, \\text{a}$ bằng $125\\, \\text{a}^3$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $5 a^3$",
+            "B. $a^3$",
+            "C. $125 a^3$",
+            "D. $25 a^3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $V_{láp\\,phương} = (canh)^3 = (5a)^3 = 125a^3$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503037",
+        "question": "Cho khối lăng trụ tam giác $ABC.A′B′C′$ có thể tích $V$. Trên đáy $A′B′C′$ lấy điểm $M$ bất kì. Thể tích khối chóp $M.ABC$ tính theo $V$ bằng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V = 2$",
+            "B. $V = 2\\sqrt{3}$",
+            "C. $V = \\sqrt{3}$",
+            "D. $V = 3\\sqrt{4}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $M \\in ( A' B' C' )$ ⇒ $d ( M ; ( A B C ) ) = d ( ( A' B' C' ) ; ( A B C ) )$ ⇒ $V_{M}. A B C = \\frac{1}{3} d ( M ; ( A B C ) ) \\cdot S_{A B C} = \\frac{1}{3} V$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503038",
+        "question": "Cho hình hộp $A B C D$. $A' B' C' D'$. Gọi $V_1$; $V_2$ lần lượt là thể tích của khối tứ diện $A C B' D'$ và khối hộp $A B C D$. $A' B' C' D'$. Tỉ số $\\frac{V_1}{V_2}$ bằng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1$ $3$",
+            "B. $1$ $6$",
+            "C. $1$ $2$",
+            "D. $1$ $4$"
+        ],
+        "answer": "A",
+        "explain": "Ta thấy $V_1 = V_{ABCD} \\cdot A'B'C'D' = h \\cdot S_{ABCD}$ với $h = d(A', (ABCD)) + V_{D'} \\cdot A D C = \\frac{1}{3} d(D', (A D C)) \\cdot S_{\\Delta A D C} = \\frac{1}{3} \\cdot h \\cdot \\frac{1}{2} S_{ABCD} = \\frac{1}{6} V_1$. Tương tự ta có $V_C \\cdot D'C'B' = V_{B'} \\cdot A B C = V_A \\cdot A'B'D' = V_{D'} \\cdot A D C = \\frac{1}{6} V_1$. Lại có $V_C \\cdot D'C'B' + V_{B'} \\cdot A B C + V_A \\cdot A'B'D' + V_{D'} \\cdot A D C + V_{AC}B'D' = V_{ABCD} \\cdot A'B'C'D' \\Leftrightarrow V_2 = V_{AC}B'D' = V_1 - 4 \\cdot \\frac{1}{6} V_1 = \\frac{1}{3} V_1 \\Leftrightarrow V_1 V_2 = \\frac{1}{3}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503039",
+        "question": "Cho lăng trụ xiên tam giác $A B C$. $A' B' C'$ có đáy $A B C$ là tam giác đều cạnh $a$, biết cạnh bên là $a \\sqrt{3}$ và hợp với đáy $A B C$ một góc $60^\\circ$. Thể tích khối lăng trụ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3 a \\sqrt{3} 8$",
+            "B. $a \\sqrt{3} 8$",
+            "C. $3 a 8$",
+            "D. $a 8$"
+        ],
+        "answer": "A",
+        "explain": "Gọi $H$ là hình chiếu vuông góc của $A'$ trên $(ABC)$ ⇒ $A'H \\perp (ABC)$ ⇒ $AH$ là hình chiếu vuông góc của $AA'$ trên $(ABC)$ ⇒ $\\hat{(AA'; (ABC)) = \\hat{(AA'; AH)} = \\hat{A'AH} = 60^\\circ$ $A'H \\perp (ABC)$ ⇒ $A'H \\perp AH$ ⇒ $\\Delta A'AH$ vuông tại $H$ ⇒ $A'H = AA' \\cdot \\sin 60^\\circ = a \\cdot \\frac{\\sqrt{3}}{2} = \\frac{3a}{2}$ Tam giác $ABC$ đều cạnh nên $S_{ABC} = \\frac{a^2 \\sqrt{3}}{4}$ Vậy $V_{ABC.A'B'C'} = A'H \\cdot S_{ABC} = \\frac{3a^2 \\cdot a^2 \\sqrt{3}}{4} = \\frac{3a^3 \\sqrt{3}}{8}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503040",
+        "question": "Cho hình lăng trụ $A B C D$. $A' B' C' D'$ có đáy $A B C D$ là hình thoi cạnh $a$ và góc $\\hat{A} = 60^{\\circ}$. Chân đường cao hạ từ $B'$ xuống $(A B C D)$ trùng với giao điểm 2 đường chéo, biết $B B' = a$. Thể tích khối lăng trụ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3a^{3}2$",
+            "B. $3a^{3}8$",
+            "C. $3a^{3}4$",
+            "D. $a^{3}4$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $O = A C \\cap B D$. Xét tam giác $A B D$ có $A B = A D = a$ và $\\angle B A D = 60^\\circ \\Rightarrow \\Delta A B D$ đều cạnh $a \\Rightarrow B D = a \\Rightarrow B O = \\frac{a}{2} \\Rightarrow B' O \\perp (A B C D) \\Rightarrow B' O \\perp B O \\Rightarrow \\Delta B B' O$ vuông tại $O \\Rightarrow B' O = \\sqrt{B B'^{2} - B O^{2}} = \\sqrt{a^{2} - \\left(\\frac{a}{2}\\right)^{2}} = a \\frac{\\sqrt{3}}{2}$. $S A B D = \\frac{a^{2} \\sqrt{3}}{4} \\Rightarrow S A B C D = 2 S A B D = a^{2} \\frac{\\sqrt{3}}{2}$. Vậy $V A B C D . A' B' C' D' = B' O \\cdot S A B C D = \\frac{a \\sqrt{3}}{2} \\cdot a^{2} \\frac{\\sqrt{3}}{2} = \\frac{3 a^{3}}{4}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503041",
+        "question": "Cho hình lăng trụ $A B C$. $A' B' C'$ có $A B = 2a$, $A C = a$, $A A' = a \\sqrt{10} 2$, $\\hat{B A C} = 120^\\circ$. Hình chiếu vuông góc của $C'$ lên $(A B C)$ là trung điểm của cạnh $B C$. Tính thể tích khối lăng trụ $A B C. A' B' C'$ theo $a$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a \\, 3 \\sqrt{3} \\, 4$",
+            "B. $3 \\, a \\, 3 \\, 4$",
+            "C. $3 \\, a \\, 3 \\sqrt{3} \\, 4$",
+            "D. $a \\, 3 \\sqrt{3}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng định lí Côsin trong tam giác $A B C$ có: $B C = \\sqrt{A B^2 + A C^2 - 2 A B \\cdot A C \\cdot \\cos 120^\\circ} = \\sqrt{4 a^2 + a^2 - 2 \\cdot 2 a \\cdot a \\cdot -\\frac{1}{2}} = a \\sqrt{7} \\Rightarrow C H = \\frac{1}{2} B C = \\frac{a \\sqrt{7}}{2} \\quad C' H \\perp (A B C) \\Rightarrow C' H \\perp C H \\Rightarrow \\Delta C C' H \\text{ vuông tại } H \\Rightarrow C' H = \\sqrt{C C'^2 - C H^2} = \\sqrt{\\frac{10 a^2}{4} - \\frac{7 a^2}{4}} = \\frac{a \\sqrt{3}}{2} \\quad S A B C = \\frac{1}{2} A B \\cdot A C \\cdot \\sin 120^\\circ = \\frac{1}{2} \\cdot 2 a \\cdot a \\cdot \\frac{\\sqrt{3}}{2} = a^2 \\frac{\\sqrt{3}}{2} \\Rightarrow V A B C \\cdot A' B' C' = C' H \\cdot S A B C = \\frac{a \\sqrt{3}}{2} \\cdot a^2 \\frac{\\sqrt{3}}{2} = \\frac{3 a^3}{4} \\quad Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503042",
+        "question": "Cho hình lăng trụ $A B C D$. $A' B' C' D'$ có đáy $A B C D$ là hình vuông cạnh bằng $a$. Hình chiếu vuông góc của điểm $A'$ trên mặt phẳng $(A B C D)$ là trung điểm $I$ của cạnh $A B$. Biết $A' C$ tạo với mặt phẳng đáy một góc $\\alpha$ với $\\tan \\alpha = 2 \\sqrt{5}$. Thể tích khối chóp $A' . I C D$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a \\, 3 \\, 6$",
+            "B. $a \\, 3 \\, \\sqrt{3} \\, 6$",
+            "C. $a \\, 3 \\, \\sqrt{3} \\, 3$",
+            "D. $a \\, 3 \\, 3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có: $I_C$ là hình chiếu vuông góc của $A' C$ trên $(A B C D) \\Rightarrow \\hat{(A' C ; (A B C D))} = \\hat{(A' C ; I_C)} = \\hat{A' C I} = \\alpha$ Xét tam giác vuông $I B C$ có: $I_C = \\sqrt{I B^2 + B C^2} = \\sqrt{a^2 4 + a^2} = a \\sqrt{5} \\, \\text{2}$ Xét tam giác vuông $A' I C$ có: $A' I = I_C \\cdot \\tan \\alpha = a \\sqrt{5} \\, \\text{2} \\cdot 2 \\sqrt{5} = a$ $S_{\\Delta I C D} = \\frac{1}{2} d(I; C D) \\cdot C D = \\frac{1}{2} a \\cdot a = \\frac{a^2}{2}$ Vậy $V_{A'} \\cdot I C D = \\frac{1}{3} A' I \\cdot S_{\\Delta I C D} = \\frac{1}{3} \\cdot a \\cdot \\frac{a^2}{2} = \\frac{a^3}{6}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503043",
+        "question": "Cho khối lăng trụ tam giác $A B C$ và $A' B' C'$ mà mặt bên $A B B' A'$ có diện tích bằng $4$. Khoảng cách giữa $C C'$ và mặt phẳng $(A B B' A')$ bằng $7$. Thể tích khối lăng trụ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $10$",
+            "B. $12$",
+            "C. $14$",
+            "D. $16$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Dựng khối hộp $A B C D$. $A' B' C' D'$ ta có: $V_{A B C} \\cdot A' B' C' = \\frac{1}{2} V_{A B C D} \\cdot A' B' C' D'$ Khối hộp $A B C D$. $A' B' C' D'$ có hai đáy là $A B B' A'$ và $C D D' C'$ ⇒ $V_{A B C D} \\cdot A' B' C' D' = S_{A B B' A'} \\cdot h$ Trong đó $h = d((A B B' A'); (C D D' C')) = d(C C'; (A B B' A')) = 7$ ⇒ $V_{A B C D} \\cdot A' B' C' D' = 4 \\cdot 7 = 28$ Vậy $V_{A B C} \\cdot A' B' C' = \\frac{1}{2} \\cdot 28 = 14$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503044",
+        "question": "Cho lăng trụ $A B C$. $A' B' C'$ có đáy $A B C$ là tam giác đều cạnh $a$, và $A' A = A' B = A' C = a \\sqrt{\\frac{7}{12}}$. Thể tích khối lăng trụ $A B C . A' B' C'$ theo $a$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\; 3 \\; 8$",
+            "B. $a \\; 3 \\; \\sqrt{3} \\; 8$",
+            "C. $3 \\; a \\; 3 \\; \\sqrt{3} \\; 8$",
+            "D. $a \\; 3 \\; \\sqrt{3} \\; 4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $H$ là tâm tam giác đều $A B C$. Vì $A' A = A' B = A' C$ nên hình chóp $A' . A B C$ là đều nên $A' H \\perp (A B C)$. Gọi $I$ là trung điểm của $A B$. Vì tam giác $A B C$ đều cạnh $a$ nên $C I = \\frac{a \\sqrt{3}}{2} \\Rightarrow H I = \\frac{1}{3} C I = \\frac{a \\sqrt{3}}{6}$. Tam giác $A' A B$ cân tại $A'$ nên $A' I \\perp A B \\Rightarrow \\Delta A' A I$ vuông tại $I \\Rightarrow A' I = \\sqrt{A A'^2 - A I^2} = \\sqrt{\\frac{7 a^2}{12} - \\frac{a^2}{4}} = a \\sqrt{3}$. $A' H \\perp (A B C) \\Rightarrow A' H \\perp H I \\Rightarrow \\Delta A' H I$ vuông tại $H \\Rightarrow A' H = \\sqrt{A' I^2 - H I^2} = \\sqrt{\\frac{a^2}{3} - \\frac{a^2}{12}} = a^2$. Vì tam giác $A B C$ đều cạnh $a$ nên $S_{A B C} = \\frac{a^2 \\sqrt{3}}{4}$. Vậy $V_{A B C . A' B' C'} = A' H \\cdot S_{A B C} = a^2 \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{8}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503045",
+        "question": "Cho hình lăng trụ $A B C$. $A' B' C'$ có đáy $A B C$ là tam giác cân $A B = A C = a$; $\\hat{B A C} = 120^\\circ$ và $A B'$ vuông góc với $(A' B' C')$. Mặt phẳng $(A A' C')$ tạo với mặt phẳng $(A' B' C')$ một góc $30^\\circ$. Thể tích khối lăng trụ $A B C$. $A' B' C'$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 \\sqrt{3} 3$",
+            "B. $8 a 3 3$",
+            "C. $a 3 \\sqrt{3} 8$",
+            "D. $a 3 \\sqrt{3} 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Trong $(A'B'C')$ kẻ $B'K \\perp A'C'$ $(K \\in A'C')$ Ta có: $AB' \\perp A'C'$ $(AB' \\perp (A'B'C'))$ $B'K \\perp A'C'$ } $\\Rightarrow A'C' \\perp (AB'K)$ $\\Rightarrow A'C' \\perp AK$ $(AA'C') \\cap (A'B'C') = A'C'$ $(AA'C') \\supset AK \\perp A'C'$ $(A'B'C') \\supset B'K \\perp A'C'$ $\\begin{cases} \\hat{(AA'C')} ; \\hat{(A'B'C')} = \\hat{(AK; B'K)} = \\hat{AKB'} = 30^\\circ \\end{cases}$ Ta có: $S_{A'B'C'} = \\frac{1}{2} A'B' \\cdot A'C' \\cdot \\sin 120 = \\frac{1}{2} a^2 \\cdot \\frac{\\sqrt{3}}{2} = \\frac{a^2 \\sqrt{3}}{4} = \\frac{1}{2} B'K \\cdot A'C'$ $\\Rightarrow B'K = \\frac{2 S_{A'B'C'}}{A'C'} = \\frac{a^2 \\sqrt{3}/2}{a} = a \\frac{\\sqrt{3}}{2}$ $AB' \\perp (A'B'C') \\Rightarrow AB' \\perp B'K \\Rightarrow \\Delta AB'K$ vuông tại $B'$ $\\Rightarrow AB' = B'K \\cdot \\tan 30^\\circ = a \\frac{\\sqrt{3}}{2} \\cdot \\frac{\\sqrt{3}}{3} = a^2$ Vậy $V_{ABC} \\cdot S_{A'B'C'} = AB' \\cdot S_{A'B'C'} = a^2 \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{8}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503046",
+        "question": "Cho hình lăng trụ $A B C$. $A' B' C'$ có độ dài tất cả các cạnh bằng $a$ và hình chiếu vuông góc của đỉnh $C$ trên $(A B B' A')$ là tâm của hình bình hành $A B B' A'$. Thể tích của khối lăng trụ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\ 3 \\ 4$",
+            "B. $a \\ 3 \\sqrt{2} \\ 2$",
+            "C. $a \\ 3 \\sqrt{2} \\ 4$",
+            "D. $a \\ 3 \\ 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $O$ là tâm hình bình hành $A B B' A'$ . Ta có $C O \\perp ( A B B' A' ) \\Rightarrow C O \\perp O A ; C O \\perp O B$ $\\Delta C O A = \\Delta C O B$ ( c.g.c ) $\\Rightarrow O A = O B \\Rightarrow A B' = A' B \\Rightarrow A B B' A'$ là hình chữ nhật. Lại có $A B = B B' = a \\Rightarrow A B B' A'$ là hình vuông Khi đó $O A = O B = A B \\sqrt{2} = a \\sqrt{2}$ Xét tam giác vuông $O A C$ có: $O C = \\sqrt{A C^2 - O A^2} = \\sqrt{a^2 - \\left(a \\sqrt{2}\\right)^2} = a \\sqrt{2} \\cdot \\frac{1}{2} \\Rightarrow V_{C.A' A B} = \\frac{1}{3} O C \\cdot S_{A' A B} = \\frac{1}{3} \\cdot a \\sqrt{2} \\cdot \\frac{a^2}{2} = \\frac{a^3 \\sqrt{2}}{12}$ Mà $V_{A B C A' B' C'} = S_{A B C} \\cdot d\\left(A', ( A B C )\\right) = 3 \\cdot \\frac{1}{3} S_{A B C} \\cdot d\\left(A', ( A B C )\\right) = 3 V_{A'} A B C$ Vậy $V_{A B C A' B' C'} = 3 V_{C.A' A B} = \\frac{a^3 \\sqrt{2}}{4}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503047",
+        "question": "Mệnh đề nào dưới đây sai? Hai khối hộp chữ nhật có diện tích toàn phần bằng nhau thì có thể tích bằng nhau Hai khối lăng trụ có diện tích đáy và chiều cao tương ứng bằng nhau thì có thể tích bằng nhau Hai khối lập phương có diện tích toàn phần bằng nhau thì có thể tích bằng nhau Hai khối chóp có diện tích đáy và chiều cao tương ứng bằng nhau thì có thể tích bằng nhau.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hai khối hộp chữ nhật có diện tích toàn phần bằng nhau thì có thể tích bằng nhau",
+            "B. Hai khối lăng trụ có diện tích đáy và chiều cao tương ứng bằng nhau thì có thể tích bằng nhau",
+            "C. Hai khối lập phương có diện tích toàn phần bằng nhau thì có thể tích bằng nhau",
+            "D. Hai khối chóp có diện tích đáy và chiều cao tương ứng bằng nhau thì có thể tích bằng nhau"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Diện tích toàn phần của hình hộp chữ nhật: $S_{tp} = S \\times q + 2ab = 2h(a + b) + 2ab$. Thể tích hình hộp chữ nhật: $V = ab h$. Thể tích của lăng trụ là: $V = S_d \\cdot h$. Diện tích toàn phần của khối lập phương: $S_{tp} = 6a^2$. Thể tích của khối lập phương: $V = a^3$. Thể tích khối chóp là: $V = \\frac{1}{3} S_d \\cdot h$. Do đó các đáp án B, C, D đúng, chỉ có A sai. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503048",
+        "question": "Cho hình lăng trụ $A B C D$. $A' B' C' D'$ có đáy $A B C D$ là hình chữ nhật với $A B = \\sqrt{3}$, $A D = \\sqrt{7}$. Hai mặt bên $(A B B' A')$ và $(A D D' A')$ lần lượt tạo với đáy những góc $45^\\circ$ và $60^\\circ$. Tính thể tích khối hộp nếu biết cạnh bên bằng $1$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V = 3$",
+            "B. $V = 2$",
+            "C. $V = 4$",
+            "D. $V = 8$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Kẻ $A' H \\perp (A B C D)$; $H M \\perp A B$; $H N \\perp A D$ Ta có: $A' H \\perp A B$ $H M \\perp A B$ } $\\Rightarrow A B \\perp (A' H M)$ $\\Rightarrow A B \\perp A' M$ $(A B B' A') \\cap (A B C D) = A B$ $(A B B' A') \\supset A' M \\perp A B$ $(A B C D) \\supset H M \\perp A B$ $\\begin{cases} \\end{cases} \\Rightarrow \\hat{(A B B' A'); (A B C D)} = \\hat{(A' M; H M)} = \\hat{A' M H} = 45^\\circ$ Chứng minh tương tự ta có $\\hat{A' N H} = 60^\\circ$ Đặt $A' H = x$ khi đó ta có: $A' N = x \\sin 60 = 2 x \\sqrt{3}$, $A N = \\sqrt{A A'^{2} - A' N^{2}} = \\sqrt{1 - 4 x^{2} \\cdot 3} = H M$ Mà $H M = x \\cdot \\cot 45 = x \\Rightarrow x = \\sqrt{1 - 4 x^{2} \\cdot 3} \\Leftrightarrow x^{2} = 1 - 4 x^{2} \\cdot 3 \\Leftrightarrow 7 x^{2} \\cdot 3 = 1 \\Rightarrow x^{2} = \\frac{3}{7} \\Rightarrow x = \\sqrt{\\frac{3}{7}}$ $S A B C D = \\sqrt{3} \\cdot \\sqrt{7} = \\sqrt{21}$ Vậy $V A B C D . A' B' C' D' = A' H \\cdot S A B C D = \\sqrt{\\frac{3}{7}} \\cdot \\sqrt{21} = 3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503049",
+        "question": "Cho hình lăng trụ xiên $A B C$. $A' B' C'$ có đáy $A B C$ là tam giác đều với tâm $O$. Hình chiếu của $C'$ trên $(A B C)$ là $O$. Tính thể tích của lăng trụ biết rằng khoảng cách từ $O$ đến $C C'$ là $a$ và $2$ mặt bên $(A C C' A')$ và $(B C C' B')$ hợp với nhau góc $90^\\circ$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\, 3 \\sqrt{2} \\, 4$",
+            "B. $3 \\, a \\, 3 \\sqrt{2} \\, 8$",
+            "C. $9 \\, a \\, 3 \\sqrt{2} \\, 8$",
+            "D. $27 \\, a \\, 3 \\sqrt{2} \\, 8$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $D$ là trung điểm của $A B$. Trong $(C C' D)$ kẻ $O H \\perp C C' \\Rightarrow O H = a C D \\perp A B C' O \\perp A B$ $\\Rightarrow A B \\perp (C C' D) \\Rightarrow A B \\perp C C'$ Trong $(A B C)$, qua $O$ kẻ $E F \\parallel A B$ ($E \\in B C; F \\in A C$) Ta có: $E F \\perp C C'$ $O H \\perp C C'$ $\\Rightarrow C C' \\perp (E F H) \\Rightarrow C C' \\perp H E; C C' \\perp H F$ Ta có: $(A C C' A') \\cap (B C C' B') = C C'$ $(A C C' A') \\supset H F \\perp C C'$ $(B C C' B') \\supset H E \\perp C C'$ $\\Rightarrow \\widehat{(A C C' A'); (B C C' B')} = \\widehat{(H F; H E)} = 90^\\circ \\Rightarrow H E \\perp H F \\Rightarrow \\Delta H E F$ vuông tại $H$ $\\Delta H C E = \\Delta H C F$ (c.g.v - c.h) $\\Rightarrow H E = H F \\Rightarrow \\Delta H E F$ vuông cân tại $H$ $\\Rightarrow E F = 2 H O = 2 a$ Ta có: $E F A B = C O C D = 2 \\sqrt{3} \\Rightarrow A B = \\frac{3}{2} E F = \\frac{3}{2} \\cdot 2 a = 3 a$ $\\Rightarrow S \\Delta A B C = \\frac{A B^2 \\sqrt{3}}{4} = \\frac{9 a^2 \\sqrt{3}}{4} C D = \\frac{A B \\sqrt{3}}{2} = \\frac{3 a \\sqrt{3}}{2} \\Rightarrow C O = \\frac{2 \\sqrt{3}}{A B} = \\frac{2 \\sqrt{3} \\cdot 3 a}{\\sqrt{3}} = a \\sqrt{3}$ $C' O \\perp (A B C) \\Rightarrow C' O \\perp C O \\Rightarrow \\Delta C C' O$ vuông tại $O$ $\\Rightarrow \\frac{1}{O H^2} = \\frac{1}{C' O^2} + \\frac{1}{C O^2} \\Rightarrow \\frac{1}{C' O^2} = \\frac{1}{O H^2} - \\frac{1}{C O^2} = \\frac{1}{a^2} - \\frac{1}{3 a^2} = \\frac{2}{3 a^2} \\Rightarrow C' O = \\sqrt{\\frac{6}{2}} a$ Vậy $V_{A B C A' B' C'} = C' O \\cdot S \\Delta A B C = \\sqrt{\\frac{6}{2}} a \\cdot \\frac{9 a^2 \\sqrt{3}}{4} = \\frac{27 a^3 \\sqrt{2}}{8}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503050",
+        "question": "Cho hình lăng trụ tam giác $A B C$. $A' B' C'$ có đáy là tam giác đều cạnh $a$, cạnh bên tạo với đáy một góc $60^\\circ$. Gọi $M$ là trung điểm của cạnh $B C$ và $I$ là trung điểm của $A M$. Biết rằng hình chiếu của điểm $I$ lên mặt đáy $A' B' C'$ là trọng tâm $G$ của tam giác $A' B' C'$. Thể tích khối lăng trụ là: ",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 4$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 16$",
+            "C. $3 \\cdot a \\cdot 3 \\cdot 16$",
+            "D. $a \\cdot 3 \\sqrt{3} \\cdot 8$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $M'$ là trung điểm của $B'C'$, $K \\in A'M'$ sao cho $A'K = KG = GM'$ Kẻ $AH \\perp A'M'$ ($H \\in A'M'$) $\\Rightarrow AH \\perp (A'B'C') \\Rightarrow A'H$ là hình chiếu vuông góc của $AA'$ trên $(A'B'C') \\Rightarrow \\widehat{(AA'; (A'B'C'))} = \\widehat{(AA'; AH)} = \\widehat{AA'H} = 60^\\circ$ Ta có $AHGI$ là hình chữ nhật nên $AI = HG = \\frac{1}{2} AM = \\frac{1}{2} A'M'$; $GM' = \\frac{1}{3} A'M'$ $\\Rightarrow A'H = A'M' - HG - GM' = A'M' - \\frac{1}{2} A'M' - \\frac{1}{3} A'M' = \\frac{1}{6} A'M'$ Tam giác $ABC$ đều cạnh $a$ nên $S_{ABC} = \\frac{a^2 \\sqrt{3}}{4}$ $A'M' = \\frac{a \\sqrt{3}}{2} \\Rightarrow A'H = \\frac{1}{6} \\cdot \\frac{a \\sqrt{3}}{2} = \\frac{a \\sqrt{3}}{12}$ Xét tam giác vuông $AA'H$ có: $AH = AA' \\cdot \\tan 60 = \\frac{a \\sqrt{3}}{12} \\cdot \\sqrt{3} = \\frac{a}{4}$ Vậy $V_{ABC \\cdot A'B'C'} = AH \\cdot S_{ABC} = \\frac{a}{4} \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^3 \\sqrt{3}}{16}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503051",
+        "question": "Cho hình lăng trụ đứng $A B C$ . $A' B' C'$ có đáy $A B C$ là tam giác vuông tại $A$. $A B = a$; $A C = a \\sqrt{3}$; $A A' = 2 a$. Thể tích khối lăng trụ $A B C . A' B' C'$ là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3}$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 3$",
+            "C. $2 \\cdot a \\cdot 3 \\sqrt{3}$",
+            "D. $2 \\cdot a \\cdot 3 \\sqrt{3} \\cdot 3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $S_{ABC} = \\frac{1}{2} AB \\cdot AC = \\frac{1}{2} \\cdot a \\cdot a \\sqrt{3} = \\frac{a^2 \\sqrt{3}}{2} \\Rightarrow V_{ABC} \\cdot A'B'C' = AA' \\cdot S_{ABC} = 2a \\cdot \\frac{a^2 \\sqrt{3}}{2} = a^3 \\sqrt{3}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503052",
+        "question": "Cho hình lăng trụ đứng $A B C$. $A' B' C'$ có đáy là tam giác cân tại $A$. $A B = A C = 2 a$, $\\hat{C A B} = 120^\\circ$. Mặt phẳng $(A B' C')$ tạo với đáy một góc $60^\\circ$. Thể tích khối lăng trụ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $2 a^3$",
+            "B. $3 a^{3,8}$",
+            "C. $a^3 3$",
+            "D. $3 a^3$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $D$ là trung điểm của $B' C'$. Vì tam giác $A' B' C'$ cân tại $A'$ nên $A' D \\perp B' C'$ (trung tuyến đồng thời là đường cao). Vì $A B C$, $A' B' C'$ là hình lăng trụ đứng nên $A A' \\perp (A' B' C')$. Ta có: $A' D \\perp B' C'$; $A A' \\perp B' C' \\Rightarrow B' C' \\perp (A A' D) \\Rightarrow B' C' \\perp A D$; $(A B' C') \\cap (A' B' C') = B' C'$; $(A B' C') \\supset A D \\perp B' C'$; $(A' B' C') \\supset A' D \\perp B' C'$ $\\Rightarrow \\hat{(A B' C'); (A' B' C')} = \\hat{(A D; A' D)} = \\hat{A D A'} = 60^\\circ$. Vì tam giác $A' B' C'$ cân tại $A'$ nên $\\hat{D A' C'} = \\frac{1}{2} \\hat{B' A' C'} = 60^\\circ$ (trung tuyến đồng thời là phân giác). Xét tam giác vuông $A' D' C'$ có: $A' D = A' C' \\cdot \\cos 60^\\circ = 2a \\cdot \\frac{1}{2} = a$. Xét tam giác vuông $A A' D$ có: $A A' = A' D \\cdot \\tan 60^\\circ = a \\cdot \\sqrt{3}$. $S_{ABC} = \\frac{1}{2} A B \\cdot A C \\cdot \\sin \\hat{B A C} = \\frac{1}{2} \\cdot 2a \\cdot 2a \\cdot \\frac{\\sqrt{3}}{2} = a^2 \\sqrt{3}$. Vậy $V_{ABC . A' B' C'} = A A' \\cdot S_{ABC} = a \\sqrt{3} \\cdot a^2 \\sqrt{3} = 3a^3$. Đáp án cần chọn là: $D$."
+    },
+    {
+        "id": "T0503053",
+        "question": "Cho hình lăng trụ đứng $A B C \\, A' B' C'$ có đáy $A B C$ là tam giác vuông tại $B$, $\\angle A C B = 60^\\circ$, cạnh $B C = a$, đường chéo $A' B$ tạo với mặt phẳng $(A B C)$ một góc $30^\\circ$. Thể tích khối lăng trụ $A B C \\, A' B' C'$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3} \\cdot 2$",
+            "B. $a \\cdot 3 \\sqrt{3} \\cdot 3$",
+            "C. $a \\cdot 3 \\sqrt{3}$",
+            "D. $3 \\cdot a \\cdot 3 \\sqrt{3} \\cdot 2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $A A' \\perp (A B C) \\Rightarrow A B$ là hình chiếu vuông góc của $A' B$ lên $(A B C) \\Rightarrow \\hat{(A' B; (A B C))} = \\hat{(A' B; A B)} = \\hat{A' B A} = 30^\\circ$ Xét tam giác vuông $A B C$ có: $A B = B C \\cdot \\tan 60^\\circ = a \\sqrt{3}$ $A A' \\perp (A B C) \\supset A B \\Rightarrow A A' \\perp A B \\Rightarrow \\Delta A B A' \\text{ vuông tại } A \\Rightarrow A A' = A B \\cdot \\tan \\hat{A' B A} = a \\sqrt{3} \\cdot \\tan 30^\\circ = a \\sqrt{3} \\cdot \\frac{1}{\\sqrt{3}} = a$ $S_{\\Delta A B C} = \\frac{1}{2} A B \\cdot B C = \\frac{1}{2} a \\sqrt{3} \\cdot a = \\frac{a^2 \\sqrt{3}}{2}$ Vậy $V_{A B C A' B' C'} = A A' \\cdot S_{\\Delta A B C} = a \\cdot \\frac{a^2 \\sqrt{3}}{2} = \\frac{a^3 \\sqrt{3}}{2}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0503054",
+        "question": "Đáy của hình lăng trụ đứng tam giác $ABC$. $A'B'C'$ là tam giác đều cạnh $a = 4$ và biết diện tích tam giác $A'BC$ bằng $8$. Tính thể tích khối lăng trụ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 8",
+            "B. $8 \\sqrt{3}$",
+            "C. $8 \\sqrt{3} \\cdot 3$",
+            "D. $16 \\sqrt{3}$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $D$ là trung điểm của $BC$ ta có: Tam giác $ABC$ đều nên $AD \\perp BC$ và $AA' \\perp (ABC) \\Rightarrow AA' \\perp BC \\Rightarrow BC \\perp (AAD) \\Rightarrow BC \\perp A'D \\Rightarrow \\Delta A'BC$ cân tại $A'$ Tam giác $ABC$ đều cạnh $a = 4 \\Rightarrow AD = \\frac{4 \\sqrt{3}}{2} = 2 \\sqrt{3}$ S $\\Delta A'BC = \\frac{1}{2} A'D \\cdot BC \\Rightarrow A'D = \\frac{2 S \\Delta A'BC}{BC} = \\frac{2 \\cdot 8}{4} = 4$ Xét tam giác vuông $AA'D$ có: $AA' = \\sqrt{A'D^2 - AD^2} = \\sqrt{16 - 12} = 2$ S $ABC = 4 \\cdot 2 \\sqrt{3} = 8 \\sqrt{3}$ Vậy $V_{ABC \\cdot A'B'C'} = AA' \\cdot S_{ABC} = 2 \\cdot 4 \\sqrt{3} = 8 \\sqrt{3}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503055",
+        "question": "Cho khối lăng trụ đều $ABC$ và $A'B'C'$ có $AB = 2a$, $M$ là trung điểm của $BC$ và $A'M = 3a$. Thể tích khối lăng trụ đã cho bằng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $18 a 3 \\sqrt{2}$",
+            "B. $3 a 3 \\sqrt{2}$",
+            "C. $a 3 \\sqrt{2}$",
+            "D. $9 a 3 \\sqrt{2}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $S_{A B C} = (2a)^2 \\cdot \\sqrt{3} \\cdot 4 = a^2 \\sqrt{3}$. Ta có: $A M$ là đường trung tuyến của $\\Delta A B C$ đều cạnh $2a \\Rightarrow A M = \\frac{2a}{\\sqrt{3}} = a \\sqrt{3}$. Áp dụng định lý Pitago cho $\\Delta A A' M$ vuông tại $A$ ta có: $A A' = \\sqrt{A' M^2 - A M^2} = \\sqrt{9a^2 - 3a^2} = a \\sqrt{6} \\Rightarrow V_{A B C} \\cdot A' B' C' = A A' \\cdot S_{A B C} = a \\sqrt{6} \\cdot a^2 \\sqrt{3} = 3 a^3 \\sqrt{2}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0503056",
+        "question": "Cho hình lăng trụ đứng $A B C D$. $A' B' C' D'$ có đáy là tứ giác đều cạnh $a$, biết rằng $B D' = a \\sqrt{6}$. Tính thể tích của khối lăng trụ?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{2}$",
+            "B. $a \\cdot 3 \\sqrt{3}$",
+            "C. $3 \\cdot a \\cdot 3$",
+            "D. $2 \\cdot a \\cdot 3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $A'B'C'D'$ là hình vuông cạnh $a$ nên $B'D' = a\\sqrt{2}$. $BB' \\perp (A'B'C'D') \\Rightarrow BB' \\perp B'D' \\Rightarrow \\Delta BB'D'$ vuông tại $B'$ $\\Rightarrow BB' = \\sqrt{BD'^2 - B'D'^2} = \\sqrt{6a^2 - 2a^2} = 2a$. Vậy $V_{ABCD}. A'B'C'D' = BB' . SA B C D = 2a . a^2 = 2a^3$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0503057",
+        "question": "Lăng trụ đứng tứ giác có đáy là hình thoi mà các đường chéo là $6\\, \\text{cm}$ và $8\\, \\text{cm}$, biết rằng chu vi đáy bằng $2$ lần chiều cao lăng trụ. Tính thể tích khối lăng trụ.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 480 \\, \\text{cm}^3",
+            "B. 360 \\, \\text{cm}^3",
+            "C. 240 \\, \\text{cm}^3",
+            "D. 120 \\, \\text{cm}^3"
+        ],
+        "answer": "C",
+        "explain": "Gọi $O = A C \\cap B D$ ta có: $O A = 3 \\,\\text{cm}$; $O B = 4 \\,\\text{cm}$ \n\nXét tam giác vuông $O A B$ có: $A B = \\sqrt{O A^2 + O B^2} = \\sqrt{3^2 + 4^2} = 5 \\,\\text{cm}$. \n\nKhi đó chu vi đáy bằng $P = 4.5 = 20 = 2 A A ′ \\Rightarrow A A ′ = 10 \\,\\text{cm}$ \n\n$S A B C D = \\frac{1}{2} A C \\cdot B D = \\frac{1}{2} \\cdot 6 \\cdot 8 = 24 \\,\\text{cm}^2$ \n\nVậy $V A B C D \\cdot A ′ B ′ C ′ D ′ = A A ′ \\cdot S A B C D = 10 \\cdot 24 = 240 \\,\\text{cm}^3$ \n\nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "T0503058",
+        "question": "Cho lăng trụ đứng $A B C$, $A' B' C'$ với $A B C$ là tam giác vuông cân tại $C$ có $A B = a$, mặt bên $A B B' A'$ là hình vuông. Mặt phẳng qua trung điểm $I$ của $A B$ và vuông góc với $A B'$ chia khối lăng trụ thành 2 phần. Tính thể tích mỗi phần?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_1 = a^3 48 , V_2 = 11 a^3 24$",
+            "B. $V_1 = a^3 24 , V_2 = 11 a^3 48$",
+            "C. $V_1 = a^3 48 , V_2 = 11 a^3 48$",
+            "D. $V_1 = a^3 24 , V_2 = 5 a^3 24$"
+        ],
+        "answer": "C",
+        "explain": "Gọi $D$ là trung điểm của $A A ′$ ta có $I D$ là đường trung bình của tam giác $A A ′ B$ $\\Rightarrow I D \\parallel A ′ B$ Mà $A ′ B \\perp A B ′$ (do $A B B ′ A ′$ là hình vuông) $\\Rightarrow I D \\perp A B ′$ Tam giác $A B C$ vuông cân tại $C$ nên $I C \\perp A B$. Mà $A A ′ \\perp (A B C)$ $\\Rightarrow A A ′ \\perp I C \\Rightarrow I C \\perp (A B B ′ A ′) \\Rightarrow I C \\perp A B ′ \\Rightarrow A B ′ \\perp (I C D) \\Rightarrow$ Mặt phẳng qua $I$ và vuông góc với $A B ′$ là $(I C D)$ Tam giác $A B C$ vuông cân tại $C$ nên $A C = B C = A B = \\sqrt{2} a$ $\\Rightarrow S_{A B C} = \\frac{1}{2} A C \\cdot B C = \\frac{1}{2} \\sqrt{2} a \\cdot \\sqrt{2} a = \\frac{a^2}{4}$ $A B B ′ A ′$ là hình vuông $\\Rightarrow A A ′ = A B = a$ $\\Rightarrow V_{A B C A ′ B ′ C ′} = A A ′ \\cdot S_{A B C} = a \\cdot \\frac{a^2}{4} = \\frac{a^3}{4} = V$ Ta có: $V_D \\cdot A C I = \\frac{1}{3} A D \\cdot S_{A C I} = \\frac{1}{3} \\cdot \\frac{1}{2} A A ′ \\cdot \\frac{1}{2} S_{A B C} = \\frac{1}{12} V_{A B C A ′ B ′ C ′} = \\frac{1}{12} \\cdot \\frac{a^3}{4} = \\frac{a^3}{48} = V_1$ $\\Rightarrow V_2 = V - V_1 = \\frac{a^3}{4} - \\frac{a^3}{48} = \\frac{11 a^3}{48}$ Đáp án cần chọn là: $C$."
+    },
+    {
+        "id": "T0503059",
+        "question": "Cho khối lăng trụ $ABC.A'B'C'$ có thể tích bằng $1$. Gọi $M$, $N$ lần lượt là trung điểm của các đoạn thẳng $AA'$ và $BB'$. Đường thẳng $CM$ cắt đường thẳng $C'A'$ tại $P$, đường thẳng $CN$ cắt đường thẳng $C'B'$ tại $Q$. Thể tích của khối đa diện lồi $A'MPB'NQ$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1",
+            "B. 1 3",
+            "C. 1 2",
+            "D. 2 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi diện tích đáy, chiều cao, thể tích của hình lăng trụ $ABC.A'B'C'$ lần lượt là $S$; $h$; $V \\Rightarrow V = S h$. Ta có: $\\Delta A'B'C' \\sim \\Delta P QC'$ theo tỉ số $\\frac{1}{2} \\Rightarrow S_{C'PQ} = 4 S_{A'B'C'} = 4 S$. $\\Rightarrow V_{C.C'PQ} = \\frac{1}{3} \\cdot h \\cdot 4 S = \\frac{4}{3} V$. Ta có: $S_{ABNM} = \\frac{1}{2} S_{AB}B'A' \\Rightarrow V_{C.ABNM} = \\frac{1}{2} V_{C.ABB'A'}$. Mà $V_{C.ABB'A'} = \\frac{2}{3} V \\Rightarrow V_{C.ABNM} = \\frac{1}{2} \\cdot \\frac{2}{3} V = \\frac{V}{3} \\Rightarrow V_{CC'A'B'NM} = V - \\frac{V}{3} = \\frac{2}{3} V$. Vậy $V_{A'MPB'NQ} = \\frac{4}{3} V - \\frac{2}{3} V = \\frac{2}{3} V$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R001",
+        "question": "Cho tứ diện $A B C D$ và $G$ là trọng tâm tam giác $A C D$. Mặt phẳng $( P )$ qua $B G$ và song song với $C D$ chia khối tứ diện thành hai phần. Tính tỉ số thể tích (số bé chia số lớn) của hai phần đó là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1$ $8$",
+            "B. $4$ $9$",
+            "C. $2$ $3$",
+            "D. $4$ $5$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi H là trung điểm của $C D$. Ta có $G$ là trọng tâm tam giác $A C D \\Rightarrow A G A H = \\frac{2}{3}$. Trong mặt phẳng $A C D$, qua $G$ kẻ đường thẳng song song với $C D$, cắt $A C$ tại $M$ và cắt $A D$ tại $N$. Khi đó ta có mặt phẳng $(P)$ là mặt phẳng $(B M N)$. Mặt phẳng $(B M N)$ chia tứ diện $A B C D$ thành hai phần là $A B M N$ có thể tích $V_1$ và $B M N D C$ có thể tích $V_2$. $\\Rightarrow V = V_{A B C D} = V_1 + V_2$. Ta có $M N \\parallel C D$ theo cách dựng $\\Rightarrow A M A C = A N A D = A G A H = \\frac{2}{3}$ (định lý Ta-lét). Theo công thức tỉ lệ thể tích ta có: $\\frac{V_{A B M N}}{V_{A B C D}} = \\frac{V_1}{V} = \\frac{A B}{A B} \\cdot \\frac{A M}{A C} \\cdot \\frac{A N}{A D} = \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{4}{9}$. $\\Rightarrow V_1 = \\frac{4}{9} V \\Rightarrow V_2 = V - V_1 = \\frac{5}{9} V$. $\\Rightarrow V_1 < V_2 \\Rightarrow \\frac{V_1}{V_2} = \\frac{4}{9} \\cdot \\frac{9}{5} = \\frac{4}{5}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R002",
+        "question": "Cho hình chóp $S.ABC$ có $AB = 5 \\, \\text{cm}$, $BC = 6 \\, \\text{cm}$, $CA = 7 \\, \\text{cm}$. Hình chiếu vuông góc của $S$ xuống mặt phẳng $(ABC)$ nằm bên trong tam giác $ABC$. Các mặt phẳng $(SAB)$, $(SBC)$, $(SCA)$ đều tạo với đáy một góc $60^\\circ$. Gọi $AD$, $BE$, $CF$ là các đường phân giác của tam giác $ABC$ với $D \\in BC$, $E \\in AC$, $F \\in AB$. Thể tích $S.DEF$ gần nhất với số nào sau đây?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,9 \\, \\text{cm}^3$",
+            "B. $4,1 \\, \\text{cm}^3$",
+            "C. $3,7 \\, \\text{cm}^3$",
+            "D. $3,4 \\, \\text{cm}^3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì các mặt phẳng $ ( S A B ) $, $ ( S B C ) $, $ ( S C A ) $ đều tạo với đáy một góc $ 60^\\circ $ và hình chiếu vuông góc của $ S $ xuống mặt phẳng $ ( A B C ) $ nằm bên trong tam giác $ A B C $ nên ta có hình chiếu của $ S $ xuống mặt phẳng $ ( A B C ) $ là tâm đường tròn nội tiếp $ I $ của tam giác $ A B C $. Gọi $ p $ là nửa chu vi tam giác $ A B C $ thì $ p = \\frac{5 + 6 + 7}{2} = 9 $. Ta có $ S A B C = \\sqrt{9} ( 9 - 5 ) ( 9 - 6 ) ( 9 - 7 ) = 6 \\sqrt{6} $ và $ r = \\frac{S}{p} = \\frac{6 \\sqrt{6}}{9} = \\frac{2 \\sqrt{6}}{3} $. Chiều cao của hình chóp là: $ h = r \\cdot \\tan 60^\\circ = 2 \\sqrt{2} $. Kí hiệu $ B C = a $, $ A C = b $, $ A B = c $. Ta có: Vì $ B E $ là phân giác của góc $ B $ nên ta có: $ A E C E = B A B C $. Tương tự $ F A F B = C A C B $, $ D B D C = A B A C $. Khi đó $ S A E F = \\frac{S A B C}{A E A C \\cdot A F A B} = \\frac{A B A B + B C \\cdot A C}{A C \\cdot A C + B C} $, tương tự: $ S C E D = \\frac{S A B C}{C A C A + A B \\cdot C B} = \\frac{A B}{C B \\cdot C B + A B} $, $ S B F D = \\frac{S A B C}{B C \\cdot B C + C A \\cdot B A} = \\frac{C A}{B A \\cdot B A + C A} $. Do đó $ S D E F = S A B C \\cdot \\left( 1 - \\frac{a b ( a + c )( b + c ) + b c ( b + a )( c + a ) + a c ( a + b )( c + b )}{2 a b c ( a + b )( b + c )( c + a )} \\right) = 2 a b c ( a + b )( b + c )( c + a ) $. $ S A B C = 210 \\sqrt{6} \\cdot 143 $. Suy ra: $ V_{S D E F} = \\frac{1}{3} \\cdot 210 \\sqrt{6} \\cdot 143 \\cdot 2 \\sqrt{2} = 280 \\sqrt{3} \\cdot 143 \\, \\text{cm}^3 \\approx 3,4 \\, \\text{cm}^3 $. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R003",
+        "question": "Khối chóp $S.ABC D$ có đáy là hình thoi cạnh $a$, $SA = SB = SC = a$, cạnh $SD$ thay đổi. Thể tích khối chóp $S.ABC D$ lớn nhất khi độ dài cạnh $SD$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a",
+            "B. $a \\sqrt{3} \\, 2$",
+            "C. $a \\sqrt{6} \\, 2$",
+            "D. $2 a \\, 3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khối chóp $S . A B C D$ có đáy là hình thoi cạnh $a$, $S A = S B = S C = a \\Rightarrow$ Khối chóp $S . A B C$ có: $S A = S B = S C = B A = B C = a$ và có thể tích bằng $\\frac{1}{2}$ thể tích khối chóp $S . A B C D$. Như vậy, để thể tích khối chóp $S . A B C D$ lớn nhất thì thể tích khối chóp $S . A B C$ lớn nhất khi $S D$ thay đổi. Gọi $H$ là trung điểm của $S B$. $\\Delta S A B$, $\\Delta S B C$ là 2 tam giác đều, cạnh $a \\Rightarrow A H = C H = \\frac{a \\sqrt{3}}{2}$ và $A H \\perp S B$, $C H \\perp S B \\Rightarrow S B \\perp (A H C) \\Rightarrow B H \\perp (A H C) \\Rightarrow V_{S . A B C} = 2 V_{B . A H C} = 2 \\cdot \\frac{1}{3} B H \\cdot S A H C = 2 \\cdot \\frac{1}{3} \\cdot \\frac{1}{2} S B \\cdot S A H C = \\frac{1}{3} a \\cdot S A H C$. Mặt khác, $S A H C = \\frac{1}{2} \\cdot A H \\cdot C H \\cdot \\sin \\hat{A H C} = \\frac{1}{2} \\cdot \\left(\\frac{a \\sqrt{3}}{2}\\right)^2 \\sin \\hat{A H C} \\Rightarrow V_{S . A B C}$ lớn nhất khi và chỉ khi $\\hat{A H C} = 90^{\\circ} \\Leftrightarrow A H \\perp H C \\Rightarrow \\Delta A H C$ vuông cân tại $H \\Rightarrow H O = \\frac{A H}{\\sqrt{2}} = \\frac{a \\sqrt{3}}{2 \\sqrt{2}} = \\frac{a \\sqrt{6}}{2}$. $O H$ là đường trung bình của $\\Delta S B D \\Rightarrow S D = 2 \\cdot O H = 2 \\cdot \\frac{a \\sqrt{3}}{2 \\sqrt{2}} = a \\frac{\\sqrt{6}}{2}$. Vậy, để thể tích khối chóp $S . A B C D$ lớn nhất khi độ dài cạnh $S D$ là: $a \\frac{\\sqrt{6}}{2}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R004",
+        "question": "Cho khối lăng trụ $ABC.A'B'C'$, khoảng cách từ $C$ đến đường thẳng $BB'$ bằng $\\sqrt{5}$, khoảng cách từ $A$ đến các đường thẳng $BB'$ và $CC'$ lần lượt bằng $1$ và $2$, hình chiếu vuông góc của $A$ lên mặt phẳng $(A'B'C')$ là trung điểm $M$ của $B'C'$ và $A'M = \\sqrt{5}$. Thể tích của khối lăng trụ đã cho bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2 \\sqrt{5} 3$",
+            "B. $2 \\sqrt{15} 3$",
+            "C. $\\sqrt{5}$",
+            "D. $\\sqrt{15} 3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Qua M dựng mặt phẳng $( P )$ vuông góc với $A A ′$ cắt các cạnh $A A ′$, $B B ′$, $C C ′$ lần lượt tại $N$, $E$, $F$. Ta có: \n$$\n\\begin{cases}\nA A ′ \\perp N E \\Rightarrow N E = d(E, A A ′) = d(N, B B ′) = d(A, B B ′) = 1. \\\\\nA A ′ \\perp N F \\Rightarrow N F = d(F, A A ′) = d(N, C C ′) = d(A, C C ′) = 2 \\\\\nA A ′ \\perp ( P ) \\Rightarrow C C ′ \\perp ( P ) \\Rightarrow C C ′ \\perp E F \\Rightarrow E F = d(E, C C ′) = d(F, B B ′) = d(C, B B ′) = \\sqrt{5}.\n\\end{cases}\n$$\nCó: $N E^2 + N F^2 = E F'^{2} \\Rightarrow \\Delta N E F$ vuông tại $N$ (định lý Pi-ta-go đảo). Mà: $M E M F = M B ′ M C ′ = 1 \\Rightarrow M E = M F$ (định lý Ta-lét) $\\Rightarrow M$ là trung điểm của $E F$. $\\Rightarrow M N = \\frac{1}{2} E F = \\frac{\\sqrt{5}}{2}$. \n\nXét tam giác $A A ′ M$ vuông tại $M$ ta có: \n$$\n1 M N^2 = 1 A M^2 + 1 A ′ M^2 \\Leftrightarrow \\frac{4}{5} = 1 A M^2 + \\frac{1}{5} \\Leftrightarrow A M = \\frac{\\sqrt{15}}{3}.\n$$ \nTa có: \n$$\n\\begin{cases}\n( P ) \\perp A A ′ \\quad ( A ′ B ′ C ′ ) \\perp A M \\Rightarrow \\angle ( P, ( A ′ B ′ C ′ )) = \\angle ( A A ′, A M) = \\angle A ′ M A \\Rightarrow \\cos \\angle A ′ A M = \\frac{A M}{A A ′} = \\frac{\\frac{\\sqrt{15}}{3}}{\\sqrt{5} + \\frac{5}{3}} = \\frac{1}{2}.\n\\end{cases}\n$$ \nTa thấy $\\Delta N E F$ là hình chiếu vuông góc của $\\Delta A ′ B ′ C ′$ lên mặt phẳng $( P )$. $\\Rightarrow S A ′ B ′ C ′ = S N E F \\cos \\angle A ′ A M = \\frac{1}{2} N E \\cdot N F \\cdot \\frac{1}{2} = 1 \\cdot 2 = 2.$ \n\n$\\Rightarrow V A B C . A ′ B ′ C ′ = S A ′ B ′ C ′ \\cdot A M = 2 \\cdot \\frac{\\sqrt{15}}{3} = 2 \\sqrt{15} \\cdot \\frac{1}{3}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R005",
+        "question": "Cho tứ diện đều $A B C D$ có cạnh bằng $3$. Gọi $M$, $N$ là hai điểm thay đổi lần lượt thuộc cạnh $B C$, $B D$ sao cho mặt phẳng $(A M N)$ luôn vuông góc với mặt phẳng $(B C D)$. Gọi $V_1$, $V_2$ lần lượt là giá trị lớn nhất và nhỏ nhất của thể tích khối tứ diện $A B M N$. Tính $V_1 + V_2$ ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $17 \\sqrt{2} 8$",
+            "B. $51 \\sqrt{2} 16$",
+            "C. $\\sqrt{2} 4$",
+            "D. $51 \\sqrt{2} 8$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện $A B C D$ đều, gọi $H$ là tâm tam giác đều $B C D$ ⇒ $A H \\perp ( B C D )$ Có $( A M N ) \\perp ( B C D )$ ⇒ $( A M N ) \\supset A H$ ⇒ $H \\in M N$ ⇒ $V A B M N = \\frac{1}{3} A H \\cdot S B M N$, với $A H$ không đổi. Dễ thấy diện tích tam giác $B M N$ nhỏ nhất khi và chỉ khi tam giác $B M N$ đều, khi đó $\\frac{M N}{C D} = \\frac{B M}{B C} = \\frac{B H}{B E} = \\frac{2}{3} \\Rightarrow B M = \\frac{2}{3} B C = 2$ ⇒ $S B M N \\text{ min } = \\frac{2}{2} \\sqrt{3} \\cdot 4 = \\sqrt{3}$ Diện tích tam giác $B M N$ lớn nhất khi và chỉ khi $N \\equiv D$ hoặc $M \\equiv C$, khi đó $S B M N \\text{ max } = \\frac{1}{2} S A B C = \\frac{1}{2} \\cdot 3 \\cdot 2 \\sqrt{3} \\cdot 4 = 9 \\frac{\\sqrt{3}}{8}$ Có $B H = \\frac{2}{3} B E = \\frac{2}{3} \\cdot 3 \\frac{\\sqrt{3}}{2} = \\sqrt{3} \\Rightarrow A H = \\sqrt{A B^2 - B H^2} = \\sqrt{3^2 - ( \\sqrt{3} )^2} = \\sqrt{6}$ ⇒ $V_1 = \\frac{1}{3} A H \\cdot S B M N \\text{ max } = \\frac{1}{3} \\sqrt{6} \\cdot 9 \\frac{\\sqrt{3}}{8} = \\frac{9 \\sqrt{2}}{8}$ $V_2 = \\frac{1}{3} A H \\cdot S B M N \\text{ min } = \\frac{1}{3} \\sqrt{6} \\cdot \\sqrt{3} = \\sqrt{2}$ ⇒ $V_1 + V_2 = \\frac{17 \\sqrt{2}}{8}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R006",
+        "question": "Khối chóp tam giác có độ dài 3 cạnh xuất phát từ một đỉnh là $a$, $2a$, $3a$ có thể tích lớn nhất bằng $A$. $4a^3$. $B$. $2a^3$. $C$. $a^3$. $D$. $6a^3$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4 a^3$",
+            "B. $2 a^3$",
+            "C. $a^3$",
+            "D. $6 a^3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Xét khối chóp tam giác $S.AB C$, có $S A = a$, $S B = 2 a$, $S C = 3 a$, $\\hat{A} S B = \\alpha$ và $h$ là khoảng cách từ $C$ đến $(S A B)$. Khi đó, thể tích khối chóp $S.A B C$ là $V = \\frac{1}{3} \\cdot d(C; (S A B)) \\cdot S_{\\Delta S A B} \\quad (1)$. Diện tích tam giác $S A B$ là $S_{\\Delta S A B} = \\frac{1}{2} \\cdot S A \\cdot S B \\cdot \\sin \\hat{A} S B = a^2 \\cdot \\sin \\alpha \\quad (2)$. Từ $(1)$, $(2)$ suy ra $V = \\frac{1}{3} \\cdot h \\cdot a^2 \\cdot \\sin \\alpha$ mà $\\{ \\sin \\alpha \\leq 1, h \\leq S C = 3 a \\} \\Rightarrow V \\leq \\frac{1}{3} \\cdot 3 a \\cdot a^2 = a^3$. Dấu \"=\" xảy ra khi $\\sin \\alpha = 1$ và $h = S C = 3 a$ hay hình chóp $S.A B C$ là tứ diện vuông đỉnh $S$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R007",
+        "question": "Cho lăng trụ tam giác đều $A B C$. $A' B' C'$. Trên $A' B'$ kéo dài lấy điểm $M$ sao cho $B' M = \\frac{1}{2} A' B'$. Gọi $N$, $P$ lần lượt là trung điểm của $A' C'$ và $B' B$. Mặt phẳng $(M N P)$ chia khối lăng trụ $A B C$. $A' B' C'$ thành hai khối đa diện trong đó khối đa diện chứa đỉnh $A'$ có thể tích $V_1$ và khối đa diện chứa đỉnh $C'$ có thể tích $V_2$. Tính $V_1 V_2$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_1 V_2 = 97 \\, 59$",
+            "B. $V_1 V_2 = 49 \\, 144$",
+            "C. $V_1 V_2 = 95 \\, 144$",
+            "D. $V_1 V_2 = 49 \\, 95$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $E = M N \\cap B' C'$ Kéo dài $M P$ cắt $A B$ tại $D$, cắt $A A'$ tại $F$. Nối $N F$, cắt $A C$ tại $G$. Do đó thiết diện của lăng trụ khi cắt bởi mặt phẳng $(M N P)$ là $N E P D G$. Gọi $V_1$ là thể tích khối đa diện chứa đỉnh $A'$ ta có: $V_1 = V_F \\cdot A' M N - V_F \\cdot A D G - V_P \\cdot B' E M$ Ta có: $S A' M N = \\frac{1}{2} d(N; A' M) \\cdot A' M = \\frac{1}{2} \\cdot \\frac{1}{2} d(C'; A' B') \\cdot \\frac{3}{2} A' B' = \\frac{3}{4} S A' B' C' \\Delta B D P = \\Delta B' M P \\Rightarrow B D = B' M = \\frac{1}{2} A B \\Rightarrow D$ là trung điểm của $AB$. $\\Rightarrow F A F A' = A D A' M = \\frac{1}{3} \\Rightarrow F A' A A' = \\frac{3}{2} \\Rightarrow V_F \\cdot A' M N V_{A B C} \\cdot A' B' C' = \\frac{1}{3} \\cdot F A' \\cdot S A' M N A A' \\cdot S A B C = \\frac{1}{3} \\cdot \\frac{3}{2} \\cdot \\frac{3}{4} = \\frac{3}{8} \\Rightarrow V_F \\cdot A' M N = \\frac{3}{8} V_{A B C} \\cdot A' B' C' = \\frac{3}{8} D$ Dễ dàng chứng minh được $\\Delta A D G$ đồng dạng $\\Delta A' M N$ theo tỉ số $\\frac{1}{3} \\Rightarrow S A D G = \\frac{1}{9} S A' M N = \\frac{1}{12} S A' B' C' \\Rightarrow V_F \\cdot A D G V_{A B C} \\cdot A' B' C' = \\frac{1}{3} \\cdot F A \\cdot S A D G A A' \\cdot S A' B' C' = \\frac{1}{3} \\cdot \\frac{1}{2} \\cdot \\frac{1}{12} = \\frac{1}{72} \\Rightarrow V_F \\cdot A D G = \\frac{1}{72} V_{A B C} \\cdot A' B' C' = V_{72}$ Áp dụng định lí Menelaus trong tam giác $A' B' C'$ ta có: $M A' M B' \\cdot E B' E C' \\cdot N C' N A' = 1 \\Leftrightarrow 3 \\cdot E B' E C' \\cdot 1 = 1 \\Leftrightarrow E B' E C' = \\frac{1}{3}$ Áp dụng định lí Menelaus trong tam giác $A' M N$ ta có: $C' N C' A' \\cdot B' A' B' M \\cdot E M E N = 1 \\Leftrightarrow \\frac{1}{2} \\cdot 2 \\cdot E M E N = 1 \\Leftrightarrow E M E N \\Rightarrow M E M N = \\frac{1}{2} \\Rightarrow S B' E M S A' N M = M B' M A' \\cdot M E M N = \\frac{1}{3} \\cdot \\frac{1}{2} = \\frac{1}{6} \\Rightarrow S B' E M = \\frac{1}{6} S A' N M = \\frac{1}{8} S A' B' C' \\Rightarrow V_P \\cdot B' E M V_{A B C} \\cdot A' B' C' = \\frac{1}{3} \\cdot P B' \\cdot S B' E M B B' \\cdot S A' B' C' = \\frac{1"
+    },
+    {
+        "id": "T050R008",
+        "question": "Cho hình lập phương $A B C D$ và $A' B' C' D'$ cạnh $2a$, gọi $M$ là trung điểm của $B B'$ và $P$ thuộc cạnh $D D'$ sao cho $D P = \\frac{1}{4} D D'$. Mặt phẳng $(A M P)$ cắt $C C'$ tại $N$. Thể tích khối đa diện $A M N P B C D$ bằng.",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537873912370_26.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. $V = 2 a^3$",
+            "B. $V = 3 a^3$",
+            "C. $V = 11 a^{3.3}$",
+            "D. $V = 9 a^{3.4}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng công thức tính nhanh, ta có: $V_{A M N P B C D} = V_{A B C D} \\cdot A' B' C' D' = \\frac{1}{2} (B M B' + D P D') = \\frac{3}{8} \\Rightarrow V_{A M N P B C D} = 3 a^3$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R009",
+        "question": "Cho hình lăng trụ đứng $A B C$. $A' B' C'$ có đáy $A B C$ là tam giác vuông, $A B = B C = a$. Biết rằng góc giữa hai mặt phẳng $(A C C')$ và $(A B' C')$ bằng $60^\\circ$ (tham khảo hình vẽ bên). Thể tích của khối chóp $B' A C C' A'$ bằng $A. a^3 \\frac{3}{3}$. $B. a^3 \\frac{6}{3}$. $C. a^3 \\frac{2}{3}$. $D. \\sqrt{3} a^3 \\frac{3}{3}$.",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1537873980020_27.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. $3 + 3$",
+            "B. $3 + 6$",
+            "C. $3 + 2$",
+            "D. $\\sqrt{3} \\cdot 3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Dựng $B' M \\perp A' C'$ $\\Rightarrow B' M \\perp (A C C' A')$ Dựng $M N \\perp A C'$ $\\Rightarrow A C' \\perp (M N B')$ Khi đó $\\hat{(A B' C')} ; (A C' A') = \\hat{M N B'} = 60^\\circ$ Ta có: $B' M = a \\sqrt{2} \\Rightarrow M N = B' M \\tan \\hat{M N B'} = a \\sqrt{6}$ Mặt khác $\\tan \\hat{A C' A'} = \\frac{M N}{C' N} = \\frac{A A'}{A' C'}$ Trong đó $M N = a \\sqrt{6}$ ; $M C' = a \\sqrt{2} \\Rightarrow C' N = \\sqrt{C' M^2 - M N^2} = a \\sqrt{3}$ Suy ra $A A' = a$ Thể tích lăng trụ $V = A B^2 \\cdot A A' = a^3$ $\\Rightarrow V_{B'} \\cdot A C C' A' = V - V_{B'} \\cdot B A C = V - V_3 = \\frac{2}{3} V = a^3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R010",
+        "question": "Cho hình chóp $S A B C$ có mặt phẳng $(S A C)$ vuông góc với mặt phẳng $(A B C)$, $S A B$ là tam giác đều cạnh $a \\sqrt{3}$, $B C = a \\sqrt{3}$, đường thẳng $S C$ tạo với mặt phẳng $(A B C)$ góc $60^\\circ$. Thể tích của khối chóp $S A B C$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\sqrt{3} 3$",
+            "B. $a \\sqrt{6} 2$",
+            "C. $a \\sqrt{6} 6$",
+            "D. $2 a \\sqrt{6}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Có $A B = B C = a \\sqrt{3} \\Rightarrow \\Delta A B C$ cân tại $B$. Gọi $H$ là trung điểm của $A C$ ta có $B H \\perp A C$ \n\\[\n\\begin{cases}\n(A B C) \\perp (S A C) \\\\ \n(A B C) \\cap (S A C) = A C \\\\ \n(A B C) \\supset B H \\perp A C \\Rightarrow B H \\perp (S A C) \\Rightarrow B H \\perp S A \n\\end{cases}\n\\]\n(1) Gọi $K$ là trung điểm của $S A$, do tam giác $S A B$ đều $\\Rightarrow B K \\perp S A$ (2) Từ (1) và (2) $\\Rightarrow S A \\perp (B H K) \\Rightarrow S A \\perp H K$. Lại có $H K$ là đường trung bình của tam giác $S A C \\Rightarrow H K \\parallel S C \\Rightarrow S A \\perp S C \\Rightarrow \\Delta S A C$ vuông tại $S$. Trong $(S A C)$ kẻ $S I \\perp A C$, tương tự ta có $S I \\perp (A B C) \\Rightarrow \\widehat{(S C; (A B C))} = \\widehat{(S C; I C)} = \\widehat{S C I} = 60^\\circ$. Xét tam giác vuông $S A C$ có $S C = S A \\cdot \\cot 60^\\circ = a \\sqrt{3} \\cdot \\frac{1}{\\sqrt{3}} = a \\Rightarrow A C = \\sqrt{a^2 + 3 a^2} = 2 a \\Rightarrow S S A C = \\frac{1}{2} S A \\cdot S C = \\frac{1}{2} a \\sqrt{3} \\cdot a = \\frac{a^2 \\sqrt{3}}{2}$. Có $H$ là trung điểm của $A C \\Rightarrow A H = \\frac{1}{2} A C = a \\Rightarrow B H = \\sqrt{B A^2 - A H^2} = \\sqrt{3 a^2 - a^2} = a \\sqrt{2}$. Vậy $V S . A B C = \\frac{1}{3} B H \\cdot S S A C = \\frac{1}{3} a \\sqrt{2} \\cdot \\frac{a^2 \\sqrt{3}}{2} = \\frac{a^3 \\sqrt{6}}{6}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R011",
+        "question": "Cho hình chóp đều $S . A B C D$ có đáy là hình vuông cạnh $a$, $M$ là trung điểm của $S A$. Biết mặt phẳng $(M C D)$ vuông góc với mặt phẳng $(S A B)$. Thể tích khối chóp $S . A B C D$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\cdot 3 \\sqrt{3}$",
+            "B. $a \\cdot 3 \\sqrt{5} \\cdot 6$",
+            "C. $a \\cdot 3 \\sqrt{5} \\cdot 2$",
+            "D. $a \\cdot 3 \\sqrt{3} \\cdot 6$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi N là trung điểm của $S_{B}$ ta có $(M_{C}D) \\equiv (M_{N}C D)$. ⇒ $(M_{N}C D) \\perp (S_{A}B)$. Dễ thấy $\\Delta B C N = \\Delta A D M \\, (c.g.c)$ ⇒ $C N = D M$ ⇒ $M N C D$ là hình thang cân. Gọi $E$, $F$ lần lượt là trung điểm của $M N$ và $C D$ ta có $E F \\perp M N$ ⇒ $E F \\perp (S_{A}B)$. Gọi $G$ là trung điểm $A B$ ta có $S$, $E$, $G$ thẳng hàng. Đặt $S_{A} = S_{B} = S_{C} = S_{D} = x$ ta có $C N = \\sqrt{x^{2} + \\frac{2 a^{2}}{2}}$. Dễ dàng tính được $E F = \\sqrt{\\frac{4 x^{2} + 7 a^{2}}{4}}$. Ta có $E G = \\frac{1}{2} S G = \\frac{1}{2} \\sqrt{x^{2} - \\frac{a^{2}}{4}} = \\sqrt{\\frac{4 x^{2} - a^{2}}{4}}$. $\\Delta E F G$ vuông tại $E$ ⇒ $E F^{2} + E G^{2} = G F^{2}$ ⇔ $\\frac{4 x^{2} + 7 a^{2}}{16} + \\frac{4 x^{2} - a^{2}}{16} = a^{2}$ ⇔ $4 x^{2} + 7 a^{2} + 4 x^{2} - a^{2} = 16 a^{2}$ ⇔ $8 x^{2} = 10 a^{2}$ ⇔ $x^{2} = \\frac{5 a^{2}}{4}$. Xét tam giác vuông $S O B$: $S O = \\sqrt{S_{B}^{2} - O B^{2}} = \\sqrt{\\frac{5 a^{2}}{4} - \\frac{a^{2}}{2}} = \\sqrt{\\frac{3 a^{2}}{2}}$. Vậy thể tích khối chóp là $V_{S.A B C D} = \\frac{1}{3} . S O . S_{A}B C D = \\frac{1}{3} . \\sqrt{3 a^{2}} . a^{2} = \\frac{\\sqrt{3} a^{3}}{6}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R012",
+        "question": "Cho khối chóp tứ giác $S.ABCD$. Mặt phẳng đi qua trọng tâm các tam giác $SAB$, $SAC$, $SAD$ chia khối chóp này thành hai phần có thể tích là $V_1$ và $V_2$ ($V_1 < V_2$). Tính tỉ lệ $\\frac{V_1}{V_2}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $8\\ 27$",
+            "B. $16\\ 81$",
+            "C. $8\\ 19$",
+            "D. $16\\ 75$"
+        ],
+        "answer": "C",
+        "explain": "Gọi $G_1$, $G_2$, $G_3$ lần lượt là trực tâm các tam giác $SAB$, $SAC$ và $SAD$. Gọi $E$, $F$, $G$ lần lượt là trung điểm của $AB$, $AC$ và $AD$ ta có: $S G_1 S E = S G_2 S F = S G_3 S G = \\frac{2}{3} \\Rightarrow G_1 G_2 \\parallel E F; G_2 G_3 \\parallel F G \\Rightarrow (G_1 G_2 G_3) \\parallel (E F G)$ Hay $(G_1 G_2 G_3) \\parallel (A B C)$. Qua $G_1$ kẻ $M N \\parallel AB$ ($M \\in S A; N \\in S B$). Qua $G_3$ kẻ $M Q \\parallel A D$ ($Q \\in S D$). Qua $N$ kẻ $N P \\parallel B C$ ($N \\in S C$) $\\Rightarrow$ Thiết diện của khối chóp cắt bởi mặt phẳng $(G_1 G_2 G_3)$ là $(M N P Q)$, chia khối chóp thành hai phần: $S \\cdot M N P Q$ và $M N P Q \\cdot A B C D$. Áp dụng định lí Ta-lét ta tính được $S M S A = S N S B = S P S C = S Q S D = \\frac{2}{3}$. Ta có $V_{S \\cdot M N P} V_{S \\cdot A B C} = S M S A \\cdot S N S B \\cdot S P S C = \\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{8}{27} \\Rightarrow V_{S \\cdot M N P} = \\frac{8}{27} V_{S \\cdot A B C}$. $V_{S \\cdot M P Q} V_{S \\cdot A C D} = S M S A \\cdot S P S C \\cdot S Q S D = \\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{8}{27} \\Rightarrow V_{S \\cdot M P Q} = \\frac{8}{27} V_{S \\cdot A C D} \\Rightarrow V_{S \\cdot M N P Q} = V_{S \\cdot M N P} + V_{S \\cdot M P Q} = \\frac{8}{27} (V_{S \\cdot A B C} + V_{S \\cdot A C D}) = \\frac{8}{27} V_{S \\cdot A B C D} \\Rightarrow V_1 = \\frac{8}{27} V_{S \\cdot A B C D}; V_2 = \\frac{19}{27} V_{S \\cdot A B C D$} \\Rightarrow V_1 V_2 = \\frac{8}{19}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R013",
+        "question": "Xét khối tứ diện $A B C D$ có cạnh $A D$, $B C$ thỏa mãn $A B^2 + C D^2 = 18$ và các cạnh còn lại đều bằng $5$. Biết thể tích của khối tứ diện $A B C D$ đạt giá trị lớn nhất có dạng $V_{\\text{max}} = x \\sqrt{y} \\, 4$; $x, y \\in \\mathbb{N}^*$; $(x; y) = 1$. Khi đó, $x, y$ thỏa mãn bất đẳng thức nào dưới đây?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $x + y^2 - xy > 4550$",
+            "B. $xy + 2x + y > 2550$",
+            "C. $x^2 - xy + y^2 < 5240$",
+            "D. $x^3 - y > 19602$"
+        ],
+        "answer": "A",
+        "explain": "Gọi $I$, $J$ lần lượt là trung điểm $CD$, $AB$; độ dài các đoạn $AB = a$, $CD = b$, $a$, $b > 0$, $a^2 + b^2 = 18$. Tam giác $ACD$ và tam giác $BCD$ cân tại $A$, $B \\Rightarrow AI \\perp CD$, $BI \\perp CD \\Rightarrow CD \\perp (ABI) \\Rightarrow V_{ABCD} = V_D \\cdot ABI + V_C \\cdot ABI = \\frac{1}{3} \\cdot DI \\cdot S_{ABI} + \\frac{1}{3} \\cdot IC \\cdot S_{ABI} = \\frac{1}{3} \\cdot CD \\cdot S_{ABI} (*)$. Tam giác $AID$ vuông tại $I \\Rightarrow AI = \\sqrt{AD^2 - ID^2} = \\sqrt{5^2 - (b^2)^2} = \\sqrt{25 - b^2}$. Dễ dàng chứng minh $\\Delta ACD = \\Delta BCD$ (c.c.c) $\\Rightarrow IA = IB$ (Chiều cao tương ứng bằng nhau) $\\Rightarrow \\Delta IAB$ cân tại $I \\Rightarrow IJ \\perp AB$. Tam giác $AIJ$ vuông tại $J \\Rightarrow IJ = \\sqrt{AI^2 - AJ^2} = \\sqrt{25 - \\frac{b^2}{4} - \\frac{a^2}{4}} = \\sqrt{25 - \\frac{b^2 + a^2}{4}} = \\sqrt{25 - \\frac{18}{4}} = \\sqrt{\\frac{82}{2}}$. Diện tích tam giác $IAB$: $S_{IAB} = \\frac{1}{2} \\cdot AB \\cdot IJ = \\frac{1}{2} \\cdot a \\cdot \\sqrt{\\frac{82}{2}} = \\frac{a \\sqrt{82}}{4}$. Thay vào (*): $V_{ABCD} = \\frac{1}{3} \\cdot b \\cdot \\frac{a \\sqrt{82}}{4} = \\frac{ab \\sqrt{82}}{12}$. $C o s i \\leq \\frac{\\sqrt{82}}{12} \\cdot \\frac{a^2 + b^2}{2} = \\frac{\\sqrt{82}}{12} \\cdot \\frac{18}{2} = \\frac{3 \\sqrt{82}}{4} = x \\sqrt{y} \\cdot 4; x, y \\in \\mathbb{N}^*; = 1 \\Rightarrow x = 3, y = 82$. Kiểm tra các biểu thức của từng phương án, ta thấy phương án A là đúng. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R014",
+        "question": "Cho hình hộp đứng $A B C D$. $A' B' C' D'$ có đáy $A B C D$ là hình thoi cạnh $a$ và $\\angle B A D = 60^\\circ$, $A B'$ hợp với đáy $(A B C D)$ một góc $30^\\circ$. Thể tích của khối hộp là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a 3 2  \nB. a 3 6  \nC. a 3 $\\sqrt{2}$ 6  \nD. 3 a 3 2  "
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com A B C D . A ′ B ′ C ′ D ′ là hình hộp đứng ⇒ $B B ′ \\perp ( A B C D )$ ⇒ $( \\hat{A} B ′ , ( A B C D ) ) = ( \\hat{A} B ′ ; A B ) = \\hat{B} A B ′ = 30^\\circ$ Tam giác $A B B ′$ vuông tại $B$ ⇒ $\\tan \\hat{B} A B ′ = \\frac{B B ′}{A B} ⇒ B B ′ = A B \\cdot \\tan 30^\\circ = a \\sqrt{3}$ Tam giác $A B D$ có: $A B = A D = a , \\hat{B} A D = 60^\\circ$ ⇒ Tam giác $A B D$ đều, có cạnh đều bằng $a$ ⇒ $S A B D = \\frac{a^2 \\sqrt{3}}{4} ⇒ S A B C D = 2 S A B D = 2 \\cdot \\frac{a^2 \\sqrt{3}}{4} = \\frac{a^2 \\sqrt{3}}{2}$ Thể tích khối hộp $A B C D . A ′ B ′ C ′ D ′ : V = S A B C D \\cdot B B ′ = \\frac{a^2 \\sqrt{3}}{2} \\cdot a \\sqrt{3} = a^3 \\cdot \\frac{2}{2}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R015",
+        "question": "Cho khối chóp $S \\, A B C$ có điểm $M$ và $N$ lần lượt nằm trên các cạnh $S A$ và $S B$ sao cho $S M / S A = \\frac{1}{3}$, $S N / S B = \\frac{2}{3}$. Mặt phẳng $( \\alpha )$ qua hai điểm $M$, $N$ và song song $S C$ chia khối chóp thành 2 khối đa diện. Tính tỉ số thể tích của khối đa diện có thể tích lớn hơn so với thể tích khối chóp $S \\, A B C$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5 \\cdot 9$",
+            "B. $3 \\cdot 5$",
+            "C. $2 \\cdot 3$",
+            "D. $3 \\cdot 4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong mặt phẳng $(S B C)$: kẻ $N I \\parallel S C$, $I \\in B C$. Trong mặt phẳng $(S A C)$: kẻ $M J \\parallel S C$, $J \\in A C$. ⇒ Thiết diện của hình chóp cắt bởi $(\\alpha)$ là $M N I J$. Ta tính tỉ số thể tích của khối đa diện $M N B I J A$ với khối chóp $S . A B C$: Ta có: \n\n$$\nV_{N . M A J} V_{S . A B C} = \\frac{1}{3} \\cdot d(N, (S A C)) \\cdot S_{A M J} \\frac{1}{3} \\cdot d(B, (S A C)) \\cdot S_{S A C} = \\frac{d(N, (S A C))}{d(B, (S A C))} \\cdot \\frac{S_{A M J}}{S_{S A C}} = \\frac{S_{N B}}{S_{A M} S_{A J} A C} = \\frac{2}{3} \\cdot \\frac{2}{3} \\cdot \\frac{2}{3} = \\frac{8}{27}\n$$\n⇒ $V_{N . M A J} = \\frac{8}{27} V_{S . A B C} \\quad (1)$ \n\n$$\nV_{N . A B I J} V_{S . A B C} = \\frac{1}{3} \\cdot d(N, (A B C)) \\cdot S_{A B I J} \\frac{1}{3} \\cdot d(S, (A B C)) \\cdot S_{A B C} = \\frac{d(N, (A B C))}{d(S, (A B C))} \\cdot \\frac{S_{A B I J}}{S_{A B C}} = \\frac{N B}{S B} \\cdot \\frac{S_{A B I J}}{S_{A B C}} = \\frac{1}{3} \\cdot \\frac{7}{9} = \\frac{7}{27} \\quad (vì S_{C I J} S_{A B C} = I C B C \\cdot J C A C = \\frac{2}{3} \\cdot \\frac{1}{3} = \\frac{2}{9}).\n$$\n⇒ $V_{N . A B I J} = \\frac{7}{27} V_{S . A B C} \\quad (2)$ \n\nTừ $(1)$, $(2)$ suy ra \n\n$$\nV_{N . A M J} + V_{N . A B I J} = \\left( \\frac{8}{27} + \\frac{7}{27} \\right) V_{S . A B C} \\Leftrightarrow V_{M N B I J A} = \\frac{5}{9} V_{S . A B C} \n$$ \n⇒ $\\frac{V_{M N B I J A}}{V_{S . A B C}} = \\frac{5}{9}$ \n\nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R016",
+        "question": "Cho hình chóp tứ giác đều $S.ABCD$, đường cao $SO$. Biết rằng trong các thiết diện của hình chóp cắt bởi các mặt phẳng chứa $SO$, thiết diện có diện tích lớn nhất là tam giác đều cạnh bằng $a$, tính thể tích khối chóp đã cho.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\sqrt{2} 6$",
+            "B. $a \\sqrt{3} 4$",
+            "C. $a \\sqrt{3} 2$",
+            "D. $a \\sqrt{3} 12$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $ ( \\alpha ) $ là mặt phẳng chứa $ S O $, cắt mặt đáy $ ( A B C D ) $ theo giao tuyến là đường thẳng $ M N $ với $ M , N $ thuộc các cạnh của hình vuông $ A B C D $. Không mất tính tổng quát ta giả sử $ M N $ như hình vẽ. Ta có : $ S S M N = \\frac{1}{2} S O $. $ M N \\leq \\frac{1}{2} S O $. $ A C = S S A C = \\text{const} $. Do đó $ S S M N $ đạt giá trị lớn nhất bằng $ S S A C $ khi $ M N = A C = B D $. Mà tam giác $ S M N $ đều cạnh $ a $ nên $ A C = B D = a \\Rightarrow S A B C D = \\frac{1}{2} A C \\cdot B D = \\frac{a^2}{2} $ và $ S O = \\frac{a \\sqrt{3}}{2} $. Thể tích $ V S . A B C D = \\frac{1}{3} S O \\cdot S A B C D = \\frac{1}{3} \\cdot \\frac{a \\sqrt{3}}{2} \\cdot \\frac{1}{2} a^2 = \\frac{a^3 \\sqrt{3}}{12} $. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R017",
+        "question": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông cân tại $B$, $AB = a$. Cạnh bên $SA = a$ và vuông góc với đáy. Mặt phẳng qua $A$ vuông góc với $SC$ cắt hình chóp theo một thiết diện. Tính diện tích thiết diện đó.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a 2 \\sqrt{2} 24$",
+            "B. $a 2 \\sqrt{3} 24$",
+            "C. $a 2 \\sqrt{2} 12$",
+            "D. $a 2 \\sqrt{3} 12$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Trong $(S A C)$ qua $A$ kẻ $A D \\perp S C$ $(D \\in S C)$, trong $(S B C)$ qua $D$ kẻ $D E \\perp S C$ $(E \\in S B)$. Khi đó mặt phẳng qua $A$ vuông góc với $S C$ cắt hình chóp theo một thiết diện là tam giác $A D E$. Tam giác $A B C$ vuông cân tại $B$ nên $A C = A B \\sqrt{2} = a \\sqrt{2}$. Xét tam giác vuông $S A C$: $\\frac{S D}{S C} = \\frac{S A^2}{S C^2} = \\frac{S A^2}{S A^2 + A C^2} = \\frac{1}{3}$. Xét tam giác vuông $S A B$: $\\frac{S E}{S B} = \\frac{S A^2}{S B^2} = \\frac{S A^2}{S A^2 + A B^2} = \\frac{1}{2} \\implies V_{S . A D E} = \\frac{V_{S . A C B}}{6} \\implies V_{S . A D E} = \\frac{1}{6} V_{S . A C B} = \\frac{1}{6} \\cdot \\frac{1}{3} S_A \\cdot \\frac{1}{2} B A \\cdot B C = \\frac{a^3}{36}$. Mà $S C \\perp (A D E) \\implies V_{S . A D E} = \\frac{1}{3} S_D \\cdot S_{A D E} \\implies S_{A D E} = 3 \\cdot \\frac{V_{S . A D E}}{S_D} = 3 \\cdot \\frac{V_{S . A D E}}{\\frac{1}{3} S_C} = 9 \\cdot \\frac{V_{S . A D E}}{S_C}$. $\\sqrt{S_A^2 + A C^2} = 9 \\cdot \\frac{a^3}{36 \\sqrt{a^2 + 2 a^2}} = a^2 \\sqrt{3}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R018",
+        "question": "Cho hình hộp $A B C D$. $A' B' C' D'$ có tất cả các cạnh bằng $a$, hình chiếu vuông góc của $A'$ lên mặt phẳng $(A B C D)$ nằm trong tứ giác $A B C D$, các cạnh xuất phát từ đỉnh $A$ của hình hộp tạo với nhau một góc $60^\\circ$. Tính thể tích khối hộp $A B C D. A' B' C' D'$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a\\ 3\\ \\sqrt{2}\\ 2$",
+            "B. $a\\ 3\\ \\sqrt{3}\\ 2$",
+            "C. $a\\ 3\\ \\sqrt{2}\\ 6$",
+            "D. $a\\ 3\\ \\sqrt{3}\\ 6$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $H$ là chân đường vuông góc hạ từ đỉnh $A'$ lên $(ABCD)$. Vì $\\hat{A'}AB = \\hat{A'}AD = \\hat{BAD} = 60^\\circ \\Rightarrow$ Các tam giác $AA'B$, $ABD$ và $AA'D$ là các tam giác đều cạnh $a \\Rightarrow A'A = A'B' = A'D = a \\Rightarrow$ Hình chóp $A'.ABD$ có các cạnh bên bằng nhau nên $H$ là tâm của tam giác đều $ABD$. Dễ dàng tính được $AH = \\frac{2}{3} AO = \\frac{2}{3} a \\sqrt{\\frac{3}{2}} = a \\sqrt{\\frac{3}{3}}$. Xét tam giác vuông $AA'H$ có $A'H = \\sqrt{A'A^2 - AH^2} = a \\sqrt{\\frac{6}{3}}$. $S_{ABCD} = 2 S_{ABD} = 2 a^2 \\sqrt{\\frac{3}{4}} = a^2 \\sqrt{\\frac{3}{2}} \\Rightarrow V_{ABCD.A'B'C'D'} = a \\sqrt{\\frac{6}{3}} \\cdot a^2 \\sqrt{\\frac{3}{2}} = a^3 \\sqrt{\\frac{2}{2}}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R019",
+        "question": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình thoi cạnh $a$ và $SA = SB = SC = a$. Thể tích lớn nhất của khối chóp $S.ABCD$ là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $a \\, 3 \\, 4$",
+            "B. $3 \\, a \\, 3 \\, 8$",
+            "C. $a \\, 3 \\, 8$",
+            "D. $a \\, 3 \\, 2$"
+        ],
+        "answer": "A",
+        "explain": "Gọi $M$ là trung điểm của $AB$, $O$ là giao điểm của $AC$ và $BD$. Qua $M$ kẻ đường thẳng vuông góc với $AB$ và cắt $BO$ tại $H$. Khi đó $H$ là tâm đường tròn ngoại tiếp tam giác $ABC$. Vì $S_A = S_B = S_C$ nên $S_H \\perp (ABC)$. Đặt $\\hat{A}BC = \\alpha$ ta có: \n$$\nAC^2 = AB^2 + BC^2 - 2 \\cdot AB \\cdot BC \\cdot \\cos \\alpha = a^2 + a^2 - 2 a^2 \\cos \\alpha = 2 a^2 (1 - \\cos \\alpha) \n$$ \n$$\n\\Rightarrow AO^2 = \\frac{AC^2}{4} = a^2 (1 - \\cos \\alpha)^2 \n$$ \nTam giác $AOB$ vuông tại $O$ nên: \n$$\nOB^2 = AB^2 - AO^2 = a^2 - a^2 (1 - \\cos \\alpha)^2 = a^2 (1 + \\cos \\alpha)^2 \n$$ \nXét tam giác $\\Delta BHM \\sim \\Delta BAM$ ($g \\cdot g$) nên $MHAO = BMB_O \\Rightarrow MH = AO \\cdot \\frac{BM}{BO} \\Rightarrow MH^2 = AO^2 \\cdot \\frac{BM^2}{BO^2} = a^2 (1 - \\cos \\alpha)^2 \\cdot \\frac{a^2}{4} \\cdot \\frac{a^2 (1 + \\cos \\alpha)^2}{1} = a^2 (1 - \\cos \\alpha)^4 (1 + \\cos \\alpha)$ \nTam giác $SMH$ vuông tại $H$ có \n$$\nSH^2 = SM^2 - MH^2 = \\frac{3 a^2}{4} - a^2 (1 - \\cos \\alpha)^4 (1 + \\cos \\alpha) = \\frac{a^2}{4} (3 - (1 - \\cos \\alpha)(1 + \\cos \\alpha)) = \\frac{a^2}{4} \\cdot \\frac{2 + 4 \\cos \\alpha}{1 + \\cos \\alpha} = a^2 \\cdot \\frac{(1 + 2 \\cos \\alpha)^2}{(1 + \\cos \\alpha)} \n$$ \n$$\nS_{ABCD} = 2 S_{ABC} = BO \\cdot AC \\Rightarrow S^2_{ABCD} = BO^2 \\cdot AC^2 = a^2 (1 + \\cos \\alpha)^2 \\cdot 2 a^2 (1 - \\cos \\alpha) = a^4 (1 + \\cos \\alpha)(1 - \\cos \\alpha) \n$$ \n$$\n\\Rightarrow V S_{ABCD} = \\frac{1}{3} S_{ABCD} \\cdot S_H \\Rightarrow V^2 S_{ABCD} = \\frac{1}{9} S^2_{ABCD} \\cdot S_H^2 = \\frac{1}{9} a^4 (1 + \\cos \\alpha)(1 - \\cos \\alpha) \\cdot a^2 (1 + 2 \\cos \\alpha)^2 (1 + \\cos \\alpha) = \\frac{a^6 (1 - \\cos \\alpha)(1 + 2 \\cos \\alpha)}{18} \n$$ \nĐặt $t = \\cos \\alpha \\, (t \\in [-1; 1])$ và xét hàm $f(t) = (1 - t)(1 + 2t) = -2t^2 + t + 1$ trên $[-1; 1]$ có: Hàm bậc hai $f(t) = -2t^2 + t + 1$ có đồ thị là parabol với bề lõm hướng xuống dưới. Do đó nó đạt GTLN tại $t = \\frac{1}{4}$ và $\\max [-1; 1] f(t) = f\\left(\\frac{1}{4}\\right) = \\frac{9}{8}$. Khi đó \n$$\nV^2_{max} = \\frac{a^6}{18} \\cdot \\frac{9}{8} = \\frac{a^6}{16} \\Rightarrow V = \\frac{a^3}{"
+    },
+    {
+        "id": "T050R020",
+        "question": "Cho hình chóp $S.ABC$ có $AB = 3$, $BC = 4$, $AC = 5$. Tính thể tích khối chóp $S.ABC$ biết rằng các mặt bên tạo với đáy một góc $30^\\circ$ và hình chiếu vuông góc của $S$ trên $(ABC)$ nằm trong tam giác $ABC$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4 \\sqrt{3} \\, 3$",
+            "B. $2 \\sqrt{3} \\, 3$",
+            "C. $8 \\sqrt{3} \\, 9$",
+            "D. $2 \\sqrt{3}$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $I$ là tâm đường tròn nội tiếp $\\Delta ABC$ ⇒ $S \\perp (ABC)$. Dễ thấy $\\Delta ABC$ vuông tại $B$ ⇒ $S \\Delta ABC = \\frac{1}{2} \\cdot AB \\cdot BC = \\frac{1}{2} \\cdot 3 \\cdot 4 = 6$, nửa chu vi $\\Delta ABC$: $p = \\frac{3 + 4 + 5}{2} = 6$. Gọi $H$ là hình chiếu của $I$ trên cạnh $AB$ ta có $S = p \\cdot r ⇒ r = \\frac{S}{p} = 1$, với $r$ là tâm đường tròn nội tiếp $\\Delta ABC$ ⇒ $IH = 1$. $\\{ AB \\perp IH \\}$. $AB \\perp S I ⇒ AB \\perp (SHI) ⇒ AB \\perp SH ⇒ \\angle (SAB ; ABC) = \\angle (SH ; IH) = \\angle SHI = 30^\\circ$. Xét tam giác vuông $SHI$ có $SI = HI \\cdot \\tan 30^\\circ = 1 \\cdot \\sqrt{3}$. Vậy $V_{SABC} = \\frac{1}{3} SI \\cdot S \\Delta ABC = \\frac{1}{3} \\cdot 1 \\cdot \\sqrt{3} \\cdot 6 = \\frac{2 \\sqrt{3}}{3}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R021",
+        "question": "Cho hình hộp $A B C D$. $A' B' C' D'$. Gọi $E$, $F$ lần lượt là trung điểm của $B' C'$ và $C' D'$. Mặt phẳng $(A E F)$ chia hình hộp thành hai hình đa diện $(H)$ và $(H')$ trong đó $(H)$ là hình đa diện chứa đỉnh $A'$. Tính tỉ số thể tích đa diện $(H)$ và thể tích hình đa diện $(H')$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 25 47",
+            "B. 25 72",
+            "C. $47$ $25$",
+            "D. 72 47"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Mặt phẳng $(A E F)$ chứa $E F \\parallel B D \\subset (A B C D) \\Rightarrow$ Giao tuyến của $(A E F)$ và $(A B C D)$ là đường thẳng đi qua $A$ và song song với $E F$. Trong $(A B C D)$ qua $A$ kẻ $H I \\parallel B D$ $(H \\in B C, I \\in C D)$. Trong $(B C C' B')$ gọi $L = E H \\cap B B'$, trong $(C D D' C')$ gọi $M = F I \\cap D D'$, khi đó $(A E F) \\equiv (A L E F)$. Ta có: \n\\[\n\\begin{cases}\n(A E F) \\cap (B C C' B') = H E \\\\\n(A E F) \\cap (C D D' C') = F I \\\\\n(B C C' B') \\cap (C D D' C') = C C' \n\\end{cases} \n\\Rightarrow H E, F I, C C' \\text{ đồng quy tại } N. \n\\]\nTa có: \n\\[\nV H' = V N \\cdot C I H - V N \\cdot E F C' - V L \\cdot A B H - V M \\cdot A D I. \n\\]\nTa dễ dàng chứng minh được $B, D$ lần lượt là trung điểm của $C H, C I \\Rightarrow B D = \\frac{1}{2} H I \\Rightarrow E F = \\frac{1}{2} B D = \\frac{1}{4} H I \\Rightarrow \\Delta C' E F \\text{ đồng dạng với } \\Delta C I H \\text{ theo tỉ số đồng dạng } k = \\frac{1}{4} \\Rightarrow \\frac{S \\Delta C' E F}{S \\Delta C I H} = \\frac{1}{16} N C' N C = E C' H C = \\frac{1}{4} \\Rightarrow d(N'; (C' E F)) d(N; (C I H)) = \\frac{1}{4} \\Rightarrow V N \\cdot E F C' = \\frac{1}{16} \\cdot \\frac{1}{4} V N \\cdot C I H = \\frac{1}{64} V N \\cdot C I H. \n\\]\n$V L A B H = V M \\cdot A D I = \\frac{1}{2} \\cdot \\frac{1}{4} V N \\cdot C I H = \\frac{1}{8} V N \\cdot C I H \\Rightarrow V H' = V N \\cdot C I H - V N \\cdot E F C' - V L \\cdot A B H - V M \\cdot A D I = \\frac{47}{64} V N \\cdot C I H$. Ta có: $C C' N C = \\frac{3}{4}, \\frac{S A B C D}{S C I H} = \\frac{1}{2} \\Rightarrow V A B C D \\cdot A' B' C' D' = V S \\cdot C I H = d(C'; (A B C D)) \\cdot S A B C D \\cdot \\frac{1}{3} d(N; (C I H)) \\cdot S C I H = 3 \\cdot C C' N C \\cdot \\frac{S A B C D}{S C I H} = 3 \\cdot \\frac{9}{8} \\Rightarrow V S \\cdot C I H = \\frac{8}{9} V A B C D \\cdot A' B' C' D' \\Rightarrow V H' = \\frac{47}{64} V N \\cdot C I H = \\frac{47}{72} V A B C D \\cdot A' B' C' D' \\Rightarrow V H = \\frac{25}{72} V A B C D \\cdot A' B' C' D' \\Rightarrow V H V H' = \\frac{25}{47}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R022",
+        "question": "Cho hình chóp tứ giác đều có mặt bên hợp với đáy một góc $45^\\circ$ và khoảng cách từ chân đường cao đến mặt bên bằng $a$. Tính thể tích của khối chóp đó.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V = a^3 \\sqrt{3} 9$",
+            "B. $V = 8 a^3 \\sqrt{2} 3$",
+            "C. $V = a^3 \\sqrt{3} 6$",
+            "D. $V = a^3 \\sqrt{3} 4$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $H$ là tâm tam giác vuông $A B C D \\Rightarrow S H \\perp ( A B C D )$. Gọi $E$ là trung điểm của $B C$ ta có: \n\\[\n\\begin{cases}\nB C \\perp A E \\\\\nB C \\perp S H \\Rightarrow B C \\perp ( S A E ) \\\\\nB C \\perp S E \\Rightarrow \\angle ( S B C ; A B C ) = \\angle ( S E ; A E ) = \\angle S E A = 45^\\circ \n\\end{cases}\n\\]\nTrong $( S A E )$ kẻ $H K \\perp S E \\Rightarrow H K \\perp ( S B C ) \\Rightarrow H K = a \\Rightarrow H E = H K \\cos 45^\\circ = a \\sqrt{2} \\Rightarrow A B = 2 H E = 2 a \\sqrt{2} \\Rightarrow S A B C D = 8 a^2$. \n$S H = H E \\cdot \\tan 45^\\circ = a \\sqrt{2} \\Rightarrow V S \\cdot A B C D = \\frac{1}{3} \\cdot a \\sqrt{2} \\cdot 8 a^2 = \\frac{8 a^3 \\sqrt{2}}{3}$. \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R023",
+        "question": "Bát diện đều có mấy đỉnh ? ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 6",
+            "B. 8",
+            "C. $10$",
+            "D. $12$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hình bát diện đều có 6 đỉnh. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R024",
+        "question": "Cho khối chóp $S.ABC$ có đáy $ABC$ là tam giác đều cạnh $a$, $SA \\perp (ABC)$ và $SA = a$. Tính thể tích khối chóp $S.ABC$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $V_{S} \\cdot A_{B}C = a 3 \\sqrt{3} 6$",
+            "B. $V_{S} \\cdot A_{B}C = a 3 \\sqrt{3} 4$",
+            "C. $V_{S} \\cdot A_{B}C = a 3 \\sqrt{3} 12$",
+            "D. $V_{S} \\cdot A_{B}C = a 3 \\sqrt{3} 3$"
+        ],
+        "answer": "C",
+        "explain": "S A = a , S Δ A B C = \\frac{a^2 \\sqrt{3}}{4} . Suy ra thể tích V S . A B C = \\frac{1}{3} S A . S Δ A B C = \\frac{a^3 \\sqrt{3}}{12} . Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R025",
+        "question": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông tại $C$, $AB = a \\sqrt{5}$, $AC = a$. Cạnh bên $SA = 3a$ và vuông góc với mặt phẳng đáy. Thể tích của khối chóp $S.ABC$ bằng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $ \\sqrt{5} \\cdot 2 \\cdot a^3 $",
+            "B. $ 3 \\cdot a^3 $",
+            "C. $ a^3 $",
+            "D. $ 2 \\cdot a^3 $"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $\\Delta A B C$ vuông nên áp dụng Pitago. $C B = \\sqrt{A B^2 - A C^2} = \\sqrt{5 a^2 - a^2} = 2 a$. Diện tích đáy $S_{\\Delta A B C} = \\frac{1}{2} \\cdot a \\cdot 2a = a^2$. Thể tích khối chóp: $V_{S \\cdot A B C} = \\frac{1}{3} \\cdot S_{\\Delta A B C} \\cdot S_A = \\frac{1}{3} \\cdot a^2 \\cdot 3a = a^3$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R026",
+        "question": "Cho hình chóp $S.ABC$ có đáy là tam giác đều cạnh $2a$ và thể tích bằng $a^3$. Tính chiều cao $h$ của hình chóp đã cho.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $h = \\sqrt{3} a^6$",
+            "B. $h = \\sqrt{3} a^2$",
+            "C. $h = \\sqrt{3} a^3$",
+            "D. $h = \\sqrt{3} a$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Do đáy là tam giác đều nên $S_{\\Delta ABC} = \\frac{(2a)^2 \\sqrt{3}}{4} = a^2 \\frac{\\sqrt{3}}{4}$ Mà $V = \\frac{1}{3} S_{\\Delta ABC} \\cdot h \\Rightarrow h = \\frac{3V}{S_{\\Delta ABC}} = \\frac{3a^3}{a^2 \\frac{\\sqrt{3}}{4}} = \\frac{4\\sqrt{3}a}{3}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R027",
+        "question": "Cho tứ diện $A B C D$ có thể tích bằng $12$ và $G$ là trọng tâm tam giác $B C D$. Tính thể tích $V$ của khối chóp $A.G B C$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V = 3$",
+            "B. $V = 4$",
+            "C. $V = 6$",
+            "D. $V = 5$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Tứ diện $A B C D$ và khối chóp $A . G B C$ có cùng đường cao là khoảng cách từ $A$ đến mặt phẳng $(B C D)$. Do $G$ là trọng tâm tam giác $B C D$ nên ta có $S \\Delta B G C = S \\Delta B G D = S \\Delta C G D \\Rightarrow S \\Delta B C D = 3 S \\Delta B G C$. Áp dụng công thức thể tích hình chóp ta có: \n\n$V_{A . B C D} = \\frac{1}{3} h \\cdot S \\Delta B C D$ \n\n$V_{A . G B C} = \\frac{1}{3} h \\cdot S \\Delta G B C$\n\n$\\Rightarrow V_{A . B C D} \\cdot V_{A . G B C} = \\frac{1}{3} h \\cdot S \\Delta B C D \\cdot \\frac{1}{3} h \\cdot S \\Delta G B C = S \\Delta B C D \\cdot S \\Delta G B C = 3 \\Rightarrow V_{A . G B C} = \\frac{1}{3} V_{A B C D} = \\frac{1}{3} \\cdot 12 = 4$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R028",
+        "question": "Cho tứ diện $A B C D$ có $A D = 14\\, \\text{đơn vị}$, $B C = 6\\, \\text{đơn vị}$. Gọi $M$, $N$ lần lượt là trung điểm của các cạnh $A C$, $B D$ và $M N = 8\\, \\text{đơn vị}$. Gọi $\\alpha$ là góc giữa hai đường thẳng $B C$ và $M N$. Tính $\\sin \\alpha$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2 \\sqrt{2} \\, 3$",
+            "B. $\\sqrt{3} \\, 2$",
+            "C. $\\frac{1}{2}$",
+            "D. $\\sqrt{2} \\, 4$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $P$ là trung điểm của cạnh $CD$, ta có $\\alpha = \\angle (MN, BC) = \\angle (MN, NP)$. Trong tam giác $MNP$, ta có $\\cos \\angle MNP = \\frac{MN^2 + PN^2 - MP^2}{2 \\cdot MN \\cdot NP} = \\frac{1}{2}$. Suy ra $\\angle MNP = 60^{\\circ}$. Suy ra $\\sin \\alpha = \\frac{\\sqrt{3}}{2}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R029",
+        "question": "Cho hình chóp tứ giác $S.ABCD$ có đáy $ABCD$ là hình vuông cạnh $a$, $SA \\perp (ABCD)$ và $SA = a \\sqrt{6}$. Thể tích của khối chóp $S.ABCD$ bằng $V = \\frac{1}{3} \\cdot S_{ABCD} \\cdot h = \\frac{1}{3} \\cdot a^2 \\cdot a \\sqrt{6} = \\frac{a^3 \\sqrt{6}}{3}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a \\sqrt{6} 6$",
+            "B. $a \\sqrt{6}$",
+            "C. $a \\sqrt{6} 3$",
+            "D. $a \\sqrt{6} 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $V_S = A \\cdot B \\cdot C \\cdot D = \\frac{1}{3} S_A \\cdot S_{A B C D} = \\frac{1}{3} \\cdot a \\sqrt{6} \\cdot a^2 = \\frac{a^3 \\sqrt{6}}{3}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R030",
+        "question": "Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$, $SD = a \\sqrt{17} \\, \\text{2}$, hình chiếu vuông góc $H$ của $S$ lên mặt $(ABCD)$ là trung điểm của đoạn $AB$. Tính chiều cao của khối chóp $H.SBD$ theo $a$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $\\sqrt{3} a^5$",
+            "B. $a \\sqrt{3} 7$",
+            "C. $a \\sqrt{21} 5$",
+            "D. $3 a^5$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $Δ S H D$ vuông tại $H$ ⇒ $S H = \\sqrt{S D^2 - H D^2} = \\sqrt{(a \\sqrt{17})^2 - (a^2 + (a^2)^2)} = a \\sqrt{3}$. $V S . A B C D = \\frac{1}{3} S H . S A B C D = \\sqrt{3} a^3 ⇒ V H . S B D = \\frac{1}{2} V A . S B D = \\frac{1}{2} V S . A B D = \\frac{1}{4} V S . A B C D = \\sqrt{3} \\frac{1}{12} a^3$ Tam giác $Δ S H B$ vuông tại $H$ ⇒ $S B = \\sqrt{S H^2 + H B^2} = \\sqrt{3 a^2 + \\frac{a^2}{4}} = a \\sqrt{\\frac{13}{4}}$ Tam giác $Δ S B D$ có $S B = a \\sqrt{\\frac{13}{4}}$; $B D = a \\sqrt{2}$; $S D = a \\sqrt{\\frac{17}{4}}$ ⇒ $S Δ S B D = \\frac{5 a^2}{4}$ ⇒ $d(H, (S B D)) = 3 V S . H B D S Δ S B D = a \\sqrt{3} \\cdot \\frac{5}{4}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R031",
+        "question": "Cho hình chóp $S . A B C D$ có đáy $A B C D$ là hình thoi tâm $O$, $A B = a$, $\\angle B A D = 60^\\circ$, $S O \\perp (A B C D)$ và mặt phẳng $(S C D)$ tạo với mặt đáy một góc $60^\\circ$. Tính thể tích khối chóp $S . A B C D$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_{S.ABCD} = \\sqrt{3} a^3 24$",
+            "B. $V_{S.ABCD} = \\sqrt{3} a^3 8$",
+            "C. $V_{S.ABCD} = \\sqrt{3} a^3 12$",
+            "D. $V_{S.ABCD} = \\sqrt{3} a^3 48$"
+        ],
+        "answer": "B",
+        "explain": "S A B C D = 2 S A B D = A B \\cdot A D \\cdot \\sin \\widehat{B A D} = a \\cdot a \\cdot \\sin 60^\\circ = \\frac{a^2 \\sqrt{3}}{2} Trong (A B C D), dựng O I \\perp C D. Ta có C D \\perp O I C D \\perp S O \\Rightarrow C D \\perp (S O I) \\Rightarrow C D \\perp S I Do đó, ((S C D), (A B C D)) = (S I, O I) = \\widehat{S I O} = 60^\\circ Tam giác O C I vuông tại I nên \\sin \\widehat{O C I} = \\frac{O I}{O C} \\Leftrightarrow O I = O C \\cdot \\sin \\widehat{O C I} = a \\cdot \\frac{\\sqrt{3}}{2} \\cdot \\sin 30^\\circ = \\frac{a \\sqrt{3}}{4} Tam giác S O I vuông tại O nên \\tan \\widehat{S I O} = \\frac{S O}{O I} \\Rightarrow S O = O I \\cdot \\tan \\widehat{S I O} = \\frac{a \\sqrt{3}}{4} \\cdot \\tan 60^\\circ = \\frac{3 a}{4} Vậy V_{S A B C D} = \\frac{1}{3} S_{A B C D} \\cdot S O = \\frac{1}{3} \\cdot \\frac{a^2 \\sqrt{3}}{2} \\cdot \\frac{3 a}{4} = \\frac{a^3 \\sqrt{3}}{8} Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R032",
+        "question": "Cho hình chóp tứ giác $S.ABCD$. Gọi $V$ là thể tích khối chóp $S.ABCD$. Lấy điểm $A'$ trên cạnh $SA$ sao cho $SA = 4SA'$. Mặt phẳng qua $A'$ và song song với đáy của hình chóp cắt các cạnh $SB$, $SC$, $SD$ lần lượt tại các điểm $B'$, $C'$, $D'$. Thể tích khối chóp $S.A'B'C'D'$ bằng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $V = 64$",
+            "B. $V = 4$",
+            "C. $V = 16$",
+            "D. $V = 256$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $V S . A' B' C' = S A' S A . S B' S B . S C' S C = \\frac{1}{64}$. $V S . A' D' C' = S A' S A . S D' S D . S C' S C = \\frac{1}{64}$. Suy ra $V S . A' B' C' + V S . A' D' C' = \\frac{1}{64} ( V S . A B C + V S . A D C )$. hay $V S . A' B' C' D' = \\frac{1}{64} V S . A B C D = V_{64}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R033",
+        "question": "Cho hình chóp $S.ABCD$ có đáy $ABCD$ là hình vuông. Nếu khối chóp có chiều cao bằng $a \\sqrt{3}$ và thể tích là $3 a^3 \\sqrt{3}$ thì cạnh đáy có độ dài là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a$",
+            "B. $2a$",
+            "C. $3a$",
+            "D. $4a$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi độ dài cạnh đáy là $x$. Có $V_{S.ABCD} = \\frac{1}{3} x^2 a \\sqrt{3} \\Leftrightarrow 3 a^3 \\sqrt{3} = \\frac{1}{3} x^2 a \\sqrt{3} \\Leftrightarrow x^2 = 9 a^2 \\Leftrightarrow x = 3 a$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R034",
+        "question": "Cho một cây nến hình lăng trụ lục giác đều có chiều cao và độ dài cạnh đáy lần lượt là $15\\, \\text{cm}$ và $5\\, \\text{cm}$. Người ta xếp cây nến trên vào trong một hộp có dạng hình hộp chữ nhật sao cho cây nến nằm khít trong hộp (có đáy tiếp xúc như hình vẽ). Thể tích của chiếc hộp đó bằng.",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1539758074967_00.png",
+        "difficulty": 2,
+        "options": [
+            "A. 1500 c m 3",
+            "B. 600 \\sqrt{6} c m 3",
+            "C. 1800 c m 3",
+            "D. 750 \\sqrt{3} c m 3"
+        ],
+        "answer": "D",
+        "explain": "Ta có $A B = S P = 2 M N = 10 \\, \\text{cm}$. $A D = M R = 2 \\cdot \\sqrt{5^2 - (5^2)^2} = 5 \\sqrt{3}$. ⇒ $S A B C D = A B \\cdot A D = 50 \\sqrt{3} \\, \\text{cm}^2$. $V = S A B C D \\cdot h = 50 \\sqrt{3} \\cdot 15 = 750 \\sqrt{3} \\, \\text{cm}^3$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R035",
+        "question": "Một khối chóp có đáy là đa giác $n$ cạnh. Trong các mệnh đề sau đây, mệnh đề nào đúng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Số mặt và số đỉnh bằng nhau",
+            "B. Số đỉnh của khối chóp bằng $2n + 1$",
+            "C. Số cạnh của khối chóp bằng $n + 1$",
+            "D. Số mặt của khối chóp bằng $2n$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khối chóp có đáy là đa giác $n$ cạnh thì có $n + 1$ đỉnh và $n + 1$ mặt, $2n$ cạnh nên chỉ có $A$ đúng. Đáp án cần chọn là: $A$."
+    },
+    {
+        "id": "T050R036",
+        "question": "Một hình chóp tứ giác đều có mấy mặt đối xứng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $2$",
+            "C. $1$",
+            "D. $4$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Hình chóp tứ giác đều $S.ABCD$ có đáy là hình vuông, hình chiếu của đỉnh $S$ trên đáy trùng với tâm đáy. Hình chóp $S.ABCD$ có các mặt đối xứng là $(SAC)$, $(SBD)$, $(SGI)$, $(SHJ)$ với $G$, $H$, $I$, $J$ lần lượt là trung điểm $AB$, $BC$, $CD$, $DA$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R037",
+        "question": "Cho lăng trụ tam giác $A B C$. $A' B' C'$ có đáy $A B C$ là đều cạnh $A B = 2 a \\sqrt{2}$. Biết $A C' = 8 a$ và tạo với mặt đáy một góc $45^\\circ$. Thể tích khối đa diện $A B C C' B'$ bằng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $8 a^3 \\sqrt{3} 3$",
+            "B. $8 a^3 \\sqrt{6} 3$",
+            "C. $16 a^3 \\sqrt{3} 3$",
+            "D. $16 a^3 \\sqrt{6} 3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $H$ là hình chiếu của $A$ lên $m_p \\,(A'B'C')$. ⇒ $\\hat{H}C'A = 45^\\circ$. ⇒ $\\Delta AHC'$ vuông cân tại $H$. ⇒ $AH = AC' \\cdot \\sin 45^\\circ = AC' \\cdot \\frac{\\sqrt{2}}{2} = 4a \\cdot \\frac{\\sqrt{2}}{2}$. Diện tích tam giác $ABC$ là: $S_{ABC} = \\frac{(2a\\sqrt{2})^2 \\cdot \\sqrt{3}}{4}$. $NX: V_{ABC}C'B' = \\frac{2}{3}V_{ABC} \\cdot A'B'C' = \\frac{2}{3}AH \\cdot S_{ABC} = \\frac{2}{3} \\cdot 4a \\cdot \\frac{\\sqrt{2}}{2} \\cdot \\frac{(2a\\sqrt{2})^2 \\cdot \\sqrt{3}}{4} = \\frac{16a^3\\sqrt{6}}{3}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R038",
+        "question": "Cho hình lăng trụ $A B C$. $A' B' C'$ có thể tích bằng $V$. Các điểm $M$, $N$, $P$ lần lượt thuộc các cạnh $A A'$, $B B'$, $C C'$ sao cho $A M = \\frac{1}{2}$, $B N = C P = \\frac{2}{3}$. Thể tích khối đa diện $A B C . M N P$ bằng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2 \\cdot 3 \\cdot V$",
+            "B. $9 \\cdot 16 \\cdot V$",
+            "C. $20 \\cdot 27 \\cdot V$",
+            "D. $11 \\cdot 18 \\cdot V$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Có $V A' . B' C' C B = \\frac{2}{3} V = V M . B' C' C B$ Đặt: $V_1 = V M . N P C B = \\frac{1}{3} d(M, (C C' B' B))$ . $S N P C B = \\frac{1}{3} d(M, (C C' B' B))$ . $\\frac{2}{3} S C C' B' B = \\frac{2}{3} . \\frac{1}{3} d(M, (C C' B' B))$ . $S C C' B' B = \\frac{2}{3} V M . C C' B' B = \\frac{2}{3} . \\frac{2}{3} . V = \\frac{4}{9} V$ $V_2 = V M . A B C = \\frac{1}{3} d(M, (A B C))$ . $S A B C = \\frac{1}{3} . \\frac{1}{2} d(A', (A B C))$ . $S A B C = \\frac{1}{6} V$ Vậy $V A B C . M N P = V_1 + V_2 = \\frac{4}{9} V + \\frac{1}{6} V = \\frac{11}{18} V$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T050R039",
+        "question": "Hình đa diện nào dưới đây không có tâm đối xứng ?",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1539835036891_00.png",
+        "difficulty": 1,
+        "options": [
+            "A. Tứ diện đều",
+            "B. Bát diện đều",
+            "C. Hình lập phương",
+            "D. Lăng trụ lục giác đều"
+        ],
+        "answer": "A",
+        "explain": "Dễ dàng thấy bát diện đều, hình lập phương và lăng trục lục giác đều có tâm đối xứng. Còn tứ diện đều không có tâm đối xứng. Thật vậy, giả sử tứ diện đều $ABCD$ có tâm đối xứng $O$. Nhận thấy các đỉnh $A$, $B$, $C$, $D$ không thể là tâm đối xứng của tứ diện $ABCD$, nên ảnh của $A$ qua đối xứng tâm $O$ là một trong ba đỉnh còn lại, nếu $D \\, O ( A ) = B$ thì $O$ là trung điểm của $AB$, nhưng trung điểm của $AB$ cũng không thể là tâm đối xứng của $ABCD$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R040",
+        "question": "Cho tứ diện đều $A B C D$ có cạnh bằng $3$. Gọi $M$, $N$ lần lượt là trung điểm các cạnh $A D$, $B D$. Lấy điểm không đổi $P$ trên cạnh $A B$ (khác $A$, $B$). Thể tích khối chóp $P . M N C$ bằng $A. 9 \\sqrt{2} \\, \\text{16}$. $B. 8 \\sqrt{3} \\, \\text{3}$. $C. 3 \\sqrt{3}$. $D. 27 \\sqrt{2} \\, \\text{12}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $9 \\sqrt{2} \\, 16$",
+            "B. $8 \\sqrt{3} \\, 3$",
+            "C. $3 \\sqrt{3}$",
+            "D. $27 \\sqrt{2} \\, 12$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do $A B \\parallel (C M N)$ nên $d(P, (C M N)) = d(A, (C M N)) = d(D, (C M N))$. Vậy $V_{P C M N} = V_{D M N C} = V_{M C N D} = \\frac{1}{4} V_{A B C D}$. (Do diện tích đáy và chiều cao đều bằng một nửa). Mặt khác $V_{A B C D} = \\frac{1}{3} a^2 \\sqrt{3} \\cdot 4$. $\\sqrt{a^2 - (a \\sqrt{3})^2} = \\frac{a^3 \\sqrt{2}}{12} = \\frac{27 \\sqrt{2}}{12}$ nên $V_{P M N C} = \\frac{1}{4} \\cdot \\frac{27 \\sqrt{2}}{12} = \\frac{9 \\sqrt{2}}{16}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R041",
+        "question": "Khối đa diện đều nào sau đây có các mặt không phải là tam giác đều?",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1539004695711_1.0.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Nhị thập diện đều",
+            "B. Bát diện đều",
+            "C. Thập nhị diện đều",
+            "D. Tứ diện đều"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bát diện đều có $8$ mặt là các tam giác đều. Nhị thập diện đều có $20$ mặt là các tam giác đều. Tứ diện đều có $4$ mặt là các tam giác đều. Thập nhị diện đều có $12$ mặt là các ngũ giác đều. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R042",
+        "question": "Có tất cả bao nhiêu khối đa diện đều?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5$",
+            "B. $4$",
+            "C. $Vô số$",
+            "D. $3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Có 5 và chỉ 5 khối đa diện đều: Khối tứ diện đều, khối lập phương, khối bát diện đều, khối 12 mặt đều, khối 20 mặt đều. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R043",
+        "question": "Cho khối chóp $S.ABCĐ$ có thể tích bằng $16$. Gọi $M$, $N$, $P$, $Q$ lần lượt là trung điểm của $SA$, $SB$, $SC$, $SD$. Tính thể tích khối chóp $S.MNPQ$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $V_S \\cdot M_{N P Q} = 1$",
+            "B. $V_S \\cdot M_{N P Q} = 2$",
+            "C. $V_S \\cdot M_{N P Q} = 4$",
+            "D. $V_S \\cdot M_{N P Q} = 8$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $V_{S} \\cdot M_{N}P \\cdot V_{S} \\cdot A_{B}C = S_{M} S_{A} \\cdot S_{N} S_{B} \\cdot S_{P} S_{C} = \\frac{1}{8}$, $V_{S} \\cdot M_{Q}P \\cdot V_{S} \\cdot A_{D}C = S_{M} S_{A} \\cdot S_{Q} S_{D} \\cdot S_{P} S_{C} = \\frac{1}{8}$. Ta có: $\\frac{1}{8} = V_{S} \\cdot M_{N}P \\cdot V_{S} \\cdot A_{B}C = V_{S} \\cdot M_{Q}P \\cdot V_{S} \\cdot A_{D}C = V_{S} \\cdot M_{N}P + V_{S} \\cdot M_{Q}P \\cdot V_{S} \\cdot A_{B}C + V_{S} \\cdot A_{D}C = V_{S} \\cdot M_{N}P Q \\cdot V_{S} \\cdot A_{B}C D$. ⇒ $V_{S} \\cdot M_{N}P Q = 2$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R044",
+        "question": "Cho hình chóp $S.ABC$ có đáy $ABC$ là tam giác vuông cân, $AB = AC = a$, $SC \\perp (ABC)$ và $SC = a$. Mặt phẳng qua $C$, vuông góc với $SB$ cắt $SA$, $SB$ lần lượt tại $E$ và $F$. Tính thể tích khối chóp $S.CEF.A$. $V_{SCEF} = \\frac{\\sqrt{2}}{36} a^3$. $V_{SCEF} = \\frac{1}{18} a^3$. $V_{SCEF} = \\frac{1}{36} a^3$. $V_{SCEF} = \\frac{\\sqrt{2}}{12} a^3$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $V_{SCEF} = \\sqrt{2} a^3 36$",
+            "B. $V_{SCEF} = a^3 18$",
+            "C. $V_{SCEF} = a^3 36$",
+            "D. $V_{SCEF} = \\sqrt{2} a^3 12$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Từ $C$ hạ $C F \\perp S B$, $(F \\in S B)$, $C E \\perp S A$, $(E \\in S A)$ Ta có: $\\{ A B \\perp A C \\quad A B \\perp S C \\Rightarrow A B \\perp (S A C) \\Rightarrow A B \\perp C E \\Rightarrow C E \\perp (S A B) \\Rightarrow C E \\perp S B$ Vậy mặt phẳng qua $C$ và vuông góc $S B$ là mặt $(C E F)$ Ta có $V_{S C E F} \\cdot V_{S C A B} = S E \\cdot S A \\cdot S F \\cdot S B$ Tam giác vuông $S A C$ vuông tại $C$ ta có: $S A = \\sqrt{S C^2 + A C^2} = a \\sqrt{2}$ và $S E S A = \\frac{S C^2}{S A^2} = \\frac{a^2}{2 a^2} \\Rightarrow S E S A = \\frac{1}{2}$ Tam giác vuông $S B C$ vuông tại $C$ ta có: $S B = \\sqrt{S C^2 + B C^2} = a \\sqrt{3}$ và $S F S B = \\frac{S C^2}{S B^2} = \\frac{a^2}{3 a^2} \\Rightarrow S F S B = \\frac{1}{3}$ Do đó: $V_{S C E F} \\cdot V_{S C A B} = \\frac{1}{2} \\cdot \\frac{1}{3} = \\frac{1}{6} \\Rightarrow V_{S C E F} = \\frac{1}{6} V_{S A B C} = \\frac{1}{6} \\cdot \\frac{1}{3} S C \\cdot S A B C = \\frac{1}{36} a^3$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T050R045",
+        "question": "Cho hình chóp $S.ABCD$ có đáy là hình vuông cạnh $a$, hai mặt phẳng $(SAB)$ và $(SAD)$ cùng vuông góc với đáy, biết $SC = a \\sqrt{3}$. Gọi $M, N, P, Q$ lần lượt là trung điểm của $SB, SD, CD, BC$. Tính thể tích của khối chóp $A.MNPQ$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. a $3.3$",
+            "B. a $3.8$",
+            "C. a $3.12$",
+            "D. a $3.4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Có: \n$\\begin{cases} \nM N \\\\ \nP Q \n\\end{cases}$ \n$M N = P Q$ \n$N P \\perp P Q$ \n$(B D \\perp S C)$ \nVậy $M N P Q$ là hình chữ nhật. \nSuy ra: \n$V_A . M N P Q = 2 V_A . M Q P = 2 V_M . A Q P = 2 \\cdot \\frac{1}{3} S A Q P$ \n$d (M, (A Q P)) = \\frac{2}{3} S A Q P \\cdot \\frac{1}{2} S A$ \nCó: $S A = \\sqrt{S C^2 - A C^2} = a$ \nVới $S A Q P = \\frac{1}{2} . 3 4 A C \\cdot \\frac{1}{2} B D = \\frac{3}{16} (a \\sqrt{2})^2 = \\frac{3}{8} a^2$ \nVậy $V_A . M N P Q = \\frac{1}{3} . 3 a^2 \\cdot 8 . a = a^3 \\cdot 8$. \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "T050R046",
+        "question": "Một lăng trụ đứng tam giác có các cạnh đáy là $11\\, \\text{cm}$, $12\\, \\text{cm}$, $13\\, \\text{cm}$ và diện tích xung quanh bằng $144\\, \\text{cm}^2$. Thể tích của khối lăng trụ đó là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $24 \\sqrt{105} \\text{ cm}^3$",
+            "B. $12 \\sqrt{105} \\text{ cm}^3$",
+            "C. $18 \\sqrt{105} \\text{ cm}^3$",
+            "D. $6 \\sqrt{105} \\text{ cm}^3$"
+        ],
+        "answer": "A",
+        "explain": "Ta có: $S \\times q = ( 11 + 12 + 13 ) h = 144 \\Rightarrow h = \\frac{144}{36} = 4$ Diện tích đáy: $S_d = \\sqrt{18 ( 18 - 11 ) ( 18 - 12 ) ( 18 - 13 )} = 6 \\sqrt{105}$ Vậy thể tích khối lăng trụ: $V = S_d \\cdot h = 24 \\sqrt{105} \\, \\text{cm}^3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T050R047",
+        "question": "Vật thể nào trong các vật thể sau không phải là khối đa diện?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $x^2 + y^2 = z^2$",
+            "B. 3,14",
+            "C. $E = mc^2$",
+            "D. 1,5"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Vì hình C vi phạm tính chất “Mỗi cạnh của miền đa giác nào cũng là cạnh chung của đúng hai miền đa giác”. Đáp án cần chọn là: C."
+    }
+]

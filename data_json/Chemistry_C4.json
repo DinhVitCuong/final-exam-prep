@@ -1,0 +1,2172 @@
+[
+    {
+        "id": "H0409001",
+        "question": "Polime là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. hợp chất do nhiều phân tử monome hợp thành",
+            "B. hợp chất có phân tử khối lớn",
+            "C. hợp chất có phân tử khối rất lớn do nhiều đơn vị nhỏ liên kết với nhau tạo nên",
+            "D. các chất được tổng hợp bằng phản ứng trùng hợp"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Polime là hợp chất có phân tử khối rất lớn do nhiều đơn vị cơ sở liên kết với nhau tạo nên (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409002",
+        "question": "Chọn khái niệm đúng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Monome là những phân tử nhỏ tham gia phản ứng tạo ra polime",
+            "B. Monome là một mắt xích trong phân tử polime",
+            "C. Monome là các phân tử tạo nên từng mắt xích của polime",
+            "D. Monome là các hợp chất có 2 nhóm chức hoặc có liên kết bội"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khái niệm đúng là : monome là các phân tử tạo nên từng mắt xích của polime (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409003",
+        "question": "Polime nào dưới dây có nguồn gốc thiên nhiên ?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Polietilen",
+            "B. Tơ tằm",
+            "C. Tơ nilon-6",
+            "D. Tơ olon"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime có nguồn gốc thiên nhiên là tơ tằm (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409004",
+        "question": "Polime nào sau đây thuộc loại polime thiên nhiên?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Polietilen",
+            "B. Tơ tằm",
+            "C. Polieste",
+            "D. Polipropilen"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime thuộc loại polime thiên nhiên là tơ tằm Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409005",
+        "question": "Nhóm vật liệu vào được chế tạo từ polime thiên nhiên :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Nhựa bakelit, tơ tằm, tơ axetat",
+            "B. Cao su isopren, nilon-6,6 , keo dán gỗ",
+            "C. Tơ visco, cao su buna, keo dán gỗ",
+            "D. Tơ visco, tơ tằm, phim ảnh"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polime được chế tạo từ polime thiên nhiên thì có thể là polime thiên nhiên hoặc polime bán tổng hợp Polime bán tổng hợp : tơ axetat, tơ visco, phim ảnh ($\\text{xenlulozo trinitrat}$) Polim tự nhiên : tơ tằm Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409006",
+        "question": "Polime có mạch phân nhánh là $P_n$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. poli (vinyl clorua)",
+            "B. polistiren",
+            "C. xenlulozơ",
+            "D. glicogen"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polime có mạch phân nhánh là glicogen (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409007",
+        "question": "Cho các polime : PS, cao su isopren, rezit, xenlulozơ, tinh bột, glicogen, PVC, cao su lưu hóa. Có bao nhiêu polime có cấu trúc mạng không gian ?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Các polime có cấu trúc mạng không gian là rezit, cao su lưu hóa Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409008",
+        "question": "Polime có cấu trúc mạch phân nhánh là $.$",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. PE",
+            "B. Amilopectin",
+            "C. $Glicogen$",
+            "D. $Cả\\ B\\ và\\ C$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polime có cấu trúc mạch phân nhánh là amilopectin và glicogen (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409009",
+        "question": "Polime nào sau đây có các mắt xích tạo thành mạch phân nhánh trong cấu trúc của nó?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Amilopectin",
+            "B. Xenlulozơ",
+            "C. Cao su isopren",
+            "D. Poli($\\text{vinyl clorua}$)"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Các polime mạch phân nhánh thường gặp là amilopectin và glicozen. - Các polime mạch không gian thường gặp là cao su lưu hóa và nhựa rezit. - Polime mạch không phân nhánh thường gặp là PVC, PE, PS, … Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0409010",
+        "question": "Polime có cấu trúc mạng không gian (mạng lưới) là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. PE",
+            "B. Amilopectin",
+            "C. PVC",
+            "D. Nhựa bakelit"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polime có cấu trúc mạng không gian là nhựa bakelit (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409011",
+        "question": "Polime nào sau đây có cấu trúc mạch phân nhánh?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Amilozo",
+            "B. Amilopectin",
+            "C. Xenlulozo",
+            "D. Polietilen"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime có cấu trúc phân nhánh là amylopectin Các polime còn lại có cấu trúc mạch thẳng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409012",
+        "question": "Cao su có tính.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 'dẫn điện'",
+            "B. 'dẫn nhiệt'",
+            "C. 'tính đàn hồi'",
+            "D. 'tính dẻo'"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cao su có tính đàn hồi (xem lại lí thuyết đại cương polime) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409013",
+        "question": "Phát biểu nào sau đây là sai.  \n$0,5 \\, \\text{mol}$  \n$25 \\, \\text{g}$  \n$100 \\, \\text{mL}$  \n$3,14 \\, \\text{cm}$  \n$9,81 \\, \\text{m/s}^2$",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Polime là loại hợp chất có khối lượng phân tử rất cao và kích thước phân tử rất lớn",
+            "B. Polime là hợp chất mà phân tử gồm nhiều mắt xích liên kết với nhau",
+            "C. Protein không thuộc loại hợp chất polime",
+            "D. Các polime đều khó bị hòa tan trong nước"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phát biểu sai là: protein có thuộc loại hợp chất polime. Protein là polime thuộc loại poliamit Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409014",
+        "question": "Nhận xét về tính chất vật lí chung của polime nào dưới đây không đúng ?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hầu hết là những chất rắn, không bay hơi",
+            "B. Đa số nóng chảy ở một khoảng nhiệt độ rộng, hoặc không nóng chảy mà bị phân hủy khi đun nóng",
+            "C. Đa số không tan trong các dung môi thông thường, một số tan trong dung môi thích hợp",
+            "D. Hầu hết polime đều đồng thời có tính dẻo, tính đàn hồi và có thể kéo thành sợi dai, bền"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nhận xét không đúng là: Hầu hết polime đều đồng thời có tính dẻo, tính đàn hồi và có thể kéo thành sợi dai, bền. Sai vì tính dẻo và tính đàn hồi không cùng đồng thời với nhau. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409015",
+        "question": "Điều kiện của monome để tham gia phản ứng trùng hợp là phân tử phải có.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. liên kết kết bội",
+            "B. vòng không bền",
+            "C. hai nhóm chức khác nhau",
+            "D. A hoặc B"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Điều kiện của monome để tham gia phản ứng trùng hợp là phân tử phải có vòng không bền hoặc liên kết bội (xem lại lí thuyết đại cương polime). Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409016",
+        "question": "Chất có khả năng trùng hợp thành cao su là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=C(CH_3)–CH=CH_2$",
+            "B. $CH_3–C(CH_3)=CH–CH_2$",
+            "C. $C H_3 − C H_2 − C ≡ C H$",
+            "D. $CH_2=CH–CH_2–CH_2–CH_3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Chất có khả năng trùng hợp thành cao su là $CH_2=C(CH_3)–CH=CH_2$ (cao su isopren) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0409017",
+        "question": "Polime được điều chế bằng phản ứng trùng hợp là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $poli(ure-fomanđehit)$",
+            "B. teflon",
+            "C. $poli(etylenterephtalat)$",
+            "D. $poli(phenol-fomanđehit)$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime được điều chế bằng phản ứng trùng hợp là : teflon $n \\text{CF}_2=\\text{CF}_2 \\rightarrow (-\\text{CF}_2-\\text{CF}_2-)_n$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409018",
+        "question": "Polime nào sau đây được tổng hợp bằng phản ứng trùng hợp ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Poli(vinylclorua)",
+            "B. Polisaccarit",
+            "C. Protein",
+            "D. Nilon-6,6"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Polime được tổng hợp bằng phản ứng trùng hợp là $ \\text{poli (vinyl clorua)} \\, nCH_2 = CHCl \\xrightarrow{t \\, \\text{o}} ( CH_2 – CHCl )_n \\, \\text{vinyl clorua} \\, \\text{poli(vinyl clorua) (PVC)} $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0409019",
+        "question": "Tơ capron (nilon-6) được trùng hợp từ.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. caprolactam",
+            "B. axit caproic",
+            "C. $\\alpha$-amino caproic",
+            "D. axit ađipic"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ capron được trùng hợp từ caprolactam (xem lại lí thuyết đai cương về polime) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0409020",
+        "question": "Chất không có khả năng tham gia phản ứng trùng hợp là :",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. stiren",
+            "B. toluen",
+            "C. $C_3H_6$",
+            "D. $C_5H_8$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Chất không có khả năng tham gia phản ứng trùng hợp là toluen (do không có liên kết đôi và không có vòng kém bền) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409021",
+        "question": "Chất nào sau đây có thể tham gia phản ứng trùng hợp?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Propilen",
+            "B. Metan",
+            "C. $C_2H_5OH$",
+            "D. $CH_3COOH$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Chất hữu cơ có khả năng tham gia phản ứng trùng hợp là chất có chứa liên kết $ \\pi $ hoặc vòng kém bền trong CTCT Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0409022",
+        "question": "Sự kết hợp các phân tử nhỏ (monome) thành các phân tử lớn (polime) có khối lượng bằng tổng khối lượng của các monme hợp thành được gọi là $ \\text{polyme hóa} $.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Sự peptit hoá",
+            "B. Sự trùng hợp",
+            "C. Sự tổng hợp",
+            "D. Sự trùng ngưng"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Sự kết hợp các phân tử nhỏ (monome) thành các phân tử lớn (polime) có khối lượng bằng tổng khối lượng của các monme hợp thành được gọi là sự trùng hợp (xem lại lí thuyết đai cương về polime) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409023",
+        "question": "Sự kết hợp các phân tử nhỏ (monome) thành các phân tử lớn (polime), đồng thời có loại ra các phân tử nhỏ (như nước, amoniac, $ \\text{CO}_2 $…) được gọi là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Sự peptit hoá",
+            "B. Sự polime hoá",
+            "C. Sự tổng hợp",
+            "D. Sự trùng ngưng"
+        ],
+        "answer": "D",
+        "explain": "Sự kết hợp các phân tử nhỏ (monome) thành các phân tử lớn (polime), đồng thời có loại ra các phân tử nhỏ (như nước, amoniac, $ \\text{CO}_2 $…) được gọi là sự trùng ngưng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409024",
+        "question": "Một mắt xích của teflon có cấu tạo là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $–CH_2–CH_2–$",
+            "B. $–CCl_2–CCl_2–$",
+            "C. $–CF_2–CF_2–$",
+            "D. $–CBr_2–CBr_2–$"
+        ],
+        "answer": "C",
+        "explain": "Một mắt xích của teflon có cấu tạo là $–\\text{CF}_2–\\text{CF}_2–$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409025",
+        "question": "Một polime Y có cấu tạo như sau: …–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–CH₂–… Công thức một mắt xích của polime Y là : $- \\text{(CH}_2\\text{)}_n-$",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $–\\text{CH}_2–\\text{CH}_2–\\text{CH}_2–$",
+            "B. $–\\text{CH}_2–\\text{CH}_2–\\text{CH}_2–\\text{CH}_2–$",
+            "C. $–\\text{CH}_2–$",
+            "D. $–\\text{CH}_2–\\text{CH}_2–$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polietilen ($–\\text{CH}_2 – \\text{CH}_2–$)$_n$ do các mắt xích $–\\text{CH}_2–\\text{CH}_2–$ liên kết với nhau. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0409026",
+        "question": "Để tạo thành PVA, người ta tiến hành trùng hợp.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=CH–COO–CH_3$",
+            "B. $CH_3–COO–CH=CH_2$",
+            "C. $CH_2=C(CH_3)–COO–CH_3$",
+            "D. $CH_3–COO–C(CH_3)=CH_2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com PVA là poli (vinyl axetat), được trùng hợp từ vinyl axetat. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409027",
+        "question": "PVC được điều chế từ phản ứng trùng hợp vinyl clorua.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=CH_2$",
+            "B. $C_2H_5Cl$",
+            "C. $CH_2=CHCl$",
+            "D. $CHCl=CHCl$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com PVC poli vinyl clorua có CTHH là $ \\text{CH}_2=\\text{CHCl} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0409028",
+        "question": "Xét về mặt cấu tạo thì số lượng polime thu được khi trùng hợp buta-1,3-đien là : $n$.\n",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $H_2O$",
+            "B. $NaCl$",
+            "C. $C_6H_{12}O_6$",
+            "D. $H_2SO_4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Xét về mặt cấu tạo thì khi trùng hợp buta-1,3-đien theo 2 kiểu trùng hợp 1,2 và trùng hợp 1,4 Trùng hợp 1,2 : $n\\text{CH}_2=\\text{CH-CH}=\\text{CH}_2 \\rightarrow (-\\text{CH}_2-\\text{CH}(\\text{CH}=\\text{CH}_2)-)_n$ Trùng hợp 1,4 : $n\\text{CH}_2=\\text{CH-CH}=\\text{CH}_2 \\rightarrow (-\\text{CH}_2-\\text{CH}=\\text{CH}-\\text{CH}_2)-)_n$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409029",
+        "question": "Dãy gồm các chất được dùng để tổng hợp cao su Buna-S là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=C(CH_3)–CH=CH_2$, $C_6H_5–CH=CH_2$",
+            "B. $CH_2=CH–CH=CH_2$, $C_6H_5–CH=CH_2$",
+            "C. $CH_2=CH–CH=CH_2$, $CH_3–CH=CH_2$",
+            "D. $CH_2=CH–CH=CH_2$, lưu huỳnh"
+        ],
+        "answer": "B",
+        "explain": "Cao su buna-S được tổng hợp từ buta-1,3-đien và stiren. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0409030",
+        "question": "Đồng trùng hợp đivinyl và stiren thu được cao su Buna-S có công thức cấu tạo là $C_8H_{8}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $(–CH_2–CH=CH–CH_2–CH(C_6H_5)–CH_2–)_n$",
+            "B. $(–C_2H–CH–CH–CH_2–CH(C_6H_5)–CH_2–)_n$",
+            "C. $(–CH_2–CH–CH=CH_2–CH(C_6H_5)–CH_2–)_n$",
+            "D. $(–CH_2–CH_2–CH_2–CH_2–CH(C_6H_5)–CH_2–)_n$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình tổng hợp: $n\\text{C}_{2}\\text{H}_{2}=\\text{C}_{4}\\text{H}_{4} + n\\text{C}_{6}\\text{H}_{5}\\text{C}=\\text{C}_{2} \\rightarrow (–\\text{CH}_{2}–\\text{CH}=\\text{CH}–\\text{CH}_{2}–\\text{CH}(\\text{C}_{6}\\text{H}_{5})–\\text{CH}_{2}–)_{n}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410001",
+        "question": "Để tạo thành thuỷ tinh hữu cơ (plexiglas), người ta tiến hành trùng hợp.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=CH–COO–CH_3$",
+            "B. $CH_3–COO–CH=CH_2$",
+            "C. $CH_3–COO–C(CH_3)=CH_2$",
+            "D. $CH_2=C(CH_3)–COOCH_3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Để tạo thành thủy tinh hữu cơ (plexiglas), người ta tiến hành trùng hợp $CH_2=C(CH_3)–COOCH_3$ (xem lại lí thuyết vật liệu polime) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410002",
+        "question": "Chất dẻo được điều chế bằng phản ứng trùng hợp là :",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. cao su buna",
+            "B. teflon",
+            "C. $poli(etylenterephtalat)$",
+            "D. $poli(phenol-fomanđehit)$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A sai vì cao su buna là cao su (không phải chất dẻo) C và D sai vì poli($\\text{etylenterephtalat}$) và poli($\\text{phenol-fomanđehit}$) điều chế bằng phản ứng trùng ngưng. Chất dẻo được điều chế bằng phản ứng trùng hợp là teflon. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410003",
+        "question": "Polime dùng làm ống dẫn nước, đồ giả da, vải che mưa là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. PVA",
+            "B. PP",
+            "C. $PVC$",
+            "D. $PS$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Polime dùng làm ống dẫn nước, đồ giả da, vải che mưa là PVC (xem lại lí thuyết vật liệu polime) Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410004",
+        "question": "Polietilen là chất dẻo mềm, được dùng nhiều để làm.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. màng mỏng, vật liệu cách điện, bình chứa",
+            "B. vật liệu cách điện, ống dẫn nước, thủy tinh hữu cơ",
+            "C. dệt vải may quần áo ấm, bện thành sợi",
+            "D. sản xuất bột ép, sơn, cao su"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Polietilen là chất dẻo mềm, được dùng nhiều để làm màng mỏng, vật liệu cách điện, bình chứa. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410005",
+        "question": "Tơ capron (nilon-6) được trùng hợp từ.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. caprolactam",
+            "B. axit caproic",
+            "C. $\\alpha$ - amino caproic",
+            "D. axit ađipic"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ capron (nilon-6) được tạo ra có thể từ phản ứng trùng hợp $caprolactam$ hoặc phản ứng trùng ngưng từ axit $6$-aminohexanoic. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410006",
+        "question": "Chất có khả năng trùng hợp thành cao su là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=C(CH_3)–CH=CH_2$",
+            "B. $CH_3–C(CH_3)=C=CH_2$",
+            "C. $C H_3 − C H_2 − C ≡ C H$",
+            "D. $CH_2=CH–CH_2–CH_2–CH_3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Chất có khả năng trùng hợp thành cao su là $CH_2=C(CH_3)–CH=CH_2$. $nCH_2=C(CH_3)–CH=CH_2 \\rightarrow (CH_2 –C(CH_3) = CH – CH_2)_n$ (cao su isopren) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410007",
+        "question": "Dãy gồm các chất được dùng để tổng hợp cao su Buna-S là :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. CH$_2$=C(CH$_3$)–CH=CH$_2$, C$_6$H$_5$–CH=CH$_2$",
+            "B. CH$_2$=CH–CH=CH$_2$, C$_6$H$_5$–CH=CH$_2$",
+            "C. CH$_2$=CH–CH=CH$_2$, CH$_3$–CH=CH$_2$",
+            "D. CH$_2$=CH–CH=CH$_2$, lưu huỳnh"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Các chất được dùng để tổng hợp cao su Buna-S là buta-1,3-đien và stiren (xem lại lí thuyết vật liệu polime) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410008",
+        "question": "Polistiren là sản phẩm của phản ứng trùng hợp monome nào sau đây?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $C_6H_5CH=CH_2$",
+            "B. $CH_2=CH-CH=CH_2$",
+            "C. $CH_2=CHCl$",
+            "D. $CH_2=CH_2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Polistiren là sản phẩm của phản ứng trùng hợp $C_6H_5CH=CH_2$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410009",
+        "question": "Cao su sống (hay cao su thô) là $C_5H_8$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Cao su thiên nhiên",
+            "B. Cao su chưa lưu hoá",
+            "C. Cao su tổng hợp",
+            "D. Cao su lưu hoá"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cao su sống là cao su chưa lưu hóa Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410010",
+        "question": "Hợp chất đầu và các hợp chất trung gian trong quá trình điều chế ra cao su Buna (1) là : etilen (2), metan (3), rượu etylic (4), đivinyl (5), axetilen (6). Sự sắp xếp các chất theo đúng thứ tự xảy ra trong quá trình điều chế là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 3 → 6 → 2 → 4 → 5 → 1",
+            "B. 6 → 4 → 2 → 5 → 3 → 1",
+            "C. 2 → 6 → 3 → 4 → 5 → 1",
+            "D. 4 → 6 → 3 → 2 → 5 → 1"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Sơ đồ điều chế cao su Buna là : đi từ khí metan có sẵn trong tự nhiên $C H_4$ $ \\xrightarrow[]{\\text{t o, x t}}$ $ \\xrightarrow[]{\\text{P d / P b}}$ $C_2 H_2 + H_2$ $ \\xrightarrow[]{C O_3}$ $C_2 H_4 + H_2 O$ $ \\xrightarrow{}$ $C_2 H_5 O H \\rightarrow C H_2 = C H - C H = C H_2 \\rightarrow$ cao su buna Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410011",
+        "question": "Sơ đồ điều chế PVC trong công nghiệp hiện nay là :",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $C_2H_6 + Cl_2 \\xrightarrow{} C_2H_5Cl + HCl \\xrightarrow{} C_2H_3Cl \\text{ t o , p , x t} \\xrightarrow{} PVC$",
+            "B. $C_2H_4 + Cl_2 \\xrightarrow{} C_2H_3Cl \\text{ t o , p , x t} \\xrightarrow{} PVC$",
+            "C. $CH_4 \\, 1500 \\, ^\\circ C \\xrightarrow{} C_2H_2 + HCl \\xrightarrow{} C_2H_3Cl \\text{ t o , p , x t} \\xrightarrow{} PVC$",
+            "D. $C_2H_4 + Cl_2 \\xrightarrow{} C_2H_4Cl_2 + HCl \\xrightarrow{} C_2H_3Cl \\text{ t o , p , x t} \\xrightarrow{} PVC$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Sơ đồ điều chế đúng là : $C_2H_4 \\, \\text{Cl}_2 \\xrightarrow{} C_2H_4Cl_2 \\xrightarrow{- HCl} C_2H_3Cl \\xrightarrow{t, p, x_t} PVC$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410012",
+        "question": "Chất nào sau đây trùng hợp tạo PVC.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $CH_2=CHCl$",
+            "B. $CH_2=CH_2$",
+            "C. $CHCl = CHCl$",
+            "D. $CH \\equiv CH$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PVC là poli vinyl clorua được tạo thành từ phản ứng trùng hợp $CH_2=CHCl$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410013",
+        "question": "Cho sơ đồ phản ứng : Xenlulozơ + $H_2O$ −−−→ $H$ + $A\\text{men}$ −−→ $BZnO$, $MgO$ −−−−−−−→ $500\\, \\text{°C}$, $D_{t,p,x_t}$ −−−−→ $E$ Chất $E$ trong sơ đồ phản ứng trên là :.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Cao su Buna",
+            "B. Buta-1,3-đien",
+            "C. Axit axetic",
+            "D. Polietilen"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có sơ đồ phản ứng: $ \\text{Xenlulozơ} + H_2O \\xrightarrow{} H + C_6H_{12}O_6 $ $ m \\, \\text{en} \\xrightarrow{} C_2H_5OH $ $ ZnO, MgO \\xrightarrow{500 \\, \\text{°C}} $ $ CH_2=CH-CH=CH_2 \\xrightarrow{t, p, x_t} $ cao su Buna Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410014",
+        "question": "Polime được điều chế bằng phản ứng trùng ngưng là $$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Policaproamit",
+            "B. Poliacrilonitrin",
+            "C. Polistiren",
+            "D. Poli(metyl metacrrylat)"
+        ],
+        "answer": "A",
+        "explain": "Polime được điều chế bằng phản ứng trùng ngưng là policaproamit (tơ nilon-6).  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410015",
+        "question": "Axit ε -amino caproic được dùng để điều chế tơ nilon-6. Công thức của axit ε -amino caproic là $C_6H_{11}NO_2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. H$_{2}$N–(CH$_{2}$)$_{6}$–COOH",
+            "B. H$_{2}$N–(CH$_{2}$)$_{4}$–COOH",
+            "C. H$_{2}$N–(CH$_{2}$)$_{3}$–COOH",
+            "D. H$_{2}$N–(CH$_{2}$)$_{5}$–COOH"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Công thức của axit $ε$ -amino caproic là $H_2N–(CH_2)_5–COOH$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410016",
+        "question": "Polime X là chất rắn trong suốt, có khả năng cho ánh sáng truyền qua tốt nên được dùng chế tạo thủy tinh hữu cơ plexiglas. Tên gọi của X là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. poli(vinyl clorua) ",
+            "B. polietilen ",
+            "C. poli($metyl\\ metacrylat$) ",
+            "D. poliacrilonitrin"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Polime X được dùng chế tạo thủy tinh hữu cơ plexiglas là: poli(metyl metacrylat). Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410017",
+        "question": "Số nguyên tử cacbon trong một phân tử acrilonitrin là $3$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "C",
+        "explain": "1 phân tử acrilonitrin có CTCT là $ \\text{CH}_2 = \\text{CH} - \\text{CN} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410018",
+        "question": "Nhóm các vật liệu được chế tạo từ polime (điều chế bằng phản ứng trùng ngưng) là :",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Cao su ; nilon -6,6 ; tơ nitron",
+            "B. Tơ axetat ; nilon-6,6",
+            "C. Nilon-6,6 ; tơ lapsan ; thuỷ tinh plexiglas",
+            "D. Nilon-6,6 ; tơ lapsan ; nilon-6"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nhóm các vật liệu được chế tạo từ polime (điều chế bằng phản ứng trùng ngưng) là Nilon-6,6 ; tơ lapsan ; nilon-6 (xem lại lí thuyết vật liệu polime) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410019",
+        "question": "Polime được tạo thành từ phản ứng trùng ngưng là $C_nH_{2n}O_n$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Cao su buna-S",
+            "B. Thuỷ tinh hữu cơ",
+            "C. Polistiren",
+            "D. Nilon-6,6"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Polime được tạo thành từ phản ứng trùng ngưng là nilon-6,6 Phương trình hóa học điều chế: $n \\, \\text{N H}_2 \\left[ \\text{C H}_2 \\right]_6 \\text{N H}_2 + n \\, \\text{H O O C} \\left[ \\text{C H}_2 \\right]_4 \\text{C O O H} \\xrightarrow{x t, t_o, p} \\left( \\text{N H} \\left[ \\text{C H}_2 \\right]_6 \\text{N H} - \\text{C O} \\left[ \\text{C H}_2 \\right]_4 \\text{C O} \\right)_n + 2n \\, \\text{H}_2 \\text{O}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410020",
+        "question": "Polime nào sau đây điều chế bằng phản ứng trùng ngưng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Poli(etylen terephtalat)",
+            "B. Polistiren",
+            "C. Poli acrilonitrin",
+            "D. Poli(metyl metacrylat)"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Polime điều chế bằng phản ứng trùng ngưng là poli(etylen terephtalat) Vì $nC_6H_4(COOH)_2 + nC_2H_4(OH)_2 \\rightarrow -(O – CH_2 – CH_2 – O – CO – C_6H_4 – CO-)-_n + 2nH_2O$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410021",
+        "question": "Poli(etylen-terephtalat) được tạo thành từ phản ứng đồng trùng ngưng giữa etylen glicol với $ \\text{axit terephthalic} $.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $p\\text{-HOOC–C}_6\\text{H}_4\\text{–COOH}$",
+            "B. $m\\text{-HOOC–C}_6\\text{H}_4\\text{–COOH}$",
+            "C. $o\\text{-HOOC–C}_6\\text{H}_4\\text{–COOH}$",
+            "D. $o\\text{-HO–C}_6\\text{H}_4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Poli(etylen-terephtalat) là tơ lapsan. Phương trình hóa học điều chế: $n \\, \\text{H}_2\\text{O} + n \\, \\text{HOOC} - \\text{C}_6\\text{H}_4 - \\text{COOH} \\xrightarrow{t, t_0, p} \\text{(CO - C}_6\\text{H}_4 - \\text{CO - O - CH}_2 - \\text{CH}_2\\text{)}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410022",
+        "question": "Polime X có công thức $(-NH-[CH_2]_5-CO)_n$. Phát biểu nào sau đây không đúng ?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. X chỉ được tạo ra từ phản ứng trùng ngưng",
+            "B. X có thể kéo sợi",
+            "C. X thuộc loại poliamit",
+            "D. % khối lượng C trong X không thay đổi với mọi giá trị của n"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com A sai vì X là tơ nilon-6 có thể điều chế bằng phản ứng trùng hợp caprolactam B đúng vì X là tơ nilon-6 C đúng vì có liên kết $ \\text{CO-NH} $ D đúng vì công thức tính % khối lượng C là $ \\% m C = \\frac{12,5}{n} \\cdot 113 \\cdot 100 \\% = 53,1 \\% $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410023",
+        "question": "Loại tơ có nguồn gốc xenlulozơ là : $tơ\\ axetat,\\ sợi\\ bông,\\ sợi\\ đay$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $ (1), (2), (6) $ ",
+            "B. $ (2), (3), (5), (7) $ ",
+            "C. $ (2), (3), (6) $ ",
+            "D. $ (5), (6), (7) $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Các tơ có nguồn gốc xenlulozơ là (2) sợi bông, (3) sợi đay, (5) tơ visco, (7) tơ axetat Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410024",
+        "question": "Nhóm vật liệu nào được chế tạo từ polime thiên nhiên ?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ visco, tơ tằm",
+            "B. Tơ visco, tơ tằm, cao su buna, keo dán gỗ",
+            "C. Nhựa bakelit, tơ tằm, tơ axetat",
+            "D. Cao su isopren, tơ visco, nilon-6,6, keo dán gỗ"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vật liệu được chế tạo từ polime thiên nhiên là tơ visco (nguồn gốc xenlulozơ) và tơ tằm (nguồn gốc protein) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410025",
+        "question": "Trong số các loại tơ sau: tơ tằm, tơ visco, tơ nilon-6,6, tơ axetat, tơ capron, tơ enang, những loại tơ nào thuộc loại tơ nhân tạo?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ tằm và tơ enang",
+            "B. Tơ visco và tơ nilon-6,6",
+            "C. Tơ nilon-6,6 và tơ capron",
+            "D. Tơ visco và tơ axetat"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ nhân tạo là những tơ lấy polime thiên nhiên chế và chế hóa thành polime mới Tơ visco và tơ axetat có nguồn gốc từ xenlulozơ $=>$ là tơ nhân tạo Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410026",
+        "question": "Tơ nào sau đây thuộc loại tơ bán tổng hợp?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ nilon-6",
+            "B. Tơ tằm",
+            "C. Tơ visco",
+            "D. Bông"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ visco có nguồn gốc từ xenlulozo và được con người chế biến nên thuộc loại tơ bán tổng hợp. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410027",
+        "question": "Loại tơ nào sau đây là tơ nhân tạo?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ capron",
+            "B. Tơ axetat",
+            "C. Tơ nitrin",
+            "D. Tơ nilon -7"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ nhân tạo là tơ axetat. Các tơ còn lại đều là tơ tổng hợp Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410028",
+        "question": "Loại tơ không phải tơ tổng hợp là :",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ capron",
+            "B. Tơ clorin",
+            "C. Tơ polieste",
+            "D. Tơ axetat"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ tổng hợp là tơ hoàn toàn do con người tạo ra Tơ axetat có nguồn gốc từ xenlulozơ $\\Rightarrow$ tơ nhận tạo Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410029",
+        "question": "Số chất thuộc loại tơ tổng hợp là $6$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $H_2O$ ",
+            "B. $NaCl$ ",
+            "C. $H_2SO_4$ ",
+            "D. $C_6H_{12}O_6$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com tơ capron, tơ nilon-6, tơ nitron là các tơ tổng hợp. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410030",
+        "question": "Cho các polime: poli(vinyl clorua), xenlulozo, policaproamit, polistiren, xenlulozo trinitrat, nilon – 6,6. Số polime tổng hợp là $6$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 5",
+            "B. 4",
+            "C. 3",
+            "D. 2"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime tổng hợp là: $ \\text{poli(vinyl clorua)} $, $ \\text{policaproamit} $, $ \\text{polistiren} $, $ \\text{nylon} - 6,6 $. Xenlulozo là polime tự nhiên còn $ \\text{xenlulozo trinitrat} $ là polime bán tổng hợp. Vậy có tất cả 4 polime tổng hợp trong dãy polime đã cho. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410031",
+        "question": "Trùng hợp $5,6\\, \\text{lít}$ C$_2$H$_4$ (đktc), nếu hiệu suất phản ứng là $90\\%$ thì khối lượng polime thu được là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4,3 gam",
+            "B. 7,3 gam",
+            "C. 5,3 gam",
+            "D. 6,3 gam"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số mol $C_2H_4$ $0,25$ mol → khối lượng = $0,25 \\cdot 28 = 7\\, \\text{gam}$ $H = 90\\%$ => khối lượng polime là $7 \\cdot 0,9 = 6,3\\, \\text{gam}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410032",
+        "question": "Trùng hợp $630\\, \\text{kg}$ propen thu được $m\\, \\text{kg}$ PP ($H = 80\\%$). Giá trị của $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 504",
+            "B. 787,5",
+            "C. 630",
+            "D. 162"
+        ],
+        "answer": "A",
+        "explain": "H = 80\\% \\Rightarrow m_{PP} = 630 \\cdot 80\\% = 504\\, \\text{kg} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410033",
+        "question": "Thể tích monome (đktc) cần dùng để sản xuất 70 tấn PE (H = 80\\%) là $V = \\frac{70 \\,\\text{tấn}}{0,8 \\,\\text{tấn/mol}}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 70000 m3",
+            "B. 44800 m3",
+            "C. 67200 m3",
+            "D. 56000 m3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: nC$_2$H$_4$ → (-CH$_2$-CH$_2$)$_n$ H = 80\\% => khối lượng C$_2$H$_4$ là: $\\frac{70.100}{80} = 87,5 \\,\\text{tấn} = 87,6 \\cdot 10^6 \\,\\text{gam}$ → n C$_2$H$_4$ = $\\frac{87,5 \\cdot 10^6}{28} = 3125000 \\,\\text{mol}$ → V C$_2$H$_4$ = $3125000 \\cdot 22,4 = 70 \\cdot 10^6 \\, \\text{(L)} = 70000 \\,\\text{m}^3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410034",
+        "question": "Trùng hợp $m\\, \\text{kg}$ etilen thu được $42\\, \\text{kg}$ polime. Biết $H = 70\\%$. Giá trị của $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 42",
+            "B. 30",
+            "C. 84",
+            "D. 60"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $nC_2H_4 \\rightarrow (-CH_2-CH_2-)_n \\rightarrow \\text{metilen} = \\frac{m_{\\text{polime}}}{H\\%} = \\frac{42}{70\\%} = 60$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410035",
+        "question": "Trùng hợp $m\\, \\text{tấn}$ etilen thu được $1,2\\, \\text{tấn}$ polietilen (PE) với hiệu suất phản ứng bằng $80\\%$. Giá trị của $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1,5",
+            "B. 2,0",
+            "C. 1,2",
+            "D. 1,8"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $n \\, \\text{C}_2 \\text{H}_4 = \\text{C}_2 \\text{H}_4 \\, \\text{t} \\, \\text{o}, \\, x \\, \\text{t}, \\, p \\, \\xrightarrow{( - \\text{C}_2 \\text{H}_4 - \\text{C}_2 \\text{H}_4 - )} \\, n$ Bảo toàn khối lượng: $m \\, \\text{C}_2 \\text{H}_4 \\, \\text{pu} = m \\, \\text{P}_E = 1,2 \\, \\text{tấn}$ Do hiệu suất phản ứng đạt 80% nên khối lượng của $\\text{C}_2\\text{H}_4$ ban đầu là: $m \\, \\text{C}_2 \\text{H}_4 \\, \\text{bd} = \\frac{1,2 \\cdot 100}{80} = 1,5 \\, \\text{tấn}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410036",
+        "question": "Thể tích monome (đktc) cần dùng để sản xuất 189 tấn cao su Buna (H = 70%) là $V = \\frac{m}{d} = \\frac{189\\, \\text{t}}\\{0,7 \\cdot \\rho\\}$, với $\\rho$ là khối lượng riêng của monome.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 112000 \\, \\text{m}^3",
+            "B. 78400 \\, \\text{m}^3",
+            "C. 54880 \\, \\text{m}^3",
+            "D. 224000 \\, \\text{m}^3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $nC_4H_6 \\rightarrow (-C_4H_6)_n$ $m_{C_4H_6} = m \\, \\text{cao su}$ $H \\% = \\frac{189}{70} \\% = 270 \\, \\text{tấn} \\Rightarrow nC_4H_6 = 5,106 \\, \\text{mol} \\rightarrow V_{C_4H_6} = 22,4 \\cdot 5,106 = 112000000 \\, \\text{lít} = 112000 \\, \\text{m}^3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410037",
+        "question": "Đề hiđro hóa etylbenzen ta được stiren; trùng hợp stiren ta được polistiren với hiệu suất cả quá trình là $80\\%$. Khối lượng etylbenzen cần dùng để sản xuất $10,4\\, \\text{tấn}$ polistiren là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 13,52 tấn",
+            "B. 10,60 tấn",
+            "C. 13,25 tấn",
+            "D. 8,48 tấn"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Sơ đồ phản ứng : $C_6H_5C_2H_5 \\rightarrow C_6H_5CH=CH_2 \\rightarrow (-CH(C_6H_5)-CH_2-)_{n}$ Hcả quá trình = $80\\%$ → netylbenzen = $n$ polistiren $H\\% = \\frac{10,4}{104} \\cdot 80\\% = 0,125$ → metylbenzen = $0,125 \\cdot 106 = 13,25 \\,\\text{(tấn)}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410038",
+        "question": "Để tổng hợp $120\\, \\text{kg}$ poli(metyl metacrylat) với hiệu suất của quá trình este hóa là $60\\%$ và quá trình trùng hợp là $80\\%$ thì cần lượng axit và ancol là bao nhiêu ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 215 kg và 80 kg",
+            "B. 85 kg và 40 kg",
+            "C. 172 kg và 84 kg",
+            "D. 86 kg và 42 kg"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $CH_2=C(CH_3)COOH + CH_3OH \\rightarrow CH_2=C(CH_3)COOCH_3 \\rightarrow \\text{Trùng hợp} \\rightarrow n_{\\text{Mắt xích}} = n_{\\text{este}} = 1,2\\, \\text{kmol} \\rightarrow n_{\\text{ancol}} = n_{\\text{axit}} = 1,2 \\cdot \\frac{100}{60} \\cdot \\frac{100}{80} = 2,5\\, \\text{kmol} \\rightarrow m_{\\text{ancol}} = 80\\, \\text{kg} ; m_{\\text{axit}} = 215\\, \\text{kg}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410039",
+        "question": "Trùng ngưng $m$ gam glyxin, hiệu suất 80\\% thu được 68,4 gam polime. Giá trị của $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $112,5$",
+            "B. $72,0$",
+            "C. $90,0$",
+            "D. $85,5$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $n\\text{H}_2\\text{N-CH}_2\\text{-COOH} \\to (-\\text{NH-CH}_2\\text{-CO-})_n + n\\text{H}_2\\text{O}$ $m_{\\text{polime}} = 68,4 \\,\\text{gam} \\Rightarrow n_{\\text{mắt xích}} = \\frac{68,4}{57} = 1,2 \\,\\text{mol} \\Rightarrow n_{\\text{glyxin}} = \\frac{n_{\\text{mắt xích}}}{H} = \\frac{1,2}{80\\%} = 1,5 \\,\\text{mol} \\Rightarrow m_{\\text{glyxin}} = 1,5 \\cdot 75 = 112,5 \\,\\text{gam} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410040",
+        "question": "Khi trùng ngưng a gam axit ԑ-aminocaproic ($H = 80\\%$) thu được m gam tơ capron và $14,4\\, \\text{gam}$ $H_2O$. Giá trị của m là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $72,32$",
+            "B. $141,25$",
+            "C. $113,00$",
+            "D. $90,40$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $n\\text{H}_2\\text{N}-[\\text{CH}_2]_5-\\text{COOH} \\rightarrow (-\\text{NH}-[\\text{CH}_2]_5-\\text{CO})_n + n\\text{H}_2\\text{O}$ $n\\text{H}_2\\text{O} = 0,8 \\,\\text{mol} \\rightarrow n\\text{mắt xích polime} = 0,8 \\,\\text{mol} \\rightarrow m\\text{polime} = m\\text{mắt xích polime} = 0,8 \\cdot 113 = 90,4 \\,\\text{gam}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410041",
+        "question": "Nếu đốt cháy hết $m$ kg PE cần $6720\\, \\text{lít}$ oxi (đktc). Giá trị $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,8$",
+            "B. $5,6$",
+            "C. $8,4$",
+            "D. $4,2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH : $(-CH_2-CH_2-)_n + 3nO_2 \\rightarrow 2nCO_2 + 2nH_2O$ $nO_2 = \\frac{6720}{22,4} = 300 \\, \\text{mol} \\rightarrow n_{mắt \\, xích \\, polime} = \\frac{n_{O_2}}{3} = \\frac{300}{3} = 100 \\, \\text{mol} \\Rightarrow m_{mắt \\, xích \\, polime} = m_{polime} = 100 \\cdot 28 = 2800 \\, \\text{gam} = 2,8 \\, \\text{kg}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410042",
+        "question": "Khi trùng ngưng 30 gam glyxin, thu được $m$ gam polime và $2,88\\, \\text{gam}$ nước. Giá trị của $m$ là?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 12,00",
+            "B. 11,12",
+            "C. 9,12",
+            "D. 22,80"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $n\\text{H}_2\\text{N-CH}_2\\text{-COOH} \\rightarrow (-\\text{NH-CH}_2\\text{-CO-})_n + n\\text{H}_2\\text{O}$ $n\\text{H}_2\\text{O} = \\frac{2,88}{18} = 0,16 \\text{ mol} \\Rightarrow n_{\\text{mắt xích polime}} = n\\text{H}_2\\text{O} = 0,16 \\text{ mol} \\Rightarrow m_{\\text{mắt xích polime}} = m_{\\text{polime}} = 0,16 \\cdot 57 = 9,12 \\text{ gam}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410043",
+        "question": "Polivinyl clorua được điều chế từ khí thiên nhiên (metan chiếm 95%) theo sơ đồ chuyển hóa và hiệu suất mỗi giai đoạn như sau : $ \\text{CH}_4 \\, H = 15 \\% \\; \\xrightarrow{} \\; \\text{C}_2\\text{H}_2 \\, H = 95 \\% \\; \\xrightarrow{} \\; \\text{C}_2\\text{H}_3\\text{Cl} \\, H = 90 \\% \\; \\xrightarrow{} \\; \\text{PVC} $ Muốn tổng hợp 1 tấn PVC thì cần bao nhiêu $ \\text{m}^3 \\, \\text{khí thiên nhiên} \\, (\\text{đktc}) $?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 5589 \\, \\mathrm{m^3}",
+            "B. 5883 \\, \\mathrm{m^3}",
+            "C. 2914 \\, \\mathrm{m^3}",
+            "D. 5877 \\, \\mathrm{m^3}"
+        ],
+        "answer": "B",
+        "explain": "Khối lượng $C_2H_3Cl$ cần dùng = $\\frac{1,100}{90} = \\frac{100}{90}\\,\\text{gam}$ => số mol $C_2H_3Cl = \\frac{100}{90} \\cdot \\frac{106}{62,5}\\,\\text{mol}$ Theo sơ đồ tổng hợp (số mol $CH_4$ gấp đôi số mol $C_2H_3Cl$) và hiệu suất mỗi giai đoạn => số mol $CH_4 = 2 \\cdot \\frac{100}{90} \\cdot \\frac{106}{62,5} \\cdot \\frac{100}{95} \\cdot \\frac{100}{15}\\,\\text{mol}$ => $V_{CH_4} = 2 \\cdot \\frac{100}{90} \\cdot \\frac{106}{62,5} \\cdot \\frac{100}{95} \\cdot \\frac{100}{15} \\cdot 22,4 = 5,58908 \\cdot 10^6\\,\\text{lít} = 5589,08\\,\\text{m}^3$ => $V_{\\text{khí thiên nhiên}} = 5589,08 \\cdot \\frac{100}{95}\\,\\text{m}^3$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410044",
+        "question": "Để điều chế cao su buna người ta có thể thực hiện theo sơ đồ biến hóa sau: $C_{2}H_{5}OH \\, H = 50 \\% \\, \\longrightarrow \\, buta-1,3-dien \\, H = 80 \\% \\, \\longrightarrow \\, cao su buna$ Tính khối lượng ancol etylic cần lấy để có thể điều chế được 54 gam cao su buna theo sơ đồ trên.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 92 gam",
+            "B. 184 gam",
+            "C. 115 gam",
+            "D. 230 gam"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $m_{\\text{buta-1,3-đien}} = m_{\\text{cao su buna}} \\,/\\, H\\% = 54 \\,/\\, 80\\% = 67,5 \\,\\text{gam} \\Rightarrow n_{\\text{buta-1,3-đien}} = 1,25 \\,\\text{mol}$ PTHH : $2\\text{C}_{2}\\text{H}_{5}\\text{OH} \\rightarrow \\text{C}_{4}\\text{H}_{6} + 2\\text{H}_{2}\\text{O}$ Lí thuyết: $2,5 \\leftarrow 1,25$ Với $H = 50\\%$ thì số mol $C_{2}H_{5}OH$ thực tế cần dùng là: $2,5 \\cdot 100 / 50 = 5 \\,\\text{mol} \\Rightarrow m_{C_{2}H_{5}OH} = 5 \\cdot 46 = 230 \\,\\text{gam}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410045",
+        "question": "Người ta điều chế cao su Buna từ gỗ theo sơ đồ sau: Xenlulozơ → Glucozơ → Etanol → Buta -1,3 - đien → cao su Buna Biết hiệu suất 3 phản ứng đầu lần lượt là $35\\%$, $80\\%$, $60\\%$. Khối lượng xenlulozơ cần để sản xuất $1\\, \\text{tấn}$ cao su Buna là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 25,625 tấn",
+            "B. 17,857 tấn",
+            "C. 5,806 tấn",
+            "D. 37,875 tấn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Sơ đồ: $(C_6H_{10}O_5)_n \\rightarrow nC_6H_{12}O_6 \\rightarrow 2nC_2H_5OH \\rightarrow nCH_2=CH-CH=CH_2 \\rightarrow (-CH_2-CH=CH-CH_2-)_n$ Không mất tính tổng quát của bài toán, bỏ qua hệ số $n$ để tính toán cho thuận tiện 1 tấn cao su buna có số mol là: $n = \\frac{1\\, \\text{tấn}}{54 \\times 10^6\\, \\text{mol}}$ Từ sơ đồ pư $\\Rightarrow n_{\\text{tinh bột}} = n_{\\text{cao su buna}} = \\frac{1\\, \\text{tấn}}{54 \\times 10^6\\, \\text{mol}}$ Khối lượng tinh bột là: $m_{\\text{tinh bột}} = \\frac{1\\, \\text{tấn} \\cdot 162 \\cdot 100 \\%}{60 \\% \\cdot 100 \\% \\cdot 80 \\% \\cdot 100 \\% \\cdot 35 \\%} = 17,857\\, \\text{tấn}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410046",
+        "question": "Từ $100 \\, \\text{lít}$ ancol etylic $400$ (khối lượng riêng của ancol etylic nguyên chất là $d = 0,8 \\, \\text{g/ml}$) điều chế được bao nhiêu $kg$ cao su buna (hiệu suất cả quá trình là $75\\%$) ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 14,087 kg",
+            "B. 18,783 kg",
+            "C. 25,043 kg",
+            "D. 18,087 kg"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com + Độ rượu = $V_{\\text{rượu nguyên chất}}$. $100 / V_{\\text{dung dịch rượu}} \\Rightarrow V_{\\text{rượu nguyên chất}} = 40.100/100 = 40 \\,\\text{lít} \\Rightarrow m_{C_2H_5OH} = D.V = 40.0,8 = 32 \\,\\text{kg} \\Rightarrow n_{C_2H_5OH} = 16/23 \\,\\text{Kmol} + Sơ đồ phản ứng: 2C_2H_5OH \\rightarrow CH_2=CH-CH=CH_2 \\rightarrow (-CH_2-CH=CH-CH_2-)_{n} \\rightarrow số mol C_2H_5OH gấp đôi số mol mắt xích -CH_2-CH=CH-CH_2- \\Rightarrow n_{\\text{mắt xích}} -CH_2-CH=CH-CH_2- = n_{C_2H_5OH}.75\\% \\Rightarrow n = 6/23 \\,\\text{Kmol} \\Rightarrow m_{\\text{mắt xích}} = m_{\\text{polime}} = 54.6/23 = 14,087 \\,\\text{kg} \\Rightarrow Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410047",
+        "question": "Poli(tetrafloetylen) hay thường gọi là teflon $ (CF_2-CF_2)_{n} $ được sản xuất từ clorofom qua các giai đoạn sau: \n$$ 2nCHCl_3 \\xrightarrow{H \\, 1 \\%} 2nCHF_2Cl \\xrightarrow{H \\, 2 \\%} n \\, CF_2 = CF_2 \\xrightarrow{H \\, 3 \\%} (-CF_2 –CF_2)_{n} $$ \nNếu xuất phát từ $ 23,9 \\, \\text{tấn} $ clorofom, với hiệu suất tương ứng của từng giai đoạn là: $ 79\\% $; $ 81\\% $ và $ 80\\% $ thì lượng teflon thu được là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 6,348 tấn",
+            "B. 5,1192 tấn",
+            "C. 7,342 tấn",
+            "D. 12,111 tấn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ sơ đồ, ta thấy theo lí thuyết : $n_{\\text{mắt xích}}$ -CF2-CF2- = $n_{\\text{C}}$ $H_{\\text{C}}$ $l_3$ = $100\\, \\text{kmol}$ → số mol mắt xích -CF2-CF2- thực tế thu được là: $100 \\cdot 79 \\cdot 100 \\cdot 81 \\cdot 100 = 51\\,192\\, \\text{kmol}$ → $m_{\\text{polime}} = m_{\\text{mắt xích}} = 51,192 \\cdot 100 = 5119,2\\, \\text{kg} = 5,1192\\, \\text{tấn}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410048",
+        "question": "Tiến hành trùng hợp $5,2 \\,\\text{gam}$ stiren. Hỗn hợp sau phản ứng cho tác dụng $100 \\,\\text{ml}$ dung dịch brom $0,15\\,M$. Sau đó cho tiếp dung dịch KI dư vào thì thu được $0,635 \\,\\text{gam}$ iot. Hiệu suất trùng hợp stiren là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 25\\%",
+            "B. 75\\%",
+            "C. 50\\%",
+            "D. 30\\%"
+        ],
+        "answer": "B",
+        "explain": "Số mol brom ban đầu: $n_{Br_2}^{(bd)} = 0,015 \\, \\text{mol}$  \nSố mol brom dư: $n_{Br_2}^{(du)} = n_{I_2} = 0,0025 \\, \\text{mol} \\rightarrow n_{Br_2}^{(pu)} = 0,0125 \\, \\text{mol} \\rightarrow n_{C_6H_5CH = CH_2}^{(du)} = 0,0125 \\, \\text{mol}$  \nHiệu suất phản ứng: $H = \\frac{5,2 - 0,0125 \\cdot 104}{5,2} \\cdot 100\\% = 75\\%$  \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410049",
+        "question": "Khối lượng phân tử của một đoạn mạch polietilen là $420\\, \\text{đvC}$. Số mắt xích của đoạn mạch này là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $20$",
+            "B. $30$",
+            "C. $15$",
+            "D. $10$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com CT của đoạn mạch polime là $(-CH_2-CH_2-)_n$ => $M_{polime} = 28n = 420 \\Rightarrow n = 15$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410050",
+        "question": "Phân tử khối trung bình của cao su tự nhiên là $105000$. Số mắt xích gần đúng của loại cao su trên là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1544",
+            "B. 1454",
+            "C. 1640",
+            "D. 1460"
+        ],
+        "answer": "A",
+        "explain": "Số mắt xích là $105000 : 68 = 1544 \\, \\text{(mắt xích)}$  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410051",
+        "question": "Polisaccarit $(-C_6H_{10}O_5)_n$ có khối lượng phân tử là $162000 \\,\\text{đvC}$ có hệ số trùng hợp là bao nhiêu?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1000",
+            "B. 800",
+            "C. 700",
+            "D. 1100"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $M_{\\text{Polisaccarit}} = 162n = 162000 \\Rightarrow n = 1000$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410052",
+        "question": "Số lượng mắt xích của 1 đoạn mạch tơ nilon-6 là 120. Khối lượng phân tử của đoạn mạch này là $m = 120 \\, \\text{g/mol}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 13560",
+            "B. 15200",
+            "C. 13673",
+            "D. 15720"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ nilon-6 có công thức là $(-NH-[CH_2]_5-CO-)_n$ $M_{\\text{nilon-6}} = 113n$ Số lượng mắt xích của đoạn mạch này là 120 → $n = 120$ → $M_{\\text{nilon-6}} = 113n = 113 \\cdot 120 = 13560$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410053",
+        "question": "Khối lượng 1 phân tử xenlulozơ là $48600000 \\,\\text{đvC}$. Số gốc glucozơ có trong phân tử xenlulozơ trên là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 250000",
+            "B. 270000",
+            "C. 300000",
+            "D. 350000"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phân tử xenlulozơ có công thức : $(-C_6H_{10}O_5)_n$ $M = 162n = 48600000 \\Rightarrow n = 300000$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410054",
+        "question": "Một loại tơ nilon 6,6 có phân tử khối là: $362956 \\,\\text{đvC}$. Số mắt xích có trong loại tơ trên là: $n = \\frac{362956}{226}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 166",
+            "B. 1606",
+            "C. $83$",
+            "D. $803$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com $CTCT \\, 1$ mắt xích của tơ nilon $6,6$ là $-(NH-(CH_2)_6NHCO-(CH_2)_4-CO)-$ => Số mắt xích có trong chuỗi nilon đang xét là: $362956/226 = 1606 \\, \\text{(mắt xích)}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410055",
+        "question": "Một loại cao su Buna-S có tỉ lệ kết hợp của 2 loại monome là 1 : 1. Phân tử khối trung bình của loại cao su này là $12640000\\, \\text{đvC}$. Hệ số polime hóa trung bình của loại cao su này bằng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 100000",
+            "B. 80000",
+            "C. 90000",
+            "D. 95000"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cao su Buna-S có tỉ lệ kết hợp của 2 loại monome là $1 : 1$ có CT là $(-CH_2-CH=CH-CH_2-CH(C_6H_5)-CH_2-)_n$ => $M_{\\text{buna-S}} = 158n = 12640000$ => $n = 80000$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410056",
+        "question": "Một phân tử cao su buna-S gồm 4000 mắt xích và có phân tử khối bằng $1048000 \\, \\text{đvC}$. Tỉ lệ số phân tử buta-1,3-đien và stiren trong loại cao su trên là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1:2$",
+            "B. $3:1$",
+            "C. $1:3$",
+            "D. $1:1$"
+        ],
+        "answer": "A",
+        "explain": "Gọi công thức của cao su có dạng $(-\\text{C}_4\\text{H}_6)_x\\,(-\\text{C}_8\\text{H}_8)_y$ $n$ Mcao su = $n \\cdot M_{\\text{mắt xích}}$ $\\Rightarrow 1048000 = 4000 \\cdot M_{\\text{mắt xích}} \\Rightarrow M_{\\text{mắt xích}} = 262 \\Rightarrow 54x + 104y = 262$ + với $y = 1 \\Rightarrow x = 2,9259$ (loại) + với $y = 2 \\Rightarrow x = 1$ → Tỉ lệ số phân tử buta-1,3-đien và stiren trong loại cao su trên là $1 : 2$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410057",
+        "question": "Một polime X được xác định có phân tử khối là $39062,5 \\,\\text{đvC}$ với hệ số trùng hợp để tạo nên polime này là $625$. Polime X là?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. PP",
+            "B. PVC",
+            "C. $PE$",
+            "D. $PS$"
+        ],
+        "answer": "B",
+        "explain": "Ta có $M_{\\text{cao su}} = n \\cdot M_{\\text{mắt xích}} \\Rightarrow 39062,5 = 625 \\cdot M_{\\text{mắt xích}} \\Rightarrow M_{\\text{mắt xích}} = 62,5 \\Rightarrow \\text{Polime X là } (-\\text{CH}_2-\\text{CHCl})_n \\, (\\text{PVC})$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410058",
+        "question": "Cứ 25,2 gam cao su buna-S phản ứng hết với 300 gam dung dịch $Br_2$ $6,4\\%$. Tỉ lệ mắt xích butađien và stiren trong cao su buna-S là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3:5$",
+            "B. $1:3$",
+            "C. $2:3$",
+            "D. $1:2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com n $B_r = 300,6 \\, \\text{g/mol}$ $100,160 = 0,12 \\, \\text{mol}$ Căn cứ vào cấu tạo ta thấy chỉ có mắt xích –$C_4H_6$– phản ứng được với brom theo tỉ lệ mol $1 : 1$. => trong $25,2 \\, \\text{g}$ cao su buna-S có chứa $0,12 \\, \\text{mol}$ mắt xích butađien => $m_{\\text{ắt xích stiren}} = 25,2 - 0,12 \\cdot 54 = 18,72$ => $n_{\\text{ắt xích stiren}} = \\frac{18,72}{104} = 0,18 \\, \\text{mol}$ => tỉ lệ mắt xích butađien : stiren = $0,12 : 0,18 = 2 : 3$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H0410059",
+        "question": "Tiến hành phản ứng đồng trùng hợp giữa stiren và buta – 1,3 – đien (butađien), thu được polime X. Cứ $2,834\\, \\text{gam}$ X phản ứng vừa hết với $1,731\\, \\text{gam}$ Br2. Tỉ lệ số mắt xích (butađien : stiren) trong loại polime trên là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1:1$",
+            "B. $1:2$",
+            "C. $2:3$",
+            "D. $1:3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cao su buna-S: $-\\text{C}_4\\text{H}_6$ : mắt xích butađien $-\\text{C}_8\\text{H}_{10}$ : mắt xích stiren Giả sử cứ $n$ mắt xích butađien thì có $m$ mắt xích stiren. Như vậy : $(54n + 104m)\\,\\text{g}$ cao su kết hợp với $160n\\,\\text{g}$ brom. Mặt khác, theo đầu bài : $2,834\\,\\text{g}$ cao su kết hợp với $1,731\\,\\text{g}$ brom. → $54n + 104m = 2,834$ → $160n = 1,731$ → $\\frac{n}{m} = \\frac{1}{2}$ Vậy tỉ lệ giữa số mắt xích butađien và số mắt xích stiren là $1 : 2$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410060",
+        "question": "Khi clo hóa PVC ta thu được một loại tơ clorin chứa $66,67\\%$ clo. Hỏi trung bình $1$ phân tử clo tác dụng với bao nhiêu mắt xích PVC ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $H_2O$ ",
+            "B. $NaCl$ ",
+            "C. $C_6H_{12}O_6$ ",
+            "D. $H_2SO_4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Phản ứng: $(C_2H_3Cl)_n + Cl_2 \\rightarrow C_{2n}H_{3n-1}Cl_{n+1} + HCl$ %Cl = $35\\, \\text{.5}$. $(n + 1) \\cdot 12,2 \\cdot n + 3 \\cdot n - 1 + 35\\, \\text{.5} \\cdot (n + 1) = 0,6667 \\rightarrow n = 2$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410061",
+        "question": "Khi clo hoá PVC, tính trung bình cứ $k$ mắt xích trong mạch PVC phản ứng với một phân tử clo. Sau khi clo hoá, thu được một polime chứa $63,96\\%$ clo (về khối lượng). Giá trị của $k$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3$",
+            "B. $6$",
+            "C. $5$",
+            "D. $4$"
+        ],
+        "answer": "A",
+        "explain": "Cứ k mắt xích PVC tác dụng một phân tử Clo ta có $C_{2k}H_{3k}Cl_k + Cl_2 \\rightarrow C_{2k}H_{3k-1}Cl_{k+1} + HCl$ % $Cl = 35,5 \\times (k + 1)$ $62,5k + 35,5 - 1 = 0,6396$ => $k = 3$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410062",
+        "question": "Khi tiến hành đồng trùng hợp acrilonitrin và buta-1,3-đien thu được một loại cao su buna-N chứa $15,73\\%$ N về khối lượng. Tỉ lệ số mol acrilonitrin và buta-1,3-đien trong cao su buna-N là :",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $2 : 1$",
+            "B. $2 : 3$",
+            "C. $1 : 2$",
+            "D. $3 : 2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $n_x \\text{CH}_2=\\text{CH}-\\text{CH}=\\text{CH}_2 + n_y \\text{CH}_2=\\text{CHCN} \\rightarrow [(-\\text{CH}_2-\\text{CH}=\\text{CH}-\\text{CH}_2-)_x-(-\\text{CH}_2-\\text{CHCN}-)_y]n \\%N = 14 \\, y \\cdot 100 \\% 54 \\, x + 53 \\, y = 15, 73 \\% \\rightarrow y \\, x = 3 \\, 2 Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H0410063",
+        "question": "Cao su lưu hóa chứa $2\\%$ lưu huỳnh về khối lượng. Giả thiết nguyên tử $S$ thay thế cho nguyên tử $H$ ở nhóm metylen ($-\\text{CH}_2$) trong mạch cao su. Trung bình khoảng bao nhiêu mắt xích cao su isopren có $1$ cầu nối đisunfua -$S-S-$ ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 46",
+            "B. 40",
+            "C. 56",
+            "D. 23"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Theo đề bài, hai lưu huỳnh thay thế cho hai hiđro ở nhóm metylen: $(C_5H_8)_n + S_2 \\rightarrow C_{5n}H_{8n-2}S_2$ %S = $\\frac{32,2}{68n + 62} = 0,02$ => $n = 46$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410064",
+        "question": "Đồng trùng hợp đimetyl buta–1,3–đien với acrilonitrin $(\\text{CH}_2=\\text{CH–CN})$ theo tỉ lệ tương ứng $x : y$, thu được một loại polime. Đốt cháy hoàn toàn một lượng polime này, thu được hỗn hợp khí và hơi $(\\text{CO}_2, \\text{H}_2\\text{O}, \\text{N}_2)$ trong đó có $57,69\\%$ $\\text{CO}_2$ về thể tích. Tỉ lệ $x : y$ khi tham gia trùng hợp là bao nhiêu ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $x y = \\frac{1}{3}$",
+            "B. $x y = \\frac{2}{3}$",
+            "C. $x y = \\frac{3}{2}$",
+            "D. $x y = \\frac{3}{5}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Sử dụng bảo toàn nguyên tố, từ $ \\text{CH}_2=\\text{C}(\\text{CH}_3)\\text{–C}(\\text{CH}_3)=\\text{CH}_2 $ tức $ \\text{C}_6\\text{H}_{10} $ và $ \\text{CH}_2=\\text{CH–CN} $ tức $ \\text{C}_3\\text{H}_3\\text{N} $ ta có sơ đồ đốt polime : $ x\\text{C}_6\\text{H}_{10} + y\\text{C}_3\\text{H}_3\\text{N} + \\text{O}_2 \\,\\rightarrow\\, (6x+3y)\\text{CO}_2 + \\frac{10x + 3y}{2} \\text{H}_2\\text{O} + \\frac{y}{2} \\text{N}_2 $ Vì $ \\text{CO}_2 $ chiếm $ 57,69\\, \\text{\\%} $ thể tích nên : $ \\frac{6x + 3y}{(6x + 3y) + \\frac{10x + 3y}{2} + \\frac{y}{2}} = \\frac{57,69}{100} \\rightarrow x = \\frac{y}{3} $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410065",
+        "question": "Khi tiến hành phản ứng trùng ngưng giữa axit ađipic và hexametylenđiamin ta thu được một tơ nilon-6,6 chứa $12,39\\%\\,$ $\\text{nitơ}$ về khối lượng. Tỷ lệ số mắt xích giữa axit ađipic và hexametylenđiamin trong mẫu tơ trên là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2 : 3$",
+            "B. $1 : 1$",
+            "C. $1 : 3$",
+            "D. $3 : 2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ có dạng $(-NH-C_6H_{12}-NH-)(-CO-C_4H_8-CO-)^x$ → % N = $\\frac{28}{112} \\cdot x + \\frac{114}{100} \\cdot 12,39\\%$ → $x = 1$ → Tỷ lệ axit ađipic : hexametylenđiamin = $x:1 = 1:1$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410066",
+        "question": "Polime X có hệ số trùng hợp là $560$ và phân tử khối là $35000$. Công thức một mắt xích của X là $?$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $–CH_2–CHCl–$",
+            "B. $–CH=CCl–$",
+            "C. $–CCl=CCl–$",
+            "D. $–CHCl–CHCl–$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khối lượng mol 1 mắt xích của polime X là: $ \\frac{35000}{560} = 62,5 \\, \\text{g/mol} $ => CTCT của X là -CH2-CHCl- Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H0410067",
+        "question": "Thủy phân 1250 gam protein X thu được 425 gam alanin. Nếu phân tử khối của X bằng $100000 \\, \\text{g/mol}$ thì số mắt xích alanin có trong X là :.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 453",
+            "B. 382",
+            "C. 328",
+            "D. 479"
+        ],
+        "answer": "B",
+        "explain": "1250 gam X => 425 gam Alanin  \n100000 gam X => a gam alanin => $a = \\frac{100000 \\times 425}{1250} = 34000 \\, \\text{gam}$ => Số mắt xích alanin có trong 1 phân tử protein = $ \\frac{34000}{89} = 382 \\, \\text{mắt xích}$  \nĐáp án cần chọn là: B."
+    },
+    {
+        "id": "H0410068",
+        "question": "Protein A có khối lượng phân tử là $50000 \\,\\text{đvC}$. Thuỷ phân $100 \\,\\text{gam}$ A thu được $33,998 \\,\\text{gam}$ alanin. Số mắt xích alanin trong phân tử A là :",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 191",
+            "B. 38,2",
+            "C. 230",
+            "D. 561,8"
+        ],
+        "answer": "A",
+        "explain": "100 gam A => $33,998\\, \\text{gam}$ alanin  \n50000 gam A => $a\\, \\text{gam}$ alanin => $a = \\frac{50000 \\times 33,998}{100} = 16999\\, \\text{(g)}$  \nSố mắt xích alanin có trong 1 phân tử A là: $ \\frac{16999}{89} = 191\\, \\text{(mắt xích)}$  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R001",
+        "question": "Phát biểu nào sau đây không đúng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Polime là hợp chất có phân tử khối lớn do nhiều mắt xích liên kết với nhau tạo nên",
+            "B. Những phân tử nhỏ có liên kết đôi hoặc vòng kém bền được gọi là monome",
+            "C. Hệ số $n$ mắt xích trong công thức polime gọi là hệ số trùng hợp",
+            "D. Polime tổng hợp được tạo thành nhờ phản ứng trùng hợp hoặc phản ứng trùng ngưng"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Phát biểu không đúng là: Những phân tử nhỏ có liên kết đôi hoặc vòng kém bền được gọi là monome. Vì các phân tử có liên kết đôi hoặc vòng kém bền đó phải trùng hợp tạo thành polime (nhiều phân tử có chứa liên kết đôi nhưng không có khả năng phản ứng tạo polime) Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R002",
+        "question": "Tơ nilon-6,6 được điều chế bằng phản ứng trùng ngưng chất nào sau đây?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. HOOC-(CH_2)_2-CH(NH_2)-COOH",
+            "B. HOOC-(CH_2)_4-COOH và HO-(CH_2)_2-OH",
+            "C. HOOC-(CH_2)_4-COOH và H_2N-(CH_2)_6-NH_2",
+            "D. H_2N-(CH_2)_5-COOH"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $n\\text{HOOC}-(\\text{CH}_2)_4-\\text{COOH} + n\\text{H}_2\\text{N}-(\\text{CH}_2)_6-\\text{NH}_2 \\xrightarrow{t, \\, t_o, \\, p} (-\\text{HN}-[\\text{CH}_2]_6-\\text{NH}-\\text{CO}-[\\text{CH}_2]_4-\\text{CO})_n + 2n\\text{H}_2\\text{O}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R003",
+        "question": "Nilon–6,6 là một loại.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. tơ poliamit",
+            "B. tơ visco",
+            "C. tơ polieste",
+            "D. tơ axetat"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các mắt xích nối với nhau bằng liên kết $ \\text{CO-NH} $ mà không phải của $ \\alpha $-aminoaxit → tơ nilon-6,6 là tơ poliamit Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R004",
+        "question": "Polime nào sau đây trong thành phần chứa nguyên tố nitơ?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Nilon-6,6",
+            "B. Polietilen",
+            "C. Poli (vinyl clorua)",
+            "D. Polibutađien"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Nilon-6,6: $(-\\text{HN}-[\\text{CH}_2]_6-\\text{NH}-\\text{CO}-[\\text{CH}_2]_4-\\text{CO})_n$ Polietilen: $(-\\text{CH}_2-\\text{CH}_2)_n$ Polibutađien: $(-\\text{CH}_2-\\text{CH}=\\text{CH}-\\text{CH}_2)_n$ Poli(vinyl clorua): $(-\\text{CH}_2-\\text{CHCl})_n$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R005",
+        "question": "Poli(metyl metacrylat) và nilon-6 được tạo thành từ các monome tương ứng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. CH$_2$=CH-COOCH$_3$ và H$_2$N-[CH$_2$]$_6$-COOH",
+            "B. CH$_2$=C(CH$_3$)-COOCH$_3$ và H$_2$N-[CH$_2$]$_6$-COOH",
+            "C. CH$_3$-COO-CH=CH$_2$ và H$_2$N-[CH$_2$]$_5$-COOH",
+            "D. CH$_2$=C(CH$_3$)-COOCH$_3$ và H$_2$N-[CH$_2$]$_5$-COOH"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R006",
+        "question": "Poli(etylen terephtalat) được điều chế bằng phản ứng với axit terephtalic với chất nào sau đây?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Etylen glicol",
+            "B. Etilen",
+            "C. Glixerol",
+            "D. Ancol etylic"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R007",
+        "question": "Dãy gồm các chất được dùng để tổng hợp cao su Buna-S là: $ \\text{các chất monome như styrene và butadiene} $.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $CH_2=C(CH_3)-CH=CH_2$, $C_6H_5CH=CH_2$",
+            "B. $CH_2=CH-CH=CH_2$, $C_6H_5CH=CH_2$",
+            "C. $CH_2=CH-CH=CH_2$, lưu huỳnh",
+            "D. $CH_2=CH-CH=CH_2$, $CH_3-CH=CH_2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R008",
+        "question": "Dãy gồm các chất đều có khả năng tham gia phản ứng trùng hợp là: $A_n$, $B_n$, $C_n$ và $D_n$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. stiren; clobenzen; isopren; but-1-en",
+            "B. 1,2-điclopropan; vinylaxetilen; vinylbenzen; toluen",
+            "C. buta-1,3-đien; cumen; etilen; trans-but-2-en",
+            "D. 1,1,2,2-tetrafloeten; propilen; stiren; vinyl clorua"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương án A sai: clobenzen ($C_6H_5Cl$) không tham gia phản ứng trùng hợp. Phương án B sai: $1,2$-điclopropan ($CH_2Cl-CH_2Cl-CH_3$) và toluen ($C_6H_5CH_3$) không tham gia phản ứng trùng hợp. Phương án C sai: cumen ($C_6H_5CH(CH_3)_2$) không tham gia phản ứng trùng hợp. Phương án D đúng: Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R009",
+        "question": "Polime nào sau đây được tổng hợp bằng phản ứng trùng ngưng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. poli(metyl metacrylat)",
+            "B. poli(etylen terephtalat)",
+            "C. polistiren",
+            "D. poliacrilonitrin"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R010",
+        "question": "Cho các polime sau: nilon 6-6; poli (vinyl clorua); poli (metyl metacrylat); teflon; tơ lapsan; polietilen; polibutadien. Số polime được điều chế bằng phản ứng trùng ngưng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2$",
+            "B. $7$",
+            "C. $5$",
+            "D. $3$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các polime được điều chế bằng phản ứng trùng ngưng là: nilon 6-6; tơ lapsan → có 2 polime Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R011",
+        "question": "Cho các loại tơ: bông, tơ capron, tơ xenlulozơ axetat, tơ tằm, tơ nitron, nilon-6,6. Số tơ tổng hợp là $6$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 5",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ thiên nhiên: bông, tơ tằm Tơ bán tổng hợp (nhân tạo): tơ xelulozơ axetat Tơ tổng hợp: tơ capron, tơ nitron, nilon-6,6. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R012",
+        "question": "Tơ nào sau đây thuộc tơ tổng hợp?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ xenlulozơ",
+            "B. tơ visco",
+            "C. tơ olon",
+            "D. tơ tằm"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ xenlulozơ, tơ visco là tơ bán tổng hợp tơ olon là tơ tổng hợp tơ tằm là tơ thiên nhiên Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R013",
+        "question": "Cho các polime: poli(vinyl clorua), xenlulozơ, policaproamit, polistiren, xenlulozơ trinitrat, nilon – 6,6. Số polime tổng hợp là $5$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $5$",
+            "B. $4$",
+            "C. $3$",
+            "D. $2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Polime tổng hợp là: $ \\text{poli(vinyl clorua)} $, $ \\text{policaproamit} $, $ \\text{polistiren} $, $ \\text{nilon – 6,6} $ Xenlulozơ là polime tự nhiên còn $ \\text{xenlulozơ trinitrat} $ là polime bán tổng hợp Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R014",
+        "question": "Phát biểu nào sau đây là đúng?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ visco là tơ tổng hợp",
+            "B. Trùng ngưng buta-1,3-đien với acrilonitrin có xúc tác Na được cao su buna-N",
+            "C. Trùng hợp stiren thu được $ poli(phenol-fomanđehit) $",
+            "D. Poli(etylen terephtalat) được điều chế bằng phản ứng trùng ngưng các monome tương ứng"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương án A sai: Tơ visco là tơ bán tổng hợp (nhân tạo). Phương án B sai: Đồng trùng hợp buta-1,3-đien với acrilonitrin xúc tác Na được cao su buna-N. $nCH_2=CH-CH=CH_2 + nCH_2=CH-CN \\xrightarrow{t\\, ,\\, x_t\\, ,\\, p} (-CH_2-CH=CH-CH_2-CH(CN)-CH_2-)_n$ Phương án C sai: Trùng hợp stiren thu được polistiren. Phương án D đúng: Poli(etylen terephtalat) được điều chế bằng phản ứng trùng ngưng axit terephtalic và etylen glicol $nHOOC-C_6H_4-COOH + nHO-CH_2-CH_2-OH \\xrightarrow{t\\, ,\\, x_t\\, ,\\, p} (-OC-C_6H_4-CO-O-CH_2-CH_2-O-)_n + 2nH_2O$ poli(etylen-terephtalat) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R015",
+        "question": "Polime có cấu trúc mạng không gian (mạng lưới) là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. PE",
+            "B. amilopectin",
+            "C. PVC",
+            "D. nhựa bakelit"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com PE, PVC: mạch không phân nhánh Amilopectin: mạch phân nhánh Nhựa bakelit: mạng không gian (mạng lưới). Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R016",
+        "question": "Các chất đều không bị thuỷ phân trong $ \\text{dd} \\, H_2SO_4 \\, \\text{loãng nóng} $ là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. tơ capron; nilon-6,6; polietilen",
+            "B. poli(vinyl axetat); polietilen; cao su buna",
+            "C. nilon-6,6; poli(etylen-terephtalat); polistiren",
+            "D. polietilen; cao su buna; polistiren"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương án A sai: tơ capron, nilon-6,6 bị thủy phân. Phương án B sai: poli(vinyl axetat) bị thủy phân Phương án C sai: nilon-6,6; poli(etylen-terephtalat) bị thủy phân. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R017",
+        "question": "Trong thực tế, phenol được dùng để sản xuất.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. nhựa poli(vinyl clorua), nhựa novolac và chất diệt cỏ 2,4-D",
+            "B. nhựa rezol, nhựa rezit và thuốc trừ sâu 666",
+            "C. poli(phenol-fomanđehit), chất diệt cỏ 2,4-D và axit picric",
+            "D. nhựa rezit, chất diệt cỏ 2,4-D và thuốc nổ TNT"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - thuốc trừ sâu $666$: $1,2,3,4,5,6$-hexacloxiclohexan: $C_6H_6Cl_6$ - thuốc nổ TNT: $2,4,6$-trinitrotoluen: $C_7H_5N_3O_6$ - nhựa poli (vinyl clorua) - $(CH_2-CH(Cl))_n$ + nhựa poli(vinyl clorua) được tổng hợp từ vinyl clorua. + thuốc trừ sâu $666$ được tổng hợp từ benzen. + Thuốc nổ TNT được tổng hợp từ toluen. => $3$ chất này không sản xuất được từ phenol => loại $A$, $B$, $D$. Các ứng dụng của phenol: Đáp án cần chọn là: $C$."
+    },
+    {
+        "id": "H040R018",
+        "question": "Cho sơ đồ phản ứng: $C_2H_2 + HCN \\xrightarrow{} X$ $X \\text{ trùng hợp} \\xrightarrow{} \\text{polime } X + CH_2=CH-CH=CH_2$ $ \\text{đồng trùng hợp} \\xrightarrow{} \\text{polime } Z$ X và Z lần lượt dùng để chế tạo vật liệu polime nào sau đây?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Tơ olon và cao su buna-N",
+            "B. Tơ nilon-6,6 và cao su cloropren",
+            "C. Tơ nitron và cao su buna-S",
+            "D. Tơ capron và cao su buna"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $C H \\equiv C H + H C N \\rightarrow C H_2 = C H - C N$ $n C H_2 = C H - C N \\times t\\, \\text{,}\\, t_o\\, \\text{,}\\, p \\, \\longrightarrow \\, - ( C H_2 - C H ( C N ) - )_n$ Vinyl xianua tơ olon hay tơ nitron $nCH_2=CH-CH=CH_2 + nCH_2=CH-CN \\times t\\, \\text{,}\\, t_o\\, \\text{,}\\, p \\, \\longrightarrow \\, (-CH_2-CH=CH-CH_2-CH(CN)-CH_2)_n$ Buta-1,3-đien cao su buna-N Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R019",
+        "question": "Loại tơ nào sau đây được điều chế bằng phản ứng trùng hợp?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tơ nitron",
+            "B. Tơ visco",
+            "C. Tơ xenlulozơ axetat",
+            "D. Tơ nilon-6,6"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Tơ nitron: trùng hợp Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R020",
+        "question": "Phát biểu nào sau đây là đúng?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Sợi bông, tơ tằm thuộc loại polime thiên nhiên",
+            "B. Tơ visco, tơ xenlulozơ axetat đều thuộc loại tơ tổng hợp",
+            "C. Polietilen và $poli(vinyl\\ clorua)$ là sản phẩm của phản ứng trùng ngưng",
+            "D. Tơ nilon–6,6 được điều chế từ hexametylenđiamin và axit axetic"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương án A đúng: Sợi bông và tơ tằm thuộc polime thiên nhiên vì có sẵn trong thiên nhiên Phương án B sai: tơ visco, tơ xenlulozơ axetat đều là tơ nhân tạo (tơ bán tổng hợp) Phương án C sai: Polietilen và poli(vinyl clorua) là sản phẩm của phản ứng trùng hợp D sai: Tơ nilon–6,6 được điều chế từ hexametylenđiamin và axit ađipic Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R021",
+        "question": "Trong các polime: tơ tằm, sợi bông, tơ visco, tơ nilon-6, tơ nitron, những polime có nguồn gốc từ xenlulozơ là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. sợi bông, tơ visco và tơ nilon-6",
+            "B. tơ tằm, sợi bông và tơ nitron",
+            "C. sợi bông và tơ visco",
+            "D. tơ visco và tơ nilon-6"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương án B sai: Tơ nitron là tơ tổng hợp không có nguồn gốc từ xenlulozơ, tơ tằm là tơ thiên nhiên có nguồn gốc từ động vật $nCH_2=CH-CN \\xrightarrow{t , t_o , p} (-CH_2-CHCN-)_n$ Tơ nitron Phương án C đúng: Sợi bông có thành phần chính là xenlulozơ $(95-98\\%)$ (SGK12NC-T46). Tơ visco là sản phẩm của xenlulozơ với $CS_2$ và $NaOH$ (SGK12NC-T48) Phương án A, D sai: Tơ nilon-6 là tơ tổng hợp, không có nguồn gốc từ xenlulozơ $nH_2N-[CH_2]_5-COOH \\xrightarrow{t , t_o , p} (-HN-[CH_2]_5-CO-)_n + nH_2O$ Tơ nilon-6 Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R022",
+        "question": "Trùng hợp $m$ tấn etilen thu được 1 tấn polietilen (PE) với hiệu suất phản ứng bằng 80\\%. Giá trị của $m$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,80$",
+            "B. $2,00$",
+            "C. $0,80$",
+            "D. $1,25$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $nCH_2=CH_2 \\times t \\, \\text{t} \\, \\text{o} \\, \\text{p} \\, \\xrightarrow{} \\, (-CH_2-CH_2-)_n$ Etilen Polietilen (PE) $m_{metilen} \\, (C_2H_4) = 1, 100 \\% \\, 80 \\% = 1, 25 \\, \\text{(tấn)}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R023",
+        "question": "Clo hoá PVC thu được một polime chứa $63,96\\%$ clo về khối lượng, trung bình $1$ phân tử clo phản ứng với $k$ mắt xích trong mạch PVC. Giá trị của $k$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 5",
+            "B. 6",
+            "C. 4",
+            "D. 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Poli (vinyl clorua): $(-CH_2-CHCl-)_n$ $C_{2n}H_{3n}Cl_n + x \\, \\text{Cl}_2 \\to C_{2n}H_{3n-x}Cl_n + x + x \\, \\text{HCl}$ Ta có: $35,5 \\, (n + x) \\, 12,2 n + 3n - x + 35,5 \\, (n + x) = 63,96 \\% \\, 100 \\% \\to 3x = n \\to k = n \\, x = 3$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R024",
+        "question": "Có các chất sau: tơ capron, tơ lapsan; tơ nilon -6,6; protein, sợi bông, amoni axetat. Trong các chất trên có bao nhiêu chất mà trong phân tử của chúng có chứa nhóm $–NH–CO$?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $5$",
+            "B. $6$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Các chất có chứa liên kết $CO-NH$ trong phân tử là: Tơ capron : $(-CO[CH_2]_5NH-)_n$ ; Protein; Tơ nilon -6,6: $(-NH-[CH_2]_6-NH-CO-[CH_2]_4-CO-)_n$ => có 3 chất Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R025",
+        "question": "Khối lượng của một đoạn mạch tơ nilon-6,6 là $27346 \\, \\text{đvC}$ và của một đoạn mạch tơ capron là $17176 \\, \\text{đvC}$. Số lượng mắt xích trong đoạn mạch nilon-6,6 và capron nêu trên lần lượt là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 113 và 152",
+            "B. 121 và 114",
+            "C. 121 và 152",
+            "D. 113 và 114"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Nilon-6,6: $(-HN-[CH_2]_6-NH-CO-[CH_2]_4-CO-)_n$ Số mắt xích của tơ nilon-6,6 là: $27346 \\div 226 = 121$ Capron (nilon-6): $(-HN-[CH_2]_5-CO-)_n$ Số mắt xích của tơ capron là: $17176 \\div 113 = 152$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R026",
+        "question": "Polime được sử dụng để sản xuất.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. gas, xăng, dầu, nhiên liệu",
+            "B. dung môi hữu cơ, thuốc nổ, chất kích thích tăng trưởng thực vật",
+            "C. chất dẻo, cao su, tơ sợi",
+            "D. phẩm nhuộm, thuốc trừ sâu, thuốc bảo vệ thực vật"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com ứng dụng của polime là: chất dẻo, cao su, tơ sợi. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R027",
+        "question": "Tiến hành thí nghiệm theo các bước sau: - Bước 1: Cho vào ống nghiệm số 01 một mẩu ống nhựa dẫn nước PVC. - Bước 2: Thêm $2\\, \\text{ml}$ dung dịch NaOH $10\\%$ vào ống nghiệm $01$. Đun ống nghiệm đến sôi, để nguội. Gạn lớp nước sang ống nghiệm $02$ riêng rẽ. - Bước 3: Axit hóa ống nghiệm số $02$ bằng dung dịch HNO3 $20\\%$ rồi nhỏ thêm vào dung dịch thu được vài giọt dung dịch AgNO3 $1\\%$. Nhận xét đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Khi thí nghiệm kết thúc dung dịch chuyển sang màu tím",
+            "B. Dung dịch thu được khi kết thúc bước 2 có màu xanh lam",
+            "C. Không thấy xuất hiện hiện tượng gì",
+            "D. Sau khi bước 3 kết thúc thấy có xuất hiện kết tủa trắng"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com PTHH: $(-CH_2-CHCl)_n + nNaOH \\, t_o \\rightarrow (-CH_2-CHOH)_n + nNaCl$ $NaCl + AgNO_3 \\rightarrow AgCl \\downarrow + NaNO_3$ Vậy nhận xét đúng là: Sau khi bước 3 kết thúc thấy có xuất hiện kết tủa trắng $AgCl$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R028",
+        "question": "Khí cacbonic chiếm $0,03\\%$ thể tích không khí. Muốn tạo ra $500\\, \\text{g}$ tinh bột thì cần bao nhiêu $l\\, \\text{không khí (dktc)}$ để cung cấp đủ $CO_2$ cho phản ứng quang hợp ?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1 482 600 lit",
+            "B. 1 382 600 lit",
+            "C. 1 402 666 lit",
+            "D. 1 382 716 lit"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tinh bột có công thức : $(C_6H_{10}O_5)_n$ => $n_{tinh\\ bột} = 500,162\\ n\\ mol$ - Phản ứng quang hợp : $6nCO_2 + 5nH_2O \\rightarrow (C_6H_{10}O_5)_n$ Mol $6n$. $500,162\\ n \\, \\text{=>} V_{CO_2} = 22,4 \\, \\text{lít} \\Rightarrow V_{KK} = \\frac{V_{CO_2}}{0,03\\%} = 1\\,382\\,716 \\, \\text{lít}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R029",
+        "question": "Cho các chất: etilen, axit metacrylic, stiren, ancol benzylic, anilin, toluen, phenol ($\\text{C}_6\\text{H}_5\\text{OH}$), $\\text{CO}_2$, $\\text{SO}_2$, saccarozo, fructozo. Số chất có khả năng làm mất màu nước brom là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 7",
+            "B. 5",
+            "C. 6",
+            "D. 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Các chất có khả năng làm mất màu dd nước $Br_2$ là: etilen ($CH_2=CH_2$); axit metacrylic ($CH_2=CH-COOH$); anilin ($C_6H_5NH_2$); stiren ($C_6H_5CH=CH_2$); phenol ($C_6H_5OH$), $SO_2$ → có 6 chất Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R030",
+        "question": "Cho các chất sau đây: glyxylalanin (Gly-Ala), anilin, metyl amoniclorua, natri axetat, phenol. Số chất tác dụng được với $ \\text{NaOH} $ trong dung dịch là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 3",
+            "B. 1",
+            "C. 4",
+            "D. 2"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Có 3 chất tác dụng được với NaOH trong dung dịch là: glyxylalanin (Gly-Ala), metyl amoniclorua, phenol. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R031",
+        "question": "Cho các phát biểu sau: (a) Dầu chuối (chất tạo hương liệu mùi chuối chín) có chứa isoamyl axetat (b) Thủy tinh hữu cơ được ứng dụng làm cửa kính phương tiện giao thông (c) Glucozo có vị ngọt thấy đầu lưỡi mát lạnh vì xảy ra phản ứng lên men rượu (d) Nhỏ dung dịch $I_2$ vào lát cắt của củ khoai lang thì xuất hiện màu xanh tím (e) Nicotin là $1$ amin độc, có trong thuốc lá (f) Sau khi lưu hóa, cao su chịu nhiệt và đàn hồi tốt hơn Số phát biểu đúng là:.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 3",
+            "B. 5",
+            "C. 4",
+            "D. 6"
+        ],
+        "answer": "B",
+        "explain": "Dầu chuối (chất tạo hương liệu mùi chuối chín) có chứa isoamyl axetat => Đúng  \nThủy tinh hữu cơ được ứng dụng làm cửa kính phương tiện giao thông => Đúng  \nGlucozo có vị ngọt thấy đầu lưỡi mát lạnh vì xảy ra phản ứng lên men rượu => Sai. Vì quá trình hòa tan Glucozo trong nước là quá trình thu nhiệt $=>$ tạo cảm giác mát lạnh nơi tiếp xúc với Glucozo ở đầu lưỡi.  \nNhỏ dung dịch $I_2$ vào lát cắt của củ khoai lang thì xuất hiện màu xanh tím $=>$ Đúng. (vì khoai lang có chứa tinh bột nên tạo thành hợp chất xanh tím với $I_2$)  \nNicotin là 1 amin độc, có trong thuốc lá => Đúng  \nSau khi lưu hóa, cao su chịu nhiệt vào đàn hồi tốt hơn => Đúng $=>$ Có 5 ý đúng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R032",
+        "question": "Cho các phát biểu sau: (a) Dung dịch glucozo hòa tan được $ \\text{Cu(OH)}_2 $ ở nhiệt độ thường. (b) Axit fomic có khả năng làm mất màu nước brom. (c) Đốt cháy hoàn toàn este no mạch hở luôn thu được số mol $ \\text{CO}_2 $ bằng số mol $ \\text{H}_2\\text{O} $. (d) Dung dịch axit glutamic có $ \\text{pH} > 7 $. (e) Gly-Ala là một đipeptit có phản ứng màu biure. (f) Các loại tơ nilon-6, tơ lapsan, tơ nitron đều được tổng hợp bằng phương pháp trùng ngưng. Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 1",
+            "B. 3",
+            "C. 2",
+            "D. 4"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com (a) đúng (b) đúng do axit fomic có CTCT là $HCOOH$ chứa nhóm $-CHO$ (c) sai vì đốt cháy este no, đơn chức, mạch hở thu được $nCO_2 = nH_2O$ (d) sai vì dung dịch axit glutamic có môi trường axit làm cho quỳ tím chuyển đỏ (e) sai vì đipeptit không có phản ứng màu biure (f) sai vì tơ nitron được tổng hợp bằng phương pháp trùng hợp Vậy có 2 phát biểu đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R033",
+        "question": "Chất nào dưới đây tạo kết tủa trắng với dung dịch brom?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. metyl amin",
+            "B. analin",
+            "C. $vinyl\\ axetat$",
+            "D. $anilin$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Chất tạo kết tủa trắng với $ \\text{dd} \\, \\text{Br}_2 $ là anilin Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R034",
+        "question": "Cho các chất sau: propan, etilen, propin, buta-1,3-đien, stiren, glixerol, phenol, vinyl axetat, anilin. Số chất tác dụng được với nước $Br_2$ ở điều kiện thường là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 8",
+            "B. 7",
+            "C. 9",
+            "D. 6"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Chất tác dụng được với nước $Br_2$ ở điều kiện thường là : etilen, propin, buta-1,3-đien, stiren, phenol, vinyl axetat, anilin Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R035",
+        "question": "(a) Glucozo được dùng để tráng gương, tráng ruột phích, làm thuốc tăng lực.  \n(b) Thành phần chính của cồn $750\\, \\text{ml}$ mà trong y tế thường dùng để sát trùng là metanol.  \n(c) Để ủ hoa quả nhanh chín và an toàn hơn, có thể thay thế $C_2H_2$ bằng $C_2H_4$.  \n(d) Hàm lượng tinh bột trong ngô cao hơn trong gạo.  \n(e) Axit glutamic là thuốc ngăn ngừa và chữa trị các triệu chứng suy nhược thần kinh (mất ngủ, nhức đầu, ù tai, chóng mặt,...) Số phát biểu sai là.  ",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $4$",
+            "D. $3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com (a), (c), (e) đúng (b) sai vì Thành phần chính của cồn 750 mà trong y tế thường dùng để sát trùng là $ \\text{etanol} $ (d) hàm lượng tinh bột trong ngô thấp hơn trong gạo => có 2 phát biểu sai Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R036",
+        "question": "Phát biểu nào sau đây là sai?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Thành phần chính của sợi bông, gỗ, nứa là $C_6H_{10}O_5$ ",
+            "B. Khi cho giấm ăn (hoặc chanh) vào sữa bò hoặc sữa đậu nành thì có xuất hiện kết tủa ",
+            "C. Xenlulozơ và tinh bột có phân tử khối bằng nhau ",
+            "D. Tinh bột là lương thực của con người"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D đúng C sai vì tinh bột và xenlulozo có cùng công thức tổng quát là $(C_6H_{10}O_5)_n$ nhưng hệ số $n$ khác nhau, do vậy phân tử khối của chúng khác nhau chứ không bằng nhau. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R037",
+        "question": "Cho các phản ứng sau (a) Tất cả các peptit đều có phản ứng màu biure (b) Cho $ \\text{HNO}_3 $ vào dung dịch protein tạo thành dung dịch màu vàng (c) Muối phenylamoni clorua không tan trong nước (d) Ở điều kiện thường, metyl amin và đimetylamin là những chất khí có mùi khai Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2$",
+            "B. $3$",
+            "C. $4$",
+            "D. $1$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com (a) Sai vì $dipeptit$ không có phản ứng màu $biure$. (b) Sai vì phản ứng tạo ra kết tủa vàng. (c) Sai vì $muối$ này tan. (d) Đúng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R038",
+        "question": "Cho các phát biểu sau: (a) Sau khi mổ cá, có thể dùng chanh để giảm mùi tanh. (b) Dầu thực vật và dầu nhớt bôi trơn máy đều có thành phần chính là chất béo. (c) Cao su thiên nhiên là polime của isopren. (d) Khi làm trứng muối (ngâm trứng trong dung dịch $ \\text{NaCl} $ bão hòa) xảy ra hiện tượng đông tụ protein. (e) Thành phần chính của tóc là protein. (g) Để giảm đau nhức khi bị kiến đốt, có thể bôi giấm vào vết đốt. Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $4$",
+            "C. $5$",
+            "D. $2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com (a) đúng vì các amin sẽ phản ứng với chanh tạo muối và bị rửa trôi (b) sai vì dầu nhớt bôi trơn có thành phần chính là các hidrocacbon (c) đúng (d) đúng vì protein bị đông tụ khi đun nóng hoặc khi tiếp xúc với một số muối. (e) đúng (g) sai vì nọc kiến có chứa $ \\text{HCOOH} $ nên bôi giấm $ \\text{CH}_3\\text{COOH} $ không có tác dụng, ta nên bôi nước vôi trong $ \\text{Ca(OH)}_2 $ để giảm sưng tấy. Vậy có tất cả 4 phát biểu đúng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R039",
+        "question": "Cho các phát biểu sau: (a) Thủy phân hoàn toàn vinyl axetat bằng NaOH thu được natri axetat và anđehit fomic. (b) Polietilen được điều chế bằng phản ứng trùng ngưng. (c) Ở điều kiện thường anilin là chất khí (d) Tinh bột thuộc loại polisaccarit. (e) Ở điều kiện thích hợp triolein tham gia phản ứng cộng hợp $H_2$. Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $4$",
+            "B. $2$",
+            "C. $5$",
+            "D. $3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com (a) sai vì phản ứng tạo ra $ \\text{CH}_3\\text{CHO} $ : andehit axetic (b) sai $ \\text{PE} $ được điều chế từ phản ứng trùng hợp (c) sai, anilin là chất rắn (d) đúng (e) đúng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R040",
+        "question": "Sau khi mổ cá, có thể dùng giấm ăn để giảm mùi tanh. Dầu thực vật và dầu nhớt bôi trơn máy đều có thành phần chính là chất béo. Cao su sau khi được lưu hóa có tính đàn hồi và chịu nhiệt tốt hơn. Khi làm trứng muối (ngâm trứng trong dung dịch $NaCl$ bão hòa) xảy ra hiện tượng đông tụ protein. Thành phần chính của bông nõn là xenlulozơ. Để giảm đau nhức khi bị kiến đốt có thể bô vôi tôi vào vết đốt. Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2$",
+            "B. $5$",
+            "C. $4$",
+            "D. $3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com (a) đúng vì cá có mùi tanh do các amin $ \\rightarrow $ dùng giấm để tạo tác dụng với amin $ \\rightarrow $ mất mùi tanh (b) sai vì dầu nhớt bôi trơn là hiđrocacbon (c) đúng (d) đúng (e) đúng (g) đúng vì thành phần của nọc độc kiến là $ \\text{HCOOH} $ $ \\rightarrow $ dùng vôi tôi trung hòa giảm bớt tính độc $ \\rightarrow $ có 5 câu đúng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R041",
+        "question": "Có các phát biểu sau : a. Glucozo và axetilen đều là hợp chất không no nên đều tác dụng với nước brom b. Có thể phân biệt glucozo và fructozo bằng phản ứng tráng bạc c. Kim loại Bari và Kali có cùng kiểu mạng tinh thể lập phương tâm khối d. Khi đun nóng tristearin với nước vôi trong thấy có kết tủa xuất hiện e. Amilozo là polime thiên nhiên mạch phân nhánh f. Oxi hóa hoàn glucozo bằng $H_2$ $(Ni, to)$ thu được sorbitol g. Tơ visco, tơ nilon -6,6, tơ nitron, tơ axetat là tơ nhân tạo Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $5$",
+            "B. $4$",
+            "C. $2$",
+            "D. $3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com  \na. Sai vì glucozo tác dụng với brom nhưng là hợp chất no  \nb. Sai vì cả 2 chất cho cùng hiện tượng tạo kết tủa trắng $ \\text{Ag} $  \nc. Đúng  \nd. Đúng  \ne. Sai vì đây là mạch không phân nhánh  \nf. Glucozo không phải bị oxi hóa mà là bị khử  \ng. Sai vì tơ tơ nilon -6,6, tơ nitron là tơ tổng hợp  \nĐáp án cần chọn là: C.  "
+    },
+    {
+        "id": "H040R042",
+        "question": "Cho các phát biểu sau: (a) Sobitol và glucozơ là hợp chất hữu cơ đa chức. (b) Oxi hóa không hoàn toàn etilen là phương pháp hiện đại để sản xuất anđehit axetic. (c) Ancol isopropylic có cùng bậc với đimetylamin. (d) Để làm sạch lọ đựng anilin thì rửa bằng dung dịch $HCl$ sau đó rửa lại bằng nước, (e) Khả năng thế hiđro trong vòng benzen của phenol cao hơn benzen. (f) Các polime sử dụng để làm chất dẻo đều được tổng hợp từ phản ứng trùng hợp. Số nhận định đúng là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $7$",
+            "C. $4$",
+            "D. $5$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com (a) sai, glucozo là hợp chất hữu cơ tạp chức (chứa cả nhóm $-\\text{OH}$ và $-\\text{CHO}$ trong phân tử) (b) đúng, $2\\text{CH}_2=\\text{CH}_2 + \\text{O}_2 \\xrightarrow{t\\, 0} \\text{x} \\xrightarrow{} 2\\text{CH}_3\\text{CH}=\\text{O}$ (c) đúng, $\\text{CH}_3\\text{CH}(\\text{CH}_3)-\\text{OH}$ là ancol bậc 2; $(\\text{CH}_3)_2\\text{NH}$ là amin bậc 2 (d) đúng, vì $\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{HCl} \\rightarrow \\text{C}_6\\text{H}_5\\text{NH}_3\\text{Cl} \\,(\\text{muối})$ (e) đúng, vì do phenol có sự ảnh hưởng của nhóm $-\\text{OH}$ (f) sai, ví dụ poli $(\\text{phenol} - \\text{fomanđehit})$ là chất dẻo được điều chế bằng phản ứng trùng ngưng) => có 4 phát biểu đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R043",
+        "question": "Cho $X, Y, Z, T$ là bốn chất khác nhau trong các chất sau $C_6H_5NH_2, C_6H_5OH, NH_3, C_2H_5NH_2$ và có các tính chất ghi trong bảng sau: \n\nChất $X$ $Y$ $Z$ $T$ \nNhiệt độ sôi $182,0\\, \\text{°C}$ $-33,4\\, \\text{°C}$ $16,6\\, \\text{°C}$ $184,0\\, \\text{°C}$ \n$pH$ ( dung dịch nồng độ $0,1\\, \\text{M}$) $8,8$ $11,1$ $11,9$ $5,4$ \n\nNhận định nào sau đây là đúng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Y là C_6H_5OH",
+            "B. T là C_6H_5NH_2",
+            "C. Z là C_2H_5NH_2",
+            "D. X là NH_3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $X$ có nhiệt độ sôi cao và $pH > 7$ nên $X$ là $C_6H_5NH_2$ $T$ có nhiệt độ sôi cao và $pH < 7$ nên $T$ là $C_6H_5OH$ $Z$ có nhiệt độ sôi cao hơn $Y$ nên $Z$ là $C_2H_5NH_2$ và $Y$ là $NH_3$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R044",
+        "question": "Cho các chất sau: metyl acrylat, vinyl axetat, etyl fomat, tripanmitin, phenyl benzoat. Số chất bị thủy phân trong môi trường kiềm, đun nóng không thu được ancol là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $4$",
+            "C. $2$",
+            "D. $5$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com metyl acrylat: $CH_2=CH-COOCH_3$ thủy phân cho ancol $CH_3OH$ vinyl axetat: $CH_3COOCH=CH_2$ thủy phân cho andehit $CH_3CHO$ etyl fomat: $HCOOC_2H_5$ thủy phân cho ancol $C_2H_5OH$ tripanmitin: $(C_{15}H_{31}COO)_3C_3H_5$ thủy phân cho ancol $C_3H_5(OH)_3$ phenyl benzoat: $C_6H_5COOC_6H_5$ thủy phân cho muối $C_6H_5CH_2ONa$ ; $C_6H_5ONa$ và $H_2O$ → có 2 chất thủy phân trong môi trường kiềm không thu được ancol Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R045",
+        "question": "Chất A có công thức phân tử $C_6H_8O_4$. Cho sơ đồ phản ứng sau: $(A) + 2NaOH \\rightarrow (B) + (C) + H_2O$ $(B) \\, H_2SO_4, \\, t \\, 0 \\, \\xrightarrow{} \\, (D) + H_2O$ $(C) + HCl \\rightarrow (E) + NaCl$ Phát biểu nào sau đây phù hợp với sơ đồ trên:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Chất E là HOOC-CH≡CH-COOH",
+            "B. Chất B là CH₃OH",
+            "C. Chất D là C₃H₆",
+            "D. Chất A là este 2 chức"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Este là C$_6$H$_8$O$_4$ : Số $$(\\pi + \\text{vòng}) = 2,6 + 2 - \\frac{8}{2} = 3$$ => Este 2 chức có 1 liên kết pi trong gốc hidrocacbon - Dựa vào phản ứng : $$(A) + 2\\text{NaOH} \\rightarrow (B) + (C) + H_2O$$ => A có 1 nhóm $\\text{COOH}$ và 1 nhóm $\\text{COOR}$ - Mặt khác có phản ứng : $$(B) \\, \\text{H}_2\\text{SO}_4, \\, t_{0} \\xrightarrow{} (D) + H_2O$$ => B phải là ancol có từ 2 C trở lên => Công thức của A chỉ có thể là : $\\text{HOOC} - \\text{CH} = \\text{CH} - \\text{COOC}_2\\text{H}_5$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R046",
+        "question": "Tiến hành thí nghiệm của 1 vài vật liệu polime với dung dịch kiềm theo các bước sau đây : - Bước 1 : Lấy 4 ống nghiệm đựng lần lượt các chất PE, PVC , sợi len, xenlulozo theo thứ tự 1,2,3,4 - Bước 2 : Cho vào mỗi ống nghiệm $2\\, \\text{ml}$ dung dịch NaOH $10\\%$ đun sôi, để nguội - Bước 3 : Gạt lấy lớp nước ở mỗi ống nghiệm ta được tương ứng là các ống nghiệm 1’,2’,3’,4’ - Bước 4 : Thêm HNO3 và vài giọt AgNO3 vào ống nghiệm 1’,2’. Thêm vài giọt CuSO4 vào ống 3’,4’. Phát biểu nào sau đây sai :.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Ống 1’ không hiện tượng",
+            "B. Ống 2’ có kết tủa trắng",
+            "C. Ống 3’ có màu tím đặc trưng",
+            "D. Ống 4’ có màu xanh lam"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - PE $(-\\text{CH}_2-\\text{CH}_2-)_n$ không phản ứng với NaOH và AgNO3 - PVC $(-\\text{CH}_2-\\text{CHCl})_n + n\\text{NaOH} \\to (\\text{CH}_2-\\text{CHOH})_n + \\text{NaCl}$ Khi gạt lấy lớp nước thì cũng bao gồm các chất tan trong nước $\\Rightarrow$ không còn $\\text{NaCl} \\Rightarrow$ không có phản ứng với $\\text{AgNO}_3/\\text{HNO}_3 \\Rightarrow$ không thể có kết tủa trắng - Sợi len nếu làm từ hữu cơ (polypeptit) thì sẽ phản ứng với $\\text{Cu(OH)}_2/\\text{OH}^- \\to$ tạo màu tím đặc trưng $\\text{CuSO}_4 + 2\\text{NaOH} \\to \\text{Cu(OH)}_2 + \\text{Na}_2\\text{SO}_4$ - Xenlulozo không phản ứng với NaOH, khi thêm $\\text{CuSO}_4$ vào thì xuất hiện màu xanh của $\\text{CuSO}_4$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "H040R047",
+        "question": "Cho sơ đồ chuyển hóa sau: (1) n-pentan t o → A + B và D + E (2) A + Cl2 a / s −−→ CH3-CHCl-CH3 + F (3) CH3COONa + NaOH → D + G (4) D + Cl2 a / s −−→ L + F (5) CH3-CHCl-CH3 + L + Na → M + NaCl Các chất A, B, D, E và M lần lượt có cấu tạo là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. CH$_3$-CH$_3$, CH$_3$-CH(CH$_3$)-CH$_3$, CH$_4$, CH$_3$-CH$_2$-CH$_2$-CH$_3$, CH$_3$-CH$_2$-CH$_3$",
+            "B. CH$_3$-CH$_2$-CH$_3$, CH$_4$, CH$_3$-CH$_3$, CH$_3$-CH$_2$-CH$_2$-CH$_3$, CH$_3$-CH(CH$_3$)-CH$_3$",
+            "C. CH$_3$-CH$_2$-CH$_3$, CH$_2$=CH$_2$, CH$_4$, CH$_2$=CH-CH$_2$-CH$_3$, CH$_3$-CH(CH$_3$)-CH$_3$",
+            "D. CH$_4$, CH$_3$-CH$_2$-CH$_2$-CH$_3$, CH$_3$-CH$_2$-CH$_3$, CH$_3$-CH$_3$, CH$_3$-CH(CH$_3$)-CH$_3$"
+        ],
+        "answer": "C",
+        "explain": "3) $CH_3COONa + NaOH \\xrightarrow{C_a O, t_o} CH_4 \\,(D) + Na_2CO_3 \\,(G)$ (4) $CH_4 \\,(D) + Cl_2 \\xrightarrow{a/s} CH_3Cl \\,(L) + HCl \\,(F)$ (1) $CH_3-CH_2-CH_2-CH_2-CH_3 \\xrightarrow{\\text{cracking}} CH_4 \\,(D) + CH_2=CH-CH_3 \\,(E)$ $CH_3-CH_2-CH_2-CH_2-CH_3 \\xrightarrow{\\text{cracking}} CH_3-CH_2-CH_3 \\,(A) + CH_2=CH_2 \\,(B)$ (2) $CH_3-CH_2-CH_3 \\,(A) + Cl_2 \\xrightarrow{a/s} CH_3-CHCl-CH_3 + HCl \\,(F)$ (5) $CH_3-CHCl-CH_3 + CH_3Cl \\,(L) + 2Na \\rightarrow CH_3-CH(CH_3)-CH_3 \\,(M) + 2NaCl$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R048",
+        "question": "Hợp chất hữu cơ A có công thức phân tử $C_{9}H_{8}O_{4}$ thỏa mãn các phương trình hóa học sau: (1) $A + 3NaOH \\xrightarrow{t \\, 0} 2X + Y + H_{2}O$ (2) $2X + H_{2}SO_{4} \\xrightarrow{t \\, 0} Na_{2}SO_{4} + 2Z$ (3) $Z + 2AgNO_{3} + 4NH_{3} + H_{2}O \\rightarrow T + 2Ag + 2NH_{4}NO_{3}$ Nhận xét nào sau đây đúng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Phân tử A có chứa 4 liên kết $ \\pi $",
+            "B. Sản phẩm của phản ứng (1) tạo ra một muối duy nhất",
+            "C. Phân tử của Y có 7 nguyên tử cacbon",
+            "D. Phân tử Y có chứa 3 nguyên tử oxi"
+        ],
+        "answer": "C",
+        "explain": "C9H8O4 có độ bất bão hòa $k = \\frac{9,2 + 2 - 8}{2} = 6$ A phản ứng với NaOH theo tỉ lệ $1:3 \\Rightarrow$ A có $3$ trung tâm phản ứng với NaOH CTCT A: HOOC-C6H4-CH2-OOCH X: HCOONa ; Z: HCOOH; T là: HCOONH4 (1) HOOC-C6H4-CH2-OOCH + NaOH \\rightarrow 2HCOONa + NaO-C6H4-CH2-OH + H2O (2) 2HCOONa + H2SO4 \\rightarrow Na2SO4 + 2HCOOH (3) HCOOH + 2AgNO3 + 4NH3 + H2O \\rightarrow HCOONH4 + 2Ag \\downarrow + 2NH4NO3. Sai vì A có chứa $5$ liên kết pi sai vì tạo ra $2$ muối là HCOONa và NaO-C6H4-CH2-OH Đúng Sai vì Y chỉ chứa $2$ nguyên tử Oxi. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R049",
+        "question": "Cho các chất sau: tristearin, tinh bột, etyl axetat, tripeptit (Gly - Ala - Val). Số chất tham gia phản ứng thủy phân trong môi trường kiềm là $4$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $3$",
+            "B. $1$",
+            "C. $2$",
+            "D. $4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các chất tham gia phản ứng thủy phân trong môi trường kiềm là: tristearin, etyl axetat, tripeptit (Gly - Ala - Val) => có 3 chất Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R050",
+        "question": "Loại hợp chất nào sau đây không chứa nitơ trong phân tử?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Amino axit",
+            "B. Muối amoni",
+            "C. Cacbohiđrat",
+            "D. Protein"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cacbohidrat là hợp chất có công thức chung $C_n(H_2O)_m$ => chỉ chứa C, H, O không chứa N trong phân tử. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R051",
+        "question": "X, Y, Z là các hợp chất hữu cơ mạch hở có cùng công thức phân tử $C_4H_6O_4$. X, Y, Z đều tác dụng với $NaOH$ trong dung dịch theo tỉ lệ mol $1:2$ - X tác dụng với $NaHCO_3$, thu được số mol khí gấp đôi số mol X phản ứng. - Y tác dụng với $NaHCO_3$ theo tỉ lệ mol $1:1$ nhưng không có phản ứng tráng gương. - Z có phản ứng tráng gương và không tác dụng với $NaHCO_3$. Công thức cấu tạo của X, Y và Z tương ứng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. HOOC-CH2-CH2-COOH,HOOC-COO-CH2-CH3, HCOO-CH2-COO-CH3",
+            "B. HCOO-CH2-CH2-OOCH, HOOC-COO-CH2-CH3, HOOC-CH2-COO-CH3",
+            "C. HOOC-CH2-CH2-COOH, HOOC-COO-CH2-CH3, HOOC-CH2-COO-CH3",
+            "D. HOOC-CH2-CH2-COOH, CH3OOC-COO-CH3, HOOC-CH2-COO-CH3"
+        ],
+        "answer": "A",
+        "explain": "C4H6O4 có $k = \\frac{4,2 + 2 - 6}{2} = 2$ - X tác dụng với NaHCO3 thu được số mol khí gấp đôi số mol X phản ứng => X là axit 2 chức - Y tác dụng với NaHCO3 theo tỉ lệ mol 1:1 nhưng không có phản ứng tráng gương => Y có chức COOH nhưng không có chức HCOO- - Z có phản ứng tráng gương và không tác dụng với NaHCO3 → Z có HCOO- và không có nhóm -COOH Vậy X, Y, Z lần lượt là: HOOC-CH2-CH2-COOH, HOOC-COO-CH2-CH3, HCOO-CH2-COO-CH3. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R052",
+        "question": "Cho các phát biểu sau: (a) Xenlulozo là polime thiên nhiên và là nguyên liệu để sản xuất các tơ tổng hợp (b) Cho nhúm bông vào dung dịch $H_2SO_4 \\, \\text{70\\%}$, đun nóng thu được dung dịch trong suốt; (c) Trong công nghiệp dược phẩm, saccarozo được dùng để pha chế thuốc; (d) Ở điều kiện thường, glucozo, fructozo và saccarozo đều tan tốt trong nước; (e) Amilozo trong tinh bột chứa liên kết $α - 1,4$- glicozit và $α - 1,6$- glicozit; (f) Glucozo và fructozo đều bị khử bởi khí $H_2$ (xúc tác $Ni$, đun nóng); Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4",
+            "B. 5",
+            "C. 6",
+            "D. 3"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com (a) sai, xenlulozo là nguyên liệu để sản xuất các tơ bán tổng hợp (b) sai, vì dung dịch $H_2SO_4 \\, \\text{70\\%}$ có thể coi là đặc, có thể hút nước trong bông tạo thành chất cacbon có màu đen (c) đúng (d) đúng (e) sai, Amilozo trong tinh bột chỉ chứa liên kết $α - 1,4$-glicozit (f) đúng → có 3 phát biểu đúng Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R053",
+        "question": "Cho các phát biểu sau: (1) Xenlulozo là chất rắn dạng sợi, màu trắng, tan trong nước $Svayde$ (2) Ở điều kiện thường, etyl axetat là chất lỏng, tan vô hạn trong nước. (3) Gly- Val và Gly - Ala-Gly đều có phản ứng màu biure. (4) Ancol etylic có nhiệt độ sôi cao hơn axit fomic. (5) Dung dịch saccarozo hòa tan $Cu(OH)_{2}$ cho dung dịch màu tím. Có bao nhiêu phát biểu đúng?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com (1) đúng (2) sai, etyl axetat ít tan trong nước (3) sai, Gly- Val là đipeptit nên không có phản ứng màu biure (4) sai, $C_{2}H_{5}OH$ có nhiệt độ sôi thấp hơn $HCOOH$ vì $HCOOH$ có liên kết hidro mạnh hơn (5) sai, $dd$ saccarozo hòa tan $Cu(OH)_{2}$ cho dung dịch màu xanh. → có 1 phát biểu đúng Đáp án cần chọn là: A."
+    },
+    {
+        "id": "H040R054",
+        "question": "Đốt cháy hoàn toàn một hỗn hợp X: axit axetic, andehit fomic, glucozo và fructozo cần $3,36\\, \\text{lít}$ $O_2$ (đktc). Hấp thụ sản phẩm cháy vào dung dịch $Ca(OH)_2$ dư. Khối lượng dung dịch $Ca(OH)_2$ thay đổi như thế nào?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Tăng 9,3 gam",
+            "B. Tăng 6,6 gam",
+            "C. Giảm 5,7 gam",
+            "D. Giảm 12,3 gam"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hỗn hợp X gồm: $C_2H_4O_2$; $CH_2O$; $C_6H_{12}O_6$; $C_6H_{12}O_6$ → tất cả các chất này có công thức chung là $(CH_2O)_n$ $nO_2$ $(đktc) = \\frac{3,36}{22,4} = 0,15 \\, \\text{(mol)}$ PTHH: $(CH_2O)_n + nO_2 → nCO_2 + nH_2O$ $0,15 → 0,15$ $0,15 \\, \\text{(mol)} → nCO_2 = nH_2O = 0,15 \\, \\text{(mol)}$ Khi cho sp cháy vào dd $Ca(OH)_2$ dư có phản ứng $CO_2 + Ca(OH)_2 → CaCO_3↓ + H_2O$ $0,15 → 0,15 \\, \\text{(mol)}$ Xét: $\\Delta m = m_{CO_2} + m_{H_2O} - m_{CaCO_3} = 0,15 \\cdot 44 + 0,15 \\cdot 18 - 0,15 \\cdot 100 = -5,7$ Vậy khối lượng dung dịch $Ca(OH)_2$ giảm $5,7 \\, \\text{g}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R055",
+        "question": "Cho các phát biểu sau: (1) Este có nhiệt độ sôi thấp hơn so với axit và ancol có cùng số nguyên tử cacbon. (2) Dầu ăn và mỡ bôi trơn có cùng thành phần nguyên tố. (3) Tên thay thế của amin có công thức $(CH_3)_3N$ là trimetylamin (4) Dung dịch $37 \\,\\text{\\%}$ - $40 \\,\\text{\\%}$ fomanđehit trong nước gọi là fomalin (còn gọi là fomon) được dùng để ngâm xác động vật, thuộc da, tẩy uế, diệt trùng. (5) Các chất: cocain, amphetamin, heroin, moocphin là những chất gây nghiện, hết sức nguy hại cho sức khỏe con người. Có bao nhiêu phát biểu sai?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 3",
+            "B. 1",
+            "C. 4",
+            "D. 2"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com (1) đúng vì este không tạo được liên kết $H$ như ancol và axit (2) sai vì dầu ăn thành phần chính là chất béo còn dầu bôi trơn có thành phần chính là các hidrocacbon (3) sai vì đó là tên gốc chức (không phải tên thay thế) (4) đúng (5) đúng Vậy có 2 phát biểu sai Đáp án cần chọn là: D."
+    },
+    {
+        "id": "H040R056",
+        "question": "Cho các phát biểu sau: (a) mọi este khi xà phòng hóa đều tạo ra muối và ancol (b) Fructozo có nhiều trong mật ong (c) Liên kết của nhóm CO và nhóm NH giữa các aminoaxit là liên kết peptit (d) Amilopectin, tơ tằm, lông cừu là polime thiên nhiên (e) Cao su Buna-S được điều chế bằng phản ứng trùng ngưng (f) Tinh bột và xenlulozo là đồng phân của nhau (g) Protein dạng sợi dễ dàng tan trong nước tạo thành dung dịch keo (h) Amilozo và amylopectin đều có các liên kết $ \\alpha \\text{ – } 1,4 \\text{ – } glicozit $ Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4$",
+            "B. $5$",
+            "C. $3$",
+            "D. $6$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com (a) sai vì có thể tạo ra $ \\text{andehit} $, $ \\text{xeton} $ hoặc $ \\text{muối của phenol} $ (b) đúng (c) sai vì liên kết peptit là liên kết giữa nhóm $ \\text{CO} $ và nhóm $ \\text{NH} $ giữa các $ \\alpha \\text{ aminoaxit} $ (d) đúng (e) sai vì cao su Buna-S được điều chế bằng phản ứng trùng hợp (f) sai vì hệ số $ n $ trong CTPT $ (C_6H_{10}O_5)_n $ của hai chất khác nhau (g) sai vì protein dạng cầu dễ dàng tan trong nước tạo thành dung dịch keo (h) đúng => có 3 phát biểu đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "H040R057",
+        "question": "Cho các phát biểu sau: (a) Oxi hóa glucozơ hay fructozơ thu được sobitol. (b) $H_2NCH_2CONHCH_2CH_2COOH$ là đipeptit. (c) Cao su sau khi được lưu hóa có tính đàn hồi và chịu nhiệt tốt hơn. (d) Muối natri của axit glutamic được sử dụng sản xuất mì chính (bột ngọt). (e) Tơ visco và tơ axetat thuộc loại tơ nhân tạo có nguồn gốc xenlulozơ. (f) Xăng E5 là xăng sinh học được pha $5\\%$ bio-etanol, $95\\%$ còn lại là xăng Ron A92. Số phát biểu đúng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com (a) Sai vì hidro hóa glucozơ hay fructozơ thu được $ \\text{sorbitol} $. (b) Sai vì $ \\text{dipeptit} $ tạo từ 2 $ \\alpha $ - $ \\text{aminoaxit} $. (c) Đúng (d) Sai vì muối mononatri của axit glutamic làm $ \\text{bột ngọt} $. (e) Đúng (f) Đúng Đáp án cần chọn là: C."
+    }
+]

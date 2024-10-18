@@ -1,0 +1,2578 @@
+[
+    {
+        "id": "T0401001",
+        "question": "Số phức $z = a + b i$ có phần thực là: A. a B. b C. i D. z.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $n$",
+            "B. $x^2 + y^2 = z^2$",
+            "C. $f(x) = ax^2 + bx + c$",
+            "D. 5,0"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phần thực của số phức $z$ là $a$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401002",
+        "question": "Số phức $z = \\sqrt{2} i - 1$ có phần thực là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $- 1$",
+            "B. $2$",
+            "C. $1$",
+            "D. $\\sqrt{2}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $z = \\sqrt{2} i - 1 = -1 + \\sqrt{2} i$ có phần thực là $-1$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401003",
+        "question": "Hai số phức $z = a + b i$, $z' = a + b' i$ bằng nhau nếu: a = b' a = b b = b' a = - b.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a = b \\prime$",
+            "B. $a = b$",
+            "C. $b = b \\prime$",
+            "D. $a = - b$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hai số phức $z = a + b i$, $z' = a + b' i$ bằng nhau nếu $b = b'$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401004",
+        "question": "Cho hai số phức $z = (2x + 3) + (3y - 1)i$ và $z' = 3x + (y + 1)i$. Khi $z = z'$ , chọn khẳng định đúng trong các khẳng định sau:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $x = -\\frac{5}{3}; y = 0$",
+            "B. $x = -\\frac{5}{3}; y = \\frac{4}{3}$",
+            "C. $x = 3; y = 1$",
+            "D. $x = 1; y = 3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z = z ′ \\Leftrightarrow ( 2 x + 3 ) + ( 3 y − 1 ) i = 3 x + ( y + 1 ) i \\Leftrightarrow \\begin{cases} 2 x + 3 = 3 x \\\\ 3 y − 1 = y + 1 \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = 1 \\end{cases}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401005",
+        "question": "Biết rằng có duy nhất một cặp số thực $ ( x ; y ) $ thỏa mãn $ ( x + y ) + ( x − y ) i = 5 + 3 i $. Tính $ S = x + y $.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $S = 5$",
+            "B. $S = 3$",
+            "C. $S = 4$",
+            "D. $S = 6$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $ ( x + y ) + ( x − y ) i = 5 + 3 i $ ⇔ $ ( x + y − 5 ) + ( x − y − 3 ) i = 0 $ ⇔ $\\begin{cases} x + y − 5 = 0 \\\\ x − y − 3 = 0 \\end{cases} \\Leftrightarrow \\begin{cases} x = 4 \\\\ y = 1 \\end{cases} \\Rightarrow S = x + y = 4 + 1 = 5$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401006",
+        "question": "Số phức liên hợp của số phức $z = a - b i$ là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a - b i$",
+            "B. $a + b i$",
+            "C. $b - a i$",
+            "D. $b + a i$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức $z = a - b i$ là $\\overline{z} = a + b i$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401007",
+        "question": "Cho số phức $z = 3 + 2i$. Tìm phần thực và phần ảo của số phức $\\overline{z}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Phần thực bằng $-3$ và phần ảo bằng $-2 i$",
+            "B. Phần thực bằng $3$ và phần ảo bằng $-2$",
+            "C. Phần thực bằng $3$ và phần ảo bằng $2 i$",
+            "D. Phần thực bằng $3$ và phần ảo bằng $2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Từ $z = 3 + 2 i$, suy ra $\\overline{z} = 3 - 2 i$. Vậy phần thực bằng 3 và phần ảo bằng $- 2$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401008",
+        "question": "Số phức liên hợp của số phức $z = 3i + 2$ là: $ \\overline{z} = 2 - 3i $.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ \\overline{z} = 3i - 2 $",
+            "B. $ \\overline{z} = -3i - 2 $",
+            "C. $ \\overline{z} = 2 + 3i $",
+            "D. $ \\overline{z} = 2 - 3i $"
+        ],
+        "answer": "D",
+        "explain": "Số phức liên hợp của số phức $z = 2 + 3i$ là $\\overline{z} = 2 - 3i$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0401009",
+        "question": "Chọn mệnh đề đúng: $ \\overline{z} = z $ $ \\lVert \\overline{z} \\rVert = |z| $ $ |z| + \\lVert \\overline{z} \\rVert = 0 $ $ \\lVert \\overline{z} \\cdot z \\rVert = 0 $",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ \\overline{z} = z $",
+            "B. $ \\left\\| \\overline{z} \\right\\| = | z | $",
+            "C. $ | z | + \\left\\| \\overline{z} \\right\\| = 0 $",
+            "D. $ \\left\\| \\overline{z} \\cdot z \\right\\| = 0 $"
+        ],
+        "answer": "B",
+        "explain": "Ta có $| z | = \\left| \\overline{z} \\right|$ nên B đúng. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401010",
+        "question": "Cho số phức $z$. Mệnh đề nào sau đây là đúng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $∣ ∣ z^2 ∣ ∣ = 2 | z |$",
+            "B. $∣ ∣ z^2 ∣ ∣ = | z |^2$",
+            "C. $∣ ∣ z^2 ∣ ∣ = 2 | z |^2$",
+            "D. $∣ ∣ z^2 ∣ ∣ = √{| z |^2}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = a + b i \\, ( a ; b \\in \\mathbb{R} ) \\Rightarrow z^2 = a^2 - b^2 + 2ab i \\Rightarrow \\| z^2 \\| = \\sqrt{(a^2 - b^2)^2 + 4a^2 b^2} = \\sqrt{(a^2 + b^2)^2} = a^2 + b^2$ Lại có $| z | = \\sqrt{a^2 + b^2} \\Rightarrow | z |^2 = a^2 + b^2$. Do đó $\\| z^2 \\| = | z |^2$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401011",
+        "question": "Gọi $M$, $N$ lần lượt là các điểm biểu diễn số phức $z = a + b i$ và $z' = a' + b' i$. Chọn câu đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $M(a; a')$",
+            "B. $N(b; b')$",
+            "C. $M(a; b)$",
+            "D. $N(b'; a')$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm M biểu diễn số phức $z = a + b i$ nên $M (a; b)$ Điểm N biểu diễn số phức $z' = a' + b' i$ nên $N (a'; b')$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401012",
+        "question": "Điểm M $(3; -1)$ là điểm biểu diễn của số phức nào sau đây?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = 1 - 3i$",
+            "B. $z = -3 + i$",
+            "C. $z = 3 - i$",
+            "D. $z = -1 + 3i$"
+        ],
+        "answer": "C",
+        "explain": "Điểm M $(3; -1)$ là điểm biểu diễn số phức $z = 3 - i$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401013",
+        "question": "Điểm biểu diễn số phức $z = 2 - 3 i$ có tọa độ là: (2 ; -3)",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $(2 ; 3)$",
+            "B. $(- 2 ; - 3)$",
+            "C. $(2 ; - 3)$",
+            "D. $(- 2 ; 3)$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi A là điểm biểu diễn số phức, suy ra $x_A = 2$, $y_A = -3$. Vậy $A(2; -3)$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401014",
+        "question": "Cho hai số phức $z = a + b i$, $z' = a' + b' i$. Chọn công thức đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z + z ′ = ( a + b ) + ( a ′ + b ′ ) i$",
+            "B. $z − z ′ = ( a + a ′ ) − ( b + b ′ ) i$",
+            "C. $z \\cdot z ′ = ( a a ′ − b b ′ ) + ( a b ′ + a ′ b ) i$",
+            "D. $z \\cdot z ′ = ( a a ′ + b b ′ ) − ( a b ′ + a ′ b ) i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z + z ′ = ( a + b i ) + ( a ′ + b ′ i ) = ( a + a ′ ) + ( b + b ′ ) i$ $z − z ′ = ( a + b i ) − ( a ′ + b ′ i ) = ( a − a ′ ) + ( b − b ′ ) i$ $z . z ′ = ( a + b i ) ( a ′ + b ′ i ) = ( a a ′ − b b ′ ) + ( a b ′ + a ′ b ) i$ Vậy $C$ đúng. Đáp án cần chọn là: $C$."
+    },
+    {
+        "id": "T0401015",
+        "question": "Cho hai số phức $z_1 = 1 + 2i$ và $z_2 = 2 - 3i$. Xác định phần ảo $a$ của số phức $z = 3z_1 - 2z_2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $a = 11$",
+            "B. $a = 12$",
+            "C. $a = -1$",
+            "D. $a = -12$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z = 3 z_1 - 2 z_2 = 3 (1 + 2 i) - 2 (2 - 3 i) = (3 + 6 i) + (-4 + 6 i) = (3 - 4) + (6 + 6) i = - 1 + 12 i$. Vậy $z = 3 z_1 - 2 z_2$ có phần ảo bằng $a = 12$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401016",
+        "question": "Tìm số phức $w = z_1 - 2 z_2$, biết rằng $z_1 = 1 + 2i$ và $z_2 = 2 - 3i$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $w = -3 - 4i$",
+            "B. $w = -3 + 8i$",
+            "C. $w = 3 - i$",
+            "D. $w = 5 + 8i$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $w = z_1 - 2 z_2 = 1 + 2i - 2(2 - 3i) = (1 + 2i) + (-4 + 6i) = (1 - 4) + (2 + 6)i = -3 + 8i.$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0401017",
+        "question": "Cho số phức $z = a + b i$ và $\\overline{z}$ là số phức liên hợp của $z$. Chọn kết luận đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z + \\overline{z} = 2a$",
+            "B. $z \\cdot \\overline{z} = 1$",
+            "C. $z - \\overline{z} = 2b$",
+            "D. $z \\cdot \\overline{z} = z^2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = a + b i$ ⇒ $\\bar{z} = a - b i$ ⇒ $z + \\bar{z} = 2 a$; $z - \\bar{z} = 2 b i$; $z \\cdot \\bar{z} = a^2 + b^2$ Do đó A đúng. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401018",
+        "question": "Kí hiệu $a$, $b$ lần lượt là phần thực và phần ảo của số phức $3 - 2 \\sqrt{2} i$. Tìm $a$, $b$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $a = 3 , b = 2$",
+            "B. $a = 3 , b = 2 \\sqrt{2}$",
+            "C. $a = 3 , b = \\sqrt{2}$",
+            "D. $a = 3 , b = - 2 \\sqrt{2}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $3 - 2 \\sqrt{2} i$ có phần thực bằng $3$ phần ảo bằng $- 2 \\sqrt{2}$ hay $\\{ a = 3, b = - 2 \\sqrt{2} \\}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0401019",
+        "question": "Tính tổng $T$ của phần thực và phần ảo của số phức $z = \\left( \\sqrt{2} + 3i \\right)^2$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $T = 11$",
+            "B. $T = 11 + 6 \\sqrt{2}$",
+            "C. $T = - 7 + 6 \\sqrt{2}$",
+            "D. $T = - 7$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z = ( \\sqrt{2} + 3 i )^2 = ( \\sqrt{2} )^2 + 2 \\cdot \\sqrt{2} \\cdot 3 i + ( 3 i )^2 = 2 + 6 \\sqrt{2} i - 9 = - 7 + 6 \\sqrt{2} i$. Suy ra $T = - 7 + 6 \\sqrt{2}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401020",
+        "question": "Đề thi THPT QG - 2021 - mã 102 Phần thực của số phức $z = 6 - 2i$ bằng $6$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $-2$",
+            "B. $2$",
+            "C. $6$",
+            "D. $-6$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phần thực của số phức $z = 6 - 2i$ bằng $6$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401021",
+        "question": "Tìm số phức có phần thực bằng $12$ và mô đun bằng $13$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $5 \\pm 12i$",
+            "B. $12 + 5i$",
+            "C. $12 \\pm 5i$",
+            "D. $12 \\pm i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| z |^2 = a^2 + b^2 \\Leftrightarrow b^2 = | z |^2 - a^2 \\Leftrightarrow b = \\pm \\sqrt{| z |^2 - a^2}$. Vậy phần ảo của số phức đó là $b = \\pm \\sqrt{13^2 - 12^2} = \\pm 5$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401022",
+        "question": "Tính môđun của số phức $z$, biết $i z = 3 + 4 i$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $| z | = 5$",
+            "B. $| z | = 3$",
+            "C. $| z | = 4$",
+            "D. $| z | = 5 \\sqrt{2}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Lấy mô đun hai vế, ta được $| i z | = | 3 + 4 i | \\Leftrightarrow | i | \\cdot | z | = 5 \\Leftrightarrow 1. | z | = 5 \\Leftrightarrow | z | = 5. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401023",
+        "question": "Cho số phức $z = 3 - 2i$. Tìm phần thực và phần ảo của số phức $\\overline{z}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Phần thực bằng $- 3$ và Phần ảo bằng $- 2 i$",
+            "B. Phần thực bằng $- 3$ và Phần ảo bằng $- 2$",
+            "C. Phần thực bằng $3$ và Phần ảo bằng $2 i$",
+            "D. Phần thực bằng $3$ và Phần ảo bằng $2$"
+        ],
+        "answer": "D",
+        "explain": "Số phức liên hợp của $z$ là $3 + 2i$, phần thực $3$, phần ảo $2$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0401024",
+        "question": "Số phức liên hợp của $z = 5 + 4 i$ là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $\\overline{z} = -5 - 4i$",
+            "B. $\\overline{z} = 4 - 5i$",
+            "C. $\\overline{z} = 5 - 4i$",
+            "D. $\\overline{z} = 4 + 5i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức $z = 5 + 4 i$ là: $\\overline{z} = 5 - 4 i$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401025",
+        "question": "Tìm phần thực và phần ảo của số phức $z = 4 - 3i + (1 - i)^3$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Phần thực bằng 2 và phần ảo bằng $-5i$ ",
+            "B. Phần thực bằng 2 và phần ảo bằng $-7i$ ",
+            "C. Phần thực bằng 2 và phần ảo bằng $-5$ ",
+            "D. Phần thực bằng $-2$ và phần ảo bằng $-5$"
+        ],
+        "answer": "C",
+        "explain": "Ta có $z = 4 - 3i + (1 - 3i + 3i^2 - i^3) = 4 - 3i + (1 - 3i - 3 + i) = 2 - 5i$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401026",
+        "question": "Cho hai số phức $z_1 = 1 + i$ và $z_2 = 2 - 3i$. Tính môđun của số phức $z_1 + z_2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $| z_1 + z_2 | = \\sqrt{13}$",
+            "B. $| z_1 + z_2 | = \\sqrt{5}$",
+            "C. $| z_1 + z_2 | = 1$",
+            "D. $| z_1 + z_2 | = 5$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $z_1 + z_2 = 3 - 2i \\Rightarrow | z_1 + z_2 | = \\sqrt{3^2 + (-2)^2} = \\sqrt{13}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401027",
+        "question": "Cho số phức $z = 1 + \\sqrt{3} i$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1 z = \\frac{1}{2} - \\frac{\\sqrt{3}}{2} i$",
+            "B. $1 z = \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i$",
+            "C. $1 z = \\frac{1}{4} + \\frac{\\sqrt{3}}{4} i$",
+            "D. $1 z = \\frac{1}{4} - \\frac{\\sqrt{3}}{4} i$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = 1 + \\sqrt{3} i \\Rightarrow \\frac{1}{z} = \\frac{1}{1 + \\sqrt{3} i} = \\frac{1 - \\sqrt{3} i}{(1 - \\sqrt{3} i)(1 + \\sqrt{3} i)} = \\frac{1 - \\sqrt{3} i}{1^2 - (\\sqrt{3} i)^2} = \\frac{1 - \\sqrt{3} i}{4} = \\frac{1}{4} - \\frac{\\sqrt{3}}{4} i$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0401028",
+        "question": "Tìm số phức liên hợp $ \\overline{z} $ của số phức $ z = 2 + i \\sqrt{3} $.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $\\overline{z} = \\frac{1}{2} + i \\frac{\\sqrt{3}}{2}$",
+            "B. $\\overline{z} = 1 + i \\sqrt{3}$",
+            "C. $\\overline{z} = 1 - i \\sqrt{3}$",
+            "D. $\\overline{z} = \\frac{1}{2} - i \\frac{\\sqrt{3}}{2}$"
+        ],
+        "answer": "A",
+        "explain": "Ta có $z = 2 \\cdot \\frac{1 + i \\sqrt{3}}{1 - i \\sqrt{3}} \\cdot (1 + i \\sqrt{3}) \\cdot (1 - i \\sqrt{3}) = \\frac{2 - 2i \\sqrt{3}}{4} = \\frac{1}{2} - i \\frac{\\sqrt{3}}{2}$. Suy ra $\\bar{z} = \\frac{1}{2} + i \\frac{\\sqrt{3}}{2}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0401029",
+        "question": "Cho số phức $z = 7 - 11i \\cdot 2 - i$. Tìm phần thực và phần ảo của $\\overline{z}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Phần thực bằng $5$ và phần ảo bằng $−3$",
+            "B. Phần thực bằng $−5$ và phần ảo bằng $3$",
+            "C. Phần thực bằng $5$ và phần ảo bằng $3$",
+            "D. Phần thực bằng $5$ và phần ảo bằng $3 i$"
+        ],
+        "answer": "C",
+        "explain": "z = 7 - 11 i  \n2 - i = (7 - 11 i)(2 + i)  \n2^2 + 1^2 = 14 + 11 + 7 i - 22 i  \n5 = 25 - 15 i  \n5 = 5 - 3 i  \n⇒ $\\overline{z} = 5 + 3 i$  \nVậy phần thực và phần ảo của $\\overline{z}$ là 5 và 3. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0401030",
+        "question": "Cho số phức $z = ( 2i - 1 )^2 - ( 3 + i )^2$. Tổng phần thực và phần ảo của $z$ là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1$",
+            "B. $-1$",
+            "C. $-21$",
+            "D. $21$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ z = ( 2 i - 1 )^2 - ( 3 + i )^2 = 4 i^2 - 4 i + 1 - ( 9 + 6 i + i^2 ) = - 4 - 4 i + 1 - 9 - 6 i - ( - 1 ) = - 11 - 10 i $ ⇒ $ z = - 11 - 10 i $ nên phần thực của $ z $ bằng $ - 11 $ và phần ảo bằng $ - 10 $. Tổng phần thực và phần ảo là $ ( - 11 ) + ( - 10 ) = - 21 $. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402001",
+        "question": "Số phức $w$ là căn bậc hai của số phức $z$ nếu: $z = w^{2}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z^2 = w$",
+            "B. $w^2 = z$",
+            "C. $\\sqrt{w} = z$",
+            "D. $z = \\pm \\sqrt{w}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $w = x + y i \\, ( x , y \\in \\mathbb{R} )$ là căn bậc hai của số phức $z = a + b i$ nếu $w^2 = z$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402002",
+        "question": "Cho $z = 1 - 3i$ là một căn bậc hai của $w = - 8 - 6i$. Chọn kết luận đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $( 1 - 3 i )^2 = - 8 - 6 i$",
+            "B. $( 1 - 3 i )^2 = - 8 + 6 i$",
+            "C. $( 1 - 3 i )^2 = 8 + 6 i$",
+            "D. $( - 8 - 6 i )^2 = 1 - 3 i$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do $z = 1 - 3 i$ là một căn bậc hai của $w = - 8 - 6 i$ nên $(1 - 3 i)^2 = - 8 - 6 i$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402003",
+        "question": "Căn bậc hai của số phức khác 0 là: $A. \\text{hai số phức liên hợp} \\, B. \\text{hai số phức bằng nhau} \\, C. \\text{hai số phức có cùng phần ảo} \\, D. \\text{hai số phức đối nhau}$",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. hai số phức liên hợp",
+            "B. hai số phức bằng nhau",
+            "C. hai số phức có cùng phần ảo",
+            "D. hai số phức đối nhau"
+        ],
+        "answer": "D",
+        "explain": "Căn bậc hai của số phức khác $0$ là hai số đối nhau. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402004",
+        "question": "Biết số phức $z = 2 + 3 i$ là một căn bậc hai của số phức $w = - 5 + 12 i$. Một căn bậc hai khác của $w = - 5 + 12 i$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $2 - 3i$",
+            "B. $3 + 2i$",
+            "C. $3 - 2i$",
+            "D. $- 2 - 3i$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $z = 2 + 3 i$ là một căn bậc hai của số phức $w = - 5 + 12 i$ nên căn bậc hai còn lại là số đối của $z$ chính là $- 2 - 3 i$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402005",
+        "question": "Căn bậc hai của số $a = -3$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3i$ và $-3i$",
+            "B. $3\\sqrt{i}$ và $-3\\sqrt{i}$",
+            "C. $i\\sqrt{3}$ và $-i\\sqrt{3}$",
+            "D. $\\sqrt{3}i$ và $-\\sqrt{3}i$"
+        ],
+        "answer": "C",
+        "explain": "Căn bậc hai của số $a = - 3$ là $i \\sqrt{3}$ và $- i \\sqrt{3}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402006",
+        "question": "Chọn kết luận đúng: Số phức $-3$ có hai căn bậc hai là $\\pm i \\sqrt{3}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Số phức $− 3$ chỉ có một căn bậc hai là $− \\sqrt{3}$",
+            "B. Số phức $− 3$ có hai căn bậc hai là $± i \\sqrt{3}$",
+            "C. Số phức $− 3$ chỉ có một căn bậc hai là $3 i$",
+            "D. Số phức $− 3$ có hai căn bậc hai là $± 3 i$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $-3$ có hai căn bậc hai là $\\pm i \\sqrt{3}$ vì $(\\pm i \\sqrt{3})^2 = -3$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402007",
+        "question": "Cho phương trình bậc hai $A z^2 + B z + C = 0 \\, (A \\neq 0)$. Biệt thức $\\Delta$ của phương trình được tính bởi:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $B 2 - 4 A C$",
+            "B. $A 2 - 4 B C$",
+            "C. $C 2 - 4 B A$",
+            "D. $B 2 - A C$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai $A z^2 + B z + C = 0 \\quad (A \\neq 0)$ có biệt thức $\\Delta = B^2 - 4 A C$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402008",
+        "question": "Cho phương trình $2 z^2 - 3 i z + i = 0$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $Δ = - 5 i$",
+            "B. $Δ = - 3 - 8 i$",
+            "C. $Δ = 9 - 8 i$",
+            "D. $Δ = - 9 - 8 i$"
+        ],
+        "answer": "D",
+        "explain": "Ta có: $ \\Delta = ( - 3 i )^2 - 4 \\cdot 2 \\cdot i = 9 i^2 - 8 i = - 9 - 8 i $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402009",
+        "question": "Nghiệm của phương trình: $z^2 + (1 - i)z - 18 + 13i = 0$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = 4 - i ; z = - 5 + 2 i$",
+            "B. $z = 4 - i ; z = - 5 - 2 i$",
+            "C. $z = 4 + i ; z = - 5 - 2 i$",
+            "D. $z = 4 + i ; z = - 5 + 2 i$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: $z^2 + (1 - i)z - 18 + 13i = 0$ Có: $\\Delta = (1 - i)^2 - 4(-18 + 13i) = 1 - 2i + i^2 + 72 - 52i = 72 - 54i = 81 - 2,9,3i + 9i^2 = (9 - 3i)^2 \\Rightarrow \\delta = 9 - 3i$ là một căn bậc hai của $\\Delta$ . ⇒ Phương trình có 2 nghiệm là: $z_1 = -1 + i + \\frac{9 - 3i}{2} = 4 - i$ ; $z_2 = -1 + i - \\frac{9 + 3i}{2} = -5 + 2i$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402010",
+        "question": "Phương trình bậc hai trên tập số phức có thể có mấy nghiệm?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $0$",
+            "D. Cả A và B đều đúng"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai có thể có 1 nghiệm nếu $Δ = 0$ hoặc 2 nghiệm nếu $Δ ≠ 0$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402011",
+        "question": "Chọn kết luận đúng về phương trình bậc hai (hệ số thực) trên tập số phức: luôn có ít nhất $1$ nghiệm.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. luôn có 2 nghiệm phân biệt",
+            "B. vô nghiệm nếu $\\Delta < 0$ ",
+            "C. luôn có ít nhất 1 nghiệm",
+            "D. luôn có hai nghiệm thực phân biệt"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình bậc hai trên tập số phức luôn có ít nhất 1 nghiệm nên $C$ đúng. Đáp án cần chọn là: $C$."
+    },
+    {
+        "id": "T0402012",
+        "question": "Trong $C$, cho phương trình $a z^2 + b z + c = 0$ ($a \\neq 0$) $(*)$, $a$, $b$, $c \\in \\mathbb{R}$. Gọi $\\Delta = b^2 - 4 a c$, ta xét các mệnh đề sau: 1) Nếu $\\Delta$ là số thực âm thì phương trình $(*)$ vô nghiệm 2) Nếu $\\Delta \\neq 0$ thì phương trình $(*)$ có 2 nghiệm phân biệt 3) Nếu $\\Delta = 0$ thì phương trình $(*)$ có nghiệm kép.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Không có mệnh đề nào đúng",
+            "B. Có 1 mệnh đề đúng",
+            "C. Có 2 mệnh đề đúng",
+            "D. Cả 3 mệnh đề đều đúng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com 1) Sai vì nếu $Δ < 0$ thì phương trình có 2 nghiệm phức 2) Đúng 3) Đúng Vậy có 2 mệnh đề đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402013",
+        "question": "Cho $z_1, z_2$ là hai nghiệm của phương trình $z^2 + 2i z + i = 0$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z_1 + z_2 = 2i$",
+            "B. $z_1 z_2 = -2i$",
+            "C. $z_1 z_2 = 2i$",
+            "D. $z_1 + z_2 = -2i$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\begin{cases} z_1 + z_2 = -\\frac{B}{A} = -2i \\\\ z_1 z_2 = \\frac{C}{A} = i \\end{cases} $ Vậy $ z_1 + z_2 = -2i $. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402014",
+        "question": "Các nghiệm $z_1 = -1 - \\frac{5i \\sqrt{5}}{3}$; $z_2 = -1 + \\frac{5i \\sqrt{5}}{3}$ là nghiệm của phương trình nào sau đây:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z^2 - 2z + 9 = 0$",
+            "B. $3z^2 + 2z + 42 = 0$",
+            "C. $z^2 + 2z + 27 = 0$",
+            "D. $2z^2 + 3z + 4 = 0$"
+        ],
+        "answer": "B",
+        "explain": "Ta có: $z_1 + z_2 = -1 - 5i \\sqrt{5} \\cdot 3 + -1 + 5i \\sqrt{5} \\cdot 3 = -\\frac{2}{3}$. $z_1 \\cdot z_2 = -1 - 5i \\sqrt{5} \\cdot 3 \\cdot -1 + 5i \\sqrt{5} \\cdot 3 = \\frac{126}{9} = \\frac{42}{3} \\Rightarrow z_1; z_2$ là các nghiệm của phương trình: $z^2 + \\frac{2}{3}z + \\frac{42}{3} = 0 \\Leftrightarrow 3z^2 + 2z + 42 = 0$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402015",
+        "question": "Gọi $z_1$ và $z_2$ là hai nghiệm phức của phương trình $z^2 + 2z + 5 = 0$. Tính $|z_1| + |z_2|$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $| z_1 | + | z_2 | = 4$",
+            "B. $| z_1 | + | z_2 | = 2 \\sqrt{5}$",
+            "C. $| z_1 | + | z_2 | = 10$",
+            "D. $| z_1 | + | z_2 | = \\sqrt{5}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $Δ' = 1 - 5 = - 4 \\Rightarrow [ z_1 = - 1 + 2 i, \\; z_2 = - 1 - 2 i \\Rightarrow T = | z_1 | + | z_2 | = \\sqrt{ ( - 1 ) ^2 + 2 ^2 } + \\sqrt{ ( - 1 ) ^2 + ( - 2 ) ^2 } = 2 \\sqrt{5}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402016",
+        "question": "Gọi $z_1$, $z_2$ là các nghiệm của phương trình $z^2 + 2z + 5 = 0$. Giá trị của $|z_1| + |z_2|$ bằng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 10",
+            "B. 12",
+            "C. $2 \\sqrt{34}$",
+            "D. $4 \\sqrt{5}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z^2 + 2z + 5 = 0 \\Leftrightarrow \\begin{cases} z_1 = -1 + 2i \\\\ z_2 = -1 - 2i \\end{cases}$. Khi đó ta có: $\\begin{cases} z_1^2 = -3 - 4i \\Rightarrow \\| z_1 \\| = \\sqrt{(-3)^2 + (-4)^2} = 5 \\\\ z_2^2 = -3 + 4i \\Rightarrow \\| z_2 \\| = \\sqrt{(-3)^2 + 4^2} = 5 \\end{cases}$. Vậy $\\| z_1 \\| + \\| z_2 \\| = 5 + 5 = 10$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402017",
+        "question": "Gọi $z_1$, $z_2$ là các nghiệm phức của phương trình $z^2 + 4z + 5 = 0$. Đặt $w = (1 + z_1)^{100} + (1 + z_2)^{100}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $w = 2 \\cdot 50 i$",
+            "B. $w = - 2 \\cdot 51$",
+            "C. $w = 2 \\cdot 51$",
+            "D. $w = - 2 \\cdot 50 i$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z^2 + 4z + 5 = 0 \\Leftrightarrow (z + 2)^2 = -1 \\Leftrightarrow (z + 2)^2 = i^2 \\Leftrightarrow \\{ z_1 = -2 + i \\\\ z_2 = -2 - i \\Rightarrow \\{ z_1 + 1 = i - 1 \\\\ z_2 + 1 = -i - 1 \\text{ Khi đó ta có: } \\{ (z_1 + 1)^2 = (i - 1)^2 = -2i \\\\ (z_2 + 1)^2 = (-i - 1)^2 = 2i \\Rightarrow \\{ (z_1 + 1)^4 = -4 \\\\ (z_2 + 1)^4 = -4 \\Rightarrow (z_1 + 1)^{100} + (z_2 + 1)^{100} = (-4)^{25} + (-4)^{25} = 2 \\cdot (-2^2)^{25} = -2^{51} \\text{ Đáp án cần chọn là: B.}"
+    },
+    {
+        "id": "T0402018",
+        "question": "Cho $z_1$, $z_2$ là hai số phức thỏa mãn $z_2 - 4z + 5 = 0$. Tính giá trị biểu thức $P = (z_1 - 1)^{2017} + (z_2 - 1)^{2017}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P = 0$",
+            "B. $P = 2^{1008}$",
+            "C. $P = 2^{1009}$",
+            "D. $P = 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Biệt số $\\Delta = 16 - 20 = - 4 = (2i)^2$. Do đó phương trình có hai nghiệm phức: $z_1 = 4 - 2i = 2 - i$ và $z_2 = 4 + 2i = 2 + i$. Suy ra $P = (1 - i)^{2017} + (1 + i)^{2017} = (1 - i) \\cdot [(1 - i)^2]^{1008} + (1 + i) \\cdot [(1 + i)^2]^{1008} = (1 - i) \\cdot (-2i)^{1008} + (1 + i) \\cdot (2i)^{1008} = (1 - i) \\cdot 2^{1008} + (1 + i) \\cdot 2^{1008} = 2^{1009}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402019",
+        "question": "Gọi $z_1$, $z_2$ là hai nghiệm phức của phương trình $z^2 - 2z + 2 = 0$. Tính giá trị biểu thức $P = z^{2016}_1 + z^{2016}_2$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P = 2 \\cdot 1009$",
+            "B. $P = 2 \\cdot 1008$",
+            "C. $P = 2$",
+            "D. $P = 0$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Biệt số $\\Delta = 4 - 8 = - 4 = (2i)^2$. Do đó phương trình có hai nghiệm phức: $z_1 = 2 - 2i = 1 - i$ và $z_2 = 2 + 2i = 1 + i$. Suy ra $z_{2016}^1 = (1 - i)^{2016} = \\left[(1 - i)^2\\right]^{1008} = (-2i)^{1008} = (-2)^{1008} \\cdot i^{1008} = 2^{1008} \\cdot 1 = 2^{1008}$; $z_{2016}^2 = (1 + i)^{2016} = \\left[(1 + i)^2\\right]^{1008} = (2i)^{1008} = 2^{1008} \\cdot i^{1008} = 2^{1008} \\cdot 1 = 2^{1008}$. Vậy $P = z_{2016}^1 + z_{2016}^2 = 2^{1008} + 2^{1008} = 2^{1009}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402020",
+        "question": "Cho phương trình $z^2 - 2z + 2 = 0$. Mệnh đề nào sau đây là sai?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Phương trình đã cho không có nghiệm nào là số thuần ảo",
+            "B. Phương trình đã cho có 2 nghiệm phức",
+            "C. Phương trình đã cho không có nghiệm phức",
+            "D. Phương trình đã cho không có nghiệm thực"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $Δ' = 1 - 2 = -1 < 0 \\Rightarrow$ phương trình có hai nghiệm là $z = 1 + i$ và $z = 1 - i$. Vậy phương trình có hai nghiệm phức. Do đó các đáp án A, B, D đều đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402021",
+        "question": "Kí hiệu $z_1$, $z_2$ là hai số phức của phương trình $z^2 - 3z + 5 = 0$. Giá trị của $|z_1| + |z_2|$ bằng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2 \\sqrt{5}$",
+            "B. $\\sqrt{5}$",
+            "C. 3",
+            "D. 10"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z^2 - 3z + 5 = 0 \\iff \\begin{cases} z_1 = \\frac{3}{2} + \\frac{\\sqrt{11}}{2} i \\\\ z_2 = \\frac{3}{2} - \\frac{\\sqrt{11}}{2} i \\end{cases} \\Rightarrow \\begin{cases} |z_1| = \\sqrt{\\left(\\frac{3}{2}\\right)^2 + \\left(\\frac{\\sqrt{11}}{2}\\right)^2} = \\sqrt{5} \\\\ |z_2| = \\sqrt{\\left(\\frac{3}{2}\\right)^2 + \\left(\\frac{\\sqrt{11}}{2}\\right)^2} = \\sqrt{5} \\end{cases} \\Rightarrow |z_1| + |z_2| = 2\\sqrt{5}.$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402022",
+        "question": "Biết rằng phương trình $z^2 + b z + c = 0$ ($b, c \\in \\mathbb{R}$) có một nghiệm phức là $z_1 = 1 + 2i$. Khi đó:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $b + c = 0$",
+            "B. $b + c = 3$",
+            "C. $b + c = 2$",
+            "D. $b + c = 7$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z = 1 + 2 i$ là nghiệm của phương trình nên ta có: $( 1 + 2 i )^2 + b ( 1 + 2 i ) + c = 0 \\Leftrightarrow - 3 + 4 i + b + 2 b i + c = 0 \\Leftrightarrow ( - 3 + b + c ) + ( 4 + 2 b ) i = 0 \\Leftrightarrow \\begin{cases} - 3 + b + c = 0 \\\\ 4 + 2 b = 0 \\end{cases} \\Leftrightarrow b + c = 3$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402023",
+        "question": "Phương trình $z^2 + a z + b = 0 \\quad (a, b \\in \\mathbb{R})$ có một nghiệm phức $z = 1 - 3i$. Khi đó $2a^3 + 2b^3 + 3$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 2035",
+            "B. 1987",
+            "C. 2019",
+            "D. 2020"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình $z^2 + a z + b = 0$ có 1 nghiệm phức $z_1 = 1 - 3i \\Rightarrow z_2 = 1 + 3i$ Áp dụng định lý Vi-et ta có $ \\begin{cases} z_1 + z_2 = -a \\\\ z_1 \\cdot z_2 = b \\end{cases} \\Rightarrow \\begin{cases} a = -2 \\\\ b = 10 \\end{cases}$ Khi đó $T = 2a^3 + 2b^3 + 3 = 1987$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402024",
+        "question": "Cho phương trình $z^2 + b z + c = 0$ ẩn $z$ và $b, c$ là tham số thuộc tập số thực. Biết phương trình nhận $z = 1 + i$ là một nghiệm. Tính $T = b + c$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $T = 0$",
+            "B. $T = -1$",
+            "C. $T = -2$",
+            "D. $T = 2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $z = 1 + i$ là một nghiệm của phương trình $z^2 + b z + c = 0$ nên ta có: $(1 + i)^2 + b(1 + i) + c = 0 \\Leftrightarrow 2i + b + bi + c = 0 \\Leftrightarrow b + c + (b + 2)i = 0 \\Leftrightarrow \\begin{cases} b + c = 0 \\\\ b + 2 = 0 \\end{cases} Vậy $T = b + c = 0$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402025",
+        "question": "Gọi $z_0$ là nghiệm phức có phần ảo âm của phương trình $2z^2 - 6z + 5 = 0$. Điểm nào dưới đây biểu diễn số phức $iz_0$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $M \\left( -\\frac{1}{2}, \\frac{3}{2} \\right)$",
+            "B. $M \\left( \\frac{1}{2}, \\frac{3}{2} \\right)$",
+            "C. $M \\left( \\frac{3}{2}, -\\frac{1}{2} \\right)$",
+            "D. $M \\left( \\frac{3}{2}, \\frac{1}{2} \\right)$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com $2z^2 - 6z + 5 = 0 \\Leftrightarrow \\begin{cases} z = \\frac{3}{2} + \\frac{1}{2} i \\\\ z = \\frac{3}{2} - \\frac{1}{2} i \\end{cases} \\Rightarrow z_0 = \\frac{3}{2} - \\frac{1}{2} i \\text{ (vì có phần ảo âm)} \\Rightarrow i z_0 = i \\left( \\frac{3}{2} - \\frac{1}{2} i \\right) = \\frac{1}{2} + \\frac{3}{2} i \\Rightarrow M \\left( \\frac{1}{2}, \\frac{3}{2} \\right)$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402026",
+        "question": "Giả sử $z_1$ ; $z_2$ là hai nghiệm phức của phương trình: $z^2 - 2z + 5 = 0$ và A , B là các điểm biểu diễn của $z_1$ ; $z_2$. Tọa độ trung điểm của đoạn thẳng A B là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $(0 ; 1)$",
+            "B. $(0 ; -1)$",
+            "C. $(1 ; 1)$",
+            "D. $(1 ; 0)$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: $z^2 - 2z + 5 = 0$ Có: $\\Delta' = 1 - 5 = -4 = 4i^2 \\Rightarrow \\sqrt{\\Delta'} = \\sqrt{4i^2} = 2i \\Rightarrow$ Phương trình có 2 nghiệm là: $z_1 = 1 + 2i$; $z_2 = 1 - 2i$ Khi đó: $A(1; 2)$, $B(1; -2)$ Tọa độ trung điểm đoạn thẳng $AB$ là: $(1; 0)$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T0402027",
+        "question": "Gọi $z_0$ là nghiệm phức có phần ảo dương của phương trình $z^2 - 2z + 10 = 0$. Trên mặt phẳng tọa độ, điểm nào sau đây là điểm biểu diễn số phức $w = i z_0$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $N ( 1 ; 3 )$",
+            "B. $M ( - 3 ; 1 )$",
+            "C. $P ( 3 ; - 1 )$",
+            "D. $Q ( - 3 ; - 1 )$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z^2 - 2z + 10 = 0 \\Leftrightarrow \\{ z = 1 + 3i, z = 1 - 3i \\}$. Vì $z_0$ là nghiệm phức có phần ảo dương của phương trình trên $\\Rightarrow z_0 = 1 + 3i$. Khi đó ta có: $w = i z_0 = i (1 + 3i) = -3 + i$. Vậy điểm biểu diễn của số phức $w$ là: $M (-3; 1)$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T0402028",
+        "question": "Cho số phức $z = a + b i$ với $a$, $b$ là hai số thực khác $0$. Một phương trình bậc hai với hệ số thực nhận $\\overline{z}$ làm nghiệm với mọi $a$, $b$ là: $z^2 - 2 a z + a^2 + b^2 = 0$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z^2 = a^2 - b^2 + 2ab i$",
+            "B. $z^2 = a^2 + b^2$",
+            "C. $z^2 - 2az + a^2 + b^2 = 0$",
+            "D. $z^2 + 2az + a^2 - b^2 = 0$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đáp án A: $z = a + b i$ hoặc $z = - a - b i$ (loại) Đáp án B: $z = \\pm \\sqrt{a^2 + b^2}$ (loại) Đáp án C: Giải phương trình bậc hai ẩn $z$ có nghiệm $z = a + b i$ ; $z = a - b i$ (thỏa mãn) Đáp án D: Giải phương trình ta được hai nghiệm $a \\pm b$ nên loại. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T0402029",
+        "question": "Cho $z = 2 + 3 i$ là một số phức. Hãy tìm một phương trình bậc 2 với hệ số thực nhận $z$ và $\\overline{z}$ làm nghiệm.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z^2 - 4z + 13 = 0$",
+            "B. $z^2 + 4z + 13 = 0$",
+            "C. $z^2 - 4z - 13 = 0$",
+            "D. $z^2 + 4z - 13 = 0$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = 2 + 3 i$ ; $\\overline{z} = 2 - 3 i$ Nếu $z$ và $\\overline{z}$ là 2 nghiệm của một phương trình thì: $[ z - ( 2 + 3 i ) ] [ z - ( 2 - 3 i ) ] = 0 \\Leftrightarrow z^2 - ( 2 - 3 i ) z - ( 2 + 3 i ) z + ( 2 + 3 i ) ( 2 - 3 i ) = 0 \\Leftrightarrow z^2 - 4z + 13 = 0$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T0402030",
+        "question": "Cho số phức $w$ và hai số thực $a, b$. Biết $z_1 = w + 2i$ và $z_2 = 2w - 3$ là 2 nghiệm phức của phương trình $z^2 + az + b = 0$. Tính $T = |z_1| + |z_2|$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $T = 2 \\sqrt{13}$",
+            "B. $T = 2 \\sqrt{97} \\cdot 3$",
+            "C. $T = 2 \\sqrt{85} \\cdot 3$",
+            "D. $T = 4 \\sqrt{13}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $w = x + y i$. Khi đó: $z_1 = x + y i + 2 i = x + (y + 2) i$; $z_2 = 2 (x + y i) - 3 = (2 x - 3) + 2 y i \\Rightarrow z_2 = (2 x - 3) - 2 y i$ $z_1 = \\overline{z_2} \\Leftrightarrow \\begin{cases} x = 2 x - 3 \\\\ y + 2 = -2 y \\end{cases} \\Leftrightarrow \\begin{cases} x = 3 \\\\ y = -2 \\end{cases} \\Rightarrow \\begin{cases} z_1 = 3 + 4 i \\\\ z_2 = 3 - 4 i \\end{cases} \\Rightarrow T = |z_1| + |z_2| = \\sqrt{\\left(\\frac{3}{2}\\right)^2 + \\left(\\frac{4}{3}\\right)^2} + \\sqrt{\\left(\\frac{3}{2}\\right)^2 + \\left(-\\frac{4}{3}\\right)^2} = 2 \\sqrt{\\frac{97}{3}}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R001",
+        "question": "Tìm điểm M biểu diễn số phức $z = i - 2$",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $M ( 1 ; - 2 )$",
+            "B. $M ( 2 ; - 1 )$",
+            "C. $M ( - 2 ; 1 )$",
+            "D. $M ( 2 ; 1 )$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $z = i - 2 = - 2 + i$ nên điểm biểu diễn là $M (- 2 ; 1)$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R002",
+        "question": "Với hai số phức bất kì $z_1$, $z_2$, khẳng định nào sau đây đúng: $| z_1 + z_2 | \\leq | z_1 | + | z_2 |$ $| z_1 + z_2 | = | z_1 | + | z_2 |$ $| z_1 + z_2 | \\geq | z_1 | + | z_2 |$ $| z_1 + z_2 | = | z_1 | + | z_2 | + | z_1 - z_2 |$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $| z_1 + z_2 | ≤ | z_1 | + | z_2 |$",
+            "B. $| z_1 + z_2 | = | z_1 | + | z_2 |$",
+            "C. $| z_1 + z_2 | ≥ | z_1 | + | z_2 |$",
+            "D. $| z_1 + z_2 | = | z_1 | + | z_2 | + | z_1 - z_2 |$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| | z_1 | - | z_2 | | \\leq | z_1 \\pm z_2 | \\leq | z_1 | + | z_2 |$ nên A đúng. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R003",
+        "question": "Cho số phức $z$ thỏa mãn điều kiện $| z - 2 + 2i | = 1$. Tìm giá trị lớn nhất của $| z |$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ \\max | z | = 2 \\sqrt{2} + 1 $",
+            "B. $ \\max | z | = 2 \\sqrt{2} $",
+            "C. $ \\max | z | = 2 \\sqrt{2} + 2 $",
+            "D. $ \\max | z | = 2 \\sqrt{2} - 1 $"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có: $1 = | z - 2 + 2 i | = | z - (2 - 2 i) | \\geq | z | - | 2 - 2 i | = | z | - 2 \\sqrt{2} \\Rightarrow | z | \\leq 1 + 2 \\sqrt{2}$ Vậy $max | z | = 1 + 2 \\sqrt{2}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R004",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 2 - 2i | = 1$. Số phức $z - i$ có mô đun nhỏ nhất là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ \\sqrt{5} - 1 $",
+            "B. $ 1 - \\sqrt{5} $",
+            "C. $ \\sqrt{5} + 1 $",
+            "D. $ \\sqrt{5} + 2 $"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| z - i | = | ( z - 2 - 2 i ) + ( i + 2 ) | \\geq | | z - 2 - 2 i | - | i + 2 | | = | 1 - \\sqrt{5} | = \\sqrt{5} - 1$ Vậy $| z - i | \\geq \\sqrt{5} - 1$ nên min $| z - i | = \\sqrt{5} - 1$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R005",
+        "question": "Xác định số phức $z$ thỏa mãn $| z - 2 - 2i | = \\sqrt{2}$ mà $| z |$ đạt giá trị lớn nhất.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z = 1 + i$",
+            "B. $z = 3 + i$",
+            "C. $z = 3 + 3 i$",
+            "D. $z = 1 + 3 i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Sử dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có: $ \\sqrt{2} = | z - 2 - 2 i | \\geq | z | - | - 2 - 2 i | = | z | - 2 \\sqrt{2} \\Rightarrow | z | \\leq 3 \\sqrt{2} $ Suy ra $ \\max | z | = 3 \\sqrt{2} $. Kiểm tra các đáp án đã cho chỉ có đáp án C thỏa mãn. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R006",
+        "question": "Trong các số phức $z$ thỏa mãn $| z - 2 - 4 i | = | z - 2 i |$. Tìm số phức $z$ có mô đun nhỏ nhất.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z = 2 - 2i$",
+            "B. $z = 1 + i$",
+            "C. $z = 2 + 2i$",
+            "D. $z = 1 - i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = a + b i$, ta có $| a + b i - 2 - 4 i | = | a + b i - 2 i | \\Leftrightarrow ( a - 2 )^2 + ( b - 4 )^2 = a^2 + ( b - 2 )^2 \\Leftrightarrow - 4 a + 4 - 8 b + 16 = - 4 b + 4 \\Leftrightarrow - 4 a - 4 b + 16 = 0 \\Leftrightarrow a + b = 4 \\Rightarrow b = 4 - a$. Ta có $| z | = \\sqrt{a^2 + b^2} = \\sqrt{a^2 + ( 4 - a )^2} = \\sqrt{2 a^2 - 8 a + 16} = \\sqrt{2 ( a^2 - 4 a + 4 )} + 8 = \\sqrt{2 ( a - 2 )^2} + 8 \\geq 2 \\sqrt{2} \\Rightarrow \\min | z | = 2 \\sqrt{2} \\Rightarrow a = 2, b = 2 \\Rightarrow z = 2 + 2 i$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R007",
+        "question": "Cho số phức $z$ có $| z | = 2$ thì số phức $w = z + 3 i$ có mô đun nhỏ nhất và lớn nhất lần lượt là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2$ và $5$",
+            "B. $1$ và $6$",
+            "C. $2$ và $6$",
+            "D. $1$ và $5$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Sử dụng bất đẳng thức chứa dấu giá trị tuyệt đối ta có $|| z | - | 3 i || \\leq | z + 3 i | \\leq || z | + | 3 i || \\Leftrightarrow | 2 - 3 | \\leq | w | \\leq | 2 + 3 | \\Leftrightarrow 1 \\leq | w | \\leq 5$ Nhận thấy với $z = - 2 i$ thì $| w | = 1$ và với $z = 2 i$ thì $| w | = 5$ nên $1$ và $5$ là GTNN và GTLN của $| w |$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R008",
+        "question": "Cho số phức $z$ thoả $| z - 3 + 4 i | = 2$ và $w = 2 z + 1 - i$. Khi đó $| w |$ có giá trị lớn nhất là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $16 + \\sqrt{74}$",
+            "B. $2 + \\sqrt{130}$",
+            "C. $4 + \\sqrt{74}$",
+            "D. $4 + \\sqrt{130}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $| z - 3 + 4 i | = 2 \\Leftrightarrow | 2 z - 6 + 8 i | = 4$. Theo bất đẳng thức chứa dấu giá trị tuyệt đối có $4 = | 2 z - 6 + 8 i | = | ( 2 z + 1 - i ) - ( 7 - 9 i ) | \\geq | 2 z + 1 - i | - | 7 - 9 i | = | w | - \\sqrt{130} \\Rightarrow | w | - \\sqrt{130} \\leq 4 \\Rightarrow | w | \\leq 4 + \\sqrt{130}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R009",
+        "question": "Cho số phức $z$ thỏa mãn $| z^2 - i | = 1$. Tìm giá trị lớn nhất của $| \\bar{z} |$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $2$",
+            "B. $\\sqrt{5}$",
+            "C. $2\\sqrt{2}$",
+            "D. $\\sqrt{2}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bất đẳng thức chứa dấu giá trị tuyệt đối ta có $1 = \\| z^2 - i \\| \\geq \\| z^2 \\| - |i| = |z|^2 - 1 \\Rightarrow |z|^2 \\leq 2 \\Rightarrow |z| = \\| \\overline{z} \\| \\leq \\sqrt{2}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R010",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 1 - 2i | = 4$. Gọi $M$, $m$ lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của $| z + 2 + i |$. Tính $S = M^2 + m^2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $S = 34$",
+            "B. $S = 82$",
+            "C. $S = 68$",
+            "D. $S = 36$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bất đẳng thức chứa dấu giá trị tuyệt đối ta có $| z + 2 + i | = | ( z - 1 - 2 i ) + ( 3 + 3 i ) | \\geq || z - 1 - 2 i | - | 3 + 3 i || = | 4 - 3 \\sqrt{2} | = 3 \\sqrt{2} - 4 = m$ $| z + 2 + i | = | ( z - 1 - 2 i ) + ( 3 + 3 i ) | \\leq | z - 1 - 2 i | + | 3 + 3 i | = 4 + 3 \\sqrt{2} = M$ Suy ra $M^2 + m^2 = ( 3 \\sqrt{2} - 4 )^2 + ( 4 + 3 \\sqrt{2} )^2 = 2 ( 4^2 + ( 3 \\sqrt{2} )^2 ) = 68$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R011",
+        "question": "Cho số phức $z$ có điểm biểu diễn nằm trên đường thẳng $3 x - 4 y - 3 = 0$, $| z |$ nhỏ nhất bằng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1\\,5$",
+            "B. $3\\,5$",
+            "C. $4\\,5$",
+            "D. $2\\,5$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = x + y i$, ta có $3 x - 4 y - 3 = 0$, suy ra $y = \\frac{3}{4} (x - 1)$. Ta có $|z| = \\sqrt{x^2 + y^2} = \\sqrt{x^2 + \\frac{9}{16} (x - 1)^2} = \\frac{1}{4} \\sqrt{16 x^2 + 9 (x - 1)^2} = \\frac{1}{4} \\sqrt{25 x^2 - 18 x + 9} = \\frac{1}{4} \\sqrt{(5 x - \\frac{9}{5})^2 + \\frac{144}{25}} \\geq \\frac{1}{4}$. $12 \\, \\text{cm} = \\frac{3}{5}$. Dấu “=” xảy ra khi $x = \\frac{9}{25}$ và $y = - \\frac{12}{25}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R012",
+        "question": "Biết số phức $z = x + y i \\quad (x, y \\in \\mathbb{R})$ thỏa mãn điều kiện $| z - 2 - 4 i | = | z - 2 i |$ đồng thời có môđun nhỏ nhất. Tính giá trị biểu thức $M = x^2 + y^2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $M = 8$",
+            "B. $M = 10$",
+            "C. $M = 16$",
+            "D. $M = 26$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $| z - 2 - 4 i | = | z - 2 i | \\Rightarrow \\sqrt{(x - 2)^2 + (y - 4)^2} = \\sqrt{x^2 + (y - 2)^2} \\Leftrightarrow x^2 + y^2 - 4x - 8y + 20 = x^2 + y^2 - 4y + 4 \\Rightarrow y = 4 - x$. Khi đó $| z | = \\sqrt{x^2 + y^2} = \\sqrt{x^2 + (4 - x)^2} = \\sqrt{2x^2 - 8x + 16} = \\sqrt{2} (x - 2)^2 + 8 \\geq 2\\sqrt{2}$. Vậy môđun nhỏ nhất của $z$ là $2\\sqrt{2}$. Xảy ra $\\Leftrightarrow x = y = 2 \\Rightarrow M = 8$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R013",
+        "question": "Cho số phức $z$ thỏa mãn $| z + 3 | + | z - 3 | = 10$. Giá trị nhỏ nhất của $| z |$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3$",
+            "B. $4$",
+            "C. $5$",
+            "D. $6$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = a + b i$, theo giả thiết ta có $| a + b i + 3 | + | a + b i - 3 | = 10 \\Leftrightarrow \\sqrt{( a + 3 )^2 + b^2} + \\sqrt{( a - 3 )^2 + b^2} = 10$. Áp dụng bất đẳng thức Bunhiacopxki ta có $10 = \\sqrt{( a + 3 )^2 + b^2} + \\sqrt{( a - 3 )^2 + b^2} \\leq \\sqrt{2} \\left[ ( a + 3 )^2 + b^2 + ( a - 3 )^2 + b^2 \\right] = \\sqrt{2} \\cdot [ 2 a^2 + 2 b^2 + 18 ] = 2 \\sqrt{a^2 + b^2 + 9}$. Suy ra $\\sqrt{a^2 + b^2} + 9 \\geq 5 \\Leftrightarrow a^2 + b^2 + 9 \\geq 25 \\Leftrightarrow a^2 + b^2 \\geq 16$. Do đó $| z | = \\sqrt{a^2 + b^2} \\geq 4$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R014",
+        "question": "Cho các số phức $z$, $w$ thỏa mãn $| z + 2 - 2 i | = | z - 4 i |$ và $w = i z + 1$. Giá trị nhỏ nhất của biểu thức $P = | w |$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $P_{min} = \\sqrt{2} \\cdot 2$",
+            "B. $P_{min} = 2 \\sqrt{2}$",
+            "C. $P_{min} = 2$",
+            "D. $P_{min} = 3 \\sqrt{2} \\cdot 2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = x + y i \\; ( x ; y \\in \\mathbb{R} )$. Ta có $| z + 2 - 2 i | = | z - 4 i | \\Rightarrow \\sqrt{ ( x + 2 )^2 + ( y - 2 )^2 } = \\sqrt{ x^2 + ( y - 4 )^2 } \\Leftrightarrow ( x + 2 )^2 + ( y - 2 )^2 = x^2 + ( y - 4 )^2 \\Rightarrow y = 2 - x$. Khi đó $w = i z + 1 = i ( x + y i ) + 1 = i x - y + 1 = i x - ( 2 - x ) + 1 = ( x - 1 ) + x i$. Suy ra $| w | = \\sqrt{ ( x - 1 )^2 + x^2 } = \\sqrt{2} \\left( ( x - \\frac{1}{2} )^2 + \\frac{1}{2} \\right) \\geq \\sqrt{2} \\cdot 2$. Dấu “=” xảy ra khi $x = \\frac{1}{2} \\Rightarrow y = \\frac{3}{2} \\Rightarrow z = \\frac{1}{2} + \\frac{3}{2} i$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R015",
+        "question": "Cho $z_1$, $z_2$ thỏa mãn $| z_1 - z_2 | = 1$ và $| z_1 + z_2 | = 3$. Tính $max \\, T = | z_1 | + | z_2 |$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 8",
+            "B. 10",
+            "C. 4",
+            "D. $\\sqrt{10}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z_1 = x_1 + y_1 i$, $z_2 = x_2 + y_2 i$. Theo giả thiết $|z_1 - z_2| = 1$ có $(x_1 - x_2)^2 + (y_1 - y_2)^2 = 1 \\iff x_1^2 + x_2^2 - 2 x_1 x_2 + y_1^2 + y_2^2 - 2 y_1 y_2 = 1 \\quad (1)$ Theo giả thiết $|z_1 + z_2| = 3$ có $(x_1 + x_2)^2 + (y_1 + y_2)^2 = 9 \\iff x_1^2 + x_2^2 + 2 x_1 x_2 + y_1^2 + y_2^2 + 2 y_1 y_2 = 9 \\quad (2)$ Cộng vế với vế của (1) và (2) ta có $x_1^2 + x_2^2 + y_1^2 + y_2^2 = 5$ Ta có $T = \\sqrt{x_1^2 + y_1^2} + \\sqrt{x_2^2 + y_2^2}$ Theo bất đẳng thức Bunhiacopxki ta có $T \\leq \\sqrt{2} \\cdot (x_1^2 + x_2^2 + y_1^2 + y_2^2) = \\sqrt{10}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R016",
+        "question": "Cho số phức $z$ thỏa mãn $\\| z^2 - 2z + 5 \\| = | ( z - 1 + 2 i ) ( z + 3 i - 1 ) |$. Tìm giá trị nhỏ nhất của $P = | w |$, với $w = z - 2 + 2 i$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P_{min} = 3 \\cdot 2$",
+            "B. $P_{min} = 2$",
+            "C. $P_{min} = 1$",
+            "D. $P_{min} = 1 \\cdot 2$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $ \\| z^2 - 2z + 5 \\| = | ( z - 1 + 2i ) ( z + 3i - 1 ) | \\Leftrightarrow \\| ( z - 1 )^2 + 4 \\| = | ( z - 1 + 2i ) | | ( z + 3i - 1 ) | \\Leftrightarrow \\| ( z - 1 )^2 - ( 2i )^2 \\| = | ( z - 1 + 2i ) | | ( z + 3i - 1 ) | \\Leftrightarrow | ( z - 1 + 2i ) ( z - 1 - 2i ) | = | ( z - 1 + 2i ) | | ( z + 3i - 1 ) | \\Leftrightarrow [ z - 1 + 2i = 0 \\quad ( 1 ) \\quad | ( z - 1 - 2i ) | = | ( z + 3i - 1 ) | \\quad ( 2 ) Từ ( 1 ) \\Rightarrow z = 1 - 2i \\Rightarrow w = -1 \\Rightarrow P = | w | = 1. Xét ( 2 ). Gọi $ z = x + yi \\quad ( x, y \\in \\mathbb{R} ) $. Ta có $ | ( z - 1 - 2i ) | = | ( z + 3i - 1 ) | \\Leftrightarrow ( x - 1 )^2 + ( y - 2 )^2 = ( x - 1 )^2 + ( y + 3 )^2 \\Leftrightarrow y = -\\frac{1}{2} $. Khi đó $ w = x - \\frac{1}{2} i - 2 + 2i = ( x - 2 ) + \\frac{3}{2} i \\Rightarrow P = | w | = \\sqrt{ ( x - 2 )^2 + ( \\frac{3}{2} )^2 } \\geq \\frac{3}{2} $. Vậy $ P_{min} = \\frac{3}{2} $. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R017",
+        "question": "Tìm giá trị nhỏ nhất của $| z |$, biết rằng $z$ thỏa mãn điều kiện $| 4 + 2 i 1 - i z - 1 | = 1$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $ \\sqrt{2} $",
+            "B. $ 0 $",
+            "C. $ -1 $",
+            "D. $ \\sqrt{3} $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Có $4 + 2 i \\overline{1 - i} = 1 + 3 i$. Đặt $z = x + y i$ thì $4 + 2 i \\overline{1 - i} z - 1 = (1 + 3 i)(x + y i) - 1 = (x - 3 y - 1) + (3 x + y) i$. Điều kiện đã cho trong bài được viết lại thành $(x - 3 y - 1)^2 + (3 x + y)^2 = 1 \\Leftrightarrow (x - 3 y)^2 - 2 (x - 3 y) + 1 + (3 x + y)^2 = 1 \\Leftrightarrow 10 x^2 + 10 y^2 - 2 x + 6 y = 0 \\Leftrightarrow (x^2 - \\frac{1}{5} x) + (y^2 + \\frac{3}{5} y) = 0 \\Leftrightarrow (x - \\frac{1}{10})^2 + (y + \\frac{3}{10})^2 = \\frac{1}{10} (*)$. Điểm biểu diễn $M(x, y)$ của $z$ chạy trên đường tròn $(*)$. Cần tìm điểm $M(x, y)$ thuộc đường tròn này để $OM$ nhỏ nhất. Vì đường tròn này qua $O$ nên $\\min OM = 0$ khi $M \\equiv O$ hay $M(0, 0)$, do đó $z = 0$ hay $\\min |z| = 0$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R018",
+        "question": "Cho số phức $z$ thỏa mãn $| z + 1 - i | = | z - 3 i |$. Tính môđun lớn nhất $| w |_{\\text{max}}$ của số phức $w = \\frac{1}{z}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $| w |_{max} = 7 \\sqrt{5} 10$",
+            "B. $| w |_{max} = 2 \\sqrt{5} 7$",
+            "C. $| w |_{max} = 4 \\sqrt{5} 7$",
+            "D. $| w |_{max} = 9 \\sqrt{5} 10$"
+        ],
+        "answer": "B",
+        "explain": "Gọi $z = x + y i \\; (x, y \\in \\mathbb{R})$. Ta có $| z + 1 - i | = | z - 3 i |$, suy ra $\\sqrt{(x + 1)^2 + (y - 1)^2} = \\sqrt{x^2 + (y - 3)^2} \\Leftrightarrow 2 x + 4 y - 7 = 0$. Suy ra tập hợp điểm biểu diễn các số phức $z$ là đường thẳng $\\Delta : 2 x + 4 y - 7 = 0$. Ta có $| z |_{\\text{min}} = d(O; \\Delta) = \\frac{| - 7 |}{\\sqrt{2^2 + 4^2}} = \\frac{7}{\\sqrt{20}} \\Rightarrow | w |_{\\text{max}} = 1 | z |_{\\text{min}} = \\frac{2 \\sqrt{5}}{7}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R019",
+        "question": "Xét các số phức $z$, $w$ thỏa mãn $| w - i | = 2$, $z + 2 = i w$. Gọi $z_1$, $z_2$ lần lượt là các số phức mà tại đó $| z |$ đạt giá trị nhỏ nhất và giá trị lớn nhất. Môđun $| z_1 + z_2 |$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 \\sqrt{2}$",
+            "B. 3",
+            "C. 6",
+            "D. $6 \\sqrt{2}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có: $z + 2 = i w \\Rightarrow w = z + 2 i$ $| w - i | = 2 \\Rightarrow \\left| z + 2 i - i \\right| = 2 \\Leftrightarrow | z + 2 + 1 | = 2 \\Leftrightarrow | z + 3 | = 2 \\Rightarrow$ Tập hợp các điểm biểu diễn số phức $z$ là đường tròn $I(-3; 0)$ bán kính $R = 2$. Gọi $M$ là điểm biểu diễn số phức $z$, dựa vào hình vẽ ta có: $\\{ | z |_{\\text{min}} \\Leftrightarrow O M_{\\text{min}} \\Leftrightarrow M (-1; 0) \\Rightarrow z_1 = -1 \\, | z |_{\\text{max}} \\Leftrightarrow O M_{\\text{max}} \\Leftrightarrow M (-5; 0) \\Rightarrow z_2 = -5 \\Rightarrow | z_1 + z_2 | = 6 \\}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R020",
+        "question": "Tìm giá trị lớn nhất của $| z |$, biết rằng $z$ thỏa mãn điều kiện $| -2 - 3i + 3 - 2i z + 1 | = 1$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $ \\sqrt{2} $",
+            "B. 1",
+            "C. 2",
+            "D. 3"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Có $- 2 - 3 i$ $3 - 2 i$ $z + 1 = - i (x + y i) + 1 = (y + 1) - x i$ Điều kiện đã cho trong bài được viết lại thành $(y + 1)^2 + x^2 = 1$ Điểm biểu diễn $M(x, y)$ của $z$ chạy trên đường tròn $(*)$ có tâm $I(0, - 1)$, bán kính bằng $1$. Cần tìm điểm $M(x, y)$ thuộc đường tròn này để $OM$ lớn nhất. Vì $O$ nằm trên đường tròn nên $OM$ lớn nhất khi $OM$ là đường kính của $(*) \\Leftrightarrow I$ là trung điểm của $OM \\Leftrightarrow \\begin{cases} x = 2 x_I \\\\ y = 2 y_I \\end{cases} \\Leftrightarrow \\begin{cases} x = 0 \\\\ y = - 2 \\end{cases} \\Leftrightarrow M(0, - 2)$. Suy ra $z = - 2 i \\Leftrightarrow |z| = 2$ Vậy $max |z| = 2$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R021",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $| z_1 - 2 i | = 3$ và $| z_2 + 2 + 2 i | = | z_2 + 2 + 4 i |$. Giá trị nhỏ nhất của biểu thức $P = | z_1 - z_2 |$ bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P = 1$",
+            "B. $P = 2$",
+            "C. $P = 3$",
+            "D. $P = 4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z_1 = x_1 + y_1 i$ và $z_2 = x_2 + y_2 i$ với $x_1, x_2, y_1, y_2 \\in \\mathbb{R}$. $|z_1 - 2i| = 3 \\rightarrow x_1^2 + (y_1 - 2)^2 = 9$ suy ra tập hợp các số phức $z_1$ là đường tròn $(C)$: $x^2 + (y - 2)^2 = 9$. $|z_2 + 2 + 2i| = |z_2 + 2 + 4i| \\rightarrow (x_2 + 2)^2 + (y_2 + 2)^2 = (x_2 + 2)^2 + (y_2 + 4)^2 \\Leftrightarrow y_2 + 3 = 0$ suy ra tập hợp các số phức $z_2$ là đường thẳng $d$: $y = -3$. Ta có $P = |z_1 - z_2| = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$. Đây chính là khoảng cách từ điểm $B (x_2; y_2) \\in d$ đến điểm $A (x_1; y_1) \\in (C)$. Do đó $|z_2 - z_1|_{\\text{min}} \\Leftrightarrow AB_{\\text{min}}$. Dựa vào hình vẽ ta tìm được $AB_{\\text{min}} = 2$ khi $A (0; -1)$, $B (0; -3)$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R022",
+        "question": "Cho số phức $z$ thỏa mãn $2 |z| = \\left| z^2 + 4 \\right|$. Tìm giá trị lớn nhất của $|z|$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1 + \\sqrt{5}$",
+            "B. $1 + 3 \\sqrt{5}$",
+            "C. $3 + \\sqrt{5}$",
+            "D. $\\sqrt{6} + \\sqrt{13}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\| z^2 + 4 \\| \\geq \\| z^2 \\| - | 4 | = | z |^2 - 4 \\Rightarrow 2 | z | \\geq | z |^2 - 4 \\Leftrightarrow | z |^2 - 2 | z | - 4 \\leq 0 \\Leftrightarrow 1 - \\sqrt{5} \\leq | z | \\leq 1 + \\sqrt{5} \\Rightarrow | z |_{\\text{max}} = 1 + \\sqrt{5} . Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R023",
+        "question": "Trong số các số phức $z$ thỏa mãn điều kiện $| z - 4 + 3 i | = 3$, gọi $z_0$ là số phức có mô đun lớn nhất. Khi đó $| z_0 |$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3$",
+            "B. $4$",
+            "C. $5$",
+            "D. $8$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $z = x + y i$ ; Khi đó $z - 4 + 3 i = ( x - 4 ) + ( y + 3 ) i \\Rightarrow | z - 4 + 3 i | = | ( x - 4 ) + ( y + 3 ) i | = 3 \\Rightarrow ( x - 4 )^2 + ( y + 3 )^2 = 9$ Vậy quỹ tích các điểm $M$ biểu diễn số phức $z$ thuộc đường tròn tâm $I ( 4 ; - 3 ) ; R = 3$ . Đặt $\\begin{cases} x = 3 \\sin t + 4 \\\\ y = 3 \\cos t - 3 \\end{cases} \\Rightarrow x^2 + y^2 = ( 3 \\sin t + 4 )^2 + ( 3 \\cos t - 3 )^2 = 9 \\sin^2 t + 9 \\cos^2 t + 24 \\sin t - 18 \\cos t + 25 = 24 \\sin t - 18 \\cos t + 34$ Mà $24 \\sin t - 18 \\cos t \\leq \\sqrt{ ( 24^2 + 18^2 ) ( \\sin^2 t + \\cos^2 t )} = 30$ (theo bunhiacopxki) $\\Rightarrow x^2 + y^2 \\leq 30 + 34 = 64 \\Rightarrow \\sqrt{ x^2 + y^2 } \\leq 8 \\Rightarrow | z | \\leq 8$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R024",
+        "question": "Cho số phức $z_1$ thỏa mãn $| z_1 - 2 |^2 - | z_1 + i |^2 = 1$ và số phức $z_2$ thỏa mãn $| z_2 - 4 - i | = \\sqrt{5}$. Tìm giá trị nhỏ nhất của $P = | z_1 - z_2 |$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P_{min} = 2 \\sqrt{5} 5$",
+            "B. $P_{min} = \\sqrt{5}$",
+            "C. $P_{min} = 2 \\sqrt{5}$",
+            "D. $P_{min} = 3 \\sqrt{5} 5$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $z = x + y i \\, ( x ; y \\in \\mathbb{R} )$. Ta có $| z - 2 |^2 - | z + i |^2 = 1 \\rightarrow ( x - 2 )^2 + y^2 - x^2 - ( y + 1 )^2 = 1 \\rightarrow 2 x + y - 1 = 0$. Suy ra tập hợp các số phức $z_1$ là đường thẳng $\\Delta : 2 x + y - 1 = 0$. $| z - 4 - i | = \\sqrt{5} \\rightarrow | ( x - 4 ) + ( y - 1 ) i | = \\sqrt{5} \\Leftrightarrow ( x - 4 )^2 + ( y - 1 )^2 = 5$. Suy ra tập hợp các số phức $z_2$ là đường tròn $(C) : ( x - 4 )^2 + ( y - 1 )^2 = 5$ có tâm $I ( 4 ; 1 )$ và bán kính $R = \\sqrt{5}$. Khi đó biểu thức $P = | z_1 - z_2 |$ là khoảng cách từ một điểm thuộc $\\Delta$ đến một điểm thuộc $(C)$. Từ đó suy ra $P_{min} = M N = | d [ I , \\Delta ] - R | = \\left| 8 \\sqrt{5} - \\sqrt{5} \\right| = 3 \\sqrt{5}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R025",
+        "question": "Trong các số phức $z$ thỏa mãn $| z + 3 + 4i | = 2$, gọi $z_0$ là số phức có mô đun nhỏ nhất. Khi đó:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Không tồn tại số phức",
+            "B. $| z_0 | = 2$",
+            "C. $| z_0 | = 7$",
+            "D. $| z_0 | = 3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = a + b i$ ($a , b \\in \\mathbb{R}$) ta có: $| z + 3 + 4 i | = 2 \\Leftrightarrow | ( a + 3 ) + ( b + 4 ) i | = 2 \\Leftrightarrow ( a + 3 )^2 + ( b + 4 )^2 = 4$. Do đó tập hợp điểm biểu diễn số phức $z$ thuộc đường tròn tâm $I ( - 3 ; - 4 )$ và bán kính $r = 2$. Từ hình vẽ ta thấy số phức $z_0$ có mô đun nhỏ nhất nếu $z_0$ có điểm biểu diễn là $M$. Ta có: $-\\overrightarrow{O I} = ( - 3 ; - 4 )$ nên đường thẳng đi qua $O$ và $I$ là $O I : \\{ x = 3t; y = 4t \\Rightarrow M ( 3t ; 4t )\\}$. Mặt khác $M \\in (C)$ nên: $( 3t + 3 )^2 + ( 4t + 4 )^2 = 4 \\Leftrightarrow 25t^2 + 50t + 21 = 0 \\Leftrightarrow \\begin{cases} t = -\\frac{3}{5} \\\\ t = -\\frac{7}{5} \\end{cases}$. $M ( -\\frac{9}{5} ; -\\frac{12}{5} )$ hoặc $M ( -\\frac{21}{5} ; -\\frac{28}{5} )$. $M ( -\\frac{9}{5} ; -\\frac{12}{5} )$ thuộc $(C)$ và gần $O$ nhất. $\\Rightarrow z = -\\frac{9}{5} - \\frac{12}{5} i \\Rightarrow | z | = 3$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R026",
+        "question": "Biết số phức $z = x + y i \\, (x ; y \\in \\mathbb{R})$ thỏa mãn đồng thời các điều kiện $| z - (3 + 4 i) | = \\sqrt{5}$ và biểu thức $P = | z + 2 |^2 - | z - i |^2$ đạt giá trị lớn nhất. Tính $| z |$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $| z | = \\sqrt{33}$",
+            "B. $| z | = 50$",
+            "C. $| z | = \\sqrt{10}$",
+            "D. $| z | = 5 \\sqrt{2}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $| z - ( 3 + 4 i ) | = \\sqrt{5} \\Rightarrow ( x - 3 )^2 + ( y - 4 )^2 = 5$. Suy ra tập hợp các điểm biểu diễn số phức $z$ là đường tròn $( C )$ có tâm $I ( 3 ; 4 )$ và bán kính $R = \\sqrt{5}$. Ta có $P = | ( x + 2 ) + y i |^2 - | x + ( y - 1 ) i |^2 = ( x + 2 )^2 + y^2 - [ x^2 + ( y - 1 )^2 ] = 4 x + 2 y + 3 \\Leftrightarrow 4 x + 2 y + 3 - P = 0$. Ta tìm $P$ sao cho đường thẳng $\\Delta : 4 x + 2 y + 3 - P = 0$ và đường tròn $( C )$ có điểm chung $\\Leftrightarrow d [ I , \\Delta ] \\leq R \\Leftrightarrow | 12 + 8 + 3 - P | \\sqrt{20} \\leq \\sqrt{5} \\Leftrightarrow | 23 - P | \\leq 10 \\Leftrightarrow 13 \\leq P \\leq 33$. Do đó $P_{max} = 33$. Dấu $'' = ''$ xảy ra $\\Leftrightarrow \\{ 4 x + 2 y - 30 = 0 \\, ( x - 3 )^2 + ( y - 4 )^2 = 5 \\Leftrightarrow \\{ x = 5 \\, y = 5$. Vậy $| z | = \\sqrt{5}^2 + ( - 5 )^2 = 5 \\sqrt{2}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R027",
+        "question": "Xét các số phức $z$, $w$ thỏa mãn $| z | = 2$, $| i w - 2 + 5 i | = 1$. Giá trị nhỏ nhất của $\\left| z^2 - \\frac{w}{z} - 4 \\right|$ bằng:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4$",
+            "B. $2 ( \\sqrt{29} - 3 )$",
+            "C. $8$",
+            "D. $2 ( \\sqrt{29} - 5 )$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có : +) $| z | = 2$ ⇒ Tập hợp các điểm biểu diễn số phức $z$ là đường tròn tâm $I_1(0; 0)$ bán kính $R_1 = 2$. $| i |$ $| w - 2 - 5 i | = 1$ ⇔ $| w - (- 5 - 2 i) | = 1$ ⇒ Tập hợp các điểm biểu diễn số phức $w$ là đường tròn tâm $I_2(- 5; - 2)$ bán kính $R_2 = 1$. Đặt $T = | z^2 - w | z - 4 | = | z^2 - w - \\overline{z} | = | z | | z - w - \\overline{z} | = 2 | z - w - \\overline{z} |$. Đặt $z = a + bi \\ (a, b \\in \\mathbb{R})$ ⇒ $\\overline{z} = a - bi$ ⇒ $z - \\overline{z} = 2bi$. ⇒ $T = 2 | 2bi - w |$. Gọi $M(0; 2b)$ là điểm biểu diễn số phức $2bi$, $N$ là điểm biểu diễn số phức $w$. ⇒ $T = 2 MN_{min} ⇔ MN_{min}$. Do $| z | = 2$ ⇒ $a^2 + b^2 = 4$ ⇔ $- 2 ≤ b ≤ 2$ ⇔ $- 4 ≤ 2b ≤ 4$. ⇒ Tập hợp các điểm $M$ là đoạn $AB$ với $A(0; - 4)$, $B(0; 4)$. Dựa vào hình vẽ ta thấy $MN_{min} = 4$ ⇔ $N(- 4; - 2)$, $M(0; - 2)$. Vậy $T_{min} = 2 \\cdot 4 = 8$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R028",
+        "question": "Đề thi THPT QG - 2021 - mã 101 Xét các số phức $z$, $w$ thỏa mãn $| z | = 1$ và $| w | = 2$. Khi $| z + \\overline{i w} - 6 - 8i |$ đạt giá trị nhỏ nhất, $| z - w |$ bằng?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $√ 221 5$",
+            "B. $√ 5$",
+            "C. 3",
+            "D. $√ 29 5$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Cách 1: Dùng phương pháp hình học → Kỹ năng dồn số phức. * P = $ \\left\\| z + i \\overline{w} - 6 - 8 i \\right\\| = \\left\\| ( z - 6 - 8 i ) - ( - i \\overline{w} ) \\right\\| = | u - v | $. Trong đó: { $ u = z - 6 - 8 i $ $ v = - i \\overline{w} $, $ u $ có điểm biểu diễn là A , $ v $ có điểm biểu diễn là B . ⇒ P = $ | u - v | = AB $ ⇒ Cần đạt Min. * $ | z | = 1 \\Leftrightarrow | ( z - 6 - 8 i ) + 6 + 8 i | = 1 \\Leftrightarrow | u + 6 + 8 i | = 1 $. ⇒ Tập hợp điểm A biểu diễn số phức $ u $ là đường tròn: $( C_1 ) : \\{ I ( - 6 ; - 8 ) \\, R_1 = 1 \\} $. * $ | w | = 2 \\Leftrightarrow \\left\\| \\overline{w} \\right\\| = 2 \\Leftrightarrow | - i | \\cdot \\left\\| \\overline{w} \\right\\| = | - i | \\cdot 2 ⇒ \\left\\| - i \\overline{w} \\right\\| = 2 \\Leftrightarrow | v | = 2 $. ⇒ Tập hợp điểm B biểu diễn số phức $ v $ là đường tròn $( C_2 ) : \\{ O ( 0 ; 0 ) \\, R_2 = 2 \\} $. Có ⎧ ⎪ ⎨ ⎪ ⎩ $ I A = R_1 = 1 $ $ O B = R_2 = 2 $ $ O I = 10 $ ⇒ $ A B_{min} = I O - R_1 - R_2 = 10 - 1 - 2 = 7 $. Min đạt được khi: ⎧ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎩ $ \\overrightarrow{O A} = \\frac{9}{10} \\overrightarrow{O I} ⇒ A ( - \\frac{27}{5} ; - \\frac{36}{5} ) ⇒ u = - \\frac{27}{5} - \\frac{36}{5} i $ $ \\overrightarrow{O B} = \\frac{1}{5} \\overrightarrow{O I} ⇒ B ( - \\frac{6}{5} ; - \\frac{8}{5} ) ⇒ v = - \\frac{6}{5} - \\frac{8}{5} i $. ⇒ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪ ⎪ ⎪ ⎪ ⎩ $ z = u + 6 + 8 i = \\frac{3}{5} + \\frac{4}{5} i - i \\overline{w} = v ⇒ \\overline{w} = v - i = - \\frac{6}{5} - \\frac{8}{5} i - i = \\frac{8}{5} - \\frac{6}{5} i ⇒ w = \\frac{8}{5} + \\frac{6}{5} i ⇒ | z - w | = \\left\\| \\left( \\frac{3}{5} + \\frac{4}{5} i \\right) - \\left( \\frac{8}{5} + \\frac{6}{5} i \\right) \\right\\| = \\sqrt{ \\frac{29}{5} } $. Cách 2: Phương pháp dùng BĐT vectơ Ta có BĐT cho 3 vectơ → $ a $, → $ b $, → $ c $ thì $ \\left\\| → a + → b + → c \\right\\| \\geq \\left\\| → a \\right\\| - \\left\\| → b \\right\\| - \\left\\| → c \\right\\| $. Dấu “=” xảy ra ⇔ ⎧ ⎪ ⎪ ⎪ ⎪ ⎪ ⎨ ⎪ ⎪"
+    },
+    {
+        "id": "T040R029",
+        "question": "Đề thi THPT QG - 2021 - mã 102 Xét các số phức $z$, $w$ thỏa mãn $| z | = 1$ và $| w | = 2$. Khi $| z + \\overline{i w} + 6 - 8 i |$ đạt giá trị nhỏ nhất, $| z - w |$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $\\sqrt{5}$",
+            "B. $\\sqrt{221} \\cdot 5$",
+            "C. 3",
+            "D. $\\sqrt{29} \\cdot 5$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $M$ và $N$ lần lượt là các điểm biểu diễn số phức $z + 6 - 8i$ và $-i \\overline{w}$. Ta có: $| z | = 1 \\Leftrightarrow | ( z + 6 - 8i ) + ( -6 + 8i ) | = 1 \\Leftrightarrow MI = 1$ với $I (6 ; -8)$. Suy ra tập hợp điểm $M$ là đường tròn $(T_1)$ tâm $I (6 ; -8)$ và bán kính $R_1 = 1$. Ta có: $\\left\\| -i \\overline{w} \\right\\| = | -i | \\cdot \\left\\| \\overline{w} \\right\\| = 2$. Suy ra tập hợp điểm $N$ là đường tròn $(T_2)$ tâm $O$ và bán kính $R_2 = 2$. Ta có: $P = \\left\\| z + \\overline{i} w + 6 - 8i \\right\\| = MN \\Rightarrow \\min P = OI - R_1 - R_2 = 10 - 1 - 2 = 7$ (do $(T_1)$ và $(T_2)$ rời nhau). Ta có: \n$$\n\\begin{cases} \n\\overrightarrow{OM} = \\frac{9}{10} \\overrightarrow{OI} \\\\ \n\\overrightarrow{ON} = \\frac{1}{5} \\overrightarrow{OI} \n\\end{cases} \n\\Rightarrow \n\\begin{cases} \nM \\left( \\frac{27}{5} ; - \\frac{36}{5} \\right) \\\\ \nN \\left( \\frac{6}{5} ; - \\frac{8}{5} \\right) \n\\end{cases} \n\\Leftrightarrow \n\\begin{cases} \nz + 6 - 8i = \\frac{27}{5} - \\frac{36}{5} i \\\\ \n-i \\overline{w} = \\frac{6}{5} - \\frac{8}{5} i \n\\end{cases} \n\\Leftrightarrow \n\\begin{cases} \nz = - \\frac{3}{5} + \\frac{4}{5} i \\\\ \nw = \\frac{8}{5} - \\frac{6}{5} i \n\\end{cases} \n$$\nVậy $| z - w | = \\left\\| - \\frac{11}{5} + 2i \\right\\| = \\sqrt{\\frac{221}{5}}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R030",
+        "question": "Số phức $z$ có mô đun $r$ và argument $\\phi$ thì có dạng lượng giác là: $z = r ( \\cos \\phi + i \\sin \\phi )$",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z = r ( \\cos \\phi + i \\sin \\phi )$",
+            "B. $z = r ( \\cos \\phi - i \\sin \\phi )$",
+            "C. $z = r ( \\sin \\phi + i \\cos \\phi )$",
+            "D. $z = r ( \\sin \\phi - i \\cos \\phi )$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Số phức $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$ là dạng lượng giác của $z$, ở đó: + $r$ là mô đun của số phức. + $\\phi$ là acgumen của số phức. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R031",
+        "question": "Cho $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $r$ là acgumen của $z$",
+            "B. $r$ là mô đun của $z$",
+            "C. $\\cos φ$ là acgumen của $z$",
+            "D. $\\sin φ$ là acgumen của $z$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Số phức $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$ là dạng lượng giác của $z$, ở đó: + $r$ là mô đun của số phức. + $\\phi$ là acgumen của số phức. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R032",
+        "question": "Gọi $φ$ là một acgumen của $z$, chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $φ + π$ là một acgumen của z",
+            "B. $φ - π$ là một acgumen của z",
+            "C. $φ - 2 π$ là một acgumen của z",
+            "D. $φ - 3 π$ là một acgumen của z"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Nếu $φ$ là một acgumen của $z$ thì $φ + k 2 π$ cũng là một acgumen của $z$ với mỗi $k ∈ Z$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R033",
+        "question": "Cho số phức $z = r \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} \\right)$. Chọn 1 argument của $z$ :",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $-\\frac{\\pi}{4}$",
+            "B. $-\\frac{5\\pi}{4}$",
+            "C. $\\frac{5\\pi}{4}$",
+            "D. $\\frac{9\\pi}{4}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $z = r \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} \\right)$ nên $\\varphi = \\frac{\\pi}{4}$ là 1 acgumen của $z$. Do đó $\\frac{\\pi}{4} + k 2 \\pi$ cũng là 1 acgumen của $z$. Ta có: $-\\frac{\\pi}{4} - \\frac{\\pi}{4} = -\\frac{\\pi}{2} \\neq k 2 \\pi, \\forall k \\in \\mathbb{Z}$ nên A sai. $-\\frac{5\\pi}{4} - \\frac{\\pi}{4} = -\\frac{3\\pi}{2} \\neq k 2 \\pi, \\forall k \\in \\mathbb{Z}$ nên B sai. $\\frac{5\\pi}{4} - \\frac{\\pi}{4} = \\pi \\neq k 2 \\pi, \\forall k \\in \\mathbb{Z}$ nên C sai. $\\frac{9\\pi}{4} - \\frac{\\pi}{4} = 2\\pi$ nên D đúng. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R034",
+        "question": "Số phức $z$ có mô đun $r = 3$ và argument $\\phi = -\\frac{\\pi}{3}$ thì có dạng lượng giác là: $z = 3 \\left( \\cos \\left( -\\frac{\\pi}{3} \\right) + i \\sin \\left( -\\frac{\\pi}{3} \\right) \\right)$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = 3 \\left( \\cos \\left( - \\frac{\\pi}{3} \\right) + i \\sin \\left( - \\frac{\\pi}{3} \\right) \\right)$",
+            "B. $z = 3 \\left( \\cos \\left( - \\frac{\\pi}{3} \\right) - i \\sin \\left( - \\frac{\\pi}{3} \\right) \\right)$",
+            "C. $z = 3 \\left( - \\cos \\frac{\\pi}{3} - i \\sin \\frac{\\pi}{3} \\right)$",
+            "D. $z = 3 \\left( \\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3} \\right)$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $z$ có mô đun $r = 3$ và acgumen $\\phi = - \\frac{\\pi}{3}$ thì có dạng lượng giác là $z = 3 \\left( \\cos \\left( - \\frac{\\pi}{3} \\right) + i \\sin \\left( - \\frac{\\pi}{3} \\right) \\right)$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R035",
+        "question": "Cho số phức $z = - r \\left( \\cos \\phi + i \\sin \\phi \\right)$. Tìm một acgumen của $z$ ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $- \\phi$",
+            "B. $\\phi + 2 \\pi$",
+            "C. $\\phi - 2 \\pi$",
+            "D. $\\phi + \\pi$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = - r \\left( \\cos \\phi + i \\sin \\phi \\right) = r \\left( - \\cos \\phi - i \\sin \\phi \\right) = z = r' \\left( \\cos \\phi' + i \\sin \\phi' \\right)$ Suy ra $\\begin{cases} \\cos \\phi' = - \\cos \\phi \\\\ \\sin \\phi' = - \\sin \\phi \\end{cases} \\Leftrightarrow \\begin{cases} \\cos \\phi' = \\cos \\left( \\phi + \\pi \\right) \\\\ \\sin \\phi' = \\sin \\left( \\phi + \\pi \\right) \\end{cases} \\Rightarrow \\phi' = \\phi + \\pi$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R036",
+        "question": "Gọi $φ$ là $1\\, \\text{acgumen}$ của số phức $z$ có điểm biểu diễn là $M(1, 2; \\sqrt{3}, 2)$ nằm trên đường tròn đơn vị, số đo nào sau đây có thể là một $acgumen$ của $z$ ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $π 2$",
+            "B. $π 3$",
+            "C. $π 4$",
+            "D. $π 6$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Quan sát hình vẽ ta thấy $ \\begin{cases} \\sin \\phi = \\frac{\\sqrt{3}}{2} \\\\ \\cos \\phi = \\frac{1}{2} \\\\ \\Rightarrow \\phi = \\frac{\\pi}{3} \\end{cases} $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R037",
+        "question": "Cho số phức $z$ có dạng đại số và dạng lượng giác lần lượt là $z = a + bi$ và $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$, chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $r = \\sqrt{a^2 + b^2}$",
+            "B. $r = a^2 + b^2$",
+            "C. $r^2 = \\sqrt{a^2 + b^2}$",
+            "D. $r = |a + b|$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $r$ là mô đun của số phức nên $r = \\sqrt{a^2 + b^2}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R038",
+        "question": "Cho số phức $z$ có dạng lượng giác là $z = 4 \\left( \\cos \\left( - \\frac{\\pi}{2} \\right) + i \\sin \\left( - \\frac{\\pi}{2} \\right) \\right)$. Dạng đại số của $z$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = 4$",
+            "B. $z = - i$",
+            "C. $z = 4 i$",
+            "D. $z = - 4 i$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = 4 \\left( \\cos \\left( - \\frac{\\pi}{2} \\right) + i \\sin \\left( - \\frac{\\pi}{2} \\right) \\right) = 4 \\left( 0 + i \\cdot \\left( - 1 \\right) \\right) = - 4 i$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R039",
+        "question": "Dạng lượng giác của số phức $z = i - 1$ là: $z = \\sqrt{2} \\left( \\cos \\frac{3 \\pi}{4} - i \\sin \\frac{3 \\pi}{4} \\right)$ $z = 2 \\left( \\cos \\frac{3 \\pi}{4} + i \\sin \\frac{3 \\pi}{4} \\right)$ $z = \\sqrt{2} \\left( \\cos -\\frac{\\pi}{4} + i \\sin -\\frac{\\pi}{4} \\right)$ $z = \\sqrt{2} \\left( \\cos \\frac{3 \\pi}{4} + i \\sin \\frac{3 \\pi}{4} \\right)$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $z = \\sqrt{2} \\left( \\cos \\frac{3 \\pi}{4} - i \\sin \\frac{3 \\pi}{4} \\right)$",
+            "B. $z = 2 \\left( \\cos \\frac{3 \\pi}{4} + i \\sin \\frac{3 \\pi}{4} \\right)$",
+            "C. $z = \\sqrt{2} \\left( \\cos \\left( -\\frac{\\pi}{4} \\right) + i \\sin \\left( -\\frac{\\pi}{4} \\right) \\right)$",
+            "D. $z = \\sqrt{2} \\left( \\cos \\frac{3 \\pi}{4} + i \\sin \\frac{3 \\pi}{4} \\right)$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = i - 1 = - 1 + i \\Rightarrow a = - 1 ; b = 1$ - Tính $r = \\sqrt{(- 1)^2 + 1^2} = \\sqrt{2}$. - Tính $\\phi$ thỏa mãn $\\begin{cases} \\cos \\phi = \\frac{a}{r} = \\frac{- 1}{\\sqrt{2}} \\\\ \\sin \\phi = \\frac{b}{r} = \\frac{1}{\\sqrt{2}} \\end{cases} \\Rightarrow \\phi = \\frac{3\\pi}{4}$ Vậy $z = \\sqrt{2} \\left( \\cos \\frac{3\\pi}{4} + i \\sin \\frac{3\\pi}{4} \\right)$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R040",
+        "question": "Cho số phức $z$ có acgumen là $\\phi$. Tìm một acgumen của số phức $\\overline{z}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $π - φ$",
+            "B. $π + φ$",
+            "C. $φ$",
+            "D. $- φ$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức $z$ có điểm biểu diễn là $M$ thì $\\overline{z}$ có điểm biểu diễn là $M'$ đối xứng với $M$ qua $O_x$. Do đó $-\\phi$ là một argumen của $\\overline{z}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R041",
+        "question": "Cho số phức $z$ có một acgumen là $\\phi$. Tìm một acgumen của số phức $\\frac{1}{z}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $φ - 1$",
+            "B. $π - φ$",
+            "C. $- φ$",
+            "D. $π + φ$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $1\\, z = \\frac{\\overline{z}}{z}$. $\\overline{z} = \\frac{1}{|z|^2}\\overline{z}$. Vì $1\\, |z|^2$ là số thực nên $acgumen$ của $1\\, z$ cũng là $acgumen$ của $\\overline{z}$. Mà $-\\phi$ là một $acgumen$ của $\\overline{z}$ nên $-\\phi$ cũng là một $acgumen$ của $1\\, z$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R042",
+        "question": "Viết dạng lượng giác của số phức $z = - 1$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = \\cos ( - \\pi ) + i \\sin ( - \\pi )$",
+            "B. $z = \\cos 0 + i \\sin 0$",
+            "C. $z = \\cos ( 2 \\pi ) + i \\sin ( 2 \\pi )$",
+            "D. $z = \\cos \\frac{\\pi}{2} + i \\sin \\frac{\\pi}{2}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = -1 = -1 + 0i \\Rightarrow r = \\sqrt{(-1)^2 + 0^2} = 1$ Acgumen $\\phi$ thỏa mãn $\\begin{cases} \\cos \\phi = -1 \\\\ \\sin \\phi = 0 \\end{cases} \\Rightarrow \\phi = \\pi + k 2\\pi$ Quan sát các đáp án ta thấy chỉ có đáp án A thỏa mãn. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R043",
+        "question": "Cho hai số phức $z_1 = r_1 \\left( \\cos \\phi_1 + i \\sin \\phi_1 \\right)$, $z_2 = r_2 \\left( \\cos \\phi_2 + i \\sin \\phi_2 \\right)$. Khi đó: $z_1 z_2 = r_1 r_2 \\left[ \\cos \\left( \\phi_1 + \\phi_2 \\right) + i \\sin \\left( \\phi_1 + \\phi_2 \\right) \\right]$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z_1 z_2 = r_1 r_2 [ \\cos ( \\varphi_1 \\varphi_2 ) + i \\sin ( \\varphi_1 \\varphi_2 ) ]$",
+            "B. $z_1 z_2 = r_1 r_2 [ \\cos ( \\varphi_1 + \\varphi_2 ) + i \\sin ( \\varphi_1 + \\varphi_2 ) ]$",
+            "C. $z_1 z_2 = r_1 r_2 [ \\sin ( \\varphi_1 \\varphi_2 ) + i \\cos ( \\varphi_1 \\varphi_2 ) ]$",
+            "D. $z_1 z_2 = r_1 r_2 [ \\sin ( \\varphi_1 + \\varphi_2 ) + i \\cos ( \\varphi_1 + \\varphi_2 ) ]$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cho hai số phức $z_1 = r_1 \\left( \\cos \\phi_1 + i \\sin \\phi_1 \\right)$, $z_2 = r_2 \\left( \\cos \\phi_2 + i \\sin \\phi_2 \\right)$. Khi đó $z_1 z_2 = r_1 r_2 \\left[ \\cos \\left( \\phi_1 + \\phi_2 \\right) + i \\sin \\left( \\phi_1 + \\phi_2 \\right) \\right]$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R044",
+        "question": "Cho hai số phức $z_1 = 3 \\left( \\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3} \\right)$, $z_2 = 2 \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} \\right)$. Dạng lượng giác của số phức $z = z_1 z_2$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z = 3 \\sqrt{2} \\left( \\cos \\frac{1}{12} + i \\sin \\frac{1}{12} \\right)$",
+            "B. $z = 3 \\sqrt{2} \\left( \\cos - \\frac{\\pi}{12} + i \\sin - \\frac{\\pi}{12} \\right)$",
+            "C. $z = 3 \\sqrt{2} \\left( \\cos \\frac{7 \\pi}{12} + i \\sin \\frac{7 \\pi}{12} \\right)$",
+            "D. $z = 3 \\sqrt{2} \\left( \\cos \\frac{\\pi}{12} + i \\sin \\frac{\\pi}{12} \\right)$"
+        ],
+        "answer": "D",
+        "explain": "Ta có: $z_1 = 3 \\left( \\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3} \\right)$, $z_2 = 2 \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} \\right)$ ⇒ $z_1 z_2 = 3 \\cdot 2 \\left[ \\cos \\left( \\frac{\\pi}{3} - \\frac{\\pi}{4} \\right) + i \\sin \\left( \\frac{\\pi}{3} - \\frac{\\pi}{4} \\right) \\right] = 3 \\cdot 2 \\left( \\cos \\frac{\\pi}{12} + i \\sin \\frac{\\pi}{12} \\right)$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R045",
+        "question": "Cho số phức $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$. Chọn mệnh đề đúng:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z_n = r^n ( \\cos n \\phi + i \\sin n \\phi )$",
+            "B. $z_n = r^n ( \\cos \\phi n + i \\sin \\phi n )$",
+            "C. $z_n = r^n ( \\cos n \\phi + i \\sin n \\phi )$",
+            "D. $z_n = r ( \\cos n \\phi + i \\sin n \\phi )$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Cho số phức $z = r \\left( \\cos \\phi + i \\sin \\phi \\right)$. Khi đó $z^n = \\left[ r \\left( \\cos \\phi + i \\sin \\phi \\right) \\right]^n = r^n \\left( \\cos n \\phi + i \\sin n \\phi \\right)$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R046",
+        "question": "Gọi $z_1$ và $z_2$ là hai nghiệm phức của phương trình $z^2 + z + 1 = 0$. Tính giá trị của $P = z_1^{2017} + z_2^{2017}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P = 1$",
+            "B. $P = 0$",
+            "C. $P = -1$",
+            "D. $P = 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình $z^2 + z + 1 = 0$ có $\\Delta = 1 - 4 = - 3$ nên có 2 nghiệm $z_1 = -1 + i \\frac{\\sqrt{3}}{2}$; $z_2 = -1 - i \\frac{\\sqrt{3}}{2}$ $z_{2017}^1 + z_{2017}^2 = \\left( -\\frac{1}{2} + i \\frac{\\sqrt{3}}{2} \\right)^{2017} + \\left( -\\frac{1}{2} - i \\frac{\\sqrt{3}}{2} \\right)^{2017} = \\left( \\cos \\frac{2 \\pi}{3} + i \\sin \\frac{2 \\pi}{3} \\right)^{2017} + \\left[ \\cos \\left( -\\frac{2 \\pi}{3} \\right) + i \\sin \\left( -\\frac{2 \\pi}{3} \\right) \\right]^{2017} = \\cos \\left( \\frac{2017 \\cdot 2 \\pi}{3} \\right) + i \\sin \\left( \\frac{2017 \\cdot 2 \\pi}{3} \\right) + \\cos \\left( -\\frac{2017 \\cdot 2 \\pi}{3} \\right) + i \\sin \\left( -\\frac{2017 \\cdot 2 \\pi}{3} \\right) = 2 \\cos \\left( \\frac{4034 \\pi}{3} \\right) = 2 \\cos \\left( \\frac{2 \\pi}{3} \\right) = - 1 Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R047",
+        "question": "Cho $z$ là số phức thỏa mãn $z + \\frac{1}{z} = 1$. Tính giá trị của $z^{2017} + \\frac{1}{z^{2017}}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $-2$",
+            "B. $-1$",
+            "C. $1$",
+            "D. $2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta thấy $z + 1 z = 1 \\Leftrightarrow z^2 - z + 1 = 0 \\Rightarrow z = \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i$. Ta chỉ cần lấy 1 nghiệm do $z_1 \\cdot z_2 = 1$ và vai trò của $z_1$ và $z_2$ trong biểu thức $z^{2017} + 1 z^{2017}$ là như nhau. Lại có: $z = \\cos \\frac{\\pi}{3} + i \\sin \\frac{\\pi}{3} \\Rightarrow z^{2017} = \\cos \\left(2017 \\cdot \\frac{\\pi}{3}\\right) + i \\sin \\left(2017 \\cdot \\frac{\\pi}{3}\\right) = \\frac{1}{2} + \\frac{\\sqrt{3}}{2} i$. Suy ra $ \\frac{1}{z^{2017}} = \\frac{1}{2} - \\frac{\\sqrt{3}}{2} i$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R048",
+        "question": "Giá trị biểu thức $C_{0}^{19} - C_{2}^{19} + C_{4}^{19} - \\ldots + C_{16}^{19} - C_{18}^{19}$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 0",
+            "B. $− 1024$",
+            "C. $512$",
+            "D. $− 512$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ (1 + i)^{19} = 19 \\sum_{k = 0}^{19} C_k 9 i^k = C_0 19 i^0 + C_1 19 i^1 + C_2 19 i^2 + C_3 19 i^3 + \\ldots + C_{18} 19 i^{18} + C_{19} 19 i^{19} = C_0 19 + C_1 19 i - C_2 19 - C_3 19 i + \\ldots - C_{18} 19 - C_{19} 19 i = (C_0 19 - C_2 19 + C_4 19 - \\ldots + C_{16} 19 - C_{18} 19) + i (C_1 19 - C_3 19 + C_5 19 - \\ldots + C_{17} 19 - C_{19} 19) $ Nên phần thực của $ (1 + i)^{19} $ là $ C_0 19 - C_2 19 + C_4 19 - \\ldots + C_{16} 19 - C_{18} 19 $ Lại có: $ 1 + i = \\sqrt{2} \\left( \\cos \\frac{\\pi}{4} + i \\sin \\frac{\\pi}{4} \\right) \\Rightarrow (1 + i)^{19} = \\sqrt{2}^{19} \\left( \\cos \\frac{19 \\pi}{4} + i \\sin \\frac{19 \\pi}{4} \\right) = \\sqrt{2}^{19} \\left( -\\frac{\\sqrt{2}}{2} + i \\frac{\\sqrt{2}}{2} \\right) = -\\sqrt{2}^{20} \\frac{1}{2} + \\sqrt{2}^{20} \\frac{1}{2} i = -512 + 512 i $ Vậy phần thực của $ (1 + i)^{19} $ là $ -512 $. Do đó $ C_0 19 - C_2 19 + C_4 19 - \\ldots + C_{16} 19 - C_{18} 19 = -512 $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R049",
+        "question": "Cho số phức $z = -2 + 2 \\sqrt{3} i$. Tìm các số nguyên dương $n$ để $z^n$ là số thực.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $n = 3 k, k \\in \\mathbb{N}$",
+            "B. $n = 6 k, k \\in \\mathbb{N}^*$",
+            "C. $n = 2 k, k \\in \\mathbb{N}$",
+            "D. $n = 3 k, k \\in \\mathbb{N}^*$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z = -2 + 2 \\sqrt{3} i = 4 \\left( -\\frac{1}{2} + \\frac{\\sqrt{3}}{2} i \\right) = 4 \\left( \\cos \\frac{2 \\pi}{3} + i \\sin \\frac{2 \\pi}{3} \\right) \\Rightarrow z^n = 4^n \\left( \\cos \\frac{2 n \\pi}{3} + i \\sin \\frac{2 n \\pi}{3} \\right)$ $z^n$ là số thực $ \\Leftrightarrow \\sin \\frac{2 n \\pi}{3} = 0 \\Leftrightarrow \\frac{2 n \\pi}{3} = k \\pi \\Leftrightarrow n = \\frac{3 k}{2}$ Do $n$ nguyên dương nên $3 k \\in \\mathbb{N}^*$ $ \\Leftrightarrow k = 2 m , m \\in \\mathbb{N}^* \\Rightarrow n = 3 k = 3 \\cdot 2 m = 3 m , m \\in \\mathbb{N}^*$ Vậy $n = 3 m , m \\in \\mathbb{N}^*$ . Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R050",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $|z_1| = 2$, $|z_2| = \\sqrt{3}$. Gọi $M$, $N$ là các điểm biểu diễn cho $z_1$ và $iz_2$. Biết $\\hat{M}ON = 30^\\circ$. Tính $S = \\left\\| z_1^2 + 4z_2^2 \\right\\|$?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{5} $",
+            "B. $ 4 \\sqrt{7} $",
+            "C. $ 3 \\sqrt{3} $",
+            "D. $ 5 \\sqrt{2} $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z_3 = i z_2$ ⇒ $z_2^3 = -z_2^2$ ⇒ $S = \\left| z_2^1 + 4 z_2^2 \\right| = \\left| z_2^1 - 4 z_2^3 \\right| = | z_1 - 2 z_3 | | z_1 + 2 z_3 | M, N$ là các điểm biểu diễn cho $z_1, z_3$ ⇒ $O M = 2, O N = | z_3 | = | i z_2 | = | i | \\cdot | z_2 | = \\sqrt{3}$. Gọi $P$ là điểm biểu diễn cho $2 z_3$ và $Q$ là điểm biểu diễn cho $-2 z_3$, ta có $N$ là trung điểm của $O P$ và $P, Q$ đối xứng nhau qua $O$. Khi đó $S = M P \\cdot M Q$. Áp dụng định lý Cosin trong $\\Delta O M P$ có: $M P^2 = O P^2 + O M^2 - 2 O P \\cdot O M \\cdot \\cos 30 = 1^2 + 4 - 2 \\cdot 2 \\sqrt{3} \\cdot 2 \\cdot \\sqrt{3} = 4 \\Rightarrow M P = 2$. Áp dụng định lý Cosin trong $\\Delta O M Q$ có: $M Q^2 = O M^2 + O Q^2 - 2 O M \\cdot O Q \\cdot \\cos 150^\\circ = 4 + 1^2 + 2 \\cdot 2 \\cdot 2 \\sqrt{3} \\cdot \\sqrt{3} = 2 \\sqrt{7} \\Rightarrow S = M P \\cdot M Q = 2 \\cdot 2 \\sqrt{7} = 4 \\sqrt{7}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R051",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $|z_1 + 1 - i| = 2$ và $z_2 = iz_1$. Tìm giá trị lớn nhất $m$ của biểu thức $|z_1 - z_2|$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $m = 2$",
+            "B. $m = 2 \\sqrt{2} + 2$",
+            "C. $m = 2 \\sqrt{2}$",
+            "D. $m = \\sqrt{2} + 1$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : $2 = | z_1 + 1 - i | = | z_1 + (1 - i) | \\geq | z_1 | - | 1 - i | = | z_1 | - \\sqrt{2} \\Rightarrow | z_1 | - \\sqrt{2} \\leq 2 \\Rightarrow | z_1 | \\leq 2 + \\sqrt{2}$ Lại có $z_2 = i z_1 \\Rightarrow | z_1 - z_2 | = | z_1 - i z_1 | = | (1 - i) z_1 | = \\sqrt{2} | z_1 | \\leq \\sqrt{2} (2 + \\sqrt{2}) = 2 \\sqrt{2} + 2 \\Rightarrow \\max | z_1 - z_2 | = 2 \\sqrt{2} + 2$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R052",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $| z_1 + 1 - i | = 2$ và $z_2 = i z_1$. Tìm GTNN $m$ của biểu thức $| z_1 - z_2 |$ ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $m = \\sqrt{2} - 1$",
+            "B. $m = 2$",
+            "C. $m = 2 \\sqrt{2} - 2$",
+            "D. $m = 2 \\sqrt{2}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com $2 = | z_1 + 1 - i | \\leq | z_1 | + | 1 - i | = | z_1 | + \\sqrt{2} \\Rightarrow | z_1 | + \\sqrt{2} \\geq 2 \\Rightarrow | z_1 | \\geq 2 - \\sqrt{2} \\Rightarrow | z_1 - z_2 | = | z_1 - i z_1 | = | z_1 ( 1 - i ) | = | z_1 | \\cdot \\sqrt{2} \\geq ( 2 - \\sqrt{2} ) \\cdot \\sqrt{2} = 2 \\sqrt{2} - 2 \\Rightarrow | z_1 - z_2 | \\geq 2 \\sqrt{2} - 2 \\Rightarrow m = 2 \\sqrt{2} - 2$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R053",
+        "question": "Cho các số phức $z_1$, $z_2$, $z_3$ thỏa mãn điều kiện $|z_1| = 4$, $|z_2| = 3$, $|z_3| = 2$ và $|4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3| = 48$. Giá trị của biểu thức $P = |z_1 + z_2 + z_3|$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 8",
+            "B. 6",
+            "C. $1$",
+            "D. $2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| 4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3 | = \\left| z_3 \\cdot \\overline{z_3} \\cdot z_1 z_2 + z_1 \\cdot \\overline{z_1} \\cdot z_2 z_3 + z_2 \\cdot \\overline{z_2} \\cdot z_1 z_3 \\right| = \\left| z_1 z_2 z_3 \\cdot ( \\overline{z_1} + \\overline{z_2} + \\overline{z_3} ) \\right| = | z_1 z_2 z_3 | \\cdot \\left| \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right| = | z_1 | \\cdot | z_2 | \\cdot | z_3 | \\cdot \\left| \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right| = 24 \\cdot | z_1 + z_2 + z_3 | = 48 \\Rightarrow P = | z_1 + z_2 + z_3 | = \\frac{48}{24} = 2$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R054",
+        "question": "Có bao nhiêu số phức $ z $ thỏa mãn $ | z | ( z - 5 - i ) + 2 i = ( 6 - i ) z $?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $1$",
+            "B. $3$",
+            "C. $4$",
+            "D. $2$"
+        ],
+        "answer": "B",
+        "explain": "Ta có: $| z | ( z - 5 - i ) + 2 i = ( 6 - i ) z \\iff | z | \\cdot z - 5 | z | - | z | i + 2 i = ( 6 - i ) z \\iff z ( | z | - 6 + i ) = 5 | z | + ( | z | - 2 ) i ( *)$. Lấy modul 2 vế của phương trình ( *) ta được: $| z | \\sqrt{ ( | z | - 6 )^2 + 1 } = \\sqrt{ 25 | z |^2 + ( | z | - 2 )^2 } ( 1 )$. Đặt $x = | z | ( x \\geq 0 )$. Khi đó ta có: $( 1 ) \\iff x \\sqrt{ ( x - 6 )^2 + 1 } = \\sqrt{ 25 x^2 + ( x - 2 )^2 } \\iff x^2 ( x^2 - 12 x + 36 + 1 ) = 25 x^2 + x^2 - 4 x + 4 \\iff x^4 - 12 x^3 + 36 x^2 + x^2 = 26 x^2 - 4 x + 4 \\iff x^4 - 12 x^3 + 11 x^2 + 4 x - 4 = 0 \\iff ( x - 1 ) ( x^3 - 11 x^2 + 4 ) = 0 \\iff \\begin{cases} x - 1 = 0 \\\\ x^3 - 11 x^2 + 4 = 0 \\end{cases} \\iff \\begin{cases} x = 1 \\, \\text{(t m)} \\\\ x \\approx 10,97 \\, \\text{(t m)} \\\\ x \\approx 0,62 \\, \\text{(t m)} \\\\ x \\approx -0,59 \\, \\text{(k t m)} \\end{cases} \\iff \\begin{cases} | z | = 1 \\\\ | z | \\approx 10,97 \\\\ | z | \\approx 0,62 \\end{cases}$. Thay các $| z |$ vào phương trình đã cho ta sẽ nhận được 3 số phức $z$ thỏa mãn yêu cầu bài toán. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R055",
+        "question": "Cho $z_1$ ; $z_2$ ; $z_3$ là ba số phức thay đổi thỏa mãn $| z_1 | = 2$ ; $| z_3 | = 1$ và $z_2 = z_1 z_3$. Trong mặt phẳng phức $A$, $B$ biểu diễn $z_1$ ; $z_2$. Giả sử $O$, $A$, $B$ lập thành tam giác có diện tích là $a$, chu vi là $b$. Giá trị lớn nhất của biểu thức $T = a + b$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $6 + 2 \\sqrt{2}$",
+            "B. $6 + 2 \\sqrt{3}$",
+            "C. $4 + 2 \\sqrt{3}$",
+            "D. $4 + 3 \\sqrt{3}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $| z_2 | = | z_1 | | z_3 | = 2 \\Rightarrow O_B = O_A = 2$. Đặt $AB = x \\,(0 < x < 4)$ ta có: $a = \\frac{1}{2} \\cdot x \\cdot \\sqrt{4 - x^2} = \\frac{1}{4} x \\sqrt{16 - x^2}$; $b = 2 + 2 + x = 4 + x \\Rightarrow T = a + b = \\frac{x \\sqrt{16 - x^2}}{4} + 4 + x$. Sử dụng MTCT ta tính được $T_{max} \\approx 9,19$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R056",
+        "question": "Cho các số phức $z_1$ ; $z_2$ thỏa mãn $|z_1| = 3$ ; $|z_2| = 4$ và chúng được biểu diễn trong mặt phẳng phức lần lượt là các điểm $M$, $N$. Biết góc giữa vector $-\\overrightarrow{OM}$ và $-\\overrightarrow{ON}$ bằng $60^\\circ$. Tìm môđun của số phức $z = \\frac{z_1 + z_2}{z_1 - z_2}$ ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $| z | = \\sqrt{3}$",
+            "B. $| z | = \\sqrt{5} \\cdot 2$",
+            "C. $| z | = \\sqrt{481} \\cdot 13$",
+            "D. $| z | = 4 \\sqrt{3}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $OM = 3$ ; $ON = 4$ ; $\\hat{( \\overrightarrow{OM} ; \\overrightarrow{ON} )} = 60^\\circ \\Rightarrow \\hat{( OM ; ON )} = 60^\\circ$. $| z | = | z_1 + z_2 | \\cdot | z_1 - z_2 | = \\left\\| \\overrightarrow{OM} + \\overrightarrow{ON} \\right\\| \\cdot \\left\\| \\overrightarrow{OM} - \\overrightarrow{ON} \\right\\| = 2 \\left\\| \\overrightarrow{OI} \\right\\| \\cdot \\left\\| \\overrightarrow{MN} \\right\\| = 2 OIMN$ (với $I$ là trung điểm của $MN$). Áp dụng định lý cosin trong tam giác $OMN$ có $MN = \\sqrt{OM^2 + ON^2 - 2 \\cdot OM \\cdot ON \\cdot \\cos( OM ; ON )} = \\sqrt{13}$. $OI$ là đường trung tuyến của tam giác $OMN \\Rightarrow OI = \\sqrt{\\frac{OM^2 + ON^2}{2} - \\frac{MN^2}{4}} = \\sqrt{\\frac{37}{2}}$. Vậy $| z | = 2 \\cdot \\sqrt{\\frac{37}{2}} \\cdot \\sqrt{13} = \\sqrt{\\frac{481}{13}}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R057",
+        "question": "Xét số phức $z$ thỏa mãn $(1 + 2 i) |z| = \\sqrt{10} z - 2 + i$. Mệnh đề nào dưới đây đúng?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $3 \\, 2 < | z | < 2$",
+            "B. $| z | > 2$",
+            "C. $| z | < 1 \\, 2$",
+            "D. $1 \\, 2 < | z | < 3 \\, 2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ ( 1 + 2 i ) | z | = \\sqrt{10} z - 2 + i \\iff ( 1 + 2 i ) | z | + 2 - i = \\sqrt{10} z \\iff ( | z | + 2 ) + ( 2 | z | - 1 ) i = \\sqrt{10} z \\iff ( | z | + 2 )^2 + ( 2 | z | - 1 )^2 = 10 | z |^2 \\iff | z |^2 + 4 | z | + 4 + 4 | z |^2 - 4 | z | + 1 = 10 | z |^2 \\iff 5 | z |^4 + 5 | z |^2 - 10 = 0 \\iff | z | = 1 \\in ( \\frac{1}{2} ; \\frac{3}{2} ) Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R058",
+        "question": "Xét các số phức $z = a + b i$, $(a; b \\in \\mathbb{R})$ thỏa mãn đồng thời hai điều kiện $| z | = \\left| \\overline{z} + 4 - 3 i \\right|$ và $| z + 1 - i | + | z - 2 + 3 i |$ đạt giá trị nhỏ nhất. Giá trị $P = a + 2 b$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $P = - \\frac{61}{10}$",
+            "B. $P = - \\frac{252}{50}$",
+            "C. $P = - \\frac{41}{5}$",
+            "D. $P = - \\frac{18}{5}$"
+        ],
+        "answer": "A",
+        "explain": "Gọi $z = x + y i$ ta có: $| x + y i | = | x − y i + 4 − 3 i | \\Leftrightarrow x^2 + y^2 = ( x + 4 )^2 + ( y + 3 )^2 \\Leftrightarrow 8 x + 6 y = − 25$. Gọi điểm $M ( x ; y )$ là điểm biểu diễn cho số phức $z$ và $A ( − 1 ; 1 )$ ; $B ( 2 ; − 3 )$ ta có: $| z + 1 − i | + | z − 2 + 3 i | = M A + M B$ nhỏ nhất. Ta có: $M A + M B \\geq 2 \\sqrt{M A \\cdot M B}$, dấu bằng xảy ra $\\Leftrightarrow M A = M B \\Rightarrow M$ thuộc trung trực của $AB$. Gọi $I$ là trung điểm của $AB$ ta có $I ( \\frac{1}{2} ; − 1 )$ và $−−→ A B = ( 3 ; − 4 )$. Phương trình đường trung trực của $AB$ là $3 ( x − \\frac{1}{2} ) − 4 ( y + 1 ) = 0 \\Leftrightarrow 3 x − 4 y − \\frac{11}{2} = 0$. Để $( M A + M B )$ min $\\Leftrightarrow$ Tọa độ điểm $M$ là nghiệm của hệ phương trình \n\\[\n\\begin{cases}\n8 x + 6 y = − 25\\\\\n3 x − 4 y = \\frac{11}{2}\n\\end{cases}\n\\Leftrightarrow \n\\begin{cases}\nx = − \\frac{67}{50}\\\\\ny = − \\frac{119}{50}\n\\end{cases}\n\\Rightarrow z = − \\frac{67}{50} − \\frac{119}{50} i \\Leftrightarrow \n\\begin{cases}\na = − \\frac{67}{50}\\\\\nb = − \\frac{119}{50}\n\\end{cases}\n\\Rightarrow P = a + 2 b = − \\frac{61}{10}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R059",
+        "question": "Giả sử $z_1$, $z_2$ là hai trong số các số phức $z$ thỏa mãn $\\| i z + \\sqrt{2} - i \\| = 1$ và $| z_1 - z_2 | = 2$. Giá trị lớn nhất của $| z_1 | + | z_2 |$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $3$",
+            "B. $2 \\sqrt{3}$",
+            "C. $3 \\sqrt{2}$",
+            "D. $4$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\left| i z + \\sqrt{2} - i \\right| = 1 \\Leftrightarrow \\left| i ( x + y i ) + \\sqrt{2} - i \\right| = 1 \\, (với \\, z = x + y i \\, ( x ; y \\in \\mathbb{R} ) ) \\Leftrightarrow ( x - 1 )^2 + ( y - \\sqrt{2} )^2 = 1 \\Rightarrow M ( x ; y ) \\, biểu \\, diễn \\, z \\, thuộc \\, đường \\, tròn \\, tâm \\, I ( 1 ; \\sqrt{2} ) \\, bán \\, kính \\, R = 1. Giả sử $ A ( z_1 ) ; B ( z_2 ) $ do $ | z_1 - z_2 | = 2 \\Rightarrow A B = 2 = 2 R $ nên $ A B $ là đường kính của đường tròn $ ( I ; R ) $ Lại có: $ | z_1 | + | z_2 | = O A + O B $ Mặt khác theo công thức trung tuyến ta có: $ O I^2 = O A^2 + O B^2 - \\frac{A B^2}{4} \\Rightarrow O A^2 + O B^2 = 8 $. Theo BĐT Bunhiascopky ta có: $ 2 ( O A^2 + O B^2 ) \\geq ( O A + O B )^2 \\Rightarrow O A + O B \\leq 4 $. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R060",
+        "question": "Cho các số phức $w$, $z$ thỏa mãn $| w + i | = 3 \\sqrt{5}$ và $5 w = ( 2 + i ) ( z - 4 )$. Giá trị lớn nhất của biểu thức $P = | z - 1 - 2 i | + | z - 5 - 2 i |$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 \\sqrt{13}$",
+            "B. $4 + 2 \\sqrt{13}$",
+            "C. $2 \\sqrt{53}$",
+            "D. $6 \\sqrt{7}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $5w = (2 + i)(z - 4) \\Leftrightarrow 5w + 5i = (2 + i)z - 8 + i \\Leftrightarrow 5 |w + i| = |(2 + i)z - 8 + i| \\Leftrightarrow |(2 + i)z - 8 + i| = 3\\sqrt{5} \\Leftrightarrow |2 + i| \\cdot \\left| \\frac{z - 8 - i}{2 + i} \\right| = 3 \\Leftrightarrow \\left| \\frac{z - 8 - i}{2 + i} \\right| = 3 \\Leftrightarrow |z - 3 + 2i| = 3 \\Rightarrow Tập\\ hợp\\ điểm\\ M(z)\\ là\\ đường\\ tròn\\ (C):\\ (x - 3)^2 + (y + 2)^2 = 9,\\ tâm\\ I(3; -2),\\ R = 3. Gọi\\ A(1; 2),\\ B(5; 2)\\ và\\ E(3; 2)\\ là\\ trung\\ điểm\\ của\\ AB\\ suy\\ ra\\ P = M_A + M_B. Lại có $(M_A + M_B)^2 \\leq 2(M_A^2 + M_B^2) = 4.$ $M_E^2 + AB^2 \\Rightarrow P\\ lớn\\ nhất \\Leftrightarrow M_E\\ lớn\\ nhất.$ Mà $IE = 4 > R = 3$ Vậy $P_{max} = \\sqrt{4}.\\ M_E^2 + AB^2 = 2\\sqrt{53}.$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R061",
+        "question": "Có bao nhiêu số phức $z$ thỏa mãn điều kiện $z^2 = |z|^2 + \\overline{z}$?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4$",
+            "B. $2$",
+            "C. $3$",
+            "D. $1$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = x + y i \\ (x, y \\in \\mathbb{R}) \\Rightarrow (x + y i)^2 = (x^2 + y^2) + (x - y i) \\Leftrightarrow x^2 - y^2 + 2xy i = x^2 + y^2 + x - y i \\Leftrightarrow \\begin{cases} 2xy = -y \\\\ x^2 - y^2 = x^2 + y^2 + x \\end{cases} \\Leftrightarrow \\begin{cases} y = 0 \\\\ x = -\\frac{1}{2} \\\\ 2y^2 + x = 0 \\end{cases} \\Leftrightarrow \\begin{cases} y = 0 \\\\ x = 0 \\end{cases} \\begin{cases} x = -\\frac{1}{2} \\\\ 2y^2 - \\frac{1}{2} = 0 \\end{cases} \\Leftrightarrow \\begin{cases} x = y = 0 \\\\ x = -\\frac{1}{2} \\\\ y = \\pm \\frac{1}{2} \\end{cases} Do đó có 3 số phức $z$ thỏa mãn bài toán. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R062",
+        "question": "Trong các số phức $z$ thỏa mãn $\\| z^2 + 1 \\| = 2 | z |$, gọi $z_1$ và $z_2$ lần lượt là các số phức có môđun lớn nhất và nhỏ nhất. Khi đó môđun lớn nhất của số phức $w = z_1 + z_2$ là: ",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $| w | = 2 \\sqrt{2}$",
+            "B. $| w | = 2$",
+            "C. $| w | = \\sqrt{2}$",
+            "D. $| w | = 1 + \\sqrt{2}$"
+        ],
+        "answer": "A",
+        "explain": "Ta có $|| z^2 + 1 || = 2 | z | \\Leftrightarrow || z^2 + 1 ||^2 = 4 | z |^2 \\Leftrightarrow ( z^2 + 1 ) ( \\overline{z^2 + 1} ) = 4 z \\overline{z} \\Leftrightarrow ( z^2 + 1 ) ( \\overline{z^2} + 1 ) = 4 z \\overline{z} \\Leftrightarrow ( \\overline{z} z )^2 + z^2 + \\overline{z}^2 + 1 - 4 z \\overline{z} = 0 \\Leftrightarrow ( z + \\overline{z} )^2 + ( \\overline{z} z )^2 - 6 z \\overline{z} + 1 = 0 \\Leftrightarrow ( z + \\overline{z} )^2 + | z |^4 - 6 | z |^2 + 1 = 0 \\Leftrightarrow | z |^4 - 6 | z |^2 + 1 = - ( z + \\overline{z} )^2 \\leq 0 \\Leftrightarrow 3 - 2 \\sqrt{2} \\leq | z |^2 \\leq 3 + 2 \\sqrt{2} \\Leftrightarrow \\sqrt{2} - 1 \\leq | z | \\leq \\sqrt{2} + 1 \\Rightarrow \\{ | z_1 | = \\sqrt{2} - 1 \\, | z_2 | = \\sqrt{2} + 1 \\} Dấu = xảy ra \\Leftrightarrow \\left\\{ \\begin{array}{l} | z_1 | = \\sqrt{2} - 1 \\\\ | z_2 | = \\sqrt{2} + 1 \\\\ z + \\overline{z} = 0 \\end{array} \\right. \\Leftrightarrow \\left\\{ \\begin{array}{l} z_1 = ( \\sqrt{2} - 1 ) i \\\\ z_1 = ( 1 - \\sqrt{2} ) i \\\\ z_2 = ( \\sqrt{2} + 1 ) i \\\\ z_2 = ( - \\sqrt{2} - 1 ) i \\end{array} \\right. \\Leftrightarrow [ | w | = | z_1 + z_2 | = 2 \\sqrt{2} \\, | w | = | z_1 + z_2 | = 2 ] Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R063",
+        "question": "Cho số phức $z = a + b i$ ($a, b \\in \\mathbb{R}$, $a > 0$) thỏa mãn $| z - 1 + 2 i | = 5$ và $z \\cdot \\overline{z} = 10$. Tính $P = a - b$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $P = 4$",
+            "B. $P = -4$",
+            "C. $P = -2$",
+            "D. $P = 2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có $| z - 1 + 2 i | = 5$ $z \\cdot \\bar{z} = 10 \\Leftrightarrow \\{| ( a - 1 ) + ( b + 2 ) i | = 5 ( a + b i ) ( a - b i ) = 10 \\Leftrightarrow \\{ ( a - 1 )^2 + ( b + 2 )^2 = 25$ $a^2 + b^2 = 10 \\Leftrightarrow \\{ a^2 + b^2 = 10$ $a^2 + b^2 - 2 a + 4 b = 20 \\Leftrightarrow \\{ 2 a - 4 b = - 10$ $a^2 + b^2 = 10 \\Leftrightarrow \\{ a = 2 b - 5$ $a^2 + b^2 = 10 \\Rightarrow \\{ a = 2 b - 5 ( 2 b - 5 )^2 + b^2 = 10 \\Leftrightarrow \\begin{cases} a = 2 b - 5 \\\\ b = 1 \\\\ b = 3 \\Rightarrow \\begin{cases} a = - 3 \\\\ b = 1 \\\\ ( k \\, \\text{tm} ) \\\\ a = 1 \\\\ b = 3 \\, \\text{(tm)}. \\Rightarrow P = a - b = 1 - 3 = - 2.$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R064",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 1 - i | = 1$, số phức $w$ thỏa mãn $| \\overline{w} - 2 - 3i | = 2$. Tính giá trị nhỏ nhất của $| z - w |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{13} - 3 $",
+            "B. $ \\sqrt{17} - 3 $",
+            "C. $ \\sqrt{17} + 3 $",
+            "D. $ \\sqrt{13} + 3 $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có $| z - 1 - i | = 1 \\Rightarrow$ Tập hợp biểu diễn số phức $z$ là đường tròn $(C_1)$ có tâm $I_1(1; 1)$ và bán kính $R_1 = 1$. $| \\overline{w} - 2 - 3i | = 2 \\Leftrightarrow | w - 2 + 3i | = 2 \\Rightarrow$ Tập hợp biểu diễn số phức $w$ là đường tròn $(C_2)$ có tâm $I_2(2; -3)$ và bán kính $R_2 = 2$. Do $I_1 I_2 > R_1 + R_2$ nên hai đường tròn không cắt nhau. Khi đó $| z - w | = M N \\Rightarrow | z - w |_{\\text{min}} = M N_{\\text{min}} = I_1 I_2 - (R_1 + R_2) = \\sqrt{17} - 3$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R065",
+        "question": "Cho số phức $z$ thỏa mãn $ ( 3 + i ) | z | = - 2 + 14 i z + 1 - 3 i $. Chọn khẳng định đúng?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $13 \\, 4 < | z | < 5$",
+            "B. $1 < | z | < 3 \\, 2$",
+            "C. $3 \\, 2 < | z | < 2$",
+            "D. $7 \\, 4 < | z | < 11 \\, 5$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ ( 3 + i ) | z | = - 2 + 14 i z + 1 - 3 i \\Leftrightarrow ( 3 + i ) | z | - 1 + 3 i = - 2 + 14 i z \\Leftrightarrow ( 3 | z | - 1 ) + ( | z | + 3 ) i = - 2 + 14 i z $ Lấy mođun hai vế ta có: $ \\sqrt{ 9 | z |^2 - 6 | z | + 1 } + | z |^2 + 6 | z | + 9 = 10 \\sqrt{2} | z | \\Leftrightarrow 10 | z |^2 + 10 = 200 | z |^2 \\Leftrightarrow | z |^4 + | z |^2 - 20 = 0 \\Leftrightarrow | z |^2 = 4 \\Rightarrow | z | = 2 \\in ( \\frac{7}{4} ; \\frac{11}{5} ) $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R066",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 3 - 4 i | = \\sqrt{5}$. Gọi $M$, $m$ lần lượt là giá trị lớn nhất, nhỏ nhất biểu thức $P = | z + 2 |^2 - | z - i |^2$. Mô đun của số phức $w = M + m i$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $2 \\sqrt{314}$",
+            "B. $\\sqrt{1258}$",
+            "C. $3 \\sqrt{137}$",
+            "D. $2 \\sqrt{309}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = x + y i$ ($x, y ∈ \\mathbb{R}$) suy ra tập hợp các điểm $M(z) = (x; y)$ là đường tròn $(C)$ có tâm $I(3; 4)$ và bán kính $R = \\sqrt{5}$. Ta có $P = |z + 2|^2 - |z - i|^2 = |x + 2 + y i|^2 - |x + (y - 1)i|^2 = (x + 2)^2 + y^2 - x^2 - (y - 1)^2 = x^2 + y^2 + 4x + 4 - x^2 - y^2 + 2y - 1 = 4x + 2y + 3 \\Rightarrow (\\Delta): 4x + 2y + 3 - P = 0$. Ta cần tìm $P$ sao cho đường thẳng $(\\Delta)$ và đường tròn $(C)$ có điểm chung $\\Leftrightarrow d(I; (\\Delta)) \\leq R$. $\\Leftrightarrow |4 \\cdot 3 + 2 \\cdot 4 + 3 - P| \\cdot \\frac{1}{\\sqrt{4^2 + 2^2}} \\leq \\sqrt{5} \\Leftrightarrow |23 - P| \\leq 10 \\Leftrightarrow -10 \\leq 23 - P \\leq 10 \\Leftrightarrow 13 \\leq P \\leq 33$. Do đó, $\\{ \\max P = 33, \\min P = 13 \\Rightarrow w = M + m i = 33 + 13 i$. Vậy $|w| = \\sqrt{1258}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R067",
+        "question": "Cho các số phức $z_1 = -2 + i$, $z_2 = 2 + i$ và số phức $z$ thỏa mãn $| z - z_1 |^2 + | z - z_2 |^2 = 16$. Gọi $M$ và $m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của $| z |$. Giá trị biểu thức $M^2 - m^2$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $15$",
+            "B. $7$",
+            "C. $8$",
+            "D. $11$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = x + y i \\ (x, y \\in \\mathbb{R})$, khi đó $| z − z_1 |^2 + | z − z_2 |^2 = 16 \\Leftrightarrow (x + 2)^2 + (y − 1)^2 + (x − 2)^2 + (y − 1)^2 = 16 \\Leftrightarrow 2x^2 + 4 + 2y^2 − 4y + 2 = 16 \\Leftrightarrow x^2 + y^2 − 2y − 3 = 0 \\Leftrightarrow x^2 + (y − 1)^2 = 4 \\Leftrightarrow \\begin{cases} x = 2 \\sin t \\\\ y = 2 \\cos t + 1 \\end{cases}$. Khi đó $| z |^2 = x^2 + y^2 = 4 \\sin^2 t + (2 \\cos t + 1)^2 = 4 \\cos t + 5$ mà $\\cos t \\in [-1; 1] \\Rightarrow 4 \\cos t + 5 \\in [1; 9]$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R068",
+        "question": "Cho số phức $z$ thỏa mãn điều kiện $| z - 1 - i | + | z + 1 + 3 i | = 6 \\sqrt{5}$. Giá trị lớn nhất của $| z - 2 - 3 i |$ là.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 \\sqrt{5}$",
+            "B. $2 \\sqrt{5}$",
+            "C. $6 \\sqrt{5}$",
+            "D. $5 \\sqrt{5}$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $I (1 ; 1)$, $J (- 1 ; - 3)$, $A (2 ; 3)$. Xét số phức $z = x + y i$, $(x, y ∈ \\mathbb{R})$, có điểm biểu diễn là $M (x ; y)$. $| z - 1 - i | + | z + 1 + 3 i | = 6 \\sqrt{5} \\iff \\sqrt{(x - 1)^2 + (y - 1)^2} + \\sqrt{(x + 1)^2 + (y + 3)^2} = 6 \\sqrt{5} \\quad (1) \\iff M I + M J = 6 \\sqrt{5} \\Rightarrow M$ di chuyển trên đường elip có tiêu điểm $I$ và $J$, độ dài trục lớn là $3 \\sqrt{5}$ (như hình vẽ). Tìm giá trị lớn nhất của $| z - 2 - 3 i |$ tức là tìm độ dài lớn nhất của đoạn $AM$ khi $M$ di chuyển trên elip. Ta có: $-\\overrightarrow{IA} = (1 ; 2)$, $-\\overrightarrow{JA} = (3 ; 6) \\Rightarrow -\\overrightarrow{JA} = 3 -\\overrightarrow{IA}$, điểm $A$ nằm trên trục lớn của elip. $\\Rightarrow AM$ đạt độ dài lớn nhất khi và chỉ khi $M$ trùng với $B$, là đỉnh của elip nằm trên trục lớn và khác phía $A$ so với điểm $I$. Gọi $S$ là trung điểm của $IJ \\Rightarrow S (0 ; - 1)$. Độ dài đoạn $AB = SA + SB$ Mà $-\\overrightarrow{AS} = (- 2 ; - 4) \\Rightarrow AS = 2 \\sqrt{5}$, $SB = \\frac{6 \\sqrt{5}}{2} = 3 \\sqrt{5} \\Rightarrow AB = 5 \\sqrt{5}$. Vậy $| z - 2 - 3 i |_{\\text{max}} = 5 \\sqrt{5}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R069",
+        "question": "Cho các số phức $z_1$, $z_2$ với $z_1 \\neq 0$. Tập hợp các điểm biểu diễn số phức $w = z_1 z - z_2$ là đường tròn tâm là gốc tọa độ và bán kính bằng $1$. Tập hợp các điểm biểu diễn số phức $z$ là: ",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. Đường tròn tâm là điểm biểu diễn số phức $z_2$ $z_1$ và bán kính bằng $1 \\cdot | z_1 |$",
+            "B. Đường tròn tâm là gốc tạo độ và bán kính bằng $| z_1 |$",
+            "C. Đường tròn tâm là gốc tạo độ và bán kính bằng $1 \\cdot | z_1 |$",
+            "D. Đường tròn tâm là điểm biểu diễn số phức $- z_2$ $z_1$ và bán kính bằng $1 \\cdot | z_1 |$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do tập hợp các điểm biểu diễn số phức $w = \\frac{z_1}{z - z_2}$ là đường tròn tâm là gốc tọa độ và bán kính bằng $1$ nên $| w | = 1$. Ta có: $w = \\frac{z_1}{z - z_2}$, $( z_1 \\neq 0 ) \\Rightarrow z = \\frac{w z_1 + z_2}{z_1} \\Leftrightarrow z - \\frac{z_2}{z_1} = w z_1$. Lấy mô đun hai vế ta được $ \\left| \\frac{z - z_2}{z_1} \\right| = \\left| w z_1 \\right| = 1 |z_1|$. Vậy tập hợp các điểm biểu diễn số phức $z$ là đường tròn tâm là điểm biểu diễn số phức $\\frac{z_2}{z_1}$ và bán kính bằng $1 |z_1|$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R070",
+        "question": "Cho số phức $z$ thỏa mãn $| 2z - 3 - 4i | = 10$. Gọi $M$ và $m$ lần lượt là giá trị lớn nhất và giá trị nhỏ nhất của $| z |$. Khi đó $M - m$ bằng:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $5$",
+            "B. $15$",
+            "C. $10$",
+            "D. $20$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử điểm $M ( x ; y )$ biểu diễn số phức $z \\Rightarrow z = x + y i \\Rightarrow | z | = \\sqrt{x^2 + y^2}$. Ta có: $| 2 z - 3 - 4 i | = 10 \\Leftrightarrow \\left| z - \\frac{3}{2} - 2 i \\right| = 5 \\Leftrightarrow ( x - \\frac{3}{2} )^2 + ( y - 2 )^2 = 25$. $ \\Rightarrow M$ thuộc đường tròn tâm $I \\left( \\frac{3}{2} ; 2 \\right)$ và bán kính $R = 5$. $ \\Rightarrow | z | = \\sqrt{x^2 + y^2} = O M$. Ta đưa bài toán về tìm $min$ và $max$ của $O M$. Ta có: $O I = \\sqrt{ \\left( \\frac{3}{2} \\right)^2 + 2^2} = \\frac{5}{2} < R \\Rightarrow I$ nằm trong đường tròn. $ \\Rightarrow O M$ đạt $Max$ và $Min$ khi $M \\in$ đường thẳng đi qua $O , I$. $ \\Rightarrow M = M_{max} O M = R + O I = 5 + \\frac{5}{2} = \\frac{15}{2} \\, \\text{m} = M_{min} O M = R - O I = 5 - \\frac{5}{2} = \\frac{5}{2}$. $ \\Rightarrow M - m = \\frac{15}{2} - \\frac{5}{2} = 5$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R071",
+        "question": "Cho số phức $z$ thay đổi thỏa mãn $| z - i | + | z + i | = 6$. Gọi $S$ là đường cong tạo bởi tất cả các điểm biểu diễn số phức $(z - i)(i + 1)$ khi $z$ thay đổi. Tính diện tích hình phẳng giới hạn bởi đường cong $S$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $12 \\pi$",
+            "B. $12 \\pi \\sqrt{2}$",
+            "C. $9 \\pi \\sqrt{2}$",
+            "D. $9 \\pi$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $ ( z - i ) ( i + 1 ) = x + y i $ ⇒ $ \\left[ z - i = x + y i \\right] $ $ i + 1 $ $ z + i = \\frac{x + y i}{i + 1} + 2 i = \\frac{x + y i - 2 + 2 i}{i + 1} = \\frac{x - 2 + ( y + 2 ) i}{i + 1} ⇒ $ $ \\left[ | z - i | = \\sqrt{x^2 + y^2} \\right] $ $ \\sqrt{2} $ $ | z + i | = \\sqrt{( x - 2 )^2 + ( y + 2 )^2} $ $ \\sqrt{2} $ ⇒ $ \\frac{\\sqrt{x^2 + y^2}}{\\sqrt{2}} + \\frac{\\sqrt{( x - 2 )^2 + ( y + 2 )^2}}{\\sqrt{2}} = 6 \\quad ( * ) $ Gọi $ M ( x ; y ) ; I ( 2 ; - 2 ) $, từ $(*)$ ta có $ M O \\sqrt{2} + M I \\sqrt{2} = 6 ⇔ M O + M I = 6 \\sqrt{2} $ Do đó quỹ tích điểm $ M $ là elip nhận $ O; I $ là hai tiêu điểm và trục lớn $ 2 a = 6 \\sqrt{2} ⇒ a = 3 \\sqrt{2} $ . $ 2 c = O I = 2 \\sqrt{2} ⇒ c = \\sqrt{2} ⇒ b = \\sqrt{a^2 - c^2} = 4 $ . Vậy diện tích elip là $ S = \\pi a b = \\pi \\cdot 4 \\cdot 3 \\sqrt{2} = 12 \\pi \\sqrt{2} $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R072",
+        "question": "Cho các số phức $z_1 = -3i$; $z_2 = 4 + i$ và $z$ thỏa mãn $|z - i| = 2$. Biểu thức $T = |z - z_1| + 2|z - z_2|$ đạt giá trị nhỏ nhất khi $z = a + bi$ ($a; b \\in \\mathbb{R}$). Hiệu $a - b$ bằng:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $3 - 6 \\sqrt{13} \\, 17$",
+            "B. $6 \\sqrt{13} - 3 \\, 17$",
+            "C. $3 + 6 \\sqrt{13} \\, 17$",
+            "D. $- 3 + 6 \\sqrt{13} \\, 17$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Trên mặt phẳng tọa độ Oxy, gọi $A ( 0 ; - 3 )$ là điểm biểu diễn số phức $z_1$ ; $B ( 4 ; 1 )$ là điểm biểu diễn số phức $z_2$ ; $I ( 0 ; 1 )$ là điểm biểu diễn số phức $i$ và $M$ là điểm biểu diễn cho số phức $z$. Theo đề bài ta có $| z - i | = 2 \\Rightarrow M I = 2 \\Rightarrow M$ thuộc đường tròn tâm $I$ bán kính $R = 2$. $T = | z - z_1 | + 2 | z - z_2 | = M A + 2 M B$. Ta có $IM = 2$, $IO = 1$, $IA = 4 \\Rightarrow I M^2 = I A \\cdot I O \\Leftrightarrow I M I A = I O I M$. Do đó tam giác $IMO$ đồng dạng với tam giác $IAM \\Rightarrow I M I A = O M A M = \\frac{1}{2} \\Rightarrow M A = 2 M O \\Rightarrow T = M A + 2 M B = 2 M O + 2 M B = 2 ( M O + M B ) \\geq 2 O B$. Dấu bằng xảy ra khi và chỉ khi $M$ là giao điểm của $OB$ và $(I) \\Leftrightarrow M \\equiv E$. $O ( 0 ; 0 ) ; B ( 4 ; 1 ) \\Rightarrow$ Phương trình $OB$ là $y = \\frac{1}{4} x ( d )$ ; $E \\in d \\Rightarrow E ( 4 m ; m ) ( m > 0 )$. Vì $E \\in ( I ) \\Rightarrow I E = 2 \\Rightarrow ( 4 m )^2 + ( m - 1 )^2 = 4 \\Leftrightarrow 17 m^2 - 2 m - 3 = 0 \\Leftrightarrow m = \\frac{1 + 2 \\sqrt{13}}{17} ( m > 0 )$. Ta có $\\{ a = 4 m, b = m \\Rightarrow a - b = 3 m = 3 + \\frac{6 \\sqrt{13}}{17}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R073",
+        "question": "Cho số phức $z$ thỏa mãn $| z | \\leq 2$. GTNN của biểu thức $P = 2 | z + 1 | + 2 | z - 1 | + \\left| z - \\overline{z} - 4 i \\right|$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 + 2 \\sqrt{3}$",
+            "B. $2 + \\sqrt{3}$",
+            "C. $4 + 14 \\sqrt{15}$",
+            "D. $2 + 7 \\sqrt{15}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = x + y i$, $(x, y \\in \\mathbb{R}) \\Rightarrow M (x; y)$ là điểm biểu diễn của $z$ trên mặt phẳng tọa độ $Oxy$. $P = 2 | z + 1 | + 2 | z - 1 | + \\| z - \\overline{z} - 4 i \\| = 2 (\\sqrt{(x + 1)^2 + y^2} + \\sqrt{(x - 1)^2 + y^2} + |y - 2|)$ Đặt $A (-1; 0)$, $B (1; 0)$, $C (0; 2)$ và $H (0; y)$ là hình chiếu của $M$ lên $Oy$. Khi đó, $P = 2 (MA + MB + HC)$ Ta xác định vị trí của $M$ để $P$ đạt giá trị nhỏ nhất, $(M di chuyển trên hình tròn x^2 + y^2 \\leq 4)$ Nếu $M \\in (C_1)$: $x^2 + y^2 \\leq 4$, $y < 0$ thì ta luôn tìm được điểm $M' \\in (C_2)$: $x^2 + y^2 \\leq 4$, $y \\geq 0$ đối xứng với $M$ qua $Ox$. Khi đó $P = 2 (MA + MB + HC) = 2 (M' A + M' B + H' C) > 2 (MA + MB + HC)$ Ta xét điểm $M \\in (C_2)$: $x^2 + y^2 \\leq 4$, $y \\geq 0$ Với $M$ nằm trong nửa hình tròn $(C_2)$, thay đổi trên đường thẳng $y = m$ cố định $(0 \\leq m \\leq 2)$ thì độ dài đoạn $HC$ không đổi, $MA + MB \\geq HA + HB = 2 HA$ $P = 2 (MA + MB + HC) \\geq 2 (2 HA + HC)$ Ta có: $2 HA + HC = 2 \\sqrt{m^2 + 1} + 2 - m = f(m)$, $m \\in [0; 2]$ $f'(m) = 2m \\sqrt{m^2 + 1} - 1$, $f'(m) = 0 \\Leftrightarrow m = \\frac{1}{\\sqrt{3}}$ $f(m)_{min} = f\\left(\\frac{1}{\\sqrt{3}}\\right) = 2 + \\sqrt{3} \\Rightarrow P_{min} = 2(2 + \\sqrt{3}) = 4 + 2\\sqrt{3}$ khi $M (0; \\frac{1}{\\sqrt{3}})$ hay $z = i\\sqrt{3}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R074",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 1 - i | = 1$, số phức $w$ thỏa mãn $| \\overline{w} - 2 - 3 i | = 2$. Tính giá trị nhỏ nhất của $| z - w |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{13} - 3 $",
+            "B. $ \\sqrt{17} - 3 $",
+            "C. $ \\sqrt{17} + 3 $",
+            "D. $ \\sqrt{13} + 3 $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra, ta có: +) $| z - 1 - i | = 1 \\Rightarrow$ Tập hợp biểu diễn số phức $z$ là đường tròn $(C_1)$ có tâm $I_1(1; 1)$ và bán kính $R_1 = 1$. +) $| \\overline{w} - 2 - 3i | = 2 \\Leftrightarrow | w - 2 + 3i | = 2 \\Rightarrow$ Tập hợp biểu diễn số phức $w$ là đường tròn $(C_2)$ có tâm $I_2(2; -3)$ và bán kính $R_2 = 2$. Do $I_1 I_2 > R_1 + R_2$ nên hai đường tròn không cắt nhau. Khi đó $| z - w | = M N \\Rightarrow | z - w |_{\\text{min}} = M N_{\\text{min}} = I_1 I_2 - (R_1 + R_2) = \\sqrt{17} - 3$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R075",
+        "question": "Xét các số phức $z = a + b i$ ($a, b \\in \\mathbb{R}$) thỏa mãn điều kiện $| z - 3 - 2 i | = 2$. Tính $a + b$ khi $| z + 1 - 2 i | + 2 | z - 2 - 5 i |$ đạt giá trị nhỏ nhất.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 - \\sqrt{3}$",
+            "B. $2 + \\sqrt{3}$",
+            "C. $3$",
+            "D. $4 + \\sqrt{3}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Cách 1: Đặt $z - 3 - 2i = w$ với $w = x + yi$ $(x, y \\in \\mathbb{R})$. Theo bài ra ta có $|w| = 2 \\Leftrightarrow x^2 + y^2 = 4$. Ta có $P = |z + 1 - 2i| + 2|z - 2 - 5i| = |w + 4| + 2|w + 1 - 3i| = \\sqrt{(x + 4)^2 + y^2} + 2\\sqrt{(x + 1)^2 + (y - 3)^2} = \\sqrt{20 + 8x} + 2\\sqrt{(x + 1)^2 + (y - 3)^2} = 2\\sqrt{5} + 2x + 2\\sqrt{(x + 1)^2 + (y - 3)^2} = 2(\\sqrt{x^2 + y^2} + 2x + 1 + \\sqrt{(x + 1)^2 + (y - 3)^2}) = 2(\\sqrt{(x + 1)^2 + y^2} + \\sqrt{(x + 1)^2 + (y - 3)^2}) \\geq 2(|y| + |y - 3|) \\geq 2|y + 3 - y| = 6$. Do đó $P = 6 \\Leftrightarrow \\begin{cases} x = -1 \\\\ y(3 - y) \\geq 0 \\\\ x^2 + y^2 = 4 \\end{cases} \\Leftrightarrow \\{ x = -1 \\\\ y = \\sqrt{3} \\}$. Vậy GTNN của $P$ là bằng $6$ đạt được khi $z = 2 + (2 + \\sqrt{3})i$. $\\Rightarrow a + b = 2 + 2 + \\sqrt{3} = 4 + \\sqrt{3}$. Cách 2: Giả thiết $|z - 3 - 2i| = 2 \\Rightarrow M_I = 2 \\Rightarrow M \\in (I; 2)$ với $I = (3; 2)$. $P = |z + 1 - 2i| + 2|z - 2 - 5i| = M_A + 2M_B$ với $A = (1; 2)$, $B = (2; 5)$. Ta có $I_M = 2; I_A = 4$. Chọn $K(2; 2)$ thì $I_K = 1$. Do đó ta có $I_A \\cdot I_K = I_M^2 \\Rightarrow I_A I_M = I_M I_K \\Rightarrow \\Delta I_A M$ và $\\Delta I_M K$ đồng dạng với nhau $\\Rightarrow AM \\cdot MK = I_M \\cdot I_K = 2 \\Rightarrow AM = 2MK$. Từ đó $P = MA + 2MB = 2(MK + MB) \\geq 2BK$. Dấu bằng xảy ra khi và chỉ khi $M, K, B$ thẳng hàng và $M$ thuộc đoạn thẳng $BK$. Từ đó tìm được $M = (2; 2 + \\sqrt{3})$. Cách 3: Gọi $M(a; b)$ là điểm biểu diễn số phức $z = a + bi$. Đặt $I = (3; 2)$, $A(-1; 2)$ và $B(2; 5)$. Ta xét bài toán: Tìm điểm $M$ thuộc đường tròn $(C)$ có tâm $I$, bán kính $R = 2$ sao cho biểu thức $P = MA + 2MB$ đạt giá trị nhỏ nhất. Trước tiên, ta tìm điểm $K(x; y)$ sao cho $MA = 2MK \\, \\forall M \\in (C)$. Ta có $MA = 2MK \\Leftrightarrow MA^2 = 4MK^2 \\Leftrightarrow (\\overrightarrow{MI} + \\overrightarrow{IA})^2 = 4(\\overrightarrow{MI} + \\overrightarrow{IK})^2 \\Leftrightarrow MI^2 + IA^2 + 2\\overrightarrow{MI} \\cdot \\overrightarrow{"
+    },
+    {
+        "id": "T040R076",
+        "question": "Cho các số phức $z_1$, $z_2$, $z_3$ thỏa mãn điều kiện $| z_1 | = 4$, $| z_2 | = 3$, $| z_3 | = 2$ và $| 4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3 | = 48$. Giá trị của biểu thức $P = | z_1 + z_2 + z_3 |$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $8$",
+            "B. $6$",
+            "C. $1$",
+            "D. $2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| 4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3 | = \\left| z_3 \\cdot \\overline{z_3} z_1 z_2 + z_1 \\cdot \\overline{z_1} z_2 z_3 + z_2 \\cdot \\overline{z_2} z_1 z_3 \\right| = \\left| z_1 z_2 z_3 \\cdot \\left( \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right) \\right| = | z_1 z_2 z_3 | \\cdot \\left| \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right| = | z_1 | \\cdot | z_2 | \\cdot | z_3 | \\cdot \\left| \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right| = 24 \\cdot | z_1 + z_2 + z_3 | = 48 \\Rightarrow P = | z_1 + z_2 + z_3 | = \\frac{48}{24} = 2$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R077",
+        "question": "Cho các số phức $w$, $z$ thỏa mãn $| w + i | = 3 \\sqrt{5}$ và $5 w = ( 2 + i ) ( z - 4 )$. Giá trị lớn nhất của biểu thức $P = | z - 1 - 2 i | + | z - 5 - 2 i |$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 \\sqrt{13}$",
+            "B. $4 + 2 \\sqrt{13}$",
+            "C. $2 \\sqrt{53}$",
+            "D. $6 \\sqrt{7}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $5 w = ( 2 + i ) ( z - 4 ) \\Leftrightarrow 5 w + 5 i = ( 2 + i ) z - 8 + i \\Leftrightarrow 5 | w + i | = | ( 2 + i ) z - 8 + i | \\Leftrightarrow | ( 2 + i ) z - 8 + i | = 3 \\sqrt{5} \\Leftrightarrow | 2 + i | \\cdot \\left| \\frac{z - 8 - i}{2 + i} \\right| = 3 \\sqrt{5} \\Leftrightarrow \\left| \\frac{z - 8 - i}{2 + i} \\right| = 3 \\Leftrightarrow | z - 3 + 2 i | = 3 \\Rightarrow Tập hợp điểm M ( z ) là đường tròn ( C ) : ( x - 3 )^2 + ( y + 2 )^2 = 9 , tâm I ( 3 ; - 2 ) , R = 3. Gọi A ( 1 ; 2 ) , B ( 5 ; 2 ) và E ( 3 ; 2 ) là trung điểm của A B suy ra $P = M_A + M_B$. Lại có $( M_A + M_B )^2 \\leq 2 ( M_A^2 + M_B^2 ) = 4. M_E^2 + A B^2 \\Rightarrow P \\text{ lớn nhất } \\Leftrightarrow M_E \\text{ lớn nhất. } Mà I E = 4 > R = 3 \\Rightarrow M_E^{max} = I E + R = 7. Vậy P_{max} = \\sqrt{4} M_E^2 + A B^2 = 2 \\sqrt{53}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R078",
+        "question": "Cho số phức $z$ thỏa điều kiện $| z + 2 | = | z + 2 i |$. Giá trị nhỏ nhất của biểu thức $P = | z − 1 − 2 i | + | z − 3 − 4 i | + | z − 5 − 6 i |$ được viết dưới dạng $a + b \\sqrt{17} \\sqrt{2}$ với $a$, $b$ là các hữu tỉ. Giá trị của $a + b$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4$",
+            "B. $2$",
+            "C. $7$",
+            "D. $3$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $z = x + y i \\, (x, y \\in \\mathbb{R})$. Từ giả thiết $| z + 2 | = | z + 2 i | \\Rightarrow | x + y i + 2 | = | x + y i + 2 i | \\Leftrightarrow ( x + 2 )^2 + y^2 = x^2 + ( y + 2 )^2 \\Leftrightarrow x = y \\Leftrightarrow z = x + x i \\Rightarrow P = | x + x i - 1 - 2 i | + | x + x i - 3 - 4 i | + | x + x i - 5 - 6 i | = \\sqrt{ ( x - 1 )^2 + ( x - 2 )^2 } + \\sqrt{ ( x - 3 )^2 + ( x - 4 )^2 } + \\sqrt{ ( x - 5 )^2 + ( x - 6 )^2 } Sử dụng BĐT $\\sqrt{ a^2 + b^2 } + \\sqrt{ c^2 + d^2 } \\geq \\sqrt{ ( a + c )^2 + ( b + d )^2 }$. Dấu bằng xảy ra $\\Leftrightarrow a c = b d$. Ta có: $\\sqrt{ ( x - 1 )^2 + ( x - 2 )^2 } + \\sqrt{ ( x - 5 )^2 + ( x - 6 )^2 } = \\sqrt{ ( x - 1 )^2 + ( x - 2 )^2 } + \\sqrt{ ( 5 - x )^2 + ( 6 - x )^2 } \\geq \\sqrt{ ( x - 1 + 6 - x )^2 + ( x - 2 + 5 - x )^2 } = \\sqrt{ 34 }$ Dấu bằng xảy ra $\\Leftrightarrow \\frac{x - 1}{6 - x} = \\frac{x - 2}{5 - x} \\Leftrightarrow x = \\frac{7}{2}$. Mặt khác $\\sqrt{ ( x - 3 )^2 + ( x - 4 )^2 } = \\sqrt{ 2 x^2 - 14 x + 25 } = \\sqrt{ 2} \\sqrt{ ( x - \\frac{7}{2} )^2 + \\frac{1}{4} } \\geq \\frac{1}{\\sqrt{2}}$ Dấu bằng xảy ra $\\Leftrightarrow x = \\frac{7}{2}$. Từ đó ta thấy $P_{min} = \\frac{1}{\\sqrt{2}} + \\sqrt{34} = 1 + \\frac{2 \\sqrt{17}}{\\sqrt{2}} \\Leftrightarrow a = 1, b = 2 \\Rightarrow a + b = 3$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R079",
+        "question": "Cho các số phức $z$, $w$ thỏa mãn $| z - 5 + 3 i | = 3$, $| i w + 4 + 2 i | = 2$. Tìm giá trị lớn nhất của biểu thức $T = | 3 i z + 2 w |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{554} + 5 $",
+            "B. $ \\sqrt{578} + 13 $",
+            "C. $ \\sqrt{578} + 5 $",
+            "D. $ \\sqrt{554} + 13 $"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $u = 3i$, $z$, $v = -2w \\Leftrightarrow \\begin{cases} z = \\frac{u}{3i} \\\\ w = -\\frac{v}{2} \\end{cases} \\Rightarrow \\begin{cases} |z - 5 + 3i| = 3 \\\\ |iw + 4 + 2i| = 2 \\Leftrightarrow \\begin{cases} \\left| \\frac{u}{3i} - 5 + 3i \\right| = 3 \\\\ \\left| -i\\frac{v}{2} + 4 + 2i \\right| = 2 \\Leftrightarrow \\begin{cases} \\left| \\left( \\frac{u - 9 - 15i}{3i} \\right) \\right| = 3 \\\\ \\left| \\left( i\\frac{v - 8 - 4i}{2} \\right) \\right| = 2 \\end{cases} \\Rightarrow \\begin{cases} |u - 9 - 15i| = 9 \\\\ |iv - 8 - 4i| = 4 \\end{cases} \\Rightarrow \\begin{cases} |u - 9 - 15i| = 9 \\\\ |v - 4 + 8i| = 4 \\end{cases}$. Do đó, tập hợp điểm $M$ biểu diễn số phức $u$ thuộc đường tròn $(C_1)$: $(x - 9)^2 + (y - 15)^2 = 81$. Tập hợp điểm $N$ biểu diễn số phức $v$ thuộc đường tròn $(C_2)$: $(x - 4)^2 + (y + 8)^2 = 16$. Xét $(C_1)$ có tâm $I_1(9; 15)$, bán kính $R_1 = 9$; $(C_2)$ có tâm $I_2(4; -8)$, bán kính $R_2 = 4$. Dễ thấy $(C_1)$, $(C_2)$ không cắt nhau $\\Rightarrow |u - v| = MN$ lớn nhất $\\Leftrightarrow MN = I_1I_2 + R_1 + R_2 = \\sqrt{554} + 13$. Vậy $T = |3iz + 2w|$ đạt giá trị lớn nhất bằng $\\sqrt{554} + 13$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R080",
+        "question": "Cho hai số phức $u$, $v$ thỏa mãn $3 | u - 6 i | + 3 | u - 1 - 3 i | = 5 \\sqrt{10}$, $| v - 1 + 2 i | = \\left\\| \\overline{v} + i \\right\\|$. GTNN của $| u - v |$ là.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $\\sqrt{10} \\ 3$",
+            "B. $2 \\sqrt{10} \\ 3$",
+            "C. $\\sqrt{10}$",
+            "D. $5 \\sqrt{10} \\ 3$"
+        ],
+        "answer": "B",
+        "explain": "Ta có: $3 \\left| u - 6 i \\right| + 3 \\left| u - 1 - 3 i \\right| = 5 \\sqrt{10} \\Leftrightarrow \\left| u - 6 i \\right| + \\left| u - 1 - 3 i \\right| = 5 \\sqrt{10} \\, 3 \\Rightarrow$ Tập hợp điểm biểu diễn của số phức $u$ là đường elip $(E)$ có 2 tiêu điểm là $F_1(0; 6)$, $F_2(1; 3)$ và độ dài trục lớn là $5 \\sqrt{10} \\, 6$. Ta có: $\\left| v - 1 + 2 i \\right| = \\left| \\overline{v} + i \\right| = \\left| \\overline{v} + \\left( \\overline{- i} \\right) \\right| = \\left| \\overline{v} - i \\right| = \\left| v - i \\right| \\Rightarrow$ Tập hợp điểm biểu diễn của số phức $u$ là đường trung trực $(d)$ của đoạn thẳng $AB$, trong đó $A(1; -2)$, $B(0; 1)$. Giả sử $M'$, $N'$ lần lượt là điểm biểu diễn số phức $u$, $v \\Rightarrow M' \\in (E)$, $N' \\in d$. Nhận xét: Việc tìm GTNN của $\\left| u - v \\right|$ là tìm độ dài ngắn nhất của đoạn thẳng $M'N'$. Dễ dàng kiểm tra được: $F_1 F_2 \\perp d$. Gọi $N = F_1 F_2 \\cap d$, $M = F_1 F_2 \\cap (E)$, $(M$ nằm giữa $N$ và $F_2)$. Khi đó với mọi điểm $M' \\in (E)$, $N' \\in d$ thì $M N \\leq M' N' \\Rightarrow \\left| u - v \\right|_{min} = M N$. Ta tính $MN$ ? +) Viết phương trình đường thẳng $d$: $A(1; -2)$, $B(0; 1) \\Rightarrow \\begin{cases} \\overrightarrow{AB} = (-1; 3) \\\\ I \\left( \\frac{1}{2}; -\\frac{1}{2} \\right) \\end{cases} \\text{(I là trung điểm của AB)} \\Rightarrow d: (x - \\frac{1}{2}) - 3(y + \\frac{1}{2}) = 0 \\Leftrightarrow x - 3y - 2 = 0$. +) Phương trình đường thẳng $F_1 F_2$: $\\overrightarrow{F_1 F_2} = (1; -3) \\Rightarrow E F: 3(x - 0) + 1(y - 6) = 0 \\Leftrightarrow 3x + y - 6 = 0$. +) Tọa độ điểm $N$ là nghiệm của hệ phương trình: $\\begin{cases} x - 3y - 2 = 0 \\\\ 3x + y - 6 = 0 \\end{cases} \\Leftrightarrow \\begin{cases} x = 2 \\\\ y = 0 \\end{cases} \\Rightarrow N(2; 0)$. +) $M \\in F_1 F_2 \\Rightarrow M(m; 6 - 3m), 1 < m < 2$. Ta có: $M_A + M_B = 2a \\Leftrightarrow \\sqrt{(m - 1)^2 + (8 - 3m)^2} + \\sqrt{m^2 + (5 - 3m)^2} = 5 \\sqrt{10} \\, 3 \\Leftrightarrow m = \\frac{4}{3} \\Rightarrow M(\\frac{4}{3}; 2)$. Suy ra, $M N = \\sqrt{(\\frac{2}{3})^2 + 2^2} = 2 \\sqrt{10} \\, 3 \\Rightarrow \\left| u - v \\right|_{min} = M N = 2 \\sqrt{10} \\, 3$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R081",
+        "question": "Cho số phức $z$ thay đổi thỏa mãn $| z - i | + | z + i | = 6$. Gọi $S$ là đường cong tạo bởi tất cả các điểm biểu diễn số phức $( z - i )( i + 1 )$ khi $z$ thay đổi. Tính diện tích hình phẳng giới hạn bởi đường cong $S$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $12 \\pi$",
+            "B. $12 \\pi \\sqrt{2}$",
+            "C. $9 \\pi \\sqrt{2}$",
+            "D. $9 \\pi$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $ ( z - i ) ( i + 1 ) = x + y i $ ⇒ $ \\begin{cases} z - i = \\frac{x + y i}{i + 1} \\\\ z + i = \\frac{x + y i}{i + 1} + 2 i \\end{cases} $ $ \\Rightarrow \\begin{cases} z - i = \\frac{x + y i - 2 + 2 i}{i + 1} \\\\ z + i = \\frac{x - 2 + ( y + 2 ) i}{i + 1} \\end{cases} $ ⇒ $ | z - i | = \\frac{\\sqrt{x^2 + y^2}}{\\sqrt{2}} $ $ | z + i | = \\frac{\\sqrt{( x - 2 )^2 + ( y + 2 )^2}}{\\sqrt{2}} $ ⇒ $ \\frac{\\sqrt{x^2 + y^2}}{\\sqrt{2}} + \\frac{\\sqrt{( x - 2 )^2 + ( y + 2 )^2}}{\\sqrt{2}} = 6 \\, ( * ) $ Gọi $ M ( x ; y ) ; I ( 2 ; - 2 ) $ từ $( * )$ ta có $ MO \\frac{1}{\\sqrt{2}} + MI \\frac{1}{\\sqrt{2}} = 6 \\Rightarrow MO + MI = 6 \\sqrt{2} $ Do đó quỹ tích điểm $ M $ là elip nhận $ O; I $ là hai tiêu điểm và trục lớn $ 2a = 6 \\sqrt{2} \\Rightarrow a = 3 \\sqrt{2} $ $ 2c = OI = 2 \\sqrt{2} \\Rightarrow c = \\sqrt{2} \\Rightarrow b = \\sqrt{a^2 - c^2} = 4 $ Vậy diện tích elip là $ S = \\pi a b = \\pi \\cdot 4 \\cdot 3 \\sqrt{2} = 12 \\pi \\sqrt{2} $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R082",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $| z_1 + 1 - i | = 2$ và $z_2 = i z_1$. Tìm GTNN $m$ của biểu thức $| z_1 - z_2 |$ ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $m = \\sqrt{2} - 1$",
+            "B. $m = 2$",
+            "C. $m = 2\\sqrt{2} - 2$",
+            "D. $m = 2\\sqrt{2}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| z_1 - z_2 | = | i z_2 - z_2 | = | z_2 ( 1 - i ) | = \\sqrt{2} | z_1 |$ Mà $| z_1 | - | 1 - i | \\leq | z_1 + 1 - i | \\leq | z_1 | + | 1 - i | \\Rightarrow | z_1 | - \\sqrt{2} \\leq 2 \\leq | z_1 | + \\sqrt{2} \\Rightarrow 2 - \\sqrt{2} \\leq | z_1 | \\leq 2 + \\sqrt{2} \\Rightarrow \\sqrt{2} ( 2 - \\sqrt{2} ) \\leq \\sqrt{2} | z_1 | \\leq \\sqrt{2} ( 2 + \\sqrt{2} ) \\Rightarrow 2 \\sqrt{2} - 2 \\leq \\sqrt{2} | z_1 | \\leq 2 \\sqrt{2} + 2$ Vậy $m = 2 \\sqrt{2} - 2$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R083",
+        "question": "Cho $z_1$ ; $z_2$ ; $z_3$ là ba số phức thay đổi thỏa mãn $|z_1| = 2$ ; $|z_3| = 1$ và $z_2 = z_1 z_3$. Trong mặt phẳng phức $A$, $B$ biểu diễn $z_1$ ; $z_2$. Giả sử $O$, $A$, $B$ lập thành tam giác có diện tích là $a$, chu vi là $b$. Giá trị lớn nhất của biểu thức $T = a + b$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $6 + 2 \\sqrt{2}$",
+            "B. $6 + 2 \\sqrt{3}$",
+            "C. $4 + 2 \\sqrt{3}$",
+            "D. $4 + 3 \\sqrt{3}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $| z_2 | = | z_1 | | z_3 | = 2 \\Rightarrow O_B = O_A = 2$. Đặt $A B = x \\; (0 < x < 4)$ ta có: $a = \\frac{1}{2} \\cdot x \\cdot \\sqrt{4 - x^2} = \\frac{1}{4} x \\sqrt{16 - x^2}$; $b = 2 + 2 + x = 4 + x \\Rightarrow T = a + b = \\frac{x \\sqrt{16 - x^2}}{4} + 4 + x$. Sử dụng MTCT ta tính được $T_{max} \\approx 9,19$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R084",
+        "question": "Cho các số phức $z_1$; $z_2$ thỏa mãn $| z_1 | = 3$; $| z_2 | = 4$ và chúng được biểu diễn trong mặt phẳng phức lần lượt là các điểm $M$, $N$. Biết góc giữa vector $-\\overrightarrow{OM}$ và $-\\overrightarrow{ON}$ bằng $60^\\circ$. Tìm môđun của số phức $z = \\frac{z_1 + z_2}{z_1 - z_2}$?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $| z | = \\sqrt{3}$",
+            "B. $| z | = \\sqrt{5} \\cdot 2$",
+            "C. $| z | = \\sqrt{481} \\cdot 13$",
+            "D. $| z | = 4 \\sqrt{3}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $OM = 3$ ; $ON = 4$ ; $\\angle ( \\overrightarrow{OM} ; \\overrightarrow{ON} ) = 60^\\circ \\Rightarrow \\angle ( OM ; ON ) = 60^\\circ$ $| z | = | z_1 + z_2 | \\, | z_1 - z_2 | = \\left| \\left| \\overrightarrow{OM} + \\overrightarrow{ON} \\right| \\right| \\, \\left| \\left| \\overrightarrow{OM} - \\overrightarrow{ON} \\right| \\right| = 2 \\left| \\left| \\overrightarrow{OI} \\right| \\right| \\, \\left| \\left| \\overrightarrow{MN} \\right| \\right| = 2 OIMN$ (với $I$ là trung điểm của $MN$). Áp dụng định lí cosin trong tam giác $OMN$ có $MN = \\sqrt{OM^2 + ON^2 - 2 \\cdot OM \\cdot ON \\cdot \\cos ( OM ; ON )} = \\sqrt{13}$ $OI$ là đường trung tuyến của tam giác $OMN \\Rightarrow OI = \\sqrt{ \\frac{OM^2 + ON^2}{2} - \\frac{MN^2}{4} } = \\sqrt{ \\frac{37}{2} }$ Vậy $| z | = 2 \\cdot \\sqrt{ \\frac{37}{2} } \\cdot \\sqrt{13} = \\sqrt{ \\frac{481}{13} }$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R085",
+        "question": "Cho $z \\in \\mathbb{C}$ thỏa mãn $(2 + i) |z| = \\sqrt{17} z + 1 - 3i$. Biết tập hợp các điểm biểu diễn cho số phức $w = (3 - 4i) z - 1 + 2i$ là đường tròn tâm $I$, bán kính $R$. Kết quả nào đúng ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $I ( − 1 ; − 2 ) R = \\sqrt{5}$",
+            "B. $I ( 1 ; − 2 ) ; R = 5$",
+            "C. $I ( 1 ; 2 ) , R = \\sqrt{5}$",
+            "D. $I ( − 1 ; 2 ) , R = 5$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ ( 2 + i ) | z | = \\sqrt{17} z + 1 - 3 i \\Leftrightarrow ( 2 + i ) | z | - 1 + 3 i = \\sqrt{17} z \\Leftrightarrow ( 2 | z | - 1 ) + ( | z | + 3 ) i = \\sqrt{17} z \\Leftrightarrow ( 2 | z | - 1 )^2 + ( | z | + 3 )^2 = 17 | z |^2 \\Leftrightarrow 5 | z |^4 + 2 | z |^3 + 10 | z |^2 - 17 = 0 \\Leftrightarrow ( | z | - 1 )( 5 | z |^3 + 7 | z |^2 + 17 | z | + 17 ) = 0 \\Leftrightarrow [ | z | = 1 \\quad 5 | z |^3 + 7 | z |^2 + 17 | z | + 17 = 0 $ Phương trình dưới có một nghiệm âm nên loại. Do đó $ | z | = 1 $ Đặt $ w = x + y i $ ta có: $ w = ( 3 - 4 i ) z - 1 + 2 i \\Rightarrow ( 3 - 4 i ) z = w + 1 - 2 i \\Leftrightarrow 5 | z | = | w + 1 - 2 i | = 5 $ Vậy tập hợp các điểm biểu diễn cho số phức $ w = ( 3 - 4 i ) z - 1 + 2 i $ là đường tròn tâm $ I ( - 1 ; 2 ) , $ bán kính $ R = 5 $. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R086",
+        "question": "Cho số phức thỏa mãn $| z - 2 i | \\leq | z - 4 i |$ và $| z - 3 - 3 i | = 1$. Giá trị lớn nhất của $P = | z - 2 |$ là.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{13} + 1 $",
+            "B. $ \\sqrt{10} + 1 $",
+            "C. $ \\sqrt{13} $",
+            "D. $ \\sqrt{10} $"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Lời giải chi tiết. Giả sử số phức thỏa mãn yêu cầu bài toán có dạng $ z = a + b i $, $ ( a , b ∈ \\mathbb{R} ) $. Khi đó ta có \n$$\n\\begin{cases}\n| z - 2 i | = | ( a + b i ) - 2 i | = \\sqrt{ a^2 + ( b - 2 )^2 \\\\\n| z - 4 i | = | ( a + b i ) - 4 i | = \\sqrt{ a^2 + ( b - 4 )^2 \\\\\n| z - 3 - 3 i | = | ( a + b i ) - 3 - 3 i | = \\sqrt{ ( a - 3 )^2 + ( b - 3 )^2 \\\\\n| z - 2 | = | ( a + b i ) - 2 | = \\sqrt{ ( a - 2 )^2 + b^2 \n\\end{cases}\n$$\nTừ giả thiết ta suy ra \n$$\n\\begin{cases}\n\\sqrt{ a^2 + ( b - 2 )^2 } \\leq \\sqrt{ a^2 + ( b - 4 )^2 } \\\\\n( a - 3 )^2 + ( b - 3 )^2 = 1 \\Leftrightarrow \n\\begin{cases}\n( b - 2 )^2 \\leq ( b - 4 )^2 \\\\\n( a - 3 )^2 + ( b - 3 )^2 = 1 \\Leftrightarrow \n\\begin{cases}\nb - 2 \\leq b - 4 \\\\\nb - 2 \\leq - b + 4 \\\\\n( a - 3 )^2 + ( b - 3 )^2 = 1 \\Leftrightarrow \n\\begin{cases}\nb \\leq 3 \\\\\n( a - 3 )^2 + ( b - 3 )^2 = 1 .\n\\end{cases}\n\\end{cases}\n\\end{cases}\n\\end{cases}\n$$\nTừ $ ( a - 3 )^2 + ( b - 3 )^2 = 1 \\Rightarrow ( a - 3 )^2 \\leq 1 \\Rightarrow 2 \\leq a \\leq 4 \\Rightarrow 0 \\leq a - 2 \\leq 2. $ Do đó $ P = | z - 2 | = \\sqrt{ ( a - 2 )^2 + b^2 } \\leq \\sqrt{ 2^2 + 3^2 } = \\sqrt{ 13 } . $ Đẳng thức xảy ra khi và chỉ khi \n$$\n\\begin{cases}\n( a - 2 )^2 = 2^2 \\\\\nb = 3 \\\\\n( a - 3 )^2 + ( b - 3 )^2 = 1 \\Leftrightarrow \n\\begin{cases}\na = 4 \\\\\nb = 3 .\n\\end{cases}\n\\end{cases}\n$$\nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R087",
+        "question": "Cho số phức $z$ thỏa mãn $\\| z^2 - 2z + 5 \\| = | ( z - 1 + 2i ) ( z - 1 + 3i ) |$ và $w = z - 2 + 2i$ giá trị nhỏ nhất của $| w |$ bằng ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $3 \\times 2$",
+            "B. 2",
+            "C. 1",
+            "D. $11 \\times 8$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z^2 - 2z + 5 = (z - 1)^2 + 4 = (z - 1)^2 - (2i)^2 = (z - 1 + 2i)(z - 1 - 2i)$ Do đó $\\| z^2 - 2z + 5 \\| = |(z - 1 + 2i)(z + 3i - 1)| \\Leftrightarrow |(z - 1 + 2i)(z - 1 - 2i)| = |(z - 1 + 2i)(z + 3i - 1)| \\Leftrightarrow |z - 1 + 2i||z - 1 - 2i| = |z - 1 + 2i||z + 3i - 1| \\Leftrightarrow [|z - 1 + 2i| = 0 |z - 1 - 2i| = |z + 3i - 1| TH1: $|z - 1 + 2i| = 0 \\Leftrightarrow z = 1 - 2i \\Rightarrow w = 1 - 2i - 2 + 2i = -1 \\Rightarrow |w| = 1$ TH2: $|z - 1 - 2i| = |z + 3i - 1| \\Leftrightarrow |x - 1 + (y - 2)i| = |x - 1 + (y + 3)i|$ với $z = x + yi \\, (x, y \\in \\mathbb{R})$. $\\Leftrightarrow (x - 1)^2 + (y - 2)^2 = (x - 1)^2 + (y + 3)^2 \\Leftrightarrow y = -\\frac{1}{2} \\Rightarrow z = x - \\frac{1}{2}i$. Khi đó $|w| = |z - 2 + 2i| = \\| x - 2 + \\frac{3}{2}i \\| = \\sqrt{(x - 2)^2 + \\frac{9}{4}} \\geq \\frac{3}{2}$. Vậy $\\min |w| = 1$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R088",
+        "question": "Cho số phức $z$ thỏa mãn điều kiện $| z - 1 | = \\sqrt{2}$. Tìm giá trị lớn nhất của biểu thức $T = | z + i | + | z - 2 - i |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $max \\, T = 8 \\sqrt{2}$",
+            "B. $max \\, T = 8$",
+            "C. $max \\, T = 4 \\sqrt{2}$",
+            "D. $max \\, T = 4$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Tập hợp các điểm $z$ thỏa mãn điều kiện $| z - 1 | = \\sqrt{2}$ là đường tròn $(C)$ tâm $I(1; 0)$ bán kính $R = \\sqrt{2}$. $T = | z + i | + | z - 2 - i | = | z - (-1) | + | z - (2 + i) |$ Gọi $M$ là điểm biểu diễn cho số phức $z$, $A(0; -1)$ là điểm biểu diễn cho số phức $-i$, $B(2; 1)$ là điểm biểu diễn cho số phức $2 + i$. Dễ thấy $A, B \\in (C)$ và $AB = \\sqrt{2^2 + 2^2} = 2\\sqrt{2} = 2R \\Rightarrow AB$ là đường kính của đường tròn $(C) \\Rightarrow \\Delta MAB$ vuông tại $M \\Rightarrow MA^2 + MB^2 = AB^2 = 8 \\Rightarrow MB = \\sqrt{8 - MA^2}$ Ta có: $T = \\left\\| \\overrightarrow{OM} - \\overrightarrow{OA} \\right\\| + \\left\\| \\overrightarrow{OM} - \\overrightarrow{OB} \\right\\| = MA + MB = MA + \\sqrt{8 - MA^2}$ Đặt $MA = x \\,(0 \\leq x \\leq 2\\sqrt{2})$, xét hàm số $f(x) = x + \\sqrt{8 - x^2}$ trên $[0; 2\\sqrt{2}]$ ta có: $f'(x) = 1 - \\frac{x}{\\sqrt{8 - x^2}} = \\frac{\\sqrt{8 - x^2} - x}{\\sqrt{8 - x^2}} = 0 \\Leftrightarrow \\sqrt{8 - x^2} = x \\Leftrightarrow 8 - x^2 = x^2 \\Leftrightarrow x = 2$ $f(0) = \\sqrt{2}, f(2\\sqrt{2}) = 2\\sqrt{2}; f(2) = 4 \\Rightarrow \\max_{[0; 2\\sqrt{2}]} f(x) = f(2) = 4$ Vậy $max T = 4$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R089",
+        "question": "Xét số phức $z$ thỏa mãn $(1 + 2i) |z| = \\sqrt{10} z - 2 + i$. Mệnh đề nào dưới đây đúng?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $3\\ 2 < | z | < 2$",
+            "B. $| z | > 2$",
+            "C. $| z | < 1\\ 2$",
+            "D. $1\\ 2 < | z | < 3\\ 2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $ ( 1 + 2 i ) | z | = \\sqrt{10} z - 2 + i \\Leftrightarrow ( 1 + 2 i ) | z | + 2 - i = \\sqrt{10} z \\Leftrightarrow ( | z | + 2 ) + ( 2 | z | - 1 ) i = \\sqrt{10} z \\Leftrightarrow ( | z | + 2 )^2 + ( 2 | z | - 1 )^2 = 10 | z |^2 \\Leftrightarrow | z |^2 + 4 | z | + 4 + 4 | z |^2 - 4 | z | + 1 = 10 | z |^2 \\Leftrightarrow 5 | z |^4 + 5 | z |^2 - 10 = 0 \\Leftrightarrow | z | = 1 \\in \\left( \\frac{1}{2} ; \\frac{3}{2} \\right) $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R090",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 2 + 3 i | + | z + 2 + i | = 4 \\sqrt{5}$. Tính GTLN của $P = | z - 4 + 4 i |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $max \\, P = 4 \\sqrt{5}$",
+            "B. $max \\, P = 7 \\sqrt{5}$",
+            "C. $max \\, P = 5 \\sqrt{5}$",
+            "D. $max \\, P = 6 \\sqrt{5}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Cho số phức $z = x + y i$, $(x, y ∈ \\mathbb{R})$, $S (x; y)$ là điểm biểu diễn của $z$ trên hệ trục tọa độ $Oxy$. $| z − 2 + 3 i | + | z + 2 + i | = 4 \\sqrt{5} \\Leftrightarrow \\sqrt{(x − 2)^2 + (y + 3)^2} + \\sqrt{(x + 2)^2 + (y + 1)^2} = 4 \\sqrt{5} \\quad (1)$ Lấy các điểm $A (2; − 3)$, $B (− 2; − 1)$. Phương trình $(1) \\Leftrightarrow S A + S B = 4 \\sqrt{5} \\Rightarrow$ Tập hợp các điểm $S$ là đường elip $(E)$ có tiêu điểm $A (2; − 3)$, $B (− 2; − 1)$ và có độ dài trục lớn là $2a = 4 \\sqrt{5} \\Rightarrow a = 2 \\sqrt{5}$. Lấy $M (4; − 4)$. Dễ dàng kiểm tra được $\\vec{AB} = 2 \\vec{MA}, \\quad \\vec{MA} + \\vec{MB} = 4 \\sqrt{5} = 2a$. Suy ra, $M$ là một đỉnh và nằm trên trục lớn của elip $(E)$. Gọi $I$ là trung điểm $AB \\Rightarrow I (0; − 2)$, $N$ là điểm đối xứng của $M$ qua $I$. Khi đó, với mọi điểm $S ∈ (E)$: $SM ≤ MN = 2a = 4 \\sqrt{5} \\Rightarrow SM_{max} = 4 \\sqrt{5}$ khi và chỉ khi $S$ trùng $N \\Leftrightarrow P_{max} = 4 \\sqrt{5}$ khi và chỉ khi $S \\equiv N (− 4; 0) \\Leftrightarrow z = − 4$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R091",
+        "question": "Xét các số phức $z = a + b i$, $(a; b \\in \\mathbb{R})$ thỏa mãn đồng thời hai điều kiện $|z| = \\left| \\overline{z} + 4 - 3 i \\right|$ và $|z + 1 - i| + |z - 2 + 3 i|$ đạt giá trị nhỏ nhất. Giá trị $P = a + 2b$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $P = -\\frac{61}{10}$",
+            "B. $P = -\\frac{252}{50}$",
+            "C. $P = -\\frac{41}{5}$",
+            "D. $P = -\\frac{18}{5}$"
+        ],
+        "answer": "A",
+        "explain": "Gọi $z = x + y i$ ta có: $| x + y i | = | x − y i + 4 − 3 i | \\iff x^2 + y^2 = ( x + 4 )^2 + ( y + 3 )^2 \\iff 8 x + 6 y = − 25$. Gọi điểm $M ( x ; y )$ là điểm biểu diễn cho số phức $z$ và $A ( − 1 ; 1 ) ; B ( 2 ; − 3 )$ ta có: $| z + 1 − i | + | z − 2 + 3 i | = M A + M B$ nhỏ nhất. Ta có: $M A + M B \\geq 2 \\sqrt{M A \\cdot M B}$, dấu bằng xảy ra $\\iff M A = M B \\Rightarrow M$ thuộc trung trực của $AB$. Gọi $I$ là trung điểm của $AB$ ta có $I ( \\frac{1}{2} ; -1 )$ và $-\\overrightarrow{A B} = ( 3 ; -4 )$. Phương trình đường trung trực của $AB$ là $3 ( x - \\frac{1}{2} ) - 4 ( y + 1 ) = 0 \\iff 3 x - 4 y - \\frac{11}{2} = 0$. Để $( M A + M B )$ min $\\iff$ Tọa độ điểm $M$ là nghiệm của hệ phương trình \n$$\n\\begin{cases}\n8 x + 6 y = -25 \\\\\n3 x - 4 y = \\frac{11}{2}\n\\end{cases}\n\\iff \n\\begin{cases}\nx = -\\frac{67}{50} \\\\\ny = -\\frac{119}{50}\n\\end{cases} \n\\Rightarrow z = -\\frac{67}{50} - \\frac{119}{50} i \\iff \n\\begin{cases}\na = -\\frac{67}{50} \\\\\nb = -\\frac{119}{50}\n\\end{cases} \n\\Rightarrow P = a + 2 b = -\\frac{61}{10}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R092",
+        "question": "Cho số phức $z$ thỏa mãn $| z - 3 - 4i | = \\sqrt{5}$. Gọi $M$, $m$ lần lượt là giá trị lớn nhất, nhỏ nhất biểu thức $P = | z + 2 |^2 - | z - i |^2$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $2 \\sqrt{314}$",
+            "B. $\\sqrt{1258}$",
+            "C. $3 \\sqrt{137}$",
+            "D. $2 \\sqrt{309}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = x + y i$ ($x, y \\in \\mathbb{R}$) suy ra tập hợp các điểm $M(z) = (x; y)$ là đường tròn $(C)$ có tâm $I(3; 4)$ và bán kính $R = \\sqrt{5}$. Ta có $P = |z + 2|^2 - |z - i|^2 = |x + 2 + y i|^2 - |x + (y - 1)i|^2 = (x + 2)^2 + y^2 - x^2 - (y - 1)^2 = x^2 + y^2 + 4x + 4 - x^2 - y^2 + 2y - 1 = 4x + 2y + 3 \\to (\\Delta): 4x + 2y + 3 - P = 0$. Ta cần tìm $P$ sao cho đường thẳng $(\\Delta)$ và đường tròn $(C)$ có điểm chung $\\Leftrightarrow d(I; (\\Delta)) \\leq R$. $\\Leftrightarrow |4 \\cdot 3 + 2 \\cdot 4 + 3 - P| \\frac{\\sqrt{4^2 + 2^2}}{\\sqrt{5}} \\Leftrightarrow |23 - P| \\leq 10 \\Leftrightarrow -10 \\leq 23 - P \\leq 10 \\Leftrightarrow 13 \\leq P \\leq 33$. Do đó, $\\{ \\max P = 33, \\min P = 13 \\Rightarrow w = M + m i = 33 + 13 i$. Vậy $|w| = \\sqrt{1258}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R093",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $|z_1| = 2$, $|z_2| = \\sqrt{3}$. Gọi $M$, $N$ là các điểm biểu diễn cho $z_1$ và $iz_2$. Biết $\\hat{M}ON = 30^\\circ$. Tính $S = \\left\\| z_1^2 + 4z_2^2 \\right\\|$?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $\\sqrt{5}$",
+            "B. $4\\sqrt{7}$",
+            "C. $3\\sqrt{3}$",
+            "D. $5\\sqrt{2}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z_3 = i z_2$ ⇒ $z_2^3 = - z_2^2$ ⇒ $S = \\left| z_2^1 + 4 z_2^2 \\right| = \\left| z_2^1 - 4 z_2^3 \\right| = | z_1 - 2 z_3 | | z_1 + 2 z_3 |$ $M, N$ là các điểm biểu diễn cho $z_1, z_3$ ⇒ $O M = 2\\, \\text{,} O N = | z_3 | = | i z_2 | = | i | \\cdot | z_2 | = \\sqrt{3}$. Gọi $P$ là điểm biểu diễn cho $2 z_3$ và $Q$ là điểm biểu diễn cho $- 2 z_3$, ta có $N$ là trung điểm của $O P$ và $P, Q$ đối xứng nhau qua $O$. Khi đó $S = M P \\cdot M Q$. Áp dụng định lý Cosin trong $\\Delta O M P$ có: $M P^2 = O P^2 + O M^2 - 2 O P \\cdot O M \\cdot \\cos 30^\\circ = 1^2 + 4 - 2 \\cdot 2 \\sqrt{3} \\cdot 2 \\cdot \\sqrt{3}^2 = 4$ ⇒ $M P = 2$. Áp dụng định lý Cosin trong $\\Delta O M Q$ có: $M Q^2 = O M^2 + O Q^2 - 2 O M \\cdot O Q \\cdot \\cos 150^\\circ = 4 + 1^2 + 2 \\cdot 2 \\cdot 2 \\sqrt{3} \\cdot \\sqrt{3}^2 = 2 \\sqrt{7}$ ⇒ $S = M P \\cdot M Q = 2 \\cdot 2 \\sqrt{7} = 4 \\sqrt{7}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R094",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $| z_1 + 1 - i | = 2$ và $z_2 = i z_1$. Tìm giá trị lớn nhất $m$ của biểu thức $| z_1 - z_2 |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $m = 2$",
+            "B. $m = 2 \\sqrt{2} + 2$",
+            "C. $m = 2 \\sqrt{2}$",
+            "D. $m = \\sqrt{2} + 1$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| z_1 - z_2 | = | i z_2 - z_2 | = | z_2 ( 1 - i ) | = \\sqrt{2} | z_1 |$ Mà $| z_1 | - | 1 - i | \\leq | z_1 + 1 - i | \\leq | z_1 | + | 1 - i | \\Rightarrow | z_1 | - \\sqrt{2} \\leq 2 \\leq | z_1 | + \\sqrt{2} \\Rightarrow 2 - \\sqrt{2} \\leq | z_1 | \\leq 2 + \\sqrt{2} \\Rightarrow \\sqrt{2} ( 2 - \\sqrt{2} ) \\leq \\sqrt{2} | z_1 | \\leq \\sqrt{2} ( 2 + \\sqrt{2} ) \\Rightarrow 2 \\sqrt{2} - 2 \\leq \\sqrt{2} | z_1 | \\leq 2 \\sqrt{2} + 2$ Vậy $M = 2 \\sqrt{2} + 2$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R095",
+        "question": "Cho số phức $z$ thỏa mãn điều kiện $| z - 1 - i | + | z + 1 + 3 i | = 6 \\sqrt{5}$. Giá trị lớn nhất của $| z - 2 - 3 i |$ là.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $4 \\sqrt{5}$",
+            "B. $2 \\sqrt{5}$",
+            "C. $6 \\sqrt{5}$",
+            "D. $5 \\sqrt{5}$"
+        ],
+        "answer": "D",
+        "explain": "Gọi $I (1 ; 1)$, $J (-1 ; -3)$, $A (2 ; 3)$. Xét số phức $z = x + y i$, $(x, y \\in \\mathbb{R})$, có điểm biểu diễn là $M (x ; y)$. $| z - 1 - i | + | z + 1 + 3 i | = 6 \\sqrt{5} \\Leftrightarrow \\sqrt{(x - 1)^2 + (y - 1)^2} + \\sqrt{(x + 1)^2 + (y + 3)^2} = 6 \\sqrt{5} \\quad (1) \\Leftrightarrow M I + M J = 6 \\sqrt{5} \\Rightarrow M$ di chuyển trên đường elip có tiêu điểm $I$ và $J$, độ dài trục lớn là $3 \\sqrt{5}$ (như hình vẽ). Tìm giá trị lớn nhất của $| z - 2 - 3 i |$ tức là tìm độ dài lớn nhất của đoạn $AM$ khi $M$ di chuyển trên elip. Ta có: $-\\overrightarrow{IA} = (1 ; 2)$, $-\\overrightarrow{JA} = (3 ; 6) \\Rightarrow -\\overrightarrow{JA} = 3 -\\overrightarrow{IA}$, điểm $A$ nằm trên trục lớn của elip. $\\Rightarrow AM$ đạt độ dài lớn nhất khi và chỉ khi $M$ trùng với $B$, là đỉnh của elip nằm trên trục lớn và khác phía $A$ so với điểm $I$. Gọi $S$ là trung điểm của $IJ \\Rightarrow S (0 ; -1)$. Độ dài đoạn $AB = SA + SB$. Mà $-\\overrightarrow{AS} = (-2 ; -4) \\Rightarrow AS = 2 \\sqrt{5}$, $SB = \\frac{6 \\sqrt{5}}{2} = 3 \\sqrt{5} \\Rightarrow AB = 5 \\sqrt{5}$. Vậy $| z - 2 - 3 i |_{max} = 5 \\sqrt{5}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R096",
+        "question": "Biết số phức $z$ thỏa mãn $| z - 3 - 4 i | = \\sqrt{5}$ và biểu thức $T = | z + 2 |^2 - | z - i |^2$ đạt giá trị lớn nhất. Tính $| z |$ ?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $| z | = 50$",
+            "B. $| z | = 5 \\sqrt{2}$",
+            "C. $| z | = \\sqrt{10}$",
+            "D. $| z | = \\sqrt{33}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $z = x + y i$ ⇒ $( x - 3 )^2 + ( y - 4 )^2 = 5 \\, (1)$ $T = | x + y i + 2 |^2 - | x + y i - i |^2 = ( x + 2 )^2 + y^2 - x^2 - ( y - 1 )^2 = 4 x + 2 y + 3 = 4 ( x - 3 ) + 2 ( y - 4 ) + 23$ Ta có: $[ 4 ( x - 3 ) + 2 ( y - 4 ) ]^2 \\leq ( 4^2 + 2^2 ) [ ( x - 3 )^2 + ( y - 4 )^2 ] = 180 \\Leftrightarrow 4 ( x - 3 ) + 2 ( y - 4 ) \\leq 6 \\sqrt{5}$ Dấu bằng xảy ra $\\Leftrightarrow \\frac{x - 3}{4} = \\frac{y - 4}{2} \\Leftrightarrow x - 3 = 2 y - 8 \\Leftrightarrow x = 2 y - 5$ Thay vào $(1)$ ta có: $( 2 y - 8 )^2 + ( y - 4 )^2 = 5 \\Leftrightarrow 5 ( y - 4 )^2 = 5 \\Leftrightarrow \\begin{cases} y - 4 = 1 \\\\ y - 4 = -1 \\end{cases} \\Leftrightarrow \\begin{cases} y = 5 \\\\ y = 3 \\end{cases} \\Leftrightarrow \\begin{cases} x = 5, y = 5 \\\\ x = 1, y = 3 \\end{cases} \\Rightarrow \\begin{cases} z = 5 + 5 i \\\\ z = 1 + 3 i \\end{cases} \\Rightarrow z = 5 + 5 i \\Rightarrow T = 33 \\, ( T M ) \\, z = 1 + 3 i \\Rightarrow T = 13 < 33 \\, ( K T M ) \\Rightarrow z = 5 + 5 i \\Rightarrow | z | = 5 \\sqrt{2}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R097",
+        "question": "Cho hai số phức $z$, $w$ thỏa mãn $| z - 3 - 2 i | \\leq 1$ và $| w + 1 + 2 i | \\leq | w - 2 - i |$. Tìm GTNN $P_{\\min}$ của biểu thức $P = | z - w |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $P_{min} = 2 \\sqrt{2} + 1 2$",
+            "B. $P_{min} = 3 \\sqrt{2} - 2 2$",
+            "C. $P_{min} = 5 \\sqrt{2} - 2 2$",
+            "D. $P_{min} = \\sqrt{2} + 1$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $A(3; 2)$, $B(-1; -2)$, $C(2; 1)$. Gọi $M, N$ lần lượt là điểm biểu diến của $z, w$. Vì $|z - 3 - 2i| \\leq 1$ nên tập hợp điểm biểu diễn của $z$ trên hệ trục Oxy là hình tròn tâm $A$ bán kính $1$. Vì $|w + 1 + 2i| \\leq |w - 2 - i|$ nên tập hợp điểm biểu diễn của $w$ trên hệ trục Oxy là nửa mặt phẳng bờ $d$ chứa $B$ và đường thẳng $d$. Trong đó $d$ là trung trực của đoạn thẳng $BC$. $P = |z - w| = MN$, $P_{\\text{min}} = MN_{\\text{min}}$. Dễ dàng kiểm tra được $A, B, C$ thẳng hàng và $MN$ ngắn nhất khi $MN$ trùng với $M_0N_0$. Trong đó, $N_0$: trung điểm của $BC$, $M_0$: giao của $AB$ và đường tròn $(A; 1)$. Độ dài đoạn $M_0N_0 = d(A; d) - R = d(A; d) - 1$. Phương trình đường thẳng $d$: $N_0$ là trung điểm $BC \\Rightarrow N_0(\\frac{1}{2}; -\\frac{1}{2}) \\rightarrow BC = (3; 3) \\Rightarrow d$ có $1$ VTPT là $(1; 1)$. Phương trình đường thẳng $d$: $1(x - \\frac{1}{2}) + 1(y - -\\frac{1}{2}) = 0 \\Leftrightarrow x + y = 0$. $d(A; d) = \\frac{|3 + 2|}{\\sqrt{1^2 + 1^2}} = 5\\sqrt{2} \\Rightarrow M_0N_0 = 5\\sqrt{2} - 1 = 5\\sqrt{2} - \\frac{2}{2}$. Vậy, $P_{\\text{min}} = 5\\sqrt{2} - \\frac{2}{2}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R098",
+        "question": "Trong các số phức $z$ thỏa mãn $\\| z^2 + 1 \\| = 2 |z|$, gọi $z_1$ và $z_2$ lần lượt là các số phức có môđun lớn nhất và nhỏ nhất. Khi đó môđun lớn nhất của số phức $w = z_1 + z_2$ là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $| w | = 2 \\sqrt{2}$",
+            "B. $| w | = 2$",
+            "C. $| w | = \\sqrt{2}$",
+            "D. $| w | = 1 + \\sqrt{2}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $ \\left| z^2 + 1 \\right| = 2 | z | \\Leftrightarrow \\left| z^2 + 1 \\right|^2 = 4 | z |^2 \\Leftrightarrow ( z^2 + 1 ) ( \\overline{z^2 + 1} ) = 4 z \\overline{z} \\Leftrightarrow ( z^2 + 1 ) ( \\overline{z^2} + 1 ) = 4 z \\overline{z} \\Leftrightarrow ( \\overline{z} z )^2 + z^2 + \\overline{z}^2 + 1 - 4 \\overline{z} z = 0 \\Leftrightarrow ( z + \\overline{z} )^2 + ( \\overline{z} z )^2 - 6 \\overline{z} z + 1 = 0 \\Leftrightarrow ( z + \\overline{z} )^2 + | z |^4 - 6 | z |^2 + 1 = 0 \\Leftrightarrow | z |^4 - 6 | z |^2 + 1 = - ( z + \\overline{z} )^2 \\leq 0 \\Leftrightarrow 3 - 2 \\sqrt{2} \\leq | z |^2 \\leq 3 + 2 \\sqrt{2} \\Leftrightarrow \\sqrt{2} - 1 \\leq | z | \\leq \\sqrt{2} + 1 \\Rightarrow \\{ | z_1 | = \\sqrt{2} - 1 \\; | z_2 | = \\sqrt{2} + 1 \\} $ Dấu $ = $ xảy ra $ \\Leftrightarrow \\left\\{ \\begin{array}{l} | z_1 | = \\sqrt{2} - 1 \\\\ | z_2 | = \\sqrt{2} + 1 \\end{array} \\right. \\; z + \\overline{z} = 0 \\Leftrightarrow \\left\\{ \\begin{array}{l} z_1 = ( \\sqrt{2} - 1 ) i \\\\ z_1 = ( 1 - \\sqrt{2} ) i \\end{array} \\right. \\left\\{ \\begin{array}{l} z_2 = ( \\sqrt{2} + 1 ) i \\\\ z_2 = ( - \\sqrt{2} - 1 ) i \\end{array} \\right. \\Leftrightarrow \\left[ | w | = | z_1 + z_2 | = 2 \\sqrt{2} \\; | w | = | z_1 + z_2 | = 2 \\right] $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R099",
+        "question": "Cho hai số phức $z_1, z_2$ thỏa mãn điều kiện $2 \\left| \\overline{z_1} + i \\right| = \\left| \\overline{z_1} - z_1 - 2i \\right|$ và $| z_2 - i - 10 | = 1$. Tìm giá trị nhỏ nhất của biểu thức $| z_1 - z_2 |$?",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{10} + 1 $",
+            "B. $ 3 \\sqrt{5} - 1 $",
+            "C. $ \\sqrt{\\sqrt{101}} + 1 $",
+            "D. $ \\sqrt{\\sqrt{101}} - 1 $"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $z_1 = x + y i$ ta có: $2 | x - y i + i | = | x - y i - x - y i - 2 i | \\Leftrightarrow 2 | x - y i + i | = 2 | y i + i | \\Leftrightarrow x^2 + (y - 1)^2 = (y + 1)^2 \\Leftrightarrow x^2 + y^2 - 2y + 1 = y^2 + 2y + 1 \\Leftrightarrow x^2 = 4y \\Leftrightarrow y = \\frac{x^2}{4} \\Rightarrow Tập hợp các điểm biểu diễn cho số phức $z_1$ là parabol $y = \\frac{x^2}{4}$. Tập hợp các điểm biểu diễn cho số phức $z_2$ là đường tròn $(C)$ tâm $I(10; 1)$ bán kính $R = 1$. $\\Rightarrow (C) : (x - 10)^2 + (y - 1)^2 = 1$. Gọi $M, N$ lần lượt là điểm biểu diễn cho số phức $z_1, z_2 \\Rightarrow |z_1 - z_2| = \\left|\\overrightarrow{OM} - \\overrightarrow{ON}\\right| = MN \\Rightarrow |z_1 - z_2|_{min} \\Leftrightarrow MN_{min}$. Dựa vào hình vẽ ta thấy $MN_{min} \\Leftrightarrow MN \\perp$ tiếp tuyến tại $M$ của parabol $y = \\frac{x^2}{4}$ và đi qua $I$. Ta có $y' = x^2$. Gọi $M(m; \\frac{m^2}{4}) (m > 0) \\Rightarrow y'(m) = m^2 \\Rightarrow pttt: y = (x - m) + \\frac{m^2}{4} = m^2 x - \\frac{m^2}{4} (d) \\Rightarrow MN \\geq d(I; d) - 1 \\Rightarrow MN_{min} \\Leftrightarrow d(I; d) = IM \\Leftrightarrow \\left|5m - 1 - \\frac{m^2}{4}\\right| \\frac{1}{\\sqrt{1 + \\frac{m^2}{4}}} = \\sqrt{(m - 10)^2 + \\left(\\frac{m^2}{4} - 1\\right)^2} \\Leftrightarrow \\frac{(5m - 1 - \\frac{m^2}{4})^2}{1 + \\frac{m^2}{4}} = (m - 10)^2 + \\left(\\frac{m^2}{4} - 1\\right)^2$. Giải phương trình trên ra tìm được $m = 4$, khi đó $IM = 3\\sqrt{5} \\Rightarrow MN_{min} = 3\\sqrt{5} - 1$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R100",
+        "question": "Cho hai số phức $z_1$, $z_2$ thỏa mãn $| z_1 - 3i + 5 | = 2$ và $| iz_2 - 1 + 2i | = 4$. Tìm giá trị lớn nhất của biểu thức $T = | 2iz_1 + 3z_2 |$.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $ \\sqrt{313} + 16 $",
+            "B. $ \\sqrt{313} $",
+            "C. $ \\sqrt{313} + 8 $",
+            "D. $ \\sqrt{313} + 2 \\sqrt{5} $"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $| z_1 - 3 i + 5 | = 2 \\Leftrightarrow | 2 i ( z_1 - 3 i + 5 ) | = 2$. $| 2 i | \\Leftrightarrow | 2 i z_1 + 6 + 10 i | = 4$. Và $| i z_2 - 1 + 2 i | = 4 \\Leftrightarrow \\left| z_2 - 1 - 2 i \\right| = 4 \\Leftrightarrow | z_2 + 2 + i | = 4 \\Leftrightarrow | - 3 z_2 - 6 - 3 i | = 12$. Đặt $\\begin{cases} u = 2 i z_1 \\\\ v = - 3 z_2 \\end{cases} \\Rightarrow \\begin{cases} | u + 6 + 10 i | = 4 \\\\ | v - 6 - 3 i | = 12 \\end{cases}$ và $T = | 2 i z_1 + 3 z_2 | = | 2 i z_1 - ( - 3 z_2 ) | = | u - v |$. Tập hợp điểm $M$ biểu diễn số phức $u$ là đường tròn $( x + 6 )^2 + ( y + 10 )^2 = 16$ tâm $I_1 ( - 6 ; - 10 )$, $R_1 = 4$. Tập hợp điểm $N$ biểu diễn số phức $v$ là đường tròn $( x - 6 )^2 + ( y - 3 )^2 = 144$ tâm $I_2 ( 6 ; 3 )$, $R_2 = 12$. Khi đó $T = MN_{max} \\Leftrightarrow MN = I_1 I_2 + R_1 + R_2 = \\sqrt{12^2 + 13^2} + 4 + 12 = \\sqrt{313 + 16}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R101",
+        "question": "Thu gọn $z = (\\sqrt{2} + 3i)^2$ ta được:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z = 11 - 6i$",
+            "B. $z = -1 - i$",
+            "C. $z = 4 + 3i$",
+            "D. $z = -7 + 6\\sqrt{2}i$"
+        ],
+        "answer": "D",
+        "explain": "Ta có: $ z = ( \\sqrt{2} + 3 i )^2 = 2 + 6 \\sqrt{2} i + 9 i^2 = -7 + 6 \\sqrt{2} i $  \nĐáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R102",
+        "question": "Phần thực của số phức $z$ thỏa mãn: $(1 + i)^2 (2 - i) z = 8 + i + (1 + 2 i) z$ là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $- 6$",
+            "B. $- 3$",
+            "C. $2$",
+            "D. $- 1$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ ( 1 + i )^2 ( 2 - i ) z = 8 + i + ( 1 + 2 i ) z \\iff ( 1 + 2 i + i^2 ) ( 2 - i ) z = 8 + i + ( 1 + 2 i ) z \\iff ( 2 + 4 i ) z = 8 + i + ( 1 + 2 i ) z \\iff ( 1 + 2 i ) z = 8 + i \\Rightarrow z = \\frac{8 + i}{1 + 2 i} = \\frac{( 8 + i )( 1 - 2 i )}{( 1 + 2 i )( 1 - 2 i )} = \\frac{10 - 15 i}{1^2 + 2^2} = 2 - 3 i$ Phần thực của số phức $ z $ là $ 2 $. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R103",
+        "question": "Trong các kết luận sau, kết luận nào sai: A. $z + \\overline{z}$ là một số thực B. $z - \\overline{z}$ là một số ảo C. $z \\cdot \\overline{z}$ là một số thực D. $z^2 + \\overline{z^2}$ là một số ảo.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z + \\overline{z}$ là một số thực",
+            "B. $z - \\overline{z}$ là một số ảo",
+            "C. $z \\cdot \\overline{z}$ là một số thực",
+            "D. $z^2 + \\overline{z^2}$ là một số ảo"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = a + b i \\quad ( a , b \\in \\mathbb{R} ) \\Rightarrow \\overline{z} = a - b i$ Ta có: $z + \\overline{z} = a + b i + a - b i = 2 a$ là một số thực $\\Rightarrow A$ đúng $z - \\overline{z} = a + b i - a + b i = 2 b i$ là một số ảo $\\Rightarrow B$ đúng $z \\cdot \\overline{z} = ( a + b i ) \\cdot ( a - b i ) = a^2 + b^2$ là một số thực $\\Rightarrow C$ đúng $z^2 + \\overline{z}^2 = ( a + b i )^2 + ( a - b i )^2 = 2 a^2 - 2 b^2$ là một số thực $\\Rightarrow D$ sai Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R104",
+        "question": "Cho hai số phức $z_1 = 1 + 2i$ ; $z_2 = 2 - 3i$. Xác định phần ảo của số phức $3z_1 - 2z_2$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 11",
+            "B. 12",
+            "C. 10",
+            "D. 13"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z_1 = 1 + 2 i$; $z_2 = 2 - 3 i$  ⇒ $3 z_1 - 2 z_2 = 3 (1 + 2 i) - 2 (2 - 3 i) = 3 + 6 i - 4 + 6 i = -1 + 12 i$ Vậy phần ảo của số phức đó là $12$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R105",
+        "question": "Điểm biểu diễn của số phức $z$ là $M(1; 2)$. Tọa độ của điểm biểu diễn số phức $w = z - 2 \\overline{z}$ là.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $(2; -3)$",
+            "B. $(2; 1)$",
+            "C. $(-1; 6)$",
+            "D. $(2; 3)$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điểm biểu diễn của số phức $z$ là $M(1; 2)$ ⇒ $z = 1 + 2i$ $w = z - 2 \\overline{z} = (1 + 2i) - 2(1 - 2i) = -1 + 6i$ ⇒ Điểm biểu diễn của số phức $w = z - 2 \\overline{z}$ là $(-1; 6)$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R106",
+        "question": "Gọi $z_1$, $z_2$ lần lượt là hai nghiệm của phương trình $z^2 - 4z + 5 = 0$ với $z_1$ có phần ảo dương. Giá trị của biểu thức $P = (z_1 - 2z_2) \\overline{z_2 - 4z_1}$ bằng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $- 15$",
+            "B. $- 10$",
+            "C. $- 5$",
+            "D. $10$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $z^2 - 4z + 5 = 0 \\Leftrightarrow z_{1,2} = 2 \\pm i \\Rightarrow |z_1|^2 = |z_2|^2 = 2^2 + 1^2 = 5$ $P = (z_1 - 2z_2) \\overline{z_2 - 4z_1}$ $P = (2 + i - 2(2 - i)) \\cdot (2 + i) - 4(2 + i)$ $P = (-2 + 3i)(2 + i) - 4(2 + i)$ $P = -7 + 4i - 8 - 4i = -15$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R107",
+        "question": "Tìm số phức liên hợp của số phức $z = 3 + 2 i$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $\\overline{z} = 3 - 2i$",
+            "B. $\\overline{z} = -3 - 2i$",
+            "C. $\\overline{z} = 2 - 3i$",
+            "D. $\\overline{z} = -2 - 3i$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phức liên hợp của số phức $z = 3 + 2 i$ là $\\overline{z} = 3 - 2 i$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R108",
+        "question": "Cho số phức $z$ thỏa mãn $| z + 3 - 4 i | = 5$. Biết rằng tập hợp điểm trong mặt phẳng tọa độ biểu diễn các số phức $z$ là một đường tròn. Tìm tọa độ tâm $I$ và bán kính $R$ của đường tròn đó.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. I ( 3 ; − 4 ) , R = $\\sqrt{5}$",
+            "B. I ( − 3 ; 4 ) , R = $\\sqrt{5}$",
+            "C. I ( 3 ; − 4 ) , R = 5",
+            "D. I ( − 3 ; 4 ) , R = 5"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử $z = x + y i$, $(x, y \\in \\mathbb{R})$ Theo đề bài ta có: $| z + 3 - 4 i | = 5 \\Leftrightarrow \\sqrt{(x + 3)^2 + (y - 4)^2} = 5 \\Leftrightarrow (x + 3)^2 + (y - 4)^2 = 25$ Vậy, tập hợp điểm trong mặt phẳng tọa độ biểu diễn các số phức $z$ là đường tròn tâm $I (- 3; 4)$, $R = 5$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R109",
+        "question": "Tổng phần thực và phần ảo của số phức $z$ thỏa mãn $i z + (1 - i) \\overline{z} = -2 i$ bằng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $2$",
+            "B. $- 2$",
+            "C. $6$",
+            "D. $- 6$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = a + b i$, $( a , b ∈ \\mathbb{R} )$. $i z + ( 1 − i ) \\overline{z} = − 2 i \\Leftrightarrow i ( a + b i ) + ( 1 − i ) ( a − b i ) = − 2 i \\Leftrightarrow a i − b + a − b i − a i − b = − 2 i \\Leftrightarrow − b i + a − 2 b = − 2 i \\Leftrightarrow \\begin{cases} − b = − 2 \\\\ − 2 b = 0 \\end{cases} \\Leftrightarrow \\begin{cases} b = 2 \\\\ a = 4 \\end{cases} \\Rightarrow a + b = 6$ Tổng của phần thực và phần ảo là 6. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R110",
+        "question": "Trong hình vẽ bên, điểm M biểu diễn số phức $z$. Số phức $\\overline{z}$ là:",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538644718639_14.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. $2 - i$",
+            "B. $1 + 2i$",
+            "C. $1 - 2i$",
+            "D. $2 + i$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $M(2 ; 1)$ biểu diễn số phức $z \\Rightarrow z = 2 + i \\Rightarrow \\overline{z} = 2 - i$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R111",
+        "question": "Phương trình bậc hai nào sau đây có nghiệm là $1 + 2 i$ ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z^2 - 2z + 3 = 0$",
+            "B. $z^2 + 2z + 5 = 0$",
+            "C. $z^2 - 2z + 5 = 0$",
+            "D. $z^2 + 2z + 3 = 0$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com +) Xét phương trình: $z^2 - 2z + 3 = 0 \\Leftrightarrow z^2 - 2z + 1 + 2 = 0 \\Leftrightarrow (z - 1)^2 = -2 \\Leftrightarrow (z - 1)^2 = 2i^2 \\Leftrightarrow |z - 1| = \\sqrt{2}i \\Leftrightarrow \\left\\{ z - 1 = \\sqrt{2}i \\atop z - 1 = -\\sqrt{2}i \\right\\} \\Leftrightarrow \\left\\{ z = 1 + \\sqrt{2}i \\atop z = 1 - \\sqrt{2}i \\right\\} \\Rightarrow \\text{loại đáp án A.} +) Xét phương trình: $z^2 + 2z + 5 = 0 \\Leftrightarrow z^2 + 2z + 4 + 1 = 0 \\Leftrightarrow (z + 2)^2 = -1 = i^2 \\Leftrightarrow |z + 2| = i \\Leftrightarrow \\left\\{ z + 2 = i \\atop z + 2 = -i \\right\\} \\Leftrightarrow \\left\\{ z = -2 + i \\atop z = -2 - i \\right\\} \\Rightarrow \\text{loại đáp án B.} +) Xét phương trình: $z^2 - 2z + 5 = 0 \\Leftrightarrow z^2 - 2z + 1 + 4 = 0 \\Leftrightarrow (z - 1)^2 = -4 = -4i^2 \\Leftrightarrow |z - 1| = 2i \\Leftrightarrow \\left\\{ z - 1 = 2i \\atop z - 1 = -2i \\right\\} \\Leftrightarrow \\left\\{ z = 1 + 2i \\atop z = 1 - 2i \\right\\} \\Rightarrow \\text{chọn đáp án C.} Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R112",
+        "question": "Có bao nhiêu số phức $z$ thỏa mãn $(1 + i) z + (2 - i) \\overline{z} = 13 + 2i$?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $4$",
+            "B. $3$",
+            "C. $2$",
+            "D. $1$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Đặt $z = a + b i \\; ( a ; b \\in \\mathbb{R} ) \\Rightarrow \\overline{z} = a - b i$, khi đó ta có: $( 1 + i ) ( a + b i ) + ( 2 - i ) ( a - b i ) = 13 + 2 i \\Leftrightarrow a - b + ( a + b ) i + 2 a - b - ( a + 2 b ) i = 13 + 2 i \\Leftrightarrow 3 a - 2 b - b i = 13 + 2 i \\Leftrightarrow \\begin{cases} 3 a - 2 b = 13 \\\\ - b = 2 \\end{cases} \\Leftrightarrow \\begin{cases} a = 3 \\\\ b = - 2 \\end{cases} \\Rightarrow z = 3 - 2 i$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R113",
+        "question": "Cho số phức $z$ thỏa mãn $z (1 + i) = 3 - 5i$. Tính môđun của $z$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $| z | = \\sqrt{17}$",
+            "B. $| z | = 16$",
+            "C. $| z | = 17$",
+            "D. $| z | = 4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $z(1 + i) = 3 - 5i \\Leftrightarrow z = \\frac{3 - 5i}{1 + i} = \\frac{(3 - 5i)(1 - i)}{1 - i^2} = \\frac{(3 - 5i)(1 - i)}{-1} = - (3 - 5i)(1 - i) = 5 + 2i \\Rightarrow |z| = \\sqrt{(-1)^2 + (-4)^2} = \\sqrt{17}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R114",
+        "question": "Điểm M trong hình vẽ bên là điểm biểu diễn của số phức $z$. Tìm phần thực và phần ảo của số phức $z$.",
+        "image_source": "https://cdn.vungoi.vn/vungoi/1538644946386_15.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Phần thực bằng 4 và phần ảo bằng 3",
+            "B. Phần thực bằng 4 và phần ảo bằng $3i$",
+            "C. Phần thực bằng 3 và phần ảo bằng 4",
+            "D. Phần thực bằng 3 và phần ảo bằng $4i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Từ hình vẽ, ta có $M (3; 4)$ nên $z = 3 + 4 i$. Vậy phần thực bằng $3$ và phần ảo bằng $4$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R115",
+        "question": "Phương trình: $8 z^2 - 4 z + 1 = 0$ có nghiệm là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $z = \\frac{1}{4} + \\frac{1}{4} i ; z = \\frac{5}{4} - \\frac{1}{4} i$",
+            "B. $z = \\frac{1}{4} + \\frac{1}{4} i ; z = \\frac{1}{4} - \\frac{3}{4} i$",
+            "C. $z = \\frac{1}{4} + \\frac{1}{4} i ; z = \\frac{1}{4} - \\frac{1}{4} i$",
+            "D. $z = \\frac{2}{4} + \\frac{1}{4} i ; z = \\frac{1}{4} - \\frac{1}{4} i$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: $8z^2 - 4z + 1 = 0$ Có: $\\Delta' = 4 - 8 = -4 = 4i^2 \\Rightarrow$ Phương trình có 2 nghiệm là: $z_1 = 2 + 2i \\cdot 8 = \\frac{1}{4} + \\frac{1}{4}i$; $z_2 = 2 - 2i \\cdot 8 = \\frac{1}{4} - \\frac{1}{4}i$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R116",
+        "question": "Các nghiệm $z_1 = -1 - \\frac{5 i \\sqrt{5}}{3}$; $z_2 = -1 + \\frac{5 i \\sqrt{5}}{3}$ là nghiệm của phương trình nào sau đây:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $z^2 - 2z + 9 = 0$",
+            "B. $3z^2 + 2z + 42 = 0$",
+            "C. $z^2 + 2z + 27 = 0$",
+            "D. $2z^2 + 3z + 4 = 0$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $z_1 + z_2 = -1 - 5i \\sqrt{5} 3 + -1 + 5i \\sqrt{5} 3 = -2 3$ $z_1 \\cdot z_2 = -1 - 5i \\sqrt{5} 3 \\cdot -1 + 5i \\sqrt{5} 3 = \\frac{126}{9} = \\frac{42}{3} \\Rightarrow z_1; z_2$ là các nghiệm của phương trình: $z^2 + \\frac{2}{3} z + \\frac{42}{3} = 0 \\Leftrightarrow 3z^2 + 2z + 42 = 0$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R117",
+        "question": "Trong $C$, cho phương trình $a z^2 + b z + c = 0$ ($a \\neq 0$) $(*)$. Gọi $\\Delta = b^2 - 4 a c$, ta xét các mệnh đề sau: 1) Nếu $\\Delta$ là số thực âm thì phương trình $(*)$ vô nghiệm 2) Nếu $\\Delta \\neq 0$ thì phương trình $(*)$ có 2 nghiệm phân biệt 3) Nếu $\\Delta = 0$ thì phương trình $(*)$ có 1 nghiệm kép.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Không có mệnh đề nào đúng",
+            "B. Có 1 mệnh đề đúng",
+            "C. Có 2 mệnh đề đúng",
+            "D. Cả 3 mệnh đề đều đúng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com ) Sai vì nếu $ \\Delta < 0 $ thì $ \\sqrt{\\Delta} = \\pm i \\sqrt{|\\Delta|} $ do đó phương trình có 2 nghiệm phức 2) Đúng 3) Đúng Vậy có 2 mệnh đề đúng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R118",
+        "question": "Giả sử $z_1$, $z_2$ là hai nghiệm phức của phương trình: $z^2 - 2z + 5 = 0$ và A, B là các điểm biểu diễn của $z_1$, $z_2$. Tọa độ trung điểm của đoạn thẳng AB là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $(0 ; 1)$",
+            "B. $(0 ; - 1)$",
+            "C. $(1 ; 1)$",
+            "D. $(1 ; 0)$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Phương trình: $z^2 - 2z + 5 = 0$ Có: $\\Delta' = 1 - 5 = -4 = 4i^2 \\Rightarrow \\sqrt{\\Delta'} = \\sqrt{4i^2} = 2i \\Rightarrow$ Phương trình có 2 nghiệm là: $z_1 = 1 + 2i$; $z_2 = 1 - 2i$ Khi đó: $A(1; 2)$, $B(1; -2)$ Tọa độ trung điểm đoạn thẳng $AB$ là: $(1; 0)$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R119",
+        "question": "Có bao nhiêu số phức $z$ thỏa mãn đồng thời các điều kiện $| z | = 5$ và $z = \\bar{z}$ ?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1$",
+            "B. $2$",
+            "C. $3$",
+            "D. $4$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử số phức cần tìm là $z = a + b i$. Từ điều kiện $z = \\bar{z}$ ta có $a + b i = a - b i \\Leftrightarrow b = 0$. Từ điều kiện $| z | = 5 \\Rightarrow a = \\pm 5$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R120",
+        "question": "Tìm số điểm biểu diễn cho số phức $z$ thỏa mãn đồng thời các điều kiện: $| z + 4 | = 3 | z |$ và $z$ là thuần ảo?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $1$",
+            "B. $0$",
+            "C. $3$",
+            "D. $2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vì $z$ là thuần ảo nên $a = 0 \\Rightarrow z = b i$. Từ điều kiện $| z + 4 | = 3 | z |$ có $| b i + 4 | = 3 | b i | \\Leftrightarrow b^2 + 4^2 = 9 b^2 \\Leftrightarrow 8 b^2 = 16 \\Leftrightarrow b^2 = 2 \\Leftrightarrow b = \\pm \\sqrt{2}$. Mỗi một số phức $z$ chỉ có 1 điểm biểu diễn trên mặt phẳng phức. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "T040R121",
+        "question": "Số phức $z$ thỏa mãn đồng thời các điều kiện $| z | = \\sqrt{2}$ và $z^2$ là số thuần ảo là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1$",
+            "B. $4$",
+            "C. $0$",
+            "D. $2$"
+        ],
+        "answer": "B",
+        "explain": "Giả sử $z = a + b i \\, ( a , b \\in \\mathbb{R} )$, ta có $z^2 = a^2 - b^2 + 2 a b i$. Vì $z^2$ là số thuần ảo nên ta có $a^2 - b^2 = 0 \\,(1)$. Từ điều kiện $| z | = \\sqrt{2}$ có $a^2 + b^2 = 2 \\,(2)$. Ta có $\\{ a^2 - b^2 = 0 \\, a^2 + b^2 = 2 \\Leftrightarrow a^2 = b^2 = 1 \\}$. Có 4 bộ số $( a , b )$ là $( 1 , 1 )$, $( 1 , -1 )$, $( -1 , -1 )$, $( -1 , 1 )$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "T040R122",
+        "question": "Số phức $z = x + y i$ thỏa mãn $| z - 2 - 4 i | = | z - 2 i |$ đồng thời có mô đun nhỏ nhất là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $z = 2 + 2 i$",
+            "B. $z = 2 - 2 i$",
+            "C. $z = 1 + i$",
+            "D. $z = 1 - i$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Từ điều kiện $| z - 2 - 4 i | = | z - 2 i |$ ta có $| x + y i - 2 - 4 i | = | x + y i - 2 i | \\iff ( x - 2 )^2 + ( y - 4 )^2 = x^2 + ( y - 2 )^2 \\iff - 4 x + 4 - 8 y + 16 = - 4 y + 4 \\iff - 4 x - 4 y + 16 = 0 \\iff x + y = 4 \\iff x = 4 - y$ Ta có $| z | = \\sqrt{x^2 + y^2} = \\sqrt{( 4 - y )^2 + y^2} = \\sqrt{2 y^2 - 8 y + 16} = \\sqrt{2 ( y - 2 )^2 + 8} \\geq 2 \\sqrt{2}$ Vậy $min | z | = 2 \\sqrt{2}$ khi $y - 2 = 0$ hay $y = 2 \\Rightarrow x = 2 \\Rightarrow z = 2 + 2 i$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "T040R123",
+        "question": "Trong mặt phẳng tọa độ $Oxy$, tập hợp các điểm biểu diễn số phức $z$ thỏa mãn $z(1 + i)$ là số thực là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Đường tròn bán kính bằng $1$ ",
+            "B. Trục $O x$ ",
+            "C. Đường thẳng $y = - x$ ",
+            "D. Đường thẳng $y = x$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Giả sử ta có số phức $z = x + y i$. Ta có $z ( 1 + i ) = ( x + y i ) ( 1 + i ) = ( x − y ) + ( x + y ) i$. $z ( 1 + i )$ là số thực khi $x + y = 0$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "T040R124",
+        "question": "Cho các số phức $z_1, z_2, z_3$ thỏa mãn điều kiện $|z_1| = 4$, $|z_2| = 3$, $|z_3| = 2$ và $|4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3| = 48$. Giá trị của biểu thức $P = |z_1 + z_2 + z_3|$ bằng.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 8",
+            "B. 6",
+            "C. $1$",
+            "D. $2$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $| 4 z_1 z_2 + 16 z_2 z_3 + 9 z_1 z_3 | = \\left| z_3 \\cdot \\overline{z_3} \\cdot z_1 z_2 + z_1 \\cdot \\overline{z_1} \\cdot z_2 z_3 + z_2 \\cdot \\overline{z_2} \\cdot z_1 z_3 \\right| = \\left| z_1 z_2 z_3 \\cdot \\left( \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right) \\right| = | z_1 z_2 z_3 | \\cdot \\left| \\overline{z_1} + \\overline{z_2} + \\overline{z_3} \\right| = | z_1 | \\cdot | z_2 | \\cdot | z_3 | \\cdot \\left| \\overline{z_1 + z_2 + z_3} \\right| = 24 \\cdot | z_1 + z_2 + z_3 | = 48 \\Rightarrow P = | z_1 + z_2 + z_3 | = \\frac{48}{24} = 2$ Đáp án cần chọn là: D."
+    }
+]

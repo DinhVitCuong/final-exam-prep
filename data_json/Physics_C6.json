@@ -1,0 +1,2788 @@
+[
+    {
+        "id": "L0621001",
+        "question": "Trong thí nghiệm Hec-xơ, nếu sử dụng ánh sáng hồ quang điện sau khi đi qua tấm kính thủy tinh dày thì.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hiệu ứng quang điện chỉ xảy ra khi cường độ của chùm sáng kích thích đủ lớn",
+            "B. Hiệu ứng quang điện vẫn xảy ra vì giới hạn quang điện của kẽm là ánh sáng nhìn thấy",
+            "C. Hiệu ứng quang điện không xảy ra vì thủy tinh $h$ấp thụ hết tia tử ngoại",
+            "D. Hiệu ứng quang điện vẫn xảy ra vì thủy tinh hấp thụ hết tia tử ngoại"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng electron bị bật ra khỏi bề mặt kim loại khi có ánh sáng thích hợp chiếu vào gọi là hiện tượng quang điện ngoài. Tia tử ngoại bị nước và thuỷ tinh hấp thụ mạnh. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621002",
+        "question": "Nếu chiếu một chùm tia hồng ngoại vào tấm kẽm tích điện âm thì:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Tấm kẽm mất dần điện tích dương",
+            "B. Tấm kẽm trở nên trung hòa về điện",
+            "C. Tấm kẽm mất dần điện tích âm",
+            "D. Điện tích âm của tấm kẽm không đổi"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Nếu chiếu một chùm tia hồng ngoại vào tấm kẽm tích điện âm thì điện tích âm của tấm kẽm không đổi Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621003",
+        "question": "Hiện tượng quang điện ngoài là hiện tượng electron bị bật ra khỏi bề mặt kim loại khi $h\\nu \\geq W$, trong đó $h$ là hằng số Planck, $\\nu$ là tần số ánh sáng, và $W$ là công thoát của electron ra khỏi bề mặt kim loại.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Chiếu vào kim loại ánh sáng thích hợp",
+            "B. Tấm kim loại bị nhiễm điện do tiếp xúc với vật đã bị nhiễm điện khác",
+            "C. Kim loại bị nung nóng đến nhiệt độ rất cao",
+            "D. Đặt tấm kim loại vào trong một điện trường mạnh"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng ánh sáng làm bật các electron ra khỏi mặt kim loại gọi là hiện tượng quang điện (ngoài) Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621004",
+        "question": "Chiếu một bức xạ đơn sắc có bước sóng $ \\lambda $ vào một tấm kim loại có giới hạn quang điện ngoài là $ \\lambda_0 $ thì thấy có hiện tượng quang điện xảy ra (electron bứt ra khỏi kim loại). Với $ c $ là tốc độ photon trong chân không. Khi đó, ta có mối quan hệ đúng là:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $λ_0 > λ$",
+            "B. $λ \\geq \\frac{h c}{λ_0}$",
+            "C. $λ < \\frac{h c}{λ_0}$",
+            "D. $λ \\leq λ_0$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Để gây ra hiện tượng quang điện: $λ ≤ λ_0$ ⇔ $c_f ≤ λ_0$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621005",
+        "question": "Đề thi THPT QG - 2020 Gọi $h$ là hằng số Plăng, $c$ là tốc độ ánh sáng trong chân không. Chiếu bức xạ có bước sóng $\\lambda$ vào mặt một tấm kim loại có công thoát $A$ thì hiện tượng quang điện xảy ra khi?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $λ \\geq 4 h c A$",
+            "B. $λ = 3 h c A$",
+            "C. $λ \\leq h c A$",
+            "D. $λ = 2 h c A$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, điều kiện xảy ra hiện tượng quang điện: $λ \\leq λ_0$ mà $λ_0 = \\frac{h c}{A} \\Rightarrow λ \\leq \\frac{h c}{A}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621006",
+        "question": "Giới hạn quang điện của mỗi kim loại là: $E_0 = \\frac{h \\cdot f_0}{e}$, với $h$ là hằng số Planck, $f_0$ là tần số giới hạn và $e$ là điện tích của electron.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Bước sóng dài nhất của bức xạ chiếu vào kim loại đó mà gây ra được hiện tượng quang điện",
+            "B. Bước sóng ngắn nhất của bức xạ chiếu vào kim loại đó mà gây ra được hiện tượng quang điện",
+            "C. Công nhỏ nhất dùng để bứt electron ra khỏi bề mặt kim loại đó",
+            "D. Công lớn nhất dùng để bứt electron ra khỏi bề mặt kim loại đó"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, điều kiện xảy ra hiện tượng quang điện là các bước sóng chiếu vào phải nhỏ hơn hoặc bằng giới hạn quang điện $ \\Rightarrow $ Giới hạn quang điện $ \\lambda_0 $ là bước sóng dài nhất của bức xạ chiếu vào kim loại đó mà gây ra được hiện tượng quang điện Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621007",
+        "question": "Giới hạn quang điện phụ thuộc vào: $h \\nu_0 = \\phi + \\frac{1}{2} mv^2$; trong đó $h$ là hằng số Planck, $\\nu_0$ là tần số giới hạn, $\\phi$ là công thoát, và $v$ là vận tốc của electron.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Bản chất của kim loại",
+            "B. Điện áp giữa anốt và catốt của tế bào quang điện",
+            "C. Bước sóng của ánh sáng chiếu vào catốt",
+            "D. Điện trường giữa anốt và catốt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giới hạn quang điện phụ thuộc vào bản chất của kim loại Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621008",
+        "question": "Cho biết công thoát của Kali là $A = 3,6 \\times 10^{-19} \\, \\text{J}$. Chiếu vào Kali lần lượt bốn bức xạ $\\lambda_1 = 0,4 \\, \\mu m$; $\\lambda_2 = 0,5 \\, \\mu m$; $\\lambda_3 = 0,6 \\, \\mu m$; $\\lambda_4 = 0,7 \\, \\mu m$. Những bức xạ nào có thể gây ra hiện tượng quang điện đối với Kali?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $λ_3$ và $λ_4$",
+            "B. $λ_1$ và $λ_2$",
+            "C. chỉ có $λ_1$",
+            "D. $λ_1$, $λ_2$ và $λ_3$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : $A = h c \\lambda_0 \\rightarrow \\lambda_0 = \\frac{h c}{A} = 0,552 \\,\\text{μm}$ Để gây ra hiện tượng quang điện thì bức xạ chiếu đến có bước sóng nhỏ hơn $\\lambda_0$ => bức xạ nào có thể gây ra hiện tượng quang điện là $\\lambda_1$ và $\\lambda_2$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621009",
+        "question": "Lần lượt chiếu hai bức xạ có bước sóng $λ_1 = 0,75 \\, \\text{μm}$ ; $λ_2 = 0,25 \\, \\text{μm}$ vào một tấm đồng có giới hạn quang điện $λ_0 = 0,30 \\, \\text{μm}$. Bức xạ gây ra hiện tượng quang điện với tấm đồng là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Không có bức xạ nào trong 2 bức xạ đó",
+            "B. Chỉ có bức xạ $\\lambda_2$",
+            "C. Cả hai bức xạ",
+            "D. Chỉ có bức xạ $\\lambda_1$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Để xảy ra hiện tượng quang điện với tấm đồng thì bức xạ chiếu vào phải thỏa mãn: $λ ≤ λ_0 ⇔ λ ≤ 0\\, \\text{30}\\, \\mu m$ Có $λ_2 = 0\\, \\text{25}\\, \\mu m ≤ 0\\, \\text{30}\\, \\mu m$ nên chỉ có bức xạ $λ_2$ gây ra hiện tượng quang điện với tấm đồng. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621010",
+        "question": "Theo thuyết lượng tử ánh sáng của Einstein thì một hạt ánh sáng (photon) của ánh sáng đơn sắc có tần số $f$ phải có năng lượng là $E = h f$, trong đó $h$ là hằng số Planck.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $ε = h f$",
+            "B. $ε = h c f$",
+            "C. $ε = h f$",
+            "D. $ε = c f$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Theo thuyết lượng tử ánh sáng của, mỗi photon có năng lượng: $\\varepsilon = h f$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621011",
+        "question": "Theo thuyết lượng tử ánh sáng, phát biểu nào dưới đây là sai?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Phân tử, nguyên tử phát xạ hay hấp thụ ánh sáng, cũng có nghĩa là chúng phát xạ hay hấp thụ phôtôn",
+            "B. Ánh sáng được tạo thành bởi các hạt gọi là phôtôn",
+            "C. Năng lượng của các phôtôn ánh sáng là như nhau, không phụ thuộc tần số của ánh sáng",
+            "D. Trong chân không, các phôtôn bay dọc theo tia sáng với tốc độ $c = 3,108 \\text{ m/s}$"
+        ],
+        "answer": "C",
+        "explain": "Năng lượng của photon ánh sáng: $ε = h f$ => có phụ thuộc vào tần số của ánh sáng. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621012",
+        "question": "Theo thuyết lượng tử ánh sáng của Anhxtanh, photon ứng với mỗi ánh sáng đơn sắc có năng lượng càng lớn nếu ánh sáng đơn sắc đó có $f$ lớn hơn.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 'bước sóng càng lớn'",
+            "B. 'chu kỳ càng lớn'",
+            "C. 'tốc độ truyền càng lớn'",
+            "D. 'tần số càng lớn'"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Theo thuyết lượng tử ánh sáng của Anhxtanh, photon ứng với mỗi ánh sáng đơn sắc có năng lượng càng lớn nếu ánh sáng đơn sắc đó có tần số càng lớn $ε = h f$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621013",
+        "question": "Dùng thuyết lượng tử ánh sáng không thể giải thích được:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. hiện tượng quang điện ngoài",
+            "B. hiện tượng giao thoa ánh sáng",
+            "C. hiện tượng quang – phát quang",
+            "D. nguyên tắc hoạt động của pin quang điện"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Dùng thuyết lượng tử ánh sáng không thể giải thích được hiện tượng giao thoa ánh sáng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621014",
+        "question": "Chọn câu phát biểu sai về photon:",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Ánh sáng tím có photon giống hệt nhau",
+            "B. Năng lượng của mỗi photon không đổi trong quá trình lan truyền",
+            "C. Photon chuyển động dọc theo tia sáng",
+            "D. Trong chân không photon chuyển động với tốc độ $c = 3 \\times 10^8 \\, \\text{m/s}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Với mỗi ánh sáng đơn sắc có tần số $f$, các photon đều giống nhau Nhận thấy ánh sáng tím có bước sóng nằm trong khoảng từ $0\\, \\text{μ m}$ đến $0,42\\, \\text{μ m}$ => Phương án A: Ánh sáng tím có photon giống hệt nhau là sai Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621015",
+        "question": "Gọi năng lượng của phôtôn ánh sáng đỏ, ánh sáng lục và ánh sáng vàng lần lượt là: $ε_{Đ}$, $ε_{L}$ và $ε_{V}$. Sắp xếp chúng theo thứ tự năng lượng giảm dần là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $ε_L > ε_V > ε_Đ$",
+            "B. $ε_V > ε_L > ε_Đ$",
+            "C. $ε_L > ε_Đ > ε_V$",
+            "D. $ε_Đ > ε_V > ε_L$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : $ε = h f = h \\frac{c}{\\lambda}$ $ \\lambda D > \\lambda V > \\lambda L$ ⎫ ⎬ ⎭ ⇒ $ε D < ε V < ε L$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621016",
+        "question": "Trong chân không, ánh sáng tím có bước sóng $0,38 \\, \\text{μm}$. Mỗi phôtôn của ánh sáng này mang năng lượng xấp xỉ bằng:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $5,23 \\cdot 10^{-20} \\, J$",
+            "B. $2,49 \\cdot 10^{-31} \\, J$",
+            "C. $5,23 \\cdot 10^{-19} \\, J$",
+            "D. $2,49 \\cdot 10^{-19} \\, J$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Mỗi photon của ánh sáng tím mang năng lượng: $ \\varepsilon = \\frac{h c}{\\lambda} = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8}}{0,38 \\cdot 10^{-6}} = 5,23 \\cdot 10^{-19} \\, \\text{J} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621017",
+        "question": "Trong không khí, phôtôn A có bước sóng lớn gấp $n$ lần bước sóng của phôtôn B thì tỉ số giữa năng lượng phôtôn A và năng lượng phôtôn B là: $ \\frac{E_A}{E_B} = \\frac{\\lambda_B}{\\lambda_A} = \\frac{1}{n}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $n^2$",
+            "B. $1 \\cdot n^2$",
+            "C. $n$",
+            "D. $1 \\cdot n$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng phôtôn $ \\varepsilon = \\frac{h c}{\\lambda} \\rightarrow \\varepsilon_A \\varepsilon_B = \\frac{\\lambda_B}{\\lambda_A} = \\frac{\\lambda_B}{n} \\lambda_B = \\frac{1}{n} $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621018",
+        "question": "Một chùm ánh sáng đơn sắc đỏ truyền trong chân không có bước sóng $λ = 0,75 \\,\\text{μ m}$ . Cho hằng số Plăng là $h = 6,625 \\times 10^{-34} \\,\\text{J} \\cdot \\text{s}$ ; $c = 3 \\times 10^{8} \\,\\text{m/s}$ . Năng lượng phôtôn của ánh sáng là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $ε = 2 \\, 34 \\cdot 10^{-19} \\, J$",
+            "B. $ε = 1 \\, 66 \\cdot 10^{-19} \\, J$",
+            "C. $ε = 2 \\, 65 \\cdot 10^{-19} \\, J$",
+            "D. $ε = 2 \\, 15 \\cdot 10^{-19} \\, J$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng phôtôn của ánh sáng là: $ \\epsilon = \\frac{h c}{\\lambda} = \\frac{6,625 \\times 10^{-34} \\cdot 3 \\times 10^8}{0,75 \\times 10^{-6}} = 2,65 \\times 10^{-19} \\, \\text{J} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621019",
+        "question": "Giới hạn quang điện của kim loại Natri là $λ_0 = 0, 50\\, \\text{μm}$. Công thoát electron của Natri là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $2,48 \\, \\text{eV}$",
+            "B. $4,48 \\, \\text{eV}$",
+            "C. $3,48 \\, \\text{eV}$",
+            "D. $1,48 \\, \\text{eV}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Công thoát của Natri $A = \\frac{h c}{\\lambda_0} = 3,975 \\times 10^{-19} \\, \\text{J} = 2,48 \\, \\text{eV}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621020",
+        "question": "Chọn câu trả lời đúng. Giới hạn quang điện của Natri là $0,5 \\, \\text{μm}$. Công thoát của Kẽm lớn hơn của Natri là $1,4$ lần. Giới hạn quang điện của kẽm là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0 , 7 μ m",
+            "B. 0 , 36 μ m",
+            "C. 0 , 9 μ m",
+            "D. 0 , 63 μ m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $A = h c \\lambda_0$ ⇒ $A Z_n A N_a = \\lambda_0 N_a \\lambda_0 Z_n = 1,4$ ⇒ $\\lambda_0 Z_n = 0,36\\, \\text{μm}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621021",
+        "question": "Giới hạn quang điện của kẽm là $0,35\\, \\text{μm}$, công thoát electron của natri lớn hơn công thoát electron của kẽm $1,4$ lần. Giới hạn quang điện của natri bằng..",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,49 \\mu m$",
+            "B. $0,25 \\mu m$",
+            "C. $1,05 \\mu m$",
+            "D. $0,75 \\mu m$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Công thoát của kẽm là và của natri là: \n$$\nA_{Z_n} = \\frac{h c}{\\lambda_{Z_n}} \n$$ \n$$\nA_{Na} = \\frac{h c}{\\lambda_{Na}} \n$$ \nMà: $A_{Na} = 1,4$, $A_{Z_n} \\Rightarrow \\frac{h c}{\\lambda_{Na}} = 1,4 \\cdot \\frac{h c}{\\lambda_{Z_n}} \\Rightarrow \\lambda_{Na} = \\lambda_{Z_n} \\cdot \\frac{1,4}{1,4} = 0,35 \\, \\text{μ m}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621022",
+        "question": "Biết công thoát của các kim loại : canxi, kali, bạc và đồng lần lượt là $2,89 \\, \\text{eV}$; $2,26 \\, \\text{eV}$; $4,78 \\, \\text{eV}$ và $4,14 \\, \\text{eV}$. Chiếu bức xạ có bước sóng $0,33 \\, \\text{μm}$ vào bề mặt các kim loại trên. Hiện tượng quang điện ngoài xảy ra với các kim loại nào sau đây ?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Kali và đồng",
+            "B. Kali và canxi",
+            "C. Bạc và đồng",
+            "D. Canxi và bạc"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng của bức xạ chiếu vào bề mặt tấm kim loại $ε = \\frac{h c}{λ} = 3,76 \\, \\text{eV}$ Để xảy ra hiện tượng quang điện thì $ε \\geq A$ Nhận thấy năng lượng photon của ánh sáng chiếu vào tấm kim loại lớn hơn công thoát của Kali và canxi. Do đó hiện tượng quang điện xảy ra đối với hai kim loại này. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621023",
+        "question": "Xét một tấm kẽm có giới hạn quang điện $λ_0 = 0,35 \\, \\text{μm}$. Hiện tượng quang điện sẽ xảy ra nếu chiếu đến tấm kẽm này một chùm sáng đơn sắc có bước sóng nào dưới đây?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $λ = 0, 3 \\, μ m$",
+            "B. $λ = 0, 36 \\, μ m$",
+            "C. $λ = 0, 45 \\, μ m$",
+            "D. $λ = 0, 6 \\, μ m$"
+        ],
+        "answer": "A",
+        "explain": "Điều kiện xảy ra hiện tượng quang điện: $λ ≤ λ_0$ Vậy hiện tượng quang điện sẽ xảy ra nếu chiếu đến tấm kẽm này một chùm sáng đơn sắc có bước sóng là $λ = 0, 3 \\, \\text{μm}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621024",
+        "question": "Một chất quang dẫn có giới hạn quang điện là $1,88 \\, \\text{μm}$. Lấy $c = 3 \\cdot 10^8 \\, \\text{m/s}$. Hiện tượng quang điện trong xảy ra khi chiếu vào chất này ánh sáng có tần số nhỏ nhất là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1,452 \\cdot 10^{14} \\text{ Hz}$",
+            "B. $1,596 \\cdot 10^{14} \\text{ Hz}$",
+            "C. $1,875 \\cdot 10^{14} \\text{ Hz}$",
+            "D. $1,956 \\cdot 10^{14} \\text{ Hz}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giới hạn quang điện của chất quang dẫn: $\\lambda_0 = 1,88 \\,\\text{μm} = 1,88 \\cdot 10^{-6} \\,\\text{m}$ Tần số giới hạn quang điện của chất quang dẫn: $f_0 = \\frac{c}{\\lambda_0} = 1,596 \\cdot 10^{14} \\,\\text{Hz}$ Điều kiện xảy ra hiện tượng quang điện trong: $\\lambda \\leq \\lambda_0 \\Rightarrow f \\geq f_0 = 1,596 \\cdot 10^{14} \\,\\text{Hz} \\Rightarrow f_{\\text{min}} = 1,596 \\cdot 10^{14} \\,\\text{Hz}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621025",
+        "question": "Một tấm kim loại có công thoát $A$, người ta chiếu vào kim loại chùm sáng có năng lượng của photon là $hf$ thì các electron quang điện được phóng ra có động năng ban đầu cực đại là $K$. Nếu tần số của bức xạ chiếu tới tăng gấp đôi thì động năng ban đầu cực đại của các electron quang điện là: $K' = hf' - A = h(2f) - A = 2hf - A$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $K + hf$",
+            "B. $K + A$",
+            "C. $2K$",
+            "D. $K + A + hf$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Với tần số $f$ thì: $h f = A + K$ (1) Với tần số $2f$ thì: $2 h f = A + K ′$ (2) (2) – (1) ta được: $K ′ = K + h f$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621026",
+        "question": "Lần lượt chiếu vào catốt của một tế bào quang điện các bức xạ điện từ gồm các bức xạ có bước sóng $λ_1 = 0,26 \\,\\text{μm}$ và bức xạ có bước sóng $λ_2 = 1,2 \\,λ_1$ thì vận tốc ban đầu cực đại của các electron quang điện bứt ra từ catốt lần lượt là $v_1$ và $v_2$ với $v_2 = \\frac{3 v_1}{4}$. Giới hạn quang điện $λ_0$ của kim loại làm catốt nay là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,42 \\, \\mu m$",
+            "B. $1,00 \\, \\mu m$",
+            "C. $0,90 \\, \\mu m$",
+            "D. $1,45 \\, \\mu m$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta giải hệ phương trình sau: \n$$\n\\begin{cases}\nh c \\lambda_1 = A + \\frac{1}{2} m v_1^2 \\\\\nh c \\lambda_2 = A + \\frac{1}{2} m v_2^2\n\\end{cases} \n$$\n$$\n\\Leftrightarrow \n\\begin{cases}\nh c \\lambda_1 = h c \\lambda_0 + K_1 \\\\\n\\frac{h c}{2} \\lambda_1 = h c \\lambda_0 + \\frac{9}{16} K_1 \n\\end{cases} \n$$\n$$\n\\Rightarrow \\lambda_0 = 0,42 \\, \\text{μm} \n$$\nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621027",
+        "question": "Điều khẳng định nào sau đây là sai khi nói về bản chất của ánh sáng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Ánh sáng có lưỡng tính sóng - hạt",
+            "B. Khi bước sóng của ánh sáng càng ngắn thì tính chất hạt thể hiện càng rõ nét, tính chất sóng càng ít thể hiện",
+            "C. Khi tính chất hạt thể hiện rõ nét, ta dễ quan sát hiện tượng giao thoa",
+            "D. Khi bước sóng của ánh sáng càng dài thì tính chất hạt ít thể hiện, tính chất sóng thể hiện càng rõ nét"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai: vì khi tính chất sóng thể hiện rõ nét thì ta mới dễ quan sát hiện tượng giao thoa Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621028",
+        "question": "Trong chùm tia Rơn-ghen phát ra từ một ống Rơn-ghen, người ta thấy những tia có tần số lớn nhất bằng $f_{\\text{max}} = 3,10 \\times 10^{18} \\,\\text{Hz}$. Xác định tốc độ cực đại của electron ngay trước khi đập vào đối Katot.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $6,61 \\cdot 10^7 \\, \\text{(m/s)}$",
+            "B. $1,66 \\cdot 10^7 \\, \\text{(m/s)}$",
+            "C. $66,1 \\cdot 10^7 \\, \\text{(m/s)}$",
+            "D. $16,6 \\cdot 10^7 \\, \\text{(m/s)}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $h f = \\frac{m v^2}{2} \\Rightarrow v_{max} = 6,61 \\times 10^7 \\, \\text{(m/s)}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621029",
+        "question": "Một nguồn sáng công suất $6 \\, \\text{W}$ đặt trong không khí phát ra ánh sáng đơn sắc có bước sóng $625 \\, \\text{nm}$. Biết $h = 6,625 \\times 10^{-34} \\, \\text{Js}$; $c = 3 \\times 10^{8} \\, \\text{m/s}$. Số photon do nguồn sáng đó phát ra trong một đơn vị thời gian gần đúng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5,38 \\cdot 10^{19}$",
+            "B. $3,72 \\cdot 10^{19}$",
+            "C. $1,89 \\cdot 10^{19}$",
+            "D. $2,62 \\cdot 10^{19}$"
+        ],
+        "answer": "C",
+        "explain": "Năng lượng của một photon: $ \\varepsilon = h c \\lambda = 6 \\, 625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot 625 \\cdot 10^{-9} = 31 \\, 8 \\cdot 10^{-20} \\, \\text{J} $ \n\nSố photon mà ánh sáng đó phát ra trong 1 đơn vị thời gian là: $ N = \\frac{P}{\\varepsilon} = \\frac{6}{31 \\, 8 \\cdot 10^{20}} = 1 \\, 89 \\cdot 10^{19} $ \n\nĐáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621030",
+        "question": "Một nguồn sáng phát ra chùm sáng đơn sắc có bước sóng $662,5\\, \\text{nm}$, với công suất là $1,5 \\cdot 10^{-4}\\, \\text{W}$. Số phôtôn của nguồn phát ra trong mỗi giây là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4\\cdot10^{14} \\text{ photon}",
+            "B. 5\\cdot10^{14} \\text{ photon}",
+            "C. 6\\cdot10^{14} \\text{ photon}",
+            "D. 3\\cdot10^{14} \\text{ photon}"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng photon ánh sáng: $ε = \\frac{h c}{λ} = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{662,5 \\cdot 10^{-9}} = 3 \\cdot 10^{-9} \\, \\text{(J)}$ Số photon phát ra trong 1s là: $N = \\frac{P}{ε} = \\frac{1,5 \\cdot 10^{-4}}{3 \\cdot 10^{-9}} = 5 \\cdot 10^{14} \\, \\text{(photon)}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621031",
+        "question": "Cường độ dòng quang điện bão hòa.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tỉ lệ nghịch với cường độ chùm sáng kích thích",
+            "B. Tỉ lệ thuận với cường độ chùm sáng kích thích",
+            "C. Không phụ thuộc vào cường độ chùm sáng kích thích",
+            "D. Tỉ lệ thuận với $I^2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đối với mỗi ánh sáng thích hợp (có $ \\lambda \\leq \\lambda_0 $) cường độ dòng quang điện bão hòa tỉ lệ với cường độ của chùm sáng kích thích. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621032",
+        "question": "Dòng quang điện đạt đến giá trị bão hòa khi: $I = I_0 (1 - e^{-\\frac{eU}{kT}})$, với $I$ là dòng điện, $I_0$ là giá trị bão hòa, $e$ là điện tích của electron, $U$ là hiệu điện thế, $k$ là hằng số Boltzmann, và $T$ là nhiệt độ.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Tất cả các electron bật ra từ catốt khi catốt được chiếu sáng đều đi về được anốt",
+            "B. Tất cả các electron bật ra từ catôt khi catốt được chiếu sáng đều quay trở về được catốt",
+            "C. Có sự cân bằng giữa số electron bật ra từ catốt và số electron bị hút quay trở lại catốt",
+            "D. Số electron đi về được catốt không đổi theo thời gian"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Dòng quang điện đạt đến giá trị bão hòa khi tất cả các electron bật ra từ catốt khi catốt được chiếu sáng đều đi về được anốt Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621033",
+        "question": "Đồ thị nào dưới đây vẽ đúng đường đặc trưng Vôn - Ampe của tế bào quang điện?",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0413/Capture.PNG",
+        "difficulty": 1,
+        "options": [
+            "A. Hình A",
+            "B. Hình B",
+            "C. Hình C",
+            "D. Hình D"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Đồ thị đường đặc trưng Vôn-Ampe của tế bào quang điện: Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621034",
+        "question": "Khi đã có dòng quang điện thì nhận định nào sau đây là sai?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hiệu điện thế $U_{AK}$ có thể mang giá trị âm",
+            "B. Cường độ dòng quang điện bão hòa tỉ lệ với cường độ chùm sáng kích thích",
+            "C. Cường độ dòng quang điện bão hòa phụ thuộc vào hiệu điện thế giữa catốt và anốt",
+            "D. Một phần năng lượng của photon dùng để thực hiện công thoát electron"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai vì cường độ dòng quang điện bão phụ thuộc vào cường độ chùm sáng kích thích Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621035",
+        "question": "Cường độ chùm sáng chiếu vào catốt tế bào quang điện tăng thì:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Cường độ dòng quang điện bão hòa tăng",
+            "B. Điện áp hãm tăng",
+            "C. Vận tốc ban đầu cực đại của quang electron tăng",
+            "D. Giới hạn quang điện của kim loại tăng"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: cường độ dòng quang điện bão hòa tỉ lệ thuận với cường độ chùm sáng kích thích chiếu tới $\\Rightarrow$ Khi cường độ chùm sáng chiếu vào catốt tế bào quang điện tăng thì cường độ dòng quang điện bão hòa tăng Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621036",
+        "question": "Khi có hiện tượng quang điện xảy ra trong tế bào quang điện, phát biểu nào sau đây là sai?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Giữ nguyên chùm sáng kích thích, thay đổi kim loại làm catốt thì động năng ban đầu cực đại của electron quang điện thay đổi",
+            "B. Giữ nguyên cường độ chùm sáng kích thích và kim loại dùng làm catốt, giảm tần số của ánh sáng kích thích thì động năng ban đầu cực đại của electron quang điện giảm",
+            "C. Giữ nguyên tần số của ánh sáng kích thích và kim loại làm catốt, tăng cường độ chùm sáng kích thích thì động năng ban đầu cực đại của electron quang điện tăng",
+            "D. Giữ nguyên cường độ chùm sáng kích thích và kim loại dùng làm catốt, giảm bước sóng của ánh sáng kích thích thì động năng ban đầu cực đại của electron quang điện tăng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai vì: Động năng ban đầu cực đại của electron quang điện không phụ thuộc vào cường độ chùm sáng kích thích. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621037",
+        "question": "Động năng ban đầu cực đại của quang electron tách khỏi kim loại khi chiều sáng thích hợp không phụ thuộc vào:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Tần số của ánh sáng kích thích",
+            "B. Bước sóng của ánh sáng kích thích",
+            "C. Bản chất kim loại dùng làm ca tốt",
+            "D. Cường độ của chùm sáng kích thích"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Động năng ban đầu cực đại của quang electron tách khỏi kim loại khi chiều sáng thích hợp không phụ thuộc vào cường độ của chùm sáng kích thích mà chỉ phụ thuộc vào bước sóng (tần số) của ánh sáng kích thích và bản chất kim loại dùng làm catốt Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621038",
+        "question": "Theo các quy ước thông thường, công thức nào sau đây đúng cho trường hợp dòng quang điện triệt tiêu?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $e U_h = A + \\frac{1}{2} m v^2 m a_x$",
+            "B. $e U_h = A + \\frac{1}{4} m v^2 m a_x$",
+            "C. $e U_h = \\frac{1}{2} m v^2 m a_x$",
+            "D. $e U_h^2 = m v^2 m a_x$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi dòng quang điện triệt tiêu, ta có: $e U_h = \\frac{1}{2} m v^2$ $m a_x$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621039",
+        "question": "Chiếu đồng thời hai bức xạ đơn sắc có bước sóng $\\lambda_1$ và $\\lambda_2$ vào một tấm kim loại. Các electron bật ra với vận tốc ban đầu cực đại lần lượt là $v_1$ và $v_2$ với $v_1 = 2 v_2$. Tỉ số các hiệu điện thế hãm $\\frac{U_{h1}}{U_{h2}}$ để dòng quang điện triệt tiêu là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2",
+            "B. 3",
+            "C. 4",
+            "D. 5"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $e U_h = \\frac{1}{2} m v^2$ $m a_x \\rightarrow e U_h \\frac{1}{e U_h} = \\frac{1}{2} m v^2_1 \\frac{1}{\\frac{1}{2} m v^2_2} \\rightarrow U_h \\frac{1}{U_h} = \\frac{v^2_1}{v^2_2} = 4 \\frac{v^2_2}{v^2_2} = 4$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621040",
+        "question": "Cường độ dòng quang điện bão hòa được xác định bởi: $I = \\frac{e}{\\tau} \\cdot N$ với $I$ là cường độ dòng điện, $e$ là điện tích của electron, $\\tau$ là thời gian và $N$ là số hạt photon.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $I_b h = q t$",
+            "B. $I_b h = N_e \\cdot e t$",
+            "C. $I_b h = N_e e t$",
+            "D. $I_b h = n_e e$"
+        ],
+        "answer": "B",
+        "explain": "Cường độ dòng quang điện bão hòa được xác định bởi: $I_{bh} = \\frac{q}{t} = N_e \\cdot e_t = n_e \\cdot e$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621041",
+        "question": "Trong 10s, số electron đến được anốt của tế bào quang điện là $3,10^{16}$. Cường độ dòng quang điện lúc đó là: $I = \\frac{n}{t} = \\frac{3,10^{16}}{10 \\,\\text{s}}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,48A$",
+            "B. $4,8A$",
+            "C. $0,48mA$",
+            "D. $4,8mA$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $I_b h = n_e \\cdot e = N_e \\cdot e_t = 3,10 \\times 10^{16} \\cdot 1,6 \\times 10^{-19} = 4,8 \\times 10^{-4} \\, \\text{A}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621042",
+        "question": "Giả sử các electron đến được anốt của tế bào quang điện đều bị hút về anốt, khi đó dòng quang điện có cường độ $I = 0,32\\, \\text{mA}$. Số electron thoát ra khỏi catốt trong mỗi giây là: $n = \\frac{I}{e} = \\frac{0,32 \\times 10^{-3}}{1,6 \\times 10^{-19}}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1013",
+            "B. $2 \\cdot 10^{15}$",
+            "C. $10^{17}$",
+            "D. $10^{19}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Cường độ dòng quang điện khi đó là dòng quang điện bão hòa: $I_{bh} = n_e \\cdot |e| \\rightarrow n_e = \\frac{I_{bh}}{|e|} = \\frac{0,32 \\cdot 10^{-3}}{1,6 \\cdot 10^{-19}} = 2 \\cdot 10^{15} \\Rightarrow$ Số electron thoát ra khỏi catốt trong mỗi giây là $n_e = 2 \\cdot 10^{15}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621043",
+        "question": "Số photon của nguồn sáng phát ra trong thời gian $t$ là: $N = \\frac{I \\cdot t}{E_{\\text{photon}}}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $N_p = P t \\varepsilon$",
+            "B. $N_p = P \\varepsilon$",
+            "C. $N_p = P \\lambda h c t$",
+            "D. $N_p = P \\lambda h c$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Số photon của nguồn sáng phát ra trong thời gian $t$ được xác định bởi biểu thức: $N_p = \\frac{P t}{\\varepsilon} = \\frac{P \\lambda}{h c} t$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621044",
+        "question": "Một đèn laze có công suất phát sáng $1\\, \\text{W}$ phát ánh sáng đơn sắc có bước sóng $0,7\\, \\mu \\text{m}$. Cho $h = 6,625 \\times 10^{-34}\\, \\text{J s}$, $c = 3 \\times 10^{8}\\, \\text{m/s}$. Số photon của nó phát ra trong 1 giây là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3,52 \\cdot 10^{16}$",
+            "B. $3,52 \\cdot 10^{18}$",
+            "C. $3,52 \\cdot 10^{19}$",
+            "D. $3,52 \\cdot 10^{20}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Số photon của đèn phát ra trong 1 giây là: $N_p = \\frac{P_t \\varepsilon}{P \\lambda h c t} = \\frac{1,0 \\times 7,10^{-6} \\times 6,625 \\times 10^{-34} \\times 3 \\times 10^{8}}{1} = 3,522 \\times 10^{18}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621045",
+        "question": "Một tấm pin Mặt Trời được chiếu sáng bởi chùm sáng đơn sắc có tần số $5,10 \\times 10^{14} \\, \\text{Hz}$. Biết công suất chiếu sáng vào tấm pin là $0,1 \\, \\text{W}$. Lấy $h = 6,625 \\times 10^{-34} \\, \\text{J.s}$. Số phôtôn đập vào tấm pin trong mỗi giây là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3\\,02 \\times 10^{17}$",
+            "B. $7\\,55 \\times 10^{17}$",
+            "C. $3\\,77 \\times 10^{17}$",
+            "D. $6\\,04 \\times 10^{17}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com + Năng lượng của một photon: $ \\varepsilon = h f = 6\\,625 \\times 10^{-34} \\cdot 5 \\times 10^{14} = 3\\,3125 \\times 10^{-19} \\, \\text{J} $ + Công suất chiếu sáng vào tấm pin: $ P = n \\varepsilon \\rightarrow n = \\frac{P}{\\varepsilon} = \\frac{0\\,1}{3\\,3125 \\times 10^{-19}} \\approx 3\\,02 \\times 10^{17} $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621046",
+        "question": "Hiệu suất lượng tử hay hiệu suất quang điện được xác định bởi: $ \\frac{I}{I_0} = \\frac{h \\nu}{E} $ où $ I $ là cường độ ánh sáng, $ I_0 $ là cường độ ánh sáng bão hòa, $ h $ là hằng số Planck, $ \\nu $ là tần số ánh sáng, và $ E $ là năng lượng quang điện.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $H = n e n p 100 \\%$",
+            "B. $H = n p n e 100 \\%$",
+            "C. $H = I b h \\cdot \\lambda P h c e 100 \\%$",
+            "D. $H = P \\cdot h c I b h \\lambda e 100 \\%$"
+        ],
+        "answer": "A",
+        "explain": "Hiệu suất lượng tử được xác định bởi: $H = \\frac{n_e}{n_p} 100 \\% = \\frac{I_b h}{h c P \\lambda} e 100 \\%$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621047",
+        "question": "Chiếu chùm ánh sáng có công suất $3\\, \\text{W}$, bước sóng $0,35\\, \\mu m$ vào catốt của tế bào quang điện có công thoát electron $2,48\\, \\text{eV}$ thì đo được cường độ dòng quang điện bão hòa là $0,02\\, \\text{A}$. Hiệu suất lượng tử bằng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,2366%",
+            "B. 2,366%",
+            "C. 3,258%",
+            "D. 2,538%"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Hiệu suất lượng tử: $H = \\frac{n_e}{n_p} \\cdot 100 \\% = \\frac{I_b \\cdot h \\cdot c}{P \\cdot \\lambda} \\cdot 100 \\% = \\frac{0,02 \\cdot 6,625 \\cdot 10^{-34} \\cdot 3,0 \\cdot 10^{8}}{6,1 \\cdot 10^{-19}} \\cdot 100 \\% = 2,366 \\%$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621048",
+        "question": "Catốt của một tế bào quang điện làm bằng Xeđi được chiếu bởi bức xạ có $λ = 0,3975 \\, \\text{μm}$. Cho cường độ dòng quang điện bão hòa $2 \\, \\text{μA}$ và hiệu suất quang điện $H = 0,5\\%$. Số photon tới catốt trong mỗi giây là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,5 \\cdot 10^{15}$ photon",
+            "B. $10^{15}$ photon",
+            "C. $2,5 \\cdot 10^{15}$ photon",
+            "D. $10^{12}$ photon"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Hiệu suất lượng tử: $H = \\frac{n_e}{n_p} \\cdot 100 \\%$ Mặt khác, ta có: $n_e = N_e t = I_b h_e \\rightarrow n_p = n_e \\cdot \\frac{H}{I_b h_e} = \\frac{2 \\cdot 10^{-6}}{1,6 \\cdot 10^{-19}} \\cdot 0,5 \\cdot 100 = 2,5 \\cdot 10^{15}$ => Số photon tới catốt trong mỗi giây là: $n_p$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621049",
+        "question": "Chiếu chùm tia sáng đơn sắc có bước sóng $0,5\\, \\text{μm}$ vào catốt của một tế bào quang điện có giới hạn quang điện là $0,66\\, \\text{μm}$. Hiệu điện thế cần đặt giữa anốt và catốt để triệt tiêu dòng quang điện là:?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,2V$",
+            "B. $-0,2V$",
+            "C. $0,6V$",
+            "D. $-0,6V$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\varepsilon = h f = A + W d_0 $ $ (m_{ax}) = A + \\frac{1}{2} m v_{max} = A + e U_h \\rightarrow U_h = \\varepsilon - A $ $ e = \\frac{h c}{\\lambda} - \\frac{h c}{\\lambda_0} $ $ e = 6,625 \\times 10^{-34} \\cdot 3 \\times 10^{8} \\left( 10,5 \\times 10^{-6} - 10,66 \\times 10^{-6} \\right)^{-1} \\cdot 1,6 \\times 10^{-19} = - 0,6 \\, \\text{V} $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621050",
+        "question": "Một nguồn phát sáng có công suất $P = 2 \\, \\text{W}$, phát ra ánh sáng có bước sóng $\\lambda = 0, 597 \\, \\mu \\text{m}$ tỏa ra đều theo mọi hướng. Nếu coi đường kính con ngươi của mắt là $4 \\, \\text{mm}$ và mắt còn có thể cảm nhận được ánh sáng khi tối thiểu có $80$ phôtôn lọt vào mắt trong $1 \\, \\text{s}$. Bỏ qua sự hấp thụ phôtôn của môi trường. Khoảng cách xa nguồn sáng nhất mà mắt còn trông thấy nguồn là.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 370 km",
+            "B. 27 km",
+            "C. 274 km",
+            "D. 6 km"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $N_0$ là số photon mà nguồn phát ra trong $1\\, \\text{s}$, khi đó công suất của nguồn sẽ là: $P = N_0 \\varepsilon = N_0 \\frac{h c}{\\lambda} \\Rightarrow N_0 = \\frac{P \\lambda}{h c}$. Vì nguồn sáng phát ra theo mọi hướng, do đó số photon trên một đơn vị diện tích mặt cầu bán kính $R$ sẽ nhận được là: $N = \\frac{N_0}{4 \\pi R^2} = \\frac{P \\lambda}{4 \\pi R^2 h c}$. Với diện tích con ngươi ứng với đường kính $d = 4\\, \\text{mm}$ thì số photon mà mắt nhận được trong một đơn vị thời gian là: $n = N_s = \\frac{P \\lambda}{4 \\pi R^2 h c} \\cdot \\pi \\left( \\frac{d^2}{2} \\right) \\Rightarrow 2,0 \\, 597 \\cdot 10^{-6} \\cdot \\frac{4 \\pi R^2}{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8} \\cdot \\pi \\left( \\frac{4 \\cdot 10^{-3}}{2} \\right)^2 = 80 \\Rightarrow R \\approx 274 \\, \\text{k m}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621051",
+        "question": "Chiếu một chùm bức xạ có bước sóng $ \\lambda = 1800\\, \\text{Å} $ vào một tấm kim loại. Các êlectrôn bắn ra có động năng cực đại bằng $ 6\\, \\text{eV} $. Khi chiếu vào tấm kim loại đó bức xạ có bước sóng $ \\lambda = 5000\\, \\text{Å} $ thì có hiện tượng quang điện xảy ra. Tính động năng cực đại của các êlectrôn bắn ra..",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $25,6 \\cdot 10^{-20} \\, J$",
+            "B. $51,2 \\cdot 10^{-20} \\, J$",
+            "C. $76,8 \\cdot 10^{-20} \\, J$",
+            "D. $14 \\cdot 10^{-20} \\, J$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Áp dụng công thức Anhxtanh về hiện tượng quang điện ngoài $h \\cdot c \\cdot \\lambda_1 = A + W_d \\Leftrightarrow h \\cdot c \\cdot 1800 \\cdot 10^{-10} = A + 6 \\, \\text{eV} \\Rightarrow A = h \\cdot c \\cdot 1800 \\cdot 10^{-10} - 6 \\, \\text{eV}$. $h \\cdot c \\cdot \\lambda_2 = A + W_d \\Leftrightarrow h \\cdot c \\cdot 5000 \\cdot 10^{-10} = A + W_d \\Rightarrow W_d = h \\cdot c \\cdot 5000 \\cdot 10^{-10} - h \\cdot c \\cdot 1800 \\cdot 10^{-10} + 6 \\, \\text{eV} = 2, 535 \\cdot 10^{-19}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621052",
+        "question": "Chiếu chùm photon (mỗi photon có năng lượng $ε = 8,5\\, \\text{eV}$) vào catot của một tế bào quang điện. Biết công thoát electron của kim loại làm catot là $A = 5,6 \\cdot 10^{-19}\\, \\text{J}$. Hiệu điện thế giữa anot và catot của tế bào quang điện là $U_{AK} = - 3,5\\, \\text{V}$. Động năng cực đại của quang electron khi tới anot bằng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $8 \\cdot 10^{-19} \\text{ J}$",
+            "B. $0 \\text{ J}$",
+            "C. $13,6 \\cdot 10^{-19} \\text{ J}$",
+            "D. $2,4 \\cdot 10^{-19} \\text{ J}$"
+        ],
+        "answer": "C",
+        "explain": "Năng lượng chùm sáng tới = Công thoát electron + động năng ban đầu cực đại của quang electron: $ε = A + W_{d0max} \\Rightarrow W_{d0max} = ε – A$ Động năng khi tới anot: $W_{d} = W_{d0max} + eU_{AK} = ε – A + e.U_{AK} = 8,5 \\cdot 1,6 \\cdot 10^{-19} – 5,6 \\cdot 10^{-19} + 1,6 \\cdot 10^{-19} \\cdot 3,5 = 13,6 \\cdot 10^{-19} \\, \\text{J}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0621053",
+        "question": "Lần lượt chiếu vào catốt của một tế bào quang điện các bức xạ điện từ gồm các bức xạ có bước sóng $\\lambda_1 = 0\\, \\text{μ m}$ và bức xạ có bước sóng $\\lambda_2 = 1,2 \\lambda_1$ thì vận tốc ban đầu cực đại của các electron quang điện bứt ra từ catốt lần lượt là $v_1$ và $v_2$ với $v_2 = \\frac{3 v_1}{4}$. Giới hạn quang điện $\\lambda_0$ của kim loại làm catốt này là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0 \\, 42 \\, \\mu m$",
+            "B. $1 \\, 00 \\, \\mu m$",
+            "C. $0 \\, 90 \\, \\mu m$",
+            "D. $1 \\, 45 \\, \\mu m$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Cách giải: Ta giải hệ phương trình sau: \n$$\n\\begin{cases}\nh c \\lambda_1 = A + \\frac{1}{2} m v_1^2 \\\\\nh c \\lambda_2 = A + \\frac{1}{2} m v_2^2 \n\\end{cases} \n\\Leftrightarrow \n\\begin{cases}\nh c \\lambda_1 = h c \\lambda_0 + K_1 \\\\\nh c \\lambda_2 = h c \\lambda_0 + \\frac{9}{16} K_1 \n\\end{cases} \n\\Rightarrow \\lambda_0 = 0,42 \\, \\text{μm} \n$$\nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621054",
+        "question": "Một hạt chuyển động có tốc độ rất lớn $v = 0,6c$. Nếu tốc độ của hạt tăng $ \\frac{4}{3} $ lần thì động năng của hạt tăng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 16 9 lần",
+            "B. 9 4 lần",
+            "C. 4 3 lần",
+            "D. 8 3 lần"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khi $v = 0,6 c$ ⇒ $W_d = \\left( \\frac{1}{\\sqrt{1 - \\left( \\frac{0,6 c}{c}\\right)^2}} - 1 \\right) m_0 c^2 = 0,25 m_0 c^2 \\quad (1)$ Khi tốc độ của hạt tăng $ \\frac{4}{3} $ lần: $ v' = \\frac{4}{3} v = \\frac{4}{3} \\cdot 0,6 c = 0,8 c $ $ W_d' = \\left( \\frac{1}{\\sqrt{1 - \\left( \\frac{0,8 c}{c}\\right)^2}} - 1 \\right) m_0 c^2 = \\frac{2}{3} m_0 c^2 \\quad (2) $ Từ $(1)$ và $(2)$, ta có: $ \\frac{W_d'}{W_d} = \\frac{\\frac{2}{3} m_0 c^2}{0,25 m_0 c^2} = \\frac{8}{3} $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0621055",
+        "question": "Một vật dao động điều hoà với phương trình $x = 6 \\cos \\left( 2 \\pi t + \\frac{\\pi}{6} \\right) \\, \\text{cm}$. Trên vật gắn với một nguồn sáng phát ánh sáng đơn sắc có tần số $5 \\cdot 10^{14} \\, \\text{Hz}$, công suất $0, 53 \\, \\text{W}$. Biết hằng số Plăng là $h = 6, 625 \\cdot 10^{-34} \\, \\text{J} \\cdot \\text{s}$. Tính từ thời điểm $t = 0$ đến thời điểm gần nhất vật có li độ $- 3 \\, \\text{cm}$ thì nguồn sáng phát số phôtôn gần nhất với giá trị nào sau đây?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4 \\cdot 10^{17}$ hạt",
+            "B. $8 \\cdot 10^{17}$ hạt",
+            "C. $5 \\cdot 10^{18}$ hạt",
+            "D. $1,6 \\cdot 10^{18}$ hạt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com  \nLúc $t = 0$, $x = 3 \\sqrt{3} \\,\\text{cm}$, $v < 0$  \nTừ $t = 0$ đến thời điểm gần nhất vật có li độ: $x = -3 \\,\\text{cm}$, $v < 0$  \nKhoảng thời gian vật đã đi được là: $T_6 + T_{12} = T_4 = 0,25 \\,\\text{s}$  \nSố phôtôn gần nhất mà nguồn sáng phát ra là: $n = \\frac{P}{h f} \\cdot \\Delta t = 0,536 \\cdot 625 \\cdot 10^{-34} \\cdot 5 \\cdot 10^{14} \\cdot 0,25 = 4 \\cdot 10^{17} \\,\\text{(hạt)}$  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L0621056",
+        "question": "Đề thi THPT QG - 2020 Giới hạn quang dẫn của CdS là $0,9 \\, \\text{μm}$. Lấy $h = 6,625 \\cdot 10^{-34} \\, \\text{J} \\cdot \\text{s}$; $c = 3 \\cdot 10^{8} \\, \\text{m/s}$. Năng lượng cần thiết để giải phóng một electron liên kết thành electron dẫn (năng lượng kích hoạt) của CdS là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $7 , 36 \\cdot 10^{-28} \\, J$",
+            "B. $2 , 21 \\cdot 10^{-19} \\, J$",
+            "C. $2 , 21 \\cdot 10^{-22} \\, J$",
+            "D. $7 , 36 \\cdot 10^{-34} \\, J$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng cần thiết để giải phóng một electron liên kết thành electron dẫn: $ \\varepsilon = A = h c \\lambda_0 = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot 0,9 \\cdot 10^{-6} = 2,208 \\cdot 10^{-19} \\, \\text{J} $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0621057",
+        "question": "Đề thi thử THPT chuyên Lam Sơn - 2021 Công thoát của electron khỏi một kim loại là $6,625 \\times 10^{-19} \\, \\text{J}$ . Biết $h = 6,625 \\times 10^{-34} \\, \\text{J} \\cdot \\text{s}$ , $c = 3 \\times 10^{8} \\, \\text{m/s}$ . Giới hạn quang điện của kim loại này là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $300 \\, \\text{nm}$",
+            "B. $350 \\, \\text{nm}$",
+            "C. $360 \\, \\text{nm}$",
+            "D. $260 \\, \\text{nm}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Giới hạn quang điện của kim loại này là: $ \\lambda_0 = \\frac{h c}{A} = \\frac{6,625 \\times 10^{-34} \\cdot 3 \\times 10^{8}}{6,625 \\times 10^{-19}} = 3 \\times 10^{-7} \\, \\text{m} = 300 \\, \\text{nm} $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0622001",
+        "question": "Phát biểu nào sau đây là đúng?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hiện tượng quang điện trong là hiện tượng bứt êlectron ra khỏi bề mặt kim loại khi chiếu vào kim loại ánh sáng có bước sóng thích hợp",
+            "B. Hiện tượng quang điện trong là hiện tượng êlectron bị bắn ra khỏi kim loại khi kim loại bị đốt nóng",
+            "C. Hiện tượng quang điện trong là hiện tượng êlectron liên kết được giải phóng thành êlectron dẫn khi chất bán dẫn được chiếu bằng bức xạ thích hợp",
+            "D. Hiện tượng quang điện trong là hiện tượng điện trở của vật dẫn kim loại tăng lên khi chiếu ánh sáng vào kim loại"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng quang điện trong là hiện tượng electron liên kết được giải phóng thành êlectron dẫn khi chất bán dẫn được chiếu bằng bức xạ thích hợp. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622002",
+        "question": "Hiện tượng quang điện trong xảy ra đối với $E = h \\cdot f$ với $E$ là năng lượng quang photon, $h$ là hằng số Planck và $f$ là tần số ánh sáng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. chất điện phân",
+            "B. kim loại",
+            "C. chất bán dẫn",
+            "D. chất điện môi"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng quang điện trong xảy ra đối với chất bán dẫn. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622003",
+        "question": "Tìm phát biểu sai về hiện tượng quang dẫn và hiện tượng quang điện ngoài: $E = h \\cdot f$, với $E$ là năng lượng photon, $h$ là hằng số Planck, và $f$ là tần số ánh sáng. Quang dẫn xảy ra khi năng lượng photon lớn hơn $E_g$, với $E_g$ là năng lượng băng cấm của vật liệu. Quang điện ngoài xảy ra khi ánh sáng có tần số $f > f_0$, với $f_0 = \\frac{E_g}{h}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Công thoát của kim loại lớn hơn năng lượng kích hoạt của chất bán dẫn",
+            "B. Phần lớn quang trở hoạt động được khi bị kích thích bằng ánh sáng nhìn thấy",
+            "C. Ánh sáng tím có thể gây ra hiện tượng quang điện cho kim loại Kali",
+            "D. Hầu hết các tế bào quang điện hoạt động được khi bị kích thích bằng ánh sáng hồng ngoại"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, C - đúng D - sai vì các tế bào quang điện hoạt động được khi bị kích thích bằng ánh sáng thích hợp Đáp án cần chọn là: $D$."
+    },
+    {
+        "id": "L0622004",
+        "question": "Chọn câu đúng:.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Năng lượng kích hoạt trong hiện tượng quang điện trong nhỏ hơn công thoát của electron khỏi kim loại trong hiện tượng quang điện ngoài",
+            "B. Hiện tượng quang điện trong không bứt electron khỏi khối chất bán dẫn",
+            "C. Giới hạn quang dẫn của hiện tượng quang điện trong có thể thuộc vùng hồng ngoại",
+            "D. A, B, C đều đúng"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: A, B, C đều đúng Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622005",
+        "question": "Linh kiện nào sau đây hoạt động dựa vào hiện tượng quang điện trong $?$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tế bào quang điện",
+            "B. Điện trở nhiệt",
+            "C. Điôt phát quang",
+            "D. Quang điện trở"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Trong 4 linh kiện trên thì quang điện trở hoạt động dựa trên hiện tượng quang điện trong Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622006",
+        "question": "Trong các thiết bị sau đây, thiết bị nào hoạt động dựa trên nguyên tắc của hiện tượng quang điện trong?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Máy bắn tốc độ",
+            "B. Pin năng lượng Mặt Trời",
+            "C. Điều khiển ti vi",
+            "D. Máy đo thân nhiệt"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Pin năng lượng Mặt Trời là nguồn điện, trong đó quang năng được biến đổi trực tiếp thành điện năng. Nó hoạt động dựa vào hiện tượng quang điện trong xảy ra bên cạnh một lớp chặn (lớp chuyển tiếp). Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622007",
+        "question": "Chọn câu phát biểu sai về pin quang điện.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hoạt động dựa vào hiện tượng quang điện trong xảy ra bên cạnh một lớp chắn",
+            "B. Là nguồn điện biến đối trực tiếp quang năng thành điện năng",
+            "C. Là nguồn điện biến đổi toàn bộ năng lượng Mặt Trời thành điện năng",
+            "D. Có suất điện động nằm trong khoảng từ 0,5V đến 0,8V"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai vì: $P_{in}$ quang điện là nguồn điện biến đổi trực tiếp quang năng thành điện năng Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622008",
+        "question": "Vật liệu chính được sử dụng trong một pin quang điện là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. kim loại kiềm",
+            "B. chất cách điện",
+            "C. kim loại nặng",
+            "D. bán dẫn"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Vật liệu chính sử dụng trong một pin quang điện là bán dẫn. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622009",
+        "question": "Điện trở của một quang điện trở có $R = 1,5 \\,\\text{Ω}$.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Giá trị rất lớn",
+            "B. Giá trị không đổi",
+            "C. Giá trị thay đổi",
+            "D. Giá trị rất nhỏ"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Điện trở của quang điện trở có thể thay đổi từ vài $\\, \\text{Mega}\\Omega$ (rất lớn) khi không được chiếu sáng xuống vài chục $\\, \\text{Ω}$ khi được chiếu sáng thích hợp. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622010",
+        "question": "Chiếu ánh sáng nhìn thấy vào chất nào sau đây có thể gây ra hiện tượng quang điện trong?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Điện môi",
+            "B. Kim loại",
+            "C. Á kim",
+            "D. Chất bán dẫn"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Chiếu ánh sáng nhìn thấy vào chất bán dẫn có thể gây ra hiện tượng quang điện trong Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622011",
+        "question": "Dụng cụ nào sau đây có thể biến quang năng thành điện năng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Pin mặt trời",
+            "B. Pin Vôn-ta",
+            "C. Ác quy",
+            "D. Đinamô xe đạp"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Trong các dụng cụ trên, dụng cụ có thể biến đổi quang năng thành điện năng là pin mặt trời Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0622012",
+        "question": "Phát biểu nào sau đây là đúng khi nói về hiện tượng quang dẫn ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hiện tượng quang dẫn là hiện tượng giảm mạnh điện trở suất của chất bán dẫn",
+            "B. Trong hiện tượng quang dẫn, electron được giải phóng ra khỏi khối bán dẫn",
+            "C. Một trong những ứng dụng quan trọng của hiện tượng quang dẫn là việc chế tạo đèn ống( đèn Nêon) ",
+            "D. Trong hiện tượng quang dẫn, năng lượng cần thiết để giải phóng $electron_{liên_kết}$ thành $electron_{dẫn}$ cũng được cung cấp bởi nhiệt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng quang dẫn là hiện tượng giảm điện trở suất, tức là tăng độ dẫn điện của bán dẫn khi có ánh sáng thích hợp chiếu vào. Khi bán dẫn được chiếu sáng bằng chùm sáng có bước sóng thích hợp thì trong bán dẫn có thêm electron dẫn và lỗ trống được tạo thành. Do đó, mật độ hạt tải điện tăng, tức là điện trở suất của nó giảm. Cường độ ánh sáng chiếu vào bán dẫn càng mạnh thì điện trở suất của nó càng nhỏ. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0622013",
+        "question": "Pin quang điện hoạt động dựa vào $E = h \\cdot f$, trong đó $E$ là năng lượng photon, $h$ là hằng số Planck với giá trị $6,626 \\times 10^{-34} \\,\\text{J.s}$ và $f$ là tần số ánh sáng.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hiện tượng quang điện ngoài",
+            "B. Hiện tượng quang điện trong",
+            "C. Hiện tượng tán sắc ánh sáng",
+            "D. Sự phát quang của các chất"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Pin quang điện hoạt động dựa vào hiện tượng quang điện trong. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622014",
+        "question": "Pin quang điện hoạt động dựa trên.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 'hiện tượng phát xạ cảm ứng'",
+            "B. 'hiện tượng quang điện ngoài'",
+            "C. 'hiện tượng quang phát quang'",
+            "D. 'hiện tượng quang điện trong'"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Pin quang điện hoạt động dựa trên hiện tượng quang điện trong. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622015",
+        "question": "Hiện tượng các êlectrôn $ \\text{bị kích thích bởi ánh sáng} $ để cho chúng trở thành các êlectron dẫn gọi là hiện tượng quang điện bên trong. Hãy chọn các cụm từ sau đây điền vào chỗ trống?.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Bị bật ra khỏi catốt",
+            "B. Phá vỡ liên kết để trở thành $e^-$ dẫn",
+            "C. Chuyển động mạnh hơn",
+            "D. Chuyển lên quỹ đạo có bán kính lớn hơn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Hiện tượng quang điện trong là hiện tượng ánh sáng giải phóng các electron liên kết thành các electron dẫn đồng thời tạo ra các lỗ trống tham gia vào quá trình dẫn điện. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622016",
+        "question": "Điều nào sau đây là sai khi nói về quang trở?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Bộ phận quan trọng của quang trở là một lớp bán dẫn có gắn hai điện cực",
+            "B. Quang trở thực chất là một điện trở mà giá trị điện trở của nó có thể thay đổi theo nhiệt độ",
+            "C. Quang trở được dùng nhiều trong các hệ thống tự động, báo động",
+            "D. Quang trở chỉ hoạt động khi ánh sáng chiếu vào nó có bước sóng ngắn hơn giới hạn quang dẫn của quang trở"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A, C, D - đúng B - sai vì: Điện trở của quang điện trở có thể thay đổi từ $ vài \\, \\text{Mega}\\Omega $ (rất lớn) khi không được chiếu sáng xuống $ vài \\, \\text{chục} \\, \\Omega $ khi được chiếu sáng thích hợp. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622017",
+        "question": "Phát biểu nào là sai?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Điện trở của quang trở giảm mạnh khi có ánh sáng thích hợp chiếu vào",
+            "B. Nguyên tắc hoạt động của tất cả các tế bào quang điện đều dựa trên hiện tượng quang dẫn",
+            "C. Trong pin quang điện, quang năng biến đổi trực tiếp thành điện năng",
+            "D. Có một số tế bào quang điện hoạt động khi được kích thích bằng ánh sáng nhìn thấy"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A, C, D - đúng B - sai vì : Các tế bào quang điện hoạt động dựa trên hiện tượng quang điện ngoài Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622018",
+        "question": "Pin quang điện là nguồn điện, trong đó.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hóa năng được biến đổi trực tiếp thành điện năng",
+            "B. Quang năng được biến đổi trực tiếp thành điện năng",
+            "C. Cơ năng được biến đổi trực tiếp thành điện năng",
+            "D. Nhiệt năng được biến đổi trực tiếp thành điện năng"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Pin quang điện là nguồn điện, trong đó quang năng được biến đổi trực tiếp thành điện năng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622019",
+        "question": "Nguyên tắc hoạt động của quang điện trở dựa vào $E = h \\cdot f$ và $I = \\frac{n \\cdot e}{t}$, trong đó $E$ là năng lượng, $h$ là hằng số Planck, $f$ là tần số, $I$ là dòng điện, $n$ là số electron và $t$ là thời gian.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. 'Hiện tượng quang điện trong'",
+            "B. 'Hiện tượng tán sắc ánh sáng'",
+            "C. 'Hiện tượng phát quang của chất rắn'",
+            "D. 'Hiện tượng quang điện ngoài'"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Nguyên tắc hoạt động của quang điện trở dựa vào hiện tượng quang điện trong Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0622020",
+        "question": "Một tấm pin quang điện gồm nhiều pin mắc nối tiếp. Diện tích tổng cộng của các pin nhận năng lượng ánh sáng là $0,6\\, \\text{m}^2$. Ánh sáng chiếu vào bộ pin có cường độ $1360\\, \\text{W/m}^2$. Dùng bộ pin cung cấp năng lượng cho mạch ngoài, khi cường độ dòng điện là $4\\, \\text{A}$ thì điện áp hai cực của bộ pin là $24\\, \\text{V}$. Hiệu suất của bộ pin là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 14,25%",
+            "B. 11,76%",
+            "C. 12,54%",
+            "D. 16,52%"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Công suất ánh sáng nhận được: $P_{as} = 0,6 \\cdot 1360 = 816 \\, \\text{W}$ + Công suất điện tạo ra: $P_{d} = U I = 4,2 \\cdot 4 = 96 \\, \\text{W}$ => Hiệu suất của bộ pin là: $H = \\frac{P_{d}}{P_{as}} = \\frac{96}{816} = 0,1176 = 11,76 \\, \\text{\\%}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622021",
+        "question": "Năng lượng để giải phóng một electron liên kết thành electron dẫn trong chất bán dẫn Ge là $0,66 \\, \\text{eV}$. Giới hạn quang dẫn (hay giới hạn quang điện trong) của Ge thuộc vùng ánh sáng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. lam",
+            "B. tử ngoại",
+            "C. $đỏ$",
+            "D. $hồng ngoại$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng cần thiết để giải phóng một electron liên kết thành electron dẫn: $A = h c \\lambda_0 \\Rightarrow \\lambda_0 = \\frac{h c}{A} = 1,8821 \\times 10^{-6} \\, \\text{m}$ => Giới hạn quang dẫn (hay giới hạn quang điện trong) của Ge thuộc vùng ánh sáng hồng ngoại. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622022",
+        "question": "Nguồn sáng đơn sắc có công suất $1,5 \\, \\text{W}$ phát ra bức xạ có bước sóng $\\lambda = 546 \\, \\text{nm}$. Số hạt photon mà nguồn sáng phát ra trong 1 phút gần giá trị nào nhất sau đây?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,6 \\cdot 10^{20}$ hạt",
+            "B. $8,9 \\cdot 10^{20}$ hạt",
+            "C. $8,9 \\cdot 10^{20}$ hạt",
+            "D. $1,8 \\cdot 10^{20}$ hạt"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Số phôtôn mà nguồn sáng phát ra trong 1s: $N = \\frac{P \\lambda}{h c} = \\frac{1,5 \\cdot 546 \\cdot 10^{-9}}{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8}} = 4,12 \\cdot 10^{18} \\, \\text{(phôtôn/s)}$ => Số photôn mà nguồn phát ra trong 1 phút là: $60N = 2,47 \\cdot 10^{20} \\, \\text{hạt}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0622023",
+        "question": "Trên hình vẽ, bộ pin có suất điện động $9\\, \\text{V}$, điện trở trong $1\\, \\Omega$; A là ampe kế hoặc miliampe kế có điện trở rất nhỏ; R là quang điện trở (khi chưa chiếu sáng giá trị là $R_1$ và khi chiếu sáng giá trị là $R_2$) và L là chùm sáng chiếu vào quang điện trở. Khi không chiếu sáng vào quang điện trở thì số chỉ của miliampe kế là $6\\, \\mu A$ và khi chiếu sáng thì số chỉ của ampe kế là $0,6\\, A$. Chọn kết luận đúng.",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223294916731593655081205-90.png",
+        "difficulty": 2,
+        "options": [
+            "A. $R_1 = 2 \\, M \\Omega ; R_2 = 19 \\, \\Omega$",
+            "B. $R_1 = 1 , 5 \\, M \\Omega ; R_2 = 19 \\, \\Omega$",
+            "C. $R_1 = 1 , 5 \\, M \\Omega ; R_2 = 14 \\, \\Omega$",
+            "D. $R_1 = 2 \\, M \\Omega ; R_2 = 14 \\, \\Omega$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi không chiếu sáng vào quang điện trở, số chỉ của mili ampe kế là: $I_1 = E_r + R_1 \\Rightarrow 6 \\cdot 10^{-6} = 9 \\cdot 1 + R_1 \\Rightarrow R_1 = 1,5 \\cdot 10^{6} \\, \\Omega = 1,5 \\, \\text{M} \\, \\Omega$ Khi chiếu sáng vào quang điện trở, số chỉ của ampe kế là: $I_2 = E_r + R_2 \\Rightarrow 0,6 = 9 \\cdot 1 + R_2 \\Rightarrow R_2 = 14 \\, \\Omega$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622024",
+        "question": "Một chất bán dẫn có giới hạn quang dẫn là $0,62\\, \\text{μm}$. Trong số các chùm bức xạ đơn sắc sau đây (có tần số tương ứng là: $f_1 = 4,5 \\times 10^{14}\\,\\text{Hz}$; $f_2 = 5 \\times 10^{13}\\,\\text{Hz}$; $f_3 = 6,5 \\times 10^{13}\\,\\text{Hz}$; $f_4 = 6 \\times 10^{14}\\,\\text{Hz}$) thì chùm nào có thể gây ra hiện tượng quang điện trong khí chiếu vào chất bán dẫn kể trên?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Chùm bức xạ 1 và chùm bức xạ 4",
+            "B. Chùm bức xạ 2",
+            "C. Chùm bức xạ 2 và chùm bức xạ 3",
+            "D. Chùm bức xạ 4"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $f_0 = 3,10 \\times 10^8\\, \\text{Hz}$, $0,62 \\times 10^{-6} = 4,84 \\times 10^{14}\\, \\text{Hz}$ Điều kiện xảy ra hiện tượng quang điện là: $f \\geq f_0$. => Chùm bức xạ 4 gây ra hiện tượng quang điện trong. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0622025",
+        "question": "Một chất quang dẫn có giới hạn quang điện là $1,88 \\, \\text{μm}$. Lấy $c = 3 \\cdot 10^8 \\, \\text{m/s}$. Hiện tượng quang điện trong xảy ra khi chiếu vào chất này ánh sáng có tần số nhỏ nhất là $f = \\frac{c}{\\lambda} = \\frac{3 \\cdot 10^8 \\, \\text{m/s}}{1,88 \\, \\text{μm}}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,452 \\cdot 10^{14} \\text{ Hz}$",
+            "B. $1,596 \\cdot 10^{14} \\text{ Hz}$",
+            "C. $1,875 \\cdot 10^{14} \\text{ Hz}$",
+            "D. $1,956 \\cdot 10^{14} \\text{ Hz}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Giới hạn quang điện của chất quang dẫn: $λ = 1,88 \\,\\text{μ m} = 1,88 \\cdot 10^{-6} \\,\\text{m}$ Tần số giới hạn quang điện của chất quang dẫn: $f_0 = \\frac{c}{λ_0} = 1,596 \\cdot 10^{14} \\,\\text{H z}$ Điều kiện xảy ra hiện tượng quang điện trong: $λ ≤ λ_0 ⇒ f ≥ f_0 = 1,596 \\cdot 10^{14} \\,\\text{H z}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622026",
+        "question": "Một tấm pin quang điện gồm nhiều pin mắc nối tiếp. Diện tích tổng cộng của các pin nhận năng lượng ánh sáng là $0,6 \\, \\text{m}^2$. Mỗi mét vuông của tấm pin nhận công suất $1360 \\, \\text{W}$ của ánh sáng. Dùng bộ pin cung cấp năng lượng cho mạch ngoài, khi cường độ dòng điện là $4 \\, \\text{A}$ thì điện áp hai cực của bộ pin là $24 \\, \\text{V}$. Hiệu suất của bộ pin là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 14,25% ",
+            "B. 11,76% ",
+            "C. 12,54% ",
+            "D. 16,52%"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Công suất của pin: $P_{pin} = P_{tp} = \\frac{P}{1 \\, \\text{m}^2} \\cdot S = 1360,0 \\, \\text{W} = 816 \\, \\text{W}$ Công suất có ích (cung cấp cho mạch ngoài): $P_{mn} = P_{ci} = U \\cdot I = 24,4 \\, \\text{V} \\cdot 4 \\, \\text{A} = 96 \\, \\text{W}$ Hiệu suất của Pin: $H = \\frac{P_{mn}}{P_{pin}} \\cdot 100\\% = 11,76\\%$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622027",
+        "question": "Cho đồ thị mô tả sự phụ thuộc của động năng cực đại của electron quang điện vào tần số của bức xạ điện từ chiếu tới cho một số kim loại khác nhau. Nếu sử dụng bức xạ điện từ kích thích có bước sóng $240\\, \\text{nm}$ thì có bao nhiêu kim loại trong số các kim loại trên xảy ra hiện tượng quang điện?.",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223293231631635307482224-mceclip0.png",
+        "difficulty": 2,
+        "options": [
+            "A. 5",
+            "B. 2",
+            "C. 3",
+            "D. 1"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bức xạ điện từ kích thích có bước sóng $ \\lambda = 240 \\, \\text{nm} $ ⇒ Bức xạ điện từ kích thích có tần số: $ f = \\frac{c}{\\lambda} = \\frac{3 \\cdot 10^8}{240 \\cdot 10^{-9}} = 1,25 \\cdot 10^{15} \\, \\text{Hz} $ Điều kiện để xảy ra hiện tượng quang điện là : $ \\lambda \\leq \\lambda_0 \\Rightarrow f \\geq f_0 $ Từ đồ thị ta thấy : $ f > f_0 \\, K_e \\, m > f_0 \\, N_a \\, t \\, r_i > f_0 \\, K_a \\, l_i \\Rightarrow $ Có 3 kim loại xảy ra hiện tượng quang điện. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0622028",
+        "question": "Một bộ pin có điện trở trong không đáng kể được mắc nối tiếp với một điện trở và một quang điện trở như hình vẽ. Cường độ ánh sáng trên quang điện trở giảm, số chỉ của các Vôn kế thay đổi như thế nào?",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/17223293027461636692145747-mceclip0.png",
+        "difficulty": 2,
+        "options": [
+            "A. Số chỉ Vôn kế P giảm, Vôn kế Q giảm",
+            "B. Số chỉ Vôn kế P giảm, Vôn kế Q tăng",
+            "C. Số chỉ Vôn kế P tăng, Vôn kế Q tăng",
+            "D. Số chỉ Vôn kế P tăng, Vôn kế Q giảm"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi cường độ ánh sáng trên quang điện trở giảm → điện trở của quang biến trở $R_q$ tăng Số chỉ của các Vôn kế là: \n\\[\n\\begin{cases}\nU_P = I \\cdot R = E \\cdot R \\\\\nR + R_q \\\\\nU_Q = R_q \\cdot I = E \\cdot R_q \\\\\nR + R_q = E \\cdot R \\\\\nR_q + 1\n\\end{cases}\n\\]\nNhận thấy: khi $R_q$ tăng → $U_P$ giảm, $U_Q$ tăng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0622029",
+        "question": "Trên hình vẽ, ta có $ξ :$ bộ pin $9 \\, \\text{V} - 1 \\, \\Omega$; $A:$ có thể là một ampe kế hoặc micrôampe kế; $R$ là một quang điện trở; $L$ là chùm sáng thích hợp chiếu vào quang điện trở. Khi không chiếu sáng vào quang điện trở thì số chỉ của micrôampe kế là $6 \\, \\mu A$. Khi quang điện trở được chiếu sáng thì ampe kế chỉ $0,6 \\, A$. Tính điện trở của quang điện trở khi không được chiếu sáng và khi được chiếu sáng bằng ánh sáng thích hợp. Điện trở của ampe kế và của micrôampe kế coi như nhỏ không đáng kể.",
+        "image_source": "https://img.loigiaihay.com/picture/2024/0730/1722329290112479496-714158-1.gif",
+        "difficulty": 2,
+        "options": [
+            "A. $R_1 = 2 \\, M \\, \\Omega$ ; $R_2 = 19 \\, \\Omega$",
+            "B. $R_1 = 1 , 5 \\, M \\, \\Omega$ ; $R_2 = 19 \\, \\Omega$",
+            "C. $R_1 = 1 , 5 \\, M \\, \\Omega$ ; $R_2 = 14 \\, \\Omega$",
+            "D. $R_1 = 2 \\, M \\, \\Omega$ ; $R_2 = 14 \\, \\Omega$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi không chiếu sáng vào quang điện trở, số chỉ của mili ampe kế là: $I_1 = \\frac{E_r}{R_1} \\Rightarrow 6 \\cdot 10^{-6} = \\frac{9}{1 + R_1} \\Rightarrow R_1 = 1,5 \\cdot 10^{6} \\, \\Omega = 1,5 \\, \\text{M} \\Omega$ Khi chiếu sáng vào quang điện trở, số chỉ của ampe kế là: $I_2 = \\frac{E_r}{R_2} \\Rightarrow 0,6 = \\frac{9}{1 + R_2} \\Rightarrow R_2 = 14 \\, \\Omega$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623001",
+        "question": "Sự phát sáng của vật nào dưới đây là sự phát quang?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Tia lửa điện",
+            "B. Hồ quang",
+            "C. Bóng đèn ống",
+            "D. Bóng đèn pin"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Trong các vật trên, ta có sự phát sáng của bóng đèn ống là sự phát quang Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623002",
+        "question": "Sự phát quang xảy ra: $E = h \\cdot \\nu$ với $E$ là năng lượng phát quang, $h = 6,626 \\times 10^{-34} \\, \\text{J.s}$ là hằng số Planck, và $\\nu$ là tần số.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Ở nhiệt độ bình thường",
+            "B. Ở nhiệt độ rất cao",
+            "C. Ở mọi nhiệt độ",
+            "D. Đối với mọi chất, khi được kích thích bằng ánh sáng thích hợp"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Sự phát quang xảy ra ở nhiệt độ bình thường Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623003",
+        "question": "Hiện tượng quang - phát quang là: $ \\text{phát quang} = \\text{phát ra ánh sáng} \\, \\text{khi} \\, \\text{một} \\, \\text{vật} \\, \\text{được} \\, \\text{chiếu} \\, \\text{sáng} \\, \\text{bởi} \\, \\text{ánh} \\, \\text{sáng} \\, \\text{hoặc} \\, \\text{bức} \\, \\text{xạ} \\, \\text{và} \\, \\text{duy trì} \\, \\text{nó} \\, \\text{trong} \\, \\text{thời} \\, \\text{gian} \\, \\text{ngắn}$ ?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Sự hấp thụ ánh sáng",
+            "B. Sự phát xạ ánh sáng",
+            "C. Sự hấp thụ ánh sáng có bước sóng này để phát ra ánh sáng có bước sóng khác",
+            "D. Sự hấp thụ ánh sáng có năng lượng thấp"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Hiện tượng quang - phát quang là hiện tượng chất phát quang có thể hấp thụ ánh sáng có bước sóng này để phát ra ánh sáng có bước sóng khác Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623004",
+        "question": "Trong hiện tượng quang - phát quang, sự hấp thụ hoàn toàn một photon sẽ đưa đến: $E = h \\cdot \\nu$ với $E$ là năng lượng của photon, $h$ là hằng số Planck và $\\nu$ là tần số của bức xạ.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Sự giải phóng một electron tự do",
+            "B. Sự giải phóng một electron liên kết",
+            "C. Sự giải phóng một cặp electron và lỗ trống",
+            "D. Sự phát ra một photon khác"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Hiện tượng quang - phát quang là hiện tượng chất phát quang có thể hấp thụ ánh sáng có bước sóng này để phát ra ánh sáng có bước sóng khác $\\Rightarrow$ Trong hiện tượng quang - phát quang, sự hấp thụ hoàn toàn một photon sẽ đưa đến sự phát ra một photon khác Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623005",
+        "question": "Khi chiếu chùm tia tử ngoại vào một ống nghiệm đựng dung dịch fluorexêin thì thấy dung dịch phát ra ánh sáng màu lục. Đó là hiện tượng:.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Tán sắc ánh sáng",
+            "B. Hóa - phát quang",
+            "C. Quang - phát quang",
+            "D. Phản xạ ánh sáng"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chiếu chùm tia tử ngoại vào một ống nghiệm đựng dung dịch fluorexêin thì thấy dung dịch phát ra ánh sáng màu lục => đó là hiện tượng quang - phát quang Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623006",
+        "question": "Ánh sáng lân quang là $ \\text{luminous} $.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hầu như tắt ngay sau khi tắt ánh sáng kích thích",
+            "B. Được phát ra bởi chất rắn, chất lỏng lẫn chất khí",
+            "C. Có thể tồn tại rất lâu sau khi tắt ánh sáng kích thích",
+            "D. Có bước sóng nhỏ hơn bước sóng ánh sáng kích thích"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Lân quang: là hiện tượng quang phát quang của chất rắn có đặc điểm là ánh sáng phát quang có thể kéo dài một khoảng thời gian nào đó sau khi tắt ánh sáng kích thích. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623007",
+        "question": "Ánh sáng huỳnh quang là: $I = I_0 e^{-\\alpha x}$, với $I_0$ là cường độ ánh sáng ban đầu, $\\alpha$ là hệ số hấp thụ và $x$ là chiều dài đường đi của ánh sáng trong môi trường.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hầu như tắt ngay sau khi tắt ánh sáng kích thích",
+            "B. Tồn tại một thời gian sau khi tắt ánh sáng kích thích",
+            "C. Có bước sóng nhỏ hơn $ \\lambda $ ánh sáng kích thích",
+            "D. Do các tinh thể phát ra, sau khi được kích thích bằng ánh sáng thích hợp"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Huỳnh quang: là hiện tượng quang phát quang của các chất lỏng và khí. Ánh sáng phát quang bị tắt rất nhanh sau khi tắt ánh sáng kích thích. Đặc điểm: Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623008",
+        "question": "Gọi $λ_k t$ là bước sóng của ánh sáng kích thích, $λ_h q$ là bước sóng của ánh sáng huỳnh quang. Đặc điểm của ánh sáng huỳnh quang là:.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $λ h q > λ k t$",
+            "B. $λ h q \\geq λ k t$",
+            "C. $λ k t \\geq λ h q$",
+            "D. $λ k t = λ h q$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623009",
+        "question": "Chọn câu sai :.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Lân quang là sự phát quang có thời gian phát quang dài (từ 10-6s trở lên)",
+            "B. Huỳnh quang là sự phát quang có thời gian phát quang ngắn (dưới 10-8s)",
+            "C. Bước sóng $ \\lambda' $ ánh sáng phát quang luôn nhỏ hơn bước sóng $ \\lambda $ của ánh sáng hấp thụ : $ \\lambda' < \\lambda $",
+            "D. Bước sóng $ \\lambda' $ ánh sáng phát quang luôn lớn hơn bước sóng $ \\lambda $ của ánh sáng hấp thụ : $ \\lambda' > \\lambda $"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai vì ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623010",
+        "question": "Hiện tượng nào sau đây không phải là hiện tượng quang - phát quang?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Đầu cọc chỉ giới hạn đường được sơn màu đỏ hoặc vàng",
+            "B. Đèn ống thông dụng (đèn huỳnh quang)",
+            "C. Viên dạ minh châu (ngọc phát sáng trong bóng tối)",
+            "D. Con đom đóm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, con đom đóm phát sáng là do hiện tượng hóa phát quang Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623011",
+        "question": "Nếu ánh sáng kích thích là ánh sáng màu lam thì ánh sáng huỳnh quang không thể là ánh sáng nào dưới đây ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Ánh sáng đỏ",
+            "B. Ánh sáng lục",
+            "C. Ánh sáng lam",
+            "D. Ánh sáng chàm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích + Bước sóng ánh sáng giảm dần từ: Đỏ - da cam - vàng - lục - lam - chàm - tím => Nếu ánh sáng kích thích là ánh sáng màu lam thì ánh sáng huỳnh quang không thể là ánh ánh sáng màu chàm vì ánh sáng màu chàm có bước sóng nhỏ hơn bước sóng của ánh sáng kích thích là màu lam Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623012",
+        "question": "Khi chiếu ánh sáng đơn sắc màu lam vào một chất huỳnh quang thì ánh sáng huỳnh quang phát ra không thể là ánh sáng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. màu cam",
+            "B. màu chàm",
+            "C. màu đỏ",
+            "D. màu vàng"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chiếu ánh sáng đơn sắc màu lam vào một chất huỳnh quang thì ánh sáng huỳnh quang phát ra không thể là ánh sáng màu chàm. Do: + Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích + Bước sóng ánh sáng giảm dần từ: Đỏ - da cam - vàng - lục - lam - chàm - tím => Nếu ánh sáng kích thích là ánh sáng màu lam thì ánh sáng huỳnh quang không thể là ánh sáng màu chàm vì ánh sáng màu chàm có bước sóng nhỏ hơn bước sóng của ánh sáng kích thích là màu lam Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623013",
+        "question": "Lần lượt chiếu các ánh sáng đơn sắc: đỏ, tím, vàng và cam vào một chất huỳnh quang thì có một trường hợp chất huỳnh quang này phát quang. Biết ánh sáng phát quang có màu chàm. Ánh sáng kích thích gây ra hiện tượng phát quang này là ánh sáng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. vàng",
+            "B. đỏ",
+            "C. tím",
+            "D. cam"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích $ \\lambda_{hq} > \\lambda_{kt} $. Mặt khác: Ta có bước sóng ánh sáng nhìn thấy theo chiều giảm dần: Đỏ > Da cam > Vàng > Lục > Lam > Chàm > Tím => Ánh sáng kích thích gây ra hiện tượng phát quang ánh sáng màu chàm là ánh sáng tím Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623014",
+        "question": "Một chất có khả năng phát quang ánh sáng màu đỏ và ánh sáng màu lục. Nếu dùng tia tử ngoại để kích thích sự phát quang của chất đó thì ánh sáng phát quang có thể có màu nào ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Màu đỏ",
+            "B. Màu vàng",
+            "C. Màu lục",
+            "D. Màu lam"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Khi chiếu ánh sáng tử ngoại vào thì chất đó phát ra cả ánh sáng màu lục và màu đỏ + Lục + đỏ = vàng Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623015",
+        "question": "Khi chiếu một chùm tia tử ngoại vào một ống nghiệm đựng dung dịch fluorexein thì thấy dung dịch này phát ra ánh sáng màu lục. Đây là hiện tượng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. hóa – phát quang",
+            "B. phản xạ ánh sáng",
+            "C. tán sắc ánh sáng",
+            "D. quang – phát quang"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chiếu một chùm tia tử ngoại vào một ống nghiệm đựng dung dịch fluorexein thì thấy dung dịch này phát ra ánh sáng màu lục. Đây là hiện tượng quang – phát quang. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623016",
+        "question": "Ánh sáng phát quang của một chất có tần số là $6,10 \\times 10^{14} \\, \\text{Hz}$. Hỏi nếu chiếu vào chất đó ánh sáng kích thích có bước sóng nào dưới đây thì nó sẽ không thể phát quang ?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,3 \\, \\mu m$",
+            "B. $0,4 \\, \\mu m$",
+            "C. $0,5 \\, \\mu m$",
+            "D. $0,6 \\, \\mu m$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích + Bước sóng của ánh sáng phát quang : $λ = \\frac{c}{f} = \\frac{3 \\cdot 10^8}{6 \\cdot 10^{14}} = 0,5 \\cdot 10^{-6}\\, \\text{m}$ Ta thấy: Phương án D có bước sóng $0,6\\, \\text{μm} > 0,5\\, \\text{μm}$ lớn hơn bước sóng ánh sáng phát quang Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623017",
+        "question": "Ánh sáng huỳnh quang của một chất có bước sóng $0,5 \\, \\text{µm}$. Chiếu vào chất đó bức xạ có bước sóng nào dưới đây sẽ không có sự phát quang?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0 , 3 \\mu m",
+            "B. 0 , 6 \\mu m",
+            "C. 0 , 2 \\mu m",
+            "D. 0 , 4 \\mu m"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ánh sáng kích thích phải có bước sóng nhỏ hơn bước sóng của ánh sáng huỳnh quang thì sẽ có sự phát quang Phương án B: $0,6 \\, \\text{μm} > 0,5 \\, \\text{μm} \\Rightarrow$ Khi chiếu bức xạ có bước sóng $0,6 \\, \\text{μm}$ sẽ không có sự phát quang. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623018",
+        "question": "Trong một đèn huỳnh quang, ánh sáng kích thích có bước sóng $0,36 \\, \\text{μm}$ thì photon ánh sáng huỳnh quang có thể mang năng lượng là?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 5 e V",
+            "B. 3 e V",
+            "C. 4 e V",
+            "D. 6 e V"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + Ánh sáng huỳnh quang có bước sóng dài hơn bước sóng của ánh sáng kích thích => Năng lượng của ánh sáng huỳnh quang nhỏ hơn năng lượng của ánh sáng kích thích ( do năng lượng $ \\varepsilon $ tỉ lệ nghịch với bước sóng ánh sáng) + Năng lượng của ánh sáng kích thích: $ \\varepsilon = h c \\lambda = 6 \\,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot 0 \\,36 \\cdot 10^{-6} = 5 \\,521 \\cdot 10^{-19} \\, \\text{J} = 3 \\,45 \\, \\text{eV} $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623019",
+        "question": "Một chất phát quang được kích thích bằng ánh sáng có bước sóng $0,26 \\, \\text{μm}$ thì phát ra ánh sáng có bước sóng $0,52 \\, \\text{μm}$. Giả sử công suất của chùm sáng phát quang bằng $20\\%$ công suất của chùm sáng kích thích. Tỉ số giữa số photon ánh sáng phát quang và số photon ánh sáng kích thích trong cùng một khoảng thời gian là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $\\frac{4}{5}$",
+            "B. $\\frac{1}{10}$",
+            "C. $\\frac{1}{5}$",
+            "D. $\\frac{2}{5}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Gọi $P_1$, $P_2$ lần lượt là công suất của chùm sáng có bước sóng $\\lambda_1 = 0\\, \\text{μm}$ và $\\lambda_2 = 0\\, \\text{μm}$, $n_1$ là số photon ánh sáng kích thích phát ra trong $1\\, \\text{s}$, $n_2$ là số photon ánh sáng phát quang phát ra trong $1\\, \\text{s}$. Ta có: Công suất của chùm sáng: $P = n_p \\epsilon = n_p h \\frac{c}{\\lambda} \\rightarrow P_1 P_2 = \\frac{n_1 \\lambda_2}{n_2 \\lambda_1}$. Công suất của chùm sáng phát quang bằng $20\\%$ công suất của chùm sáng kích thích. ⇒ $P_2 = 20\\% P_1 = 0,2 P_1$. Suy ra: $P_1 P_2 = \\frac{1}{0,2} = 5 = \\frac{n_1 \\lambda_2}{n_2 \\lambda_1} \\Rightarrow \\frac{n_1}{n_2} = 5$. $\\frac{\\lambda_1}{\\lambda_2} = 5 \\cdot \\frac{0,26}{0,52} = 5 \\cdot 2$. Suy ra tỉ số giữa photon ánh sáng phát quang và số photon ánh sáng kích thích trong cùng một khoảng thời gian: $\\frac{n_2}{n_1} = \\frac{2}{5}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623020",
+        "question": "Sự phát sáng nào sau đây là hiện tượng quang - phát quang?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Sự phát sáng của con đom đóm",
+            "B. Sự phát sáng của đèn dây tóc",
+            "C. Sự phát sáng của đèn ống thông dụng",
+            "D. Sự phát sáng của đèn LED"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thành trong của đèn ống thông dụng có phủ một lớp bột phát quang. Lớp bột này sẽ phát ánh sáng trắng khi bị kích thích bởi ánh sáng giàu tia tử ngoại. => Sự phát sáng của đèn ống thông dụng là hiện tượng quang - phát quang Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623021",
+        "question": "Chiếu một ánh sáng có bước sóng $λ$ và năng lượng phôtôn là $ɛ$ vào một chất huỳnh quang thì ánh sáng phát quang có bước sóng $λ ′$ và năng lượng phôtôn là $ɛ ′$. Biết $ε ′ ε = 0, 8$. Tỉ số $\\frac{λ ′}{λ}$ bằng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1,25$",
+            "B. $0,8$",
+            "C. $1$",
+            "D. $1,5$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng phôtôn $ \\varepsilon = \\frac{h c}{\\lambda} $ : $ \\varepsilon = \\frac{h c}{\\lambda} \\rightarrow \\varepsilon \\varepsilon' = \\frac{h c}{\\lambda} \\frac{h c}{\\lambda'} = \\frac{\\lambda'}{\\lambda} = 1, 0 \\, \\text{,} 8 = 1, 25 $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623022",
+        "question": "Chiếu bức xạ đơn sắc có bước sóng $0,3\\, \\text{µm}$ vào một chất thì thấy có hiện tượng quang phát quang. Cho biết công suất của chùm sáng phát quang chỉ bằng $0,3\\%$ công suất của chùm sáng kích thích và cứ $200$ photon ánh sáng kích thích cho $1$ photon ánh sáng phát quang. Bước sóng ánh sáng phát quang là :?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,48µm",
+            "B. 0,5µm",
+            "C. 0,6µm",
+            "D. 0,4µm"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Cách giải : Công suất của chùm phát quang : $P_{pq} = N_{pq} \\cdot \\varepsilon_{pq} = N_{pq} \\cdot \\frac{h c}{\\lambda_{pq}}$ Công suất của chùm kích thích : $P_{kt} = N_{kt} \\cdot \\varepsilon_{kt} = N_{kt} \\cdot \\frac{h c}{\\lambda_{kt}}$ Dữ kiện bài cho : Công suất của chùm sáng phát quang chỉ bằng $0,3\\, \\text{\\%}$ công suất của chùm sáng kích thích và cứ $200$ photon ánh sáng kích thích cho $1$ photon ánh sáng phát quang nên ta có : $P_{pq} = 0,3\\, \\text{\\%} \\cdot P_{kt} \\Leftrightarrow N_{pq} \\cdot \\frac{h c}{\\lambda_{pq}} = 0,3\\, \\text{\\%} \\cdot N_{kt} \\cdot \\frac{h c}{\\lambda_{kt}} \\Leftrightarrow \\frac{1}{\\lambda_{pq}} = \\frac{0,3}{100 \\cdot 200} \\Rightarrow \\lambda_{pq} = 0,5\\, \\mu m$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623023",
+        "question": "Một chất có khả năng phát ra một phôtôn có bước sóng $0,5\\, \\text{μm}$ khi bị chiếu sáng bởi một bức xạ $0,4\\, \\text{μm}$. Cho $h = 6,625 \\cdot 10^{-34}\\,\\text{Js}$, $c = 3 \\cdot 10^{8}\\,\\text{m/s}$, tìm năng lượng bị mất đi trong quá trình phát quang trên.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $9,9375 \\cdot 10^{-20} J$ ",
+            "B. $1,25 \\cdot 10^{-19} J$ ",
+            "C. $2,99 \\cdot 10^{-20} J$ ",
+            "D. $8 \\cdot 10^{-20} J$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Cách giải: Năng lượng của photon kích thích: $ε_{kt} = h c \\lambda_{kt}$ Năng lượng của photon phát quang: $ε_{pq} = h c \\lambda_{pq}$ Năng lượng bị mất đi trong quá trình phát quang: $\\Delta ε = ε_{kt} − ε_{pq} = h c \\left( \\frac{1}{\\lambda_{kt}} − \\frac{1}{\\lambda_{pq}} \\right) = 6 , 625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot \\left( 10 , 4 \\cdot 10^{-6} − 10 , 5 \\cdot 10^{-6} \\right) = 9 , 9375 \\cdot 10^{-20} \\, \\text{J}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623024",
+        "question": "Người ta sản xuất ra các loại công tắc điện có đặc điểm sau đây: khi đèn trong phòng tắt đi ta thấy nút bấm của công tắc phát ra ánh sáng màu xanh. Sự phát quang này kéo dài hàng giờ, rất thuận tiện cho việc tìm chỗ bật đèn trong đêm. Đó là hiện tượng:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. huỳnh quang",
+            "B. điện phát quang",
+            "C. lân quang",
+            "D. tia catot phát quang"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Người ta sản xuất ra các loại công tắc điện có đặc điểm sau đây: khi đèn trong phòng tắt đi ta thấy nút bấm của công tắc phát ra ánh sáng màu xanh. Sự phát quang này kéo dài hàng giờ, rất thuận tiện cho việc tìm chỗ bật đèn trong đêm. Đó là hiện tượng lân quang. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623025",
+        "question": "Cho chùm hẹp các electron quang điện có tốc độ $7,31\\, \\times\\, 10^5 \\, \\text{(m/s)}$ và hướng nó vào một từ trường đều có cảm ứng từ $9,1\\, \\times\\, 10^{-5} \\, \\text{(T)}$ theo hướng vuông góc với từ trường. Biết khối lượng và điện tích của electron lần lượt là $9,1\\, \\times\\, 10^{-31} \\, \\text{kg}$ và $-1,6\\, \\times\\, 10^{-19} \\, \\text{C}$. Xác định bán kính quỹ đạo các electron đi trong từ trường?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 5,4 cm",
+            "B. 6 cm",
+            "C. 5,7 cm",
+            "D. 4,6 cm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khi e bay vào từ trường đều với quỹ đạo tròn thì lực Lorentz sẽ đóng vai trò là lực hướng tâm. Ta có: $F_{h t} = m a_{h t} \\Leftrightarrow | e | v B = m \\frac{v^2}{R} \\rightarrow R = \\frac{m v}{| e | B} = \\frac{9,1 \\cdot 10^{-31}}{7,31 \\cdot 10^5} \\cdot \\frac{1,6 \\cdot 10^{-19}}{9,1 \\cdot 10^{-5}} = 0,046\\, \\text{m} = 4,6\\, \\text{cm}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623026",
+        "question": "Chiếu bức xạ có bước sóng $533\\, \\text{nm}$ lên tấm kim loại có công thoát $A = 3 \\times 10^{-19}\\,\\text{J}$. Dùng màn chắn tách ra một chùm hẹp các electron quang điện và cho bay vào từ trường theo phương vuông góc với đường cảm ứng từ. Biết bán kính cực đại của quỹ đạo của các electron quang điện là $22,75\\, \\text{mm}$. Độ lớn cảm ứng từ $B$ của từ trường là ?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,5 \\cdot 10^{-4} T$",
+            "B. $1,0 \\cdot 10^{-3} T$",
+            "C. $1,0 \\cdot 10^{-4} T$",
+            "D. $2,5 \\cdot 10^{-3} T$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo công thức Einstein về hiện tượng quang điện: $h c \\lambda = A + \\frac{1}{2} m_e v_{o \\text{max}}^2 \\Rightarrow v_{o \\text{max}} = \\sqrt{2 m_e \\left( h c \\lambda - A \\right)} = 4,10^5 \\left( \\frac{m}{s} \\right) \\, (m_e = 9,1 \\times 10^{-31} \\, \\text{kg})$ Khi electron chuyển động trong từ trường đều có có hướng vuông góc với thì nó chịu tác dụng của lực Lorentz $f$ có độ lớn không đổi và luôn vuông góc với, nên electron chuyển động theo quỹ đạo là tròn và lực $f$ đóng vai trò lực hướng tâm: $F_{h t} = f \\Leftrightarrow m_e v_{o \\text{max}}^2 R = |e| B v_{o \\text{max}} \\Rightarrow B = \\frac{m_e v_{o \\text{max}}}{|e| R} = 1,0 \\times 10^{-4} \\, \\text{T}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623027",
+        "question": "Electron quang điện khi bật ra khỏi kim loại thì bay vào từ trường đều với cảm ứng từ $B = 10^{-5} \\, \\text{T}$ theo quỹ đạo tròn mà hình chiếu của electron trên một đường kính sẽ dao động điều hòa với biên độ $A = 10 \\, \\text{cm}$. Cho khối lượng electron là $9,1 \\times 10^{-31} \\, \\text{kg}$ và điện tích electron là $-1,6 \\times 10^{-19} \\, \\text{C}$. Vận tốc electron có độ lớn là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3,52 \\cdot 10^6 \\, \\text{m/s}$",
+            "B. $3,52 \\cdot 10^5 \\, \\text{m/s}$",
+            "C. $1,76 \\cdot 10^6 \\, \\text{m/s}$",
+            "D. $1,76 \\cdot 10^5 \\, \\text{m/s}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khi e bay vào từ trường đều với quỹ đạo tròn thì lực Lorentz sẽ đóng vai trò là lực hướng tâm. Khi chiếu lên một đường kính, hình chiếu dao động điều hòa với $A = 10 \\, \\text{cm}$ nên bán kính quỹ đạo tròn $R = 10 \\, \\text{cm}$. Ta có $F_{h_t} = m a_{h_t} \\Leftrightarrow q v B = \\frac{m v^2}{R} \\Leftrightarrow v = \\frac{q B R}{m} = 1,76 \\cdot 10^5 \\, \\text{(m/s)}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623028",
+        "question": "Chiếu một bức xạ có bước sóng $ \\lambda = 0, 48 \\, \\mu \\text{m} $ lên một tấm kim loại có công thoát $ A = 2,4 \\cdot 10^{-19} \\, \\text{J} $. dùng màn chắn tách ra một chùm hẹp các êlectron quang điện và hướng chúng bay theo chiều véc tơ cường độ điện trường có $ E = 1000 \\, \\text{V/m} $. Quãng đường tối đa mà êlectron chuyển động được theo chiều véc tơ cường độ điện trường xấp xỉ là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,83cm",
+            "B. 0,37cm",
+            "C. 1,53cm",
+            "D. 0,109cm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com + Theo công thức Anh - xtanh : $h c \\lambda = A + \\frac{1}{2} m v_0^2 \\Rightarrow v_0^2 = \\frac{2 m (h c \\lambda - A)}{m_e = 9,1 \\cdot 10^{-31} \\, \\text{kg}}$ + Ta có: $a = \\frac{F}{m} = \\frac{q E}{m}$ + Chuyển động của e là chuyển động chậm dần đều với vận tốc đầu $v_0$ và gia tốc $a$ Electron dừng $v = 0 \\Leftrightarrow 0^2 - v_0^2 = 2 a s \\Rightarrow s = - \\frac{v_0^2}{2 a} = - \\frac{2 m (h c \\lambda - A)}{2 q E} = - \\frac{h c \\lambda - A}{q E} \\Rightarrow s = 0, 109 \\, \\text{cm}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623029",
+        "question": "Cho chùm hẹp các electron quang điện và hướng nó vào một từ trường đều cảm ứng từ $B = 10^{-4} \\, \\text{T}$ theo phương vuông góc với từ trường. Biết khối lượng và điện tích của electron lần lượt là $9,1 \\times 10^{-31} \\, \\text{kg}$ và $-1,6 \\times 10^{-19} \\, \\text{C}$. Chu kì của electron trong từ trường là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2 μ s",
+            "B. 0 , 26 μ s",
+            "C. 0 , 36 μ s",
+            "D. 1 μ s"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi $e$ bay vào từ trường đều với quỹ đạo tròn thì lực Lorentz sẽ đóng vai trò là lực hướng tâm. Ta có: $F_{h t} = m a_{h t} \\Leftrightarrow | e | v B = m \\frac{v^2}{R} \\rightarrow R = \\frac{m v}{| e | B}$. Mặt khác: tốc độ góc: $\\omega = \\frac{v}{R} = \\frac{| e | B}{m}$. Chu kỳ của electron trong từ trường: $T = 2 \\pi \\omega = 2 \\pi \\frac{| e | B}{m} = 2 \\pi \\frac{1,6 \\cdot 10^{-19} \\cdot 10^{-4}}{9,1 \\cdot 10^{-31}} = 3,6 \\cdot 10^{-7} \\, \\text{s} = 0,36 \\, \\mu \\text{s}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623030",
+        "question": "Chiếu ánh sáng có bước sóng $5000 \\, \\text{Å}$ vào ca tốt của tế bào quang điện có công thoát $e$ là $1,88 \\, \\text{eV}$. Sau đó tách ra một chùm hẹp các quang $e$ có vận tốc $\\vec{v_0}$ rồi hướng vào miền không gian có điện trường đều có cường độ điện trường $\\vec{E}$ và từ trường đều cảm ứng từ $\\vec{B}$ sao cho $\\vec{E}$, $\\vec{B}$, $\\vec{v_0}$ vuông góc với nhau từng đôi một. Độ lớn cường độ điện trường là $E = 2 \\cdot 10^4 \\, \\text{V/m}$. Để $e$ vẫn chuyển động thẳng đều không thay đổi hướng ban đầu của nó thì cảm ứng từ $B$ có độ lớn là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4,616 T",
+            "B. 0,04251 T",
+            "C. 0,4616 T",
+            "D. 0,04338 T"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Theo công thức Anh-xtanh ta tính được vận tốc của electron khi bay vào vùng có điện từ trường: $h f = A + \\frac{1}{2} m v_0^2$ $\\Rightarrow$ $v_0 = 4,61 \\cdot 10^6 \\, \\text{(m/s)}$ Để electron bay vào điện từ trường mà vẫn chuyển động thẳng đều thì: $F_d = f \\Leftrightarrow e \\cdot E = e \\cdot v_0 \\cdot B$ $\\Rightarrow$ $B = \\frac{E}{v_0} = 4,338 \\cdot 10^{-3} \\, \\text{(T)}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623031",
+        "question": "Khi chiếu một photon có năng lượng $5,5\\, \\text{eV}$ vào tấm kim loại có công thoát $2\\, \\text{eV}$. Cho rằng năng lượng mà quang electron hấp thụ một phần dùng để giải phóng nó, phần còn lại hoàn toàn biến thành động năng của nó. Tách ra một electron rồi cho bay từ M đến N trong một điện trường với hiệu điện thế $U_{MN} = -2\\, \\text{V}$. Động năng của electron tại điểm N là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 3,5 eV",
+            "B. 5,5 eV",
+            "C. 1,5 eV",
+            "D. 2,5 eV"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $W_M = W_A + |e| U_{MN} \\rightarrow W_N = \\varepsilon - A + |e| U_{MN} = 5,5 \\, \\text{eV} - 2 \\, \\text{eV} - 2 \\, \\text{eV} = 1,5 \\, \\text{eV}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623032",
+        "question": "Cho chùm hẹp các electron quang điện có tốc độ $10^6 \\, \\text{(m/s)}$ bay dọc theo đường sức trong một điện trường đều có cường độ $9,1 \\, \\text{(V/m)}$ sao cho hướng của vận tốc ngược hướng với điện trường. Tính quãng đường đi được sau thời gian $1000 \\, \\text{ns}$. Biết khối lượng và điện tích của electron lần lượt là $9,1 \\cdot 10^{-31} \\, \\text{kg}$ và $-1,6 \\cdot 10^{-19} \\, \\text{C}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,5 \\, \\text{m}$",
+            "B. $0,2 \\, \\text{m}$",
+            "C. $1,6 \\, \\text{m}$",
+            "D. $1,8 \\, \\text{m}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có, hạt chuyển động nhanh dần đều. Theo định luật II - Newton, ta có: $F = m a = | e | E \\rightarrow a = \\frac{| e | E}{m} = \\frac{1,6 \\cdot 10^{-19} \\cdot 9,1 \\cdot 10^{-31}}{1} = 1,6 \\cdot 10^{12} \\, \\text{(m/s}^2\\text{)}$ + Phương trình chuyển động của chùm electron: $s = v_0 t + \\frac{1}{2} a t^2$ sau thời gian $1000 \\, \\text{ns}$ chùm electron đi được quãng đường là: $s = 10^6 (1000 \\cdot 10^{-9}) + \\frac{1}{2} (1,6 \\cdot 10^{12}) (1000 \\cdot 10^{-9})^2 = 1,8 \\, \\text{m}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623033",
+        "question": "Hai bản kim loại phẳng có độ dài $30\\, \\text{cm}$ đặt nằm ngang, song song cách nhau một khoảng $16\\, \\text{cm}$. Giữa hai bản tụ có một hiệu điện thế $4,55\\, \\text{V}$. Hướng một chùm hẹp các electron quang điện có tốc độ $10^6\\, \\text{(m/s)}$ theo phương ngang vào giữa hai bản tại điểm O cách đều hai bản. Khối lượng của electron là $9,1 \\times 10^{-31}\\, \\text{kg}$. Tính thời gian electron chuyển động trong tụ?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 300 ns",
+            "B. 100 ns",
+            "C. 179 ns",
+            "D. 50 ns"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo định luật II - Newton, ta có: $F = m a = | e | E \\Rightarrow a = \\frac{| e | E}{m} = \\frac{| e | U}{m d} = \\frac{1,6 \\cdot 10^{-19} \\cdot 4,55}{9,1 \\cdot 10^{-31} \\cdot 0,16} = 5 \\cdot 10^{12} \\, \\text{m/s}^2$ Gọi $t_1$ là thời gian electron ra khỏi tụ điện: $0,3 = 10^6 t_1 \\Rightarrow t_1 = 3 \\cdot 10^{-7} \\, \\text{s}$ $h$ - khoảng cách từ electron đến bản tụ: $h = \\frac{16}{2} = 8 \\, \\text{cm}$ Gọi $t_2$ là thời gian electron tới bản dương: $t_2 = \\sqrt{\\frac{2h}{a}} = \\sqrt{\\frac{2 \\cdot 0,16}{5 \\cdot 10^{12}}} \\approx 1,79 \\cdot 10^{-7} \\, \\text{s}$ Ta thấy $t_2 < t_1 \\Rightarrow$ electron chưa kịp ra khỏi bản tụ mà đã tới đập vào bản dương $\\Rightarrow$ Tính thời gian electron chuyển động trong tụ chính là $t_2 = 1,79 \\cdot 10^{-7} \\, \\text{s}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623034",
+        "question": "Hai bản kim loại phẳng đặt nằm ngang, đối diện, song song cách nhau một khoảng $d$ tạo thành một tụ điện phẳng. Giữa hai bản tụ có một hiệu điện thế $U$. Hướng một chùm hẹp các electron quang điện có tốc độ $v$ theo phương ngang đi vào giữa hai bản tại điểm $O$ cách đều hai bản thì khi nó vừa ra khỏi hai bản nó có tốc độ $2v$. Khi vừa ra khỏi tụ điện, véctơ vận tốc hợp với véctơ vận tốc ban đầu một góc bằng bao nhiêu?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 600",
+            "B. 900",
+            "C. 450",
+            "D. 300"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Từ hình, ta có: $ \\cos \\alpha = \\frac{v}{2} \\Rightarrow v = 1 \\Rightarrow \\alpha = 60^\\circ $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623035",
+        "question": "Hai bản cực A, B của một tụ điện phẳng rất rộng làm bằng kim loại đặt song song và đối diện nhau, Khoảng cách giữa hai bản là $4\\, \\text{cm}$. Chiếu vào tâm O của bản A một bức xạ đơn sắc thì tốc độ ban đầu cực đại của các electron quang điện là $0,76 \\cdot 10^6 \\, \\text{(m/s)}$. Khối lượng và điện tích của electron là $9,1 \\cdot 10^{-31} \\, \\text{kg}$ và $-1,6 \\cdot 10^{-19} \\, \\text{C}$. Đặt giữa hai bản A và B một hiệu điện thế $U_{AB} = 4,55 \\, \\text{(V)}$. Các electron quang điện có thể tới cách bản B một đoạn gần nhất là bao nhiêu?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 6,4cm",
+            "B. 2,5cm",
+            "C. 2,6cm",
+            "D. 1,4cm"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo định luật II - Newton, ta có: $F = m a = | e | E \\Rightarrow a = \\frac{| e | E}{m} = \\frac{| e | U}{m d} = \\frac{1,6 \\cdot 10^{-19} \\cdot 4,55 \\cdot 9 \\cdot 10^{-31} \\cdot 0,04}{2 \\cdot 10^{13}} \\, \\text{(m/s}^{2}\\text{)}$ Độ cao cực đại: $h_{max} = \\frac{v_{0}^{2}}{2a} = \\frac{(0,76 \\cdot 10^{6})^{2}}{2 \\cdot 2,2 \\cdot 10^{13}} = 0,01444 \\, \\text{m} = 1,444 \\, \\text{cm} \\Rightarrow b_{min} = d - h_{max} = 4 - 1,444 = 2,556 \\, \\text{cm}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623036",
+        "question": "Chiếu bức xạ thích hợp vào tâm của catốt của một tế bào quang điện thì tốc độ ban đầu cực đại của các electron quang điện là $7,105 \\,\\text{m/s}$. Đặt hiệu điện thế giữa anốt và catốt là $U_{AK} = 1\\, \\text{V}$. Coi anốt và catốt là các bản phẳng rất rộng song song và cách nhau một khoảng $1\\, \\text{cm}$. Khối lượng và điện tích của electron là $9,1 \\cdot 10^{-31}\\,\\text{kg}$ và $-1,6 \\cdot 10^{-19}\\,\\text{C}$. Tìm bán kính lớn nhất của miền trên anốt có electron quang điện đập vào?.",
+        "image_source": "http://cdn.vungoi.vn/picture/2018/0413/Capture_4.PNG",
+        "difficulty": 2,
+        "options": [
+            "A. $2,5 \\, \\text{cm}$",
+            "B. $2,3 \\, \\text{cm}$",
+            "C. $2,4 \\, \\text{cm}$",
+            "D. $6,4 \\, \\text{cm}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo định luật II - Newton, ta có: $F = m a = | e | E \\Rightarrow a = \\frac{| e | E}{m} = \\frac{| e | U}{m d} = \\frac{1,6 \\cdot 10^{-19} \\cdot 1,9 \\cdot 10^{-31} \\cdot 0,01}{1} = 1,76 \\cdot 10^{13} \\, \\text{m/s}^2$ Vì $U_{AK} > 0$ nên anot hút các electron về phía nó. Những electron có vận tốc ban đầu cực đại bắn ra theo phương song song với hai bản sẽ ứng với $R_{max}$. Phương trình chuyển động: $\\begin{cases} x = v_0 t = R \\\\ y = \\frac{1}{2} a t^2 = d \\end{cases} \\Rightarrow t = \\sqrt{\\frac{2 d}{a}} \\Rightarrow R = v_0 t = v_0 \\sqrt{\\frac{2 d}{a}} \\Rightarrow R = 7 \\cdot 10^5 \\sqrt{\\frac{2 \\cdot 0,01}{1,76 \\cdot 10^{13}}} = 0,0236 \\, \\text{m} \\approx 2,4 \\, \\text{cm}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623037",
+        "question": "Hai bản kim loại A và B phẳng rộng, đặt song song đối diện và cách nhau một khoảng $d$. Đặt vào A và B một hiệu điện thế $U_{AB} = U_1 > 0$. Sau đó chiếu vào tâm của tấm B một chùm sáng thì thấy xuất hiện các quang electron bay về phía tấm A. Tìm bán kính lớn nhất của vùng trên bề mặt anốt có electron đập vào. Biết rằng lúc này nếu đặt vào A và B một hiệu điện thế vừa đúng $U_{AB} = - U_2 < 0$ thì không còn electron nào đến được A.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $R = 2 d \\sqrt{U_1 U_2}$",
+            "B. $R = 2 d U_1 U_2$",
+            "C. $R = 2 d \\sqrt{U_2 U_1}$",
+            "D. $R = 2 d U_2 U_1$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: + $m \\cdot v_0^2 = |e| \\cdot U_h \\rightarrow v_0 = \\sqrt{\\frac{2 |e| \\cdot U}{m}}$ + gia tốc: $a = \\frac{F}{m} = \\frac{|e| \\cdot E}{m} = \\frac{|e| \\cdot U}{1 \\, \\text{m} \\cdot d}$ Khi $y = d \\rightarrow t = \\sqrt{\\frac{2d}{a}} = \\sqrt{\\frac{2d}{m}} \\cdot \\frac{|e| \\cdot U}{1} + Ta có: $R = \\frac{v_0}{t} = \\frac{2d}{\\sqrt{\\frac{U_2}{U_1}}}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623038",
+        "question": "Một ống Cu-lít-giơ (ống tia X) đang hoạt động. Bỏ qua động năng ban đầu của các êlectron khi bứt ra khỏi catôt. Ban đầu, hiệu điện thế giữa anôt và catôt là $U$ thì tốc độ của êlectron khi đập vào anôt là $v$. Khi hiệu điện thế giữa anôt và catôt là $1,5U$ thì tốc độ của êlectron đập vào anôt thay đổi một lượng $4000\\, \\text{km/s}$ so với ban đầu. Giá trị của $v$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,78 \\cdot 10^7 \\text{ m/s}$ ",
+            "B. $3,27 \\cdot 10^6 \\text{ m/s}$ ",
+            "C. $8,00 \\cdot 10^7 \\text{ m/s}$ ",
+            "D. $2,67 \\cdot 10^6 \\text{ m/s}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\frac{1}{2} m v^2 = e U $ Suy ra: $ v = \\sqrt{\\frac{2 e U}{m}} $ (1) Lại có: + Khi $ U = U $ thì $ v = v $ + Khi $ U = 1,5 U $ thì $ v = v' $ Ta có: $ v' - v = 4000 \\, \\text{km/s} = 4000 \\cdot 1000 \\, \\text{m/s} \\Leftrightarrow \\sqrt{\\frac{2 e \\cdot 1,5 U}{m}} - \\sqrt{\\frac{2 e \\cdot U}{m}} = 4000 \\cdot 1000 \\Rightarrow \\sqrt{\\frac{2 e U}{m}} (\\sqrt{1,5} - 1) = 4000 \\cdot 1000 \\Rightarrow \\sqrt{\\frac{2 e U}{m}} = 1,78 \\cdot 10^7 \\, \\text{m/s} $ Mặt khác, theo (1) ta có: $ v = \\sqrt{\\frac{2 e U}{m}} = 1,78 \\cdot 10^7 \\, \\text{m/s} $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0623039",
+        "question": "Thiết lập hệ trục tọa độ đề các vuông góc $Oxyz$, trong một vùng không gian tồn tại một điện trường đều và một từ trường đều. Biết véctơ cường độ điện trường song song cùng chiều với $Ox$, véctơ cảm ứng từ song song cùng chiều với $Oy$. Cho một chùm hẹp các electron quang điện chuyển động vào không gian đó theo hướng $Oz$ thì:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Lực điện tác dụng lên electron theo hướng $O_y$",
+            "B. Lực từ tác dụng lên electron ngược hướng $O_x$",
+            "C. Lực từ tác dụng lên electron theo hướng $O_x$",
+            "D. Lực điện tác dụng lên electron theo hướng $O_x$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có electron chịu tác dụng đồng thời hai lực: + Lực điện ngược hướng với $O_x$ và có độ lớn: $F_d = | e | E$ + Lực từ cùng hướng với $O_x$ và có độ lớn: $F_L = | e | v_0 B$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0623040",
+        "question": "Hướng chùm electron quang điện có tốc độ $10^6 \\,\\text{(m/s)}$ vào một điện trường đều và một từ trường đều có cảm ứng từ $0,5 \\cdot 10^{-4} \\,\\text{(T)}$ thì nó vẫn chuyển động theo một đường thẳng. Biết véctơ $\\vec{E}$ song song cùng chiều với $Ox$, véctơ $\\vec{B}$ song song cùng chiều với $Oy$, véctơ vận tốc song song cùng chiều với $Oz$ (Oxyz là hệ trục tọa độ đề các vuông góc). Độ lớn của véctơ cường độ điện trường là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $30 \\, \\text{V/m}$",
+            "B. $50 \\, \\text{V/m}$",
+            "C. $20 \\, \\text{V/m}$",
+            "D. $40 \\, \\text{V/m}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có electron chịu tác dụng đồng thời hai lực: + Lực điện ngược hướng với $O_x$ và có độ lớn: $F_d = | e | E$ + Lực từ cùng hướng với $O_x$ và có độ lớn: $F_L = | e | v_0 B$ Vì electron chuyển động theo quỹ đạo thẳng nên lực điện và lực từ cân bằng nhau, ta có: $| e | E = | e | v_0 B \\rightarrow E = v_0 B = 10^6 \\cdot 0,5 \\cdot 10^{-4} = 50 \\, \\text{(V/m)}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0623041",
+        "question": "Chiếu bức xạ có bước sóng $0,5\\, \\text{µm}$ vào một tấm kim loại có công thoát $1,8\\, \\text{eV}$. Dùng màn chắn tách một chùm hẹp các electron quang điện và cho nó bay vào một điện trường từ A đến B sao cho $U_{AB} = - 10,8\\, \\text{V}$. Vận tốc nhỏ nhất và lớn nhất của electron khi tới B lần lượt là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $16,75 \\cdot 10^5 \\text{ m/s}$ và $18 \\cdot 10^5 \\text{ m/s}$",
+            "B. $1875 \\cdot 10^3 \\text{ m/s}$ và $1887 \\cdot 10^3 \\text{ m/s}$",
+            "C. $18,57 \\cdot 10^5 \\text{ m/s}$ và $19 \\cdot 10^5 \\text{ m/s}$",
+            "D. $1949 \\cdot 10^3 \\text{ m/s}$ và $2009 \\cdot 10^3 \\text{ m/s}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chiếu bức xạ vào tấm kim loại, năng lượng của photon sẽ truyền cho electron để nó thoát khỏi lực liên kết với mạng tinh thể của kim loại, cung cấp động năng ban đầu và truyền 1 phần năng lượng cho mạng tinh thể. Với những electron ở ngay bề mặt kim loại, nó có thể thoát ra ngay và không mất năng lượng cho mạng tinh thể. Những electron này sẽ đạt được động năng cực đại $W_{d \\max} = \\frac{hc}{\\lambda} - A$. Ngược lại, những electron ở sâu bên trong kim loại, nó mất năng lượng truyền cho mạng tinh thể; những electron nào dùng toàn bộ năng lượng để thoát khỏi lực liên kết và truyền năng lượng cho mạng tinh thể thì sẽ có động năng cực tiểu và bằng 0. Ta có công $A' = q U_{AB}$; công này dương, có tác dụng tăng tốc cho electron (vì điện tích của electron âm). Mặt khác: $A' = W_{dB} - W_{dA} \\Rightarrow W_{dB} = A + W_{dA} \\, (1)$. Electron có động năng cực đại $W_{dA} = W_{d \\max} = \\frac{hc}{\\lambda} - A$ khi đến B sẽ đạt vận tốc lớn nhất. Electron có động năng cực tiểu $W_{dA} = 0$ khi đến B sẽ đạt vận tốc nhỏ nhất. Cực đại: từ $(1) \\Rightarrow \\frac{m v_{max}^2}{2} = q U + \\frac{hc}{\\lambda} - A \\Rightarrow v_{max} = 2009,10^3 \\, \\text{(m/s)}$. Cực tiểu: từ $(1) \\Rightarrow \\frac{m v_{min}^2}{2} = q U \\Rightarrow v_{min} = 1949,10^3 \\, \\text{(m/s)}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0623042",
+        "question": "Trong ống Cu-lít-giơ, electron của chùm tia catot khi đến anot (đối catot) có vận tốc cực đại là $6,6 \\times 10^7 \\, \\text{m/s}$. Biết rằng năng lượng của mỗi phôtôn chùm tia X có được là nhờ sự chuyển hóa một phần động năng của electron. Lấy $m_e = 9,1 \\times 10^{-31} \\, \\text{kg}$. Bước sóng ngắn nhất của tia X phát ra từ ống này là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,1\\,\\text{nm}$",
+            "B. $1\\,\\text{nm}$",
+            "C. $1,2\\,\\text{pm}$",
+            "D. $12\\,\\text{pm}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Năng lượng của mỗi phôtôn chùm tia X có được là nhờ sự chuyển hóa một phần động năng của electron ⇒ $ε \\leq W_d e$ ⇔ $h c \\lambda \\leq \\frac{m v^2}{2}$ ⇒ $\\lambda \\geq \\frac{2 h c}{m v^2} = 10^{-10} \\, \\text{m} = 0,1 \\, \\text{nm}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624001",
+        "question": "Theo mẫu nguyên tử Bo, trạng thái dừng của nguyên tử: $E_n = -\\frac{Z^2 \\cdot k \\cdot e^4 \\cdot m}{2 \\cdot \\hbar^2 \\cdot n^2}$ với $Z$ là số nguyên tố, $k = 8,99 \\times 10^9 \\,\\text{N m}^2/\\text{C}^2$, $e = 1,6 \\times 10^{-19} \\,\\text{C}$, $m = 9,11 \\times 10^{-31} \\,\\text{kg}$, $\\hbar = \\frac{h}{2\\pi}$ với $h = 6,63 \\times 10^{-34} \\,\\text{Js}$, và $n$ là số lượng tử chính.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Có thể là trạng thái cơ bản hoặc trạng thái kích thích",
+            "B. Chỉ là trạng thái kích thích",
+            "C. Là trạng thái mà các electron trong nguyên tử ngừng chuyển động",
+            "D. Chỉ là trạng thái cơ bản"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Theo mẫu nguyên tử Bo, trạng thái dừng của nguyên tử có thể là trạng thái cơ bản hoặc trạng thái kích thích. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624002",
+        "question": "Theo mẫu nguyên tử Bo, bán kính quỹ đạo dừng được xác định bởi: $r_n = n^2 \\cdot \\frac{4 \\pi \\varepsilon_0 \\hbar^2}{k \\cdot e^2}$, với $n$ là số lượng tử chính, $k$ là hằng số Coulomb, $e$ là điện tích của electron và $\\hbar$ là hằng số Planck giảm.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $r_n = r_0 n^2$",
+            "B. $r_n = n^2 r_0$",
+            "C. $r_n = n^2 r_0$",
+            "D. $r_n = r_0 n^2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Theo mẫu nguyên tử Bo, bán kính quỹ đạo dừng được xác định bởi: $r_n = n^2 r_0$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624003",
+        "question": "Bán kính quỹ đạo Bo thứ nhất của nguyên tử H là $0,53 \\times 10^{-10} \\, \\text{m}$. Bán kính quỹ đạo Bo thứ 5 của nguyên tử H bằng: ?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $10,25 \\cdot 10^{-10} \\text{m}$",
+            "B. $2,65 \\cdot 10^{-10} \\text{m}$",
+            "C. $13,25 \\cdot 10^{-10} \\text{m}$",
+            "D. $0,106 \\cdot 10^{-10} \\text{m}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Bán kính của quỹ đạo Bo thứ 5 là : $r_5 = 5^2 \\cdot r_0 = 25,0 \\, \\text{m}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624004",
+        "question": "Trong nguyên tử hiđrô, bán kính Bo là $r_0 = 5,3 \\cdot 10^{-11} \\, \\text{m}$. Ở một trạng thái kích thích của nguyên tử hiđrô, êlectron chuyển động trên quỹ đạo dừng có bán kính là $r = 13,25 \\cdot 10^{-10} \\, \\text{m}$. Quỹ đạo đó có tên gọi là quỹ đạo dừng.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. N",
+            "B. M",
+            "C. O",
+            "D. P"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Quỹ đạo dừng có bán kính $r_n = 13,25 \\times 10^{-10} \\, \\text{m} = 52r_0$ => $n = 5$ => Quỹ đạo O Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624005",
+        "question": "Theo mẫu nguyên tử Bo, trong nguyên tử hidro, bán kính quỹ đạo dừng K là $r_0$. Khi electron chuyển từ quỹ đạo dừng O về quỹ đạo dừng M thì bán kính quỹ đạo giảm.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. 21r0",
+            "B. 24r0",
+            "C. 16r0",
+            "D. 2r0"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Quỹ đạo $O$ có $n = 5$; quỹ đạo $M$ có $n = 3$ Bán kính quỹ đạo dừng $M$ và $O$ là: $r_M = r_0 \\cdot 3^2 = r_0 \\cdot 9$; $r_O = r_0 \\cdot 5^2 = r_0 \\cdot 25$ Vậy khi chuyển từ quỹ đạo $O$ về $M$ thì bán kính quỹ đạo giảm: $25r_0 - 9r_0 = 16r_0$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624006",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo, trong các quỹ đạo dừng của êlectron có hai quỹ đạo có bán kính $r_m$ và $r_n$. Biết $r_m - r_n = 36 r_0$, trong đó $r_0$ là bán kính Bo. Giá trị $r_m$ gần nhất với giá trị nào sau đây?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $100r_0$",
+            "B. $87r_0$",
+            "C. $49r_0$",
+            "D. $64r_0$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Theo bài ra ta có: $r_m = m^2 r_0 \\; (m \\in \\mathbb{N}^*)$; $r_n = n^2 r_0 \\; (n \\in \\mathbb{N}^*)$ ⇒ $r_m - r_n = 36 r_0$ ⇒ $m^2 - n^2 = 36$ ⇒ $(m - n)(m + n) = 36$. $m - n$ và $m + n$ là ước của 36. Mặt khác tổng của $m - n$ và $m + n$ là một số chẵn nên hai số $m - n$ và $m + n$ sẽ cùng chẵn hoặc cùng lẻ ⇒ $\\begin{cases} m - n = 2 \\\\ m + n = 18 \\end{cases} \\Rightarrow \\begin{cases} m = 10 \\\\ n = 8 \\end{cases} \\Rightarrow r_m = 100 r_0$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624007",
+        "question": "Nguyên tử Hiđrô đang ở trạng thái dừng có mức năng lượng cơ bản thì hấp thụ một photon có năng lượng $ε = E_N - E_K$. Khi đó nguyên tử sẽ:.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Không chuyển lên trạng thái nào cả",
+            "B. Chuyển dần từ K lên L rồi lên N",
+            "C. Chuyển thẳng từ K lên N",
+            "D. Chuyển dần từ K lên L, từ L lên M, từ M lên N"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Nguyên tử Hiđrô đang ở trạng thái dừng có mức năng lượng cơ bản thì hấp thụ một photon có năng lượng $ε = E_N - E_K$. Khi đó nguyên tử sẽ chuyển thẳng từ $K$ lên $N$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624008",
+        "question": "Trong nguyên tử hiđrô, khi êlêctrôn chuyển động trên quỹ đạo K với bán kính $r_0 = 5,3 \\times 10^{-11} \\, \\text{m}$ thì tốc độ của elêctrôn chuyển động trên quỹ đạo đó là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,19 \\times 10^{6} \\text{ m/s}$",
+            "B. $2,19 \\times 10^{5} \\text{ m/s}$",
+            "C. $4,17 \\times 10^{6} \\text{ m/s}$",
+            "D. $4,17 \\times 10^{5} \\text{ m/s}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com $F_c = F_h t \\Leftrightarrow k \\frac{e^2}{r^2} n = m \\frac{v^2}{n r_n} \\Rightarrow v_n = \\sqrt{\\frac{k e^2}{m r_n}}$ \n\nQuỹ đạo K ứng với $n = 1$ Ta suy ra tốc độ của electron chuyển động trên quỹ đạo K là: $v_K = \\sqrt{\\frac{9,10^9 \\cdot (1,6 \\cdot 10^{-19})^2}{9,1 \\cdot 10^{-31} \\cdot 5,3 \\cdot 10^{-11}}} = 2,19 \\cdot 10^6 \\, \\text{m/s}$ \n\nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624009",
+        "question": "Theo mẫu nguyên tử Bo, êlectron trong nguyên tử hiđrô chuyển động trên các quỹ đạo dừng có bán kính $r_n = n^2 r_0$ ($n \\in \\mathbb{N}^*$, $r_0$ là bán kính Bo). Tỉ số giữa tốc độ góc của êlectron khi nó chuyển động trên quỹ đạo $O$ và quỹ đạo $M$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3 \\cdot 5$",
+            "B. $9 \\cdot 25$",
+            "C. $25 \\cdot 27$",
+            "D. $27 \\cdot 125$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com $F_h = k \\frac{e^2}{r^2}$ $n = \\frac{m v^2}{n r_n}$ $\\Rightarrow v^2_n = \\frac{k e^2}{m r_n} = \\frac{k e^2}{m} \\cdot n^2 r_0$ Lại có: $v_n = \\omega_n r_n = \\omega_n n^2 r_0 \\Rightarrow \\omega_n = \\frac{1}{n^3} \\sqrt{\\frac{k e^2}{m r_0^3}} \\Rightarrow \\frac{\\omega_O}{\\omega_M} = \\left( \\frac{n_M}{n_O} \\right)^3 = \\left( \\frac{3}{5} \\right)^3 = \\frac{27}{125}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0624010",
+        "question": "Theo tiên đề Bo, bán kính Bo là $ r_0 = 5,3 \\times 10^{-11} \\, \\text{m} $. Khi electron của nguyên tử chuyển động trên quỹ đạo có bán kính $ 132,5 \\times 10^{-11} \\, \\text{m} $ đi được quãng đường $ 3S $, thì cũng trong khoảng thời gian đó electron chuyển động trên quỹ đạo M sẽ đi được quãng đường là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4S$",
+            "B. $5,3S$",
+            "C. $5S$",
+            "D. $1,5S$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi bán kính quỹ đạo là $132,5 \\cdot 10^{-11} \\, \\text{m}$, $n_1 = \\sqrt{r_n} \\, r_O = 5$ Lực Culong giữa electron và hạt nhân có vai trò là lực hướng tâm: $F_{h_t} = k \\frac{e^2}{r_n} = m_e \\frac{v^2}{r} \\Rightarrow v = e \\cdot \\sqrt{\\frac{k}{m_e} \\cdot r_n} = 2,2 \\cdot 10^6 \\, n \\Rightarrow v$ tỉ lệ nghịch với $n$. Quãng đường electron đi được trong một khoảng thời gian tỉ lệ thuận với vận tốc chuyển động của electron, nên tỉ lệ nghịch với $n$. $\\Rightarrow \\frac{S_1}{S_2} = \\frac{n_2}{n_1} \\Rightarrow S_2 = S_1 \\cdot \\frac{n_1}{n_2} = 3S \\cdot \\frac{5}{3} = 5S$ Chọn C Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624011",
+        "question": "Trong nguyên tử hidro, tổng của bán kính quỹ đạo thứ $n$ và bán kính quỹ đạo thứ $(n + 7)$ bằng bán kính quỹ đạo thứ $(n + 8)$. Biết bán kính $r_0 = 5 \\, \\text{m} \\times 10^{-11}$. Coi chuyển động của electron quanh hạt nhân là chuyển động tròn đều. Lực tương tác giữa electron và hạt nhân khi electron chuyển động trên quỹ đạo dừng thứ $n$ gần giá trị nào nhất sau đây?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 1 , 6.10^{−10} N",
+            "B. 1 , 3.10^{−10} N",
+            "C. 1 , 6.10^{−11} N",
+            "D. 1 , 2.10^{−11} N"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Theo đề bài ta có: $r_n + r_{n + 7} = r_{n + 8} \\Leftrightarrow n^2 r_0 + (n + 7)^2 r_0 = (n + 8)^2 r_0 \\Leftrightarrow n^2 + (n + 7)^2 = (n + 8)^2 \\Leftrightarrow n^2 - 2n - 15 = 0 \\Rightarrow \\left\\{ n = 5, n = -3 \\text{ (loại)} \\right\\}$. Khi đó lực tương tác giữa electron và hạt nhân trong nguyên tử hidro ở quỹ đạo dừng $n$ là: $F = k \\frac{e^2}{r^2} = 9 \\cdot 10^9 \\cdot \\frac{(1,6 \\cdot 10^{-19})^2}{(25,5 \\cdot 10^{-11})^2} = 1,3 \\cdot 10^{-10} \\, \\text{N}$. Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0624012",
+        "question": "Nguyên tử hiđrô được kích thích để chuyển lên quỹ đạo dừng $M$. Khi nó chuyển về các trạng thái dừng có mức năng lượng thấp hơn thì sẽ phát ra:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. một bức xạ",
+            "B. hai bức xạ",
+            "C. ba bức xạ",
+            "D. bốn bức xạ"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ba bức xạ ứng với: $M$ về $K$, $L$ về $K$, $M$ về $L$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624013",
+        "question": "Xét nguyên tử hidro theo mẫu nguyên tử Bo, các electron chuyển động tròn quanh hạt nhân trên các quỹ đạo dừng dưới tác dụng của lực hút tĩnh điện. Theo định nghĩa dòng điện thì chuyển động của các electron quanh hạt nhân tạo nên dòng điện (gọi là dòng điện nguyên tử, phân tử). Khi electron chuyển động trên quỹ đạo $L$ thì dòng điện nguyên tử có cường độ $I_1$, khi electron chuyển động trên quỹ đạo $N$ thì dòng điện nguyên tử có cường độ là $I_2$. Tỉ số $\\frac{I_2}{I_1}$ bằng:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1$ $8$",
+            "B. $1$ $4$",
+            "C. $8$",
+            "D. $4$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có $I = q t = q T$ $v = \\omega r \\Rightarrow T = 2 \\pi r v$ $ \\Rightarrow I = | e | v$ $2 \\pi r$ Lại có: $F = k \\frac{e^2}{r^2} = m \\frac{v^2}{r} \\Rightarrow v = \\sqrt{\\frac{k e^2}{m} r} \\, (1)$ $ \\Rightarrow I = | e | \\sqrt{\\frac{k e^2}{m} r^{\\frac{3}{2}}} \\frac{1}{2 \\pi}$ $ \\Rightarrow \\frac{I_1}{I_2} = \\sqrt{\\left(\\frac{r_2}{r_1}\\right)^3}$ Khi ở L thì $n = 2 \\Rightarrow r_1 = 2^2 \\cdot r_0$ Khi ở N thì $n = 4 \\Rightarrow r_2 = 4^2 \\cdot r_0 \\Rightarrow \\frac{I_1}{I_2} = \\sqrt{\\left(\\frac{4^2}{2^2}\\right)^3} = 8$ Ta suy ra: $\\frac{I_2}{I_1} = \\frac{1}{8}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624014",
+        "question": "Khi êlectrôn trong nguyên tử hiđrô chuyển từ quĩ đạo dừng có năng lượng $-0,85 \\, \\text{eV}$ sang quĩ đạo dừng có năng lượng $-13,60 \\, \\text{eV}$ thì nguyên tử phát bức xạ điện từ có bước sóng:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0\\,4340\\,\\mu m$",
+            "B. $0\\,4860\\,\\mu m$",
+            "C. $0\\,0974\\,\\mu m$",
+            "D. $0\\,6563\\,\\mu m$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\Delta E = h c \\lambda = - 0,85 - (- 13,6) = 12,75 \\, \\text{eV} \\Rightarrow \\lambda = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8 \\cdot \\frac{12,75 \\cdot 1,6 \\cdot 10^{-19}}{0,0974 \\, \\text{μm}} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624015",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo, khi nguyên tử chuyển từ trạng thái dừng có năng lượng $- 3,4 \\,\\text{eV}$ sang trạng thái dừng có năng lượng $- 13,6 \\,\\text{eV}$ thì nó phát ra một phôtôn có năng lượng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $10,2 \\, eV$",
+            "B. $13,6 \\, eV$",
+            "C. $3,4 \\, eV$",
+            "D. $17,0 \\, eV$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khi nguyên tử chuyển từ trạng thái dừng có năng lượng $-3,4\\, \\text{eV}$ sang trạng thái dừng có năng lượng $-13,6\\, \\text{eV}$ thì nó phát ra một phôtôn có năng lượng là $\\varepsilon = -3,4 - (-13,6) = 10,2\\, \\text{eV}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624016",
+        "question": "Electron trong nguyên tử Hiđrô chuyển từ quĩ đạo có năng lượng $E_M = - 1,5\\, \\text{eV}$ xuống quỹ đạo có năng lượng $E_L = - 3,4\\, \\text{eV}$. Tìm bước sóng của vạch quang phổ phát ra?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. Vạch thứ nhất trong dãy Banme, $\\lambda = 0,654 \\, \\mu m$",
+            "B. Vạch thứ hai trong dãy Banme, $\\lambda = 0,654 \\, \\mu m$",
+            "C. Vạch thứ nhất trong dãy Banme, $\\lambda = 0,643 \\, \\mu m$",
+            "D. Vạch thứ ba trong dãy Banme, $\\lambda = 0,458 \\, \\mu m$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : $E_M - E_L = \\frac{h c}{\\lambda} = 1,9 \\cdot 1,6 \\cdot 10^{-19} \\, \\text{J} \\Rightarrow \\lambda = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{1,9 \\cdot 1,6 \\cdot 10^{-19}} = 0,654 \\, \\mu m$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624017",
+        "question": "Hai vạch đầu tiên của dãy Laiman trong quang phổ hiđrô có tần số $f_{21}$ và $f_{31}$. Từ hai tần số đó người ta tính được tần số đầu tiên $f_{32}$ trong dãy Banme là: $f_{32} = \\frac{f_{31}^2}{f_{21}}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $f_{32} = f_{21} + f_{31}$",
+            "B. $f_{32} = f_{21} - f_{31}$",
+            "C. $f_{32} = f_{31} - f_{21}$",
+            "D. $f_{32} = \\frac{f_{21} + f_{31}}{2}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có : $E_3 - E_1 = h f_{31}$ ; $E_2 - E_1 = h f_{21} \\Rightarrow E_3 - E_2 = h f_{32} = h f_{31} - h f_{21} \\Rightarrow f_{32} = f_{31} - f_{21}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624018",
+        "question": "Hai vạch đầu tiên của dãy Laiman trong quang phổ hiđrô có bước sóng $λ_{21}$ và $λ_{31}$. Từ hai bước sóng đó người ta tính được bước sóng đầu tiên $λ_{32}$ trong dãy Banme là: $λ_{32} = \\frac{1}{\\frac{1}{λ_{21}} - \\frac{1}{λ_{31}}}$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $λ_{32} = λ_{31} + λ_{21} \\cdot 2$",
+            "B. $λ_{32} = λ_{21} - λ_{31} \\cdot 2$",
+            "C. $λ_{32} = \\sqrt{λ_{21} \\cdot λ_{31}}$",
+            "D. $λ_{32} = λ_{21} \\cdot λ_{31} \\cdot λ_{21} - λ_{31}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $E_{32} = E_{3} - E_{2} = (E_{3} - E_{1}) - (E_{2} - E_{1}) \\iff h c \\lambda_{32} = h c \\lambda_{31} - h c \\lambda_{21} \\iff \\frac{1}{\\lambda_{32}} = \\frac{1}{\\lambda_{31}} - \\frac{1}{\\lambda_{21}} \\Rightarrow \\lambda_{32} = \\frac{\\lambda_{21} \\cdot \\lambda_{32}}{\\lambda_{21} - \\lambda_{32}}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0624019",
+        "question": "Bước sóng của vạch quang phổ thứ nhất và thứ hai của dãy Banme là $0,656 \\, \\text{μm}$ và $0,486 \\, \\text{μm}$. Bước sóng của vạch đầu tiên trong dãy Pasen là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0\\,9672\\,\\mu m$",
+            "B. $1\\,8754\\,\\mu m$",
+            "C. $0\\,7645\\,\\mu m$",
+            "D. $1\\,3627\\,\\mu m$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Bước sóng vạch quang phổ thứ nhất của dãy Banme: $λ_{32} = 0\\, \\text{μm}$ Bước sóng vạch quang phổ thứ hai của dãy Banme: $λ_{42} = 0\\, \\text{μm}$ Bước sóng vạch đầu tiên trong trong dãy Pasen: $λ_{43}$ Áp dụng tiên đề Bo: $E_{43} = E_{4} - E_{3} = E_{4} - E_{2} + E_{2} - E_{3} = (E_{4} - E_{2}) - (E_{3} - E_{2}) \\Leftrightarrow h c \\, λ_{43} = h c \\, λ_{42} - h c \\, λ_{32} \\Leftrightarrow \\frac{1}{λ_{43}} = \\frac{1}{λ_{42}} - \\frac{1}{λ_{32}} \\Rightarrow λ_{43} = 1\\, \\text{m}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0624020",
+        "question": "Khi chuyển từ quỹ đạo M về quỹ đạo L, nguyên tử hidrô phát ra phôtôn có bước sóng $0,6563\\, \\text{μ m}$. Khi chuyển từ quỹ đạo N về quỹ đạo L, nguyên tử hidro phát ra phôtôn có bước sóng $0,4861\\, \\text{μ m}$. Khi chuyển từ quỹ đạo N về quỹ đạo M, nguyên tử hidro phát ra phôtôn có bước sóng:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,1424 \\mu m$",
+            "B. $1,8744 \\mu m$",
+            "C. $0,1702 \\mu m$",
+            "D. $0,2793 \\mu m$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chuyển từ quỹ đạo M về quỹ đạo L, nguyên tử hidrô phát ra phôtôn có bước sóng: $λ_{32} = 0,6563 \\,\\text{μm}$ Khi chuyển từ quỹ đạo N về quỹ đạo L, nguyên tử hidro phát ra phôtôn có bước sóng: $λ_{42} = 0,4861 \\,\\text{μm}$ Khi chuyển từ quỹ đạo N về quỹ đạo M, nguyên tử hidro phát ra phôtôn có bước sóng: $λ_{43}$ Ta có: $E_{43} = E_{4} - E_{3} = (E_{4} - E_{2}) - (E_{3} - E_{2}) \\Leftrightarrow h c \\,λ_{43} = h c \\,λ_{42} - h c \\,λ_{32} \\Leftrightarrow \\frac{1}{λ_{43}} = \\frac{1}{λ_{42}} - \\frac{1}{λ_{32}} \\Rightarrow λ_{43} = \\frac{λ_{32} λ_{42}}{λ_{32} - λ_{42}} = 1,8744 \\,\\text{μm}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L0624021",
+        "question": "Khi êlectron ở quỹ đạo dừng thứ $n$ thì năng lượng của nguyên tử hiđrô được tính theo công thức $E_n = - E_0 n^2 \\, \\text{(eV)}$ ($E_0$ là một hằng số dương và $n = 1,2,3,\\ldots$). Khi êlectron trong nguyên tử hiđrô chuyển từ quỹ đạo dừng thứ $n + 1$ sang quỹ đạo dừng thứ $n$ thì nguyên tử hiđrô phát ra phôtôn có bước sóng $\\lambda_0$ có năng lượng $5 E_0 36 \\, \\text{(eV)}$. Khi êlectron chuyển từ quỹ đạo L về quỹ đạo K thì nguyên tử phát ra phôtôn có bước sóng là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5 \\lambda_0 = 27$",
+            "B. $7 \\lambda_0 = 18$",
+            "C. $5 \\lambda_0 = 32$",
+            "D. $7 \\lambda_0 = 9$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khi e chuyển từ quỹ đạo L về quỹ đạo K thì phát phát ra photon có năng lượng: $ \\Delta E = \\left( -\\frac{1}{2} - \\left( -\\frac{1}{1}\\frac{1}{2} \\right) \\right) E_0 = \\frac{3 E_0}{4} \\, \\text{(eV)} = h \\frac{c}{\\lambda} \\quad (1) $ Khi êlectron trong nguyên tử hiđrô chuyển từ quỹ đạo dừng thứ $ n + 1 $ sang quỹ đạo dừng thứ $ n $: $ \\Delta E' = \\frac{5 E_0}{36} = h \\frac{c}{\\lambda_0} \\quad (2) $ $ (1) : (2) $ ta được: $ \\lambda = \\frac{5}{27} \\lambda_0 $ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624022",
+        "question": "Trong quang phổ của nguyên tử hiđrô, giả sử $f_1$, $f_2$ tương ứng với tần số lớn nhất và nhỏ nhất của dãy Ban-me, $f_3$ là tần số lớn nhất của dãy Pa-sen thì.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $f_1 = f_2 - f_3$",
+            "B. $f_3 = f_1 + f_2^2$",
+            "C. $f_1 = f_2 + f_3$",
+            "D. $f_3 = f_1 + f_2$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Từ giản đồ năng lượng của Hiđrô ta có: $f_1 = f_{\\infty 2}$; $f_2 = f_{32}$; $f_3 = f_{\\infty 3}$. Áp dụng tiên đề Bo: $h f_{\\infty 3} = E_{\\infty} - E_3 = E_{\\infty} - E_2 + E_2 - E_3 \\Leftrightarrow h f_{\\infty 3} = h f_{\\infty 2} + h f_{23} \\Leftrightarrow f_{\\infty 3} = f_{\\infty 2} + f_{23} = f_{\\infty 2} - f_{32} \\Leftrightarrow f_3 = f_1 - f_2 \\Leftrightarrow f_1 = f_2 + f_3$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624023",
+        "question": "Bước sóng của hai vạch H α và H β trong dãy Banme là $λ_1 = 656\\, \\text{nm}$ và $λ_2 = 486\\, \\text{nm}$. Bước sóng của vạch quang phổ đầu tiên trong dãy Pasen.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1 \\, 8754 \\, \\mu m$",
+            "B. $0 \\, 18754 \\, \\mu m$",
+            "C. $18 \\, 754 \\, \\mu m$",
+            "D. $187 \\, 54 \\, \\mu m$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com  \nBước sóng của vạch H: $λ_{32} = λ_{1} = 656 \\,\\text{nm}$  \nBước sóng của vạch H: $λ_{42} = λ_{2} = 486 \\,\\text{nm}$  \nBước sóng của vạch quang phổ đầu tiên trong dãy Pasen: $λ_{43} = \\frac{1}{λ_{42}} - \\frac{1}{λ_{32}} = \\frac{1}{λ_{2}} - \\frac{1}{λ_{1}} \\Rightarrow λ_{43} = \\frac{λ_{1} λ_{2}}{λ_{1} - λ_{2}} = 1875,4 \\,\\text{nm} = 1,8754 \\,\\text{μm}$  \nĐáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624024",
+        "question": "Trong quang phổ hidro, bước sóng dài nhất của dãy Laiman là $0,1216\\, \\text{μm}$, bước sóng ngắn nhất của dãy Banme là $0,3650\\, \\text{μm}$. Bước sóng ngắn nhất của bức xạ mà hiđrô có thể phát ra:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,4866 µm",
+            "B. 0,2434 µm",
+            "C. 0,6563 µm",
+            "D. 0,0912 µm"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $Δ E = h c \\lambda \\rightarrow \\lambda$ lớn nhất khi $E$ nhỏ nhất, $\\lambda$ nhỏ nhất khi $Δ E$ lớn nhất. Bước sóng dài nhất của dãy Laiman là: $\\lambda_{21} = 0,1216 \\, \\text{μ m}$. Bước sóng ngắn nhất của dãy Banme là: $\\lambda_{\\infty 2} = 0,3650 \\, \\text{μ m}$. Bước sóng ngắn nhất của bức xạ mà hiđrô có thể phát ra: $\\lambda_{\\infty 1}$ $\\frac{1}{\\lambda_{\\infty 1}} = \\frac{1}{\\lambda_{\\infty 2}} + \\frac{1}{\\lambda_{21}} \\Rightarrow \\lambda_{\\infty 1} = \\frac{\\lambda_{\\infty 2} \\lambda_{21}}{\\lambda_{\\infty 2} + \\lambda_{21}} = 0,0912 \\, \\text{μ m}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0624025",
+        "question": "Trong nguyên tử hiđrô các mức năng lượng được mô tả theo công thức $E = -A/n^2$, trong đó $A$ là hằng số dương. Khi nguyên tử đang ở trạng thái cơ bản thì bị kích thích bởi điện trường mạnh và làm cho nguyên tử có thể phát ra tối đa 15 bức xạ. Hỏi trong các bức xạ mà nguyên tử hiđrô có thể phát ra trong trường hợp này thì tỉ số về bước sóng giữa bức xạ dài nhất và ngắn nhất là bao nhiêu?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $79,5$",
+            "B. $\\frac{900}{11}$",
+            "C. $1,29$",
+            "D. $6$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Do nguyên tử có thể phát ra tối đa 15 bức xạ $n$ thì $\\frac{n \\cdot (n - 1)}{2} = 15$ nên $n = 6$. Ta có: $\\Delta E = h c \\lambda \\rightarrow \\lambda$ lớn nhất khi $E$ nhỏ nhất, $\\lambda$ nhỏ nhất khi $E$ lớn nhất. Bước sóng dài nhất: $\\lambda_{max} = \\lambda_{65}$. Bước sóng nhỏ nhất: $\\lambda_{min} = \\lambda_{61}$. \n\\[\n\\begin{cases}\n    h c \\lambda_{max} = h c \\lambda_{65} = E_6 - E_5 = A \\left( \\frac{1}{25} - \\frac{1}{36} \\right) \\\\\n    h c \\lambda_{min} = h c \\lambda_{61} = E_6 - E_1 = A \\left( 1 - \\frac{1}{36} \\right)\n\\end{cases}\n\\]\n$\\Rightarrow \\frac{\\lambda_{max}}{\\lambda_{min}} = 79,5$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624026",
+        "question": "Một nguyên tử chuyển từ trạng thái dừng $E_m$ sang trạng thái dừng $E_n$ ($E_m < E_n$) khi hấp thụ một photon có năng lượng $hf$. Chọn câu đúng:.",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. $h f = E_n - E_m$",
+            "B. $h f \\geq E_n - E_m$",
+            "C. $h f \\leq E_n - E_m$",
+            "D. $h f > E_n - E_m$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Khi nguyên tử chuyển từ trạng thái dừng có năng lượng $E_n$ sang trạng thái có năng lượng $E_m < E_n$ thì nó phát ra một photon có năng lượng $\\varepsilon = E_n - E_m$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L0624027",
+        "question": "Chọn câu sai về hai tiên đề của Bo:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Trạng thái dừng là trạng thái có năng lượng xác định mà nguyên tử tồn tại mà không bức xạ",
+            "B. Trạng thái dừng có mức năng lượng càng thấp thì càng bền vững",
+            "C. Nguyên tử phát ra một phôtôn khi chuyển từ trạng thái dừng có mức năng lượng thấp $E_m$ sang trạng thái dừng có mức năng lượng cao hơn $E_n$",
+            "D. Năng lượng của phôtôn hấp thụ hay phát ra bằng đúng với hiệu hai mức năng lượng mà nguyên tử dịch chuyển: $\\varepsilon = E_n - E_m$ (với $E_n > E_m$)"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com A, B, D - đúng C - sai vì: khi chuyển từ trạng thái dừng có mức năng lượng thấp $E_m$ sang trạng thái dừng có mức năng lượng cao hơn $E_n$ thì nguyên tử hấp thụ photon Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624028",
+        "question": "Khối khí hidro có các nguyên tử đang ở trạng thái kích thích thứ nhất thì khối khí nhận thêm năng lượng và chuyển lên trạng thái kích thích mới. Biết rằng ở trạng thái kích thích mới, electron chuyển động trên quỹ đạo có bán kính gấp $49$ lần bán kính Bo thứ nhất. Số các bức xạ có tần số khác nhau tối đa mà khối khí hidro có thể phát ra là $N = 49 - 1 = 48$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $15$",
+            "B. $30$",
+            "C. $21$",
+            "D. $42$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $r_n = n^2 r_0 = 49 r_0 \\Rightarrow n = 7$ Số bức xạ có tần số khác nhau tối đa mà khối khí hidro có thể phát ra là: $n \\left( n - 1 \\right) / 2 = 7.6^2 = 21$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L0624029",
+        "question": "Một đám nguyên tử hiđrô đang ở trạng thái cơ bản. Khi chiếu bức xạ có tần số $f_1$ vào đám nguyên tử này thì chúng phát ra tối đa 3 bức xạ. Khi chiếu bức xạ có tần số $f_2$ vào đám nguyên tử này thì chúng phát ra tối đa 10 bức xạ. Biết năng lượng ứng với các trạng thái dừng của nguyên tử hiđrô được tính theo biểu thức $E_n = - E_0 n^2$ ($E_0$ là hằng số dương, $n = 1,2,3,…$). Tỉ số $\\frac{f_1}{f_2}$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $10 \\cdot 3$",
+            "B. $27 \\cdot 25$",
+            "C. $3 \\cdot 10$",
+            "D. $25 \\cdot 27$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Với tần số $f_1$, số bức xạ phát ra là: $n_1 (n_1 - 1)^2 = 3 \\Rightarrow n_1 = 3$ Với tần số $f_2$, số bức xạ phát ra là: $n_2 (n_2 - 1)^2 = 10 \\Rightarrow n_2 = 5$ Ta có: $\\begin{cases} h f_1 = E_3 - E_1 \\\\ h f_2 = E_5 - E_1 \\end{cases} \\Rightarrow \\frac{f_1}{f_2} = \\frac{E_3 - E_1}{E_5 - E_1} = \\frac{-E_0 9 - (-E_0 1)}{-E_0 25 - (-E_0 1)} = \\frac{-\\frac{1}{9} + 1}{-\\frac{1}{25} + 1} = \\frac{25}{27}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L0624030",
+        "question": "Biết năng lượng ứng với các trạng thái dừng của nguyên tử Hiđrô được tính theo biểu thức $E_n = - E_0 n^2$ ($E_0$ là hằng số dương và $n = 1, 2, 3,\\ldots$). Một đám nguyên tử hiđrô đang ở trạng thái cơ bản. Khi chiếu bức xạ có tần số $f_1$ vào đám nguyên tử này thì chúng phát ra tối đa 3 bức xạ. Khi chiếu bức xạ có tần số $f_2 = 1,08 f_1$ vào đám nguyên tử này thì chúng phát ra tối đa là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 10 bức xạ",
+            "B. 6 bức xạ",
+            "C. 4 bức xạ",
+            "D. 15 bức xạ"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com + Khi chiếu bức xạ có tần số $f_1$ vào đám nguyên tử này thì chúng phát ra tối đa 3 bức xạ: $N_1 = n_1 \\left( n_1 - 1 \\right) / 2 = 3 \\Rightarrow n_1 = 3 \\Rightarrow h f_1 = - E_0 \\frac{3}{2} - \\left( - E_0 \\frac{1}{2} \\right) = \\frac{8}{9} E_0$ + Lại có: $h f_2 = 1,08 \\cdot h f_1 = - E_0 \\frac{n_2^2}{2} - \\left( - E_0 \\frac{1}{2} \\right) \\Leftrightarrow 1,08 \\cdot \\frac{8}{9} E_0 = - E_0 \\frac{n_2^2}{2} + E_0 \\Rightarrow n_2 = 5$ Số bức xạ phát ra tối đa: $N_2 = n_2 \\left( n_2 - 1 \\right) / 2 = 5 \\cdot (5 - 1) / 2 = 10$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R001",
+        "question": "Mức năng lượng các trạng thái dừng của nguyên tử hiđrô được xác định bởi biểu thức: $E_n = - 13,6 \\, \\text{eV} \\,(với \\, n = 1, 2, 3…)$. Khi kích thích nguyên tử hiđrô chuyển từ trạng thái cơ bản lên trạng thái kích thích sao cho bán kính quỹ đạo dừng tăng 25 lần. Khi chuyển về quỹ đạo bên trong, nguyên tử hiđrô có thể phát ra phôtôn có bước sóng ngắn nhất bằng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 95,1 nm",
+            "B. 43,5 nm",
+            "C. 12,8 nm",
+            "D. 10,6 nm"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com + Bán kính quỹ đạo dừng của electron $r_n = n^2 r_0$ Ở trạng thái cơ bản $n = 1$, để bán kính tăng gấp 25 lần → $n = 5$ → Bước sóng ngắn nhất mà nguyên tử có thể phát ra ứng với sự chuyển từ mức năng lượng $E_5$ về $E_1$ => $\\lambda_{\\text{min}} = \\frac{h c}{(13,61 2 - 13,65 2)} = 1,6 \\cdot 10^{-19} = 96,1 \\,\\text{nm}$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R002",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo. Lấy $r_0 = 5,3 \\times 10^{-11} \\, \\text{m}$; $k = 9 \\times 10^{9} \\, \\text{N m}^{2} / \\text{C}^{2}$, $e = 1,6 \\times 10^{-19} \\, \\text{C}$. Khi hấp thụ năng lượng êlectron chuyển từ trạng thái cơ bản lên quỹ đạo M. Động năng của êlecton:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 'tăng một lượng $12,09 \\, \\text{eV}$'",
+            "B. 'giảm một lượng $9,057 \\, \\text{eV}$'",
+            "C. 'giảm một lượng $12,09 \\, \\text{eV}$'",
+            "D. 'tăng một lượng $9,057 \\, \\text{eV}$'"
+        ],
+        "answer": "C",
+        "explain": "F h t = F C L ⇔ m v^2 r = k \\frac{e^2}{r^2} \\Rightarrow E_d = \\frac{1}{2} m v^2 = k \\frac{e^2}{2 r} \\left\\{ \\begin{array}{l} E_d = \\frac{1}{2} m v^2 = k \\frac{e^2}{2 r} \\\\ E_t = - k \\frac{e^2}{r} \\end{array} \\right. \\Rightarrow E = E_d + E_t = k \\frac{e^2}{2 r} - k \\frac{e^2}{r} = - k \\frac{e^2}{2 r} = - E_d = - E_t \\frac{2 E_d}{1 - E_d} = - E_1 - (-E_2) = E_2 - E_1 = - 13, 632 + 13, 6 = 12, 089 \\, \\text{eV} Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R003",
+        "question": "Các mức năng lượng của các trạng thái dừng của nguyên tử Hiđrô được xác định bằng biểu thức $E_n = - 13,6 \\, \\text{eV} \\, ( \\text{với } n= 1,2,3,\\ldots)$. Ở trạng thái dừng này, electron trong nguyên tử chuyển động trên quỹ đạo dừng có bán kính $r_n = n^2 \\, r_0$ với $r_0$ là bán kính Bohr. Nếu một nguyên tử hiđrô hấp thụ một photôn có năng lượng $2,856 \\, \\text{eV}$ thì bán kính quỹ đạo dừng của electron trong nguyên tử đó sẽ tăng lên:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 2,25 lần",
+            "B. 9,00 lần",
+            "C. 6,25 lần",
+            "D. 4,00 lần"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Khi nguyên tử hấp thụ photon thì nó nhảy từ mức $m$ lên mức $n$. $h f = E_n - E_m = -E_0 \\frac{1}{n^2} - -E_0 \\frac{1}{m^2} = -E_0 \\left( \\frac{1}{n^2} - \\frac{1}{m^2} \\right) \\Rightarrow \\frac{1}{n^2} - \\frac{1}{m^2} = \\frac{2}{1} \\Rightarrow \\frac{m^2 - n^2}{m^2 n^2} = \\frac{2}{1} \\Rightarrow m n = 10 ; m^2 - n^2 = 2^1 \\Rightarrow m = 5 ; n = 2$ Tỉ số bán kính là: $\\frac{5}{2} \\cdot r_0^2 \\cdot 2 \\cdot r_0 = 6,25$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R004",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo. Khi electron trong nguyên tử chuyển động tròn trên quỹ đạo dừng O thì có tốc độ $v = 5 \\, \\text{m/s}$. Biết bán kính Bo là $r_0$. Nếu electron chuyển động trên một quỹ đạo dừng với thời gian chuyển động hết một vòng là $128 \\pi r_0 \\, \\text{s}$ thì electron này đang chuyển động trên quỹ đạo?.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. 'O'",
+            "B. 'M'",
+            "C. 'P'",
+            "D. 'N'"
+        ],
+        "answer": "D",
+        "explain": "Lực tĩnh điện giữa $e$ và hạt nhân đóng vai trò lực hướng tâm, nên ta có: $k \\cdot \\frac{e^2}{r^2} = m \\cdot \\frac{v^2}{r} \\Rightarrow v^2 = \\frac{k \\cdot e^2}{m \\cdot r} \\Rightarrow v = \\sqrt{\\frac{k \\cdot e^2}{m \\cdot n^2 \\cdot r_0}} = \\frac{1}{n} \\cdot \\sqrt{\\frac{k \\cdot e^2}{m \\cdot r_0}}$ $v_K = \\sqrt{\\frac{k \\cdot e^2}{m \\cdot r_0}}$ $v_O = \\frac{1}{5} \\cdot \\sqrt{\\frac{k \\cdot e^2}{m \\cdot r_0}} = \\frac{v_K}{5} = a \\left( = \\frac{v}{5} \\right)$ $v_n = v_K \\cdot n = 5 \\cdot a$ $n = v_n$ Chu kỳ chuyển động của hạt $e$ trên quỹ đạo là: $T = \\frac{2 \\pi r}{v} = \\frac{2 \\pi \\cdot n^2 \\cdot r_0}{\\sqrt{\\frac{k \\cdot e^2}{m \\cdot n^2 \\cdot r_0}}} = \\frac{2 \\pi \\cdot n^3 \\cdot \\sqrt{m \\cdot r_3^0}}{e \\cdot \\sqrt{k}}$ $T_n = \\frac{2 \\pi \\cdot n^2 \\cdot r_0}{5 a_n} = \\frac{2 \\pi \\cdot n^3 \\cdot r_0}{5 a} = 128 \\cdot \\pi \\cdot r_0 \\cdot v \\Rightarrow n = 4$ $n = 4$ là quỹ đạo dừng $N$ Đáp án cần chọn là: $D$."
+    },
+    {
+        "id": "L060R005",
+        "question": "Trong mẫu nguyên tử Bo, êlectron trong nguyên tử chuyển động trên các quỹ đạo dừng có bán kính $r_n = n^2 r_0$ ($r_0$ là bán kính Bo, $n \\in \\mathbb{N}^*$). Khi êlectron chuyển từ quỹ đạo dừng thứ $m$ về quỹ đạo dừng thứ $n$ thì bán kính giảm bớt $21\\, \\text{r}_0$ và nhận thấy chu kỳ quay của êlectron quanh hạt nhân giảm bớt $93,6\\%$. Bán kính của quỹ đạo dừng thứ $m$ có giá trị là:",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $25r_0$",
+            "B. $4r_0$",
+            "C. $16r_0$",
+            "D. $36r_0$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $r_m - r_n = 21 r_0 \\leftrightarrow m^2 - n^2 = 21$ Lại có: $F_d = F_{ht} \\leftrightarrow k \\frac{e^2}{r^2} = \\frac{m v^2}{r} = m \\omega^2 r = m \\left( 2 \\pi T \\right)^2 r \\rightarrow T^2 = \\frac{m}{4 \\pi^2 k} \\frac{e^2}{r^3} \\rightarrow \\left( \\frac{T_m}{T_n} \\right)^2 = \\left( \\frac{r_m}{r_n} \\right)^3 = \\left( \\frac{m^2 r_0}{n^2 r_0} \\right)^3 = \\left( m^2 n^2 \\right)^3$ Theo đề: $\\frac{T_m - T_n}{T_m} = 0,936 \\Leftrightarrow \\frac{T_n}{T_m} = 1 - 0,936 = \\frac{8}{125} \\Rightarrow \\left( \\frac{T_n}{T_m} \\right)^2 = \\left( \\frac{8}{125} \\right)^2 \\Leftrightarrow \\left( \\frac{n^2}{m^2} \\right)^3 = \\left( \\frac{8}{125} \\right)^2 \\Rightarrow n^2 m^2 = \\frac{4}{25} \\Rightarrow n^2 = \\frac{4}{25} m^2 (2)$ Giải (1); (2) ta có: $m^2 - \\frac{4}{25} m^2 = 21 \\Rightarrow m = 5 \\Rightarrow r_m = 5^2 r_0 = 25 r_0$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R006",
+        "question": "Biết năng lượng ứng với các trạng thái dừng của nguyên tử hiđrô được tính theo biểu thức $E_n = - E_0 n^2$ ($E_0$ là hằng số dương, $n = 1, 2, 3, \\ldots$). Một đám nguyên tử hiđrô đang ở trạng thái cơ bản. Khi chiếu bức xạ có tần số $f_1$ vào đám nguyên tử này thì chúng phát ra tối đa 3 bức xạ. Khi chiếu bức xạ có tần số $f_2 = 1,08 f_1$ vào đám nguyên tử này thì chúng phát ra tối đa là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 10 bức xạ",
+            "B. 6 bức xạ",
+            "C. 4 bức xạ",
+            "D. 15 bức xạ"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khi chiếu bức xạ có tần số $f_1$ vào đám nguyên tử thì chúng phát ra tối đa 3 bức xạ: ⇒ $n \\, (n - 1) \\, 2 = 3$ ⇒ $n = 3$ ⇒ $h f_1 = E_3 - E_1 \\, (1)$ Khi chiếu bức xạ có tần số $f_2 = 1,08 f_1$ thì: $h f_2 = E_x - E_1 \\, (2)$ Từ $(1)$ và $(2)$ ⇒ $\\frac{h f_2}{h f_1} = \\frac{E_x - E_1}{E_3 - E_1} \\Leftrightarrow 1,08 = \\frac{-E_{0x}^2 - (-E_{01}^2)}{-E_{03}^2 - (-E_{01}^2)} \\Leftrightarrow 1,08 = -\\frac{1}{x^2} + 1 - \\frac{1}{3^2} + 1 \\Rightarrow x = 5$ => Phát ra tối đa: $5 \\, (5 - 1) \\, 2 = 10$ bức xạ. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R007",
+        "question": "Theo Borh, trong nguyên tử hiđro electron chuyển động tròn quanh hạt nhân trên các quỹ đạo dừng dưới tác dụng của lực hút tĩnh điện. Chuyển động có hướng các điện tích qua một tiết diện là một dòng điện vì thế chuyển động của electron quanh hạt nhân là các dòng điện – gọi là dòng điện nguyên tử. Khi electron chuyển động trên quỹ đạo $L$ thì dòng điện nguyên tử có cường độ $I_1$, khi electron chuyển động trên quỹ đạo $N$ thì dòng điện nguyên tử có cường độ là $I_2$. Tỉ số $\\frac{I_1}{I_2}$ là..",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $1$ $4$",
+            "B. $1$ $8$",
+            "C. $4$",
+            "D. $8$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Trong nguyên tử Hidro chỉ có 1 proton và 1 electron chuyển động quanh hạt nhân, lực điện đóng vai trò lực hướng tâm. Ta có: $F = k \\cdot \\frac{|q \\cdot e|}{r^2} = m \\cdot \\frac{v^2}{r} \\Rightarrow v = \\sqrt{\\frac{k \\cdot e^2}{m \\cdot r}}$ Mặt khác, dòng điện là dòng điện tích dịch chuyển có hướng và có công thức xác định bằng điện lượng chuyển qua một tiết diện dây dẫn trong một đơn vị thời gian. $I = \\frac{\\Delta q}{\\Delta t} = n \\cdot e \\cdot t$ Với hạt electron, chuyển động tron đều quanh hạt nhân với tốc độ $v$. điện lượng chuyển qua trong 1 giây tỉ lệ với số lượt $e$ chuyển động 1 vòng quanh hạt nhân. => $I = n \\cdot e \\cdot t = f \\cdot e = 1 \\cdot T \\cdot e = 1 \\cdot s \\cdot v \\cdot e = \\frac{v}{s} \\cdot e = \\frac{v}{2 \\pi r} \\cdot e = \\frac{1}{2 \\pi r} \\cdot \\sqrt{\\frac{k \\cdot e^2}{m \\cdot r}} \\cdot e$ Các quỹ đạo K, L, M, N ứng với các số thứ tự : $n = 1, 2, 3, 4$. Mà bán kính quỹ đạo được xác định là : $r_n = n^2 \\cdot R_0$ Thay các giá trị với quỹ đạo L và quỹ đạo N vào biểu thức, lập tỉ số ta tìm được tỉ số: $I_1 = \\frac{1}{2 \\pi} \\cdot 2^2 \\cdot R_0 \\cdot \\sqrt{\\frac{k \\cdot e^2}{m \\cdot 2^2 \\cdot R_0}} \\cdot e$ $I_2 = \\frac{1}{2 \\pi} \\cdot 4^2 \\cdot R_0 \\cdot \\sqrt{\\frac{k \\cdot e^2}{m \\cdot 4^2 \\cdot R_0}} \\cdot e$ => $\\frac{I_1}{I_2} = \\frac{4^2 \\cdot \\sqrt{4^2}}{2^2 \\cdot \\sqrt{2^2}} = 8$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R008",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo. Khi êlectron chuyển động trên quỹ đạo tròn thì tương đương như một dòng điện tròn. Tỉ số cường độ dòng điện tròn của êlectron khi nguyên tử ở quỹ đạo dừng M và K là: $ \\frac{I_M}{I_K} = \\frac{n^2}{m^2} $ .",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1^3$",
+            "B. $1^9$",
+            "C. $1^{27}$",
+            "D. $1^{81}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Các electron chuyển động tròn dưới tác dụng của lực Culong Ta có $k \\frac{e^2}{r^2} = m \\omega^2 r \\Rightarrow \\omega = \\sqrt{\\frac{k e^2}{m r}}$ Khi ta coi chuyển động của electron giống như một dòng điện tròn thì cường độ dòng điện tròn được tính theo công thức $I = \\frac{e}{T} = \\frac{e}{2 \\pi \\omega} = \\frac{e}{2 \\pi \\sqrt{\\frac{k e^2}{m r}}}$ Do đó ta có tỉ số cường độ dòng điện khi electron chuyển động trên quỹ đạo dừng M (n = 3) và K (n = 1) là $\\frac{I_M}{I_K} = \\sqrt{\\frac{r_K}{r_M}} = \\sqrt{\\frac{1}{3^2}} = \\frac{1}{3}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R009",
+        "question": "Một ống Rơn-ghen trong mỗi giây bức xạ ra $N = 3 \\cdot 10^{14}$ phôtôn. Những phôtôn có năng lượng trung bình ứng với bước sóng $10^{-10} \\, \\text{m}$. Hiệu điện thế đặt vào hai đầu ống là $50 \\, \\text{kV}$. Cường độ dòng điện chạy qua ống là $1,5 \\, \\text{mA}$. Người ta gọi tỉ số giữa năng lượng bức xạ dưới dạng tia Rơn-ghen và năng lượng tiêu thụ của ống Rơn-ghen là hiệu suất của ống. Hiệu suất này xấp xỉ bằng:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,2\\%$",
+            "B. $60\\%$",
+            "C. $0,8\\%$",
+            "D. $3\\%$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có công suất tiêu thụ của ống là: $P_{tt} = U \\cdot I = 50 \\cdot 10^3 \\cdot 1,5 \\cdot 10^{-3} = 75 \\, \\text{W}$ Công suất của ống là: $P_{RG} = 3 \\cdot 10^{14} \\cdot h_c \\cdot \\lambda = 3 \\cdot 10^{14} \\cdot 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8 \\cdot 10^{-10} = 0,59625 \\, \\text{W}$ Vậy hiệu suất của ống là: $H = \\frac{P_{RG}}{P_{tt}} \\cdot 100\\% = \\frac{0,59625}{75} \\cdot 100\\% = 0,8 \\%$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R010",
+        "question": "Khi electron ở các quỹ đạo bên ngoài chuyển về quỹ đạo K, các nguyên tử Hiđro phát ra các photon mang năng lượng từ $10,2 \\, \\text{eV}$ đến $13,6 \\, \\text{eV}$. Lấy $h = 6,625 \\times 10^{-34} \\, \\text{J.s}$, $c = 3 \\times 10^{8} \\, \\text{m/s}$, $e = 1,6 \\times 10^{-19} \\, \\text{C}$. Khi các electron ở các quỹ đạo bên ngoài chuyển về quỹ đạo L, các nguyên từ phát ra các photon có bước sóng lớn nhất ứng với bước sóng.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 122 n m",
+            "B. 91,2 n m",
+            "C. 365 n m",
+            "D. 656 n m"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $h c \\lambda = \\Delta E$ => $\\lambda$ lớn nhất tương ứng với nhỏ nhất <=> electron chuyển từ mức $M$ về mức $L$ $h c \\lambda = E_3 - E_2 = 13,6 \\times 10^{-19} - 13,6 \\times 10^{-19} \\, 2 - 13,6 \\times 10^{-19} \\, 3 \\Rightarrow \\lambda = 6,576286 \\times 10^{-7} \\, \\text{m}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R011",
+        "question": "Xét nguyên tử hiđrô theo mẫu nguyên tử Bo, khi êlectron trong nguyên tử chuyển động tròn đều trên quỹ đạo dừng $M$ thì có tốc độ $v \\,(m/s)$. Biết bán kính Bo là $r_0$. Nếu êlectron chuyển động trên một quỹ đạo dừng với thời gian chuyển động hết một vòng là $144 \\pi \\, r_0 \\,(s)$ thì êlectron này đang chuyển động trên quỹ đạo.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $P$",
+            "B. $N$",
+            "C. $M$",
+            "D. $O$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Khi electron chuyển động trên các quỹ đạo dừng khác nhau thì lực Cu-lông đóng vai trò là lực hướng tâm. Do đó ta có $m \\frac{v^2}{r} = k \\frac{q^2}{r^2} \\Rightarrow v = |q| \\sqrt{\\frac{k}{m} r}$. Ta suy ra: $v = |q| n \\sqrt{\\frac{k}{m} r_0}$. Vận tốc trên quỹ đạo M: $v_M = |q| n_M \\sqrt{\\frac{k}{m} r_0}$. *Thời gian electrôn chuyển động hết 1 vòng chính là chu kỳ (Xét trên quỹ đạo dừng bất kỳ nào đó ta chưa biết). $T = 2 \\pi r \\frac{v}{v_M} = 144 \\pi r_0 \\Rightarrow \\frac{n^2 r_0}{v} = \\frac{v}{v_M} \\cdot 72 r_0 \\Rightarrow n^2 = n_M n \\cdot 72 \\Rightarrow n^3 = 72 n_M = 72,3 \\Rightarrow n = 6$. $n = 6$ tương ứng với electron chuyển động trên quỹ đạo P. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R012",
+        "question": "Một điện tích $Q$ bằng kim loại có khối lượng $10\\, \\text{g}$ đang đứng yên trong khoảng chân không có điện trường đều, vecto cường độ điện trường $E$ có phương thẳng đứng hướng xuống. Chiếu vào $Q$ chùm bức xạ điện từ sao cho xảy ra hiện tượng quang điện trong khoảng thời gian rất ngắn, sau đó $Q$ chuyển động nhanh dần đều đi xuống với gia tốc $5,6\\, \\text{m/s}^2$. Coi độ lớn cường độ điện trường luôn bằng $10^4\\, \\text{V/m}$ và lấy $e = 1,6 \\times 10^{-19}\\, \\text{J}$. Số electron bật ra và dấu ban đầu của $Q$ là.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $35,1015$ và $Q > 0$",
+            "B. $35,1015$ và $Q < 0$",
+            "C. $35,1012$ và $Q > 0$",
+            "D. $35,1012$ và $Q < 0$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com + Ban đầu điện tích đứng yên → Lực điện thẳng đứng hướng lên, $\\vec{E}$ thẳng đứng hướng xuống → $\\vec{F} \\uparrow \\downarrow \\vec{E} \\rightarrow Q < 0 + Khi xảy ra hiện tượng quang điện trong thời gian rất ngắn → Độ lớn lực $\\vec{F}$ giảm (và $F < P$) nhưng chiều của lực điện và dấu của điện tích không đổi → $Q' $ chuyển động nhanh dần đều đi xuống với độ lớn gia tốc: $a = m g - \\frac{| Q' | E}{m} = g \\, \\text{10} \\, \\left( \\frac{m}{s^2} \\right) - \\frac{| Q' | E}{m} = 5,6 \\rightarrow | Q' | = 0,44 \\cdot 10^{-5} \\, \\text{(C)}$. + Ta có: $| Q' | = | Q | - n e \\rightarrow n = \\frac{| Q | - | Q' |}{e} = 3,5 \\cdot 10^{13} \\, \\text{(electron)}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R013",
+        "question": "Giới hạn quang điện của Cu là $300 \\, \\text{nm}$. Công thoát của electron khỏi Cu là:",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $3,6 \\text{ eV}$",
+            "B. $4,14 \\text{ eV}$",
+            "C. $2,7 \\text{ eV}$",
+            "D. $5 \\text{ eV}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có: $λ_0 = 300 \\, \\text{nm} = 3 \\cdot 10^{-7} \\, \\text{m}$ - Áp dụng công thức tính công thoát: $A = \\frac{h \\cdot c}{λ_0} = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{3 \\cdot 10^{-7}} = 6,625 \\cdot 10^{-19} \\, \\text{J} = \\frac{6,625 \\cdot 10^{-19}}{1,6 \\cdot 10^{-19}} = 4,14 \\, \\text{eV}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R014",
+        "question": "Các bức xạ trong dãy Banme thuộc vùng nào trong các vùng sau?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Vùng hồng ngoại",
+            "B. Một phần nằm trong vùng ánh sáng nhìn thấy, một phần nằm trong vùng tử ngoại",
+            "C. Vùng tử ngoại",
+            "D. Vùng ánh sáng nhìn thấy"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A – sai vì các bức xạ trong dãy Passen mới thuộc vùng hồng ngoại B – đúng vì các bức xạ của dãy Banme một phần nằm trong vùng ánh sáng nhìn thấy, một phần nằm trong vùng tử ngoại C – sai vì các bức xạ trong dãy Lai man mới thuộc vùng tử ngoại D – sai vì các bức xạ của dãy Banme một phần nằm trong vùng ánh sáng nhìn thấy, một phần nằm trong vùng tử ngoại Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R015",
+        "question": "Kim loại dùng làm Catot của một tế bào quang điện có $A = 6 , 625 \\, \\text{eV}$. Lần lượt chiếu vào catot các bước sóng: $\\lambda_1 = 0 , 1875 \\, \\text{μm}$; $\\lambda_2 = 0 , 1925 \\, \\text{μm}$; $\\lambda_3 = 0 , 1685 \\, \\text{μm}$. Hỏi bước sóng nào gây ra được hiện tượng quang điện?.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $λ_1 , λ_2 , λ_3$",
+            "B. $λ_2 , λ_3$",
+            "C. $λ_1 , λ_3$",
+            "D. $λ_3$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có: $A = h \\cdot c \\cdot \\lambda_0 \\Rightarrow \\lambda_0 = \\frac{h \\cdot c}{A} = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8}}{6,625 \\cdot 1,6 \\cdot 10^{-19}} = 0,1875 \\cdot 10^{-6} \\, \\text{m} = 0,1875 \\, \\mu \\text{m}$ - Điều kiện xảy ra hiện tượng quang điện là: $\\lambda \\leq \\lambda_0 \\Rightarrow \\lambda_1, \\lambda_3$ gây ra được hiện tượng quang điện Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R016",
+        "question": "Động năng ban đầu cực đại của các e phụ thuộc vào?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Năng lượng của photon chiếu tới",
+            "B. Cường độ bức xạ chiếu tới",
+            "C. Công thoát",
+            "D. Cả A và C"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com - Sử dụng công thức Anhxtanh: $ξ = A + W_{o \\, \\text{d max}}$ → $W_{o \\, \\text{d max}} = ξ − A$ → Động năng ban đầu cực đại của các e phụ thuộc vào năng lượng của photon chiếu tới và công thoát → D đúng Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R017",
+        "question": "Chiếu một chùm bức xạ đơn sắc vào một tấm kẽm có giới hạn quang điện $0,35 \\, \\text{μm}$. Hiện tượng quang điện sẽ không xảy ra khi chùm bức xạ có bước sóng là.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $0,1 \\, \\mu m$",
+            "B. $0,2 \\, \\mu m$",
+            "C. $0,3 \\, \\mu m$",
+            "D. $0,4 \\, \\mu m$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có: $λ_0 = 0,35 \\,\\text{μm}$ - Sử dụng điều kiện xảy ra hiện tượng quang điện là: $λ \\leq λ_0 \\rightarrow$ hiện tượng quang điện sẽ không xảy ra với bước sóng là $0,4 \\,\\text{μm}$. Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R018",
+        "question": "Theo quan điểm của thuyết lượng tử phát biểu nào sau đây là không đúng?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Chùm ánh sáng là một dòng hạt, mỗi hạt là một phôtôn mang năng lượng",
+            "B. Cường độ chùm sáng tỉ lệ thuận với số phôtôn trong chùm",
+            "C. Khi ánh sáng truyền đi năng lượng của phôtôn ánh sáng không đổi, không phụ thuộc khoảng cách đến nguồn sáng",
+            "D. Các phôtôn có năng lượng bằng nhau vì chúng lan truyền với vận tốc bằng nhau"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com A,B,C – đúng D – sai vì các photon bay dọc theo tia sáng với tốc độ $c = 3,10 \\times 10^8 \\, \\text{m/s}$, tuy nhiên các photon trong các chùm sáng khác nhau có bước sóng khác nhau, dẫn tới năng lượng $ξ = \\frac{h \\cdot c}{\\lambda}$ là khác nhau Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R019",
+        "question": "Công thoát của kim loại Na là $2,48 \\, \\text{eV}$. Chiếu một chùm bức xạ có bước sóng $0,36 \\, \\mu \\text{m}$ vào tế bào quang điện có catôt làm bằng Na thì cường độ dòng quang điện bão hoà là $3 \\, \\text{mA}$. Số êlectron bị bứt ra khỏi catôt trong mỗi giây là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $1,875 \\cdot 10^{16}$",
+            "B. $2,544 \\cdot 10^{16}$",
+            "C. $3,263 \\cdot 10^{12}$",
+            "D. $4,827 \\cdot 10^{12}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $n_e = I_b h_e = 3 \\cdot 10^{-3} \\, \\text{A} \\cdot 6 \\cdot 10^{-19} = 1,875 \\cdot 10^{16}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R020",
+        "question": "Phát biểu nào sau đây là ĐÚNG khi nói về quang phổ của nguyên tử H.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Quang phổ của nguyên tử H là quang phổ liên tục",
+            "B. Các vạch màu trong quang phổ có màu biến thiên liên tục từ đỏ đến tím",
+            "C. Giữa các dãy Laiman, Banme, Passen không có ranh giới xác định",
+            "D. A, B, C đều sai"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com A,B- sai vì quang phổ của nguyên tử H là quang phổ vạch, gồm 4 vạch màu đỏ, lam, chàm, tím C- sai vì giữa các dãy Laiman, Banme, Passen có ranh giới xác định D- đúng Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R021",
+        "question": "Giới hạn quang điện của Na là $0,50 \\, \\text{μm}$. Chiếu vào Na tia tử ngoại có bước sóng $\\lambda = 0,25 \\, \\text{μm}$. Vận tốc ban đầu cực đại của electron quang điện là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $9,105 \\, \\text{m/s}$",
+            "B. $9,34 \\cdot 10^5 \\, \\text{m/s}$",
+            "C. $8,105 \\, \\text{m/s}$",
+            "D. $8,34 \\cdot 10^5 \\, \\text{m/s}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com $λ = 0,25 \\, \\text{μm} = 0,25 \\cdot 10^{-6} \\, \\text{m}$; $λ_0 = 0,50 \\, \\text{μm} = 0,5 \\cdot 10^{-6} \\, \\text{m}$ Ta có: $ξ = A + W_o d_{max} \\rightarrow h \\cdot c \\cdot λ = h \\cdot c \\cdot λ_0 + \\frac{1}{2} m v_{max}^2 \\rightarrow v_{max} = \\sqrt{\\frac{2 \\cdot h \\cdot c}{m} \\left( \\frac{1}{λ} - \\frac{1}{λ_0} \\right)} = \\sqrt{\\frac{2 \\cdot 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{9,1 \\cdot 10^{-31} \\left( \\frac{1}{0,25 \\cdot 10^{-6}} - \\frac{1}{0,5 \\cdot 10^{-6}} \\right)} = 9,34 \\cdot 10^5 \\, \\text{m/s} Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R022",
+        "question": "Gọi $λ_α$ và $λ_β$ lần lượt là 2 bước sóng của 2 vạch $H_α$ và $H_β$ trong dãy Banme. Gọi $λ_1$ là bước sóng của vạch đầu tiên trong dãy Pasen. Xác định mối liên hệ của $λ_α$, $λ_β$, $λ_1$.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $1 \\lambda_1 = 1 \\lambda_\\beta + 1 \\lambda_\\alpha$",
+            "B. $\\lambda_1 = \\lambda_\\beta - \\lambda_\\alpha$",
+            "C. $1 \\lambda_1 = 1 \\lambda_\\beta - 1 \\lambda_\\alpha$",
+            "D. $\\lambda_1 = \\lambda_\\beta + \\lambda_\\alpha$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Thay $ \\lambda_{\\alpha} = \\lambda_{d0} $; $ \\lambda_{\\beta} = \\lambda_{lam} \\rightarrow 1 \\, \\lambda_{1} = \\frac{1}{\\lambda_{\\beta}} - \\frac{1}{\\lambda_{\\alpha}} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R023",
+        "question": "Chiếu ánh sáng đơn sắc có bước sóng $320 \\,\\text{nm}$ vào bề mặt ca tốt của một tế bào quang điện làm bằng xedi có giới hạn quang điện là $\\lambda_0 = 660 \\,\\text{nm}$. Hiệu điện thế hãm của nó có giá trị là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $0,3 \\, V$",
+            "B. $1,9 \\, V$",
+            "C. $2 \\, V$",
+            "D. $3 \\, V$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\xi = A + e \\cdot U_h $ → $ h \\cdot c = \\frac{h \\cdot c}{\\lambda} + e \\cdot U_h $ → $ U_h = \\frac{h \\cdot c}{e} \\left( \\frac{1}{\\lambda} - \\frac{1}{\\lambda_0} \\right) = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8 \\cdot \\frac{1,6 \\cdot 10^{-19}}{(1,320 \\cdot 10^{-9} - 1,660 \\cdot 10^{-9})} = 2 \\, \\text{V} $ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R024",
+        "question": "Dãy Laiman trong quang phổ vạch của Hiđrô ứng với sự dịch chuyển của các electron từ các quỹ đạo dừng có năng lượng cao về quỹ đạo $ n = 1 $.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. K",
+            "B. L",
+            "C. M",
+            "D. N"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: Dãy Laiman trong quang phổ vạch của Hiđrô ứng với sự dịch chuyển của các electron từ các quỹ đạo dừng có năng lượng cao về quỹ đạo $K$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R025",
+        "question": "Trong một tế bào quang điện có $I_{bh} = 2 \\, \\mu A$ và hiệu suất lượng tử là $0,5 \\%$. Số photon đến Ca tốt mỗi giây là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4 \\cdot 10^{15}$",
+            "B. $3 \\cdot 10^{15}$",
+            "C. $2,5 \\cdot 10^{15}$",
+            "D. $5 \\cdot 10^{14}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có: $n_e = I_b h_e = 2 \\cdot 10^{-6} \\, \\text{A}, \\, 6 \\cdot 10^{-19} = 1,25 \\cdot 10^{13}$. Lại có: $H = n_e N_f \\cdot 100 \\% \\rightarrow N_f = 1,25 \\cdot 10^{13} \\cdot 100 \\% \\, 0,5 = 2,5 \\cdot 10^{15}$. Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R026",
+        "question": "Chiếu một bức xạ có bước sóng $ \\lambda = 0,48 \\,\\text{µm} $ lên một tấm kim loại có công thoát $ A = 2,4 \\cdot 10^{-19} \\,\\text{J} $. Dùng màn chắn tách ra một chùm hẹp các êlectron quang điện và hướng chúng bay theo chiều véc tơ cường độ điện trường có $ E = 1000 \\,\\text{V/m} $. Quãng đường tối đa mà êlectron chuyển động được theo chiều véc tơ cường độ điện trường xấp xỉ là:.",
+        "image_source": null,
+        "difficulty": 3,
+        "options": [
+            "A. $0,83\\, \\text{cm}$",
+            "B. $0,37\\, \\text{cm}$",
+            "C. $1,53\\, \\text{cm}$",
+            "D. $0,109\\, \\text{cm}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com + Theo công thức Anh - xtanh : $h c \\lambda = A + \\frac{1}{2} m v_0^2 \\Rightarrow v_0^2 = \\frac{2 m (h c \\lambda - A)}{m_e = 9,1 \\cdot 10^{-31} \\, \\text{kg}}$ + Ta có: $a = \\frac{F}{m} = \\frac{q E}{m}$ + Chuyển động của $e$ là chuyển động chậm dần đều với vận tốc đầu $v_0$ và gia tốc $a$ Electron dừng $\\Rightarrow v = 0 \\Leftrightarrow 0^2 - v_0^2 = 2 a s \\Rightarrow s = - \\frac{v_0^2}{2 a} = - \\frac{2 m (h c \\lambda - A)}{2 q E} = - \\frac{h c \\lambda - A}{q E} \\Rightarrow s = 0,109 \\, \\text{cm}$ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R027",
+        "question": "Cho giới hạn quang điện của catot là $λ_0 = 660 \\, \\text{nm}$ và đặt vào đó giữa Anot và Catot một $U_{AK} = 1,5 \\, \\text{V}$. Dùng bức xạ có $λ = 330 \\, \\text{nm}$. Động năng cực đại của các quang electron khi đập vào anot là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3,01 \\cdot 10^{-19} J$",
+            "B. $4 \\cdot 10^{-20} J$",
+            "C. $5 \\cdot 10^{-20} J$",
+            "D. $5,41 \\cdot 10^{-19} J$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có, $ξ = A + W_{o} d_{max} \\rightarrow h \\cdot c \\cdot \\lambda = h \\cdot c \\cdot \\lambda_{0} + W_{o} d_{max} \\rightarrow W_{o} d_{max} = h \\cdot c \\cdot \\left( \\frac{1}{\\lambda} - \\frac{1}{\\lambda_{0}} \\right) = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot \\left( \\frac{1}{0,33 \\cdot 10^{-6}} - \\frac{1}{0,66 \\cdot 10^{-6}} \\right) = 3,01 \\cdot 10^{-19} \\, \\text{J} - Sử dụng định lí biến thiên động năng: W_{d_{max}} - W_{o} d_{max} = e \\cdot U_{A K} \\rightarrow W_{d_{max}} = W_{o} d_{max} + e \\cdot U_{A K} = 3,01 \\cdot 10^{-19} + 1,6 \\cdot 10^{-19} \\cdot 1,5 = 5,41 \\cdot 10^{-19} \\, \\text{J} Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R028",
+        "question": "Ca tốt của một tế bào quang điện có công thoát electron $A = 1,188 \\, \\text{eV}$. Chiếu một chùm ánh sáng có bước sóng $\\lambda$ vào ca tốt này thì hiện tượng quang điện xảy ra. Để triệt tiêu hoàn toàn dòng quang điện thì hiệu điện thế hãm có độ lớn $1,15 \\, \\text{V}$. Nếu cho $U_{AK} = 4 \\, \\text{V}$ thì động năng lớn nhất của electron khi tới anot bằng bao nhiêu?.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5,15 \\text{eV}$",
+            "B. $51,5 \\text{eV}$",
+            "C. $0,515 \\text{eV}$",
+            "D. $5,45 \\text{eV}$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com + Theo đề bài, khi xảy ra hiện tượng quang điện thì để triệt tiêu hoàn toàn dòng quang điện thì cần hiệu điện thế hãm $U_h = 1,15 \\,\\text{V}$ => Động năng ban đầu cực đại của quang electron khi thoát ra khỏi bề mặt ca tốt là $W_{đmax} = e.U_h = 1,15 \\,\\text{eV}$ + Nếu ta đặt vào hai đầu anôt và catôt một hiệu điện thế $U_{AK} = 4\\,\\text{V}$ Theo định lí động năng ta có: $\\Delta W_{đ} = A \\Leftrightarrow W_{đmax} - W_{đ0max} = e.U_{AK} = 4\\,\\text{eV} \\Rightarrow W_{đmax} = W_{đ0max} + e.U_{AK} = 1,15 + 4 = 5,15 \\,\\text{eV}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R029",
+        "question": "Chiếu ánh sáng đơn sắc có bước sóng $λ = 330 \\, \\text{nm}$ vào bề mặt ca tốt của một tế bào quang điện hiệu điện thế hãm của nó có giá trị là $U_h$. Cho giới hạn quang điện của catot là $λ_0 = 660 \\, \\text{nm}$ và đặt vào đó giữa Anot và Catot một $U_{AK} = 1,5 \\, \\text{V}$. Tính động năng cực đại của các quang electron khi đập vào anot nếu dùng bức xạ $λ' = 282,5 \\, \\text{nm}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $5,41 \\times 10^{-19} \\text{J}$ ",
+            " B. $6,42 \\times 10^{-19} \\text{J}$ ",
+            " C. $3,05 \\times 10^{-19} \\text{J}$ ",
+            " D. $7,47 \\times 10^{-19} \\text{J}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có, $ξ = A + W_{\\text{o}d\\, \\text{max}} \\rightarrow h \\cdot c \\cdot \\lambda = h \\cdot c \\cdot \\lambda_{0} + W_{\\text{o}d\\, \\text{max}} \\rightarrow W_{\\text{o}d\\, \\text{max}} = h \\cdot c \\cdot \\left( \\frac{1}{\\lambda} - \\frac{1}{\\lambda_{0}} \\right) = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot \\left( \\frac{1}{0,2825 \\cdot 10^{-6}} - \\frac{1}{0,66 \\cdot 10^{-6}} \\right) = 4,02 \\cdot 10^{-19}\\, \\text{J} - Sử dụng định lí biến thiên động năng: W_{\\text{d}\\, \\text{m} \\text{ax}} - W_{\\text{o}d\\, \\text{max}} = e \\cdot U_{A\\, \\text{K}} \\rightarrow W_{\\text{d}\\, \\text{m} \\text{ax}} = W_{\\text{o}d\\, \\text{max}} + e \\cdot U_{A\\, \\text{K}} = 4,02 \\cdot 10^{-19} + 1,6 \\cdot 10^{-19} \\cdot 1,5 = 6,42 \\cdot 10^{-19}\\, \\text{J} Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R030",
+        "question": "Chiếu ánh sáng đơn sắc có bước sóng $λ = 546 \\,\\text{nm}$ vào bề mặt ca tốt của một tế bào quang điện, có $I_{bh} = 2 \\,\\text{mA}$. Công suất lượng tử là $P = 1,515 \\,\\text{W}$. Tính hiệu suất lượng tử.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $30,03 \\times 10^{-2}\\%$",
+            "B. $42,25 \\times 10^{-2}\\%$",
+            "C. $51,56 \\times 10^{-2}\\%$",
+            "D. $62,25 \\times 10^{-2}\\%$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com - Ta có: $n_e = I_b h_e = 2 \\cdot 10^{-3} \\, \\text{1}, 6 \\cdot 10^{-19} = 1, 25 \\cdot 10^{16}$. $n_f = P \\xi = P h c \\lambda = 1, 515 \\, \\text{6}, 625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot 546 \\cdot 10^{-9} = 4, 16 \\cdot 10^{18}$. $H = n_e N_f \\cdot 100\\% = 1, 25 \\cdot 10^{16} \\cdot 4, 16 \\cdot 10^{18} = 30 \\cdot 10^{-2} \\%$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R031",
+        "question": "Năng lượng cần thiết để iôn hoá nguyên tử kim loại là $2,2\\, \\text{eV}$. Kim loại này có giới hạn quang điện là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0,49 μm",
+            "B. 0,56 μm",
+            "C. 0,65 μm",
+            "D. 0,9 μm"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $Δ W = \\frac{h c}{\\lambda_0} \\rightarrow \\lambda_0 = \\frac{h c}{Δ W} = \\frac{6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^8}{2,1 \\cdot 6 \\cdot 10^{-19}} = 5,6 \\cdot 10^{-7}\\, \\text{m} = 0,56\\, \\mu m$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R032",
+        "question": "Chiếu đồng thời hai bức xạ vào một tế bào quang điện, ta cần dùng các hiệu điện thế hãm để triệt tiêu dòng quang điện. Cho biết $U_{h1} = 2 U_{h2}$. Hỏi có thể kết luận gì?",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. $λ_1 = \\sqrt{2} λ_2$",
+            "B. $λ_1 < λ_2$",
+            "C. $λ_1 > λ_2$",
+            "D. $λ_1 = 2 λ_2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\xi = A + e \\cdot U_h $ → $ \\xi_1 = A + e \\cdot U_{h1} $ ; $ \\xi_2 = A + e \\cdot U_{h2} $ Vì $ U_{h1} = 2 U_{h2} $ → $ \\xi_1 > \\xi_2 $ Lại có: $ \\xi = \\frac{h \\cdot c}{\\lambda} $ → $ \\lambda_1 < \\lambda_2 $ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R033",
+        "question": "Kim loại dùng làm catôt của một tế bào quang điện có công thoát là $2,2\\, \\text{eV}$. Chiếu vào catôt bức xạ điện từ có bước sóng $\\lambda$. Để triệt tiêu dòng quang điện cần đặt một hiệu điện thế hãm $U_h = 0,4\\, \\text{V}$. Tần số của bức xạ điện từ là: $f = \\frac{c}{\\lambda}$.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $3,75 \\cdot 10^{14} \\text{ Hz}$",
+            "B. $4,58 \\cdot 10^{14} \\text{ Hz}$",
+            "C. $5,83 \\cdot 10^{14} \\text{ Hz}$",
+            "D. $6,28 \\cdot 10^{14} \\text{ Hz}$"
+        ],
+        "answer": "D",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ \\xi = A + e \\cdot U_h $ → $ h \\cdot f = A + e \\cdot U_h $ → $ f = A + e \\cdot U_h $ $ h = 2 , 2\\, \\text{.} 1\\, 6\\, \\cdot 10^{-19} + 1 , 6\\, \\cdot 10^{-19} \\cdot 0 , 4 \\cdot 6 , 625\\, \\cdot 10^{-34} = 6 , 28\\, \\cdot 10^{14}\\, \\text{(H z)} $ Đáp án cần chọn là: D."
+    },
+    {
+        "id": "L060R034",
+        "question": "Phát biểu nào sau đây không đúng khi nói về hiện tượng quang dẫn.",
+        "image_source": null,
+        "difficulty": 0,
+        "options": [
+            "A. Hiện tượng giải phóng electron liên kết thành electron dẫn gọi là hiện tượng quang điện bên trong",
+            "B. Có thể gây ra hiện tượng quang dẫn với ánh sáng kích thích có bước sóng dài hơn giới hạn quang dẫn",
+            "C. Mỗi phôtôn khi bị hấp thụ sẽ giải phóng một electron liên kết thành một electron tự do gọi là electron dẫn",
+            "D. Một lợi thế của hiện tượng quang dẫn là ánh sáng kích thích không cần phải có bước sóng ngắn"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com A,C- đúng vì Hiện tượng quang dẫn là hiện tượng khi chiếu ánh sáng thích hợp vào một khối bán dẫn, electron liên kết được giải phóng tạo thành electron dẫn B- sai vì giới hạn quang dẫn $ \\lambda_0 $ là bước sóng kích thích dài nhất mà còn có thể gây ra hiện tượng quang dẫn D- đúng vì ánh sáng kích thích của hiện tượng quang dẫn không cần phải có năng lượng lớn Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R035",
+        "question": "Cho $h = 6,625 \\times 10^{-34} \\,\\text{Js}$, $c = 3 \\times 10^8 \\,\\text{m/s}$. Tính năng lượng của phôtôn có bước sóng $500 \\,\\text{nm}$?",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $4 \\cdot 10^{-16} \\text{J}$",
+            "B. $3,9 \\cdot 10^{-17} \\text{J}$",
+            "C. $2,5 \\text{eV}$",
+            "D. $24,8 \\text{eV}$"
+        ],
+        "answer": "C",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ξ = h \\cdot f = h \\cdot \\frac{c}{\\lambda} = 6,625 \\cdot 10^{-34} \\cdot 3 \\cdot 10^{8} \\cdot 500 \\cdot 10^{-9} = 3,975 \\cdot 10^{-19} \\, \\text{J} = 2,5 \\, \\text{eV}$ Đáp án cần chọn là: C."
+    },
+    {
+        "id": "L060R036",
+        "question": "Nguyên tắc hoạt động của quang trở dựa vào hiện tượng nào?",
+        "image_source": null,
+        "difficulty": 1,
+        "options": [
+            "A. Hiện tượng quang điện trong",
+            "B. Hiện tượng quang điện ngoài",
+            "C. Hiện tượng phát quang của chất bán dẫn",
+            "D. Hiện tượng phát quang của các chất rắn"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com B, C, D- sai vì quang điện trở hoạt động dựa trên hiện tượng quang điện trong. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R037",
+        "question": "Công thoát của kim loại làm catốt của một tế bào quang điện là $2,5\\, \\text{eV}$. Khi chiếu bức xạ có bước sóng $\\lambda$ vào catốt thì các electron quang điện bật ra có động năng cực đại là $1,5\\, \\text{eV}$. Bước sóng của bức xạ nói trên là:",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 0 , 31 μ m",
+            "B. 3 , 2 μ m",
+            "C. 0 , 49 μ m",
+            "D. 4 , 9 μ m"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $ξ = A + W_0 d_{max} \\rightarrow h \\cdot c \\,\\text{λ} = A + W_0 d_{max} \\rightarrow \\text{λ} = h \\cdot c \\,\\text{A} + W_0 d_{max} = 6\\,625\\cdot10^{-34} \\cdot 3\\cdot10^{8} \\cdot (2\\,5 + 1\\,5) \\cdot 1\\,6\\cdot10^{-19} = 3\\,1\\cdot10 = 0\\,31 \\,\\text{μm} Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R038",
+        "question": "Cường độ dòng điện bão hòa bằng $40 \\, \\mu \\text{A}$ thì số electron bị bứt ra khỏi catốt tế bào quang điện trong 1 giây là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $25,1013$",
+            "B. $25,1014$",
+            "C. $50,1012$",
+            "D. $5,1012$"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $n_e = I_b h_e = 40 \\cdot 10^{-6} \\, \\text{A} \\cdot 1,6 \\cdot 10^{-19} = 2,5 \\cdot 10^{14} \\, \\text{Hz}$ Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R039",
+        "question": "Chất lỏng fluorexein hấp thụ ánh sáng kích thích có bước sóng $λ = 0,48\\, \\text{μm}$ và phát ra ánh sáng có bước sóng $λ' = 0,64\\, \\text{μm}$. Biết hiệu suất của sự phát quang này là 90% (hiệu suất của sự phát quang là tỉ số giữa năng lượng của ánh sáng phát quang và năng lượng của ánh sáng kích thích trong một đơn vị thời gian), số phôtôn của ánh sáng kích thích chiếu đến trong 1s là $2012,10^{10}$ hạt. Số phôtôn của chùm sáng phát quang phát ra trong 1s là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $2,6827 \\cdot 10^{12}$",
+            "B. $2,4144 \\cdot 10^{13}$",
+            "C. $1,3581 \\cdot 10^{13}$",
+            "D. $2,9807 \\cdot 10^{11}$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: - Năng lượng của ánh sáng kích thích đến trong 1 s là: $E_1 = N_1 \\cdot \\xi_1 = N_1 \\cdot h \\cdot \\frac{c}{\\lambda_1}$ - Năng lượng của ánh sáng phát ra trong 1 s là: $E_2 = N_2 \\cdot \\xi_2 = N_2 \\cdot h \\cdot \\frac{c}{\\lambda_2}$ - Ta lại có: hiệu suất của sự phát quang: $H = \\frac{E_2}{E_1} \\cdot 100 \\% = \\frac{N_2 \\cdot \\lambda_1}{N_1 \\cdot \\lambda_2} \\cdot 100 \\% \\rightarrow N_2 = H \\cdot \\frac{N_1 \\cdot \\lambda_2}{\\lambda_1} \\cdot 100 \\% = 90,2012 \\cdot 10^{10} \\cdot 0,64 \\cdot 10^{-6} \\cdot 0,48 \\cdot 10^{-6} \\cdot 100 \\% = 2,4144 \\cdot 10^{13} \\, \\text{(hạt)}$ Đáp án cần chọn là: B."
+    },
+    {
+        "id": "L060R040",
+        "question": "Nguồn sáng thứ nhất có công suất $P_1$ phát ra ánh sáng đơn sắc có bước sóng $\\lambda_1 = 450 \\,\\text{nm}$. Nguồn sáng thứ hai có công suất $P_2$ phát ra ánh sáng đơn sắc có bước sóng $\\lambda_2 = 0,60 \\,\\text{μm}$. Trong cùng một khoảng thời gian, tỉ số giữa số photon mà nguồn thứ nhất phát ra so với số photon mà nguồn thứ hai phát ra là 3:1. Tỉ số $P_1$ và $P_2$ là:.",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. 4",
+            "B. $\\frac{9}{4}$",
+            "C. $\\frac{4}{3}$",
+            "D. 3"
+        ],
+        "answer": "A",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $n_f = \\frac{P}{\\xi} = \\frac{P}{h c \\lambda} \\rightarrow \\frac{n_f^1}{n_f^2} = \\frac{P_1 \\cdot \\lambda_1}{P_2 \\cdot \\lambda_2} \\rightarrow \\frac{3}{1} = \\frac{P_1 \\cdot 450}{P_2 \\cdot 600} \\rightarrow P_1 P_2 = 4$. Đáp án cần chọn là: A."
+    },
+    {
+        "id": "L060R041",
+        "question": "Bước sóng dài nhất để bứt được điện tử ra khỏi 2 kim loại a và b lần lượt là $3\\, \\text{nm}$ và $4,5\\, \\text{nm}$. Công thoát tương ứng là $A_1$ và $A_2$ sẽ là :",
+        "image_source": null,
+        "difficulty": 2,
+        "options": [
+            "A. $A_2 = 2 A_1$",
+            "B. $A_1 = 1,5 A_2$",
+            "C. $A_2 = 1,5 A_1$",
+            "D. $A_1 = 2 A_2$"
+        ],
+        "answer": "B",
+        "explain": "Lời giải của GV Loigiaihay.com Ta có: $A_1 = h \\cdot \\frac{c}{\\lambda_{01}}$; $A_2 = h \\cdot \\frac{c}{\\lambda_{02}}$ → $\\frac{A_1}{A_2} = \\frac{\\lambda_{02}}{\\lambda_{01}} = 4,5 \\div 3 = 1,5$ → $A_1 = 1,5 A_2$ Đáp án cần chọn là: B."
+    }
+]
