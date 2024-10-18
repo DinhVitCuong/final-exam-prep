@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Existing CSS here... */
+    </style>
+    <!-- Include Plotly JS -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <div class="chapter-page">
+      <!-- Existing HTML content... -->
+
+      <div class="chart-buttons-container">
+        <p class="plot-graph-text">Plot graph</p>
+        <div class="chart-buttons">
+          <button id="button-difficulty">Difficulty</button>
+          <button id="button-previous-result">Previous Result</button>
+        </div>
+      </div>
+      <div id="plotly-chart" style="width:100%;height:400px;"></div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Sample data
+        const prev = {{ prev | tojson }};
+        const diff = {{ diff | tojson }};
+        const thred = {{ thred | tojson }};
+        
+        const buttonPreviousResult = document.getElementById("button-previous-result");
+        const buttonDifficulty = document.getElementById("button-difficulty");
+        const plotlyChart = document.getElementById("plotly-chart");
+
+        // Function to plot the "Previous Result" chart (default)
+        function plotPreviousResult() {
+          const data = [
+            {
+              x: ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5"],
+              y: prev,
+              type: "bar",
+              name: "Previous Results",
+              marker: { color: "rgba(54, 162, 235, 0.7)" },
+            },
+          ];
+
+          const layout = {
+            title: "Previous Test Results",
+            xaxis: { title: "Tests" },
+            yaxis: { title: "Score" },
+          };
+
+          Plotly.newPlot(plotlyChart, data, layout);
+        }
+
+        // Function to plot the "Difficulty" chart
+        function plotDifficulty() {
+          const data = [
+            {
+              x: ["Section 1", "Section 2", "Section 3", "Section 4"],
+              y: diff,
+              type: "bar",
+              name: "Difficulty Levels",
+              marker: { color: "rgba(255, 99, 132, 0.7)" },
+            },
+            {
+              x: ["Section 1", "Section 2", "Section 3", "Section 4"],
+              y: thred,
+              type: "scatter",
+              mode: "lines+markers",
+              name: "Threshold",
+              line: { color: "rgba(75, 192, 192, 0.7)", width: 2 },
+            },
+          ];
+
+          const layout = {
+            title: "Difficulty Levels and Thresholds",
+            xaxis: { title: "Sections" },
+            yaxis: { title: "Difficulty/Threshold" },
+          };
+
+          Plotly.newPlot(plotlyChart, data, layout);
+        }
+
+        // Set "Previous Result" as the default chart
+        plotPreviousResult();
+
+        // Add event listeners to buttons
+        buttonPreviousResult.addEventListener("click", plotPreviousResult);
+        buttonDifficulty.addEventListener("click", plotDifficulty);
+      });
+    </script>
+  </body>
+</html>

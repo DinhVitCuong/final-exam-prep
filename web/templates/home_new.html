@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
@@ -17,7 +18,8 @@
         <style>
           a:link { 
   text-decoration: none; 
-} 
+}
+ 
 a:visited { 
   text-decoration: none; 
 } 
@@ -384,6 +386,7 @@ a:active {
         border-radius: 30px;
       }
       .panel__target__container {
+        border-radius: 25px;
         background-color: white;
         padding: 0.8rem 1rem;
         display: flex;
@@ -540,6 +543,7 @@ a:active {
         align-items: center;
         position: relative;
         transition: 0.8s;
+        box-shadow: 0 0 0 2px #ccc; 
       }
 
       .circular-progress::before {
@@ -653,7 +657,9 @@ a:active {
 
       <div class="panel">
         <div class="panel__button-group">
-          <button><img src="../static/assets/signout.svg" alt="sign-out" /></button>
+          <button onclick="window.location.href='{{ url_for('logout') }}'">
+            <img src="../static/assets/signout.svg" alt="sign-out" />
+          </button>
           <button><img src="../static/assets/settings.svg" alt="settings" /></button>
         </div>
         <div class="panel__user">
@@ -758,7 +764,7 @@ a:active {
           <div class="charts-container">
             <div class="circular-progress-bar--general"></div>
             <div class="chart--general">
-              <canvas id="generalChart"></canvas>
+              <div id="generalChart" style="width:600px;height:400px;"></div>
             </div>
           </div>
           <div class="panel__to-do">
@@ -816,90 +822,155 @@ a:active {
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // TODO: ASSIGN DATA TO CONST SUBJECTS, FORMAT: {name: "subjectName", percent: 0-100}
-        const subjects = [
-          { name: "math", percent: 65, color: "#78e08f" },
-          { name: "physics", percent: 45, color: "#f0932b" },
-          { name: "chemistry", percent: 75, color: "#78e08f" },
-          { name: "general", percent: 85, color: "#78e08f" },
-        ];
+        const grades = {{ grades | tojson }};
+    // Grades passed from Flask to JavaScript
+      // Define subjects with corresponding grades as percentages
+      const subjects = [
+    { name: "math", percent: grades[0], color: "#78e08f" },
+    { name: "physics", percent: grades[1], color: "#f0932b" },
+    { name: "chemistry", percent: grades[2], color: "#78e08f" },
+    { name: "general", percent: grades[3], color: "#78e08f" }
+];
 
-        subjects.forEach((subject) => {
-          // define color o day ne`
-          if (subject.percent < 25) {
-            subject.color = "#eb4d4b";
-          } else if (subject.percent < 50) {
-            subject.color = "#f0932b";
-          } else if (subject.percent < 75) {
-            subject.color = "#f9ca24";
-          } else {
-            subject.color = "#78e08f";
-          }
-          let container = document.querySelector(
-            `.circular-progress-bar--${subject.name}`
-          );
-          container.innerHTML += `
+subjects.forEach((subject) => {
+    // Define color based on percent
+    if (subject.percent < 25) {
+        subject.color = "#eb4d4b";
+    } else if (subject.percent < 50) {
+        subject.color = "#f0932b";
+    } else if (subject.percent < 75) {
+        subject.color = "#f9ca24";
+    } else {
+        subject.color = "#78e08f";
+    }
+
+    let container = document.querySelector(
+        `.circular-progress-bar--${subject.name}`
+    );
+
+    container.innerHTML += `
         <div class="progess-group">
-        <div class="circular-progress" >
-          <span class="subject-value">0%</span>
+            <div class="circular-progress" >
+                <span class="subject-value">0</span>
+            </div>
         </div>
-      </div>
-        `;
-        });
+    `;
+});
 
-        //style="  background: conic-gradient(${subject.color} ${3.6 * subject.percent}deg, #fff 0deg);"
+const progressGroups = document.querySelectorAll(".progess-group");
 
-        const progressGroups = document.querySelectorAll(".progess-group");
+progressGroups.forEach((progress, index) => {
+    let progressStartValue = 0;
+    let progressStartEnd = subjects[index].percent;
+    let speed = 1;
+    let step = 0.2
 
-        progressGroups.forEach((progress, index) => {
-          let progressStartValue = 0;
-          let progressStartEnd = subjects[index].percent;
-          let speed = 10;
-          let progessTimer = setInterval(() => {
-            progressStartValue++;
-            if (progressStartValue == progressStartEnd) {
-              clearInterval(progessTimer);
+    if (progressStartEnd > 0) {
+        let progessTimer = setInterval(() => {
+            progressStartValue += step; // Increment by step for finer precision
+            if (progressStartValue >= progressStartEnd) {
+                progressStartValue = progressStartEnd; // Stop exactly at the target value
+                clearInterval(progessTimer);
             }
             progress.querySelector(".circular-progress").style.background = `
-          conic-gradient(${subjects[index].color} ${
-              3.6 * progressStartValue
-            }deg, #fff 0deg)`;
+                conic-gradient(${subjects[index].color} ${3.6 * progressStartValue}deg, #fff 0deg)`;
 
+            // Display the value as a real number with 1 decimal precision
             progress.querySelector(".subject-value").innerHTML =
-              progressStartValue + "%";
-          }, speed);
-        });
-
+                progressStartValue.toFixed(1);
+        }, speed);
+    } else {
+        // If percent is 0, directly set the style and value
+        progress.querySelector(".circular-progress").style.background = `
+            conic-gradient(#fff 0deg, #fff 0deg)`;
+        progress.querySelector(".subject-value").innerHTML = "0";
+    }
+});
         // Initialize chart--general
-        const ctx = document.getElementById("generalChart").getContext("2d");
+        grade_list_1 = {{ grade_list_1 | tojson }};
+        grade_list_2 = {{ grade_list_2 | tojson }};
+        grade_list_3 = {{ grade_list_3 | tojson }};
 
-        // TODO: ASSIGN DATA
-        // row
-        const labels = ["1", "2", "3", "4", "5", "6", "7"];
-        // data theo tung` thang
-        const data = [80, 40, 100, 90, 60, 70, 80];
-        const generalChart = new Chart(ctx, {
-          type: "line",
-          data: {
-            labels: labels,
-            datasets: [
-              {
-                label: "Mức độ hoàn thành",
-                data: data,
-                fill: false,
-                borderColor: "rgb(255, 61, 0)",
-                tension: 0.1,
-              },
-            ],
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true,
-              },
+        TESTER = document.getElementById('generalChart');
+        Plotly.newPlot(TESTER, [
+        {
+            x: [1, 2, 3, 4, 5],
+            y: grade_list_1,
+            name: 'Toán',
+            mode: 'lines+markers',
+            type: 'scatter'
+        },
+        {
+            x: [1, 2, 3, 4, 5],
+            y: grade_list_2,
+            name: 'Lí',
+            mode: 'lines+markers',
+            type: 'scatter'
+        },
+        {
+            x: [1, 2, 3, 4, 5],
+            y: grade_list_3,
+            name: 'Hóa',
+            mode: 'lines+markers',
+            type: 'scatter'
+        }
+    ], 
+    {
+        title: {
+            text: 'Bảng ', // Your chart title here
+            font: {
+                family: 'Arial, sans-serif', // Optional: customize font
+                size: 24,                    // Optional: customize font size
+                color: '#333'                // Optional: customize font color
             },
-          },
-        });
+            xref: 'paper',
+            x: 0.5 // Center the title horizontally
+        },
+        xaxis: {
+            range: [0, 10], // Set the x-axis range starting from 0
+            zeroline: true, // Show the x-axis line
+            zerolinewidth: 2,
+            zerolinecolor: '#000'
+        },
+        yaxis: {
+            range: [0, 10], // Set the y-axis range starting from 0
+            zeroline: true, // Show the y-axis line
+            zerolinewidth: 2,
+            zerolinecolor: '#000'
+        },
+        margin: { t: 50, b: 40, l: 50, r: 10 },
+        showlegend: true,
+        autosize: true
+    });
+        // const ctx = document.getElementById("generalChart").getContext("2d");
+        
+        // // TODO: ASSIGN DATA
+        // // row
+        // const labels = ["1", "2", "3", "4", "5", "6", "7"];
+        // // data theo tung` thang
+        // const data = [80, 40, 100, 90, 60, 70, 80];
+        // const generalChart = new Chart(ctx, {
+        //   type: "line",
+        //   data: {
+        //     labels: labels,
+        //     datasets: [
+        //       {
+        //         label: "Mức độ hoàn thành",
+        //         data: data,
+        //         fill: false,
+        //         borderColor: "rgb(255, 61, 0)",
+        //         tension: 0.1,
+        //       },
+        //     ],
+        //   },
+        //   options: {
+        //     scales: {
+        //       y: {
+        //         beginAtZero: true,
+        //       },
+        //     },
+        //   },
+        // });
       });
     </script>
   </body>
