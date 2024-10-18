@@ -1039,7 +1039,7 @@ def analyze_total_test(subject_id):
             # Lấy giá trị knowledge từ các tuple
         chap_id = max(knowledge[0] for knowledge in knowledge_list)
     else:
-        return "Không tìm thấy kết quả phù hợp"
+        chap_id = 1
     # Check for an existing analysis record
     print(chap_id)
 
