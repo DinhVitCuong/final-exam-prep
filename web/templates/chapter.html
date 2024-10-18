@@ -181,6 +181,14 @@
         margin-bottom: 0;
         padding-bottom: 0;
       }
+      .chart-buttons {
+        display: flex;
+        justify-content: center; /* Space the buttons apart */
+        align-items: center;
+        width: 100%; /* Make the buttons container take full width */
+        margin-top: 1rem;
+        gap: 4rem;
+      }
       .progess-group {
         background-color: transparent;
         width: 180px;
@@ -200,6 +208,7 @@
         align-items: center;
         position: relative;
         transition: 0.8s;
+        box-shadow: 0 0 0 2px #ccc; 
       }
 
       .circular-progress::before {
@@ -226,6 +235,10 @@
           border: none;
           border-radius: 20px;
           color: white;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+      .button__practice:hover {
+        background-color: #cfd219;
       }
       button {
         background-color: transparent;
@@ -236,6 +249,7 @@
         opacity: 0.6;
       }
     </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.4/dist/purify.min.js"></script>
   </head>
@@ -255,7 +269,11 @@
         </button>
         <div class="container">
           <div class="chart__container">
-            <canvas id="nearestResultsChart"></canvas>
+            <div id="plotly-chart" style="width:1100px;height:550px;"></div>
+            <div class="chart-buttons">
+              <button id="button-diff">difficulty </button>
+              <button id="button-prev">previous result</button>
+            </div>
           </div>
           <div class="analytics__container">
             <div class="average-score__container">
@@ -272,67 +290,105 @@
             </div>
           </div>
         </div>
-        <a href="{{ url_for('chapter_test', chap_id=chap_id, subject=subject) }}" class="button__practice">Bạn sợ à?</a>
+        <a href="{{ url_for('chapter_test', chap_id=chap_id, subject=subject) }}" class="button__practice">Thử sức nào!</a>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-        const ctx = document
-          .getElementById("nearestResultsChart")
-          .getContext("2d");
-        const data = [28, 53, 84, 50, 71];
-        const nearestResultsChart = new Chart(ctx, {
-          type: "bar",
-          data: {
-            labels: ["Kỳ 1", "Kỳ 2", "Kỳ 3", "Kỳ 4", "Kỳ 5"],
-            datasets: [
-              {
-                label: "Kết quả 5 lần làm kiểm tra gần nhất",
-                data: data,
-                backgroundColor: [
-                  "rgba(255, 99, 132)",
-                  "rgba(54, 162, 235)",
-                  "rgba(255, 206, 86)",
-                  "rgba(75, 192, 192)",
-                  "rgba(153, 102, 255)",
-                ],
-              },
-            ],
-          },
-          options: {
-            plugins: {
-              legend: {
-                labels: {
-                  font: {
-                    size: 20,
-                  },
-                },
-              },
+        // const percent_chapter = {{percent_chapter}}
+        // const prev = {{ prev | tojson }};
+        // const diff = {{ diff | tojson }};
+        // const thred = {{ thred | tojson }};
+        //TODO: CHART 
+        
+        // SAMPLE DATA
+        const diff = [
+            [5.3, 5.7, 8.4, 7.4],
+            [6.1, 7.2, 9.3, 8.1]
+        ];
+        const thred = [9.6, 6.4, 7.5, 7.4]; // Single list for threshold
+        const prev = [2.5, 3.1, 6.8, 8.4, 10];
+        const percent_chapter = 50.3;
+        const buttonDifficulty = document.getElementById("button-diff");
+        const buttonPreviousResult = document.getElementById("button-prev");
+        const plotlyChart = document.getElementById("plotly-chart");
+        function plotPreviousResult() {
+          const colors = prev.map(value => {
+              // Map the value to a light color from red (low) to green (high)
+              // value range: 0 to 10 (assuming 10 is the max score)
+              const r = Math.round(255 * (1 - value / 10) + 200 * (value / 10)); // Red component lightens as the value increases
+              const g = Math.round(255 * (value / 10) + 200 * (1 - value / 10)); // Green component increases and lightens as the value increases
+              return `rgba(${r}, ${g}, 200, 0.8)`; // Alpha set to 0.4 for a very light color
+          });
+          const data = [
+            {
+              x: ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5"],
+              y: prev,
+              type: "bar",
+              name: "Previous Results",
+              marker: { color: colors },
             },
-            scales: {
-              y: {
-                beginAtZero: true,
-                max: 100, // Đặt giá trị tối đa của trục y là 100%
-                ticks: {
-                  callback: function (value) {
-                    return value + "%"; // Thêm ký hiệu % vào nhãn trục y
-                  },
-                  font: {
-                    size: 16, // Tăng cỡ chữ của trục y
-                  },
-                },
-              },
-              x: {
-                ticks: {
-                  font: {
-                    size: 16, // Tăng cỡ chữ của trục x
-                  },
-                },
-              },
-            },
-          },
+          ];
+
+          const layout = {
+            title: "Previous Test Results",
+            xaxis: { title: "Tests" },
+            yaxis: { title: "Score" },
+          };
+
+          Plotly.newPlot(plotlyChart, data, layout);
+        }
+        function plotDifficulty() {
+        const colors = ['#99FF99', '#FFFF99', '#FFCC99', 'FF9999'];
+        // Create an array to hold the data traces
+        const data = [];
+
+        // Iterate over each list in the nested diff array
+        diff.forEach((diffList, index) => {
+            // Create a bar trace for each diffList
+            data.push({
+                x: ["Nhận biết", "Thông hiểu", "Vận dụng", "Vận dụng cao"],
+                y: diffList,
+                type: "bar",
+                name: `Difficulty Set ${index + 1}`,
+                marker: { color:colors,  opacity:`${0.7 - index * 0.2}` },
+            });
         });
+
+        // Add the threshold scatter trace
+        data.push({
+            x: ["Nhận biết", "Thông hiểu", "Vận dụng", "Vận dụng cao"],
+            y: thred,
+            type: "scatter",
+            mode: "markers",
+            name: "Threshold",
+            marker: {
+                symbol: 'line-ew-open', // Vertical line marker
+                size: 60, // Large size for emphasis
+                color: 'rgba(0, 128, 0, 0.8)', // Marker color
+                line: {
+                    width: 2, // Marker border width
+                    color: 'rgba(0, 128, 0, 1)' // Border color
+                }
+            }
+        });
+
+        // Define the layout
+        const layout = {
+            title: "Difficulty Levels and Thresholds",
+            xaxis: { title: "Sections" },
+            yaxis: { title: "Difficulty/Threshold" },
+            showlegend: true, // Show legend for toggling traces
+        };
+
+        // Render the plot using Plotly
+        Plotly.newPlot(plotlyChart, data, layout);
+    }
+        plotPreviousResult();
+
+        buttonPreviousResult.addEventListener("click", plotPreviousResult);
+        buttonDifficulty.addEventListener("click", plotDifficulty);
+        
 
         //TODO: assign real value to progressBar.percent
         let progressBar = { percent: 40, color: "" };
@@ -355,12 +411,14 @@
           `;
         let progressGroup = document.querySelector(".progress-group");
         let progressStartValue = 0;
-        let progressEndValue = progressBar.percent;
-        let speed = 10;
+        let progressEndValue = progressBar.percent+0.2;
+        let speed = 1;
+
         let progressTimer = setInterval(() => {
-          progressStartValue++;
-          if (progressStartValue == progressEndValue) {
-            clearInterval(progressTimer);
+          progressStartValue += 0.2;
+          if (progressStartValue > progressEndValue) {
+            progressStartValue = progressStartEnd; // Stop exactly at the target value
+            clearInterval(progessTimer);
           }
           progressGroup.querySelector(".circular-progress").style.background = `
             conic-gradient(${progressBar.color} ${
@@ -368,9 +426,11 @@
           }deg, #fff 0deg)`;
 
           progressGroup.querySelector(".subject-value").innerHTML =
-            progressStartValue + "%";
+            progressStartValue.toFixed(1);
         }, speed);
       });
+
+
 
       var feedbackElement = document.getElementById('feedback-content');
       var rawMarkdown = feedbackElement.textContent || feedbackElement.innerText;
