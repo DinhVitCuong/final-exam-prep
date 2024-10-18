@@ -52,10 +52,11 @@ class DrawChartBase:
                     ).order_by(Test.id.desc()).limit(self.num).all()
                     
             else:
-                query = self.data.filter_by(
+                query = self.data_find.filter_by(
                     test_type = self.test_type,
                     user_id = int(self.user_id)
                 ).all()
+                
                 print(self.user_id)
                 print(self.num)
                 print(query)
