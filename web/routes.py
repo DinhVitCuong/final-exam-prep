@@ -1208,7 +1208,29 @@ def evaluate_chapter_test(subject_id,chap_id):
     print(percent_chapter)
     print(thred)
     print(prev)
-    return render_template("chapter_exam.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, percent_chapter=percent_chapter, prev = prev, diff = diff, thred = thred)
+
+    num_of_test1 = db.session.query(Test).filter(
+        Test.questions.like(f"{subject}%")
+    )
+
+    num_of_test_done = num_of_test1.filter_by(user_id = current_user.id, test_type = test_type).count()
+    num_test = 10 if num_of_test_done >= 10 else num_of_test_done
+
+    data_retrieve = promptChap(0, num_test, subject, current_user.id, int(chap_id))
+    accu_diff, dic_ques, dic_total = data_retrieve.data.cal_accu_diff()
+    chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
+    results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
+
+    chart_data = {
+        "accu_diff": accu_diff,
+        "chap_difficulty_percentile": chap_difficulty_percentile,
+        "results": results,
+        "durations": durations,
+        "exact_time": exact_time,
+        "nums": nums
+    }
+
+    return render_template("chapter2.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, chart_data = chart_data)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....

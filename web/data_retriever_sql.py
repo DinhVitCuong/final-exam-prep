@@ -321,7 +321,7 @@ class DrawChap(DrawChartBase):
         chap_difficulty_count = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         chap_difficulty_percentile = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         
-
+        
         for diff, ids in diff_ids.items():
             for id in ids:
                 chap = int(id[1:3])
