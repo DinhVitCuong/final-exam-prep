@@ -1181,8 +1181,8 @@ def evaluate_chapter_test(subject_id,chap_id):
 
         # Query QAs for difficulty levels of the questions
         question_difficulties = {
-        q.ID: q.difficulty
-        for q in session.query(QAs).filter(QAs.c.ID.in_(question_ids)).all()
+        q.id: q.difficulty
+        for q in QAs.query.filter(QAs.id.in_(question_ids)).all()
         }
         # Initialize counters for difficulties
         difficulty_counts = {0: 0, 1: 0, 2: 0, 3: 0}
@@ -1208,7 +1208,7 @@ def evaluate_chapter_test(subject_id,chap_id):
     print(percent_chapter)
     print(thred)
     print(prev)
-    return render_template("chapter.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, percent_chapter=percent_chapter, prev = prev, diff = diff, thred = thred)
+    return render_template("chapter_exam.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, percent_chapter=percent_chapter, prev = prev, diff = diff, thred = thred)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
