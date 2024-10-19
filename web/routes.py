@@ -667,19 +667,19 @@ def practice_test(subject):
         test_id = str(uuid4())
         user_id = str(current_user.id)
         # Store the test data in the database
-        # temp_test = TempTest(
-        #     id=test_id,
-        #     user_id=user_id,
-        #     subject=subject,
-        #     questions=questions,
-        #     chapter='05',
-        #     time_limit=time_limit,
-        #     rate=rate
-        # )
-        # db.session.add(temp_test)
-        # db.session.commit()
+        temp_test = TempTest(
+            id=test_id,
+            user_id=user_id,
+            subject=subject,
+            questions=questions,
+            chapter='05',
+            time_limit=time_limit,
+            rate=rate
+        )
+        db.session.add(temp_test)
+        db.session.commit()
         
-        return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, user_id = user_id)
+        return render_template('practice_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, user_id = user_id)
 
         
 
