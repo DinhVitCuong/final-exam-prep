@@ -1378,6 +1378,8 @@ def analyze_total_test(subject_id):
     chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
 
+    print("acuc_chaps")
+    print(acuc_chaps)
 
     chart_data = {
         "acuc_chaps": acuc_chaps,

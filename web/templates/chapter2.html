@@ -321,24 +321,37 @@
             console.log('Chart Data:', chartData);
             
             function createChart(labels, data, label, y_max) {
-                if (currentChart) currentChart.destroy();
-                currentChart = new Chart(ctx, {
-                    type: "bar",
-                    data: {
-                        labels: labels,
-                        datasets: [{
-                            label: label,
-                            data: data,
-                            backgroundColor: "rgba(75, 192, 192, 0.6)"
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
-                        }
+            // Mapping for numeric labels to descriptions
+            const labelMapping = {
+                0: "Nhận biết",
+                1: "Thông hiểu",
+                2: "Vận dụng",
+                3: "Vận dụng cao"
+            };
+
+            // Map numeric labels to their corresponding descriptions if they exist in the mapping
+            const mappedLabels = labels.map(label => 
+                labelMapping.hasOwnProperty(label) ? labelMapping[label] : label
+            );
+
+            if (currentChart) currentChart.destroy();
+            currentChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    labels: mappedLabels, // Use the mapped labels here
+                    datasets: [{
+                        label: label,
+                        data: data,
+                        backgroundColor: "rgba(75, 192, 192, 0.6)"
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
                     }
-                });
-            }
+                }
+            });
+        }
     
             // Event listener for "Difficulty" button
             document.getElementById("button-diff").addEventListener("click", () => {

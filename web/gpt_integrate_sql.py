@@ -133,7 +133,7 @@ class promptTotal(promptCreation):
         acuc_chaps, time_chaps = self.data.short_total_analysis()
         for key, value in acuc_chaps.items():
             data_prompt += f"Chương {key}: {value}% - {time_chaps[key]} giây\n"
-
+        
 
         data_prompt += self.diff_prompt()
         data_prompt += "Tỉ lệ % đúng của từng loại câu hỏi:\n"
