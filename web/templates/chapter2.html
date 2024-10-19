@@ -352,7 +352,7 @@
                 }
             });
         }
-    
+        
             // Event listener for "Difficulty" button
             document.getElementById("button-diff").addEventListener("click", () => {
                 const labels = Object.keys(chartData.accu_diff);
@@ -371,12 +371,12 @@
             document.getElementById("button-prev").click();
             
             // Circular Progress Bar (unchanged logic)
-            let progressValue = 75; // Example value
+            const progressValue = "{{ avg_score }}"; // Example value
             let progressElement = document.getElementById("progress-value");
             let progressBar = document.getElementById("progress-bar");
     
             let color = progressValue >= 75 ? "#78e08f" : progressValue >= 50 ? "#f9ca24" : progressValue >= 25 ? "#f0932b" : "#eb4d4b";
-    
+            
             progressBar.style.background = `conic-gradient(${color} ${progressValue * 3.6}deg, #fff ${progressValue * 3.6}deg)`;
             progressElement.innerHTML = `${progressValue}%`;
             

@@ -329,7 +329,7 @@
             createChart(Object.keys(acuc_chaps).map(chap => `Chương ${chap}`), Object.values(acuc_chaps), "Chap Percent", 100);
             
             // Circular Progress Bar
-            let progressValue = 75; // Example value
+            const progressValue = "{{ avg_score }}"; // Example value
             let progressElement = document.getElementById("progress-value");
             let progressBar = document.getElementById("progress-bar");
 

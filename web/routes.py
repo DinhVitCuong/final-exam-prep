@@ -1221,6 +1221,8 @@ def evaluate_chapter_test(subject_id,chap_id):
     chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
 
+    avg_score = int(sum(results)/len(results)*10)
+
     chart_data = {
         "accu_diff": accu_diff,
         "chap_difficulty_percentile": chap_difficulty_percentile,
@@ -1230,7 +1232,7 @@ def evaluate_chapter_test(subject_id,chap_id):
         "nums": nums
     }
 
-    return render_template("chapter2.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, chart_data = chart_data)
+    return render_template("chapter2.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, chart_data = chart_data,avg_score    = avg_score)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
@@ -1380,6 +1382,7 @@ def analyze_total_test(subject_id):
 
     print("acuc_chaps")
     print(acuc_chaps)
+    avg_score = int(sum(results)/len(results)*10)
 
     chart_data = {
         "acuc_chaps": acuc_chaps,
@@ -1393,7 +1396,7 @@ def analyze_total_test(subject_id):
     }
 
 
-    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data)
+    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
 
 
 
