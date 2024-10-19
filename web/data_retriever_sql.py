@@ -22,8 +22,8 @@ class DrawChartBase:
             self.data_find = db.session.query(Test).filter(
                 Test.questions.like(f"{self.subject_name}%")
             )
-            print('cho nay ne')
-            print(self.test_type)
+            # print('cho nay ne')
+            # print(self.test_type)
             if self.load_type == None or self.load_type == "average":
                 if self.test_type == 1: 
                     self.data = self.data_find.filter_by(
@@ -35,7 +35,10 @@ class DrawChartBase:
                         self.data1 = self.data_find.filter_by(
                             user_id = int(self.user_id)
                         ).order_by(Test.id.desc()).all()
-                        self.num_chap = max([int(test.knowledge) for test in self.data1])
+                        if self.data1 == []:
+                            self.num_chap = 1
+                        else:
+                            self.num_chap = max([int(test.knowledge) for test in self.data1])
                     else:
                         self.data1 = self.data_find.filter_by(
                             user_id = int(self.user_id),
@@ -44,7 +47,7 @@ class DrawChartBase:
                         self.num_chap = max([int(test.knowledge) for test in self.data1])
                     
                 elif self.test_type == 0:
-                    print(self.user_id)
+                    # print(self.user_id)
                     self.data = self.data_find.filter_by(
                         test_type = self.test_type,
                         user_id = int(self.user_id),
@@ -57,16 +60,16 @@ class DrawChartBase:
                     user_id = int(self.user_id)
                 ).all()
                 
-                print(self.user_id)
-                print(self.num)
-                print(query)
+                # print(self.user_id)
+                # print(self.num)
+                # print(query)
                 
                 self.data = [query[self.num]]
                 
                 self.num_chap = int(self.data[0].knowledge)
 
         except FileNotFoundError:
-            print(f"Error: cai gi do roi")
+            # print(f"Error: cai gi do roi")
             return None
 
     def cal_accu_diff(self): # accuracy per diff (để vẽ accuracy giữa các độ khó), list right ID per diff , total number of question per diff
@@ -156,8 +159,11 @@ class DrawChartBase:
                 duration += float(time)
             durations.append(duration)
             exact_time.append(a.time)
+            # print(a.id)
+            # print(score)
+
         return results, durations, exact_time,  num_quess # list of scores, list of durations, list of exact time
-    
+
     def date_and_time_calc(self,start_date, final_date, aim): # tìm ra khoảng cách thời gian giữa các lần thi (total, chapter)
         # 7 chapter
         final_date = pd.to_datetime(final_date)
@@ -334,16 +340,11 @@ class DrawChap(DrawChartBase):
 
 
 # with app.app_context():     #chap  #test_type    #self.num
-#     # test = DrawTotal("L", None , None, 10, "average")
-#     # print(test.difficult_percentile_per_chap())
-#     # # print(test.data)
-#     # print(test.cal_accu_diff())
-#     # #print(test.lessons_id_to_review())
-#     # print(test.previous_results())
-#     # # print(test.short_total_analysis())
+#     test = DrawTotal("L", None , None, 10, 3, "average")
     
-#     # # print(test.find_most_wrong_chap())
-#     test = DrawChap("L", 3 , None, 3, "average")
+#     print(test.short_total_analysis())
 #     # print(test.cal_accu_diff())
-#     print(test.difficult_percentile_per_chap())
+#     # print(test.difficult_percentile_per_chap())
+#     # print(test.previous_results())
+
     

@@ -117,9 +117,9 @@ def get_chapter_best_list(current_user_id, subject):
     chapter_best_list = [0] * max_chapter
 
     for knowledge, grade in knowledge_best_grades.items():
-        if knowledge <= max_chapter:
-            chapter_best_list[knowledge - 1] = int(round(grade))
-
+        if int(knowledge) <= int(max_chapter):
+            chapter_best_list[int(knowledge) - 1] = int(round(grade))
+    
     return chapter_best_list
 
 ########################### BEGIN ROUND ########################
@@ -667,18 +667,18 @@ def practice_test(subject):
         test_id = str(uuid4())
         user_id = str(current_user.id)
         # Store the test data in the database
-        temp_test = TempTest(
-            id=test_id,
-            user_id=user_id,
-            subject=subject,
-            questions=questions,
-            chapter='05',
-            time_limit=time_limit,
-            rate=rate
-        )
-        db.session.add(temp_test)
-        db.session.commit()
-
+        # temp_test = TempTest(
+        #     id=test_id,
+        #     user_id=user_id,
+        #     subject=subject,
+        #     questions=questions,
+        #     chapter='05',
+        #     time_limit=time_limit,
+        #     rate=rate
+        # )
+        # db.session.add(temp_test)
+        # db.session.commit()
+        
         return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, user_id = user_id)
 
         
@@ -797,7 +797,7 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
     db.session.commit()
 
     # Pass the test ID to the template
-    return render_template('exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id, user_id = user_id)
+    return render_template('chapter_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, chap_id = chap_id, user_id = user_id, )
 
         
         
@@ -936,10 +936,10 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                 else:
                     num_test=num_of_test_done
 
-                print(num_of_test1.filter_by(user_id = user_id, test_type = test_type))
-                print(subject)
-                print(chap_id)
-                print(num_test)
+                # print(num_of_test1.filter_by(user_id = user_id, test_type = test_type))
+                # print(subject)
+                # print(chap_id)
+                # print(num_test)
 
                 # 
                 # analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
@@ -1026,7 +1026,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         db.session.commit()
                         todo_json = analyzer.turning_into_json()
 
-                        print(todo_json)
+                        # print(todo_json)
                         # print(todo_json)
                         for todo in todo_json:
                             new_todo = TodoList(
@@ -1267,76 +1267,109 @@ def analyze_total_test(subject_id):
     else:
         analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
     
-    #Get percent_chapter:
-    grade_chapters = get_chapter_best_list(current_user.id,subject)
-    percent_chapter = grade_chapters[int(chap_id)-1]
+    # #Get percent_chapter:
+    # grade_chapters = get_chapter_best_list(current_user.id,subject)
+    # percent_chapter = grade_chapters[int(chap_id)-1]
 
-    #QUery thred, previous result, difficulty
-    thred_string = None
-    query_thredhold = Progress.query.filter_by(
-        user_id = current_user.id,
-    ).first()
-    if subject_id[1] == 1:
-        thred_string = query_thredhold.threadhold_1
-    elif subject_id[1] == 2:
-        thred_string = query_thredhold.threadhold_2
-    elif subject_id[1] == 3:
-        thred_string = query_thredhold.threadhold_3
-    if thred_string is None:
-        max_chap = get_max_chapter(subject)
-        thred = [100]*max_chap
-    else:
-        thred = thred_string.split('_')
+    # #QUery thred, previous result, difficulty
+    # thred_string = None
+    # query_thredhold = Progress.query.filter_by(
+    #     user_id = current_user.id,
+    # ).first()
+    # if subject_id[1] == 1:
+    #     thred_string = query_thredhold.threadhold_1
+    # elif subject_id[1] == 2:
+    #     thred_string = query_thredhold.threadhold_2
+    # elif subject_id[1] == 3:
+    #     thred_string = query_thredhold.threadhold_3
+    # if thred_string is None:
+    #     max_chap = get_max_chapter(subject)
+    #     thred = [100]*max_chap
+    # else:
+    #     thred = thred_string.split('_')
     
-    records = Test.query.filter(
-        Test.user_id == current_user.id,
-        Test.test_type == 1,
-        Test.questions.like(f'{subject}%')
-    ).order_by(Test.time.desc()).limit(5).all()
-    prev = []
-    diff = []
-    for record in records:
+    # records = Test.query.filter(
+    #     Test.user_id == current_user.id,
+    #     Test.test_type == 1,
+    #     Test.questions.like(f'{subject}%')
+    # ).order_by(Test.time.desc()).limit(5).all()
+    # prev = []
+    # diff = []
+    # for record in records:
         
-        question_ids = record.questions.split('_')
-        results_list = record.result.split('_')
-        num_ones = question_ids.count('1')
-        question_count = len(results_list)
+    #     question_ids = record.questions.split('_')
+    #     results_list = record.result.split('_')
+    #     num_ones = question_ids.count('1')
+    #     question_count = len(results_list)
         
-        # Scale the number of 1s to a grade out of 10
-        grade = (num_ones / question_count) * 10
-        prev.append(grade)
+    #     # Scale the number of 1s to a grade out of 10
+    #     grade = (num_ones / question_count) * 10
+    #     prev.append(grade)
 
-        # Query QAs for difficulty levels of the questions
-        question_difficulties = {
-        q.ID: q.difficulty
-        for q in session.query(QAs).filter(QAs.c.ID.in_(question_ids)).all()
-        }
-        # Initialize counters for difficulties
-        difficulty_counts = {0: 0, 1: 0, 2: 0, 3: 0}
-        correct_counts = {0: 0, 1: 0, 2: 0, 3: 0}
+    #     # Query QAs for difficulty levels of the questions
+    #     question_difficulties = {
+    #     q.ID: q.difficulty
+    #     for q in session.query(QAs).filter(QAs.c.ID.in_(question_ids)).all()
+    #     }
+    #     # Initialize counters for difficulties
+    #     difficulty_counts = {0: 0, 1: 0, 2: 0, 3: 0}
+    #     correct_counts = {0: 0, 1: 0, 2: 0, 3: 0}
 
-        # Count correct and total questions per difficulty
-        for question_id, result in zip(question_ids, results_list):
-            difficulty = question_difficulties.get(question_id)
-            if difficulty is not None:
-                difficulty_counts[difficulty] += 1
-                if result == '1':  # Correct answer
-                    correct_counts[difficulty] += 1
+    #     # Count correct and total questions per difficulty
+    #     for question_id, result in zip(question_ids, results_list):
+    #         difficulty = question_difficulties.get(question_id)
+    #         if difficulty is not None:
+    #             difficulty_counts[difficulty] += 1
+    #             if result == '1':  # Correct answer
+    #                 correct_counts[difficulty] += 1
 
-        # Calculate the percentage for each difficulty level
-        percentages = {
-            diff: (correct_counts[diff] / difficulty_counts[diff] * 100) if difficulty_counts[diff] > 0 else 0
-            for diff in range(4)
-        }
-        percentage_list = [percentages[i] for i in range(4)]
-        diff.append(percentage_list)
+    #     # Calculate the percentage for each difficulty level
+    #     percentages = {
+    #         diff: (correct_counts[diff] / difficulty_counts[diff] * 100) if difficulty_counts[diff] > 0 else 0
+    #         for diff in range(4)
+    #     }
+    #     percentage_list = [percentages[i] for i in range(4)]
+    #     diff.append(percentage_list)
     
-    print(diff)
-    print(percent_chapter)
-    print(thred)
-    print(prev)
+    # print(diff)
+    # print(percent_chapter)
+    # print(thred)
+    # print(prev)
     # Render the evaluation template
-    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id = subject_id)
+
+    # subject = "T"
+
+    num_of_test1 = db.session.query(Test).filter(
+        Test.questions.like(f"{subject}%")
+    )
+
+    # làm thêm 1 trường hợp nữa, nếu k tìm ra test total thì để 0 hết
+
+
+    # Sau đó lọc tiếp theo user_id và test_type trước khi đếm số lượng
+    num_of_test_done = num_of_test1.filter_by(user_id = current_user.id, test_type = test_type).count()
+    num_test = 10 if num_of_test_done >= 10 else num_of_test_done
+
+    data_retrieve = promptTotal(1, num_test, subject, current_user.id)
+    acuc_chaps, time_chaps = data_retrieve.data.short_total_analysis() # percent-chap (% dung tung chuong)
+    accu_diff, dic_ques, dic_total = data_retrieve.data.cal_accu_diff() # button-diff (nếu select = Tất cả) (% dung tung loai cau hoi )
+    chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
+    results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
+
+
+    chart_data = {
+        "acuc_chaps": acuc_chaps,
+        "time_chaps": time_chaps,
+        "accu_diff": accu_diff,
+        "chap_difficulty_percentile": chap_difficulty_percentile,
+        "results": results,
+        "durations": durations,
+        "exact_time": exact_time,
+        "nums": nums
+    }
+
+
+    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data)
 
 
 

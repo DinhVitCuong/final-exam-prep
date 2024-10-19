@@ -63,7 +63,7 @@ class promptCreation:
         )
         results, _, exact_time, nums = self.data.previous_results()
         for i in range(len(results)):
-            data_prompt += f"{results[i]/nums[i]*10} at {exact_time[i]}\n"
+            data_prompt += f"{results[i]} at {exact_time[i]}\n"
         data_prompt += self.analyze_only_prompt
         return data_prompt
     def diff_prompt(self):
@@ -108,7 +108,7 @@ class promptTotal(promptCreation):
 
         results, durations, exact_time, nums = self.data.previous_results()
         for i in range(len(results)):
-            data_prompt += f"Điểm: {results[i]/nums[i]*10} Thời gian thực hiện: {durations[i]} giây, Thời điểm thực hiện: {exact_time[i]}\n"
+            data_prompt += f"Điểm: {results[i]} Thời gian thực hiện: {durations[i]} giây, Thời điểm thực hiện: {exact_time[i]}\n"
 
         data_prompt += (
             "Vui lòng so sánh các kết quả này để xác định sự tiến bộ của học sinh qua thời gian. "
@@ -133,6 +133,7 @@ class promptTotal(promptCreation):
         acuc_chaps, time_chaps = self.data.short_total_analysis()
         for key, value in acuc_chaps.items():
             data_prompt += f"Chương {key}: {value}% - {time_chaps[key]} giây\n"
+
 
         data_prompt += self.diff_prompt()
         data_prompt += "Tỉ lệ % đúng của từng loại câu hỏi:\n"
@@ -197,14 +198,14 @@ class promptChap(promptCreation):
 
         results, durations, exact_time, nums = self.data.previous_results()
         for i in range(len(results)):
-            data_prompt += f"- Điểm: {results[i]/nums[i]*10} | Thời gian thực hiện: {durations[i]} giây | Thời điểm thực hiện: {exact_time[i]}\n"
+            data_prompt += f"- Điểm: {results[i]} | Thời gian thực hiện: {durations[i]} giây | Thời điểm thực hiện: {exact_time[i]}\n"
 
         data_prompt += "\nPhân tích tỉ lệ % đúng của từng loại câu hỏi trong chương:\n"
         data_prompt += self.diff_prompt()
         accu_diff, dic_ques, dic_total = self.data.cal_accu_diff()
         for type1, accu in accu_diff.items():
             data_prompt += f"- Loại câu hỏi {type1}: {accu}%\n"
-
+        
         data_prompt += "\nSo sánh tỉ lệ % đúng hiện tại với kỳ vọng của từng loại câu hỏi trong chương:\n"
         predict = PredictThreshold(self.type_test, self.subject, self.user_id, self.num_chap)
 

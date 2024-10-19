@@ -248,6 +248,27 @@
       button:hover {
         opacity: 0.6;
       }
+
+      .chart-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 10px;
+      }
+      button,
+      .chapter-select {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        border: 1px solid #1976d2;
+        background-color: #1976d2;
+        color: white;
+        cursor: pointer;
+      }
+      button:hover,
+      .chapter-select:hover {
+        opacity: 0.8;
+      }
+      
     </style>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -269,7 +290,7 @@
         </button>
         <div class="container">
           <div class="chart__container">
-            <div id="plotly-chart" style="width:1100px;height:550px;"></div>
+            <div id="plotly-chart" style="width:800px;height:400px;"></div>
             <div class="chart-buttons">
               <button id="button-diff">difficulty </button>
               <button id="button-prev">previous result</button>

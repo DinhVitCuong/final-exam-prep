@@ -75,7 +75,7 @@ class PrepThreshold:
         return df
         # df.to_csv(self.path, index=False)
 from sklearn.exceptions import NotFittedError
-
+from datetime import datetime
 
 class PredictThreshold:
     def __init__(self, predict_type, subject, user_id , max_chap = None):
@@ -113,7 +113,12 @@ class PredictThreshold:
                     Test.knowledge.like(f"0{self.max_chap}"),
                     Test.user_id.like(int(self.user_id)) 
                 ).all()
-                self.date = pd.to_datetime(query[-1].time, errors='coerce')
+                if query == []:
+                    # Use the current date and time as a pandas Timestamp
+                    self.date = pd.Timestamp(datetime.now())
+                else:
+                    # Convert the queried time to a pandas Timestamp
+                    self.date = pd.to_datetime(query[-1].time, errors='coerce')
             if pd.isnull(self.date):
                 raise ValueError("Invalid date format encountered in the database.")
         except IndexError:
