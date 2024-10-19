@@ -204,7 +204,7 @@ class DrawTotal(DrawChartBase):
                 else:
                     num_ques = 10
             scores.append(score / num_ques * 100)
-        return sum(scores) / self.num
+        return sum(scores) / self.num if self.num >0 else 0
     
     def cal_time_chap(self, chap): # thời gian làm bài từng chap
         datas = self.data
@@ -217,7 +217,8 @@ class DrawTotal(DrawChartBase):
                     if data.questions.split('_')[i][1:3] == str(chap).zfill(2):
                         time += float(time_list[i])
             times.append(time)
-        return sum(times) / self.num
+        
+        return sum(times) / self.num if self.num >0 else 0
     
     
     def short_total_analysis(self): # trả về accuracy và thời gian làm bài trung bình từng chương
@@ -321,7 +322,7 @@ class DrawChap(DrawChartBase):
         chap_difficulty_count = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         chap_difficulty_percentile = {self.num_chap: {0: 0, 1: 0, 2: 0, 3:0}}
         
-        
+
         for diff, ids in diff_ids.items():
             for id in ids:
                 chap = int(id[1:3])

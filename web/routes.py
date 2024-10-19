@@ -1221,7 +1221,10 @@ def evaluate_chapter_test(subject_id,chap_id):
     chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
 
-    avg_score = int(sum(results)/len(results)*10)
+    if len(results) ==0 :
+        avg_score = 0
+    else:
+        avg_score = int(sum(results)/len(results)*10)
 
     chart_data = {
         "accu_diff": accu_diff,
@@ -1380,9 +1383,10 @@ def analyze_total_test(subject_id):
     chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
 
-    print("acuc_chaps")
-    print(acuc_chaps)
-    avg_score = int(sum(results)/len(results)*10)
+    if len(results) ==0 :
+        avg_score = 0
+    else:
+        avg_score = int(sum(results)/len(results)*10)
 
     chart_data = {
         "acuc_chaps": acuc_chaps,
