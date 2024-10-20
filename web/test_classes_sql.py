@@ -190,7 +190,7 @@ class pr_br_rcmd:
         return db.session.query(QAs).filter(QAs.id.like(f'{id[0][0]}%'), QAs.difficulty == id[0][1]).all()
 
     def find_vdc(self, id_chap):  # Return a list of VDC questions
-        return db.session.query(QAs).filter_by(id=id_chap, difficulty=4).all()
+        return db.session.query(QAs).filter_by(id=id_chap, difficulty=3).all()
 
     def question_prep(self):  # Return a test with questions
         QAs_list = []
@@ -250,7 +250,14 @@ class pr_br_rcmd:
         if not QAs_list:
             print("Warning: You haven't done any test.")
 
-        return QAs_list if QAs_list else []
+        while len(QAs_list) < 25:
+            
+            for (id, _), num_id in self.top_t:
+                matching_questions = self.containter_type((id, _))
+                if len(matching_questions) >= num_id:
+                    QAs_list += random.sample(matching_questions, num_id)
+
+        return QAs_list[:25] if QAs_list else []
     
     
 from app import create_app, db, login_manager, bcrypt

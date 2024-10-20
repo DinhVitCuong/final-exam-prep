@@ -434,11 +434,12 @@ def total_test(subject):
 
 @app.route("/total-test/<chap_id>/<subject>", methods=["POST"])
 def total_test_post(chap_id, subject):
-    if current_user.is_authenticated == False:
-        return redirect(url_for('login'))
-    if current_user.uni_select == 0:
-        return redirect(url_for('select_uni'))
+    # if current_user.is_authenticated == False:
+    #     return redirect(url_for('login'))
+    # if current_user.uni_select == 0:
+    #     return redirect(url_for('select_uni'))
     # Existing logic for processing answers
+    
     test_id = request.form.get('test_id')
     user_id = request.form.get('user_id')
     # them user id vao
@@ -803,11 +804,12 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
         
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["POST"])
 def chapter_test_post(chap_id, subject):
-    if current_user.is_authenticated == False:
-        return redirect(url_for('login'))
-    if current_user.uni_select == 0:
-        return redirect(url_for('select_uni'))
+    # if current_user.is_authenticated == False:
+    #     return redirect(url_for('login'))
+    # if current_user.uni_select == 0:
+    #     return redirect(url_for('select_uni'))
     # Existing logic for processing answers
+
     test_id = request.form.get('test_id')
     user_id = request.form.get('user_id')
     temp_test = TempTest.query.filter_by(id=test_id, user_id=user_id).first()
