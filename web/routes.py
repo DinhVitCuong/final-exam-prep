@@ -39,10 +39,26 @@ from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
 from data_retriever_sql import DrawChartBase
 from datetime import datetime
+from collections import Counter
 import time
 from uuid import uuid4
 
 ########################### DEF FUNCTION #######################
+
+def get_test_count_dates(current_user_id):
+    dates = Test.query.filter(
+    Test.user_id == current_user_id
+    ).with_entities(Test.time).order_by(Test.time.desc()).all()
+
+    # Convert the result to a list of date strings in "YYYY-MM-DD" format
+    date_list = [date.time.strftime("%Y-%m-%d") for date in dates]
+    date_list
+    date_counts = Counter(date_list)
+
+    # Convert to list of dictionaries with 'date' and 'count' keys
+    data = [{"date": date, "count": count} for date, count in date_counts.items()]
+    return data
+
 
 def get_max_chapter(subject):
     max_chapter_record = QAs.query.filter(
@@ -274,7 +290,8 @@ def home():
     mean_percent = sum(grade_percents) / len(grade_percents)
     grade_percents.append(mean_percent)
     print(grade_percents)
-    return render_template("home_new.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l, grades = grade_percents, grade_list_1 = grade_list_1, grade_list_2 = grade_list_2, grade_list_3 = grade_list_3)
+    heat_map_data = get_test_count_dates(current_user.id)
+    return render_template("home_new.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l, grades = grade_percents, grade_list_1 = grade_list_1, grade_list_2 = grade_list_2, grade_list_3 = grade_list_3, heat_map_data = heat_map_data )
 
 
 
