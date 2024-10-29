@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link { 
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:visited { 
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:hover { 
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:active { 
+        color: #000000;
+        text-decoration: none; 
+      }
+      * {
+        font-family:"poppins", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .chapter-page {
+        background-image: url("../static/assets/background.svg");
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position: top center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #e4fef9;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.6;
+      }
+      .button--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+      }
+      .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.815);
+        height: 14vh;
+        box-shadow: 0 0 6px 2px #64baaa;
+      }
+      .button__analytics,
+      .button__review,
+      .button__progress {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem 1.5rem;
+        background-color: #4caf50;
+        border-radius: 35px;
+        color: rgb(0, 0, 0);
+        font-size: 1.6em;
+        font-weight: 600;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .button__review {
+        background-color: #ff6a07e6;
+        color: black;
+      }
+      .button__progress {
+        
+        padding: 0.8rem 1.2rem;
+        background-color: #64baaa;
+        font-size: 2em;
+      }
+
+      .information {
+        margin-top: 64px;
+        margin-bottom: 32px;
+        width: 90%;
+        background-color: white;
+        padding: 16px;
+        border-radius: 16px;
+        box-shadow: 3px 3px 7px 3px #64baaa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding-top: 48px;
+        max-height: 70%;
+        min-height: 60%;
+      }
+      .encouragement {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.2em;
+        margin-bottom: 16px;
+      }
+      /* .chapters-container {
+        padding-top: 16px;
+        padding-left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 8px;
+        align-items: center;
+        width: 100%;
+        overflow-y: auto;
+      }
+      .chapter {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        width: 100%;
+        .chapter__button {
+          width: 90%;
+          background-color: #ffc107;
+          padding: 1rem;
+          border-radius: 24px;
+          transition: background-color 0.3s ease, transform 0.3s ease;
+          .chapter_a{
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          }
+          .chapter_a:hover{
+            background-color: #28d219d8;
+          }
+        }
+      } */
+      .chapters-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* Space between cubes */
+        justify-content: center; /* Center-align items */
+        padding: 1rem;
+      }
+
+      .chapter {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: space-between; /* Space between text and circle */
+        width: calc(25% - 1rem); /* Each cube takes 1/4 of the row with gap spacing */
+        min-width: 150px; /* Minimum width for responsiveness */
+        background-color: #64baaa ;
+        padding: 1rem;
+        border-radius: 8px; /* Optional: rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .chapter__button {
+        font-family:"poppins", sans-serif;
+        flex: 1; /* Allow text section to take available space */
+        font-weight: bold;
+        font-size: calc(1vw + 1vh);
+      }
+
+      .buttons-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        .practice-button,
+        .test-total-button {
+          padding: 1rem 2rem;
+          font-size: 1.5em;
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          font-size: calc(1vw + 1vh);
+          background-color: #64baaa;
+          box-shadow: 2px 2px 4px 2px #47877b;
+          border-radius: 30px;
+          width: 20%;
+          min-width: fit-content;
+          text-align: center;
+        }
+      }
+      .progess-group {
+        background-color: transparent;
+        width: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+      }
+
+      .circular-progress {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 0.8s;
+        z-index: 1;
+      }
+
+      .circular-progress::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #64baaa;
+      }
+      .chapter-value {
+        position: relative;
+        color: white;
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .text {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chapter-page">
+    
+      <div class="header">
+        <button class="button--back" onclick="window.location.href='/home'">
+          <img src="../static/assets/left-arrow-slider.svg" />
+        </button>
+        <button class="button button__analytics" onclick="window.location.href='{{ url_for('analyze_total_test', subject_id=subject_id) }}'">
+          <p>Đánh giá</p>
+          <img src="../static/assets/analytics-icon.svg" alt="analytics" />
+        </button>
+      
+        <div class="button button__progress">
+          <p class="header__subject">{{subject_name}}</p>
+          <!-- circular progress -->
+          <div class="circular-progress-bar--subject"></div>
+        </div>
+        <div class="button button__review">
+          <p>Xem lại câu sai</p>
+          <img src="../static/assets/question-icon.svg" alt="review" />
+        </div>
+      </div>
+      <div class="information">
+        <!-- progress bar -->
+        <div class="encouragement">
+          <img src="../static/assets/encouragement-icon.svg" alt="encouragement" />
+          <p>Hãy làm bài kiểm tra tổng kết để xác nhận bạn có trình</p>
+        </div>
+        <h2 class="chapters-container__title">Bài kiểm tra chương</h2>
+        
+        <div class="chapters-container">
+          <!-- chapterList.map... o day ne, moi chapter la mot div.chapter -->
+          {% for chapter in chapter_numbers_list %}
+          <button class="chapter">
+              <div class="chapter__button">
+                  <a href="{{ url_for('evaluate_chapter_test', subject_id=subject_id, chap_id=chapter) }}" class = "chapter_a">
+                      <p>Chương {{ chapter }}</p>
+                  </a>
+              </div>
+              <div class="circular-progress-bar--chapter{{ chapter }}"></div>
+            </button>
+          {% endfor %}
+      </div>
+      
+      </div>
+      <div class="buttons-container">
+        <a href="{{ url_for('practice_test', subject=subject) }}" class="practice-button">Luyện tập</a>
+        <a href="{{ url_for('total_test', subject=subject) }}" class="test-total-button">Làm bài kiểm tra tổng</a>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const chapterBestList = {{ grade_chapters | tojson }};
+        const grade_subject = {{ grade_subject }};
+        
+        // Initialize the chapters array with the subject first
+        const chapters = [
+            { name: "subject", percent: grade_subject, color: "" }
+        ];
+
+        // Add chapters from chapterBestList to the chapters array
+        chapterBestList.forEach((percent, index) => {
+            chapters.push({
+                name: `chapter${String(index + 1).padStart(2, '0')}`,  // Format chapter names
+                percent: percent,
+                color: ""  // Will be set based on the percentage
+            });
+        });
+
+        // Handle the subject separately
+        const subjectEntry = chapters[0];  // The first entry is always the "subject"
+        if (subjectEntry) {
+            const subjectPercent = subjectEntry.percent;
+            let subjectColor = "";
+
+            // Determine the subject's color based on the percentage
+            if (subjectPercent < 25) {
+                subjectColor = "#eb4d4b";  // Red for less than 25%
+            } else if (subjectPercent < 50) {
+                subjectColor = "#f0932b";  // Orange for 25% to 49%
+            } else if (subjectPercent < 75) {
+                subjectColor = "#f9ca24";  // Yellow for 50% to 74%
+            } else {
+                subjectColor = "#78e08f";  // Green for 75% and above
+            }
+
+            // Apply subject color and update the progress bar for the subject
+            const subjectProgressBar = document.querySelector(".circular-progress-bar--subject");
+            if (subjectProgressBar) {
+                subjectProgressBar.innerHTML = `
+                    <div class="progress-group">
+                        <div class="circular-progress">
+                            <span class="chapter-value">0</span>
+                        </div>
+                    </div>
+                `;
+
+                // Animate the subject progress bar
+                let subjectProgressStartValue = 0;
+                const speed = 1;
+                const step = 0.3;  // Smaller increment for smoother animation
+
+                const subjectProgressTimer = setInterval(() => {
+                    subjectProgressStartValue += step;
+                    if (subjectProgressStartValue >= subjectPercent) {
+                        subjectProgressStartValue = subjectPercent;
+                        clearInterval(subjectProgressTimer);
+                    }
+
+                    subjectProgressBar.querySelector(".circular-progress").style.background = `
+                        conic-gradient(${subjectColor} ${3.6 * subjectProgressStartValue}deg, #fff 0deg)`;
+
+                    subjectProgressBar.querySelector(".chapter-value").innerHTML =
+                        `${subjectProgressStartValue.toFixed(1)}`;
+                }, speed);
+            }
+        }
+
+        // Handle the chapters starting from index 1 (skip the subject)
+        chapters.slice(1).forEach((chapter, index) => {
+            const percent = chapter.percent;
+
+            // Determine the color based on the percent
+            if (percent < 25) {
+                chapter.color = "#eb4d4b"; // Red for less than 25%
+            } else if (percent >= 25 && percent < 50) {
+                chapter.color = "#f0932b"; // Orange for 25% to 49%
+            } else if (percent >= 50 && percent < 75) {
+                chapter.color = "#f9ca24"; // Yellow for 50% to 74%
+            } else {
+                chapter.color = "#78e08f"; // Green for 75% and above
+            }
+
+            // Apply color to circular progress bar for chapters
+            const progressBarContainer = document.querySelector(
+                `.circular-progress-bar--${chapter.name}`
+            );
+            if (progressBarContainer) {
+                // Add the progress group HTML structure
+                progressBarContainer.innerHTML = `
+                    <div class="progress-group">
+                        <div class="circular-progress">
+                            <span class="chapter-value">0</span>
+                        </div>
+                    </div>
+                `;
+
+                // Animate the chapter progress bar
+                let progressStartValue = 0;
+                const speed = 1;
+                const step = 0.3;  // Smaller increment for smoother animation
+                const progressEndValue = percent;
+
+                const progressTimer = setInterval(() => {
+                    progressStartValue += step;
+                    if (progressStartValue >= progressEndValue) {
+                        progressStartValue = progressEndValue;
+                        clearInterval(progressTimer);
+                    }
+
+                    // Apply the gradient background for circular progress with the same color
+                    progressBarContainer.querySelector(".circular-progress").style.background = `
+                        conic-gradient(${chapter.color} ${3.6 * progressStartValue}deg, #fff 0deg)`;
+
+                    // Update the displayed percentage value
+                    progressBarContainer.querySelector(".chapter-value").innerHTML =
+                        `${progressStartValue.toFixed(1)}`;
+                }, speed);
+            }
+        });
+    });
+
+
+
+
+
+
+  </script>
+</html>

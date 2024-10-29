@@ -81,23 +81,24 @@ def get_mean_grade(current_user_id, subject):
         Test.questions.like(f'{subject}%')
     ).order_by(Test.time.desc()).limit(10).all()
     
-    # Calculate the grade for each record
+    # Initialize variables for total grade calculation and tracking chapters
     total_grade = 0
     num_records = len(records)
     max_chap = 1
     grade_list = []
     for record in records:
-        # Split the result string and count the number of 1s
-        num_ones = record.result.split('_').count('1')
-
-        question_count = len(record.result.split('_'))
+        # Split the result string and count the number of '1's
+        results = record.result.split('_')
+        num_ones = results.count('1')
+        question_count = len(results)
         
-        # Scale the number of 1s to a grade out of 10
+        # Scale the number of '1's to a grade out of 10 (as a percentage)
         grade = (num_ones / question_count) * 10
-        
         # Add the grade to the total grade sum
         total_grade += grade
-        grade_list.append(grade)
+        grade_list.append(round(grade, 2))
+        
+        # Update the maximum chapter if necessary
         tempChap = int(record.knowledge)
         if tempChap >= max_chap:
             max_chap = tempChap
@@ -106,6 +107,51 @@ def get_mean_grade(current_user_id, subject):
     mean_grade = total_grade / num_records if num_records > 0 else 0
     return round(mean_grade, 2), max_chap, grade_list
 
+def get_chapter_mean_list(current_user_id, subject):
+    # Fetch all records that match the criteria
+    records = Test.query.filter(
+        Test.user_id == current_user_id,
+        Test.test_type == 0,
+        Test.questions.like(f'{subject}%')
+    ).all()
+    
+    max_chapter = get_max_chapter(subject)
+    print(f"Max chapter: {max_chapter}")
+    
+    # Dictionaries to hold the total grade and count per chapter (knowledge value)
+    knowledge_total_grades = {}
+    knowledge_counts = {}
+
+    for record in records:
+        # Split the result string to count the number of 1s
+        num_ones = record.result.split('_').count('1')
+        
+        # Calculate the total number of questions
+        question_count = len(record.result.split('_'))
+        
+        # Scale the grade to a score out of 10
+        grade = (num_ones / question_count) * 10
+
+        # Track the total grade and count for each knowledge (chapter) value
+        knowledge = int(record.knowledge)
+        if knowledge in knowledge_total_grades:
+            knowledge_total_grades[knowledge] += grade
+            knowledge_counts[knowledge] += 1
+        else:
+            knowledge_total_grades[knowledge] = grade
+            knowledge_counts[knowledge] = 1
+
+    # Create the mean grade list per chapter
+    chapter_mean_list = [0] * max_chapter
+
+    for knowledge, total_grade in knowledge_total_grades.items():
+        # Calculate the mean grade for each chapter and place it in the list
+        if 1 <= knowledge <= max_chapter:
+            mean_grade = total_grade / knowledge_counts[knowledge]
+            chapter_mean_list[knowledge - 1] = round(mean_grade, 2)
+    
+    return chapter_mean_list
+
 def get_chapter_best_list(current_user_id, subject):
     records = Test.query.filter(
         Test.user_id == current_user_id,
@@ -113,16 +159,18 @@ def get_chapter_best_list(current_user_id, subject):
         Test.questions.like(f'{subject}%')
     ).all()
     max_chapter = get_max_chapter(subject)
+    print(f"max chapter:{max_chapter}")
     knowledge_best_grades = {}
 
     for record in records:
-        # Split the questions string to count the number of 1s
-        grade = record.questions.split('_').count('1')
+        # Split the result string to count the number of 1s
+        num_ones = record.result.split('_').count('1')
         
+        # Calculate the total number of questions
         question_count = len(record.result.split('_'))
         
-        # Scale the number of 1s to a grade out of 10
-        grade = (grade / question_count) * 10
+        # Scale the grade to a score out of 10
+        grade = (num_ones / question_count) * 10
 
         # Update the best grade for each knowledge value
         knowledge = record.knowledge
@@ -281,6 +329,9 @@ def home():
     grade_1, max_chap_1, grade_list_1 = get_mean_grade(current_user.id, "T")
     grade_2, max_chap_2, grade_list_2 = get_mean_grade(current_user.id, "L")
     grade_3, max_chap_3, grade_list_3 = get_mean_grade(current_user.id, "H")
+    print(f"T: {max_chap_1}, {grade_list_1}")
+    print(f"L: {max_chap_2}, {grade_list_2}")
+    print(f"H: {max_chap_3}, {grade_list_3}")
     grade_1 = (grade_1/10)/7*max_chap_1*100
     grade_percents.append(grade_1)
     grade_2 = (grade_2/10)/7*max_chap_2*100
@@ -290,6 +341,7 @@ def home():
     mean_percent = sum(grade_percents) / len(grade_percents)
     grade_percents.append(mean_percent)
     print(grade_percents)
+
     heat_map_data = get_test_count_dates(current_user.id)
     return render_template("home_new.html", title="Trang chủ", university=university, subject=subject, todo_l = todo_l, grades = grade_percents, grade_list_1 = grade_list_1, grade_list_2 = grade_list_2, grade_list_3 = grade_list_3, heat_map_data = heat_map_data )
 
@@ -559,7 +611,7 @@ def subject(subject_id):
     chapter_numbers_list = [f"{int(row.chapter_number):02}" for row in chapter_numbers]    
     grade_subject, max_chap, grade_list_1 = get_mean_grade(current_user.id, subject)
     grade_subject = (grade_subject/10)/7*max_chap*100
-    grade_chapters = get_chapter_best_list(current_user.id,subject)
+    grade_chapters = get_chapter_mean_list(current_user.id,subject)
     grade_chapters = [value * 10 for value in grade_chapters]
     print(grade_subject, grade_chapters)
     # Pass subject_id to the template
@@ -740,7 +792,7 @@ def practice_test_post(subject):
             result.append("1")
         else:
             result.append("0")
-            wrong_answers.append(str(question['ID']))
+            wrong_answers.append(str(i)) 
         time_string += f"{time_spent[i]}_"
 
     # Clean up strings
@@ -1160,7 +1212,7 @@ def evaluate_chapter_test(subject_id,chap_id):
         analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
     
     #Get percent_chapter:
-    grade_chapters = get_chapter_best_list(current_user.id,subject)
+    grade_chapters = get_chapter_mean_list(current_user.id,subject)
     percent_chapter = grade_chapters[int(chap_id)-1]
 
     #QUery thred, previous result, difficulty
@@ -1254,7 +1306,7 @@ def evaluate_chapter_test(subject_id,chap_id):
         "nums": nums
     }
 
-    return render_template("chapter2.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, chart_data = chart_data,avg_score    = avg_score)
+    return render_template("chapter2.html", feedback=analysis_result, chap_id=chap_id, subject = subject, subject_id = subject_id, chart_data = chart_data,avg_score= avg_score)
 
 
 # Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
@@ -1314,7 +1366,7 @@ def analyze_total_test(subject_id):
         analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
     
     # #Get percent_chapter:
-    # grade_chapters = get_chapter_best_list(current_user.id,subject)
+    # grade_chapters = get_chapter_mean_list(current_user.id,subject)
     # percent_chapter = grade_chapters[int(chap_id)-1]
 
     # #QUery thred, previous result, difficulty
