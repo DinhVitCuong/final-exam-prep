@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive GitHub-style Contribution Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    * {
+      font-family: "poppins", sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .day {
+      shape-rendering: crispEdges;
+      stroke: #333; /* Border color for each day cell */
+      stroke-width: 3px; /* Border width */
+    }
+    .month {
+      font-size: 12px;
+      fill: #aaa;
+    }
+    .weekday {
+      font-size: 10px;
+      fill: #aaa;
+    }
+    .tooltip {
+      position: absolute;
+      padding: 5px;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+      font-size: 12px;
+      pointer-events: none;
+      display: none;
+    }
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    #heatmap {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="total-test" id="total-test">
+    <p class="total__content">
+      Bạn chưa làm một bài kiểm tra nào !
+    </p>
+  </div>
+  <div id="heatmap"></div>
+  <div class="tooltip" id="tooltip"></div>
+  <script>
+    // const data = {{heat_map_data | tojson}}
+    const data = [
+    { date: '2023-06-01', count: 1 },
+    { date: '2023-07-01', count: 3 },
+    { date: '2023-08-10', count: 5 },
+    { date: '2023-09-12', count: 2 },
+    { date: '2023-10-10', count: 4 },
+    // Add more dates as needed
+  ];
+    const totalTests = data.reduce((sum, entry) => sum + entry.count, 0);
+    const container = document.getElementById("heatmap");
+    const tooltip = document.getElementById("tooltip");
+
+    function drawHeatmap() {
+      container.innerHTML = ""; // Clear any existing SVG
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      const numWeeks = 52; // Approximate weeks in a year
+      const daysInWeek = 7;
+
+      const cellPadding = 2;
+      const cellSize = Math.min(
+        (width - 50) / numWeeks - cellPadding, 
+        (height - 40) / daysInWeek - cellPadding
+      );
+
+      const svg = d3.select("#heatmap")
+        .append("svg")
+        .attr("width", width) 
+        .attr("height", height)
+        .style("background-color", "#ffffff");
+
+      const dateMap = new Map(data.map(d => [d.date, d.count]));
+      const year = 2023;
+
+      // Updated color scale based on #fb5b00 with very light shade for zero contributions
+      const colorScale = d3.scaleQuantize()
+        .domain([0, d3.max(data, d => d.count)])
+        .range([
+          "#fff5e6", // Very light orange, almost white, for 0 contributions
+          "#ffd2b8", // Light shade
+          "#ffab85",
+          "#ff7c4f",
+          "#ff6228",
+          "#fb5b00"  // Full color #fb5b00 for highest contributions
+        ]);
+
+      svg.selectAll(".day")
+        .data(d3.timeDays(new Date(year, 0, 1), new Date(year + 1, 0, 1)))
+        .enter().append("rect")
+        .attr("class", "day")
+        .attr("width", cellSize)
+        .attr("height", cellSize)
+        .attr("x", d => Math.floor((d3.timeWeek.count(d3.timeYear(d), d) * (cellSize + cellPadding))))
+        .attr("y", d => d.getDay() * (cellSize + cellPadding) + 20)
+        .attr("fill", d => colorScale(dateMap.get(d.toISOString().slice(0, 10)) || 0))
+        .on("mouseover", (event, d) => {
+          const dateStr = d.toISOString().slice(0, 10);
+          const count = dateMap.get(dateStr) || 0;
+          tooltip.style.display = "block";
+          tooltip.innerHTML = `Bạn đã làm ${count} bài kiểm tra vào ngày ${dateStr}`;
+          tooltip.style.left = (event.pageX + 10) + "px";
+          tooltip.style.top = (event.pageY - 20) + "px";
+        })
+        .on("mouseout", () => {
+          tooltip.style.display = "none";
+        });
+
+      svg.selectAll(".month")
+        .data(d3.timeMonths(new Date(year, 0, 1), new Date(year + 1, 0, 1)))
+        .enter().append("text")
+        .attr("class", "month")
+        .attr("x", d => d3.timeWeek.count(d3.timeYear(d), d) * (cellSize + cellPadding))
+        .attr("y", 15)
+        .text(d => d3.timeFormat("%b")(d))
+        .style("fill", "#aaa");
+
+      const weekDays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+      svg.selectAll(".weekday")
+        .data(weekDays)
+        .enter()
+        .append("text")
+        .attr("class", "weekday")
+        .attr("x", -10)
+        .attr("y", (d, i) => i * (cellSize + cellPadding) + 35)
+        .style("text-anchor", "end")
+        .style("fill", "#aaa")
+        .text(d => d);
+        
+      // Update the total test count if there's content
+      if (totalTests > 0) {
+        const total_contenter = document.getElementById("total-test");
+        total_contenter.innerHTML = `
+              <p class="total__content">
+                  Bạn đã làm tổng cộng ${totalTests} bài kiểm tra!
+              </p>
+          `;
+      }
+    }
+    drawHeatmap();
+    window.addEventListener("resize", drawHeatmap);
+  
+  </script>
+</body>
+</html>

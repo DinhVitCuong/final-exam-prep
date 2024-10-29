@@ -6,17 +6,21 @@
     <title>Document</title>
     <style>
       a:link { 
-  text-decoration: none; 
-} 
-a:visited { 
-  text-decoration: none; 
-} 
-a:hover { 
-  text-decoration: none; 
-} 
-a:active { 
-  text-decoration: none; 
-}
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:visited { 
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:hover { 
+        color: #000000;
+        text-decoration: none; 
+      } 
+      a:active { 
+        color: #000000;
+        text-decoration: none; 
+      }
       * {
         font-family:"poppins", sans-serif;
         box-sizing: border-box;
@@ -38,7 +42,7 @@ a:active {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: white;
+        background-color: #e4fef9;
         width: 100%;
         height: 100%;
         position: relative;
@@ -67,7 +71,7 @@ a:active {
         align-items: center;
         background-color: rgba(255, 255, 255, 0.815);
         height: 14vh;
-        box-shadow: 0 0 4px 1px black;
+        box-shadow: 0 0 6px 2px #64baaa;
       }
       .button__analytics,
       .button__review,
@@ -76,23 +80,25 @@ a:active {
         gap: 0.5rem;
         justify-content: center;
         align-items: center;
-        padding: 0.8rem 1rem;
+        padding: 1.2rem 1.5rem;
         background-color: #4caf50;
         border-radius: 35px;
-        color: white;
+        color: rgb(0, 0, 0);
         font-size: 1.6em;
         font-weight: 600;
         img {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
         }
       }
       .button__review {
-        background-color: #ffc107;
+        background-color: #ff6a07e6;
         color: black;
       }
       .button__progress {
-        background-color: #1976d2;
+        
+        padding: 0.8rem 1.2rem;
+        background-color: #64baaa;
         font-size: 2em;
       }
 
@@ -103,7 +109,7 @@ a:active {
         background-color: white;
         padding: 16px;
         border-radius: 16px;
-        box-shadow: 1px 1px 4px 1px black;
+        box-shadow: 3px 3px 7px 3px #64baaa;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -118,7 +124,7 @@ a:active {
         font-size: 1.2em;
         margin-bottom: 16px;
       }
-      .chapters-container {
+      /* .chapters-container {
         padding-top: 16px;
         padding-left: 16px;
         display: flex;
@@ -147,7 +153,34 @@ a:active {
             background-color: #28d219d8;
           }
         }
+      } */
+      .chapters-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; /* Space between cubes */
+        justify-content: center; /* Center-align items */
+        padding: 1rem;
       }
+
+      .chapter {
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: space-between; /* Space between text and circle */
+        width: calc(25% - 1rem); /* Each cube takes 1/4 of the row with gap spacing */
+        min-width: 150px; /* Minimum width for responsiveness */
+        background-color: #64baaa ;
+        padding: 1rem;
+        border-radius: 8px; /* Optional: rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .chapter__button {
+        font-family:"poppins", sans-serif;
+        flex: 1; /* Allow text section to take available space */
+        font-weight: bold;
+        font-size: calc(1vw + 1vh);
+      }
+
       .buttons-container {
         display: flex;
         justify-content: space-evenly;
@@ -157,8 +190,11 @@ a:active {
         .test-total-button {
           padding: 1rem 2rem;
           font-size: 1.5em;
-          color: white;
-          background-color: #1976d2;
+          color: rgb(0, 0, 0);
+          font-weight: bold;
+          font-size: calc(1vw + 1vh);
+          background-color: #64baaa;
+          box-shadow: 2px 2px 4px 2px #47877b;
           border-radius: 30px;
           width: 20%;
           min-width: fit-content;
@@ -175,8 +211,8 @@ a:active {
       }
 
       .circular-progress {
-        height: 60px;
-        width: 60px;
+        height: 100px;
+        width: 100px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -189,10 +225,10 @@ a:active {
       .circular-progress::before {
         content: "";
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
-        background-color: #1976d2d8;
+        background-color: #64baaa;
       }
       .chapter-value {
         position: relative;
@@ -238,14 +274,14 @@ a:active {
         <div class="chapters-container">
           <!-- chapterList.map... o day ne, moi chapter la mot div.chapter -->
           {% for chapter in chapter_numbers_list %}
-          <div class="chapter">
+          <button class="chapter">
               <div class="chapter__button">
                   <a href="{{ url_for('evaluate_chapter_test', subject_id=subject_id, chap_id=chapter) }}" class = "chapter_a">
                       <p>Chương {{ chapter }}</p>
                   </a>
               </div>
               <div class="circular-progress-bar--chapter{{ chapter }}"></div>
-          </div>
+            </button>
           {% endfor %}
       </div>
       
