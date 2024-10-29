@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Progress</title>
+    <style>
+        body {
+            background-color: #FFE4C4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #FFF8F0;
+            border-radius: 10px;
+            padding: 30px;
+            width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container h2 {
+            color: #003399;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .input-container {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input-container select {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .input-container .icon {
+            font-size: 20px;
+            padding: 10px;
+            background-color: #E0F7FA;
+            border-radius: 5px;
+        }
+
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .navigation .arrow {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>BẠN ĐÃ HỌC ĐẾN ĐÂU RỒI</h2>
+        <form action="/subject_chapter_selection" method="POST">
+            <div class="input-container">
+                <label for="toan-select">Toán:</label>
+                <select id="toan-select" name="toan">
+                    <option value="Toan" disabled selected>Toán</option>
+                    <option value="1">Chương 1</option>
+                    <option value="2">Chương 2</option>
+                    <option value="3">Chương 3</option>
+                    <option value="4">Chương 4</option>
+                    <option value="5">Chương 5</option>
+                    <option value="6">Chương 6</option>
+                    <option value="7">Chương 7</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="ly-select">Lý:</label>
+                <select id="ly-select" name="ly">
+                    <option value="Ly" disabled selected>Lý</option>
+                    <option value="1">Chương 1</option>
+                    <option value="2">Chương 2</option>
+                    <option value="3">Chương 3</option>
+                    <option value="4">Chương 4</option>
+                    <option value="5">Chương 5</option>
+                    <option value="6">Chương 6</option>
+                    <option value="7">Chương 7</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <label for="hoa-select">Hóa:</label>
+                <select id="hoa-select" name="hoa">
+                    <option value="Hoa" disabled selected>Hóa</option>
+                    <option value="1">Chương 1</option>
+                    <option value="2">Chương 2</option>
+                    <option value="3">Chương 3</option>
+                    <option value="4">Chương 4</option>
+                    <option value="5">Chương 5</option>
+                    <option value="6">Chương 6</option>
+                    <option value="7">Chương 7</option>
+                </select>
+            </div>
+            <div class="navigation">
+                <button type="button" onclick="window.history.back()">&laquo;</button>
+                <button type="submit">&raquo;</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -116,3 +116,4 @@ class test_selection_form(FlaskForm):
 class QuizForm(FlaskForm):
     timeSpent = HiddenField('Time Spent', validators=[InputRequired()])
     answers = HiddenField('Answers', validators=[InputRequired()])
+

@@ -310,9 +310,10 @@ def settings():
 @app.route("/home", methods=("GET", "POST"), strict_slashes=False)
 def home():
     if current_user.is_authenticated == False:
-        return redirect(url_for('login'))
+        return redirect(url_for('login'))   
     if current_user.uni_select == 0:
-        return redirect(url_for('select_uni'))
+        return redirect(url_for('select_uni', user_id=current_user.id))
+
     progress = Progress.query.filter(Progress.user_id==current_user.id).first()
     university = Universities.query.filter(Universities.id==progress.user_major_uni).first()
     subject = SubjectCategory.query.filter(SubjectCategory.id==progress.user_subject_cat).first()
@@ -418,7 +419,7 @@ def select_uni():
             permanace_uni = selected_university
         print(permanace_uni)
         if current_slide==6:
-            return redirect(url_for('home'))
+            return redirect(url_for('progress_selection', user_id=current_user.id))
         else: 
             if current_slide==5:
                 majors_score = selected_university.pass_score
@@ -450,6 +451,106 @@ def select_uni():
     form.university.choices = []
 
     return render_template("select_uni.html", form=form,current_slide=0)
+
+
+@app.route("/progress_selection", methods=["GET", "POST"])
+def progress_selection():
+    # Get user_id and university_id if passed in the URL (for initial GET request)
+    user_id = request.args.get('user_id')
+    university_id = request.args.get('university_id')
+    
+    # Check if this is a POST request to handle form data
+    if request.method == "POST":
+        # Retrieve data from form submission
+        print("study option")
+        
+        study_option = request.form.get("studyOption")
+        print(study_option)
+        current_slide = int(request.form.get("current_slide", 0))
+
+        # Execute tasks based on `studyOption`
+        if study_option == "1":
+            # Task specific to option 1
+            print("Selected option: Học lại từ đầu")
+            existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+            existing_progress.progress_1 = 1
+            existing_progress.progress_2 = 1
+            existing_progress.progress_3 = 1
+            db.session.commit()
+            return redirect(url_for('home'))
+        elif study_option == "2":
+            # Task specific to option 2
+            print("Selected option: Giai đoạn nước rút")
+            existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+            existing_progress.progress_1 = 7
+            existing_progress.progress_2 = 7
+            existing_progress.progress_3 = 7
+            db.session.commit()
+            # (Implement any custom task logic for this option)
+            return redirect(url_for('home'))
+        elif study_option == "3":   
+            # Task specific to option 3
+            print("Selected option: Quá trình học các môn")
+            # (Implement any custom task logic for this option)
+            return redirect(url_for('subject_chapter_selection', user_id=user_id, university_id=university_id))
+
+        # # Implement slide-based logic
+        # if current_slide >= 1:
+        #     # Additional logic for filtering or progressing through selections
+        #     # (e.g., filtering universities based on previous selections)
+        #     print(f"Progressing to slide: {current_slide}")
+        #     # If necessary, filter or perform database queries here based on selections
+
+        #     # For example, if current_slide reaches a certain value, redirect
+        #     if current_slide == 6:
+        #         return redirect(url_for('home', user_id=user_id, university_id=university_id))
+        
+        # Any necessary updates to the database or session can be made here
+
+        # Render progress page with updated values
+        return render_template(
+            "progress_selection.html", 
+            user_id=user_id, 
+            university_id=university_id, 
+            current_slide=current_slide
+        )
+
+    # Handle initial GET request (if accessed without POST data)
+    return render_template("progress_selection.html", user_id=user_id, university_id=university_id, current_slide=0)
+
+
+
+
+@app.route("/subject_chapter_selection", methods=["GET", "POST"])
+def subject_chapter_selection():
+    # Get user_id and university_id if passed in the URL (for initial GET request)
+    user_id = request.args.get('user_id')
+    university_id = request.args.get('university_id')
+
+    if request.method == "POST":
+        # Retrieve selections by their unique IDs
+        toan_selection = request.form.get("toan")
+        ly_selection = request.form.get("ly")
+        hoa_selection = request.form.get("hoa")
+
+        # Print selections to confirm they're retrieved correctly
+        print("Toán selection:", toan_selection)
+        print("Lý selection:", ly_selection)
+        print("Hóa selection:", hoa_selection)
+
+        # Implement any custom logic or database updates here based on selections
+        existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+        existing_progress.progress_1 = int(toan_selection)
+        existing_progress.progress_2 = int(ly_selection)
+        existing_progress.progress_3 = int(hoa_selection)
+        db.session.commit()
+        # Pass selections to the template if needed
+        return redirect(url_for('home'))
+    
+    # Render initial template if it's a GET request
+    return render_template("subject_chapter_selection.html", user_id=user_id, university_id=university_id)
+
+
 
 
 

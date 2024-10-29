@@ -807,15 +807,15 @@
       }
   </script>
   <script>
-    // const data = {{heat_map_data | tojson}}
-    const data = [
-    { date: '2023-06-01', count: 1 },
-    { date: '2023-07-01', count: 3 },
-    { date: '2023-08-10', count: 5 },
-    { date: '2023-09-12', count: 2 },
-    { date: '2023-10-10', count: 4 },
+    const data = {{heat_map_data | tojson}}
+    // const data = [
+    // { date: '2023-06-01', count: 1 },
+    // { date: '2023-07-01', count: 3 },
+    // { date: '2023-08-10', count: 5 },
+    // { date: '2023-09-12', count: 2 },
+    // { date: '2023-10-10', count: 4 },
     // Add more dates as needed
-  ];
+  ;
     const totalTests = data.reduce((sum, entry) => sum + entry.count, 0);
     const container = document.getElementById("heatmap");
     const tooltip = document.getElementById("tooltip");
@@ -841,7 +841,7 @@
         .style("background-color", "#ffffff");
 
       const dateMap = new Map(data.map(d => [d.date, d.count]));
-      const year = 2023;
+      const year = 2024;
 
       // Updated color scale based on #fb5b00 with very light shade for zero contributions
       const colorScale = d3.scaleQuantize()

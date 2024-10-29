@@ -58,7 +58,6 @@ class Progress(db.Model):
     threadhold_2 = db.Column(db.String, nullable=True)
     progress_3 = db.Column(db.String, nullable=True)
     threadhold_3     = db.Column(db.String, nullable=True)
-    wrong_answer = db.Column(db.String, nullable=True)
 # table phan tich
 # id, user_id, subject_id, date, analysis
 

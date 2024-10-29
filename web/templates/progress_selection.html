@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Options</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFE7D4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            background-color: white;
+            padding: 40px 80px;
+            border-radius: 10px;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+            width: 25%;
+            text-align: center;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0836D8;
+            margin-bottom: 30px;
+            font: Alegreya Sans;
+            align-items: center;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5%;
+            margin-left: 10%;
+            font-size: 16px;
+            font-weight: bold;
+            color: #696969;
+            justify-content: flex-start;
+        }
+        .option input[type="checkbox"] {
+            margin-right: 2%;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            margin-right: 50%;
+            top: 50%;
+            width: 100%;
+        }
+        .nav-buttons button {
+            position: relative;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #0F3DDE;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="/progress_selection" method="POST">
+        <div class="title">BẠN MUỐN BẮT ĐẦU HỌC TỪ ĐÂU</div>
+        
+        <div class="option">
+            <input type="radio" id="option1" name="studyOptionRadio" value="1" onclick="setStudyOption(this.value)">
+            <label for="option1">Tôi muốn học lại từ đầu</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="option2" name="studyOptionRadio" value="2" onclick="setStudyOption(this.value)">
+            <label for="option2">Tôi đang trong giai đoạn nước rút</label>
+        </div>
+        <div class="option">
+            <input type="radio" id="option3" name="studyOptionRadio" value="3" onclick="setStudyOption(this.value)">
+            <label for="option3">Tôi đang trong quá trình học các môn</label>
+        </div>
+        
+        <div class="nav-buttons">
+            <input type="hidden" name="current_slide" id="current_slide" value="0">
+            <input type="hidden" name="studyOption" id="studyOption" value="0">
+            
+            <button type="button" onclick="previousSlide()">&laquo;</button>
+            <button type="submit" onclick="nextSlide()">&raquo;</button>
+        </div>
+    </form>
+    
+    <script>
+        function setStudyOption(value) {
+            document.getElementById("studyOption").value = value;
+        }
+    
+        function nextSlide() {
+            const currentSlideInput = document.getElementById("current_slide");
+            currentSlideInput.value = parseInt(currentSlideInput.value) + 1;
+        }
+    
+        function previousSlide() {
+            const currentSlideInput = document.getElementById("current_slide");
+            currentSlideInput.value = Math.max(0, parseInt(currentSlideInput.value) - 1);
+        }
+    </script>
+
+</body>
+</html>
