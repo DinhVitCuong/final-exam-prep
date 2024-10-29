@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Options</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFE7D4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            position: relative;
+            background-color: white;
+            padding: 40px 80px;
+            border-radius: 10px;
+            /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+            width: 25%;
+            text-align: center;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #0836D8;
+            margin-bottom: 30px;
+            font: Alegreya Sans;
+            align-items: center;
+        }
+        .option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5%;
+            margin-left: 10%;
+            font-size: 16px;
+            font-weight: bold;
+            color: #696969;
+            justify-content: flex-start;
+        }
+        .option input[type="checkbox"] {
+            margin-right: 2%;
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10%;
+            margin-right: 50%;
+            top: 50%;
+            width: 100%;
+        }
+        .nav-buttons button {
+            position: relative;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #0F3DDE;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">BẠN MUỐN BẮT ĐẦU HỌC TỪ ĐÂU</div>
+        <div class="option">
+            <input type="checkbox" id="option1">
+            <label for="option1">Tôi muốn học lại từ đầu</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="option2">
+            <label for="option2">Tôi đang trong giai đoạn nước rút</label>
+        </div>
+        <div class="option">
+            <input type="checkbox" id="option3">
+            <label for="option3">Tôi đang trong quá trình học các môn</label>
+        </div>
+        <div class="nav-buttons">
+            <button>&laquo;</button>
+            <button>&raquo;</button>
+        </div>
+    </div>
+</body>
+</html>
