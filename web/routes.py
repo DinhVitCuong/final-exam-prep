@@ -561,13 +561,26 @@ def total_test(subject):
         return redirect(url_for('login'))
     if current_user.uni_select == 0:
         return redirect(url_for('select_uni'))
+    
+    test_id = str(uuid4())
+    user_id = str(current_user.id)
+
     # Determine the chapter based on the subject
-    if subject == "T":
-        chapter = 7
-    elif subject == "L":
-        chapter = 7
+    existing_progress = Progress.query.filter_by(user_id=user_id).first()
+    subject_cat = existing_progress.user_subject_cat
+    print(subject_cat)
+
+    # tìm ra các môn của khứa này học
+    cate_subjects = SubjectCategory.query.filter_by(id=subject_cat).first()
+    dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
+                    str(cate_subjects.subject2)[0] : 2, 
+                    str(cate_subjects.subject3)[0]: 3}
+    if dic_subjects[subject] == 1:
+        chapter = int(existing_progress.progress_1)
+    elif dic_subjects[subject] == 2:
+        chapter = int(existing_progress.progress_2)
     else:
-        chapter = 8
+        chapter = int(existing_progress.progress_3)
 
     time_limit = 90  # Time limit in minutes
     rate = [40, 20, 30, 10]  # Question distribution rates
@@ -584,8 +597,7 @@ def total_test(subject):
     } for q in test_total.create_test(rate)]
 
     # Generate a unique test ID
-    test_id = str(uuid4())
-    user_id = str(current_user.id)
+    
     # Store the test data in the database
     temp_test = TempTest(
         id=test_id,
@@ -812,12 +824,12 @@ def practice_test(subject):
     if current_user.uni_select == 0:
         return redirect(url_for('select_uni'))
     # Xác định chapter theo subject
-    if subject == "M":
+    if subject == "T":
         chapter_count = 7
     elif subject == "L":
         chapter_count = 7
     else:
-        chapter_count = 8
+        chapter_count = 7
 
     time_limit = 45  
     rate = [40, 20, 30, 10]     
@@ -1176,8 +1188,33 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         date=current_date+timedelta(days=days)
                     )
                     db.session.add(new_test_date)
-                    db.session.commit()
 
+                    # tìm tổ hợp môn
+                    existing_progress = Progress.query.filter_by(user_id=user_id).first()
+                    subject_cat = existing_progress.user_subject_cat
+                    # tìm ra các môn của khứa này học
+                    cate_subjects = SubjectCategory.query.filter_by(id=subject_cat).first()
+                    dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
+                                     str(cate_subjects.subject2)[0] : 2, 
+                                     str(cate_subjects.subject3)[0]: 3}
+                    if dic_subjects[subject] == 1:
+                        a = int(existing_progress.progress_1)
+                        if a<7:
+                            a+= 1
+                        existing_progress.progress_1 = str(a)
+                    elif dic_subjects[subject] == 2:
+                        a = int(existing_progress.progress_2)
+                        if a<7:
+                            a+= 1
+                        existing_progress.progress_2 = str(a)
+                    else:
+                        a = int(existing_progress.progress_3)
+                        if a<7:
+                            a+= 1
+                        existing_progress.progress_3 = str(a)
+
+                    db.session.commit()
+                    
 
                 
                 else:
@@ -1212,8 +1249,29 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                             db.session.add(new_todo)
                         # update date
                         exisiting_date.date = exisiting_date.date + timedelta(days=days)
+                        # tìm tổ hợp môn
+                        existing_progress = Progress.query.filter_by(user_id=user_id).first()
+                        subject_cat = existing_progress.user_subject_cat
+                        # tìm ra các môn của khứa này học
+                        cate_subjects = Subject.query.filter_by(subject_cat=subject_cat).first()
+                        dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
+                                        str(cate_subjects.subject2)[0] : 2, 
+                                        str(cate_subjects.subject3)[0]: 3}
+                        if dic_subjects[subject] == 1:
+                            a = int(existing_progress.progress_1)
+                            a+= 1
+                            existing_progress.progress_1 = str(a)
+                        elif dic_subjects[subject] == 2:
+                            a = int(existing_progress.progress_2)
+                            a+= 1
+                            existing_progress.progress_2 = str(a)
+                        else:
+                            a = int(existing_progress.progress_3)
+                            a+= 1
+                            existing_progress.progress_3 = str(a)
+                        
                         db.session.commit()
-            
+                        
 
 
 

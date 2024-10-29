@@ -128,10 +128,14 @@ class pr_br_rcmd:
     def load_data(self):
         try:
             # Load total test results
-            total_results = db.session.query(Test).filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
+            data_find = db.session.query(Test).filter(
+                Test.questions.like(f"{self.subject_name}%")
+            )
+
+            total_results = data_find.filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
             total_q = []
             count_t = {}
-
+            
             if total_results:
                 for result in total_results:
                     wrong_answers = result.wrong_answer.split('_') if result.wrong_answer else []
