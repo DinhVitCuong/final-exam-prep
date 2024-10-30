@@ -135,3 +135,9 @@ class LessonInfo(db.Model):
     chapter_num = db.Column(db.String,primary_key = True, nullable=False)
     lesson_num = db.Column(db.String, primary_key = True, nullable=False)
     lesson_name = db.Column(db.String, nullable=False)
+
+class ProblemTypes(db.Model):
+    __tablename__ ="problem_types"
+    id_subject = db.Column(db.String(10), primary_key = False,nullable=False)
+    chapter_num = db.Column(db.String,primary_key = False, nullable=False)
+    problem_types = db.Column(db.String,primary_key = True, nullable=False)
