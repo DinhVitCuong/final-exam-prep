@@ -371,9 +371,6 @@ class TestChap(TestOrigin):
 #         return questions
 
 import random
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-from sqlalchemy import func
 from sqlalchemy.orm import aliased
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -435,19 +432,14 @@ class pr_br_rcmd:
     def compute_similarity(self):
         problem_type_counts = Counter()
 
-        # Áp dụng TF-IDF cho tất cả các dạng bài và từng câu hỏi sai
         for wrong_question in self.wrong_questions:
             all_texts = self.problem_types + [wrong_question]
             tfidf_matrix = self.vectorizer.fit_transform(all_texts)
 
-            # Tính độ tương đồng cosine giữa câu hỏi sai và các dạng bài
             similarity_scores = cosine_similarity(tfidf_matrix[-1:], tfidf_matrix[:-1])[0]
 
-            # Tìm dạng bài có độ tương đồng cao nhất với câu hỏi sai hiện tại
             most_similar_index = similarity_scores.argmax()
             most_similar_problem_type = self.problem_types[most_similar_index]
-
-            # Đếm số lần dạng bài tập xuất hiện nhiều nhất trong các câu hỏi sai
             problem_type_counts[most_similar_problem_type] += 1
 
         # Lấy top 5 dạng bài sai nhiều nhất
@@ -456,10 +448,8 @@ class pr_br_rcmd:
 
 
     def question_prep(self):
-        # Chuẩn bị câu hỏi từ các dạng bài trong top problem types
         selected_questions = []
 
-        # Lấy văn bản của các câu hỏi từ ngân hàng câu hỏi
         question_texts = [qa.question for qa in self.mock_db]
 
         # Kiểm tra nếu self.top_problem_types hoặc question_texts trống
@@ -467,7 +457,6 @@ class pr_br_rcmd:
             print("Warning: No top problem types or question texts available for similarity calculation.")
             return selected_questions  # Trả về danh sách câu hỏi trống
 
-        # Áp dụng TF-IDF cho cả dạng bài trong top_problem_types và câu hỏi trong mock_db
         all_texts = self.top_problem_types + question_texts
         tfidf_matrix = self.vectorizer.fit_transform(all_texts)
 
@@ -476,20 +465,15 @@ class pr_br_rcmd:
             tfidf_matrix[:len(self.top_problem_types)], 
             tfidf_matrix[len(self.top_problem_types):]
         )
-
-        # Lấy câu hỏi có độ tương đồng cao với top problem types
         for idx, scores in enumerate(similarity_matrix):
             for q_idx, score in enumerate(scores):
-                if score > 0.5:  # Ngưỡng điểm similarity
+                if score > 0.5: 
                     selected_questions.append(self.mock_db[q_idx])
 
-        # Loại bỏ trùng lặp dựa trên ID câu hỏi
         unique_questions = list({q.id: q for q in selected_questions}.values())
 
-        # Lấy ngẫu nhiên 30 câu hỏi từ danh sách đã lọc
         random_questions = random.sample(unique_questions, min(len(unique_questions), 30))
 
-        # Tạo danh sách câu hỏi với các thuộc tính cần thiết
         questions = []
         for q_data in random_questions:
             question_obj = type('Question', (), {})()
