@@ -98,6 +98,7 @@
     <div class="container">
         <h2>BẠN ĐÃ HỌC ĐẾN ĐÂU RỒI</h2>
         <form action="/subject_chapter_selection" method="POST">
+            <input type="hidden" name="user_id" value="{{ user_id }}">
             <div class="input-container">
                 <label for="toan-select">Toán:</label>
                 <select id="toan-select" name="toan">

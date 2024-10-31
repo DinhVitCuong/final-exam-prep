@@ -392,11 +392,18 @@ class pr_br_rcmd:
 
     def load_data(self):
         try:
-            # Load total test results
-            total_results = db.session.query(Test).filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
-            total_q = []
-            count_t = {}
+            if self.subject_name == 'T':
+                self.id_subject = 'S1'
+            elif self.subject_name == 'L':
+                self.id_subject = 'S2'
+            elif self.subject_name == 'H':
+                self.id_subject = 'S3'
 
+            # Truy vấn kết quả tổng hợp từ cơ sở dữ liệu
+            total_results = db.session.query(Test).filter_by(test_type=1).order_by(Test.id.desc()).limit(self.n_total).all()
+            total_wrong_q = []
+
+            # Lấy danh sách ID của các câu trả lời sai từ kết quả tổng hợp
             if total_results:
                 for result in total_results:
                     wrong_answers = result.wrong_answer.split('_') if result.wrong_answer else []
@@ -460,7 +467,7 @@ class pr_br_rcmd:
         )
         for idx, scores in enumerate(similarity_matrix):
             for q_idx, score in enumerate(scores):
-                if score > 0.5: 
+                if score > 0.2: 
                     selected_questions.append(self.mock_db[q_idx])
 
         unique_questions = list({q.id: q for q in selected_questions}.values())

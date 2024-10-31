@@ -456,11 +456,18 @@ def select_uni():
 @app.route("/progress_selection", methods=["GET", "POST"])
 def progress_selection():
     # Get user_id and university_id if passed in the URL (for initial GET request)
-    user_id = request.args.get('user_id')
+    print("progress selection")
+    if request.method == "GET":
+        user_id = request.args.get('user_id')
+    else:
+        # For POST request, retrieve `user_id` from form data
+        user_id = request.form.get('user_id')
+
     university_id = request.args.get('university_id')
     
     # Check if this is a POST request to handle form data
     if request.method == "POST":
+        user_id = request.form.get("user_id")
         # Retrieve data from form submission
         print("study option")
         
@@ -472,7 +479,7 @@ def progress_selection():
         if study_option == "1":
             # Task specific to option 1
             print("Selected option: Học lại từ đầu")
-            existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+            existing_progress = Progress.query.filter_by(user_id=user_id).first()
             existing_progress.progress_1 = 1
             existing_progress.progress_2 = 1
             existing_progress.progress_3 = 1
@@ -481,7 +488,7 @@ def progress_selection():
         elif study_option == "2":
             # Task specific to option 2
             print("Selected option: Giai đoạn nước rút")
-            existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+            existing_progress = Progress.query.filter_by(user_id=user_id).first()
             existing_progress.progress_1 = 7
             existing_progress.progress_2 = 7
             existing_progress.progress_3 = 7
@@ -529,6 +536,7 @@ def subject_chapter_selection():
 
     if request.method == "POST":
         # Retrieve selections by their unique IDs
+        user_id = request.form.get("user_id")
         toan_selection = request.form.get("toan")
         ly_selection = request.form.get("ly")
         hoa_selection = request.form.get("hoa")
@@ -539,7 +547,7 @@ def subject_chapter_selection():
         print("Hóa selection:", hoa_selection)
 
         # Implement any custom logic or database updates here based on selections
-        existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+        existing_progress = Progress.query.filter_by(user_id=int(user_id)).first()
         existing_progress.progress_1 = int(toan_selection)
         existing_progress.progress_2 = int(ly_selection)
         existing_progress.progress_3 = int(hoa_selection)

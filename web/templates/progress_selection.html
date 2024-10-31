@@ -185,7 +185,9 @@
         <div class="nav-buttons">
             <input type="hidden" name="current_slide" id="current_slide" value="0">
             <input type="hidden" name="studyOption" id="studyOption" value="0">
-            
+            <input type="hidden" name="user_id" value="{{ user_id }}">
+            <input type="hidden" name="university_id" value="{{ university_id }}">
+
             <button type="button" onclick="previousSlide()">&laquo;</button>
             <button type="submit" onclick="nextSlide()">&raquo;</button>
         </div>
@@ -194,28 +196,32 @@
     <script>
         const radioInputs = document.querySelectorAll('input[name="studyOptionRadio"]');
         const selectedOption = document.getElementById('selected-option');
-
+    
         function updateSelectedOption() {
             const checkedInput = document.querySelector('input[name="studyOptionRadio"]:checked');
             if (checkedInput) {
                 selectedOption.textContent = `Đã chọn: ${checkedInput.nextElementSibling.nextElementSibling.textContent}`;
             }
         }
-
+    
         radioInputs.forEach(input => {
             input.addEventListener('change', updateSelectedOption);
         });
-
+    
         // Initialize with the default selected option
         updateSelectedOption();
-    </script>
-    <script>
-        function setStudyOption(value) {
-            document.getElementById("studyOption").value = value;
-        }
     
         function nextSlide() {
             const currentSlideInput = document.getElementById("current_slide");
+            const studyOptionInput = document.getElementById("studyOption");
+    
+            // Set the studyOption value based on the selected radio input
+            const checkedRadio = document.querySelector('input[name="studyOptionRadio"]:checked');
+            if (checkedRadio) {
+                studyOptionInput.value = checkedRadio.value;
+            }
+    
+            // Increment the current slide
             currentSlideInput.value = parseInt(currentSlideInput.value) + 1;
         }
     
@@ -224,6 +230,7 @@
             currentSlideInput.value = Math.max(0, parseInt(currentSlideInput.value) - 1);
         }
     </script>
+    
 
 </body>
 </html>

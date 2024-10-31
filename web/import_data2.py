@@ -28,7 +28,7 @@ from models import ProblemTypes
 
 app = create_app()
 
-path = r'D:\Code\Python\projects\BangA\final-exam-prep\web\H_types.json.json'Q
+# path = r'D:\Code\Python\projects\BangA\final-exam-prep\web\H_types.json.json'
 
 def commit_data_from_json(path):
     # Sử dụng app context để truy cập và tương tác với database
@@ -61,4 +61,4 @@ def commit_data_from_json(path):
             db.session.rollback()
             print("Đã xảy ra lỗi khi commit dữ liệu:", e)
 
-commit_data_from_json(path)
+# commit_data_from_json(path)
