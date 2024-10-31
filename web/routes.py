@@ -525,7 +525,7 @@ def progress_selection():
     # Handle initial GET request (if accessed without POST data)
     return render_template("progress_selection.html", user_id=user_id, university_id=university_id, current_slide=0)
 
-
+# thay doi 1 ti
 
 
 @app.route("/subject_chapter_selection", methods=["GET", "POST"])

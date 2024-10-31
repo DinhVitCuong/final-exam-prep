@@ -336,43 +336,91 @@
             console.log('Chart Data:', chartData);
             
             function createChart(labels, data, label, y_max) {
-            // Mapping for numeric labels to descriptions
-            const labelMapping = {
-                0: "Nhận biết",
-                1: "Thông hiểu",
-                2: "Vận dụng",
-                3: "Vận dụng cao"
-            };
+              // Mapping for numeric labels to descriptions
+              const labelMapping = {
+                  0: "Nhận biết",
+                  1: "Thông hiểu",
+                  2: "Vận dụng",
+                  3: "Vận dụng cao"
+              };
 
-            // Map numeric labels to their corresponding descriptions if they exist in the mapping
-            const mappedLabels = labels.map(label => 
-                labelMapping.hasOwnProperty(label) ? labelMapping[label] : label
-            );
+              // Map numeric labels to their corresponding descriptions if they exist in the mapping
+              const mappedLabels = labels.map(label => 
+                  labelMapping.hasOwnProperty(label) ? labelMapping[label] : label
+              );
 
-            if (currentChart) currentChart.destroy();
-            currentChart = new Chart(ctx, {
-                type: "bar",
-                data: {
-                    labels: mappedLabels, // Use the mapped labels here
-                    datasets: [{
-                        label: label,
-                        data: data,
-                        backgroundColor: "rgba(75, 192, 192, 0.6)"
-                    }]
-                },
-                options: {
-                    scales: {
-                        y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
-                    }
-                }
-            });
-        }
-        
+              if (currentChart) currentChart.destroy();
+              currentChart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                      labels: mappedLabels, // Use the mapped labels here
+                      datasets: [{
+                          label: label,
+                          data: data,
+                          backgroundColor: "rgba(75, 192, 192, 0.6)"
+                      }]
+                  },
+                  options: {
+                      scales: {
+                          y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
+                      }
+                  }
+              });
+            }
+            
+            function createChart2(labels, data, label, y_max) {
+              // Secondary data and labels for "Kỳ vọng" expectations
+              const data2 = [50, 50, 50, 50];
+              const labelMapping = {
+                  0: "Nhận biết",
+                  1: "Thông hiểu",
+                  2: "Vận dụng",
+                  3: "Vận dụng cao"
+              };
+
+              // Map numeric labels to descriptions
+              const mappedLabels = labels.map(label => labelMapping[label] || label);
+
+              // Destroy the previous chart if it exists
+              if (currentChart) currentChart.destroy();
+
+              // Create a new chart with two datasets for side-by-side columns
+              currentChart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                      labels: mappedLabels, // Primary labels for both data sets
+                      datasets: [
+                          {
+                              label: label,
+                              data: data,
+                              backgroundColor: "rgba(75, 192, 192, 0.6)"
+                          },
+                          {
+                              label: "Kỳ vọng " + label,
+                              data: data2,
+                              backgroundColor: "rgba(255, 206, 86, 0.8)" // Yellow for "Kỳ vọng" columns
+                          }
+                      ]
+                  },
+                  options: {
+                      scales: {
+                          y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
+                      },
+                      responsive: true,
+                      plugins: {
+                          legend: { position: 'top' }
+                      },
+                      barPercentage: 0.8,
+                      categoryPercentage: 0.5 // Controls the width of the bars and spacing between groups
+                  }
+              });
+          }
+
             // Event listener for "Difficulty" button
             document.getElementById("button-diff").addEventListener("click", () => {
                 const labels = Object.keys(chartData.accu_diff);
                 const data = Object.values(chartData.accu_diff);
-                createChart(labels, data, "Question Type Difficulty (%)", 100);
+                createChart2(labels, data, "Question Type Difficulty (%)", 100);
             });
     
             // Event listener for "Previous Results" button
