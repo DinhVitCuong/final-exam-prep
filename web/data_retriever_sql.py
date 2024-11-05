@@ -9,7 +9,7 @@ class DrawChartBase:
     def __init__(self, subject_name, num_chap, test_type, num, user_id , load_type = None, is_final = None) -> None:
         self.subject_name = subject_name
         self.num_chap = num_chap
-        self.test_type = test_type # 1 : total, 0: chapter, 3: practice
+        self.test_type = test_type # 1 : total, 0: chapter, 3: practice, 4: final
         self.num = num
         self.user_id = user_id
         self.load_type = load_type if load_type in ["specific", "average"] else None # picking specefic to load specific test from the database
@@ -25,6 +25,7 @@ class DrawChartBase:
                     Test2.questions.like(f"{self.subject_name}%")
                 )
                 c = Test2
+                print(self.test_type)
             else:
                 self.data_find = db.session.query(Test).filter(
                     Test.questions.like(f"{self.subject_name}%")
@@ -62,7 +63,27 @@ class DrawChartBase:
                         user_id = int(self.user_id),
                         knowledge = str(self.num_chap).zfill(2)
                     ).order_by(c.id.desc()).limit(self.num).all()
-                    
+                elif self.test_type ==4:
+                    self.data = self.data_find.filter_by(
+                        test_type = self.test_type,
+                        user_id = int(self.user_id)
+                    ).order_by(c.id.desc()).limit(self.num).all()
+
+                    if self.data == []:
+                        self.data1 = self.data_find.filter_by(
+                            user_id = int(self.user_id)
+                        ).order_by(c.id.desc()).all()
+                        if self.data1 == []:
+                            self.num_chap = 1
+                        else:
+                            self.num_chap = max([int(test.knowledge) for test in self.data1])
+                    else:
+                        self.data1 = self.data_find.filter_by(
+                            user_id = int(self.user_id),
+                            test_type = self.test_type
+                        ).order_by(c.id.desc()).all()
+                        self.num_chap = max([int(test.knowledge) for test in self.data1])
+
             else:
                 query = self.data_find.filter_by(
                     test_type = self.test_type,
@@ -196,7 +217,7 @@ class DrawChartBase:
 class DrawTotal(DrawChartBase):
     def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None, is_final = None) -> None:
         super().__init__(subject_name, num_chap, test_type, num, user_id, load_type, is_final)
-        self.test_type = 1
+        self.test_type = test_type
         self.load_data()
     def cal_accu_chap(self, chap): # accuracy từng chapter
         datas = self.data

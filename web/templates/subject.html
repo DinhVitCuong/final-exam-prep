@@ -258,10 +258,10 @@
           <!-- circular progress -->
           <div class="circular-progress-bar--subject"></div>
         </div>
-        <div class="button button__review" onclick="window.location.href='{{ url_for('analyze_final_test', subject_id=subject_id) }}'">
+        <button class="button button__review" onclick="window.location.href='{{ url_for('analyze_final_test', subject_id=subject_id) }}'">
           <p>Làm đề thi thử</p>
           <img src="../static/assets/question-icon.svg" alt="review" />
-        </div>
+        </button>
       </div>
       <div class="information">
         <!-- progress bar -->

@@ -26,7 +26,7 @@ class promptCreation:
         self.subject = subject
         self.user_id = user_id
         self.aim_score = 9
-        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id,is_final=is_final) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, 0, self.num_test,user_id =  self.user_id)
+        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id,is_final=is_final) if self.type_test == 1 or self.type_test==4 else DrawChap(self.subject, self.num_chap, 0, self.num_test,user_id =  self.user_id)
         self.test_intro = self.get_test_intro()
         self.subject_intro = f"Đây là kết quả môn {self.return_subject_name()}"
         self.detail_analyze_prompt = (f"Lưu ý là thêm số liệu cụ thể để phân tích cho kĩ lưỡng nha, Từ đó đưa ra nhận xét về kết quả vừa thực hiện (mạnh phần nào, yếu phần nào, "
@@ -210,6 +210,7 @@ class promptTotal(promptCreation):
             f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
             "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
         )
+        
         acuc_chaps, time_chaps = self.data.short_total_analysis()
         for key, value in acuc_chaps.items():
             data_prompt += f"Chương {key}: {value}% - {time_chaps[key]} giây\n"
@@ -284,6 +285,7 @@ class promptTotal(promptCreation):
             "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
             f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI CHỨ ĐỪNG GHI SỐ BÀI NHƯ 02 03, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
         )
+        print(data_prompt)
         return data_prompt
     
     def return_max_chap(self):

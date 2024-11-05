@@ -33,7 +33,7 @@ from flask_login import (
 )
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate, Knowledge, Threshold
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate, Knowledge, Threshold, QAs2, Test2
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
@@ -747,81 +747,130 @@ def subject(subject_id):
     )
 
 
-# @app.route("/practice-test/<subject>")
-# def practice_test(subject):
-#     if subject == "T":
-#         chapter = 7 
-#     elif subject == "L":
-#         chapter = 7
-#     else:
-#         chapter = 8
-#     time_limit = 90 #Minute
-#     rate = [40, 30, 20, 10]
-#     test_prac = pr_br_rcmd(subject, 5, 1)
+@app.route("/final-test/<subject>", methods=["GET"])
+def final_test(subject):
+    if current_user.is_authenticated == False:
+        return redirect(url_for('login'))
+    if current_user.uni_select == 0:
+        return redirect(url_for('select_uni'))
 
-#     questions = [{"ID": q.id,"image" : q.image, "question": q.question, "options": q.options, "answer": q.answer, "explaination" : q.explain} for q in test_prac.question_prep()]
-#     # Kiểm tra nếu phương thức HTTP là POST (khi người dùng gửi câu trả lời)
-#     if request.method == "POST":
+    time_limit = 90  
+    rate = [40, 20, 30, 10]     
+    user_id = str(current_user.id)
+    if request.method == "GET":
+        query = (
+            QAs2.query
+            .filter(QAs2.id.like(f'{subject}%DE1')) 
+            .all()
+        )
+        questions = [{
+            "ID": q.id,
+            "image": q.image,
+            "question": q.question,
+            "options": q.options,
+            "answer": q.answer,
+            "explaination": q.explain
+        } for q in query]
+
+
+        # Generate a unique test ID
+        test_id = str(uuid4())
+        user_id = str(current_user.id)
+        # Store the test data in the database
+        temp_test = TempTest(
+            id=test_id,
+            user_id=user_id,
+            subject=subject,
+            questions=questions,
+            chapter=7,
+            time_limit=time_limit,
+            rate=rate
+        )
+        db.session.add(temp_test)
+        db.session.commit()
         
-#         time_spent = request.form.get('timeSpent')
-#         answers = request.form.get('answers')
-#         date= datetime.now().date()
-        
-#         # Convert từ chuỗi JSON sang danh sách Python
-#         time_spent = json.loads(time_spent)
-#         answers = json.loads(answers)
+        return render_template('final_exam.html', subject=subject, time_limit=time_limit, questions=questions, test_id=test_id, user_id = user_id)
 
-#         time_string = ""
-#         questions_ID_string = ""
-#         wrong_answer_string = ""    
-#         chapters = ""
-#         result = []  
-#         wrong_answers = []
-
-#         # Xử lý dữ liệu câu hỏi
-#         for i in range(chapter):
-#             chapters += f"{i+1}_"
-#         for i, question in enumerate(questions):
-#             # Use question["ID"] instead of question.id because the ID is stored as a dictionary key
-#             questions_ID_string += f"{question['ID']}_"
-#             if str(answers[i]) == question["answer"]:
-#                 result.append("1")
-#             else:
-#                 result.append("0")
-#             time_string += f"{time_spent[i]}_"
-
-#             if result[i] == '0':  # Assuming 0 means an incorrect answer
-#                 wrong_answers.append(str(question['ID']))
-
-#         # Xóa dấu gạch dưới cuối chuỗi
-#         questions_ID_string = questions_ID_string.rstrip("_")
-#         time_string = time_string.rstrip("_")   
-#         chapter = '{:02}'.format(max(int(chap) for chap in chapters[:-1].split('_') if chap.isdigit()))
-#         wrong_answer_string = "_".join(wrong_answers)
-        
-#         score = f'{result.count("1")}/{len(result)}'
         
 
-#         # Tạo bản ghi mới trong bảng Test
-#         new_test_record = Test(
-#             user_id=current_user.id,
-#             test_type=1,  # Loại bài kiểm tra tổng
-#             time=date,
-#             knowledge=chapter,
-#             questions=questions_ID_string,
-#             wrong_answer=wrong_answer_string,
-#             result="_".join(result),  # Chuỗi kết quả dạng 0_1_0...
-#             time_result=time_string  # Chuỗi thời gian làm từng câu
-#         )
-#         # nhin vao database sua lai
-#         db.session.add(new_test_record)
-#         db.session.commit()
-        
-#         # Sau khi hoàn thành, chuyển hướng về trang chủ
-#         return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score)
-
+@app.route("/final-test/<subject>", methods=["POST"])
+def final_test_post(subject):
+    # if current_user.is_authenticated == False:
+    #     return redirect(url_for('login'))
+    # if current_user.uni_select == 0:
+    #     return redirect(url_for('select_uni'))
+    # Existing logic for processing answers
     
-#     return render_template('exam.html', subject=subject, time_limit = time_limit, questions=questions)
+    test_id = request.form.get('test_id')
+    user_id = request.form.get('user_id')
+    # them user id vao
+    temp_test = TempTest.query.filter_by(id=test_id, user_id=user_id).first()
+
+    if not temp_test:
+        return "Session expired or invalid test. Please restart the test.", 400
+
+    # Extract the test data
+    questions = temp_test.questions
+    chapter = temp_test.chapter
+    time_spent = request.form.get('timeSpent')
+    answers = request.form.get('answers')
+    date = datetime.now().date()
+
+    # Convert JSON strings to Python lists
+    time_spent = json.loads(time_spent)
+    answers = json.loads(answers)
+
+    # Initialize variables for processing
+    time_string = ""
+    questions_ID_string = ""
+    wrong_answer_string = ""
+    result = []
+    wrong_answers = []
+
+    # Process the answers
+    for i, question in enumerate(questions):
+        questions_ID_string += f"{question['ID']}_"
+        if str(answers[i]) == question["answer"]:
+            result.append("1")
+        else:
+            result.append("0")
+            wrong_answers.append(str(question['ID']))
+        time_string += f"{time_spent[i]}_"
+
+    # Clean up strings
+    questions_ID_string = questions_ID_string.rstrip("_")
+    time_string = time_string.rstrip("_")
+    wrong_answer_string = "_".join(wrong_answers)
+    score = f"{result.count('1')}/{len(result)}"
+    chap_id = 7
+    # Create a new test record in the database
+    new_test_record = Test2(
+        user_id=user_id,
+        test_type=4,  # Final test type
+        time=date,
+        knowledge=chapter,
+        questions=questions_ID_string,
+        wrong_answer=wrong_answer_string,
+        result="_".join(result),
+        time_result=time_string
+    )
+    db.session.add(new_test_record)
+    db.session.commit()
+
+    # Delete the temporary test data
+    db.session.delete(temp_test)
+    db.session.commit()
+
+    task_id = str(uuid4())
+
+    # Run analysis in a separate thread and pass the app object
+    analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, user_id, task_id, 4))
+    analysis_thread.start()
+
+
+    # Redirect to the review route
+    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+
 
 
 
@@ -921,22 +970,6 @@ def practice_test_post(subject):
     time_string = time_string.rstrip("_")
     wrong_answer_string = "_".join(wrong_answers)
     score = f"{result.count('1')}/{len(result)}"
-
-    # Create a new test record in the database
-    # new_test_record = Test(
-    #     user_id=current_user.id,
-    #     test_type=1,  # Total test type
-    #     time=date,
-    #     knowledge=chapter,
-    #     questions=questions_ID_string,
-    #     wrong_answer=wrong_answer_string,
-    #     result="_".join(result),
-    #     time_result=time_string
-    # )
-    # db.session.add(new_test_record)
-    # db.session.commit()
-
-    # Delete the temporary test data
     db.session.delete(temp_test)
     db.session.commit()
     
@@ -994,11 +1027,6 @@ def chapter_test(chap_id, subject):  # Nhận trực tiếp cả chap_id và sub
         
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["POST"])
 def chapter_test_post(chap_id, subject):
-    # if current_user.is_authenticated == False:
-    #     return redirect(url_for('login'))
-    # if current_user.uni_select == 0:
-    #     return redirect(url_for('select_uni'))
-    # Existing logic for processing answers
 
     test_id = request.form.get('test_id')
     user_id = request.form.get('user_id')
@@ -1073,7 +1101,7 @@ def chapter_test_post(chap_id, subject):
     analysis_thread.start()
 
     # Redirect to the review route
-    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+    return render_template("reviewTest.html", questions=questions, wrong_answer_stchapterring=wrong_answer_string, score=score, task_id=task_id)
 
 import logging
 
@@ -1084,8 +1112,21 @@ task_statuses = {}
 def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
     with app.app_context():
         # try:
+            if test_type == 4:
+                num_of_test1 = Test2.query.filter(
+                    Test2.questions.like(f"{subject}%")
+                )
+                num_of_test_done = num_of_test1.filter_by(user_id=user_id, test_type=test_type).count()
+                # num_test = 10 if num_of_test_done >= 10 else num_test=num_of_test_done
+                if num_of_test_done >= 10:
+                    num_test = 10
+                else:
+                    num_test=num_of_test_done
+                analyzer = generateAnalysis(subject=subject, num_chap=int(chap_id), num_test=num_test, user_id=user_id)
+                analyze_content = analyzer.analyze("final")
+
             #user_id = current_user.id
-            if test_type == 3:
+            elif test_type == 3:
                 task_statuses[task_id] = 'complete'
             elif test_type == 0:
                 # Mark task as running
@@ -1757,28 +1798,24 @@ def analyze_final_test(subject_id):
     else:
         return redirect(url_for('home'))  # Redirect if subject_id is invalid
     
-    test_type = 1  # Total test type
-    num_of_test_done = Test.query.filter_by(test_type=test_type, user_id=current_user.id).count()
-
+    test_type = 4  # Total test type
+    num_of_test_done = Test2.query.filter_by(test_type=test_type, user_id=current_user.id).count()
     if num_of_test_done < 10:
         num_test = num_of_test_done  # Use all tests if fewer than 10 are done
     else:
         num_test = 10  # Limit to 10 tests
-
     # Query the max chapter (chap_id) from the test records
-    knowledge_list = db.session.query(Test.knowledge).filter(
-            Test.user_id == current_user.id,
-            Test.test_type == test_type,
-            Test.questions.like(f"{subject}%")
+    knowledge_list = db.session.query(Test2.knowledge).filter(
+            Test2.user_id == current_user.id,
+            Test2.test_type == test_type,
+            Test2.questions.like(f"{subject}%")
         ).all()
-
     if knowledge_list:
             # Lấy giá trị knowledge từ các tuple
         chap_id = max(knowledge[0] for knowledge in knowledge_list)
     else:
         chap_id = 1
     # Check for an existing analysis record
-    print(chap_id)
 
     existing_record = Analysis.query.filter_by(
         user_id=current_user.id,
@@ -1791,81 +1828,9 @@ def analyze_final_test(subject_id):
         analysis_result = existing_record.main_text
     else:
         analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
-    
-    # #Get percent_chapter:
-    # grade_chapters = get_chapter_mean_list(current_user.id,subject)
-    # percent_chapter = grade_chapters[int(chap_id)-1]
 
-    # #QUery thred, previous result, difficulty
-    # thred_string = None
-    # query_thredhold = Progress.query.filter_by(
-    #     user_id = current_user.id,
-    # ).first()
-    # if subject_id[1] == 1:
-    #     thred_string = query_thredhold.threadhold_1
-    # elif subject_id[1] == 2:
-    #     thred_string = query_thredhold.threadhold_2
-    # elif subject_id[1] == 3:
-    #     thred_string = query_thredhold.threadhold_3
-    # if thred_string is None:
-    #     max_chap = get_max_chapter(subject)
-    #     thred = [100]*max_chap
-    # else:
-    #     thred = thred_string.split('_')
-    
-    # records = Test.query.filter(
-    #     Test.user_id == current_user.id,
-    #     Test.test_type == 1,
-    #     Test.questions.like(f'{subject}%')
-    # ).order_by(Test.time.desc()).limit(5).all()
-    # prev = []
-    # diff = []
-    # for record in records:
-        
-    #     question_ids = record.questions.split('_')
-    #     results_list = record.result.split('_')
-    #     num_ones = question_ids.count('1')
-    #     question_count = len(results_list)
-        
-    #     # Scale the number of 1s to a grade out of 10
-    #     grade = (num_ones / question_count) * 10
-    #     prev.append(grade)
-
-    #     # Query QAs for difficulty levels of the questions
-    #     question_difficulties = {
-    #     q.ID: q.difficulty
-    #     for q in session.query(QAs).filter(QAs.c.ID.in_(question_ids)).all()
-    #     }
-    #     # Initialize counters for difficulties
-    #     difficulty_counts = {0: 0, 1: 0, 2: 0, 3: 0}
-    #     correct_counts = {0: 0, 1: 0, 2: 0, 3: 0}
-
-    #     # Count correct and total questions per difficulty
-    #     for question_id, result in zip(question_ids, results_list):
-    #         difficulty = question_difficulties.get(question_id)
-    #         if difficulty is not None:
-    #             difficulty_counts[difficulty] += 1
-    #             if result == '1':  # Correct answer
-    #                 correct_counts[difficulty] += 1
-
-    #     # Calculate the percentage for each difficulty level
-    #     percentages = {
-    #         diff: (correct_counts[diff] / difficulty_counts[diff] * 100) if difficulty_counts[diff] > 0 else 0
-    #         for diff in range(4)
-    #     }
-    #     percentage_list = [percentages[i] for i in range(4)]
-    #     diff.append(percentage_list)
-    
-    # print(diff)
-    # print(percent_chapter)
-    # print(thred)
-    # print(prev)
-    # Render the evaluation template
-
-    # subject = "T"
-
-    num_of_test1 = db.session.query(Test).filter(
-        Test.questions.like(f"{subject}%")
+    num_of_test1 = db.session.query(Test2).filter(
+        Test2.questions.like(f"{subject}%")
     )
 
     # làm thêm 1 trường hợp nữa, nếu k tìm ra test total thì để 0 hết
@@ -1885,14 +1850,8 @@ def analyze_final_test(subject_id):
         progressChap = int(existing_progress.progress_2)
     else:
         progressChap = int(existing_progress.progress_3)
-
-    num_of_test_done = num_of_test1.filter_by(user_id = current_user.id, test_type = test_type).count()
-    num_test = 10 if num_of_test_done >= 10 else num_of_test_done
-
-    data_retrieve = promptTotal(1, num_test, subject, current_user.id, progressChap, is_final = True)
+    data_retrieve = promptTotal(4, num_test, subject, current_user.id, progressChap, is_final = True)
     acuc_chaps, time_chaps = data_retrieve.data.short_total_analysis() # percent-chap (% dung tung chuong)
-    accu_diff, dic_ques, dic_total = data_retrieve.data.cal_accu_diff() # button-diff (nếu select = Tất cả) (% dung tung loai cau hoi )
-    chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
     
     if len(results) ==0 :
@@ -1900,41 +1859,17 @@ def analyze_final_test(subject_id):
     else:
         avg_score = int(sum(results)/len(results)*10)
 
-    
-
-    thres_query = db.session.query(Threshold).filter_by(user_id = current_user.id, subject = subject, chapter = progressChap, type_threshold = 1).first()
-    if thres_query is None:
-        chap_diff_thres = {}
-        for i in range(progressChap):
-            chap_diff_thres[i+1] = {0: 50, 1: 50, 2: 50, 3: 50}
-    else:
-        thres = thres_query.threshold.split(',')
-        thres = [list(map(float, thre.split('_'))) for thre in thres]
-        
-        chap_diff_thres = {}
-        for i, thre in enumerate(thres):
-            dic = {}
-            for j in range((len(thre))):
-                dic[j] = thre[j]
-            chap_diff_thres[i+1] = dic
-    
-    print("chap diff thres: ", chap_diff_thres)
     chart_data = {
         "acuc_chaps": acuc_chaps,
         "time_chaps": time_chaps,
-        "accu_diff": accu_diff,
-        "chap_difficulty_percentile": chap_difficulty_percentile,
-        "chap_diff_thres" : chap_diff_thres,
         "results": results,
         "durations": durations,
         "exact_time": exact_time,
         "nums": nums
     }
     
-
-    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
-
-
+    print(f"Hello{chart_data, avg_score}")
+    return render_template("final_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
 
 
 
@@ -2134,82 +2069,6 @@ def api():
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-# # Getting-started route
-# @app.route("/getting-started", methods=("GET", "POST"), strict_slashes=True)
-# def getting_started():
-#     if current_user.is_authenticated == False:
-#         return redirect(url_for('login'))
-    
-#     form = getting_started_form()
-
-#     if form.validate_on_submit():
-#         value1 = form.value1.data
-#         value2 = form.value2.data
-#         value3 = form.value3.data
-#         baseprogress = f"{value1}_{value2}_{value3}"
-
-#         user_id = current_user.id 
-
-#         existing_progress = Progress.query.filter_by(user_id=user_id).first()
-#         if existing_progress != None:
-#             existing_progress.baseprogress = baseprogress
-#             existing_progress.progress1 = "0"
-#             existing_progress.progress2 = "0"
-#             existing_progress.progress3 = "0"
-#         else:
-#             new_progress = Progress(
-#                 user_id=user_id,
-#                 base_progress=baseprogress,
-#                 progress_1="0",
-#                 progress_2="0",
-#                 progress_3="0"
-#             )
-#             db.session.add(new_progress)
-#         db.session.commit()
-#         return redirect(url_for('index'))
-
-#     return render_template("getting_started.html", form=form)
-
-
-# # Progress route
-# @app.route("/progress", methods=("GET", "POST"), strict_slashes=False)
-# def progress():
-#     if current_user.is_authenticated == False:
-#         return redirect(url_for('login'))
-
-#     user_id = current_user.id 
-#     user_progress = Progress.query.filter_by(user_id=user_id).first()
-#     print(user_progress.progress_1)
-#     if user_progress != None:
-#         progress1_values = [int(x) for x in user_progress.progress_1.split('_')]
-#         progress2_values = [int(x) for x in user_progress.progress_2.split('_')]
-#         progress3_values = [int(x) for x in user_progress.progress_3.split('_')]
-#         return render_template(
-#             "progress.html",
-#             title="Tiến trình",
-#             total_pro_1 = progress1_values[0],
-#             progress_1=progress1_values[1:],
-#             total_pro_2 = progress2_values[0],
-#             progress_2=progress2_values[1:],
-#             total_pro_3 = progress3_values[0],
-#             progress_3=progress3_values[1:]
-#         )
-#     else:
-#         return render_template("progress.html", title="Tiến trình", progress=None)
-    
 
 if __name__ == "__main__":
     app.run(debug=True) 
