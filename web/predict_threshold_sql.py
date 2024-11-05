@@ -196,10 +196,8 @@ class PredictThreshold:
 # Initialize and run prediction
 # app = create_app()
 # with app.app_context():
-#     predict_type = "0"
+#     predict_type = "1"
     
 #     subject = "L"
-#     predict = PredictThreshold(predict_type, subject, 5)
-#     prep = PrepThreshold(subject)
-#     print(prep.load_and_save())
-    # print(predict.predicted_data())
+#     predict = PredictThreshold(predict_type, subject, user_id = 34)
+#     print(predict.predicted_data())

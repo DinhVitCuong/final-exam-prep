@@ -341,11 +341,7 @@ class DrawChap(DrawChartBase):
 
 
 # with app.app_context():     #chap  #test_type    #self.num
-#     test = DrawTotal("L", None , None, 10, 3, "average")
+#     test = DrawTotal("L", None , None, 10, 34, "average")
+#     print(test.difficult_percentile_per_chap())
     
-#     print(test.short_total_analysis())
-#     # print(test.cal_accu_diff())
-#     # print(test.difficult_percentile_per_chap())
-#     # print(test.previous_results())
-
     

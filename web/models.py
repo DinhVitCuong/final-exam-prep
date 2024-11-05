@@ -140,3 +140,12 @@ class ProblemTypes(db.Model):
     id_subject = db.Column(db.String(10), primary_key = False,nullable=False)
     chapter_num = db.Column(db.String,primary_key = False, nullable=False)
     problem_types = db.Column(db.String,primary_key = True, nullable=False)
+
+class Threshold(db.Model):
+    __tablename__ = "threshold"
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
+    subject = db.Column(db.String(10), nullable=False)
+    chapter = db.Column(db.Integer, nullable=False)
+    type_threshold = db.Column(db.Integer, nullable=False)
+    threshold = db.Column(db.String, nullable=False)

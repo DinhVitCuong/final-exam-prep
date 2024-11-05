@@ -33,7 +33,7 @@ from flask_login import (
 )
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate, Knowledge
+from models import User, Progress, Test, Universities, QAs, Subject, TodoList, SubjectCategory, TempTest, Analysis, TestDate, Knowledge, Threshold
 from forms import login_form,register_form, test_selection_form, select_univesity_form,QuizForm
 from test_classes_sql import TestChap, TestTotal, pr_br_rcmd
 from gpt_integrate_sql import promptCreation,promptTotal,promptChap,generateAnalysis
@@ -1285,7 +1285,7 @@ def run_analysis_thread(app, subject, chap_id, user_id, task_id, test_type):
                         existing_progress = Progress.query.filter_by(user_id=user_id).first()
                         subject_cat = existing_progress.user_subject_cat
                         # tìm ra các môn của khứa này học
-                        cate_subjects = Subject.query.filter_by(subject_cat=subject_cat).first()
+                        cate_subjects = SubjectCategory.query.filter_by(id=subject_cat).first()
                         dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
                                         str(cate_subjects.subject2)[0] : 2, 
                                         str(cate_subjects.subject3)[0]: 3}
@@ -1513,9 +1513,22 @@ def evaluate_chapter_test(subject_id,chap_id):
     else:
         avg_score = int(sum(results)/len(results)*10)
 
+
+
+    thres_query = db.session.query(Threshold).filter_by(user_id = current_user.id, subject = subject, chapter = int(chap_id), type_threshold = 0).first()
+    if thres_query is None:
+        chap_diff_thres = [50, 50, 50, 50]
+    else:
+        chap_diff_thres = thres_query.threshold.split('_')
+    
+    print("chap thres diff: ", chap_diff_thres)
+
+
+
     chart_data = {
         "accu_diff": accu_diff,
         "chap_difficulty_percentile": chap_difficulty_percentile,
+        "chap_diff_thres": chap_diff_thres,
         "results": results,
         "durations": durations,
         "exact_time": exact_time,
@@ -1661,25 +1674,59 @@ def analyze_total_test(subject_id):
 
 
     # Sau đó lọc tiếp theo user_id và test_type trước khi đếm số lượng
+    existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+    subject_cat = existing_progress.user_subject_cat
+    # tìm ra các môn của khứa này học
+    cate_subjects = SubjectCategory.query.filter_by(id=subject_cat).first()
+    dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
+                    str(cate_subjects.subject2)[0] : 2, 
+                    str(cate_subjects.subject3)[0]: 3}
+    if dic_subjects[subject] == 1:
+        progressChap = int(existing_progress.progress_1)
+    elif dic_subjects[subject] == 2:
+        progressChap = int(existing_progress.progress_2)
+    else:
+        progressChap = int(existing_progress.progress_3)
+
     num_of_test_done = num_of_test1.filter_by(user_id = current_user.id, test_type = test_type).count()
     num_test = 10 if num_of_test_done >= 10 else num_of_test_done
 
-    data_retrieve = promptTotal(1, num_test, subject, current_user.id)
+    data_retrieve = promptTotal(1, num_test, subject, current_user.id, progressChap)
     acuc_chaps, time_chaps = data_retrieve.data.short_total_analysis() # percent-chap (% dung tung chuong)
     accu_diff, dic_ques, dic_total = data_retrieve.data.cal_accu_diff() # button-diff (nếu select = Tất cả) (% dung tung loai cau hoi )
     chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
     results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
-
+    
     if len(results) ==0 :
         avg_score = 0
     else:
         avg_score = int(sum(results)/len(results)*10)
 
+    
+
+    thres_query = db.session.query(Threshold).filter_by(user_id = current_user.id, subject = subject, chapter = progressChap, type_threshold = 1).first()
+    if thres_query is None:
+        chap_diff_thres = {}
+        for i in range(progressChap):
+            chap_diff_thres[i+1] = {0: 50, 1: 50, 2: 50, 3: 50}
+    else:
+        thres = thres_query.threshold.split(',')
+        thres = [list(map(float, thre.split('_'))) for thre in thres]
+        
+        chap_diff_thres = {}
+        for i, thre in enumerate(thres):
+            dic = {}
+            for j in range((len(thre))):
+                dic[j] = thre[j]
+            chap_diff_thres[i+1] = dic
+    
+    print("chap diff thres: ", chap_diff_thres)
     chart_data = {
         "acuc_chaps": acuc_chaps,
         "time_chaps": time_chaps,
         "accu_diff": accu_diff,
         "chap_difficulty_percentile": chap_difficulty_percentile,
+        "chap_diff_thres" : chap_diff_thres,
         "results": results,
         "durations": durations,
         "exact_time": exact_time,
@@ -1688,7 +1735,7 @@ def analyze_total_test(subject_id):
 
 
     return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
-
+    
 
 
 

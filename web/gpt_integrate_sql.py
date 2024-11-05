@@ -10,7 +10,7 @@ from datetime import datetime
 import time 
 import pandas as pd
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, TestDate, LessonInfo
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, TestDate, LessonInfo, Threshold
 
 load_dotenv()
 
@@ -93,8 +93,8 @@ class promptCreation:
 
 
 class promptTotal(promptCreation):
-    def __init__(self, type_test, num_test, subject, user_id):
-        super().__init__(type_test, num_test, subject, user_id)
+    def __init__(self, type_test, num_test, subject, user_id, num_chap):
+        super().__init__(type_test, num_test, subject, user_id, num_chap)
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
     def fast_analysis(self):
@@ -151,10 +151,40 @@ class promptTotal(promptCreation):
         data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương (để nhắc nhở học sinh chú ý loại câu hỏi sai nhiều trong to do list):\n"
         predict = PredictThreshold(self.type_test, self.subject,self.user_id)
         data = predict.predicted_data()
+        dic = {}
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
             data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
-            
+            if row.chapter not in dic:
+                dic[row.chapter] = {row.difficulty : row.accuracy}
+            else:
+                dic[row.chapter][row.difficulty] = row.accuracy
+        
+        # luu ve database 
+        # {1 : [34,35,36,37]}
+        
+        thres_chap_list = []
+        for ke, lis in dic.items():
+            thres_chap = "_".join(str(i) for i in lis.values())
+            # print("thres chap: ", thres_chap)
+            thres_chap_list.append(thres_chap)
+
+        thres_chap_str = ",".join(thres_chap_list)
+        print("thres chap str: ", thres_chap_str)
+        query = db.session.query(Threshold).filter_by(user_id = self.user_id, subject = self.subject, chapter = self.num_chap, type_threshold = 1).first()
+        if query == None:
+            thres_data = Threshold(user_id = self.user_id, 
+                                subject = self.subject, 
+                                chapter = self.num_chap, 
+                                type_threshold = 1, 
+                                threshold = thres_chap_str)
+            db.session.add(thres_data)
+            db.session.commit()
+        else:
+            query.threshold = thres_chap_str
+            db.session.commit()
+
+
         data_prompt += "Dưới đây là trung bình các bài hay sai của các chương (đây dùng để nhắc nhở học sinh chú ý các bài sai nhiều):\n"
         lessons_review_dict = self.data.lessons_id_to_review()
         for chap, value in lessons_review_dict.items():
@@ -210,10 +240,34 @@ class promptChap(promptCreation):
         predict = PredictThreshold(self.type_test, self.subject, self.user_id, self.num_chap)
 
         data = predict.predicted_data()
-        print(data)
+        dic = {}
         for row in data.itertuples(index=False):
             # Access columns using row indices (chapter, difficulty, accuracy)
             data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
+            if row.difficulty not in dic:
+                dic[row.difficulty] = row.accuracy
+        
+        print("dic predict", dic)
+
+        # {1 : [34,35,36,37]}
+        
+        l = []
+        for ke, val in dic.items():
+            l.append(val)
+
+        thres_chap = "_".join(str(i) for i in l)
+        query = db.session.query(Threshold).filter_by(user_id = self.user_id, subject = self.subject, chapter = self.num_chap, type_threshold = 0).first()
+        if query == None:
+            thres_data = Threshold(user_id = self.user_id, 
+                                subject = self.subject, 
+                                chapter = self.num_chap, 
+                                type_threshold = 0, 
+                                threshold = thres_chap)
+            db.session.add(thres_data)
+            db.session.commit()
+        else:
+            query.threshold = thres_chap
+            db.session.commit()
 
         data_prompt += (
             "\nPhân tích chi tiết kết quả trên để tìm ra điểm mạnh và điểm yếu của học sinh:\n"
@@ -250,7 +304,7 @@ class generateAnalysis:
         self.num_chap = num_chap
         if self.user_id is None:
             raise ValueError("user_id cannot be None in generateAnalysis, user_id", user_id)
-        self.next_test_date = promptTotal(1, self.num_test, self.subject, self.user_id).next_test_date()
+        self.next_test_date = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).next_test_date()
 
     def return_subject_name(self):
         name = {
@@ -266,11 +320,11 @@ class generateAnalysis:
     # def __init__(self, type_test, num_test, subject, user_id = None, num_chap = None):
     def return_prompt(self, analyze_type):
         if analyze_type == "fast":
-            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).fast_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).fast_analysis()
         elif analyze_type == "deep":
-            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).deep_analysis()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).deep_analysis()
         elif analyze_type == "progress":
-            prompt = promptTotal(1, self.num_test, self.subject, self.user_id).previous_result()
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).previous_result()
         elif analyze_type == "chapter":
             prompt = promptChap(0, self.num_test, self.subject,  user_id=self.user_id, num_chap=self.num_chap).chap_analysis()
         else:
@@ -307,7 +361,7 @@ class generateAnalysis:
 
     def detail_plan_and_timeline(self):
         # Xác định ngày tiếp theo cho test tổng và test chương
-        self.num_chap = promptTotal(1, self.num_test, self.subject, self.user_id).return_max_chap()
+        self.num_chap = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).return_max_chap()
         date_total = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).next_test_date()
         date_chap = promptCreation(0, self.num_test, self.subject, self.user_id, self.num_chap).next_test_date()
         diff = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).diff_prompt()

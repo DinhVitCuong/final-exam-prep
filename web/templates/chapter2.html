@@ -368,9 +368,9 @@
               });
             }
             
-            function createChart2(labels, data, label, y_max) {
+            function createChart2(labels, data, data2, label, y_max) {
               // Secondary data and labels for "Kỳ vọng" expectations
-              const data2 = [50, 50, 50, 50];
+
               const labelMapping = {
                   0: "Nhận biết",
                   1: "Thông hiểu",
@@ -414,13 +414,14 @@
                       categoryPercentage: 0.5 // Controls the width of the bars and spacing between groups
                   }
               });
-          }
+            }
 
             // Event listener for "Difficulty" button
             document.getElementById("button-diff").addEventListener("click", () => {
                 const labels = Object.keys(chartData.accu_diff);
                 const data = Object.values(chartData.accu_diff);
-                createChart2(labels, data, "Question Type Difficulty (%)", 100);
+                const data2 = Object.values(chartData.chap_diff_thres);
+                createChart2(labels, data, data2, "Question Type Difficulty (%)", 100);
             });
     
             // Event listener for "Previous Results" button

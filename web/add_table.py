@@ -1,6 +1,6 @@
 from app import create_app, db
 from flask_migrate import upgrade, migrate, init, stamp
-from models import TodoList  # Import your model
+from models import Threshold  # Import your model
 
 app = create_app()
 
