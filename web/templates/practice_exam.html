@@ -5,250 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exam</title>
     <style>
-    * {
-      font-family: "poppins", sans-serif;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    ::-webkit-scrollbar {
-      width: 8px; /* Width of the scrollbar */
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1; /* Background of the scrollbar track */
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #888; /* Color of the scrollbar thumb */
-      border-radius: 10px; /* Rounded corners for the thumb */
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555; /* Darker color when hovering */
-    }
-    body,
-    html {
-      width: 100%;
-      height: 100%;
-      display: flex;
-    }
-    .test-page {
-      overflow: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      background-color: white;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%;
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-top: 16px;
-    }
-    button {
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-    }
-    button:hover {
-      opacity: 0.6;
-    }
-    .button--back {
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 10px;
-    }
-    .header {
-      flex-basis: 60%;
-      display: flex;
-      justify-content: center;
-    }
-    .header__content,
-    .countdown__content {
-      padding: 0.7rem 1rem;
-      font-size: 1.5rem;
-      background-color: #64baaa;
-      width: 50%;
-      text-align: center;
-      font-weight: bold;
-      border-radius: 24px;
-    }
-    .countdown {
-      flex-basis: 39%;
-      display: flex;
-      justify-content: center;
-    }
-
-    .current-question__container {
-      flex-basis: 78%;
-      border: #64baaa 1px solid;
-      height: 80%;
-      border-radius: 20px;
-      padding: 16px;
-      box-shadow: inset 0 0 2px 1px #64baaa;
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      position: relative;
-      gap: 32px;
-    }
-    .questions-list__container {
-        flex-basis: 20%;
+      * {
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+  
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Darker color when hovering */
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .test-page {
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        background-color: white;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.6;
+      }
+      .button--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+      }
+      .header {
+        flex-basis: 60%;
+        display: flex;
+        justify-content: center;
+      }
+      .header__content,
+      .countdown__content {
+        padding: 0.7rem 1rem;
+        font-size: 1.5rem;
+        background-color: #64baaa;
+        width: 50%;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 24px;
+      }
+      .countdown {
+        flex-basis: 39%;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .current-question__container {
+        flex-basis: 78%;
         border: #64baaa 1px solid;
-        min-height: 70%;
-        max-height: 75vh;
+        height: 80%;
         border-radius: 20px;
         padding: 16px;
         box-shadow: inset 0 0 2px 1px #64baaa;
         display: flex;
         flex-direction: column;
-        align-items: center;
-      }
-      .questions {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 90%;
-        overflow-y: auto;
-        padding-top: 16px;
-        gap: 8px;
-        justify-content: start;
         align-items: start;
+        position: relative;
+        gap: 32px;
       }
-    .button--submit {
-      background-color: #4caf50;
-      font-size: 1.6em;
-      color: white;
-      padding: 0.5rem 1rem;
-      border-radius: 24px;
-    }
-    #examForm{
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      margin: 16px auto;
-      width: 100%;
-      padding: 0 1.5rem;
-    }
-    .current-question__icon {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 40px;
-      height: 40px;
-      padding-left: 16px;
-      padding-top: 16px;
-    }
-    .current-question__content {
-      width: 80%;
-      margin-left: 36px;
-      font-size: 1.5em;
-      font-weight: bold;
-      flex-basis: 35%;
-    }
-    .current-question__options-container {
-      width: 90%;
-      overflow-x: hidden;
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 32px 16px;
-      margin-left: 40px;
-    }
-    .current-question__option {
-      width: 80%;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      input {
-        display: none;
-      }
-      label {
-        font-size: 1.8em;
-        font-weight: 400;
-        padding: 1rem 1.2rem;
-        background-color: #d9d9d9;
-        border-radius: 16px;
-      }
-      input:checked + label {
-        background-color: #64baaa;
+      .questions-list__container {
+          flex-basis: 20%;
+          border: #64baaa 1px solid;
+          min-height: 70%;
+          max-height: 75vh;
+          border-radius: 20px;
+          padding: 16px;
+          box-shadow: inset 0 0 2px 1px #64baaa;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .questions {
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 90%;
+          overflow-y: auto;
+          padding-top: 16px;
+          gap: 8px;
+          justify-content: start;
+          align-items: start;
+        }
+      .button--submit {
+        background-color: #4caf50;
+        font-size: 1.6em;
         color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 24px;
       }
-      p {
+      #examForm{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 16px auto;
+        width: 100%;
+        padding: 0 1.5rem;
+      }
+      .current-question__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 16px;
+      }
+      .current-question__content {
+        width: 80%;
+        margin-left: 36px;
         font-size: 1.5em;
-        font-weight: 400;
+        font-weight: bold;
+        flex-basis: 35%;
       }
-    }
-    .question__item {
-        overflow: hidden;
-        width: 44px;
-        height: 44px;
+      .current-question__options-container {
+        width: 90%;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px 16px;
+        margin-left: 40px;
+      }
+      .current-question__option {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
         input {
           display: none;
         }
         label {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          font-size: 1.2em;
-          font-weight: 300;
+          font-size: 1.8em;
+          font-weight: 400;
+          padding: 1rem 1.2rem;
           background-color: #d9d9d9;
-          border-radius: 8px;
+          border-radius: 16px;
         }
         input:checked + label {
-          border: 1px solid #000000;
+          background-color: #64baaa;
+          color: white;
         }
         p {
           font-size: 1.5em;
           font-weight: 400;
         }
       }
-    /* .not-clicked {
-        label{
-          background-color: white;
+      .question__item {
+          overflow: hidden;
+          width: 44px;
+          height: 44px;
+          input {
+            display: none;
+          }
+          label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.2em;
+            font-weight: 300;
+            background-color: #d9d9d9;
+            border-radius: 8px;
+          }
+          input:checked + label {
+            border: 1px solid #000000;
+          }
+          p {
+            font-size: 1.5em;
+            font-weight: 400;
+          }
         }
-    } */
-
-    /* Currently selected */
-    .selected {
-        label{
-          background-color: gray;
-        }
-    }
-
-    /* Answered */
-    .answered {
-        label{
-          background-color: rgb(98, 255, 98);
-        }
-    }
-
-    /* Clicked but no answer */
-    .clicked-no-answer {
-        label{
-          background-color: rgb(255, 255, 111);
-        }
-    }
-    .question__item.clicked-no-answer {
-      label{
-        background-color: yellow;
+      /* .not-clicked {
+          label{
+            background-color: white;
+          }
+      } */
+  
+      /* Currently selected */
+      .selected {
+          label{
+            background-color: gray;
+          }
       }
-    }
-
-    .question__item.answered {
-      label{
-        background-color: green;
+  
+      /* Answered */
+      .answered {
+          label{
+            background-color: rgb(98, 255, 98);
+          }
       }
-    }
-
-    .question__item.selected {
-      label{
-        background-color: green;
+  
+      /* Clicked but no answer */
+      .clicked-no-answer {
+          label{
+            background-color: rgb(255, 255, 111);
+          }
       }
-    }
-
+      .question__item.clicked-no-answer {
+        label{
+          background-color: yellow;
+        }
+      }
+  
+      .question__item.answered {
+        label{
+          background-color: green;
+        }
+      }
+  
+      .question__item.selected {
+        label{
+          background-color: green;
+        }
+      }
+  
   </style>
   <script type="text/javascript">
     window.MathJax = {
@@ -277,7 +277,7 @@
 
       <div class="header">
         <div class="header__content">
-          <p>Bài kiểm tra</p>
+          <p>Ôn tập tổng</p>
         </div>
       </div>
       <div class="countdown">
@@ -307,13 +307,13 @@
           {% endfor %}
         </div>
       </div>
-
-      <form id="examForm" method="POST" action="/total-test/{{ chap_id }}/{{ subject }}">
+      
+      <form id="examForm" method="POST" action="/practice-test/{{ subject }}">
         <input type="hidden" name="timeSpent" id="timeSpent" value="" />
         <input type="hidden" name="answers" id="answers" value="" />
         <input type="hidden" name="test_id" value="{{ test_id }}">
-        <input type="hidden" name="chap_id" value="{{ chap_id }}">
         <input type="hidden" name="user_id" value="{{ user_id }}">
+
         <button type="button" class="button button--submit" onclick="submitExam()">SUBMIT</button>
       </form>
     </div>
@@ -325,9 +325,8 @@
       let questionStartTime = new Date().getTime();
       let questionStates = new Array(QAs.length).fill('not-clicked'); // Track the state of each question
       let answers = new Array(QAs.length).fill(null); // Track the answers
-      const chap_id = "{{ chap_id }}";
       const user_id = "{{ user_id }}";
-      const subject_id = "{{ subject_id }}";
+      const subject_id = "{{ subject_id }}";  
       // Update question content and options dynamically
       MathJax.startup.promise.then(() => {
         console.log("MathJax is ready");});

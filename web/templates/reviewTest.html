@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: "poppins", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      ::-webkit-scrollbar {
+        width: 8px; /* Width of the scrollbar */
+      }
+  
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+      }
+  
+      ::-webkit-scrollbar-thumb {
+        background: #888; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners for the thumb */
+      }
+  
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Darker color when hovering */
+      }
+      body,
+      html {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+      .review-test-page {
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        background-color: white;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 16px;
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.6;
+      }
+      .button--back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px;
+      }
+      .header {
+        flex-basis: 60%;
+        display: flex;
+        justify-content: center;
+      }
+      .header__content {
+      padding: 0.7rem 1rem;
+      font-size: 1.5rem;
+      background-color: #64baaa;
+      width: 50%;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 24px;
+      }
+
+  
+      .current-question__container {
+        flex-basis: 78%;
+        border: #64baaa 1px solid;
+        height: 80%;
+        width: 100%;
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: inset 0 0 2px 1px #64baaa;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+        gap: 4px;
+      }
+      .questions-list__container {
+          flex-basis: 20%;
+          border: #64baaa 1px solid;
+          min-height: 70%;
+          max-height: 75vh;
+          border-radius: 20px;
+          padding: 16px;
+          box-shadow: inset 0 0 2px 1px #64baaa;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .questions {
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 90%;
+          overflow-y: auto;
+          padding-top: 16px;
+          gap: 8px;
+          justify-content: start;
+          align-items: start;
+        }
+      .current-question__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        padding-left: 16px;
+        padding-top: 16px;
+      }
+      .current-question__content {
+        width: 80%;
+        margin-left: 36px;
+        font-size: 1.5em;
+        font-weight: bold;
+        flex-basis: 35%;
+      }
+      .current-question__options-container {
+        width: 90%;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px 4px;
+        margin-left: 40px;
+      }
+      .current-question__option {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        input {
+          display: none;
+        }
+        label {
+          font-size: 1.8em;
+          font-weight: 400;
+          padding: 1rem 1.2rem;
+          background-color: #d9d9d9;
+          border-radius: 16px;
+        }
+        input:checked + label {
+          background-color: #64baaa;
+          color: white;
+        }
+        p {
+          font-size: 1.5em;
+          font-weight: 400;
+        }
+      }
+      .question__item {
+          overflow: hidden;
+          width: 44px;
+          height: 44px;
+          input {
+            display: none;
+          }
+          label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            font-size: 1.2em;
+            font-weight: 300;
+            background-color: #d9d9d9;
+            border-radius: 8px;
+          }
+          input:checked + label {
+            border: 1px solid #000000;
+          }
+          p {
+            font-size: 1.5em;
+            font-weight: 400;
+          }
+        }
+      .result__container {
+        flex-basis: 30%;
+        border: 64baaa 1px solid;
+        padding: 0.5rem;
+        box-shadow: inset 0 0 2px 1px #64baaa;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .result__encouragement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+      .result__encouragement__content {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      .result__encouragement__content img {
+        width: 24px;
+        height: 24px;
+      }
+      .result__score {
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      .progess-group {
+        background-color: transparent;
+        width: 90px;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+      }
+      .circular-progress {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: 0.8s;
+      }
+      .circular-progress::before {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .subject-value {
+        position: relative;
+        color: black;
+        font-size: 20px;
+        font-weight: 200;
+      }
+      .correct,
+      .correct-question {
+        background-color: #78e08f !important;
+        color: white !important;
+      }
+      .incorrect,
+      .incorrect-question {
+        background-color: #eb4d4b !important;
+        color: white !important;
+      }
+      .uncheck,
+      .uncheck-question {
+        background-color: #ebd34b !important;
+        color: white !important;
+      }
+      .current-question__explain {
+        font-size: 1.2em;
+        font-weight: 300;
+        width: 90%;
+        margin-left: 32px;
+        border: 1px solid #64baaa;
+        padding: 0.8rem;
+        border-radius: 16px;
+        box-shadow: inset 0 0 2px 1px #64baaa;
+      }
+      * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    /* Adjusted styles for options container */
+    .current-question__options-container {
+      width: 90%;
+      overflow-x: hidden;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 32px 16px;
+      margin-left: 40px;
+      /* Ensure options are displayed correctly */
+    }
+    /* Rest of your styles */
+    /* ... (other styles remain unchanged) ... */
+
+    .current-question__explain {
+      font-size: 1.2em;
+      font-weight: 300;
+      width: 90%;
+      margin-left: 32px;
+      border: 1px solid #64baaa;
+      padding: 0.8rem;
+      border-radius: 16px;
+      box-shadow: inset 0 0 2px 1px #64baaa;
+    }
+    
+    #loadingIcon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 120px; /* Tăng chiều rộng */
+      margin-top: 0px;
+      padding: 10px;
+      text-align: center; /* Căn giữa văn bản */
+    }
+
+    #loadingIcon img {
+        width: 30px; /* Kích thước ảnh GIF */
+        height: 30px;
+    }
+
+    #loadingIcon p {
+        font-size: 14px; /* Tăng kích thước chữ */
+        margin-top: 5px;
+    }
+  </style>
+  <script type="text/javascript">
+    window.MathJax = {
+      loader: {
+        load: ['input/tex-full', 'output/chtml', '[tex]/mhchem', '[tex]/textmacros']
+      },
+      tex: {
+        packages: {'[+]': ['textmacros', 'mhchem']},
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      },
+      svg: {
+        fontCache: 'global',
+      },
+    };
+  </script>
+  <!-- Tải MathJax phiên bản mới nhất -->
+  <script type="text/javascript" id="MathJax-script" 
+   src="https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-chtml-full.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="review-test-page">
+    <button id = "returnButton" class="button--back" style="display: none;" onclick="window.location.href='/home'" >
+      <img src="/static/assets/left-arrow-slider.svg" />
+    </button>
+
+    <div id="loadingIcon" style="display: none; text-align: center;">
+      <img src="{{ url_for('static', filename='assets/running_cat.gif') }}" alt="Loading..." style="width: 50px; height: 50px;" />
+      <p>Đang phân tích kết quả, đợi xí nha...</p>
+    </div>
+
+    <div class="header">
+      <div class="header__content">
+        <p>Bài kiểm tra tổng</p>
+      </div>
+    </div>
+    <div class="result__container">
+      <div class="circular-progress-bar"></div>
+      <div class="result__encouragement">
+        <div class="result__encouragement__content">
+          <p>Tốt lắm bro !</p>
+          <img src="/static/assets/like.svg" alt="encouragement" />
+        </div>
+        <p class="result__score" id="result-score"></p>
+      </div>
+    </div>
+    <div class="current-question__container">
+      <img
+        src="/static/assets/question-icon.svg"
+        alt="question-icon"
+        class="current-question__icon"
+      />
+      <p class="current-question__content"></p>
+      <div class="current-question__options-container">
+        <!-- Options will be dynamically inserted here -->
+      </div>
+      <div class="current-question__explain">
+        <p></p>
+      </div>
+    </div>
+    <div class="questions-list__container">
+      <div class="questions">
+        <!-- Questions list will be dynamically generated -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Use questions and wrong_answer_string from Flask
+      const questions = {{ questions | tojson | safe }};
+      const wrongAnswersString = "{{ wrong_answer_string }}";
+      const wrongAnswers = wrongAnswersString.split("_").map(Number);
+      const score = "{{ score }}";
+      
+      // Set the score
+      document.getElementById("result-score").textContent = score;
+
+      const currentQuestionContent = document.querySelector(".current-question__content");
+      const currentQuestionExplain = document.querySelector(".current-question__explain p");
+      const currentQuestionOptionsContainer = document.querySelector(".current-question__options-container");
+
+      // Add dynamic questions to the sidebar
+      const questionsList = document.querySelector(".questions");
+      questions.forEach((questionData, index) => {
+        // Sidebar question list
+        const questionItem = document.createElement("div");
+        questionItem.className = "question__item";
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = "questionItem";
+        input.id = `question-${index + 1}`;
+        const label = document.createElement("label");
+        label.textContent = index + 1;
+        label.setAttribute("for", `question-${index + 1}`);
+
+        // Check if this question is correct or incorrect
+        if (wrongAnswers.includes(index)) {
+          label.classList.add("incorrect-question");
+        } else {
+          label.classList.add("correct-question");
+        }
+
+        questionItem.appendChild(input);
+        questionItem.appendChild(label);
+        questionsList.appendChild(questionItem);
+
+        // Handle question change
+        input.addEventListener("change", function () {
+          // Update the question content and explanation
+          currentQuestionContent.innerHTML = `Câu ${questionData.ID}: ${questionData.question.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)')}`;
+          currentQuestionExplain.innerHTML = questionData.explaination ? questionData.explaination.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)') : "";
+
+          // Clear the current options container
+          currentQuestionOptionsContainer.innerHTML = "";
+
+          // Add new options for the selected question
+          // Split options (assuming options are stored as "A.Option A content__B.Option B content__C.Option C content__D.Option D content")
+          const optionsArray = questionData.options.split("__");
+
+          optionsArray.forEach(optionStr => {
+            const [optLabel, optContent] = optionStr.split(".");
+
+            // Create the option div container
+            const optionDiv = document.createElement("div");
+            optionDiv.className = `current-question__option option--${optLabel}`;
+
+            // Create the label for the option
+            const optionLabel = document.createElement("label");
+            optionLabel.textContent = optLabel; // A, B, C, D
+
+            // Create the paragraph for the option content
+            const optionContent = document.createElement("p");
+            optionContent.className = `option__content option__content--${optLabel}`;
+            optionContent.innerHTML = optContent.replace(/\$\$/g, '\\(').replace(/\$\$/g, '\\)');
+
+            // Append the label and content to the option div
+            optionDiv.appendChild(optionLabel);
+            optionDiv.appendChild(optionContent);
+
+            // Add correct/incorrect highlight
+            if (optLabel === questionData.answer) {
+              optionLabel.classList.add("correct");
+            }
+            if (
+              wrongAnswers.includes(questionData.ID) &&
+              optLabel !== questionData.answer
+            ) {
+              optionLabel.classList.add("incorrect");
+            }
+
+            currentQuestionOptionsContainer.appendChild(optionDiv);
+          });
+
+          // After dynamically adding LaTeX content, trigger MathJax rendering
+          MathJax.typesetPromise();
+        });
+      });
+
+      // Auto-select the first question
+      if (questions.length > 0) {
+        document.getElementById("question-1").checked = true;
+        document.getElementById("question-1").dispatchEvent(new Event("change"));
+      }
+    });
+    function checkTaskStatus(taskId) {
+        $.get("/task_status/" + taskId, function(data) {
+            if (data.status === 'complete') {
+                $("#loadingIcon").hide();  // Ẩn icon loading khi hoàn tất
+                $("#returnButton").show();  // Hiển thị nút trở về sau khi hoàn tất
+            } else if (data.status === 'failed') {
+                $("#loadingIcon").hide();  // Ẩn icon loading nếu bị lỗi
+                $("#analysisStatus").html("Analysis Failed. Please try again later.");
+            } else {
+                $("#loadingIcon").show();  // Hiển thị biểu tượng loading trong khi phân tích
+                setTimeout(function() {
+                    checkTaskStatus(taskId);  // Poll mỗi 2 giây
+                }, 2000);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        var taskId = "{{ task_id }}";  // Lấy task ID từ Flask
+        if (taskId) {
+            $("#loadingIcon").show();  // Hiển thị biểu tượng loading ngay khi bắt đầu
+            checkTaskStatus(taskId);  // Bắt đầu polling trạng thái task
+        }
+    });
+    </script>
+</body>
+</html>

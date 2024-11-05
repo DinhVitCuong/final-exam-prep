@@ -277,7 +277,7 @@
 
       <div class="header">
         <div class="header__content">
-          <p>Bài kiểm tra</p>
+          <p>Bài thi thử</p>
         </div>
       </div>
       <div class="countdown">
@@ -342,7 +342,7 @@
           // If there's an image URL for the question, add an image below the question text
           if (QAs[index].image) {
             const img = document.createElement("img");
-            img.src = QAs[index].image;
+            img.src = `/static/images/${QAs[index].image}`;
             img.alt = "Question Image";
             img.style.maxWidth = "100%";
             questionContent.appendChild(img);
