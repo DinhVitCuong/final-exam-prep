@@ -205,6 +205,87 @@ class promptTotal(promptCreation):
             f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI CHỨ ĐỪNG GHI SỐ BÀI NHƯ 02 03, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
         )
         return data_prompt
+    def deep_analysis_for_final(self):
+        data_prompt = (
+            f"{self.test_intro} {self.prompt} {self.subject_intro} và tất cả lượng dữ liệu sau được lấy trung bình từ {self.num_test} bài test total trước đó\n"
+            "Dưới đây là tỉ lệ % đúng và thời gian làm bài của từng chương:\n"
+        )
+        acuc_chaps, time_chaps = self.data.short_total_analysis()
+        for key, value in acuc_chaps.items():
+            data_prompt += f"Chương {key}: {value}% - {time_chaps[key]} giây\n"
+        
+
+        # data_prompt += self.diff_prompt()
+        # data_prompt += "Tỉ lệ % đúng của từng loại câu hỏi:\n"
+        # accu_diff, dic_ques, dic_total = self.data.cal_accu_diff()
+        # for type1, accu in accu_diff.items():
+        #     data_prompt += f"Loại câu hỏi {type1}: {accu}%\n"
+
+        # data_prompt += "Tỉ lệ % đúng của các loại câu hỏi từng chương:\n"
+        # chap_difficulty_percentile = self.data.difficult_percentile_per_chap()
+        # for chap, dic_diff in chap_difficulty_percentile.items():
+        #     data_prompt += f"Chương {chap}:\n"
+        #     for type1, acuc in dic_diff.items():
+        #         data_prompt += f"- Loại câu hỏi {type1}: {acuc}%\n"
+
+        # data_prompt += "So sánh với kì vọng % đúng của các loại câu hỏi từng chương (để nhắc nhở học sinh chú ý loại câu hỏi sai nhiều trong to do list):\n"
+        # predict = PredictThreshold(self.type_test, self.subject,self.user_id)
+        # data = predict.predicted_data()
+        # dic = {}
+        # for row in data.itertuples(index=False):
+        #     # Access columns using row indices (chapter, difficulty, accuracy)
+        #     data_prompt += f"Chương {row.chapter} có loại câu hỏi {row.difficulty} với kì vọng là {row.accuracy}%\n"
+        #     if row.chapter not in dic:
+        #         dic[row.chapter] = {row.difficulty : row.accuracy}
+        #     else:
+        #         dic[row.chapter][row.difficulty] = row.accuracy
+        
+        # # luu ve database 
+        # # {1 : [34,35,36,37]}
+        
+        # thres_chap_list = []
+        # for ke, lis in dic.items():
+        #     thres_chap = "_".join(str(i) for i in lis.values())
+        #     # print("thres chap: ", thres_chap)
+        #     thres_chap_list.append(thres_chap)
+
+        # thres_chap_str = ",".join(thres_chap_list)
+        # print("thres chap str: ", thres_chap_str)
+        # query = db.session.query(Threshold).filter_by(user_id = self.user_id, subject = self.subject, chapter = self.num_chap, type_threshold = 1).first()
+        # if query == None:
+        #     thres_data = Threshold(user_id = self.user_id, 
+        #                         subject = self.subject, 
+        #                         chapter = self.num_chap, 
+        #                         type_threshold = 1, 
+        #                         threshold = thres_chap_str)
+        #     db.session.add(thres_data)
+        #     db.session.commit()
+        # else:
+        #     query.threshold = thres_chap_str
+        #     db.session.commit()
+
+
+        data_prompt += "Dưới đây là trung bình các bài hay sai của các chương (đây dùng để nhắc nhở học sinh chú ý các bài sai nhiều):\n"
+        lessons_review_dict = self.data.lessons_id_to_review()
+        for chap, value in lessons_review_dict.items():
+            data_prompt += f"Chương {chap}:"
+            for lesson, count in value['lesson'].items():
+                data_prompt += f" bài {lesson} sai {count} lần \n"
+        # tìm ra điểm mạnh điểm yếu
+        # Điểm số, tgian làm bài cải thiện hay giảm, so sánh với aim score để đánh giá
+        # nhận xét về phần làm tốt, phần cần cải thiện
+        # nhắc nhở học sinh ôn các bài hay sai trong chương, xem lại các chương sai nhiều
+        # đề xuất chiến lược học tập, sử dụng các functions của ứng dụng
+        diff = promptCreation(1, self.num_test, self.subject, self.user_id, self.num_chap).diff_prompt()
+        data_prompt += (
+            "\nHãy phân tích kỹ lưỡng để tìm ra điểm mạnh và điểm yếu của học sinh, càng chi tiết càng tốt:\n"
+            "- So sánh kết quả với aim score để đánh giá hiệu quả học tập.\n"
+            "- Nhận xét về những phần làm tốt và chỉ ra các phần cần cải thiện.\n"
+            "- Đề xuất chiến lược học tập để cải thiện các điểm yếu (Chỉ tập trung phân tích, không cần ghi ngày giờ cụ thể), bao gồm việc sử dụng các chức năng của ứng dụng như 'Wrong question searching', 'Analytic review', và 'Practice test recommendation' để hỗ trợ ôn tập.\n"
+            f"- Đặc biệt GHI RÕ CỤ THỂ TÊN BÀI CHỨ ĐỪNG GHI SỐ BÀI NHƯ 02 03, CỤ THỂ LOẠI CÂU HỎI HAY SAI của từng chương biết rằng thông tin bài : {self.lesson_info()} và thông tin loại câu: {diff}\n"
+        )
+        return data_prompt
+    
     def return_max_chap(self):
         return self.data.return_max_chap()
 
@@ -327,6 +408,8 @@ class generateAnalysis:
             prompt = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap).previous_result()
         elif analyze_type == "chapter":
             prompt = promptChap(0, self.num_test, self.subject,  user_id=self.user_id, num_chap=self.num_chap).chap_analysis()
+        elif analyze_type == "final":
+            prompt = promptTotal(1, self.num_test, self.subject, self.user_id, self.num_chap, is_final = True).deep_analysis_for_final()
         else:
             return "Invalid analyze type. Please choose between 'fast', 'deep', 'progress', or 'chapter'."
         return prompt

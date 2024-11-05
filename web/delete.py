@@ -1,12 +1,12 @@
 from app import create_app, db
-from models import Test, QAs, TodoList
+from models import Test, QAs2, TodoList
 
 app = create_app()
 
 with app.app_context():
     try:
         # Delete all rows from the Test table
-        db.session.query(QAs).delete()
+        db.session.query(QAs2).delete()
         
         # Commit the changes to make them permanent
         db.session.commit()

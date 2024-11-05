@@ -20,13 +20,13 @@ from werkzeug.routing import BuildError
 import os
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, QAs2
 
 app = create_app()
 with app.app_context():
 #QAs
 
-    folder_path = "data_json/"
+    folder_path = "web/data_json/"
     file_names = [f for f in os.listdir(folder_path) if f.endswith('.json')]
     # print(file_names)
     difficulty_mapping = {
@@ -35,6 +35,7 @@ with app.app_context():
         2: 2,
         3: 3
     }
+
     for file_name in file_names:
         file_path = os.path.join(folder_path, file_name)
         if os.path.exists(file_path):
@@ -57,8 +58,8 @@ with app.app_context():
                 else:
                     options_str = options_list  # If it's not a list, keep as is (or handle accordingly)
                 
-                if not QAs.query.filter_by(id=item.get('id')).first():
-                    new_QAs = QAs(
+                if not QAs2.query.filter_by(id=item.get('id')).first():
+                    new_QAs = QAs2(
                         id=item.get('id'),
                         difficulty=difficulty_mapping.get(item.get('difficulty'), -1),
                         image=item.get('image_source'),

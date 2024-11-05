@@ -161,3 +161,14 @@ class Test2(db.Model):
     wrong_answer = db.Column(db.String, nullable=True) #ID wrong test, Format: ID1_ID2_ID3_...
     result = db.Column(db.String(300), nullable=True) # 0 = false, 1 = true, Format: 0_1_0_...
     time_result = db.Column(db.String, nullable=True) #Time spent each question, 0 = not do, Format: time1_time2_time3_...
+
+class QAs2(db.Model):
+    __tablename__ = "question-answer2"
+
+    id = db.Column(db.String(10), primary_key=True)
+    difficulty = db.Column(db.Integer, nullable=True) #0: nhan biet, 1: thong hieu, 2: van dung, 3: van dung cao
+    image = db.Column(db.String, nullable=True)
+    question = db.Column(db.String, nullable=True)
+    options = db.Column(db.String, nullable=True)
+    answer = db.Column(db.Integer, nullable=True)
+    explain = db.Column(db.String, nullable=True)

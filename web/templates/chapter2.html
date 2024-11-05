@@ -368,9 +368,9 @@
               });
             }
             
-            function createChart2(labels, data, label, y_max) {
+            function createChart2(labels, data, data2, label, y_max) {
               // Secondary data and labels for "Kỳ vọng" expectations
-              const data2 = [50, 50, 50, 50];
+              
               const labelMapping = {
                   0: "Nhận biết",
                   1: "Thông hiểu",
@@ -420,14 +420,15 @@
             document.getElementById("button-diff").addEventListener("click", () => {
                 const labels = Object.keys(chartData.accu_diff);
                 const data = Object.values(chartData.accu_diff);
-                createChart2(labels, data, "Question Type Difficulty (%)", 100);
+                const data2 = Object.values(chartData.chap_diff_thres);
+                createChart2(labels, data, data2, "Question Type Difficulty (%)", 100);
             });
     
             // Event listener for "Previous Results" button
             document.getElementById("button-prev").addEventListener("click", () => {
-            const labels = chartData.exact_time.map((time, i) => `Attempt ${i + 1}`);
-            const data = chartData.results;
-            createChart(labels, data, "Previous Test Scores", 10);
+              const labels = chartData.exact_time.map((time, i) => `Attempt ${i + 1}`);
+              const data = chartData.results;
+              createChart(labels, data, "Previous test score", 10);
             });
 
             // Default display: Set "Difficulty" chart as default

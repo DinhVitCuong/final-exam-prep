@@ -263,7 +263,7 @@
             const chartData = {{ chart_data | tojson }};
             console.log('Chart Data:', chartData);
 
-            const { acuc_chaps, time_chaps, accu_diff, chap_difficulty_percentile, results, durations, exact_time, nums } = chartData;
+            const { acuc_chaps, time_chaps, accu_diff, chap_difficulty_percentile, chap_diff_thres, results, durations, exact_time, nums } = chartData;
 
             function createChart(labels, data, label, y_max) {
             // Mapping for numeric labels to descriptions
@@ -296,8 +296,50 @@
                     }
                 }
             });
-        }
-
+          }
+          function createChart2(labels, data, data2, label, y_max) {
+              // Secondary data and labels for "Kỳ vọng" expectations
+              const labelMapping = {
+                  0: "Nhận biết",
+                  1: "Thông hiểu",
+                  2: "Vận dụng",
+                  3: "Vận dụng cao"
+              };
+              // Map numeric labels to descriptions
+              const mappedLabels = labels.map(label => labelMapping[label] || label);
+              // Destroy the previous chart if it exists
+              if (currentChart) currentChart.destroy();
+              // Create a new chart with two datasets for side-by-side columns
+              currentChart = new Chart(ctx, {
+                  type: "bar",
+                  data: {
+                      labels: mappedLabels, // Primary labels for both data sets
+                      datasets: [
+                          {
+                              label: label,
+                              data: data,
+                              backgroundColor: "rgba(75, 192, 192, 0.6)"
+                          },
+                          {
+                              label: "Kỳ vọng " + label,
+                              data: data2,
+                              backgroundColor: "rgba(255, 206, 86, 0.8)" // Yellow for "Kỳ vọng" columns
+                          }
+                      ]
+                  },
+                  options: {
+                      scales: {
+                          y: { beginAtZero: true, max: y_max, ticks: { callback: (value) => value } }
+                      },
+                      responsive: true,
+                      plugins: {
+                          legend: { position: 'top' }
+                      },
+                      barPercentage: 0.8,
+                      categoryPercentage: 0.5 // Controls the width of the bars and spacing between groups
+                  }
+              });
+            }
             document.getElementById("percent-chap").addEventListener("click", () => {
                 const labels = Object.keys(acuc_chaps).map(chap => `Chương ${chap}`);
                 const data = Object.values(acuc_chaps);
@@ -312,10 +354,12 @@
                     createChart(labels, data, "Overall Difficulty Accuracy", 100);
                 } else {
                     const diffData = chap_difficulty_percentile[selectedChapter];
+                    const thresData = chap_diff_thres[selectedChapter];
                     if (diffData) {
                         const labels = Object.keys(diffData);
                         const data = Object.values(diffData);
-                        createChart(labels, data, `Difficulty Accuracy - Chương ${selectedChapter}`, 100);
+                        const thresValues = Object.values(thresData);
+                        createChart2(labels, data, thresValues, `Difficulty Accuracy - Chương ${selectedChapter}`, 100);
                     } else {
                         alert("No data available for this chapter");
                     }
