@@ -149,3 +149,15 @@ class Threshold(db.Model):
     chapter = db.Column(db.Integer, nullable=False)
     type_threshold = db.Column(db.Integer, nullable=False)
     threshold = db.Column(db.String, nullable=False)
+
+class Test2(db.Model):
+    __tablename__ = "test-record2" 
+    id = db.Column(db.Integer, primary_key=True) 
+    user_id = db.Column(db.Integer, db.ForeignKey('account.id'), nullable=False)
+    test_type = db.Column(db.Integer, nullable=False) #1 = Total, 0 = Chapter, 3 = practice
+    time = db.Column(db.Date,nullable=False) #Thoi gian lam test
+    knowledge = db.Column(db.String(100),nullable=False) #Chapter in test
+    questions = db.Column(db.String, nullable=True) #ID all question in test, Format: ID1_ID2_ID3_... # H0101001 - ten mon - so chuong - so bai - id
+    wrong_answer = db.Column(db.String, nullable=True) #ID wrong test, Format: ID1_ID2_ID3_...
+    result = db.Column(db.String(300), nullable=True) # 0 = false, 1 = true, Format: 0_1_0_...
+    time_result = db.Column(db.String, nullable=True) #Time spent each question, 0 = not do, Format: time1_time2_time3_...

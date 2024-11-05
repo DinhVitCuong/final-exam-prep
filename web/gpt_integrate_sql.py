@@ -17,7 +17,7 @@ load_dotenv()
 
 # prompt creation
 class promptCreation:
-    def __init__(self, type_test, num_test, subject, user_id, num_chap = None):
+    def __init__(self, type_test, num_test, subject, user_id, num_chap = None, is_final = None):
         self.type_test = type_test
         self.num_test = num_test
         self.num_chap = num_chap
@@ -26,7 +26,7 @@ class promptCreation:
         self.subject = subject
         self.user_id = user_id
         self.aim_score = 9
-        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, 0, self.num_test,user_id =  self.user_id)
+        self.data = DrawTotal(self.subject, None, self.type_test, self.num_test, user_id = self.user_id,is_final=is_final) if self.type_test == 1 else DrawChap(self.subject, self.num_chap, 0, self.num_test,user_id =  self.user_id)
         self.test_intro = self.get_test_intro()
         self.subject_intro = f"Đây là kết quả môn {self.return_subject_name()}"
         self.detail_analyze_prompt = (f"Lưu ý là thêm số liệu cụ thể để phân tích cho kĩ lưỡng nha, Từ đó đưa ra nhận xét về kết quả vừa thực hiện (mạnh phần nào, yếu phần nào, "
@@ -93,8 +93,8 @@ class promptCreation:
 
 
 class promptTotal(promptCreation):
-    def __init__(self, type_test, num_test, subject, user_id, num_chap):
-        super().__init__(type_test, num_test, subject, user_id, num_chap)
+    def __init__(self, type_test, num_test, subject, user_id, num_chap, is_final=None):
+        super().__init__(type_test, num_test, subject, user_id, num_chap, is_final)
         self.analyze_only_prompt = "Chỉ phân tích và đánh giá, không cần đưa ra kế hoạch cải thiện và khuyến nghị "
 
     def fast_analysis(self):

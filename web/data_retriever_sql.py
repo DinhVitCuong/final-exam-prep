@@ -2,11 +2,11 @@ import json
 import os
 import pandas as pd 
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, Test2
 app = create_app()
 
 class DrawChartBase:
-    def __init__(self, subject_name, num_chap, test_type, num, user_id , load_type = None, ) -> None:
+    def __init__(self, subject_name, num_chap, test_type, num, user_id , load_type = None, is_final = None) -> None:
         self.subject_name = subject_name
         self.num_chap = num_chap
         self.test_type = test_type # 1 : total, 0: chapter, 3: practice
@@ -17,11 +17,20 @@ class DrawChartBase:
         self.data = None
         self.date_and_time_calc("2024-08-23", "2025-06-27", 9)
         self.rate = [40,20,30,10]
+        self.is_final = is_final
     def load_data(self):
         try:
-            self.data_find = db.session.query(Test).filter(
-                Test.questions.like(f"{self.subject_name}%")
-            )
+            if self.is_final:
+                self.data_find = db.session.query(Test2).filter(
+                    Test2.questions.like(f"{self.subject_name}%")
+                )
+                c = Test2
+            else:
+                self.data_find = db.session.query(Test).filter(
+                    Test.questions.like(f"{self.subject_name}%")
+                )
+                c = Test
+            
             # print('cho nay ne')
             # print(self.test_type)
             if self.load_type == None or self.load_type == "average":
@@ -29,12 +38,12 @@ class DrawChartBase:
                     self.data = self.data_find.filter_by(
                         test_type = self.test_type,
                         user_id = int(self.user_id)
-                    ).order_by(Test.id.desc()).limit(self.num).all()
+                    ).order_by(c.id.desc()).limit(self.num).all()
 
                     if self.data == []:
                         self.data1 = self.data_find.filter_by(
                             user_id = int(self.user_id)
-                        ).order_by(Test.id.desc()).all()
+                        ).order_by(c.id.desc()).all()
                         if self.data1 == []:
                             self.num_chap = 1
                         else:
@@ -43,7 +52,7 @@ class DrawChartBase:
                         self.data1 = self.data_find.filter_by(
                             user_id = int(self.user_id),
                             test_type = self.test_type
-                        ).order_by(Test.id.desc()).all()
+                        ).order_by(c.id.desc()).all()
                         self.num_chap = max([int(test.knowledge) for test in self.data1])
                     
                 elif self.test_type == 0:
@@ -52,7 +61,7 @@ class DrawChartBase:
                         test_type = self.test_type,
                         user_id = int(self.user_id),
                         knowledge = str(self.num_chap).zfill(2)
-                    ).order_by(Test.id.desc()).limit(self.num).all()
+                    ).order_by(c.id.desc()).limit(self.num).all()
                     
             else:
                 query = self.data_find.filter_by(
@@ -185,8 +194,8 @@ class DrawChartBase:
         return self.num_chap
 
 class DrawTotal(DrawChartBase):
-    def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None) -> None:
-        super().__init__(subject_name, num_chap, test_type, num, user_id, load_type)
+    def __init__(self, subject_name, num_chap, test_type, num, user_id, load_type=None, is_final = None) -> None:
+        super().__init__(subject_name, num_chap, test_type, num, user_id, load_type, is_final)
         self.test_type = 1
         self.load_data()
     def cal_accu_chap(self, chap): # accuracy từng chapter
@@ -340,8 +349,6 @@ class DrawChap(DrawChartBase):
     
 
 
-# with app.app_context():     #chap  #test_type    #self.num
-#     test = DrawTotal("L", None , None, 10, 34, "average")
-#     print(test.difficult_percentile_per_chap())
+
     
     

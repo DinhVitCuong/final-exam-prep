@@ -1736,7 +1736,203 @@ def analyze_total_test(subject_id):
 
     return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
     
+# Click vào "Đánh giá" sẽ xuất hiện phân tích sâu ....
+@app.route('/subject/<subject_id>/analytic_final', methods=["GET"])
+def analyze_final_test(subject_id):
+    if current_user.is_authenticated == False:
+        return redirect(url_for('login'))
+    if current_user.uni_select == 0:
+        return redirect(url_for('select_uni'))
+    subject_name = ''
+    
+    if subject_id == 'S1':  # Toán
+        subject_name = 'Toán'
+        subject = 'T'
+    elif subject_id == 'S2':  # Lí
+        subject_name = 'Lí'
+        subject = 'L'
+    elif subject_id == 'S3':  # Hóa
+        subject_name = 'Hóa'
+        subject = 'H'
+    else:
+        return redirect(url_for('home'))  # Redirect if subject_id is invalid
+    
+    test_type = 1  # Total test type
+    num_of_test_done = Test.query.filter_by(test_type=test_type, user_id=current_user.id).count()
 
+    if num_of_test_done < 10:
+        num_test = num_of_test_done  # Use all tests if fewer than 10 are done
+    else:
+        num_test = 10  # Limit to 10 tests
+
+    # Query the max chapter (chap_id) from the test records
+    knowledge_list = db.session.query(Test.knowledge).filter(
+            Test.user_id == current_user.id,
+            Test.test_type == test_type,
+            Test.questions.like(f"{subject}%")
+        ).all()
+
+    if knowledge_list:
+            # Lấy giá trị knowledge từ các tuple
+        chap_id = max(knowledge[0] for knowledge in knowledge_list)
+    else:
+        chap_id = 1
+    # Check for an existing analysis record
+    print(chap_id)
+
+    existing_record = Analysis.query.filter_by(
+        user_id=current_user.id,
+        analysis_type=test_type,
+        subject_id=subject,
+        num_chap=chap_id
+    ).first()
+
+    if existing_record:
+        analysis_result = existing_record.main_text
+    else:
+        analysis_result = "Hãy làm bài test này để có dữ liệu phân tích"
+    
+    # #Get percent_chapter:
+    # grade_chapters = get_chapter_mean_list(current_user.id,subject)
+    # percent_chapter = grade_chapters[int(chap_id)-1]
+
+    # #QUery thred, previous result, difficulty
+    # thred_string = None
+    # query_thredhold = Progress.query.filter_by(
+    #     user_id = current_user.id,
+    # ).first()
+    # if subject_id[1] == 1:
+    #     thred_string = query_thredhold.threadhold_1
+    # elif subject_id[1] == 2:
+    #     thred_string = query_thredhold.threadhold_2
+    # elif subject_id[1] == 3:
+    #     thred_string = query_thredhold.threadhold_3
+    # if thred_string is None:
+    #     max_chap = get_max_chapter(subject)
+    #     thred = [100]*max_chap
+    # else:
+    #     thred = thred_string.split('_')
+    
+    # records = Test.query.filter(
+    #     Test.user_id == current_user.id,
+    #     Test.test_type == 1,
+    #     Test.questions.like(f'{subject}%')
+    # ).order_by(Test.time.desc()).limit(5).all()
+    # prev = []
+    # diff = []
+    # for record in records:
+        
+    #     question_ids = record.questions.split('_')
+    #     results_list = record.result.split('_')
+    #     num_ones = question_ids.count('1')
+    #     question_count = len(results_list)
+        
+    #     # Scale the number of 1s to a grade out of 10
+    #     grade = (num_ones / question_count) * 10
+    #     prev.append(grade)
+
+    #     # Query QAs for difficulty levels of the questions
+    #     question_difficulties = {
+    #     q.ID: q.difficulty
+    #     for q in session.query(QAs).filter(QAs.c.ID.in_(question_ids)).all()
+    #     }
+    #     # Initialize counters for difficulties
+    #     difficulty_counts = {0: 0, 1: 0, 2: 0, 3: 0}
+    #     correct_counts = {0: 0, 1: 0, 2: 0, 3: 0}
+
+    #     # Count correct and total questions per difficulty
+    #     for question_id, result in zip(question_ids, results_list):
+    #         difficulty = question_difficulties.get(question_id)
+    #         if difficulty is not None:
+    #             difficulty_counts[difficulty] += 1
+    #             if result == '1':  # Correct answer
+    #                 correct_counts[difficulty] += 1
+
+    #     # Calculate the percentage for each difficulty level
+    #     percentages = {
+    #         diff: (correct_counts[diff] / difficulty_counts[diff] * 100) if difficulty_counts[diff] > 0 else 0
+    #         for diff in range(4)
+    #     }
+    #     percentage_list = [percentages[i] for i in range(4)]
+    #     diff.append(percentage_list)
+    
+    # print(diff)
+    # print(percent_chapter)
+    # print(thred)
+    # print(prev)
+    # Render the evaluation template
+
+    # subject = "T"
+
+    num_of_test1 = db.session.query(Test).filter(
+        Test.questions.like(f"{subject}%")
+    )
+
+    # làm thêm 1 trường hợp nữa, nếu k tìm ra test total thì để 0 hết
+
+
+    # Sau đó lọc tiếp theo user_id và test_type trước khi đếm số lượng
+    existing_progress = Progress.query.filter_by(user_id=current_user.id).first()
+    subject_cat = existing_progress.user_subject_cat
+    # tìm ra các môn của khứa này học
+    cate_subjects = SubjectCategory.query.filter_by(id=subject_cat).first()
+    dic_subjects = {str(cate_subjects.subject1)[0] : 1, 
+                    str(cate_subjects.subject2)[0] : 2, 
+                    str(cate_subjects.subject3)[0]: 3}
+    if dic_subjects[subject] == 1:
+        progressChap = int(existing_progress.progress_1)
+    elif dic_subjects[subject] == 2:
+        progressChap = int(existing_progress.progress_2)
+    else:
+        progressChap = int(existing_progress.progress_3)
+
+    num_of_test_done = num_of_test1.filter_by(user_id = current_user.id, test_type = test_type).count()
+    num_test = 10 if num_of_test_done >= 10 else num_of_test_done
+
+    data_retrieve = promptTotal(1, num_test, subject, current_user.id, progressChap, is_final = True)
+    acuc_chaps, time_chaps = data_retrieve.data.short_total_analysis() # percent-chap (% dung tung chuong)
+    accu_diff, dic_ques, dic_total = data_retrieve.data.cal_accu_diff() # button-diff (nếu select = Tất cả) (% dung tung loai cau hoi )
+    chap_difficulty_percentile = data_retrieve.data.difficult_percentile_per_chap() # button-diff (nếu select chọn từ 1- 7) (% dung tung loai cau hoi tung chuong)
+    results, durations, exact_time, nums = data_retrieve.data.previous_results() # button-prev (kết quả các bài test trước)
+    
+    if len(results) ==0 :
+        avg_score = 0
+    else:
+        avg_score = int(sum(results)/len(results)*10)
+
+    
+
+    thres_query = db.session.query(Threshold).filter_by(user_id = current_user.id, subject = subject, chapter = progressChap, type_threshold = 1).first()
+    if thres_query is None:
+        chap_diff_thres = {}
+        for i in range(progressChap):
+            chap_diff_thres[i+1] = {0: 50, 1: 50, 2: 50, 3: 50}
+    else:
+        thres = thres_query.threshold.split(',')
+        thres = [list(map(float, thre.split('_'))) for thre in thres]
+        
+        chap_diff_thres = {}
+        for i, thre in enumerate(thres):
+            dic = {}
+            for j in range((len(thre))):
+                dic[j] = thre[j]
+            chap_diff_thres[i+1] = dic
+    
+    print("chap diff thres: ", chap_diff_thres)
+    chart_data = {
+        "acuc_chaps": acuc_chaps,
+        "time_chaps": time_chaps,
+        "accu_diff": accu_diff,
+        "chap_difficulty_percentile": chap_difficulty_percentile,
+        "chap_diff_thres" : chap_diff_thres,
+        "results": results,
+        "durations": durations,
+        "exact_time": exact_time,
+        "nums": nums
+    }
+    
+
+    return render_template("total_eval.html", feedback=analysis_result, subject=subject, chap_id=chap_id, subject_id=subject_id, chart_data=chart_data, avg_score=avg_score)
 
 
 

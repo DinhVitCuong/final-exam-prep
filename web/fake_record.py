@@ -20,7 +20,7 @@ from werkzeug.routing import BuildError
 import os
 import json
 from app import create_app, db, login_manager, bcrypt
-from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory
+from models import User, Progress, Test, Universities, QAs, Subject, SubjectCategory, Test2
 import random
 from test_classes_sql import TestOrigin, TestTotal, TestChap
 from datetime import datetime
@@ -66,7 +66,7 @@ with app.app_context():
         questions_total = test_total.create_test(rate)
         test_data = create_test_record(questions_total, str(j).zfill(2) , 1) # thay 0 = 1
         
-        new_test_record = Test(
+        new_test_record = Test2(
             user_id=test_data['user_id'],
             test_type=test_data['test_type'],
             time=datetime.strptime(test_data['time'], '%Y-%m-%d').date(),
