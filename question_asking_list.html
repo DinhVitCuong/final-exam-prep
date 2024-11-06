@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Feed</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .question-feed {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .question-box {
+            border: 1px solid #64BAAA;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        .username {
+            font-weight: bold;
+            color: #333;
+        }
+        .question {
+            margin: 5px 0;
+            color: #555;
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .vote-button {
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .vote-button.upvoted {
+            color: orange;
+        }
+        .vote-button.downvoted {
+            color: blue;
+        }
+        .count {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-feed">
+        <div class="question-box">
+            <div class="username">Username: Hoàng Minh Long</div>
+            <div class="question">Question: Mọi người ơi, hãy giúp mình giải bài này với</div>
+            <div class="actions">
+              <span class="vote-button" onclick="handleVote(this, 5)">▲</span>
+              <span class="count">6</span>
+              <span class="vote-button" onclick="handleVote(this, -5)">▼</span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="username">Username: User1</div>
+            <div class="question">Question: Các bạn hãy giải bài này cho mình với</div>
+            <div class="actions">
+              <span class="vote-button" onclick="handleVote(this, 5)">▲</span>
+              <span class="count">8</span>
+              <span class="vote-button" onclick="handleVote(this, -5)">▼</span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="username">Username: User2</div>
+            <div class="question">Question: Mình không biết làm câu này</div>
+            <div class="actions">
+              <span class="vote-button" onclick="handleVote(this, 5)">▲</span>
+              <span class="count">10</span>
+              <span class="vote-button" onclick="handleVote(this, -5)">▼</span>
+            </div>
+        </div>
+        <div class="question-box">
+          <div class="username">Username: User3</div>
+          <div class="question">Question: Mình không biết làm câu này nè mọi người</div>
+          <div class="actions">
+              <span class="vote-button" onclick="handleVote(this, 5)">▲</span>
+              <span class="count">11</span>
+              <span class="vote-button" onclick="handleVote(this, -5)">▼</span>
+          </div>
+      </div>
+        <!-- Add more question-boxes here as needed -->
+    </div>
+
+    <script>
+      function handleVote(button, initialCount) {
+          const countElement = button.parentNode.querySelector('.count');
+          const upvoteButton = button.parentNode.querySelector('.vote-button:nth-child(1)');
+          const downvoteButton = button.parentNode.querySelector('.vote-button:nth-child(3)');
+          let count = parseInt(countElement.textContent);
+
+          if (button === upvoteButton) {
+              if (upvoteButton.classList.contains('upvoted')) {
+                  upvoteButton.classList.remove('upvoted');
+                  count -= 1;
+              } else {
+                  upvoteButton.classList.add('upvoted');
+                  downvoteButton.classList.remove('downvoted');
+                  count += 1;
+              }
+          } else if (button === downvoteButton) {
+              if (downvoteButton.classList.contains('downvoted')) {
+                  downvoteButton.classList.remove('downvoted');
+                  count += 1;
+              } else {
+                  downvoteButton.classList.add('downvoted');
+                  upvoteButton.classList.remove('upvoted');
+                  count -= 1;
+              }
+          }
+
+          countElement.textContent = count;
+      }
+
+      // For the main question's upvote and downvote
+      document.getElementById('upvote-question').addEventListener('click', function () {
+          handleVote(this, parseInt(document.getElementById('vote-count-question').textContent));
+      });
+      document.getElementById('downvote-question').addEventListener('click', function () {
+          handleVote(this, -parseInt(document.getElementById('vote-count-question').textContent));
+      });
+  </script>
+
+</body>
+</html>

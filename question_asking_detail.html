@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit-like Upvote System</title>
+    <style>
+        body {
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .question-box {
+            border: 1px solid #64BAAA;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            width: 50%;
+            justify-content: center;
+        }
+        .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .username {
+            font-weight: bold;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 10px 0;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        .image-placeholder {
+            border: 1px dashed #ccc;
+            height: 150px;
+            text-align: center;
+            line-height: 150px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+        .vote-button {
+            font-size: 24px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .vote-button.upvoted {
+            color: orange;
+        }
+        .vote-button.downvoted {
+            color: blue;
+        }
+        .count {
+            margin: 0 5px;
+            font-size: 18px;
+        }
+        .comment-section {
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            margin-top: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .comment {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .comment p {
+            margin: 0;
+            flex-grow: 1;
+        }
+        .comment-actions {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .comment input {
+            width: 100%; /* Adjusts the input to take full width */
+            padding: 8px; /* Adds more padding for a better feel */
+            box-sizing: border-box; /* Ensures the padding doesn't affect width */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .nav-button {
+            position: fixed; /* Changed to fixed to keep it at the top of the page even when scrolling */
+        top: 10px;
+        z-index: 100; /* Ensures the button stays on top of other elements */
+        border: none;
+        color: #0F3DDE;
+        padding: 5px 10px;
+        font-size: 32px;
+        border-radius: 10px;
+        cursor: pointer;
+        text-decoration: none;
+        }
+        /* .nav-button:hover {
+            background-color: white;
+        } */
+        .backward-button {
+            left: 20px;
+        }
+        .forward-button {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="previous-page.html" class="nav-button backward-button">&laquo;</a>
+    <a href="next-page.html" class="nav-button forward-button">&raquo;</a>
+    
+    <div class="center-container">
+        <div class="question-box">
+            <div class="username">Hoàng Minh Long</div>
+            <hr>
+            <div class="question">Mọi người ơi, hãy giúp mình giải bài này với</div>
+            <img src="C:\Users\longg\Downloads\final-exam-prep-final\web\templates\demo_math.png" 
+                 alt="Image description" 
+                 style="width: 100%; max-height: 100%; object-fit: cover; border: 1px dashed #ccc; margin-bottom: 10px;">
+            <div class="actions">
+                <span class="vote-button" id="upvote-question">▲</span>
+                <span class="count" id="vote-count-question">34</span>
+                <span class="vote-button" id="downvote-question">▼</span>
+            </div>
+            <div class="comment-section">
+                <div class="comment">
+                    <p><strong>User1:</strong> Đây là cách làm nè bạn</p>
+                    <div class="comment-actions">
+                        <span class="vote-button" onclick="handleVote(this, 12)">▲</span>
+                        <span class="count">12</span>
+                        <span class="vote-button" onclick="handleVote(this, -12)">▼</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <p><strong>User2:</strong> Còn đây là cách của mình</p>
+                    <div class="comment-actions">
+                        <span class="vote-button" onclick="handleVote(this, 5)">▲</span>
+                        <span class="count">5</span>
+                        <span class="vote-button" onclick="handleVote(this, -5)">▼</span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <input type="text" placeholder="Write a comment...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleVote(button, initialCount) {
+            const countElement = button.parentNode.querySelector('.count');
+            const upvoteButton = button.parentNode.querySelector('.vote-button:nth-child(1)');
+            const downvoteButton = button.parentNode.querySelector('.vote-button:nth-child(3)');
+            let count = parseInt(countElement.textContent);
+
+            if (button === upvoteButton) {
+                if (upvoteButton.classList.contains('upvoted')) {
+                    upvoteButton.classList.remove('upvoted');
+                    count -= 1;
+                } else {
+                    upvoteButton.classList.add('upvoted');
+                    downvoteButton.classList.remove('downvoted');
+                    count += 1;
+                }
+            } else if (button === downvoteButton) {
+                if (downvoteButton.classList.contains('downvoted')) {
+                    downvoteButton.classList.remove('downvoted');
+                    count += 1;
+                } else {
+                    downvoteButton.classList.add('downvoted');
+                    upvoteButton.classList.remove('upvoted');
+                    count -= 1;
+                }
+            }
+
+            countElement.textContent = count;
+        }
+
+        // For the main question's upvote and downvote
+        document.getElementById('upvote-question').addEventListener('click', function () {
+            handleVote(this, parseInt(document.getElementById('vote-count-question').textContent));
+        });
+        document.getElementById('downvote-question').addEventListener('click', function () {
+            handleVote(this, -parseInt(document.getElementById('vote-count-question').textContent));
+        });
+    </script>
+</body>
+</html>

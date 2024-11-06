@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng xếp hạng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FBF3EC;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+            justify-content: center;
+        }
+        .nav-button {
+            position: absolute;
+            top: 10px;
+            /* background-color: #0F3DDE; */
+            border: none;
+            color: #0F3DDE;
+            padding: 5px 10px;
+            font-size: 32px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /* .nav-button:hover {
+            background-color: white;
+        } */
+        .backward-button {
+            left: 20px;
+        }
+        .forward-button {
+            right: 20px;
+        }
+        .ranking-container {
+            border: 2px solid #64BAAA;
+            width: 50%;
+            height: 50%; /* Adjust as needed */
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .ranking-header {
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #64BAAA;
+            padding-bottom: 5px;
+        }
+        .ranking-list {
+            flex: 1; /* Make the list take up available space */
+            overflow-y: auto; /* Scroll only when needed */
+            text-align: left;
+            padding-left: 10px;
+        }
+        .ranking-list p {
+            margin: 15px 0;
+        }
+        .button-container {
+            margin-top: 10px;
+        }
+        .ranking-button {
+            background-color: #6ec6b5;
+            border: none;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .ranking-button:hover {
+            background-color: #64BAAA;
+        }
+    </style>
+</head>
+<body>
+    <a href="previous-page.html" class="nav-button backward-button">&laquo;</a>
+    <a href="next-page.html" class="nav-button forward-button">&raquo;</a>
+
+    <div class="ranking-container">
+        <div class="ranking-header">Bảng xếp hạng</div>
+        <div class="ranking-list">
+            <p>User 1</p>
+            <p>User 2</p>
+            <p>User 3</p>
+            <p>User 4</p>
+            <p>User 5</p>
+            <p>User 6</p>
+            <p>User 7</p>
+            <p>User 8</p>
+            <p>User 9</p>
+            <p>User 10</p>
+            <p>User 11</p>
+            <p>User 12</p>
+            <p>User 13</p>
+            <p>User 14</p>
+            <p>User 15</p>
+        </div>
+        <div class="button-container">
+            <button class="ranking-button">Chuyển tới thứ hạng của bạn</button>
+        </div>
+    </div>
+</body>
+</html>
