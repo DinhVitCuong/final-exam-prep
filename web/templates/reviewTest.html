@@ -397,8 +397,8 @@
     document.addEventListener("DOMContentLoaded", function () {
       // Use questions and wrong_answer_string from Flask
       const questions = {{ questions | tojson | safe }};
-      const wrongAnswersString = "{{ wrong_answer_string }}";
-      const wrongAnswers = wrongAnswersString.split("_").map(Number);
+      const wrongAnswers = {{ wrong_answer_list | tojson | safe }};
+      const uncheckAnswers = {{ uncheck_answer_list | tojson | safe }};
       const score = "{{ score }}";
       
       // Set the score
@@ -425,6 +425,8 @@
         // Check if this question is correct or incorrect
         if (wrongAnswers.includes(index)) {
           label.classList.add("incorrect-question");
+        } else if (uncheckAnswers.includes(index)) {
+          label.classList.add("uncheck-question");
         } else {
           label.classList.add("correct-question");
         }
