@@ -655,7 +655,8 @@ def total_test_post(chap_id, subject):
     wrong_answer_string = ""
     result = []
     wrong_answers = []
-
+    wrong_answers_index = []
+    uncheck_index = []
     # Process the answers
     for i, question in enumerate(questions):
         questions_ID_string += f"{question['ID']}_"
@@ -664,6 +665,10 @@ def total_test_post(chap_id, subject):
         else:
             result.append("0")
             wrong_answers.append(str(question['ID']))
+            if answers[i] is None:
+                uncheck_index.append(i)
+            else:
+                wrong_answers_index.append(i)
         time_string += f"{time_spent[i]}_"
 
     # Clean up strings
@@ -698,7 +703,8 @@ def total_test_post(chap_id, subject):
 
 
     # Redirect to the review route
-    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
+
+    return render_template("reviewTest.html", questions=questions, wrong_answer_list=wrong_answers_index, uncheck_answer_list=uncheck_index, score=score, task_id=task_id)
         
 @app.route('/subject/<subject_id>', methods=["GET", "POST"])
 def subject(subject_id):
@@ -826,7 +832,8 @@ def final_test_post(subject):
     wrong_answer_string = ""
     result = []
     wrong_answers = []
-
+    wrong_answers_index = []
+    uncheck_index = []
     # Process the answers
     for i, question in enumerate(questions):
         questions_ID_string += f"{question['ID']}_"
@@ -835,6 +842,10 @@ def final_test_post(subject):
         else:
             result.append("0")
             wrong_answers.append(str(question['ID']))
+            if answers[i] is None:
+                uncheck_index.append(i)
+            else:
+                wrong_answers_index.append(i)
         time_string += f"{time_spent[i]}_"
 
     # Clean up strings
@@ -869,8 +880,8 @@ def final_test_post(subject):
 
 
     # Redirect to the review route
-    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id=task_id)
 
+    return render_template("reviewTest.html", questions=questions, wrong_answer_list=wrong_answers_index, uncheck_answer_list=uncheck_index, score=score, task_id=task_id)
 
 
 
@@ -954,7 +965,8 @@ def practice_test_post(subject):
     wrong_answer_string = ""
     result = []
     wrong_answers = []
-
+    wrong_answers_index = []
+    uncheck_index = []
     # Process the answers
     for i, question in enumerate(questions):
         questions_ID_string += f"{question['ID']}_"
@@ -962,13 +974,16 @@ def practice_test_post(subject):
             result.append("1")
         else:
             result.append("0")
-            wrong_answers.append(str(i)) 
+            wrong_answers.append(str(question['ID']))
+            if answers[i] is None:
+                uncheck_index.append(i)
+            else:
+                wrong_answers_index.append(i)
         time_string += f"{time_spent[i]}_"
 
     # Clean up strings
     questions_ID_string = questions_ID_string.rstrip("_")
     time_string = time_string.rstrip("_")
-    wrong_answer_string = "_".join(wrong_answers)
     score = f"{result.count('1')}/{len(result)}"
     db.session.delete(temp_test)
     db.session.commit()
@@ -981,7 +996,8 @@ def practice_test_post(subject):
     analysis_thread.start()
     
     # Redirect to the review route
-    return render_template("reviewTest.html", questions=questions, wrong_answer_string=wrong_answer_string, score=score, task_id = task_id)
+
+    return render_template("reviewTest.html", questions=questions, wrong_answer_list=wrong_answers_index, uncheck_answer_list=uncheck_index, score=score, task_id=task_id)
 
 
 @app.route("/chapter-test/<chap_id>/<subject>", methods=["GET"])
@@ -1052,7 +1068,8 @@ def chapter_test_post(chap_id, subject):
     wrong_answer_string = ""
     result = []
     wrong_answers = []
-
+    wrong_answers_index = []
+    uncheck_index = []
     # Process the answers
     for i, question in enumerate(questions):
         questions_ID_string += f"{question['ID']}_"
@@ -1061,12 +1078,15 @@ def chapter_test_post(chap_id, subject):
         else:
             result.append("0")
             wrong_answers.append(str(question['ID']))
+            if answers[i] is None:
+                uncheck_index.append(i)
+            else:
+                wrong_answers_index.append(i)
         time_string += f"{time_spent[i]}_"
 
     # Clean up strings
     questions_ID_string = questions_ID_string.rstrip("_")
     time_string = time_string.rstrip("_")
-    wrong_answer_string = "_".join(wrong_answers)
     score = f"{result.count('1')}/{len(result)}"
 
 
@@ -1099,9 +1119,8 @@ def chapter_test_post(chap_id, subject):
     # Run analysis in a separate thread and pass the app object
     analysis_thread = threading.Thread(target=run_analysis_thread, args=(app, subject, chap_id, user_id, task_id, 0))
     analysis_thread.start()
-
     # Redirect to the review route
-    return render_template("reviewTest.html", questions=questions, wrong_answer_stchapterring=wrong_answer_string, score=score, task_id=task_id)
+    return render_template("reviewTest.html", questions=questions, wrong_answer_list=wrong_answers_index, uncheck_answer_list=uncheck_index, score=score, task_id=task_id)
 
 import logging
 
