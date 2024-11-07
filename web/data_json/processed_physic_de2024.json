@@ -1,6 +1,6 @@
 [
     {
-        "id": "L0306DE1",
+        "id": "L0306001DE1",
         "question": "Đặt điện áp xoay chiều $u=U \\sqrt{2} \\cos \\omega t(U>0)$ vào hai đầu đoạn mạch $R, L, C$ mắc nối tiếp thì cường độ dòng điện trong mạch là $\\mathrm{i}=\\mathrm{I} \\sqrt{2} \\cos (\\omega \\mathrm{t}+\\varphi)(\\mathrm{I}>0)$. Công suất điện tiêu thu trung bình của đoạn mạch là",
         "image_source": null,
         "difficulty": 0,
@@ -14,7 +14,7 @@
         "explain": ""
     },
     {
-        "id": "L0401DE1",
+        "id": "L0401002DE1",
         "question": "Mạch dao động là một mạch điện kín gồm",
         "image_source": null,
         "difficulty": 0,
@@ -28,7 +28,7 @@
         "explain": ""
     },
     {
-        "id": "L0601DE1",
+        "id": "L0601003DE1",
         "question": "Theo thuyết lượng tử ánh sáng, phát biếu nào sau đây đúng?",
         "image_source": null,
         "difficulty": 0,
@@ -42,7 +42,7 @@
         "explain": ""
     },
     {
-        "id": "L0502DE1",
+        "id": "L0502004DE1",
         "question": "Ánh sáng đơn sắc",
         "image_source": null,
         "difficulty": 0,
@@ -56,7 +56,7 @@
         "explain": ""
     },
     {
-        "id": "L0101DE1",
+        "id": "L0101005DE1",
         "question": "Hai dao động điều hòa cùng phương, cùng tần số, có biên độ lần lượt là $\\mathrm{A}_{1}$ và $\\mathrm{A}_{2}$ và có pha ban đầu lần lượt là $\\varphi_{1}$ và $\\varphi_{2}$. Nếu độ lệch pha $\\Delta \\varphi=\\varphi_{2}-\\varphi_{1}=(2 \\mathrm{n}+1) \\pi,(\\mathrm{n}=0, \\pm 1, \\pm 2, \\ldots)$ thì dao động tổng hợp của hai dao động này có biện độ là",
         "image_source": null,
         "difficulty": 0,
@@ -70,7 +70,7 @@
         "explain": ""
     },
     {
-        "id": "L0507DE1",
+        "id": "L0507006DE1",
         "question": "Tia nào sau đây không phải là tia phóng xạ?",
         "image_source": null,
         "difficulty": 0,
@@ -84,7 +84,7 @@
         "explain": ""
     },
     {
-        "id": "L0303DE1",
+        "id": "L0303007DE1",
         "question": "Đặt điện áp xoay chiều có tần số góc $\\omega$ thay đổi được vào hai đàu đoạn mạch gồm điện trở, cuộn cảm thuần có độ tự cảm L và tụ điện có điện dung C mắc nối tiếp. Để trong đoạn mạch xảy ra hiện tượng cộng hưởng thù giá trị của $\\omega$ là",
         "image_source": null,
         "difficulty": 0,
@@ -98,7 +98,7 @@
         "explain": ""
     },
     {
-        "id": "L0507DE1",
+        "id": "L0507008DE1",
         "question": "Công dụng nào sau đây không phải của tia tử ngoại?",
         "image_source": null,
         "difficulty": 0,
@@ -112,7 +112,7 @@
         "explain": ""
     },
     {
-        "id": "L0707DE1",
+        "id": "L0707009DE1",
         "question": "Phản ứng phân hạch là phản ứng trong đó",
         "image_source": null,
         "difficulty": 0,
@@ -126,7 +126,7 @@
         "explain": ""
     },
     {
-        "id": "L0106DE1",
+        "id": "L0106010DE1",
         "question": " Một con lắc lò xo gồm vật nhỏ và lò xo nhẹ có độ cứng $k$ đang dao động điều hòa dọc theo trục Ox . Khi vật ở vị trí có li độ x thì lực kéo về tác dụng lên vật là",
         "image_source": null,
         "difficulty": 0,
@@ -140,7 +140,7 @@
         "explain": ""
     },
     {
-        "id": "L0603DE1",
+        "id": "L0603011DE1",
         "question": " Một điện trở $R$ nối với nguồn điện một chiều có suất điện động $\\mathscr{E}$ và điện trở trong r thành mạch điện kín. Dòng điện chạy qua nguồn điện có cường độ là",
         "image_source": null,
         "difficulty": 0,
@@ -154,7 +154,7 @@
         "explain": ""
     },
     {
-        "id": "L0405DE1",
+        "id": "L0405012DE1",
         "question": " Đặt một điện tích thử q (dương) trong điện trường thì lực điện tác dụng lên điện tích có độ lớn là F. Cường độ điện trường tại nơi đặt điện thử có độ lởn là",
         "image_source": null,
         "difficulty": 0,
@@ -168,7 +168,7 @@
         "explain": ""
     },
     {
-        "id": "L0606DE1",
+        "id": "L0606013DE1",
         "question": " Xét nguyên tử hiđrô theo mẫu nguyên tử Bo. Trong số các quỹ đạo dừng $\\mathrm{K}, \\mathrm{L}, \\mathrm{M}$ và N của êlectron thì quỹ đạo dừng có bán kính nhỏ nhất là",
         "image_source": null,
         "difficulty": 0,
@@ -182,7 +182,7 @@
         "explain": ""
     },
     {
-        "id": "L0101DE1",
+        "id": "L0101013DE1",
         "question": " Khi nói về dao động cưỡng bức, phát biểu nào sau đây sai?",
         "image_source": null,
         "difficulty": 0,
@@ -196,7 +196,7 @@
         "explain": ""
     },
     {
-        "id": "L0303DE1",
+        "id": "L0303015DE1",
         "question": " Đặt điện áp xoay chiều $u=U \\sqrt{2} \\cos \\omega t(U>0)$ vào hai đầu đoạn mạch chỉ có điện trở thì dòng điện qua đoạn mạch có cường độ hiệu dụng là I. Biểu thức cường độ dò̀ng điện trong đoạn mạch là",
         "image_source": null,
         "difficulty": 0,
@@ -210,7 +210,7 @@
         "explain": ""
     },
     {
-        "id": "L0315DE1",
+        "id": "L0315016DE1",
         "question": " Một máy biến áp lý tưởng có số vòng dây của cuộn dây sơ cấp và của cuộn thứ cấp lần lượt là $\\mathrm{N}_{1}$ và $\\mathrm{N}_{2}$. Máy đang hoạt động, dòng điện hiệu dụng ở hai đầu cuộn sơ cấp và hai đầu cuộn thứ cấp lần lượt là $U_{1}$ và $U_{2}$. Công thức nào sau đây đúng?",
         "image_source": null,
         "difficulty": 0,
@@ -224,7 +224,7 @@
         "explain": ""
     },
     {
-        "id": "L0205DE1",
+        "id": "L0205017DE1",
         "question": " Một sóng cơ có chu kì T đang lan truyền trong một môi trường. Bước sóng là quãng đường sóng truyền được trong khoảng thời gian",
         "image_source": null,
         "difficulty": 0,
@@ -238,7 +238,7 @@
         "explain": ""
     },
     {
-        "id": "L0210DE1",
+        "id": "L0210018DE1",
         "question": " Đặc trưng nào sau đây là đặc trưng vật lí của âm?",
         "image_source": null,
         "difficulty": 0,
@@ -252,7 +252,7 @@
         "explain": ""
     },
     {
-        "id": "L0405DE1",
+        "id": "L0405019DE1",
         "question": " Từ nhiệt độ phòng, tăng dần nhiệt độ của một thanh đồng thì điện trở của thanh",
         "image_source": null,
         "difficulty": 0,
@@ -266,7 +266,7 @@
         "explain": ""
     },
     {
-        "id": "L0702DE1",
+        "id": "L0702020DE1",
         "question": " Khi phản xạ trên vật cản cố định thì tại điểm phản xậ, sóng phản xạ và sóng tới",
         "image_source": null,
         "difficulty": 0,
@@ -280,7 +280,7 @@
         "explain": ""
     },
     {
-        "id": "L0314DE1",
+        "id": "L0314021DE1",
         "question": " Trong sơ đồ khối của một máy phát thanh vô tuyến đơn giản không có bộ phận nào sau đây?",
         "image_source": null,
         "difficulty": 0,
@@ -294,7 +294,7 @@
         "explain": ""
     },
     {
-        "id": "L0111DE1",
+        "id": "L0111022DE1",
         "question": " Một con lắc đơn có chiều dài 1 đang dao động điều hòa với biên độ góc $\\alpha_{0}$ (radian) đại lượng $\\mathrm{s}_{0}=1 \\alpha_{0}$ là",
         "image_source": null,
         "difficulty": 0,
@@ -308,7 +308,7 @@
         "explain": ""
     },
     {
-        "id": "L0502DE1",
+        "id": "L0502023DE1",
         "question": " Tiến hành thí nghiệm Y-âng về giao thoa ánh sáng với ánh sáng đơn sắc có bước sóng 600 nm biết khoảng cách giữa hai khe hẹp là 2 mm , khoảng cách từ mặt phẳng chứa hai khe đến màn quan sát là $1,20 \\mathrm{~m}$. Trên màn, khoảng cách từ vân sáng bậc hai đến vân sáng trung tâm là",
         "image_source": null,
         "difficulty": 0,
@@ -322,7 +322,7 @@
         "explain": ""
     },
     {
-        "id": "L0405DE1",
+        "id": "L0405024DE1",
         "question": " Một khung dây dẫn hình vuông có diện tích $20 \\mathrm{~cm}^{2}$ được đặt trong từ trường đều có vectơ cảm ứng từ vuông góc với mặt phẳng khung dây. Trong khoảng thời gian $0,01 \\mathrm{~s}$, cảm ứng từ của từ trường giảm đều từ giá trị $0,04 \\mathrm{~T}$ về 0 . Trong khoảng thời gian trên, suất điện động cảm ứng xuất hiện trong khung dây có độ lớn là",
         "image_source": null,
         "difficulty": 0,
@@ -336,7 +336,7 @@
         "explain": ""
     },
     {
-        "id": "L0306DE1",
+        "id": "L0306025DE1",
         "question": " Đặt điện áp xoay chiều có giá trị hiệu dụng 220 V vào hai đầu đoạn mạch chỉ có điện trở $110 \\Omega$ công suất tiêu thụ trung bình của đoạn mạch là",
         "image_source": null,
         "difficulty": 0,
@@ -350,7 +350,7 @@
         "explain": ""
     },
     {
-        "id": "L0210DE1",
+        "id": "L0210026DE1",
         "question": " Biết $\\mathrm{I}_{0}$ là cường độ âm chuẩn. Tại một điểm có mức cường độ âm 30 dB thì cường độ âm ỏ đó bằng",
         "image_source": null,
         "difficulty": 0,
@@ -364,7 +364,7 @@
         "explain": ""
     },
     {
-        "id": "L0507DE1",
+        "id": "L0507027DE1",
         "question": " Giới hạn quang điện của kim loại bạc là 260 nm . Lấy $\\mathrm{h}=6,625 \\cdot 10^{-34} \\mathrm{~J} . \\mathrm{s} ; \\mathrm{c}=3 \\cdot 10^{8} \\mathrm{~m} / \\mathrm{s}^{2} ; 1 \\mathrm{eV}=$ $1,6.10^{-19} \\mathrm{~J}$. Công thoát của eelectron khỏi kim loại này là",
         "image_source": null,
         "difficulty": 0,
@@ -378,7 +378,7 @@
         "explain": ""
     },
     {
-        "id": "L0101DE1",
+        "id": "L0101028DE1",
         "question": " Tại một nơi trên trái đất con lắc đơn có chiều dài 1 dao động điều hòa với chu kì T. Tại đó, con lắc đơn có chiều dài 1,961 dao động điều hòa với chu kì là",
         "image_source": null,
         "difficulty": 0,
@@ -392,7 +392,7 @@
         "explain": ""
     },
     {
-        "id": "L0702DE1",
+        "id": "L0702029DE1",
         "question": " Hạt nhân ${ }_{6}^{13} \\mathrm{C}$ có khối lượng $13,0001 \\mathrm{u}$. Cho khối lượng prôtôn và nowowtron lần lượt là $1,0073 \\mathrm{u}$ và $1,0087 \\mathrm{u}$. Lấy $1 \\mathrm{u}=931,5 \\mathrm{MeV} / \\mathrm{c}^{2}$ Năng lượng liên kết riếng của ${ }_{6}^{13} \\mathrm{C}$ là",
         "image_source": null,
         "difficulty": 0,
@@ -406,7 +406,7 @@
         "explain": ""
     },
     {
-        "id": "L0401DE1",
+        "id": "L0401030DE1",
         "question": " Mạch dao động Lý Tưởng gồm tụ điện có điện dung $5 \\mu \\mathrm{~F}$ và cuộn cảm có độ tự cảm 5 mH . Lấy $\\pi \\sim 3,14$, chu kì dao động riêng của mạch là",
         "image_source": null,
         "difficulty": 0,
@@ -420,7 +420,7 @@
         "explain": ""
     },
     {
-        "id": "L0601DE1",
+        "id": "L0601031DE1",
         "question": " Một mạch dao động lí tưởng đang có dao động điện từ tự do. Cho thời điểm ban đầu ( $\\mathrm{t}=0$ ) khi điện tích của tụ điện có giá trị cực đại và bằng 5 nC . Tại thời điểm $\\mathrm{t}=\\frac{5}{6} \\mu \\mathrm{~s}$, cường độ dòng điện trong mạch có độ lớn bằng một nửa cường độ dòng điện cực đại lần thứ hai. Lấy $\\pi \\sim 3,14$. Cường độ dòng điện cực đại trong mạch có giá trị là",
         "image_source": null,
         "difficulty": 0,
@@ -434,7 +434,7 @@
         "explain": ""
     },
     {
-        "id": "L0303DE1",
+        "id": "L0303032DE1",
         "question": " Đặt điện áp $u=180 \\sqrt{2} \\cos \\left(100 \\pi t+\\frac{\\pi}{3}\\right)$ (V) (t tính bằng s) vào hai đầu đoạn mạch AB như hình bên. Biết điện",
         "image_source": "images/2024_11_05_a5aec8be2a261f48038dg-3(2).jpg",
         "difficulty": 0,
@@ -448,7 +448,7 @@
         "explain": ""
     },
     {
-        "id": "L0303DE1",
+        "id": "L0303033DE1",
         "question": " Đặt điện áp xoay chiều $u=U \\sqrt{2} \\cos \\left(\\omega t+\\frac{\\pi}{6}\\right)$ ( $U$ và $\\omega$ là các hằng số dương) vào hai đầu đoạn mạch gồm điện trở R , cuộn cảm thuần L và tụ điện C mắc nối tiếp. Biết điện áp giữa hai đầu cuộn cảm có biểu thức $u_{L}=2 U \\cos \\left(\\omega t+\\frac{5 \\pi}{12}\\right)$, điện áp hiệu dụng giữa hai đầu C và giữ hai đầu R lần lượt là $U_{C}$ và $U_{R}$. Tỉ số $\\frac{U_{C}}{U_{R}}$ có giá trị là",
         "image_source": null,
         "difficulty": 0,
@@ -462,7 +462,7 @@
         "explain": ""
     },
     {
-        "id": "L0209DE1",
+        "id": "L0209034DE1",
         "question": " Tiến hành thí nghiệm tạo sóng dừng trên sợi dây đàn hồi AB dài $1,2 \\mathrm{~m}$ được căng ngang như hình bên. Bật máy rung để cần luôn tạo sóng truyền trên sợi dây rồi thay đổi tần số f của máy rung. Khi $\\mathrm{f}=80$ Hz thì trên dây có sóng dừng với ba bụng, hai đầu dây A và $B$ coi như các nút. Tốc độ truyền sóng trên dây là",
         "image_source": "images/2024_11_05_a5aec8be2a261f48038dg-3(1).jpg",
         "difficulty": 0,
@@ -476,7 +476,7 @@
         "explain": ""
     },
     {
-        "id": "L0106DE1",
+        "id": "L0106035DE1",
         "question": " Hai vật $A$ và $B$ dao động điều hòa cùng tần số. Hình bên là đồ thị biểu diễn sự phụ thuộc của li độ $\\mathrm{x}_{\\mathrm{A}}$ của A và li độ $\\mathrm{x}_{\\mathrm{B}}$ của B theo thời gian t . Khi A và B ở vị trí có li độ dương và bằng nhau thì tỉ số giữa li độ của chúng và biên độ dao động củ vật A có giá trị gần nhất với giá trị nào sau đây?",
         "image_source": "images/2024_11_05_a5aec8be2a261f48038dg-3.jpg",
         "difficulty": 0,
@@ -490,7 +490,7 @@
         "explain": ""
     },
     {
-        "id": "L0606DE1",
+        "id": "L0606036DE1",
         "question": " Một cổ vật bằng gỗ được xác định tuổi theo phương pháp lượng cacbon ${ }_{6}^{14} \\mathrm{C}$. Trong cổ vật cứ $10^{6}$ nguyên tử ${ }_{6}^{12} \\mathrm{C}$ có 8240 nguyên tử ${ }_{6}^{14} \\mathrm{C}$, trong cây gỗ cùng loại còn sống thì cứ $10^{2}$ nguyên tử ${ }_{6}^{12} \\mathrm{C}$ có 1 nguyên tử ${ }_{6}^{14} \\mathrm{C}$. Biết ${ }_{6}^{12} \\mathrm{C}$ là đồng vị bền còn ${ }_{6}^{14} \\mathrm{C}$ là đồng vị phóng xạ với chu kì bán rã 5730 năm. Tuổi của cổ vật này vào khoảng",
         "image_source": null,
         "difficulty": 0,
@@ -504,7 +504,7 @@
         "explain": ""
     },
     {
-        "id": "L0502DE1",
+        "id": "L0502037DE1",
         "question": " Để xác định bước sóng $\\lambda$ ( $390 \\mathrm{~nm} \\geq \\lambda \\geq 740 \\mathrm{~nm}$ ) của ánh sáng phát ra từ một nguồn sáng đơn sắc, người ta sử dụng bộ thí nghiệm Y-âng về giao thoa ánh sáng và một nguồn sáng đơn sắc phát ra ánh sáng bước sóng $\\dot{\\lambda}_{0}=470 \\mathrm{~nm}$. Trong thí nghiệm, khoảng cách giưa hai khe hẹp được giư cố định, khoảng cách từ mặt phẳng chứa hai khe đến màn quan sát là D thay đổi được, điểm O trên màn luôn là vị trí vân sáng trung tâm. Trên màn, N là một điểm cố định. Khi $\\mathrm{D}=\\mathrm{D}_{0}$ thì tại N là vị trí vân sáng nếu sử dụng ánh sáng có bước sóng $\\lambda$. Khi $\\mathrm{D}=4 \\mathrm{D}_{0}$, nếu sử dụng ánh sáng có bước sóng $\\lambda_{0}$ thì tại N là vị trí của vân sáng, nếu sử dụng ánh sáng có bước sóng $\\lambda$ thì tại N không phải là vị trí của vấn sáng hay vân tối. Từ vị trí của màn với $\\mathrm{D}=4 \\mathrm{D}_{0}$, dịch màn từ từ ra xa mặt phẳng chứa hai khe thì trong quá trình này chỉ còn quan sát được một lần tại N là vị trí của vân sáng nếu sử dụng ánh sáng có bước sóng $\\lambda$. Giá trị của $\\lambda$ gần nhất với giá trị nào sau đây?",
         "image_source": null,
         "difficulty": 0,
@@ -518,7 +518,7 @@
         "explain": ""
     },
     {
-        "id": "L0205DE1",
+        "id": "L0205038DE1",
         "question": " trong thí nghiệm giao thoa sóng trên bề mặt của một chất lỏng xác định, hai nguồn kết hợp đặt tại hai điểm A và B dao động cùng pha theo phương thẳng đứng biết tần số dao động f của hai nguồn có thể thay đổi được trong khoảng từ 0 đến 100 Hz . Trên mặt chất lỏng, I là trung điểm của đoạn thẳng AB và C là điểm sao cho tam giác ABC vuông cân tại C . Thay đổi giá trị của ftrong khi giứ nguyên cách điều kiện thí nghiệm khác thì thấy $\\mathrm{f}=35 \\mathrm{~Hz}$ là giá trị nhỏ nhất của f và $\\mathrm{f}=\\mathrm{f}_{0}$ là giá trị lớn nhất của f để phần tử chất lỏng tại I và C dao động cùng pha. Khi $\\mathrm{f}=\\mathrm{f}_{0}$ thì trên đoạn thẳng AB có số điểm cực đại giao thoa là",
         "image_source": null,
         "difficulty": 0,
@@ -532,7 +532,7 @@
         "explain": ""
     },
     {
-        "id": "L0106DE1",
+        "id": "L0106039DE1",
         "question": " Hai con lắc lò xo gồm các lò xo có cùng độ cứng $\\mathrm{k}=50,0 \\mathrm{~N} / \\mathrm{m}$, các vật nhỏ $\\mathrm{m}_{1}$ và $\\mathrm{m}_{2}$ có khối lượng lần lượt là $50,0 \\mathrm{~g}$ và 200 g , được gắn vào giá M như hình bên sao cho chúng chỉ có thể dao động điều hòa theo phương thẳng đứng. Giá M có khối lượng 250 g và được đặt trên bệ đõ̃ cố định nằm ngang. Biết giới hạn đàn hồi của hai lò xo là lớn. Ban đầu, hai vật $\\mathrm{m}_{1}$ và $\\mathrm{m}_{2}$ được giư ở vị trí bên dưới vị trí cân bằng của mối vật một khoảng A . Thả nhẹ $\\mathrm{m}_{2}$ để nó dao động điều hòa. Biết $\\mathrm{A}_{0}$ là giá trị lớn nhất có thể có của A để với khoảng thời gian $\\Delta \\mathrm{t}$ thích hợp thì giá M không bao giời rời",
         "image_source": "images/2024_11_05_a5aec8be2a261f48038dg-4(1).jpg",
         "difficulty": 0,
@@ -546,7 +546,7 @@
         "explain": ""
     },
     {
-        "id": "L0304DE1",
+        "id": "L0304040DE1",
         "question": " Đoạn mạch AB như hình H1 là mạch điện xoay chiều gồm một điện trở R, một cuộn cảm thuần L có độ tự cảm $0,318 \\mathrm{H}$ và một tụ điện C có điện dung $8,00 \\mu \\mathrm{~F}$ mắc nối tiếp. Các phần tử được mắc trong hộp không rõ thứ tự nên mỗi phần tử $X, Y, Z$ của",
         "image_source": "images/de0103.png",
         "difficulty": 0,
